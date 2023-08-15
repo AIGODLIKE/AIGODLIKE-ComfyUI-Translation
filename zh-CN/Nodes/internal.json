@@ -3,13 +3,17 @@
         "title": "K采样器",
         "inputs": {
             "model": "模型",
-            "positive": "正向提示词",
-            "negative": "反向提示词",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
             "latent_image": "Latent"
         },
         "widgets": {
             "seed": "随机种",
             "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
             "steps": "步数",
             "cfg": "CFG",
             "sampler_name": "采样器",
@@ -24,14 +28,18 @@
         "title": "K采样器(高级)",
         "inputs": {
             "model": "模型",
-            "positive": "正向提示词",
-            "negative": "反向提示词",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
             "latent_image": "Latent"
         },
         "widgets": {
-            "add_noise": "添加随机种",
+            "add_noise": "添加噪波",
             "noise_seed": "随机种",
             "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
             "steps": "步数",
             "cfg": "CFG",
             "sampler_name": "采样器",
@@ -172,7 +180,7 @@
         },
         "widgets": {
             "hypernetwork_name": "超网络名称",
-            "strength": "力度"
+            "strength": "强度"
         },
         "outputs": {
             "MODEL": "模型"
@@ -277,7 +285,7 @@
             "height": "高度",
             "x": "X",
             "y": "Y",
-            "strength": "力度"
+            "strength": "强度"
         },
         "outputs": {
             "CONDITIONING": "条件"
@@ -290,7 +298,7 @@
             "mask": "遮罩"
         },
         "widgets": {
-            "strength": "力度",
+            "strength": "强度",
             "set_cond_area": "设置条件区域",
                 "default": "默认",
                 "mask bounds": "遮罩边界"
@@ -316,7 +324,7 @@
             "clip_vision_output": "CLIP视觉输出"
         },
         "widgets": {
-            "strength": "力度",
+            "strength": "强度",
             "noise_augmentation": "噪波增强"
         },
         "outputs": {
@@ -331,7 +339,7 @@
             "image": "图像"
         },
         "widgets": {
-            "strength": "力度"
+            "strength": "强度"
         },
         "outputs": {
             "CONDITIONING": "条件"
@@ -340,19 +348,19 @@
     "ControlNetApplyAdvanced": {
         "title": "ControlNet应用(高级)",
         "inputs": {
-            "positive": "正向提示词",
-            "negative": "反向提示词",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
             "control_net": "ControlNet",
             "image": "图像"
         },
         "widgets": {
-            "strength": "力度",
+            "strength": "强度",
             "start_percent": "开始位置",
             "end_percent": "结束位置"
         },
         "outputs": {
-            "positive": "正向提示词",
-            "negative": "反向提示词"
+            "positive": "正面提示词",
+            "negative": "负面提示词"
         }
     },
 

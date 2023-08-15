@@ -1,0 +1,45 @@
+{
+    "KRestartSamplerSimple": {
+        "title": "K采样器(重启简易)",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "segments": "分段"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "KRestartSampler": {
+        "title": "K采样器(重启)",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "restart_scheduler": "重启调度器",
+            "segments": "分段"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    }
+}

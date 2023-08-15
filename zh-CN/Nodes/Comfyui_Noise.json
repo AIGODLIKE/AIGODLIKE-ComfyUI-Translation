@@ -56,7 +56,7 @@
             "mask": "遮罩"
         },
         "widgets": {
-            "strength": "力度"
+            "strength": "强度"
         },
         "outputs": {
             "LATENT": "Latent"

@@ -1,0 +1,61 @@
+{
+    "MultiLatentComposite": {
+        "title": "多Latent复合",
+        "inputs": {
+            "samples_to": "采样到",
+            "samples_from0": "采样从"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "MultiAreaConditioning": {
+        "title": "多条件区域",
+        "inputs": {
+            "conditioning0": "条件0",
+            "conditioning1": "条件1"
+        },
+        "widgets": {
+            "resolutionX": "分辨率X",
+            "resolutionY": "分辨率Y",
+            "index": "条件索引",
+            "x": "X",
+            "y": "Y",
+            "sdn_width": "宽度",
+            "sdn_height": "高度",
+            "strength": "强度"
+        },
+        "outputs": {
+            "CONDITIONING": "条件",
+            "resolutionX": "分辨率X",
+            "resulutionY": "分辨率Y"
+        }
+    },
+    "ConditioningUpscale": {
+        "title": "条件缩放",
+        "inputs": {
+            "conditioning": "条件"
+        },
+        "widgets": {
+            "scalar": "数量"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "ConditioningStretch": {
+        "title": "条件拉伸",
+        "inputs": {
+            "conditioning": "条件"
+        },
+        "widgets": {
+            "resolutionX": "分辨率X",
+            "resolutionY": "分辨率Y",
+            "newWidth": "新宽度",
+            "newHeight": "新高度"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    }
+}

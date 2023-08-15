@@ -48,7 +48,7 @@
             "scheduler": "调度器",
             "start_at_step": "采样开始步数",
             "end_at_step": "采样结束步数",
-            "returen_with_leftover_noise": "返回噪波",
+            "return_with_leftover_noise": "返回噪波",
             "preview": "预览图象"
         },
         "outputs": {
