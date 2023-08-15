@@ -5,23 +5,26 @@ I hope ComfyUI can support more languages besides Chinese and English, such as F
 ## Language supported
 1. 简体中文
 2. English
-
-The English document is currently being written....
-## 特性
+## Function
 1. Translate all UI of ComfyUI
 ![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/323f3f84-e9c0-421e-9089-470e5a5ac350)
 ![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/620d274a-3fb5-430e-8584-2705e9fbeb4c)
 ![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/ab711245-c4f0-43ec-b22b-7191bbd66e40)
 2. Direct language switching (limitation: custom names will be removed)
 https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e43182b7-8932-4358-bc65-ade7bddf27c5
-
-
-3. 
-4. 对双击左键的搜索栏实现了翻译
-5. 对右键上下文菜单(新增节点,节点分类)实现了翻译
-6. 对节点实现了翻译, 包含节点的标题/接头(输入输出)/节点组件属性的翻译
-7. 实现了动态切换语言, 在设置面板中 `AGLTranslation-language`选择切换, 会自动刷新
-8. 可自定义添加翻译配置
+3. Support for adding other languages
+4. Support translation custom nodes
+## How to install
+AIGODLIKE-COMFYUI-TRANSLATION is equivalent to a custom node, you can use any method you like, just put it in folder custom_nodes
+Then run:
+```sh
+cd ComfyUI/custom_nodes
+git clone https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION.git
+```
+![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/44de967d-2611-4f07-a795-9b28169d51f5)
+## How to use
+Launch ComfyUI and open the menu. Click on the language option to switch languages.
+![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/74d184ac-e7ef-4059-bd5e-dfb6fd4a64ac)
 
 ## 如何添加翻译语言?
 1. 在插件目录中新建`语言名`文件夹(如: example文件夹示例)
