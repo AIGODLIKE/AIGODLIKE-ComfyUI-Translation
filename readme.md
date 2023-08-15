@@ -109,8 +109,9 @@ Launch ComfyUI and open the menu. Click on the language option to switch languag
     ```
 
 ## Limitations
-1 Supports direct switching of any language node to the target language, but will lose custom names
-2 A small portion of options that use Enum type data cannot be translated
-![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/75e00657-7777-482e-8144-9b13ed91f4ea)
+1.Supports direct switching of any language node to the target language, but will lose custom names
+2. A small portion of options that use Enum type data cannot be translated
+![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/da2295c3-7020-43bd-b904-446b877aebd8)
+
 
 
