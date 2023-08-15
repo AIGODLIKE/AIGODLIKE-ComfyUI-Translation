@@ -30,7 +30,7 @@ Launch ComfyUI and open the menu. Click on the language option to switch languag
 1. Create a new 'Language Name' folder in the plugin directory (e.g. example folder)
 ![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/1288e2ca-aef2-4810-a718-2458261d9153)
 
-2.  在插件目录的LocaleMap.js 中按格式添加语言信息(`语言名`为example, 与上一步一致)
+2. Find the LocaleMap.js file and add the language code with the same name as the first step folder in it
 ![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/443f36f7-aeaf-4359-b55c-a6287d3ad1ef)
     ```js
     export const LOCALES = {
