@@ -26,7 +26,7 @@ git clone https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION.git
 Launch ComfyUI and open the menu. Click on the language option to switch languages.
 ![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/74d184ac-e7ef-4059-bd5e-dfb6fd4a64ac)
 
-## How to add other languages
+## How to add other languages（translator）
 1. Create a new 'Language Name' folder in the plugin directory (e.g. example folder)
 ![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/1288e2ca-aef2-4810-a718-2458261d9153)
 
@@ -51,58 +51,66 @@ Launch ComfyUI and open the menu. Click on the language option to switch languag
 3. After completing the above two steps, restart the ComfyUI service to find the 'exampleDisplayName' language type in the 'AGLTranslation language' settings bar
 ![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/f3ea8ab6-8626-4470-a6e0-d8eee50358aa)
 
-## 如何新增自定义翻译?
-1. 翻译文件目前分为3种类型
-    1. 节点信息翻译(包含节点名, 节点接头, 节点组件) 对应翻译文件 `语言名/Nodes/somenode.json`
-    2. 节点分类信息(用于右键新建节点菜单) 对应翻译文件 `语言名/NodeCategory.json`
-    2. 菜单信息(包含常驻菜单, 设置面板, 右键上下文菜单, 搜索菜单等) 对应翻译文件 `语言名/Menu.json`
-2. 其中 节点信息翻译 可以根据不同节点放置到 `语言名/Nodes/` 下的多个json文件中
-3. 所有的翻译文件均为json格式, 请严格按照json文件格式填写
+## How to add custom node translations（translator）
+1. Translation files are currently divided into three types
+    1. Node information translation (including node name, node connector, node component) corresponding translation file `Your language folder/Nodes/somenode.json`
+    2. Node classification information (used for right-click the new node menu) corresponds to the translation file `Your language folder/NodeCategory.json`
+    2. Menu information (including resident menu, settings panel, right-click context menu, search menu, etc.) corresponds to translated files `Your language folder/Menu.json`
+2. Node information translation can be placed in multiple JSON files under 'Your language folder/Nodes/' based on different nodes
+3. All translation files are in JSON format, please fill in strictly according to the JSON file format
 
-## 格式解释
-1. 节点信息翻译
+### Translation examples
+1. Node Translation Format
     ```json
     {
-        "节点名1": {
-            "title": "标题名",
+        "KSampler": {
+            "title": "KSampler[example translation]",
             "inputs": {
-                "输入口1": "输入口名1",
-                "输入口2": "输入口名2",
-                "输入口3": "输入口名3"
+                "model": "模型",
+                "positive": "正向提示词",
+                "negative": "反向提示词",
+                "latent_image": "潜空间"
             },
             "widgets": {
-                "组件1": "组件名1",
-                "组件2": "组件名2"
+                "seed": "随机种",
+                "control_after_generate": "运行后操作",
+                "steps": "步数",
+                "cfg": "CFG",
+                "sampler_name": "采样器",
+                "scheduler": "调度器",
+                "denoise": "降噪"
             },
             "outputs": {
-                "输出口1": "输出口名1",
-                "输出口2": "输出口名2",
-                "输出口3": "输出口名3"
+                "LATENT": "潜空间",
             }
         },
-        "节点名2": {}
+        "Load VAE": {}
     }
     ```
-2. 节点分类信息翻译
+2. Node classification translation format
     ```json
     {
-        "分类1": "分类1翻译",
-        "子分类1": "子分类1翻译",
-        "分类2": "分类2翻译"
-    }
-    ```
-3. 菜单信息翻译
-    ```json
-    {
-        "菜单控件1": "菜单控件1翻译",
-        "菜单控件2": "菜单控件2翻译",
+        "Add Node": "Add Node[example]",
+        "Add Group": "Add Group[example]",
         "Search": "Search[example]",
         "Queue size:": "Queue size[example]:",
         "Queue Prompt": "Queue Prompt[example]",
         "Extra options": "Extra options[example]"
     }
     ```
+3. Menu information translation format
+    ```json
+    {
+        "conditioning": "conditioning[example]",
+        "latent": "latent[example]",
+        "loaders": "loaders[example]",
+        "image": "image[example]"
+    }
+    ```
 
-## 注意事项
-1. 应用翻译会覆盖自定义节点名!!!
+## Limitations
+1 Supports direct switching of any language node to the target language, but will lose custom names
+2 A small portion of options that use Enum type data cannot be translated
+![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/75e00657-7777-482e-8144-9b13ed91f4ea)
+
 
