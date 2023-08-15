@@ -13,7 +13,7 @@ The English document is currently being written....
 ![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/620d274a-3fb5-430e-8584-2705e9fbeb4c)
 ![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/ab711245-c4f0-43ec-b22b-7191bbd66e40)
 2. Direct language switching (limitation: custom names will be removed)
-https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/43e5f2d5-a437-472d-9359-1521875d157b
+https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e43182b7-8932-4358-bc65-ade7bddf27c5
 
 
 3. 
@@ -34,7 +34,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/43e5
         },
         "en-US": {
             "nativeName": "English (US)",
-            "englishName": "English (US)"
+            "englishName": "English (US)"                    
         },
         "example": {
             "nativeName": "exampleDisplayName",
