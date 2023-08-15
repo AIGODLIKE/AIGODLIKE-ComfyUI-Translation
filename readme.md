@@ -8,12 +8,20 @@ I hope ComfyUI can support more languages besides Chinese and English, such as F
 
 The English document is currently being written....
 ## 特性
-1. 实现了对常驻菜单栏的翻译, 包括设置对话框中内容的翻译
-2. 对双击左键的搜索栏实现了翻译
-3. 对右键上下文菜单(新增节点,节点分类)实现了翻译
-4. 对节点实现了翻译, 包含节点的标题/接头(输入输出)/节点组件属性的翻译
-5. 实现了动态切换语言, 在设置面板中 `AGLTranslation-language`选择切换, 会自动刷新
-6. 可自定义添加翻译配置
+1. Translate all UI of ComfyUI
+![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/323f3f84-e9c0-421e-9089-470e5a5ac350)
+![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/620d274a-3fb5-430e-8584-2705e9fbeb4c)
+![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/ab711245-c4f0-43ec-b22b-7191bbd66e40)
+2. Direct language switching (limitation: custom names will be removed)
+https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/43e5f2d5-a437-472d-9359-1521875d157b
+
+
+3. 
+4. 对双击左键的搜索栏实现了翻译
+5. 对右键上下文菜单(新增节点,节点分类)实现了翻译
+6. 对节点实现了翻译, 包含节点的标题/接头(输入输出)/节点组件属性的翻译
+7. 实现了动态切换语言, 在设置面板中 `AGLTranslation-language`选择切换, 会自动刷新
+8. 可自定义添加翻译配置
 
 ## 如何添加翻译语言?
 1. 在插件目录中新建`语言名`文件夹(如: example文件夹示例)
@@ -106,7 +114,7 @@ The English document is currently being written....
 ## 简介
 AIGODLIKE-COMFYUI-TRANSLATION 是ComfyUI的界面翻译插件, 该插件中实现了对常驻菜单栏/搜索栏/右键上下文菜单/节点等的翻译.
 ## 特性
-1. 实现了对常驻菜单栏的翻译, 包括设置对话框中内容的翻译
+1. Translate all UI of ComfyUI
 2. 对双击左键的搜索栏实现了翻译
 3. 对右键上下文菜单(新增节点,节点分类)实现了翻译
 4. 对节点实现了翻译, 包含节点的标题/接头(输入输出)/节点组件属性的翻译
