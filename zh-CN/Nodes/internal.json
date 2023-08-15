@@ -3,8 +3,8 @@
         "title": "K采样器",
         "inputs": {
             "model": "模型",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正向提示词",
+            "negative": "反向提示词",
             "latent_image": "Latent"
         },
         "widgets": {
@@ -28,8 +28,8 @@
         "title": "K采样器(高级)",
         "inputs": {
             "model": "模型",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正向提示词",
+            "negative": "反向提示词",
             "latent_image": "Latent"
         },
         "widgets": {
@@ -348,8 +348,8 @@
     "ControlNetApplyAdvanced": {
         "title": "ControlNet应用(高级)",
         "inputs": {
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正向提示词",
+            "negative": "反向提示词",
             "control_net": "ControlNet",
             "image": "图像"
         },
@@ -359,8 +359,8 @@
             "end_percent": "结束位置"
         },
         "outputs": {
-            "positive": "正面提示词",
-            "negative": "负面提示词"
+            "positive": "正向提示词",
+            "negative": "反向提示词"
         }
     },
 
@@ -520,7 +520,7 @@
                 "nearest-exact": "邻近-精确",
                 "bilinear": "双线性插值",
                 "area": "区域",
-                "bislerp": "球面线性",
+                "bislerp": "球向线性",
                 "bicubic": "双三次插值",
             "width": "宽度",
             "height": "高度",
@@ -541,7 +541,7 @@
                 "nearest-exact": "邻近-精确",
                 "bilinear": "双线性插值",
                 "area": "区域",
-                "bislerp": "球面线性",
+                "bislerp": "球向线性",
                 "bicubic": "双三次插值",
             "scale_by": "系数"
         },

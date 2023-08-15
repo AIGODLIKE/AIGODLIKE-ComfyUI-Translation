@@ -3,8 +3,8 @@
         "title": "逆K采样器",
         "inputs": {
             "model": "模型",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正向提示词",
+            "negative": "反向提示词",
             "latent_image": "Latent"
         },
         "widgets": {
