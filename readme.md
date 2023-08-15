@@ -1,10 +1,10 @@
 # AIGODLIKE-COMFYUI-TRANSLATION
+Multi language translation plugin for [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 ## 文档
 1. 中文
 2. English
 ## 简介
 AIGODLIKE-COMFYUI-TRANSLATION 是ComfyUI的界面翻译插件, 该插件中实现了对常驻菜单栏/搜索栏/右键上下文菜单/节点等的翻译.
-
 ## 特性
 1. 实现了对常驻菜单栏的翻译, 包括设置对话框中内容的翻译
 2. 对双击左键的搜索栏实现了翻译
