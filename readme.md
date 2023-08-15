@@ -26,9 +26,12 @@ git clone https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION.git
 Launch ComfyUI and open the menu. Click on the language option to switch languages.
 ![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/74d184ac-e7ef-4059-bd5e-dfb6fd4a64ac)
 
-## 如何添加翻译语言?
-1. 在插件目录中新建`语言名`文件夹(如: example文件夹示例)
-2. 在插件目录的LocaleMap.js 中按格式添加语言信息(`语言名`为example, 与上一步一致)
+## How to add other languages
+1. Create a new 'Language Name' folder in the plugin directory (e.g. example folder)
+![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/1288e2ca-aef2-4810-a718-2458261d9153)
+
+2.  在插件目录的LocaleMap.js 中按格式添加语言信息(`语言名`为example, 与上一步一致)
+![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/443f36f7-aeaf-4359-b55c-a6287d3ad1ef)
     ```js
     export const LOCALES = {
         "zh-CN": {
@@ -45,7 +48,8 @@ Launch ComfyUI and open the menu. Click on the language option to switch languag
         },
     }
     ```
-3. 以上两步完成后 重启ComfyUI服务器 即可在设置栏 `AGLTranslation-language` 中找到`exampleDisplayName` 语言类型
+3. After completing the above two steps, restart the ComfyUI service to find the 'exampleDisplayName' language type in the 'AGLTranslation language' settings bar
+![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/f3ea8ab6-8626-4470-a6e0-d8eee50358aa)
 
 ## 如何新增自定义翻译?
 1. 翻译文件目前分为3种类型
