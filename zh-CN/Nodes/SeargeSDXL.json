@@ -1,0 +1,685 @@
+{
+    "SeargeSDXLSampler2": {
+        "title": "SearSDXL采样器v2",
+        "inputs": {
+            "base_model": "基础模型",
+            "base_positive": "基础正面提示词",
+            "base_negative": "基础负面提示词",
+            "refiner_model": "优化模型",
+            "refiner_positive": "优化正面提示词",
+            "refiner_negative": "优化负面提示词",
+            "latent_image": "Latent图像",
+            "sampler_name": "采样器",
+            "scheduler": "调度器"
+        },
+        "widgets": {
+            "noise_seed": "随机种",
+            "steps": "步数",
+            "cfg": "CFG",
+            "base_ratio": "基础占比",
+            "denoise": "降噪",
+            "refiner_prep_steps": "预优化步数",
+            "noise_offset": "噪波偏移",
+            "refiner_strength": "优化力度"
+        },
+        "outputs": {
+            "LATENT": "LATENT"
+        }
+    },
+    "SeargeSDXLImage2ImageSampler2": {
+        "title": "SearSDXL图生图采样器v2",
+        "inputs": {
+            "base_model": "基础模型",
+            "base_positive": "基础正面提示词",
+            "base_negative": "基础负面提示词",
+            "refiner_model": "优化模型",
+            "refiner_positive": "优化正面提示词",
+            "refiner_negative": "优化负面提示词",
+            "image": "图像",
+            "vae": "VAE",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "upscale_model": "放大模型"
+        },
+        "widgets": {
+            "noise_seed": "随机种",
+            "steps": "步数",
+            "cfg": "CFG",
+            "base_ratio": "基础占比",
+            "denoise": "降噪",
+            "scaled_width": "宽度缩放到",
+            "scaled_height": "高度缩放到",
+            "refiner_prep_steps": "预优化步数",
+            "noise_offset": "噪波偏移",
+            "refiner_strength": "优化力度",
+            "softness": "柔化"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "SeargeSamplerInputs": {
+        "title": "Sear采样调度",
+        "widgets": {
+            "sampler_name": "采样器",
+            "scheduler": "调度器"
+        },
+        "outputs": {
+            "sampler_name": "采样器",
+            "scheduler": "调度器"
+        }
+    },
+    "SeargeEnablerInputs": {
+        "title": "Sear开关",
+        "widgets": {
+            "state": "状态",
+            "disabled": "关闭",
+            "enabled": "开启"
+        },
+        "outputs": {
+            "state": "状态"
+        }
+    },
+    "SeargeSaveFolderInputs": {
+        "title": "Sear保存路径",
+        "widgets": {
+            "save_to": "保存到",
+            "output folder": "输出路径",
+            "input folder": "输入路径"
+        },
+        "outputs": {
+            "save_to": "保存到"
+        }
+    },
+    "SeargeSDXLPromptEncoder": {
+        "title": "SearSDXL文本编写",
+        "inputs": {
+            "base_clip": "基础CLIP",
+            "refiner_clip": "优化CLIP"
+        },
+        "widgets": {
+            "pos_g": "正面bigG文本",
+            "pos_l": "正面L文本",
+            "pos_r": "正面优化文本",
+            "neg_g": "负面bigG文本",
+            "neg_l": "负面L文本",
+            "neg_r": "负面优化文本",
+            "base_width": "宽度",
+            "base_height": "高度",
+            "pos_ascore": "正面美学分数",
+            "neg_ascore": "负面美学分数",
+            "refiner_width": "优化宽度",
+            "refiner_height": "优化高度"
+        },
+        "outputs": {
+            "base_positive": "基础正面提示词",
+            "base_negative": "基础负面提示词",
+            "refiner_positive": "优化正面提示词",
+            "refiner_negative": "优化负面提示词"
+        }
+    },
+    "SeargeSDXLBasePromptEncoder": {
+        "title": "SearSDXL基础文本编写",
+        "inputs": {
+            "base_clip": "基础CLIP"
+        },
+        "widgets": {
+            "pos_g": "正面bigG文本",
+            "pos_l": "正面L文本",
+            "neg_g": "负面bigG文本",
+            "neg_l": "负面L文本",
+            "base_w": "基础宽度",
+            "base_h": "基础高度",
+            "crop_w": "裁剪宽度",
+            "crop_h": "裁剪高度",
+            "target_width": "目标宽度",
+            "target_height": "目标高度"
+        },
+        "outputs": {
+            "base_positive": "基础正面提示词",
+            "base_negative": "基础负面提示词"
+        }
+    },
+    "SeargeSDXLRefinerPromptEncoder": {
+        "title": "SearSDXL优化文本编写",
+        "inputs": {
+            "refiner_clip": "优化CLIP"
+        },
+        "widgets": {
+            "pos_r": "正面优化文本",
+            "neg_r": "负面优化文本",
+            "pos_ascore": "正面美学分数",
+            "neg_ascore": "负面美学分数",
+            "refiner_width": "优化宽度",
+            "refiner_height": "优化高度"
+        },
+        "outputs": {
+            "pos_r": "正面优化文本",
+            "neg_r": "负面优化文本"
+        }
+    },
+    "SeargePromptText": {
+        "title": "Sear提示词文本",
+        "widgets": {
+            "prompt": "Prompt"
+        },
+        "outputs": {
+            "prompt": "Prompt"
+        }
+    },
+    "SeargePromptCombiner": {
+        "title": "Sear提示词合并",
+        "widgets": {
+            "prompt1": "Prompt1",
+            "separatoor": "分词",
+            "prompt2": "Prompt2"
+        },
+        "outputs": {
+            "combined prompt": "合并提示词"
+        }
+    },
+    "SeargeIntegerConstant": {
+        "title": "Sear整数值",
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "value": "值"
+        }
+    },
+    "SeargeIntegerPair": {
+        "title": "Sear整数对",
+        "widgets": {
+            "value1": "值1",
+            "value2": "值2"
+        },
+        "outputs": {
+            "value1": "值1",
+            "value2": "值2"
+        }
+    },
+    "SeargeIntegerMath": {
+        "title": "Sear整数运算",
+        "widgets": {
+            "op": "操作"
+        },
+        "outputs": {
+            "result": "结果"
+        }
+    },
+    "SeargeIntegerScaler": {
+        "title": "Sear整数缩放",
+        "widgets": {
+            "value": "值",
+            "factor": "系数",
+            "multiple_of": "倍数"
+        },
+        "outputs": {
+            "value": "值"
+        }
+    },
+    "SeargeFloatConstant": {
+        "title": "Sear浮点值",
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "value": "值"
+        }
+    },
+    "SeargeFloatPair": {
+        "title": "Sear浮点对",
+        "widgets": {
+            "value1": "值1",
+            "value2": "值2"
+        },
+        "outputs": {
+            "value1": "值1",
+            "value2": "值2"
+        }
+    },
+    "SeargeFloatMath": {
+        "title": "Sear浮点运算",
+        "widgets": {
+            "op": "操作"
+        },
+        "outputs": {
+            "result": "结果"
+        }
+    },
+    "SeargeImageSave": {
+        "title": "Sear图像保存",
+        "inputs": {
+            "filename_prefix": "文件名前缀"
+        },
+        "widgets": {
+            "state": "状态",
+            "save_to": "保存到",
+            "output folder": "输出路径",
+            "input folder": "输入路径"
+        }
+    },
+    "SeargeCheckpointLoader": {
+        "title": "SearCheckpoint加载器",
+        "inputs": {
+            "ckpt_name": "ckpt模型名称"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "VAE": "VAE"
+        }
+    },
+    "SeargeVAELoader": {
+        "title": "SearVAE加载器",
+        "inputs": {
+            "vae_name": "VAE名称"
+        },
+        "outputs": {
+            "VAE": "VAE"
+        }
+    },
+    "SeargeUpscaleModelLoader": {
+        "title": "Sear放大模型加载器",
+        "inputs": {
+            "upscaler_name": "放大模型名称"
+        },
+        "outputs": {
+            "UPSCALE_MODEL": "放大模型"
+        }
+    },
+    "SeargeLoraLoader": {
+        "title": "SearLora加载器",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "lora_name": "Lora名称"
+        },
+        "widgets": {
+            "strength_model": "模型力度",
+            "strength_clip": "CLIP力度"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP"
+        }
+    },
+    "SeargeLatentMuxer3": {
+        "title": "Sear切换Latent3",
+        "inputs": {
+            "input0": "输入0",
+            "input1": "输入1",
+            "input2": "输入2"
+        },
+        "widgets": {
+            "input_selector": "选择"
+        },
+        "outputs": {
+            "output": "输出"
+        }
+    },
+    "SeargeConditioningMuxer2": {
+        "title": "Sear切换条件2",
+        "inputs": {
+            "input0": "输入0",
+            "input1": "输入1"
+        },
+        "widgets": {
+            "input_selector": "选择"
+        },
+        "outputs": {
+            "output": "输出"
+        }
+    },
+    "SeargeConditioningMuxer5": {
+        "title": "Sear切换条件5",
+        "inputs": {
+            "input0": "输入0",
+            "input1": "输入1",
+            "input2": "输入2",
+            "input3": "输入3",
+            "input4": "输入4"
+        },
+        "widgets": {
+            "input_selector": "选择"
+        },
+        "outputs": {
+            "output": "输出"
+        }
+    },
+    "SeargeInput1": {
+        "title": "Sear文本",
+        "inputs": {
+            "inputs": "输入组",
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "main_prompt": "主提示词",
+            "secondary_prompt": "次提示词",
+            "style_prompt": "风格提示词",
+            "negative_prompt": "负面提示词",
+            "negative_style": "负面风格"
+        },
+        "outputs": {
+            "inputs": "输入组"
+        }
+    },
+    "SeargeInput2": {
+        "title": "Sear采样",
+        "inputs": {
+            "inputs": "输入组"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "image_width": "宽度",
+            "image_height": "高度",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "save_image": "保存图像",
+            "disabled": "关闭",
+            "enabled": "开启",
+            "save_directory": "保存路径",
+            "output folder": "输出路径",
+            "input folder": "输入路径"
+        },
+        "outputs": {
+            "inputs": "输入组"
+        }
+    },
+    "SeargeInput3": {
+        "title": "SearSDXL",
+        "inputs": {
+            "inputs": "输入组"
+        },
+        "widgets": {
+            "base_ratio": "基础占比",
+            "refiner_strength": "优化力度",
+            "refiner_intensity": "优化强度",
+            "hard": "强烈",
+            "soft": "柔和",
+            "precondition_steps": "预处理步数",
+            "upscale_resolution_factor": "放大系数",
+            "save_upscaled_image": "保存放大图像",
+            "disabled": "关闭",
+            "enabled": "开启",
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "inputs": "输入组"
+        }
+    },
+    "SeargeInput4": {
+        "title": "Sear模型",
+        "inputs": {
+            "model_settings": "模型设置组"
+        },
+        "widgets": {
+            "base_model": "基础模型",
+            "refiner_model": "优化模型",
+            "vae_model": "VAE模型",
+            "main_upscale_model": "主放大模型",
+            "support_upscale_model": "次放大模型",
+            "lora_model": "Lora模型"
+        },
+        "outputs": {
+            "model_names": "模型名称"
+        }
+    },
+    "SeargeInput5": {
+        "title": "Sear条件权重",
+        "inputs": {
+            "inputs": "输入组"
+        },
+        "widgets": {
+            "base_conditioning_scale": "基础条件缩放",
+            "refiner_conditioning_scale": "优化条件缩放",
+            "style_prompt_power": "风格力度",
+            "negative_prompt_power": "负面风格力度",
+            "style_template": "风格模板",
+            "none": "无",
+            "from preprocessor": "从预处理器",
+            "test": "测试"
+        },
+        "outputs": {
+            "inputs": "输入组"
+        }
+    },
+    "SeargeInput6": {
+        "title": "Sear高清修复",
+        "inputs": {
+            "inputs": "输入组"
+        },
+        "widgets": {
+            "hires_fix": "高清修复",
+            "disabled": "关闭",
+            "enabled": "开启",
+            "hrf_steps": "步数",
+            "hrf_denoise": "降噪",
+            "hrf_upscale_factor": "缩放系数",
+            "hrf_intensity": "强度",
+            "hard": "强烈",
+            "soft": "柔和",
+            "hrf_seed_offset": "随机种",
+            "same": "相同",
+            "distinct": "不同",
+            "hrf_smoothness": "平滑"
+        },
+        "outputs": {
+            "inputs": "输入组"
+        }
+    },
+    "SeargeInput7": {
+        "title": "SearLora",
+        "inputs": {
+            "inputs": "输入组"
+        },
+        "widgets": {
+            "lora_strength": "力度",
+            "operation_mode": "操作模式",
+            "text to image": "文生图",
+            "image to image": "图生图",
+            "inpainting": "重绘",
+            "prompt_style": "提示词风格"
+        },
+        "outputs": {
+            "inputs": "输入组"
+        }
+    },
+    "SeargeOutput1": {
+        "title": "Sear文本",
+        "inputs": {
+            "parameters": "参数组"
+        },
+        "outputs": {
+            "parameters": "参数组",
+            "main_prompt": "主提示词",
+            "secondary_prompt": "次提示词",
+            "style_prompt": "风格提示词",
+            "negative_prompt": "负面提示词",
+            "negative_style": "负面风格",
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "SeargeOutput2": {
+        "title": "Sear采样",
+        "inputs": {
+            "parameters": "参数组"
+        },
+        "outputs": {
+            "parameters": "参数组",
+            "seed": "随机种",
+            "image_width": "宽度",
+            "image_height": "高度",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "save_image": "保存图像",
+            "save_directory": "保存路径"
+        }
+    },
+    "SeargeOutput3": {
+        "title": "SearSDXL",
+        "inputs": {
+            "parameters": "参数组"
+        },
+        "outputs": {
+            "parameters": "参数组",
+            "denoise": "降噪",
+            "base_ratio": "基础占比",
+            "refiner_strength": "优化力度",
+            "precondition_steps": "预处理步数",
+            "batch_size": "批次大小",
+            "upscale_resolution_factor": "放大系数",
+            "save_upscaled_image": "保存放大图像"
+        }
+    },
+    "SeargeOutput4": {
+        "title": "Sear模型",
+        "inputs": {
+            "model_names": "模型名称组"
+        },
+        "outputs": {
+            "model_names": "模型名称组",
+            "base_model": "基础模型",
+            "refiner_model": "优化模型",
+            "vae_model": "VAE模型",
+            "main_upscale_model": "主放大模型",
+            "support_upscale_model": "次放大模型",
+            "lora_model": "Lora模型"
+        }
+    },
+    "SeargeOutput5": {
+        "title": "Sear条件权重",
+        "inputs": {
+            "parameters": "参数组"
+        },
+        "outputs": {
+            "parameters": "参数组",
+            "base_conditioning_scale": "基础条件缩放",
+            "refiner_conditioning_scale": "优化条件缩放",
+            "style_prompt_power": "风格力度",
+            "negative_prompt_power": "负面风格力度"
+        }
+    },
+    "SeargeOutput6": {
+        "title": "Sear高清修复",
+        "inputs": {
+            "parameters": "参数组"
+        },
+        "outputs": {
+            "parameters": "参数组",
+            "hrf_steps": "步数",
+            "hrf_denoise": "降噪",
+            "hrf_upscale_factor": "缩放系数",
+            "hrf_noise_offset": "噪波偏移",
+            "hrf_seed": "随机种",
+            "hires_fix": "高清修复",
+            "hrf_smoothness": "平滑"
+        }
+    },
+    "SeargeOutput7": {
+        "title": "SearLora",
+        "inputs": {
+            "parameters": "参数组"
+        },
+        "outputs": {
+            "parameters": "参数组",
+            "lora_strength": "力度"
+        }
+    },
+    "SeargeGenerated1": {
+        "title": "Sear生成",
+        "inputs": {
+            "parameters": "参数组"
+        },
+        "outputs": {
+            "parameters": "参数组",
+            "operation_selector": "操作选择",
+            "style_selector": "风格选择",
+            "prompt_style_group": "提示词风格组"
+        }
+    },
+    "SeargeParameterProcessor": {
+        "title": "Sear参数处理器",
+        "inputs": {
+            "inputs": "输入组"
+        },
+        "outputs": {
+            "parameters": "参数组"
+        }
+    },
+    "SeargeStyleProcessor": {
+        "title": "Sear风格处理器",
+        "inputs": {
+            "inputs": "输入组"
+        },
+        "widgets": {
+            "active_style_name": "活动风格",
+            "style_definitions": "风格定义"
+        },
+        "outputs": {
+            "inputs": "输入组"
+        }
+    },
+    "SeargeSDXLSampler": {
+        "title": "SearSDXL采样器",
+        "inputs": {
+            "base_model": "基础模型",
+            "base_positive": "基础正面提示词",
+            "base_negative": "基础负面提示词",
+            "refiner_model": "优化模型",
+            "refiner_positive": "优化正面提示词",
+            "refiner_negative": "优化负面提示词",
+            "latent_image": "Latent图像"
+        },
+        "widgets": {
+            "noise_seed": "随机种",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "base_ratio": "基础占比",
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "LATENT": "LATENT"
+        }
+    },
+    "SeargeSDXLImage2ImageSampler": {
+        "title": "SearSDXL图生图采样器",
+        "inputs": {
+            "base_model": "基础模型",
+            "base_positive": "基础正面提示词",
+            "base_negative": "基础负面提示词",
+            "refiner_model": "优化模型",
+            "refiner_positive": "优化正面提示词",
+            "refiner_negative": "优化负面提示词",
+            "image": "图像",
+            "vae": "VAE",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "upscale_model": "放大模型"
+        },
+        "widgets": {
+            "noise_seed": "随机种",
+            "steps": "步数",
+            "cfg": "CFG",
+            "base_ratio": "基础占比",
+            "denoise": "降噪",
+            "scaled_width": "宽度缩放到",
+            "scaled_height": "高度缩放到",
+            "refiner_prep_steps": "预优化步数",
+            "noise_offset": "噪波偏移",
+            "refiner_strength": "优化力度",
+            "softness": "柔化"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    }
+}

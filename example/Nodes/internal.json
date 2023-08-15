@@ -1,0 +1,23 @@
+{
+    "KSampler": {
+        "title": "KSampler[example translation]",
+        "inputs": {
+            "model": "模型",
+            "positive": "正向提示词",
+            "negative": "反向提示词",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    }
+}

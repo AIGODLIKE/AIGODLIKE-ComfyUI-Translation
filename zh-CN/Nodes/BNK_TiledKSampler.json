@@ -1,0 +1,58 @@
+{
+    "BNK_TiledKSampler": {
+        "title": "分块K采样器",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "tile_width": "分块宽度",
+            "tile_height": "分块高度",
+            "tiling_strategy": "无缝分块策略",
+                "random": "随机",
+                "padded": "分区",
+                "simple": "简易",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "BNK_TiledKSamplerAdvanced": {
+        "title": "分块高级K采样器",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "add_noise": "添加噪波",
+            "noise_seed": "随机种",
+            "tile_width": "分块宽度",
+            "tile_height": "分块高度",
+            "tiling_strategy": "无缝分块策略",
+                "random": "随机",
+                "padded": "分区",
+                "simple": "简易",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "start_at_step": "采样开始步数",
+            "end_at_step": "采样结束步数",
+            "returen_with_leftover_noise": "返回噪波",
+            "preview": "预览图象"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "_Category1": "Conditioning\\Advanced",
+    "BNK_CLIPTextEncodeAdvanced": {
+        "title": "CLIP文本编码器BNK",
+        "inputs": {
+            "CLIP": "CLIP"
+        },
+        "widgets": {
+            "text": "文本",
+            "token_normalization": "Token规格化",
+                "none": "无",
+                "length": "长度",
+                "mean": "平均",
+                "length+mean": "混合",
+            "weight_interpretation": "权重插值方式"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "BNK_CLIPTextEncodeSDXLAdvanced": {
+        "title": "高级CLIP文本编码SDXL",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "text_l": "ViT_L条件",
+            "text_g": "ViT_BigG条件",
+            "token_normalization": "Token规格化",
+                "none": "无",
+                "length": "长度",
+                "mean": "平均",
+                "length+mean": "混合",
+            "weight_interpretation": "权重插值方式",
+            "balance": "平衡"
+        }
+    },
+    "BNK_AddCLIPSDXLParams": {
+        "title": "添加SDXL参数",
+        "inputs": {
+            "conditioning": "条件"
+        },
+        "widgets": {
+            "sdn_width": "宽度",
+            "sdn_height": "高度",
+            "crop_w": "裁剪宽度",
+            "crop_h": "裁剪高度",
+            "target_width": "目标宽度",
+            "target_height": "目标高度"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "BNK_AddCLIPSDXLRParams": {
+        "title": "添加SDXL优化参数",
+        "inputs": {
+            "conditioning": "条件"
+        },
+        "widgets": {
+            "sdn_width": "宽度",
+            "sdn_height": "高度",
+            "ascore": "美学分数"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    }
+}

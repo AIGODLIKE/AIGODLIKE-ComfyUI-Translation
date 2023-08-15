@@ -1,0 +1,62 @@
+{
+    "BNK_CutoffBasePrompt": {
+        "title": "截断区域Prompt",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "CLIPREGION": "CLIP范围"
+        }
+    },
+    "BNK_CutoffSetRegions": {
+        "title": "截断设置范围",
+        "inputs": {
+            "clip_regions": "CLIP范围"
+        },
+        "widgets": {
+            "region_text": "范围文本",
+            "target_text": "目标文本",
+            "weight": "权重"
+        },
+        "outputs": {
+            "CLIPREGION": "CLIP范围"
+        }
+    },
+    "BNK_CutoffRegionsToConditioning": {
+        "title": "截断范围到条件",
+        "inputs": {
+            "clip_regions": "CLIP范围"
+        },
+        "widgets": {
+            "mask_token": "token遮罩",
+            "strict_mask": "严格范围",
+            "start_from_masked": "从区域开始"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "BNK_CutoffRegionsToConditioning_ADV": {
+        "title": "高级截断范围到条件",
+        "inputs": {
+            "clip_regions": "CLIP范围"
+        },
+        "widgets": {
+            "mask_token": "token遮罩",
+            "strict_mask": "严格范围",
+            "start_from_masked": "从区域开始",
+            "token_normalization": "Token规格化",
+                "none": "无",
+                "length": "长度",
+                "mean": "平均",
+                "length+mean": "混合",
+            "weight_interpretation": "权重插值方式"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    }
+}

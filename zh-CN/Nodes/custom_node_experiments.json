@@ -1,0 +1,39 @@
+{
+    "ReferenceOnlySimple": {
+        "title": "简易参考",
+        "inputs": {
+            "model": "模型",
+            "reference": "参考Latent"
+        },
+        "widgets": {
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "RescaleClassifierFreeGuidanceTest": {
+        "title": "规范自由引导",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "multiplier": "倍数"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },    
+    "ModelSamplerTonemapNoiseTest": {
+        "title": "噪波采样色调映射",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "multiplier": "倍数"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    }
+}

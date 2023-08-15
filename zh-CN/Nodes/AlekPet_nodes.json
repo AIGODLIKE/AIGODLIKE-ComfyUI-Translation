@@ -1,0 +1,51 @@
+{
+    "PreviewTextNode": {
+        "title": "预览文本",
+        "widgets": {
+            "text": "文本"
+        }
+    },
+    "PainterNode": {
+        "title": "绘画",
+        "widgets": {
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "PoseNode": {
+        "title": "绘画",
+        "widgets": {
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "TranslateCLIPTextEncodeNode": {
+        "title": "翻译CLIP文本编码器",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "from_translate": "从",
+            "to_translate": "到",
+            "text": "文本"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "TranslateTextNode": {
+        "title": "翻译文本",
+        "widgets": {
+            "from_translate": "从",
+            "to_translate": "到",
+            "text": "文本"
+        },
+        "outputs": {
+            "text": "文本"
+        }
+    }
+}

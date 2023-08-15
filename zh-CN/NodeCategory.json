@@ -1,0 +1,20 @@
+{
+    "conditioning": "条件",
+    "latent": "潜空间",
+    "loaders": "加载器",
+    "sampling": "采样",
+    "image": "图像",
+    "mask": "遮罩",
+    "advanced": "高级",
+    "_for_testing": "测试用",
+    "utils": "实用工具",
+    "batch": "批处理",
+    "inpaint": "修复",
+    "style_model": "风格模型",
+    "transform": "变换",
+    "upscaling": "放大",
+    "postprocessing": "后处理",
+    "preprocessors": "预处理",
+    "model_merging": "模型合并",
+    "deprecated": "已弃用"
+}

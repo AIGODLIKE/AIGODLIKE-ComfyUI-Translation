@@ -1,0 +1,92 @@
+{
+    "BNK_Unsampler": {
+        "title": "逆K采样器",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "steps": "步数",
+            "cfg": "CFG",
+            "end_at_step": "结束步数",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "normalize": "规格化"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "BNK_NoisyLatentImage": {
+        "title": "噪波Latent图像",
+        "widgets": {
+            "source": "生成源",
+            "seed": "随机种",
+            "sdn_width": "宽度",
+            "sdn_height": "高度",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "BNK_GetSigma": {
+        "title": "获取Sigma",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "steps": "步数",
+            "start_at_step": "开始步数",
+            "end_at_step": "结束步数"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "BNK_InjectNoise": {
+        "title": "插入噪波",
+        "inputs": {
+            "latents": "Latent",
+            "noise": "噪波Latent",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "strength": "力度"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "BNK_DuplicateBatchIndex": {
+        "title": "复制索引批次",
+        "inputs": {
+            "latents": "Latent"
+        },
+        "widgets": {
+            "batch_index": "批次索引",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "BNK_SlerpLatent": {
+        "title": "Latent插值",
+        "inputs": {
+        "latents1": "Latent1",
+        "latents2": "Latent2",
+        "mask": "遮罩"
+        },
+        "widgets": {
+            "factor": "系数"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    }
+}
