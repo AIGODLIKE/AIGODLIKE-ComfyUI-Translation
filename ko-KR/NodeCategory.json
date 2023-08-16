@@ -1,0 +1,20 @@
+{
+    "conditioning": "조건 설정",
+    "latent": "레이턴트",
+    "loaders": "불러오기",
+    "sampling": "샘플링",
+    "image": "이미지",
+    "mask": "마스크",
+    "advanced": "고급",
+    "_for_testing": "_테스트용_",
+    "utils": "유틸리티",
+    "batch": "배치",
+    "inpaint": "인페인트",
+    "style_model": "스타일 모델",
+    "transform": "변환",
+    "upscaling": "확대",
+    "postprocessing": "후처리",
+    "preprocessors": "전처리",
+    "model_merging": "모델 병합",
+    "deprecated": "_지원중단_"
+}

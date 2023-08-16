@@ -479,10 +479,10 @@ export const LOCALES = {
   //   "nativeName": "한국어",
   //   "englishName": "Korean"
   // },
-  // "ko-KR": {
-  //   "nativeName": "한국어 (韩国)",
-  //   "englishName": "Korean (Korea)"
-  // },
+  "ko-KR": {
+    "nativeName": "한국어 (韓國)",
+    "englishName": "Korean (Korea)"
+  },
   // "ku-TR": {
   //   "nativeName": "Kurdî",
   //   "englishName": "Kurdish"
