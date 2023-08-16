@@ -136,5 +136,6 @@
     "Badge: #ID Nickname": "뱃지: #ID 별명",
     "Use local DB": "로컬 DB 사용",
     "Skip update check": "업데이트 검사 건너띄기",
-    "Prompt has no outputs": "프롬프트에 출력이 없습니다"
+    "Prompt has no outputs": "프롬프트에 출력이 없습니다",
+    "Switch Locale": "영어로 언어 변경"
 }
