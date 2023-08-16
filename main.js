@@ -58,8 +58,9 @@ export class TUtils {
 					continue;
 				nodeType.category = nodeType.category.replace(key, nodeCT[key]);
 			}
-			if (nodesT.hasOwnProperty(nodeType.comfyClass)) {
-				nodeType.title = nodesT[nodeType.comfyClass]["title"];
+			let class_type = nodeType.comfyClass ? nodeType.comfyClass : nodeType.type;
+			if (nodesT.hasOwnProperty(class_type)) {
+				nodeType.title = nodesT[class_type]["title"];
 			}
 		}
 	}
@@ -67,25 +68,26 @@ export class TUtils {
 	static applyNodeTranslation(node) {
 		let keys = ["inputs", "outputs", "widgets"];
 		let nodesT = this.T.Nodes;
-		if (!nodesT.hasOwnProperty(node.constructor.comfyClass)) {
+		let class_type = node.constructor.comfyClass ? node.constructor.comfyClass : node.constructor.type;
+		if (!nodesT.hasOwnProperty(class_type)) {
 			for (let key of keys) {
 				if (!node.hasOwnProperty(key))
 					continue;
 				node[key].forEach(item => {
-					if (item.hasOwnProperty("name"))
+					if (item?.hasOwnProperty("name"))
 						item.label = item.name;
 				});
 			}
 			return;
 		}
-		var t = nodesT[node.constructor.comfyClass];
+		var t = nodesT[class_type];
 		for (let key of keys) {
 			if (!t.hasOwnProperty(key))
 				continue;
 			if (!node.hasOwnProperty(key))
 				continue;
 			node[key].forEach(item => {
-				if (item.name in t[key]) {
+				if (item?.name in t[key]) {
 					item.label = t[key][item.name];
 				}
 			});
@@ -98,13 +100,13 @@ export class TUtils {
 		let addInput = node.addInput;
 		node.addInput = function (name, type, extra_info) {
 			var oldInputs = [];
-			this.inputs.forEach(i => oldInputs.push(i.name));
+			this.inputs?.forEach(i => oldInputs.push(i.name));
 			var res = addInput.apply(this, arguments);
-			this.inputs.forEach(i => {
+			this.inputs?.forEach(i => {
 				if (oldInputs.includes(i.name))
 					return;
-				if (i.hasOwnProperty("name") && i.name in t["widgets"]) {
-					i.label = t["widgets"][i.name];
+				if (i.widget?.name in t["widgets"]) {
+					i.label = t["widgets"][i.widget?.name];
 				}
 			});
 			return res;

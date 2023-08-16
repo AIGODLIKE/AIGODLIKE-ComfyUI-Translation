@@ -2,8 +2,11 @@
     "Note": {
         "title": "注释"
     },
-    "Primitive": {
-        "title": "元节点"
+    "PrimitiveNode": {
+        "title": "元节点",
+        "outputs": {
+            "connect to widget input": "连接到组件输入"
+        }
     },
     "Reroute": {
         "title": "转接点"
