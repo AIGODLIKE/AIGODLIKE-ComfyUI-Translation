@@ -119,5 +119,22 @@
     "Always": "항상 실행",
     "On Event": "이벤트 시 실행",
     "Never": "실행 안함",
-    "On Trigger": "트리거 시 실행"
+    "On Trigger": "트리거 시 실행",
+    "Install Custom Nodes": "확장 노드 설치하기",
+    "Install Missing Custom Nodes": "부족한 확장 노드 설치하기",
+    "Install Models": "모델 설치하기",
+    "Update ComfyUI": "ComfyUI 업데이트",
+    "Fetch Updates": "업데이트 정보 가져오기",
+    "Alternatives of A1111": "A1111 대안 확장 찾아보기",
+    "ComfyUI Community Manual": "ComfyUI 커뮤니티 매뉴얼",
+    "Preview method: Auto": "미리보기 방식: 자동",
+    "Preview method: TAESD (slow)": "미리보기 방식: TAESD (느림)",
+    "Preview method: Latent2RGB (fast)": "미리보기 방식: Latent2RGB (빠름)",
+    "Preview method: None (very fast)": "미리보기 방식: 사용 안함 (매우 빠름)",
+    "Badge: None": "뱃지: 사용 안함",
+    "Badge: Nickname": "뱃지: 별명",
+    "Badge: #ID Nickname": "뱃지: #ID 별명",
+    "Use local DB": "로컬 DB 사용",
+    "Skip update check": "업데이트 검사 건너띄기",
+    "Prompt has no outputs": "프롬프트에 출력이 없습니다"
 }
