@@ -370,6 +370,8 @@ const ext = {
 				onclick: () => {
 					var localeLast = localStorage.getItem(TUtils.LOCALE_ID_LAST) || "en-US";
 					var locale = localStorage.getItem(TUtils.LOCALE_ID) || "en-US";
+					if(locale != "en-US" && localeLast != "en-US")
+						localeLast = "en-US";
 					if (locale != localeLast) {
 						app.ui.settings.setSettingValue(TUtils.LOCALE_ID, localeLast);
 						TUtils.setLocale(localeLast);
