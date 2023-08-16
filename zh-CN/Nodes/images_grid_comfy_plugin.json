@@ -1,0 +1,62 @@
+{
+    "LatentCombine": {
+        "title": "Latent组合",
+        "inputs": {
+            "latent_1": "Latent1",
+            "latent_2": "Latent2"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    
+    "ImageCombine": {
+        "title": "图像组合",
+        "inputs": {
+            "image_1": "图像1",
+            "image_2": "图像2"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImagesGridByColumns": {
+        "title": "由列建表",
+        "inputs": {
+            "images": "图像组",
+            "annotation": "注释"
+        },
+        "widgets": {
+            "gap": "间隔",
+            "max_columns": "最大列数"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImagesGridByRows": {
+        "title": "由行建表",
+        "inputs": {
+            "images": "图像组",
+            "annotation": "注释"
+        },
+        "widgets": {
+            "gap": "间隔",
+            "max_rows": "最大行数"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "GridAnnotation": {
+        "title": "图表注释",
+        "widgets": {
+            "column_texts": "列注释",
+            "row_texts": "行注释",
+            "font_size": "字体大小"
+        },
+        "outputs": {
+            "GRID_ANNOTATION": "注释"
+        }
+    }
+}

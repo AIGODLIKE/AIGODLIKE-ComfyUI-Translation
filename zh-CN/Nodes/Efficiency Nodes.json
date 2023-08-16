@@ -1,0 +1,475 @@
+{
+    "KSampler (Efficient)": {
+        "title": "K采样器(效率)",
+        "inputs": {
+            "model": "模型",
+            "positive": "正向提示词",
+            "negative": "反向提示词",
+            "latent_image": "Latent",
+            "optional_vae": "VAE",
+            "script": "脚本"
+        },
+        "widgets": {
+            "sampler_state": "采样状态",
+                "Sample": "采样",
+                "Hold": "不变",
+                "Script": "脚本",
+            "seed": "随机种",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "preview_method": "预览方法",
+            "vae_decode": "VAE解码",
+                "true": "是",
+                "false": "否",
+                "output only": "仅输出"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CONDITIONING+": "正向条件",
+            "CONDITIONING-": "反向条件",
+            "LATENT": "Latent",
+            "VAE": "VAE",
+            "IMAGE": "图像"
+        }
+    },
+    "KSampler Adv. (Efficient)": {
+        "title": "K采样器(高级效率)",
+        "inputs": {
+            "model": "模型",
+            "positive": "正向提示词",
+            "negative": "反向提示词",
+            "latent_image": "Latent",
+            "optional_vae": "VAE",
+            "script": "脚本"
+        },
+        "widgets": {
+            "sampler_state": "采样状态",
+                "Sample": "采样",
+                "Hold": "不变",
+                "Script": "脚本",
+            "add_noise": "添加噪波",
+                "enable": "是",
+                "disable": "否",
+            "seed": "随机种",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "start_at_step": "开始降噪步数",
+            "end_at_step": "结束降噪步数",
+            "denoise": "降噪",
+            "preview_method": "预览方法",
+            "vae_decode": "VAE解码",
+                "true": "是",
+                "false": "否",
+                "output only": "仅输出"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CONDITIONING+": "正向条件",
+            "CONDITIONING-": "反向条件",
+            "LATENT": "Latent",
+            "VAE": "VAE",
+            "IMAGE": "图像"
+        }
+    },
+    "Efficient Loader": {
+        "title": "效率加载器",
+        "inputs": {
+            "lora_stack": "Lora堆",
+            "cnet_stack": "ControlNet堆"
+        },
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "vae_name": "VAE",
+            "clip_skip": "CLIPskip",
+            "lora_name": "Lora",
+            "lora_model_strength": "Lora模型强度",
+            "lora_clip_strength": "LoraCLIP强度",
+            "positive": "正向提示词",
+            "negative": "反向提示词",
+            "empty_latent_width": "宽度",
+            "empth_latent_height": "高度",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CONDITIONING+": "正向条件",
+            "CONDITIONING-": "反向条件",
+            "LATENT": "Latent",
+            "VAE": "VAE",
+            "CLIP": "CLIP",
+            "DEPENDENCIES": "依赖"
+        }
+    },
+
+
+
+
+    "LoRA Stacker": {
+        "title": "Lora堆",
+        "inputs": {
+            "lora_stack": "Lora堆"
+        },
+        "widgets": {
+            "lora_name_1": "Lora1",
+            "lora_name_2": "Lora2",
+            "lora_name_3": "Lora3",
+            "lora_wt_1": "Lora权重1",
+            "lora_wt_2": "Lora权重2",
+            "lora_wt_3": "Lora权重3"
+        },
+        "outputs": {
+            "LORA_STACK": "Lora堆"
+        }
+    },
+    "LoRA Stacker Adv.": {
+        "title": "Lora堆(高级)",
+        "inputs": {
+            "lora_stack": "Lora堆"
+        },
+        "widgets": {
+            "lora_name_1": "Lora1",
+            "lora_name_2": "Lora2",
+            "lora_name_3": "Lora3",
+            "model_str_1": "模型强度1",
+            "model_str_2": "模型强度2",
+            "model_str_3": "模型强度3",
+            "clip_str_1": "CLIP强度1",
+            "clip_str_2": "CLIP强度2",
+            "clip_str_3": "CLIP强度3"
+        },
+        "outputs": {
+            "LORA_STACK": "Lora堆"
+        }
+    },
+    "Control Net Stacker": {
+        "title": "ControlNet堆",
+        "inputs": {
+            "control_net": "ControlNet",
+            "image": "图像",
+            "cnet_stack": "ControlNet堆"
+        },
+        "widgets": {
+            "strength": "强度"
+        },
+        "outputs": {
+            "CNET_STACK": "ControlNet堆"
+        }
+    },
+
+
+    "XY Plot": {
+        "title": "XY图表",
+        "inputs": {
+            "dependencies": "依赖"
+        },
+        "widgets": {
+            "grid_spacing": "间隔",
+            "XY_flip": "XY互换",
+            "Y_label_orientation": "Y轴方向",
+            "cache_models": "缓存模型",
+            "ksampler_output_image": "图像输出",
+                "Plot": "图表",
+                "images": "图像组"
+        },
+        "outputs": {
+            "SCRIPT": "脚本"
+        }
+    },
+
+
+    "XY Input: Seeds++ Batch": {
+        "title": "随机种个数",
+        "widgets": {
+            "batch_count": "个数"
+        }
+    },
+    "XY Input: Add/Return Noise": {
+       "title": "添加返回噪波",
+       "widgets": {
+            "XY_type": "类型",
+                "add_noise": "添加噪波",
+                "return_with_leftover_noise": "返回噪波"
+        }
+   },
+    "XY Input: Steps": {
+        "title": "步数",
+        "widgets": {
+            "selection_count": "选择数量"
+        }
+    },
+    "XY Input: Start at Step": {
+        "title": "开始步数",
+        "widgets": {
+            "first_start_step": "初始步数",
+            "las_start_step": "最终步数"
+        }
+    },
+    "XY Input: End at Step": {
+        "title": "结束步数",
+        "widgets": {
+            "first_end_step": "初始步数",
+            "las_end_step": "最终步数"
+        }
+    },
+    "XY Input: CFG Scale": {
+        "title": "CFG",
+        "widgets": {
+            "batch_count": "个数",
+            "first_cfg": "初始CFG",
+            "end_cfg": "最终CFG"
+        }
+    },
+    "XY Input: Sampler": {
+        "title": "采样器",
+        "widgets": {
+            "sampler_1": "采样器1",
+            "sampler_2": "采样器2",
+            "sampler_3": "采样器3",
+            "sampler_4": "采样器4",
+            "sampler_5": "采样器5",
+            "scheduler_1": "调度器1",
+            "scheduler_2": "调度器2",
+            "scheduler_3": "调度器3",
+            "scheduler_4": "调度器4",
+            "scheduler_5": "调度器5"
+        }
+    },
+    "XY Input: Scheduler": {
+        "title": "调度器",
+        "widgets": {
+            "scheduler_1": "调度器1",
+            "scheduler_2": "调度器2",
+            "scheduler_3": "调度器3",
+            "scheduler_4": "调度器4",
+            "scheduler_5": "调度器5"
+        }
+    },
+    "XY Input: Denoise": {
+        "title": "降噪",
+        "widgets": {
+            "select_count": "选择数量",
+            "first_denoise": "初始降噪",
+            "end_denoise": "最终降噪"
+        }
+    },
+    "XY Input: VAE": {
+        "title": "VAE",
+        "widgets": {
+            "vae_1": "VAE1",
+            "vae_2": "VAE2",
+            "vae_3": "VAE3",
+            "vae_4": "VAE4",
+            "vae_5": "VAE5"
+        }
+    },
+    "XY Input: Positive Prompt S/R": {
+        "title": "替换正向条件",
+        "widgets": {
+            "search_txt": "检索",
+            "replace_count": "替换数量",
+            "replace_1": "替换1",
+            "replace_2": "替换2",
+            "replace_3": "替换3",
+            "replace_4": "替换4",
+            "replace_5": "替换5"
+        }
+    },
+    "XY Input: Negative Prompt S/R": {
+        "title": "替换反向条件",
+        "widgets": {
+            "search_txt": "检索",
+            "replace_count": "替换数量",
+            "replace_1": "替换1",
+            "replace_2": "替换2",
+            "replace_3": "替换3",
+            "replace_4": "替换4",
+            "replace_5": "替换5"
+        }
+    },
+    "XY Input: Checkpoint": {
+        "title": "模型",
+        "widgets": {
+            "ckpt_name_1": "模型1",
+            "ckpt_name_2": "模型2",
+            "ckpt_name_3": "模型3",
+            "ckpt_name_4": "模型4",
+            "ckpt_name_5": "模型5",
+            "clip_skip_1": "CLIPskip1",
+            "clip_skip_2": "CLIPskip2",
+            "clip_skip_3": "CLIPskip3",
+            "clip_skip_4": "CLIPskip4",
+            "clip_skip_5": "CLIPskip5"
+        }
+    },
+    "XY Input: Clip Skip": {
+        "title": "CLIPskip",
+        "widgets": {
+            "clip_skip_1": "CLIPskip1",
+            "clip_skip_2": "CLIPskip2",
+            "clip_skip_3": "CLIPskip3",
+            "clip_skip_4": "CLIPskip4",
+            "clip_skip_5": "CLIPskip5"
+        }
+    },
+    "XY Input: LoRA": {
+        "title": "LoRA",
+        "inputs": {
+            "lora_stack": "Lora堆"
+        },
+        "widgets": {
+            "model_strengths": "模型权重",
+            "clip_strengths": "CLIP权重",
+            "lora_name_1": "模型1",
+            "lora_name_2": "模型2",
+            "lora_name_3": "模型3",
+            "lora_name_4": "模型4",
+            "lora_name_5": "模型5"
+        }
+    },
+    "XY Input: LoRA Adv.": {
+        "title": "高级LoRA",
+        "inputs": {
+            "lora_stack": "Lora堆"
+        },
+        "widgets": {
+            "model_str_1": "模型权重1",
+            "model_str_2": "模型权重2",
+            "model_str_3": "模型权重3",
+            "model_str_4": "模型权重4",
+            "model_str_5": "模型权重5",
+            "clip_str_1": "CLIP权重1",
+            "clip_str_2": "CLIP权重2",
+            "clip_str_3": "CLIP权重3",
+            "clip_str_4": "CLIP权重4",
+            "clip_str_5": "CLIP权重5"
+        }
+    },
+    "XY Input: LoRA Stacks": {
+        "title": "LoRA堆",
+        "inputs": {
+            "lora_stack_1": "LoRA堆1",
+            "lora_stack_2": "LoRA堆2",
+            "lora_stack_3": "LoRA堆3",
+            "lora_stack_4": "LoRA堆4",
+            "lora_stack_5": "LoRA堆5"
+        },
+        "widgets": {
+            "node_state": "节点状态",
+                "Enabled": "开启",
+                "Disabled": "关闭"
+        }
+    },
+    "XY Input: Control Net Strengths": {
+        "title": "ControlNet强度",
+        "inputs": {
+            "control_net": "ControlNet",
+            "image": "图像",
+            "cnet_stack": "ControlNet堆"
+        },
+        "widgets": {
+            "batch_count": "个数",
+            "first_strength": "初始强度",
+            "last_strength": "最终强度"
+        }
+    },
+    "XY Input: Manual XY Entry": {
+        "title": "手动输入",
+        "widgets": {
+            "X_type": "X类型",
+            "X_value": "X值",
+            "Y_type": "Y类型",
+            "Y_value": "Y值"
+        }
+    },
+    "Manual XY Entry Info": {
+        "title": "手动输入说明"
+    },
+    "Join XY Inputs of Same Type": {
+        "title": "合并同类XY"
+    },
+    
+
+
+
+    "Image Overlay": {
+        "title": "图像覆盖",
+        "inputs": {
+            "base_image": "基础图像",
+            "overlay_image": "覆盖图像",
+            "optional_mask": "遮罩"
+        },
+        "widgets": {
+            "overlay_resize": "缩放模式",
+                "None": "无",
+                "Fit": "自适应",
+                "Resize by rescale_factor": "按系数",
+                "Resize to width & heigth": "按宽高",
+            "resize_method": "缩放方法",
+                "nearest-exact": "邻近-精确",
+                "bilinear": "双线性插值",
+                "area": "区域",
+            "rescale_factor": "系数",
+            "width": "宽度",
+            "height": "高度",
+            "x_offset": "X偏移",
+            "y_offset": "Y偏移",
+            "rotation": "旋转",
+            "opacity": "不透明度"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+
+
+    "Evaluate Integers": {
+        "title": "整数运算",
+        "widgets": {
+            "python_expression": "Python表达式",
+            "print_to_console": "输出至控制台",
+                "False": "否",
+                "True": "是"
+        },
+        "outputs": {
+            "INT": "整数",
+            "FLOAT": "浮点",
+            "STRING": "字符串"
+        }
+    },
+    "Evaluate Floats": {
+        "title": "浮点运算",
+        "widgets": {
+            "python_expression": "Python表达式",
+            "print_to_console": "输出至控制台",
+                "False": "否",
+                "True": "是"
+        },
+        "outputs": {
+            "INT": "整数",
+            "FLOAT": "浮点",
+            "STRING": "字符串"
+        }
+    },
+    "Evaluate Strings": {
+        "title": "字符串运算",
+        "widgets": {
+            "python_expression": "Python表达式",
+            "print_to_console": "输出至控制台",
+                "False": "否",
+                "True": "是"
+        },
+        "outputs": {
+            "INT": "整数",
+            "FLOAT": "浮点",
+            "STRING": "字符串"
+        }
+    },
+    "Simple Eval Examples": {
+        "title": "运算示例"
+    }
+}

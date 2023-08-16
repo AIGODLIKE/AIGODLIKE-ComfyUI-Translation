@@ -1,0 +1,1231 @@
+{
+    "ImpactKSamplerBasicPipe": {
+        "title": "K采样器(节点束)",
+        "inputs": {
+            "BASIC_PIPE": "基础节点束",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "BASIC_PIPE": "基础节点束",
+            "LATENT": "Latent",
+            "VAE": "VAE"
+        }
+    },
+    "ImpactKSamplerAdvancedBasicPipe": {
+        "title": "K采样器(高级节点束)",
+        "inputs": {
+            "BASIC_PIPE": "基础节点束",
+            "add_noise": "添加噪波",
+            "latent_image": "Latent",
+            "return_with_leftover_noise": "返回噪波"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "BASIC_PIPE": "基础节点束",
+            "LATENT": "Latent",
+            "VAE": "VAE"
+        }
+    },
+
+
+
+    "CLIPSegDetectorProvider": {
+        "title": "CLIPSeg检测器",
+        "widgets": {
+            "text": "文本",
+            "blur": "模糊",
+            "threshold": "阈值",
+            "dilation_factor": "膨胀"
+        },
+        "outputs": {
+            "BBOX_DETECTOR": "BBox检测"
+        }
+    },
+    "EmptySegs": {
+        "title": "空Seg",
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "PreviewBridge": {
+        "title": "桥接预览",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    },
+    "ImageSender": {
+        "title": "图像发送",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀",
+            "link_id": "连接ID"
+        }
+    },
+    "ImageReceiver": {
+        "title": "图像接收",
+        "widgets": {
+            "image": "图像",
+            "link_id": "连接ID"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    },
+    "LatentSender": {
+        "title": "Latent发送",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀",
+            "link_id": "连接ID"
+        }
+    },
+    "LatentReceiver": {
+        "title": "Latent接收",
+        "widgets": {
+            "latent": "Latent",
+            "link_id": "连接ID"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "LatentSwitch": {
+        "title": "Latent切换",
+        "inputs": {
+            "latent1": "Latent1",
+            "latent2_opt": "Latent2",
+            "latent3_opt": "Latent3",
+            "latent4_opt": "Latent4"
+        },
+        "widgets": {
+            "select": "选择"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "SEGSSwitch": {
+        "title": "Seg切换",
+        "inputs": {
+            "Seg": "Seg1",
+            "segs2_opt": "Seg2",
+            "segs3_opt": "Seg3",
+            "segs4_opt": "Seg4"
+        },
+        "widgets": {
+            "select": "选择"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "SEGSToImageList": {
+        "title": "Seg到图像列表",
+        "inputs": {
+            "segs": "Seg",
+            "fallback_image_opt": "备用图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImpactSEGSToMaskList": {
+        "title": "Seg到遮罩列表",
+        "inputs": {
+            "segs": "Seg"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "ImpactSEGSConcat": {
+        "title": "Seg联结",
+        "inputs": {
+            "segs1": "Seg1",
+            "segs2": "Seg2"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "ReencodeLatent": {
+        "title": "重编码Latent",
+        "inputs": {
+            "samples": "Latent",
+            "input_vae": "解码VAE",
+            "output_vae": "编码VAE"
+        },
+        "widgets": {
+            "tile_mode": "分块模式",
+                "Decode(input) only": "仅解码",
+                "Encode(output) only": "仅编码"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "ReencodeLatentPipe": {
+        "title": "重编码Latent节点束",
+        "inputs": {
+            "samples": "Latent",
+            "input_basic_pipe": "解码节点束",
+            "output_basic_pipe": "编码节点束"
+        },
+        "widgets": {
+            "tile_mode": "分块模式",
+                "Decode(input) only": "仅解码",
+                "Encode(output) only": "仅编码"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "ImpactImageBatchToImageList": {
+        "title": "图像组到图像列表",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImpactSEGSLabelFilter": {
+        "title": "Seg标签过滤",
+        "inputs": {
+            "segs": "Seg"
+        },
+        "widgets": {
+            "preset": "预设",
+            "labels": "标签"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "ImpactSEGSRangeFilter": {
+        "title": "Seg范围过滤",
+        "inputs": {
+            "segs": "Seg"
+        },
+        "widgets": {
+            "target": "目标",
+            "min_value": "最小值",
+            "max_value": "最大值"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "ImpactSEGSOrderedFilter": {
+        "title": "Seg次序过滤",
+        "inputs": {
+            "segs": "Seg"
+        },
+        "widgets": {
+            "take_start": "开始序号",
+            "take_count": "数量"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+
+
+
+
+    "BitwiseAndMaskForEach": {
+        "title": "Seg交集",
+        "inputs": {
+            "base_segs": "基础seg",
+            "mask_segs": "遮罩seg"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "SubtractMaskForEach": {
+        "title": "Seg相减",
+        "inputs": {
+            "base_segs": "基础seg",
+            "mask_segs": "遮罩seg"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "BitwiseAndMask": {
+        "title": "遮罩交集",
+        "inputs": {
+            "mask1": "遮罩1",
+            "mask2": "遮罩2"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "SubtractMask": {
+        "title": "遮罩相减",
+        "inputs": {
+            "mask1": "遮罩1",
+            "mask2": "遮罩2"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "AddMask": {
+        "title": "遮罩相加",
+        "inputs": {
+            "mask1": "遮罩1",
+            "mask2": "遮罩2"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "Segs & Mask": {
+        "title": "Seg遮罩",
+        "inputs": {
+            "segs": "Seg",
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "Segs & Mask ForEach": {
+        "title": "批量Seg遮罩",
+        "inputs": {
+            "segs": "Seg",
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "MaskToSEGS": {
+        "title": "遮罩到Seg",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "crop_factor": "裁剪系数",
+            "combined": "是否合并",
+                "False": "否",
+                "True": "是",
+            "bbox_fill": "填充BBox",
+                "disabled": "关闭",
+                "enabled": "开启",
+            "drop_size": "最小尺寸"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "ToBinaryMask": {
+        "title": "遮罩二值化",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "threshold": "阈值"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "MasksToMaskList": {
+        "title": "遮罩组到遮罩列表",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "threshold": "阈值"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "SegsToCombinedMask": {
+        "title": "Seg到遮罩",
+        "inputs": {
+            "segs": "Seg"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+
+
+
+    "DetailerForEach": {
+        "title": "局部细化",
+        "inputs": {
+            "image": "图像",
+            "segs": "Seg",
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE",
+            "positive": "正向提示词",
+            "negative": "反向提示词"
+        },
+        "widgets": {
+            "guide_size": "引导大小",
+            "guide_size_for": "引导目标",
+                "bbox": "BBox",
+                "crop_region": "裁剪区域",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "feather": "羽化"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "DetailerForEachPipe": {
+        "title": "局部细化(节点束)",
+        "inputs": {
+            "image": "图像",
+            "segs": "Seg",
+            "basic_pipe": "基础节点束"
+        },
+        "widgets": {
+            "guide_size": "引导大小",
+            "guide_size_for": "引导目标",
+                "bbox": "BBox",
+                "crop_region": "裁剪区域",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "feather": "羽化"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "DetailerForEachDebug": {
+        "title": "局部细化(高级)",
+        "inputs": {
+            "image": "图像",
+            "segs": "Seg",
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE",
+            "positive": "正向提示词",
+            "negative": "反向提示词"
+        },
+        "widgets": {
+            "guide_size": "引导大小",
+            "guide_size_for": "引导目标",
+                "bbox": "BBox",
+                "crop_region": "裁剪区域",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "feather": "羽化"
+        },
+        "outputs": {
+            "image": "图像",
+            "cropped": "裁剪图像",
+            "cropped_refined": "细化图像",
+            "cropped_refined_alpha": "细化通道"
+        }
+    },
+    "DetailerForEachDebugPipe": {
+        "title": "局部细化(高级节点束)",
+        "inputs": {
+            "image": "图像",
+            "segs": "Seg",
+            "basic_pipe": "基础节点束"
+        },
+        "widgets": {
+            "guide_size": "引导大小",
+            "guide_size_for": "引导目标",
+                "bbox": "BBox",
+                "crop_region": "裁剪区域",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "feather": "羽化"
+        },
+        "outputs": {
+            "image": "图像",
+            "cropped": "裁剪图像",
+            "cropped_refined": "细化图像",
+            "cropped_refined_alpha": "细化通道"
+        }
+    },
+
+
+
+
+    "SAMDetectorCombined": {
+        "title": "SAM检测合并",
+        "inputs": {
+            "sam_model": "SAM模型",
+            "segs": "Seg",
+            "images": "图像"
+        },
+        "widgets": {
+            "detection_hint": "检测提示",
+                "center-1": "中心",
+                "horizontal-2": "水平",
+                "vertical-2": "竖直",
+                "rect-4": "斜角",
+                "diamond-4": "菱形",
+                "mask-area": "遮罩区域",
+                "mask-points": "遮罩点",
+                "mask-point-bbox": "遮罩点BBox",
+            "dilation": "膨胀",
+            "bbox_expansion": "BBox扩展",
+            "mask_hint_threshold": "遮罩检测阈值",
+            "mask_hint_use_negative": "反向遮罩提示"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "SAMDetectorSegmented": {
+        "title": "SAM检测分割",
+        "inputs": {
+            "sam_model": "SAM模型",
+            "segs": "Seg",
+            "images": "图像"
+        },
+        "widgets": {
+            "detection_hint": "检测提示",
+                "center-1": "中心",
+                "horizontal-2": "水平",
+                "vertical-2": "竖直",
+                "rect-4": "斜角",
+                "diamond-4": "菱形",
+                "mask-area": "遮罩区域",
+                "mask-points": "遮罩点",
+                "mask-point-bbox": "遮罩点BBox",
+            "dilation": "膨胀",
+            "bbox_expansion": "BBox扩展",
+            "mask_hint_threshold": "遮罩检测阈值",
+            "mask_hint_use_negative": "反向遮罩提示"
+        },
+        "outputs": {
+            "combined_mask": "遮罩",
+            "batch_masks": "遮罩组"
+        }
+    },
+    "BboxDetectorSEGS": {
+        "title": "BBox检测到Seg",
+        "inputs": {
+            "bbox_detector": "BBox检测",
+            "image": "图像"
+        },
+        "widgets": {
+            "threshold": "阈值",
+            "dilation": "膨胀",
+            "crop_factor": "裁剪系数",
+            "drop_size": "最小尺寸"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "SegmDetectorSEGS": {
+        "title": "Segm检测到Seg",
+        "inputs": {
+            "segm_detector": "Segm检测",
+            "image": "图像"
+        },
+        "widgets": {
+            "threshold": "阈值",
+            "dilation": "膨胀",
+            "crop_factor": "裁剪系数",
+            "drop_size": "最小尺寸"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "ONNXDetectorSEGS": {
+        "title": "ONNX检测到Seg",
+        "inputs": {
+            "onnx_detector": "ONNX检测",
+            "image": "图像"
+        },
+        "widgets": {
+            "threshold": "阈值",
+            "dilation": "膨胀",
+            "crop_factor": "裁剪系数",
+            "drop_size": "最小尺寸"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "BboxDetectorCombined_v2": {
+        "title": "BBox检测器v2",
+        "inputs": {
+            "bbox_detector": "BBox检测",
+            "image": "图像"
+        },
+        "widgets": {
+            "threshold": "阈值",
+            "dilation": "膨胀"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "SegmDetectorCombined_v2": {
+        "title": "Segm检测器v2",
+        "inputs": {
+            "segm_detector": "Segm检测",
+            "image": "图像"
+        },
+        "widgets": {
+            "threshold": "阈值",
+            "dilation": "膨胀"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+
+
+
+
+    "FaceDetailer": {
+        "title": "向部细化",
+        "inputs": {
+            "image": "图像",
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE",
+            "positive": "正向提示词",
+            "negative": "反向提示词",
+            "bbox_detector": "BBox检测",
+            "sam_model_opt": "SAM模型",
+            "segm_detector_opt": "Segm检测"
+        },
+        "widgets": {
+            "guide_size": "引导大小",
+            "max_size": "最大引导",
+            "guide_size_for": "引导目标",
+                "bbox": "BBox",
+                "crop_region": "裁剪区域",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "feather": "羽化",
+            "bbox_threshold": "BBox阈值",
+            "bbox_dilation": "BBox膨胀",
+            "bbox_crop_factor": "BBox裁剪系数",
+            "sam_detection_hint": "SAM检测提示",
+                "center-1": "中心",
+                "horizontal-2": "水平",
+                "vertical-2": "竖直",
+                "rect-4": "斜角",
+                "diamond-4": "菱形",
+                "mask-area": "遮罩区域",
+                "mask-points": "遮罩点",
+                "mask-point-bbox": "遮罩点BBox",
+            "sam_dilation": "SAM膨胀",
+            "sam_bbox_expansion": "SAMBBox扩展",
+            "sam_mask_hint_threshold": "SAM遮罩检测阈值",
+            "sam_mask_hint_use_negative": "SAM反向遮罩提示",
+            "drop_size": "最小尺寸"
+        },
+        "outputs": {
+            "image": "图像",
+            "cropped_refined": "细化图像",
+            "cropped_enhanced_alpha": "细化部分",
+            "mask": "遮罩",
+            "detailer_pipe": "细化节点束"
+        }
+    },
+    "FaceDetailerPipe": {
+        "title": "向部细化(节点束)",
+        "inputs": {
+            "image": "图像",
+            "detailer_pipe": "细化节点束"
+        },
+        "widgets": {
+            "guide_size": "引导大小",
+            "max_size": "最大引导",
+            "guide_size_for": "引导目标",
+                "bbox": "BBox",
+                "crop_region": "裁剪区域",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "feather": "羽化",
+            "noise_mask": "仅生成遮罩",
+            "force_inpaint": "强制重绘",
+            "bbox_threshold": "BBox阈值",
+            "bbox_dilation": "BBox膨胀",
+            "bbox_crop_factor": "BBox裁剪系数",
+            "sam_detection_hint": "SAM检测提示",
+                "center-1": "中心",
+                "horizontal-2": "水平",
+                "vertical-2": "竖直",
+                "rect-4": "斜角",
+                "diamond-4": "菱形",
+                "mask-area": "遮罩区域",
+                "mask-points": "遮罩点",
+                "mask-point-bbox": "遮罩点BBox",
+            "sam_dilation": "SAM膨胀",
+            "sam_bbox_expansion": "SAMBBox扩展",
+            "sam_mask_hint_threshold": "SAM遮罩检测阈值",
+            "sam_mask_hint_use_negative": "SAM反向遮罩提示",
+            "drop_size": "最小尺寸"
+        },
+        "outputs": {
+            "image": "图像",
+            "cropped_refined": "细化图像",
+            "cropped_enhanced_alpha": "细化部分",
+            "mask": "遮罩",
+            "detailer": "细化节点束"
+        }
+    },
+    "SEGSDetailer": {
+        "title": "Seg细化",
+        "inputs": {
+            "image": "图像",
+            "segs": "Seg",
+            "basic_pipe": "基础节点束"
+        },
+        "widgets": {
+            "guide_size": "引导大小",
+            "max_size": "最大引导",
+            "seed": "随机种",
+                "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "SEGSPaste": {
+        "title": "Seg粘贴",
+        "inputs": {
+            "image": "图像",
+            "segs": "Seg",
+            "ref_image_opt": "参考图像"
+        },
+        "widgets": {
+            "feather": "羽化"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "SEGSPreview": {
+        "title": "Seg预览",
+        "inputs": {
+            "segs": "Seg",
+            "fallback_image_opt": "备用图像"
+        }
+    },
+
+
+
+
+    "LatentPixelScale": {
+        "title": "Latent像素缩放",
+        "inputs": {
+            "samples": "Latent",
+            "vae": "VAE",
+            "upscale_model_opt": "放大模型"
+        },
+        "widgets": {
+            "scale_method": "放大方法",
+                "nearest-exact": "邻近-精确",
+                "bilinear": "双线性插值",
+                "area": "区域",
+            "scale_factor": "缩放系数",
+            "use_tiled_vae": "使用分块VAE"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "PixelKSampleUpscalerProvider": {
+        "title": "像素K采样缩放器",
+        "inputs": {
+            "model": "模型",
+            "vae": "VAE",
+            "positive": "正向提示词",
+            "negative": "反向提示词",
+            "upscale_model_opt": "放大模型",
+            "pk_hook_opt": "约束"
+        },
+        "widgets": {
+            "scale_method": "放大方法",
+                "nearest-exact": "邻近-精确",
+                "bilinear": "双线性插值",
+                "area": "区域",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "use_tiled_vae": "使用分块VAE"
+        },
+        "outputs": {
+            "UPSCALER": "缩放"
+        }
+    },
+    "PixelKSampleUpscalerProviderPipe": {
+        "title": "K采样像素缩放器(节点束)",
+        "inputs": {
+            "basic_pipe": "基础节点束",
+            "upscale_model_opt": "放大模型",
+            "pk_hook_opt": "约束"
+        },
+        "widgets": {
+            "scale_method": "放大方法",
+                "nearest-exact": "邻近-精确",
+                "bilinear": "双线性插值",
+                "area": "区域",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "use_tiled_vae": "使用分块VAE"
+        },
+        "outputs": {
+            "UPSCALER": "缩放"
+        }
+    },
+    "IterativeLatentUpscale": {
+        "title": "Latent迭代缩放",
+        "inputs": {
+            "samples": "Latent",
+            "upscaler": "缩放"
+        },
+        "widgets": {
+            "upscale_factor": "缩放系数",
+            "steps": "步数",
+            "temp_prefix": "前缀"
+        },
+        "outputs": {
+            "latent": "Latent"
+        }
+    },
+    "IterativeImageUpscale": {
+        "title": "图像迭代缩放",
+        "inputs": {
+            "pixels": "图像",
+            "upscaler": "缩放",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "upscale_factor": "缩放系数",
+            "steps": "步数",
+            "temp_prefix": "前缀"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "PixelTiledKSampleUpscalerProvider": {
+        "title": "K采样像素缩放器(分块)",
+        "inputs": {
+            "model": "模型",
+            "vae": "VAE",
+            "positive": "正向提示词",
+            "negative": "反向提示词",
+            "upscale_model_opt": "放大模型",
+            "pk_hook_opt": "约束"
+        },
+        "widgets": {
+            "scale_method": "放大方法",
+                "nearest-exact": "邻近-精确",
+                "bilinear": "双线性插值",
+                "area": "区域",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "tile_width": "分块宽度",
+            "tile_height": "分块高度",
+            "tiling_strategy": "分块策略",
+                "random": "随机",
+                "padded": "分区",
+                "simple": "简易"
+        },
+        "outputs": {
+            "UPSCALER": "缩放"
+        }
+    },
+    "PixelTiledKSampleUpscalerProviderPipe": {
+        "title": "K采样像素缩放器(分块节点束)",
+        "inputs": {
+            "model": "模型",
+            "vae": "VAE",
+            "positive": "正向提示词",
+            "negative": "反向提示词",
+            "upscale_model_opt": "放大模型",
+            "pk_hook_opt": "约束"
+        },
+        "widgets": {
+            "scale_method": "放大方法",
+                "nearest-exact": "邻近-精确",
+                "bilinear": "双线性插值",
+                "area": "区域",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "tile_width": "分块宽度",
+            "tile_height": "分块高度",
+            "tiling_strategy": "分块策略",
+                "random": "随机",
+                "padded": "分区",
+                "simple": "简易"
+        },
+        "outputs": {
+            "UPSCALER": "缩放"
+        }
+    },
+    "TwoSamplersForMaskUpscalerProvider": {
+        "title": "双采样缩放器",
+        "inputs": {
+            "base_sampler": "基础采样器",
+            "mask_sampler": "遮罩采样器",
+            "mask": "遮罩",
+            "vae": "VAE",
+            "full_sampler_opt": "全局采样器",
+            "upscale_model_opt": "放大模型",
+            "pk_hook_base_opt": "基础约束",
+            "pk_hook_mask_opt": "遮罩约束",
+            "pk_hook_full_opt": "全局约束"
+        },
+        "widgets": {
+            "scale_method": "放大方法",
+                "nearest-exact": "邻近-精确",
+                "bilinear": "双线性插值",
+                "area": "区域",
+            "full_sample_schedule": "采样调度器",
+                "interleave1": "交错1",
+                "interleave2": "交错2",
+                "interleave3": "交错3",
+                "last1": "连续1",
+                "last2": "连续2",
+                "interleave1+last1": "交错1+连续1",
+                "interleave2+last1": "交错2+连续1",
+                "interleave3+last1": "交错3+连续1",
+            "use_tiled_vae": "使用分块VAE"
+        },
+        "outputs": {
+            "UPSCALER": "缩放"
+        }
+    },
+    "TwoSamplersForMaskUpscalerProviderPipe": {
+        "title": "双采样缩放器(节点束)",
+        "inputs": {
+            "base_sampler": "基础采样器",
+            "mask_sampler": "遮罩采样器",
+            "mask": "遮罩",
+            "basic_pipe": "基础节点束",
+            "full_sampler_opt": "全局采样器",
+            "upscale_model_opt": "放大模型",
+            "pk_hook_base_opt": "基础约束",
+            "pk_hook_mask_opt": "遮罩约束",
+            "pk_hook_full_opt": "全局约束"
+        },
+        "widgets": {
+            "scale_method": "放大方法",
+                "nearest-exact": "邻近-精确",
+                "bilinear": "双线性插值",
+                "area": "区域",
+            "full_sample_schedule": "采样调度器",
+                "interleave1": "交错1",
+                "interleave2": "交错2",
+                "interleave3": "交错3",
+                "last1": "连续1",
+                "last2": "连续2",
+                "interleave1+last1": "交错1+连续1",
+                "interleave2+last1": "交错2+连续1",
+                "interleave3+last1": "交错3+连续1",
+            "use_tiled_vae": "使用分块VAE"
+        },
+        "outputs": {
+            "UPSCALER": "缩放"
+        }
+    },
+    "PixelKSampleHookCombine": {
+        "title": "约束组合",
+        "inputs": {
+            "hook1": "约束1",
+            "hook2": "约束2"
+        },
+        "outputs": {
+            "PK_HOOK": "约束"
+        }
+    },
+    "DenoiseScheduleHookProvider": {
+        "title": "降噪约束器",
+        "widgets": {
+            "scheduler_for_iteration": "调度插值",
+            "target_denoise": "目标降噪"
+        },
+        "outputs": {
+            "PK_HOOK": "约束"
+        }
+    },
+    "CfgScheduleHookProvider": {
+        "title": "CFG约束器",
+        "widgets": {
+            "scheduler_for_iteration": "调度插值",
+            "target_cfg": "目标CFG"
+        },
+        "outputs": {
+            "PK_HOOK": "约束"
+        }
+    },
+
+
+
+
+    "KSamplerProvider": {
+        "title": "K采样提供器(节点束)",
+        "inputs": {
+            "basic_pipe": "基础节点束"
+        },
+        "widgets": {
+            "seed": "随机种",
+                "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "KSAMPLER": "K采样器"
+        }
+    },
+    "TwoSamplersForMask": {
+        "title": "双采样器",
+        "inputs": {
+            "latent_image": "Latent",
+            "base_sampler": "基础采样器",
+            "mask_sampler": "遮罩采样器",
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "TiledKSamplerProvider": {
+        "title": "K采样提供器(分块节点束)",
+        "inputs": {
+            "basic_pipe": "基础节点束"
+        },
+        "widgets": {
+            "seed": "随机种",
+                "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "tile_width": "分块宽度",
+            "tile_height": "分块高度",
+            "tiling_strategy": "分块策略",
+                "random": "随机",
+                "padded": "分区",
+                "simple": "简易"
+        },
+        "outputs": {
+            "KSAMPLER": "K采样器"
+        }
+    },
+    "KSamplerAdvancedProvider": {
+        "title": "K采样提供器(高级节点束)",
+        "inputs": {
+            "basic_pipe": "基础节点束"
+        },
+        "widgets": {
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器"
+        },
+        "outputs": {
+            "KSAMPLER_ADVANCED": "K采样器(高级)"
+        }
+    },
+    "TwoAdvancedSamplersForMask": {
+        "title": "双采样器(高级)",
+        "inputs": {
+            "samples": "Latent",
+            "base_sampler": "基础采样器",
+            "mask_sampler": "遮罩采样器",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "denoise": "降噪",
+            "overlap_factor": "覆盖系数"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+
+
+
+
+    "RegionalPrompt": {
+        "title": "区域提示词",
+        "inputs": {
+            "mask": "遮罩",
+            "advanced_sampler": "K采样器(高级)"
+        },
+        "outputs": {
+            "regional_prompts": "区域提示词"
+        }
+    },
+    "CombineRegionalPrompts": {
+        "title": "合并区域提示词",
+        "inputs": {
+            "regional_prompts1": "区域提示词1",
+            "regional_prompts2": "区域提示词2"
+        },
+        "outputs": {
+            "REGIONAL_PROMPTS": "区域提示词"
+        }
+    },
+    "RegionalSampler": {
+        "title": "区域采样",
+        "inputs": {
+            "samples": "Latent",
+            "base_sampler": "K采样器(高级)",
+            "regional_prompts": "区域提示词"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "denoise": "降噪",
+            "overlap_factor": "覆盖系数"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    }
+}
