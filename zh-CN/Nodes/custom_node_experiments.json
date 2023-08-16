@@ -1,6 +1,6 @@
 {
     "ReferenceOnlySimple": {
-        "title": "简易参考",
+        "title": "简易仅参考",
         "inputs": {
             "model": "模型",
             "reference": "参考Latent"

@@ -15,7 +15,7 @@
         }
     },
     "PoseNode": {
-        "title": "绘画",
+        "title": "姿态",
         "widgets": {
             "image": "图像"
         },
