@@ -1,6 +1,6 @@
 {
     "HEDPreprocessor": {
-        "title": "HED模糊线",
+        "title": "HED模糊线预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -15,7 +15,7 @@
         }
     },
     "ScribblePreprocessor": {
-        "title": "Scribble涂鸦",
+        "title": "Scribble涂鸦预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -24,7 +24,7 @@
         }
     },
     "FakeScribblePreprocessor": {
-        "title": "FakeScribble伪涂鸦",
+        "title": "FakeScribble伪涂鸦预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -33,7 +33,7 @@
         }
     },
     "BinaryPreprocessor": {
-        "title": "Binary二值化",
+        "title": "Binary二值化预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -45,7 +45,7 @@
         }
     },
     "PiDiNetPreprocessor": {
-        "title": "PidiNet模糊线",
+        "title": "PidiNet模糊线预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -59,7 +59,7 @@
         }
     },
     "LineArtPreprocessor": {
-        "title": "LineArt艺术线",
+        "title": "LineArt艺术线预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -73,7 +73,7 @@
         }
     },
     "AnimeLineArtPreprocessor": {
-        "title": "AnimeLineArt动漫艺术线",
+        "title": "AnimeLineArt动漫艺术线预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -82,7 +82,7 @@
         }
     },
     "Manga2Anime-LineArtPreprocessor": {
-        "title": "Manga2Anime-LineArt漫画艺术线",
+        "title": "Manga2Anime-LineArt漫画艺术线预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -91,7 +91,7 @@
         }
     },
     "CannyEdgePreprocessor": {
-        "title": "Canny细致线",
+        "title": "Canny细致线预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -107,7 +107,7 @@
         }
     },
     "M-LSDPreprocessor": {
-        "title": "M-LSD线段",
+        "title": "M-LSD线段预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -124,7 +124,7 @@
 
 
     "MiDaS-DepthMapPreprocessor": {
-        "title": "MiDaS深度",
+        "title": "MiDaS深度预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -137,7 +137,7 @@
         }
     },
     "MiDaS-NormalMapPreprocessor": {
-        "title": "MiDaS法向",
+        "title": "MiDaS法向预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -150,7 +150,7 @@
         }
     },
     "LeReS-DepthMapPreprocessor": {
-        "title": "LeReS深度",
+        "title": "LeReS深度预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -163,7 +163,7 @@
         }
     },
     "BAE-NormalMapPreprocessor": {
-        "title": "BAE法向",
+        "title": "BAE法向预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -172,7 +172,7 @@
         }
     },
     "Zoe-DepthMapPreprocessor": {
-        "title": "Zoe深度",
+        "title": "Zoe深度预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -185,7 +185,7 @@
 
 
     "OpenposePreprocessor": {
-        "title": "Openpose姿态",
+        "title": "Openpose姿态预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -202,7 +202,7 @@
         }
     },
     "MediaPipe-HandPosePreprocessor": {
-        "title": "MediaPipe姿态",
+        "title": "MediaPipe姿态预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -221,7 +221,7 @@
 
 
     "SemSegPreprocessor": {
-        "title": "Sem语义分割",
+        "title": "Sem语义分割预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -230,7 +230,7 @@
         }
     },
     "UniFormer-SemSegPreprocessor": {
-        "title": "UniFormer语义分割",
+        "title": "UniFormer语义分割预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -239,7 +239,7 @@
         }
     },
     "OneFormer-COCO-SemSegPreprocessor": {
-        "title": "OF-COCO语义分割",
+        "title": "OF-COCO语义分割预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -248,7 +248,7 @@
         }
     },
     "OneFormer-ADE20K-SemSegPreprocessor": {
-        "title": "OF-ADE20K语义分割",
+        "title": "OF-ADE20K语义分割预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -261,7 +261,7 @@
 
 
     "MediaPipe-FaceMeshPreprocessor": {
-        "title": "MediaPipe面部网格",
+        "title": "MediaPipe面部网格预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -274,7 +274,7 @@
         }
     },
     "ColorPreprocessor": {
-        "title": "Color颜色",
+        "title": "Color颜色预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -283,7 +283,7 @@
         }
     },
     "TilePreprocessor": {
-        "title": "Tile平铺",
+        "title": "Tile平铺预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -295,7 +295,7 @@
         }
     },
     "InpaintPreprocessor": {
-        "title": "Inpaint内补",
+        "title": "Inpaint内补预处理器",
         "inputs": {
             "image": "图像",
             "mask": "遮罩"
@@ -307,7 +307,7 @@
         }
     },
     "ShufflePreprocessor": {
-        "title": "Shuffle内容重组",
+        "title": "Shuffle内容重组预处理器",
         "inputs": {
             "image": "图像"
         },
