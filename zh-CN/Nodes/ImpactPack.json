@@ -924,7 +924,7 @@
         }
     },
     "FromBasicPipe_v2": {
-        "title": "123",
+        "title": "从基础束v2",
         "inputs": {
             "BASIC_PIPE": "基础节点束"
         },
@@ -1494,7 +1494,7 @@
         }
     },
     "UltralyticsDetectorProvider": {
-        "title": "123",
+        "title": "检测加载器",
         "widgets": {
             "model_name": "模型名称"
         },
