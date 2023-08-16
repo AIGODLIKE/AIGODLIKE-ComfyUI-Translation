@@ -343,7 +343,7 @@
     "MaskToSEGS": {
         "title": "遮罩到Seg",
         "inputs": {
-            "mask": "遮罩"
+            "mask": "遮罩",
         },
         "widgets": {
             "crop_factor": "裁剪系数",
@@ -353,7 +353,7 @@
             "bbox_fill": "填充BBox",
                 "disabled": "关闭",
                 "enabled": "开启",
-            "drop_size": "最小尺寸"
+            "drop_size": "最小尺寸",
         },
         "outputs": {
             "SEGS": "Seg"
@@ -403,8 +403,8 @@
             "model": "模型",
             "clip": "CLIP",
             "vae": "VAE",
-            "positive": "正向提示词",
-            "negative": "反向提示词"
+            "positive": "正面提示词",
+            "negative": "负面提示词"
         },
         "widgets": {
             "guide_size": "引导大小",
@@ -465,8 +465,8 @@
             "model": "模型",
             "clip": "CLIP",
             "vae": "VAE",
-            "positive": "正向提示词",
-            "negative": "反向提示词"
+            "positive": "正面提示词",
+            "negative": "负面提示词"
         },
         "widgets": {
             "guide_size": "引导大小",
@@ -493,7 +493,7 @@
             "cropped_refined_alpha": "细化通道"
         }
     },
-    "DetailerForEachDebugPipe": {
+    "DetailerForEachPipe": {
         "title": "局部细化(高级节点束)",
         "inputs": {
             "image": "图像",
@@ -663,14 +663,14 @@
 
 
     "FaceDetailer": {
-        "title": "向部细化",
+        "title": "面部细化",
         "inputs": {
             "image": "图像",
             "model": "模型",
             "clip": "CLIP",
             "vae": "VAE",
-            "positive": "正向提示词",
-            "negative": "反向提示词",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
             "bbox_detector": "BBox检测",
             "sam_model_opt": "SAM模型",
             "segm_detector_opt": "Segm检测"
@@ -720,7 +720,7 @@
         }
     },
     "FaceDetailerPipe": {
-        "title": "向部细化(节点束)",
+        "title": "面部细化(节点束)",
         "inputs": {
             "image": "图像",
             "detailer_pipe": "细化节点束"
@@ -846,8 +846,8 @@
         "inputs": {
             "model": "模型",
             "vae": "VAE",
-            "positive": "正向提示词",
-            "negative": "反向提示词",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
             "upscale_model_opt": "放大模型",
             "pk_hook_opt": "约束"
         },
@@ -926,8 +926,8 @@
         "inputs": {
             "model": "模型",
             "vae": "VAE",
-            "positive": "正向提示词",
-            "negative": "反向提示词",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
             "upscale_model_opt": "放大模型",
             "pk_hook_opt": "约束"
         },
@@ -957,8 +957,8 @@
         "inputs": {
             "model": "模型",
             "vae": "VAE",
-            "positive": "正向提示词",
-            "negative": "反向提示词",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
             "upscale_model_opt": "放大模型",
             "pk_hook_opt": "约束"
         },
@@ -1066,14 +1066,14 @@
             "target_denoise": "目标降噪"
         },
         "outputs": {
-            "PK_HOOK": "约束"
+            "PK_HOOK"
         }
     },
     "CfgScheduleHookProvider": {
         "title": "CFG约束器",
         "widgets": {
             "scheduler_for_iteration": "调度插值",
-            "target_cfg": "目标CFG"
+            "target_cfg": "目标CFG",
         },
         "outputs": {
             "PK_HOOK": "约束"
@@ -1226,6 +1226,136 @@
         },
         "outputs": {
             "LATENT": "Latent"
+        }
+    },
+
+
+
+
+    "ImpactImageInfo": {
+        "title": "图像信息",
+        "inputs": {
+            "value": "图像"
+        },
+        "outputs": {
+            "batch": "批次大小",
+            "height": "高度",
+            "width": "宽度",
+            "channel": "通道"
+        }
+    },
+    "ImpactMinMax": {
+        "title": "求极值",
+        "inputs": {
+            "mode": "模式",
+            "a": "A",
+            "b": "B"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+
+
+    "ImpactCompare": {
+        "title": "比较",
+        "inputs": {
+            "a": "A",
+            "b": "B"
+        },
+        "widgets": {
+            "cmp": "比较方法"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔"
+        }
+    },
+    "ImpactConditionalBranch": {
+        "title": "切换",
+        "inputs": {
+            "cond": "条件",
+            "tt_value": "真",
+            "ff_value": "假"
+        },
+        "outputs": {
+            "*": "输出"
+        }
+    },
+    "ImpactInt": {
+        "title": "整数",
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "ImpactValueSender": {
+        "title": "发送值",
+        "inputs": {
+            "value": "值"
+        },
+        "widgets": {
+            "link_id": "连接ID"
+        }
+    },
+    "ImpactValueReceiver": {
+        "title": "接收值",
+        "widgets": {
+            "typ": "类型",
+            "value": "值",
+            "link_id": "连接ID"
+        },
+        "outputs": {
+            "*": "输出"
+        }
+    },
+    "ImpactNeg": {
+        "title": "反转值",
+        "inputs": {
+            "value": "值"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔"
+        }
+    },
+    "ImpactConditionalStopIteration": {
+        "title": "条件停止迭代",
+        "inputs": {
+            "cond": "条件"
+        }
+    },
+
+
+
+
+    "SAMLoader": {
+        "title": "SAM加载器",
+        "widgets": {
+            "model_name": "模型名称",
+            "device_mode": "设备模式"
+        },
+        "outputs": {
+            "SAM_MODEL": "SAM模型"
+        }
+    },
+    "ONNXDetectorProvider": {
+        "title": "ONNX加载器",
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "ONNX_DETECTOR": "ONNX检测"
+        }
+    },
+    "UltralyticsDetectorProvider": {
+        "title": "123",
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "BBOX_DETECTOR": "BBox检测",
+            "SEGM_DETECTOR": "SEGM检测"
         }
     }
 }

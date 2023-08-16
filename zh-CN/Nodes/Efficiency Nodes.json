@@ -3,8 +3,8 @@
         "title": "K采样器(效率)",
         "inputs": {
             "model": "模型",
-            "positive": "正向提示词",
-            "negative": "反向提示词",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
             "latent_image": "Latent",
             "optional_vae": "VAE",
             "script": "脚本"
@@ -39,8 +39,8 @@
         "title": "K采样器(高级效率)",
         "inputs": {
             "model": "模型",
-            "positive": "正向提示词",
-            "negative": "反向提示词",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
             "latent_image": "Latent",
             "optional_vae": "VAE",
             "script": "脚本"
@@ -89,8 +89,8 @@
             "lora_name": "Lora",
             "lora_model_strength": "Lora模型强度",
             "lora_clip_strength": "LoraCLIP强度",
-            "positive": "正向提示词",
-            "negative": "反向提示词",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
             "empty_latent_width": "宽度",
             "empth_latent_height": "高度",
             "batch_size": "批次大小"
@@ -268,7 +268,7 @@
         }
     },
     "XY Input: Positive Prompt S/R": {
-        "title": "替换正向条件",
+        "title": "替换正面条件",
         "widgets": {
             "search_txt": "检索",
             "replace_count": "替换数量",
@@ -280,7 +280,7 @@
         }
     },
     "XY Input: Negative Prompt S/R": {
-        "title": "替换反向条件",
+        "title": "替换负面条件",
         "widgets": {
             "search_txt": "检索",
             "replace_count": "替换数量",
