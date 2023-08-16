@@ -98,16 +98,16 @@
             "refiner_clip": "优化CLIP"
         },
         "widgets": {
-            "pos_g": "正向bigG文本",
-            "pos_l": "正向L文本",
-            "pos_r": "正向优化文本",
-            "neg_g": "反向bigG文本",
-            "neg_l": "反向L文本",
-            "neg_r": "反向优化文本",
+            "pos_g": "正面bigG文本",
+            "pos_l": "正面L文本",
+            "pos_r": "正面优化文本",
+            "neg_g": "负面bigG文本",
+            "neg_l": "负面L文本",
+            "neg_r": "负面优化文本",
             "base_width": "宽度",
             "base_height": "高度",
-            "pos_ascore": "正向美学分数",
-            "neg_ascore": "反向美学分数",
+            "pos_ascore": "正面美学分数",
+            "neg_ascore": "负面美学分数",
             "refiner_width": "优化宽度",
             "refiner_height": "优化高度"
         },
@@ -124,10 +124,10 @@
             "base_clip": "基础CLIP"
         },
         "widgets": {
-            "pos_g": "正向bigG文本",
-            "pos_l": "正向L文本",
-            "neg_g": "反向bigG文本",
-            "neg_l": "反向L文本",
+            "pos_g": "正面bigG文本",
+            "pos_l": "正面L文本",
+            "neg_g": "负面bigG文本",
+            "neg_l": "负面L文本",
             "base_w": "基础宽度",
             "base_h": "基础高度",
             "crop_w": "裁剪宽度",
@@ -146,16 +146,16 @@
             "refiner_clip": "优化CLIP"
         },
         "widgets": {
-            "pos_r": "正向优化文本",
-            "neg_r": "反向优化文本",
-            "pos_ascore": "正向美学分数",
-            "neg_ascore": "反向美学分数",
+            "pos_r": "正面优化文本",
+            "neg_r": "负面优化文本",
+            "pos_ascore": "正面美学分数",
+            "neg_ascore": "负面美学分数",
             "refiner_width": "优化宽度",
             "refiner_height": "优化高度"
         },
         "outputs": {
-            "pos_r": "正向优化文本",
-            "neg_r": "反向优化文本"
+            "pos_r": "正面优化文本",
+            "neg_r": "负面优化文本"
         }
     },
     "SeargePromptText": {
@@ -359,7 +359,7 @@
             "secondary_prompt": "次提示词",
             "style_prompt": "风格提示词",
             "negative_prompt": "负面提示词",
-            "negative_style": "反向风格"
+            "negative_style": "负面风格"
         },
         "outputs": {
             "inputs": "输入组"
@@ -437,7 +437,7 @@
             "base_conditioning_scale": "基础条件缩放",
             "refiner_conditioning_scale": "优化条件缩放",
             "style_prompt_power": "风格强度",
-            "negative_prompt_power": "反向风格强度",
+            "negative_prompt_power": "负面风格强度",
             "style_template": "风格模板",
             "none": "无",
             "from preprocessor": "从预处理器",
@@ -499,7 +499,7 @@
             "secondary_prompt": "次提示词",
             "style_prompt": "风格提示词",
             "negative_prompt": "负面提示词",
-            "negative_style": "反向风格",
+            "negative_style": "负面风格",
             "image": "图像",
             "mask": "遮罩"
         }
@@ -563,7 +563,7 @@
             "base_conditioning_scale": "基础条件缩放",
             "refiner_conditioning_scale": "优化条件缩放",
             "style_prompt_power": "风格强度",
-            "negative_prompt_power": "反向风格强度"
+            "negative_prompt_power": "负面风格强度"
         }
     },
     "SeargeOutput6": {

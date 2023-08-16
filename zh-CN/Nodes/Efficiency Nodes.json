@@ -28,8 +28,8 @@
         },
         "outputs": {
             "MODEL": "模型",
-            "CONDITIONING+": "正向条件",
-            "CONDITIONING-": "反向条件",
+            "CONDITIONING+": "正面条件",
+            "CONDITIONING-": "负面条件",
             "LATENT": "Latent",
             "VAE": "VAE",
             "IMAGE": "图像"
@@ -69,8 +69,8 @@
         },
         "outputs": {
             "MODEL": "模型",
-            "CONDITIONING+": "正向条件",
-            "CONDITIONING-": "反向条件",
+            "CONDITIONING+": "正面条件",
+            "CONDITIONING-": "负面条件",
             "LATENT": "Latent",
             "VAE": "VAE",
             "IMAGE": "图像"
@@ -97,8 +97,8 @@
         },
         "outputs": {
             "MODEL": "模型",
-            "CONDITIONING+": "正向条件",
-            "CONDITIONING-": "反向条件",
+            "CONDITIONING+": "正面条件",
+            "CONDITIONING-": "负面条件",
             "LATENT": "Latent",
             "VAE": "VAE",
             "CLIP": "CLIP",
