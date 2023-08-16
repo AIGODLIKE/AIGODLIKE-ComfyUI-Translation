@@ -1,4 +1,13 @@
 {
+    "Note": {
+        "title": "注释"
+    },
+    "Primitive": {
+        "title": "元节点"
+    },
+    "Reroute": {
+        "title": "转接点"
+    },
     "KSampler": {
         "title": "K采样器",
         "inputs": {

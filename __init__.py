@@ -64,9 +64,9 @@ def get_menu_translation(locale):
 
 @lru_cache
 def compile_translation(locale):
-    translations_path = CUR_PATH.joinpath(f"translations_{locale}.json")
-    if translations_path.exists():
-        return try_get_json(translations_path)
+    # translations_path = CUR_PATH.joinpath(f"translations_{locale}.json")
+    # if translations_path.exists():
+    #     return try_get_json(translations_path)
     # Nodes
     nodes_translation = get_nodes_translation(locale)
     # NodeCategory
@@ -80,7 +80,7 @@ def compile_translation(locale):
                                 },
                            indent=4,
                            ensure_ascii=False)
-    translations_path.write_text(json_data, encoding="utf-8")
+    # translations_path.write_text(json_data, encoding="utf-8")
     return json_data
 
 
@@ -92,7 +92,7 @@ async def get_translation(request):
     try:
         json_data = compile_translation(locale)
     except Exception as e:
-        sys.stderr.write(f"agl/get_translation error: {e}\n")
+        sys.stderr.write(f"[agl/get_translation error]: {e}\n")
         sys.stderr.flush()
     return web.Response(status=200, body=json_data)
 
@@ -137,10 +137,10 @@ def register():
 
 def unregister():
     # 移除缓存json
-    for data in CUR_PATH.glob("*.json"):
-        if not data.name.startswith("translations_"):
-            continue
-        data.unlink()
+    # for data in CUR_PATH.glob("*.json"):
+    #     if not data.name.startswith("translations_"):
+    #         continue
+    #     data.unlink()
 
     aigodlike_ext_path = COMFY_PATH.joinpath("web", "extensions", ADDON_NAME)
     if not aigodlike_ext_path.exists():
