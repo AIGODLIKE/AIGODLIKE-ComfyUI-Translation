@@ -3,8 +3,9 @@ A plugin for multilingual translation of [ComfyUI](https://github.com/comfyanony
 ## ComfyUI users in other languages, I need your help
 I hope ComfyUI can support more languages besides Chinese and English, such as French, German, Japanese, Korean, etc. However, I believe that translation should be done by native speakers of each language. So I need your help, let's go fight for ComfyUI together!
 ## Language supported
-1. 简体中文
+1. Chinese简体中文
 2. English
+3. Korean한국어
 ## Function
 1. Translate all UI of ComfyUI
 ![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/323f3f84-e9c0-421e-9089-470e5a5ac350)
