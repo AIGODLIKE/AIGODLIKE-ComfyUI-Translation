@@ -5,6 +5,7 @@ import { applyMenuTranslation, observeFactory } from "./MenuTranslate.js";
 // Translation Utils
 export class TUtils {
 	static LOCALE_ID = "AGL.Locale";
+	static LOCALE_ID_LAST = "AGL.LocaleLast";
 
 	static T = {
 		Menu: {},
@@ -15,7 +16,8 @@ export class TUtils {
 	static ELS = {};
 
 	static setLocale(locale) {
-		localStorage.setItem(TUtils.LOCALE_ID, locale);
+		localStorage[TUtils.LOCALE_ID_LAST] = localStorage.getItem(TUtils.LOCALE_ID) || "en-US";
+		localStorage[TUtils.LOCALE_ID] = locale;
 		TUtils.syncTranslation();
 	}
 
@@ -361,14 +363,20 @@ const ext = {
 		// 构造设置面板
 		// this.settings = new AGLSettingsDialog();
 		// 添加按钮
-		// app.ui.menuContainer.appendChild(
-		// $el("button.agl-swlocale-btn", {
-		// 	id: "swlocale-button",
-		// 	textContent: "Switch Locale",
-		// 	onclick: () => {
-		// 		this.settings.show();
-		// 	},
-		// }));
+		app.ui.menuContainer.appendChild(
+			$el("button.agl-swlocale-btn", {
+				id: "swlocale-button",
+				textContent: TUtils.T.Menu["Switch Locale"] || "Switch Locale",
+				onclick: () => {
+					var localeLast = localStorage.getItem(TUtils.LOCALE_ID_LAST) || "en-US";
+					var locale = localStorage.getItem(TUtils.LOCALE_ID) || "en-US";
+					if (locale != localeLast) {
+						app.ui.settings.setSettingValue(TUtils.LOCALE_ID, localeLast);
+						TUtils.setLocale(localeLast);
+						location.reload();
+					}
+				},
+			}));
 	},
 	async addCustomNodeDefs(defs, app) {
 		// Add custom node definitions

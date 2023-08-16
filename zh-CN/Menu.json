@@ -51,6 +51,7 @@
     "Clipspace": "CLIP 空间",
     "Clear": "清除",
     "Load Default": "加载默认",
+    "Switch Locale": "切换语言",
     "Settings": "设置",
     "Require confirmation when clearing workflow": "当清理工作流时是否需要确认",
     "Prompt for filename when saving workflow": "保存工作流时是否需要提示文件名",
