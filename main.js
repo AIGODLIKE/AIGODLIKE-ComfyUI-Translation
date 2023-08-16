@@ -40,6 +40,13 @@ export class TUtils {
 					TUtils.T[key] = {};
 			}
 			TUtils.T.Locales = LOCALES;
+			// 合并NodeCategory 到 Menu
+			TUtils.Menu = Object.assign(TUtils.T.Menu, TUtils.T.NodeCategory);
+			// 提取 Node 中 key 到 Menu
+			for (let key in TUtils.T.Nodes) {
+				let node = TUtils.T.Nodes[key];
+				TUtils.Menu[k] = node[k]["title"] || key;
+			}
 			OnFinished();
 		};
 	}
@@ -51,15 +58,15 @@ export class TUtils {
 	}
 
 	static applyNodeTypeTranslation(app) {
-		let nodeCT = this.T.NodeCategory;
+		// let nodeCT = this.T.NodeCategory;
 		let nodesT = this.T.Nodes;
 		for (let nodeName in LiteGraph.registered_node_types) {
 			var nodeType = LiteGraph.registered_node_types[nodeName];
-			for (let key in nodeCT) {
-				if (!nodeType.category.includes(key))
-					continue;
-				nodeType.category = nodeType.category.replace(key, nodeCT[key]);
-			}
+			// for (let key in nodeCT) {
+			// 	if (!nodeType.category.includes(key))
+			// 		continue;
+			// 	nodeType.category = nodeType.category.replace(key, nodeCT[key]);
+			// }
 			let class_type = nodeType.comfyClass ? nodeType.comfyClass : nodeType.type;
 			if (nodesT.hasOwnProperty(class_type)) {
 				nodeType.title = nodesT[class_type]["title"];
@@ -289,16 +296,6 @@ export class TUtils {
 	}
 }
 
-// function applyNodeTranslationDef(nodeType, nodeData) {
-// 	for (let key in TUtils.T.NodeCategory) {
-// 		if (!nodeType.category.includes(key))
-// 			continue;
-// 		nodeData.category = nodeData.category.replace(key, TUtils.T.NodeCategory[key]);
-// 	}
-// 	if (TRANSLATIONS.hasOwnProperty(nodeType.comfyClass)) {
-// 		nodeType.title = TRANSLATIONS[nodeType.comfyClass]["title"];
-// 	}
-// };
 
 const ext = {
 	name: "AIGODLIKE.Translation",
@@ -370,7 +367,7 @@ const ext = {
 				onclick: () => {
 					var localeLast = localStorage.getItem(TUtils.LOCALE_ID_LAST) || "en-US";
 					var locale = localStorage.getItem(TUtils.LOCALE_ID) || "en-US";
-					if(locale != "en-US" && localeLast != "en-US")
+					if (locale != "en-US" && localeLast != "en-US")
 						localeLast = "en-US";
 					if (locale != localeLast) {
 						app.ui.settings.setSettingValue(TUtils.LOCALE_ID, localeLast);
