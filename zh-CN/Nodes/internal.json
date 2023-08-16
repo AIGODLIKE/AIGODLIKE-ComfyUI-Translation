@@ -125,7 +125,7 @@
         }
     },
     "DiffControlNetLoader": {
-        "title": "另一种ControlNet加载器",
+        "title": "DiffControlNet加载器",
         "inputs": {
             "MODEL": "模型"
         },

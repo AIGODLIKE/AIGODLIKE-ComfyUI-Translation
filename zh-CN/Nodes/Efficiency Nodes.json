@@ -332,7 +332,7 @@
         }
     },
     "XY Input: LoRA Adv.": {
-        "title": "高级LoRA",
+        "title": "LoRA(高级)",
         "inputs": {
             "lora_stack": "Lora堆"
         },

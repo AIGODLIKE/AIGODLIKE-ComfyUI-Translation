@@ -1,6 +1,6 @@
 {
     "BNK_TiledKSampler": {
-        "title": "分块K采样器",
+        "title": "K采样器(分块)",
         "inputs": {
             "model": "模型",
             "positive": "正面提示词",
@@ -26,7 +26,7 @@
         }
     },
     "BNK_TiledKSamplerAdvanced": {
-        "title": "分块高级K采样器",
+        "title": "K采样器(高级分块)",
         "inputs": {
             "model": "模型",
             "positive": "正面提示词",

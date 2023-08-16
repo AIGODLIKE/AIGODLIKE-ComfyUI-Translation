@@ -35,7 +35,7 @@
         }
     },
     "Dissolve": {
-        "title": "Dissolve",
+        "title": "消融",
         "inputs": {
             "image1": "图像1",
             "image2": "图像2"
