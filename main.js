@@ -242,8 +242,7 @@ export class TUtils {
 							value: v[0],
 							selected: v[0] === value
 						});
-					}
-					)
+					})
 				];
 
 				TUtils.ELS.select = $el("select", {
@@ -274,7 +273,7 @@ export class TUtils {
 						})]),
 				])
 			},
-			defaultValue: "zh-CN",
+			defaultValue: "en-US",
 			async onChange(value) {
 				if (!value)
 					return;
