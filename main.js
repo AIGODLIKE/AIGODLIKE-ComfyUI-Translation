@@ -45,7 +45,7 @@ export class TUtils {
 			// 提取 Node 中 key 到 Menu
 			for (let key in TUtils.T.Nodes) {
 				let node = TUtils.T.Nodes[key];
-				TUtils.Menu[k] = node[k]["title"] || key;
+				TUtils.Menu[key] = node["title"] || key;
 			}
 			OnFinished();
 		};

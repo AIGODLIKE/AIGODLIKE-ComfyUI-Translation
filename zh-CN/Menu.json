@@ -103,5 +103,7 @@
     "Always": "总是",
     "On Event": "事件触发",
     "Never": "从不",
-    "On Trigger": "触发器触发"
+    "On Trigger": "触发器触发",
+    "Prompt has no outputs": "提示词没有输出",
+    "Reconnecting...": "重新连接中..."
 }

@@ -1,5 +1,12 @@
 export function applyMenuTranslation(T) {
   translateAllText(document.querySelector(".litegraph"));
+  for (let node of document.querySelectorAll(".comfy-modal"))
+    observeFactory(node, (mutationsList, observer) => {
+      for (let mutation of mutationsList) {
+        translateAllText(mutation.target);
+      }
+    });
+
   const viewHistoryButton = document.getElementById("comfy-view-history-button");
   const viewQueueButton = document.getElementById("comfy-view-queue-button");
 
