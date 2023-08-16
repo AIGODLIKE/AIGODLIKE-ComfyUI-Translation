@@ -273,7 +273,7 @@
             "IMAGE": "图像"
         }
     },
-    "color_style": {
+    "ColorPreprocessor": {
         "title": "Color颜色",
         "inputs": {
             "image": "图像"

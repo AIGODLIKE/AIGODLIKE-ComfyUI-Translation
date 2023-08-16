@@ -1,7 +1,6 @@
 {
-    "_Category1": "Conditioning\\Advanced",
     "BNK_CLIPTextEncodeAdvanced": {
-        "title": "CLIP文本编码器BNK",
+        "title": "CLIP文本编码器(BNK)",
         "inputs": {
             "CLIP": "CLIP"
         },
@@ -19,7 +18,7 @@
         }
     },
     "BNK_CLIPTextEncodeSDXLAdvanced": {
-        "title": "高级CLIP文本编码SDXL",
+        "title": "CLIP文本编码器(BNK-SDXL)",
         "inputs": {
             "clip": "CLIP"
         },

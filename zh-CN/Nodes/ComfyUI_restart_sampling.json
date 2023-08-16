@@ -1,6 +1,6 @@
 {
     "KRestartSamplerSimple": {
-        "title": "K采样器(重启简易)",
+        "title": "K采样器(简易重启)",
         "inputs": {
             "model": "模型",
             "positive": "正面提示词",

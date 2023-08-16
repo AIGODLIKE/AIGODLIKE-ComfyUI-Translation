@@ -126,6 +126,24 @@
             "LATENT": "Latent"
         }
     },
+    "ImageMaskSwitch": {
+        "title": "图像遮罩切换",
+        "inputs": {
+            "images1": "图像1",
+            "mask1": "遮罩1",
+            "images2": "图像2",
+            "mask2": "遮罩2",
+            "images3": "图像3",
+            "mask3": "遮罩3",
+            "images4": "图像4",
+            "mask4": "遮罩4",
+            "select": "选择"
+        },
+        "outputs": {
+            "IMAGE" :"图像",
+            "MASK": "遮罩"
+        }
+    },
     "LatentSwitch": {
         "title": "Latent切换",
         "inputs": {
@@ -226,6 +244,15 @@
             "IMAGE": "图像"
         }
     },
+    "ImpactMakeImageList": {
+        "title": "制作图像列表",
+        "inputs": {
+            "image1": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "ImpactSEGSLabelFilter": {
         "title": "Seg标签过滤",
         "inputs": {
@@ -264,6 +291,17 @@
         },
         "outputs": {
             "SEGS": "Seg"
+        }
+    },
+    "ImpactStringSelector": {
+        "title": "字符串选择",
+        "widgets": {
+            "strings": "字符串",
+            "multiline": "多行文本",
+            "select": "选择"
+        },
+        "outputs": {
+            "STRING": "字符串"
         }
     },
 
@@ -343,7 +381,7 @@
     "MaskToSEGS": {
         "title": "遮罩到Seg",
         "inputs": {
-            "mask": "遮罩",
+            "mask": "遮罩"
         },
         "widgets": {
             "crop_factor": "裁剪系数",
@@ -353,7 +391,7 @@
             "bbox_fill": "填充BBox",
                 "disabled": "关闭",
                 "enabled": "开启",
-            "drop_size": "最小尺寸",
+            "drop_size": "最小尺寸"
         },
         "outputs": {
             "SEGS": "Seg"
@@ -493,7 +531,7 @@
             "cropped_refined_alpha": "细化通道"
         }
     },
-    "DetailerForEachPipe": {
+    "DetailerForEachDebugPipe": {
         "title": "局部细化(高级节点束)",
         "inputs": {
             "image": "图像",
@@ -549,7 +587,7 @@
             "dilation": "膨胀",
             "bbox_expansion": "BBox扩展",
             "mask_hint_threshold": "遮罩检测阈值",
-            "mask_hint_use_negative": "反向遮罩提示"
+            "mask_hint_use_negative": "负面遮罩提示"
         },
         "outputs": {
             "MASK": "遮罩"
@@ -575,7 +613,7 @@
             "dilation": "膨胀",
             "bbox_expansion": "BBox扩展",
             "mask_hint_threshold": "遮罩检测阈值",
-            "mask_hint_use_negative": "反向遮罩提示"
+            "mask_hint_use_negative": "负面遮罩提示"
         },
         "outputs": {
             "combined_mask": "遮罩",
@@ -625,6 +663,48 @@
             "dilation": "膨胀",
             "crop_factor": "裁剪系数",
             "drop_size": "最小尺寸"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "ImpactSimpleDetectorSEGS": {
+        "title": "简易Seg检测",
+        "inputs": {
+            "bbox_detector": "BBox检测",
+            "image": "图像",
+            "sam_model_opt": "SAM模型",
+            "segm_detector_opt": "Segm检测"
+        },
+        "widgets": {
+            "bbox_threshold": "BBox阈值",
+            "bbox_dilation": "BBox膨胀",
+            "crop_factor": "裁剪系数",
+            "drop_size": "最小尺寸",
+            "sub_threshold": "次要阈值",
+            "sub_dilation": "次要膨胀",
+            "sub_bbox_expansion": "次要BBox扩展",
+            "sam_mask_hint_threshold": "SAM遮罩检测阈值"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "ImpactSimpleDetectorSEGSPipe": {
+        "title": "简易Seg检测(节点束)",
+        "inputs": {
+            "detailer_pipe": "细化节点束",
+            "image": "图像"
+        },
+        "widgets": {
+            "bbox_threshold": "BBox阈值",
+            "bbox_dilation": "BBox膨胀",
+            "crop_factor": "裁剪系数",
+            "drop_size": "最小尺寸",
+            "sub_threshold": "次要阈值",
+            "sub_dilation": "次要膨胀",
+            "sub_bbox_expansion": "次要BBox扩展",
+            "sam_mask_hint_threshold": "SAM遮罩检测阈值"
         },
         "outputs": {
             "SEGS": "Seg"
@@ -708,7 +788,7 @@
             "sam_dilation": "SAM膨胀",
             "sam_bbox_expansion": "SAMBBox扩展",
             "sam_mask_hint_threshold": "SAM遮罩检测阈值",
-            "sam_mask_hint_use_negative": "SAM反向遮罩提示",
+            "sam_mask_hint_use_negative": "SAM负面遮罩提示",
             "drop_size": "最小尺寸"
         },
         "outputs": {
@@ -760,7 +840,7 @@
             "sam_dilation": "SAM膨胀",
             "sam_bbox_expansion": "SAMBBox扩展",
             "sam_mask_hint_threshold": "SAM遮罩检测阈值",
-            "sam_mask_hint_use_negative": "SAM反向遮罩提示",
+            "sam_mask_hint_use_negative": "SAM负面遮罩提示",
             "drop_size": "最小尺寸"
         },
         "outputs": {
@@ -820,6 +900,151 @@
     },
 
 
+    
+
+    "ToDetailerPipe": {
+        "title": "到细化束",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "bbox_detector": "BBox检测",
+            "sam_model_opt": "SAM模型",
+            "segm_detector_opt": "Segm检测"
+        },
+        "outputs": {
+            "detailer_pipe":"细化节点束"
+        }
+    },
+    "FromDetailerPipe": {
+        "title": "从细化束",
+        "inputs": {
+            "detailer_pipe": "细化节点束"
+        },
+        "outputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "bbox_detector": "BBox检测",
+            "sam_model_opt": "SAM模型",
+            "segm_detector_opt": "Segm检测"
+        }
+    },
+    "FromDetailerPipe_v2": {
+        "title": "从细化束",
+        "inputs": {
+            "detailer_pipe": "细化节点束"
+        },
+        "outputs": {
+            "detailer_pipe": "细化节点束",
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "bbox_detector": "BBox检测",
+            "sam_model_opt": "SAM模型",
+            "segm_detector_opt": "Segm检测"
+        }
+    },
+    "EditDetailerPipe": {
+        "title": "编辑细化束",
+        "inputs": {
+            "detailer_pipe": "细化节点束",
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "bbox_detector": "BBox检测",
+            "sam_model_opt": "SAM模型",
+            "segm_detector_opt": "Segm检测"
+        },
+        "outputs": {
+            "detailer_pipe": "细化节点束"
+        }
+    },
+    "DetailerPipeToBasicPipe": {
+        "title": "细化束到基础束",
+        "inputs": {
+            "detailer_pipe": "细化节点束"
+        },
+        "outputs": {
+            "BASIC_PIPE": "基础节点束"
+        }
+    },
+    "ToBasicPipe": {
+        "title": "到基础束",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE",
+            "positive": "正面提示词",
+            "negative": "负面提示词"
+        },
+        "outputs": {
+            "BASIC_PIPE": "基础节点束"
+        }
+    },
+    "FromBasicPipe": {
+        "title": "从基础束",
+        "inputs": {
+            "basic_pipe": "基础节点束"
+        },
+        "outputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE",
+            "positive": "正面提示词",
+            "negative": "负面提示词"
+        }
+    },
+    "FromBasicPipe_v2": {
+        "title": "从基础束v2",
+        "inputs": {
+            "BASIC_PIPE": "基础节点束"
+        },
+        "outputs": {
+            "BASIC_PIPE": "基础节点束",
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE",
+            "positive": "正面提示词",
+            "negative": "负面提示词"
+        }
+    },
+    "EditBasicPipe": {
+        "title": "编辑基础束",
+        "inputs": {
+            "BASIC_PIPE": "基础节点束",
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE",
+            "positive": "正面提示词",
+            "negative": "负面提示词"
+        },
+        "outputs": {
+            "BASIC_PIPE": "基础节点束"
+        }
+    },
+    "BasicPipeToDetailerPipe": {
+        "title": "基础束到细化束",
+        "inputs": {
+            "BASIC_PIPE": "基础节点束",
+            "bbox_detector": "BBox检测",
+            "sam_model_opt": "SAM模型",
+            "segm_detector_opt": "Segm检测"
+        },
+        "outputs": {
+            "DETAILER_PIPE": "细化节点束"
+        }
+    },
+    
+
 
 
     "LatentPixelScale": {
@@ -842,7 +1067,7 @@
         }
     },
     "PixelKSampleUpscalerProvider": {
-        "title": "像素K采样缩放器",
+        "title": "K采样像素缩放器",
         "inputs": {
             "model": "模型",
             "vae": "VAE",
@@ -1066,14 +1291,14 @@
             "target_denoise": "目标降噪"
         },
         "outputs": {
-            "PK_HOOK"
+            "PK_HOOK": "约束"
         }
     },
     "CfgScheduleHookProvider": {
         "title": "CFG约束器",
         "widgets": {
             "scheduler_for_iteration": "调度插值",
-            "target_cfg": "目标CFG",
+            "target_cfg": "目标CFG"
         },
         "outputs": {
             "PK_HOOK": "约束"
@@ -1180,6 +1405,38 @@
         },
         "outputs": {
             "LATENT": "Latent"
+        }
+    },
+
+
+
+    "ImpactWildcardProcessor": {
+        "title": "通配符处理器",
+        "widgets": {
+            "wildcard_text": "通配文本",
+            "populated_text": "输入文本",
+            "mode": "是否输入"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "ImpactWildcardEncode": {
+        "title": "通配符编码",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "wildcard_text": "通配文本",
+            "populated_text": "输入文本",
+            "mode": "是否输入",
+            "Select to add LoRA": "添加Lora"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "CONDITIONING": "条件"
         }
     },
 
@@ -1349,7 +1606,7 @@
         }
     },
     "UltralyticsDetectorProvider": {
-        "title": "123",
+        "title": "检测加载器",
         "widgets": {
             "model_name": "模型名称"
         },
