@@ -15,6 +15,7 @@ I hope ComfyUI can support more languages besides Chinese and English, such as F
 https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e43182b7-8932-4358-bc65-ade7bddf27c5
 3. Support for adding other languages
 4. Support translation custom nodes
+5. [2023/8/16]Support one-click switching between English/currently set language
 ## How to install
 AIGODLIKE-COMFYUI-TRANSLATION is equivalent to a custom node, you can use any method you like, just put it in folder custom_nodes
 Then run:
