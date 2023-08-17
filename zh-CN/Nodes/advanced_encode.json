@@ -2,7 +2,7 @@
     "BNK_CLIPTextEncodeAdvanced": {
         "title": "CLIP文本编码器(BNK)",
         "inputs": {
-            "CLIP": "CLIP"
+            "clip": "CLIP"
         },
         "widgets": {
             "text": "文本",
@@ -32,6 +32,9 @@
                 "length+mean": "混合",
             "weight_interpretation": "权重插值方式",
             "balance": "平衡"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
         }
     },
     "BNK_AddCLIPSDXLParams": {

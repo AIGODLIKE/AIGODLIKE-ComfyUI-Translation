@@ -24,6 +24,11 @@
         "widgets": {
             "source": "生成源",
             "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
             "width": "宽度",
             "height": "高度",
             "batch_size": "批次大小"

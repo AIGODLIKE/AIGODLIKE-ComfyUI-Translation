@@ -41,8 +41,7 @@
     "AnimateDiffCombine": {
         "title": "合并为GIF",
         "inputs": {
-            "model": "模型",
-            "init_latent": "初始Latent"
+            "images": "图像"
         },
         "widgets": {
             "frame_rate": "帧率",
