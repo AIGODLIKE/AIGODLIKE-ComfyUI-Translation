@@ -40,7 +40,7 @@
         }
     },
     "BNK_CutoffRegionsToConditioning_ADV": {
-        "title": "高级截断范围到条件",
+        "title": "截断范围到条件(高级)",
         "inputs": {
             "clip_regions": "CLIP范围"
         },

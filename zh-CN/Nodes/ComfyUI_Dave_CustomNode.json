@@ -28,7 +28,7 @@
         "outputs": {
             "CONDITIONING": "条件",
             "resolutionX": "分辨率X",
-            "resulutionY": "分辨率Y"
+            "resolutionY": "分辨率Y"
         }
     },
     "ConditioningUpscale": {

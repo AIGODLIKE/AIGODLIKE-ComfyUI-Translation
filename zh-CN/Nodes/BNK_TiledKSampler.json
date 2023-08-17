@@ -56,8 +56,8 @@
             "cfg": "CFG",
             "sampler_name": "采样器",
             "scheduler": "调度器",
-            "start_at_step": "采样开始步数",
-            "end_at_step": "采样结束步数",
+            "start_at_step": "开始降噪步数",
+            "end_at_step": "结束降噪步数",
             "return_with_leftover_noise": "返回噪波",
             "preview": "预览图象"
         },

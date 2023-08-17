@@ -222,7 +222,7 @@
         }
     },
     "ReencodeLatentPipe": {
-        "title": "重编码Latent节点束",
+        "title": "重编码Latent(节点束)",
         "inputs": {
             "samples": "Latent",
             "input_basic_pipe": "解码节点束",
@@ -371,7 +371,7 @@
         }
     },
     "Segs & Mask ForEach": {
-        "title": "批量Seg遮罩",
+        "title": "Seg遮罩(批量)",
         "inputs": {
             "segs": "Seg",
             "mask": "遮罩"
@@ -463,6 +463,8 @@
             "scheduler": "调度器",
             "denoise": "降噪",
             "feather": "羽化",
+            "noise_mask": "仅生成遮罩",
+            "force_inpaint": "强制重绘",
             "wildcard": "通配符"
         },
         "outputs": {
@@ -492,7 +494,10 @@
             "sampler_name": "采样器",
             "scheduler": "调度器",
             "denoise": "降噪",
-            "feather": "羽化"
+            "feather": "羽化",
+            "noise_mask": "仅生成遮罩",
+            "force_inpaint": "强制重绘",
+            "wildcard": "通配符"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -525,7 +530,10 @@
             "sampler_name": "采样器",
             "scheduler": "调度器",
             "denoise": "降噪",
-            "feather": "羽化"
+            "feather": "羽化",
+            "noise_mask": "仅生成遮罩",
+            "force_inpaint": "强制重绘",
+            "wildcard": "通配符"
         },
         "outputs": {
             "image": "图像",
@@ -557,7 +565,10 @@
             "sampler_name": "采样器",
             "scheduler": "调度器",
             "denoise": "降噪",
-            "feather": "羽化"
+            "feather": "羽化",
+            "noise_mask": "仅生成遮罩",
+            "force_inpaint": "强制重绘",
+            "wildcard": "通配符"
         },
         "outputs": {
             "image": "图像",

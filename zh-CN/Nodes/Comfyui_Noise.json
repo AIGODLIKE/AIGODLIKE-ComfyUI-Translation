@@ -20,7 +20,7 @@
         }
     },
     "BNK_NoisyLatentImage": {
-        "title": "噪波Latent图像",
+        "title": "噪波Latent",
         "widgets": {
             "source": "生成源",
             "seed": "随机种",
