@@ -7,8 +7,8 @@
         },
         "widgets": {
             "model_name": "模型",
-            "sdn_width": "宽度",
-            "sdn_height": "高度",
+            "width": "宽度",
+            "height": "高度",
             "frame_number": "帧数"
         },
         "outputs": {
@@ -41,8 +41,7 @@
     "AnimateDiffCombine": {
         "title": "合并为GIF",
         "inputs": {
-            "model": "模型",
-            "init_latent": "初始Latent"
+            "images": "图像"
         },
         "widgets": {
             "frame_rate": "帧率",

@@ -70,7 +70,7 @@
 
 
     "CheckpointLoaderSimple": {
-        "title": "Checkpoint加载器",
+        "title": "Checkpoint加载器(简易)",
         "widgets": {
             "ckpt_name": "Checkpoint名称"
         },
@@ -210,6 +210,7 @@
             "clip_vision_output": "CLIP视觉输出"
         },
         "outputs": {
+            "CONDITIONING": "条件"
         }
     },
     "GLIGENTextBoxApply": {
@@ -217,7 +218,7 @@
         "inputs": {
             "conditioning_to": "条件",
             "clip": "CLIP",
-            "gligen_text_model": "GLIGEN模型"
+            "gligen_textbox_model": "GLIGEN模型"
         },
         "widgets": {
             "text": "文本",
@@ -280,8 +281,8 @@
     "ConditioningConcat": {
         "title": "条件联结",
         "widgets": {
-            "conditioning_1": "条件1",
-            "conditioning_2": "条件2"
+            "conditioning_to": "条件到",
+            "conditioning_from": "条件从"
         },
         "outputs": {
             "CONDITIONING": "条件"
@@ -367,8 +368,8 @@
         },
         "widgets": {
             "strength": "强度",
-            "start_percent": "开始位置",
-            "end_percent": "结束位置"
+            "start_percent": "开始时间",
+            "end_percent": "结束时间"
         },
         "outputs": {
             "positive": "正面提示词",
@@ -411,7 +412,7 @@
             "samples": "Latent"
         },
         "widgets": {
-            "batch_size": "批次大小",
+            "batch_index": "批次索引",
             "length": "长度"
         },
         "outputs": {
@@ -424,7 +425,7 @@
             "samples": "Latent"
         },
         "widgets": {
-            "amount": "数量"
+            "amount": "次数"
         },
         "outputs": {
             "LATENT": "Latent"
@@ -541,6 +542,7 @@
                 "disabled": "关闭"
         },
         "outputs": {
+            "LATENT": "Latent"
         }
     },
     "LatentUpscaleBy": {
@@ -564,8 +566,8 @@
     "LatentComposite": {
         "title": "Latent复合",
         "inputs": {
-            "samples_to": "目标",
-            "samples_from": "源"
+            "samples_to": "目标Latent",
+            "samples_from": "源Latent"
         },
         "widgets": {
             "x": "X",
@@ -579,13 +581,14 @@
     "LatentCompositeMasked": {
         "title": "Latent遮罩复合",
         "inputs": {
-            "destination": "目标",
-            "source": "源",
+            "destination": "目标Latent",
+            "source": "源Latent",
             "mask": "遮罩"
         },
         "widgets": {
             "x": "X",
-            "y": "Y"
+            "y": "Y",
+            "resize_source": "缩放源Latent"
         },
         "outputs": {
             "LATENT": "Latent"
@@ -598,7 +601,7 @@
     "ImageScale": {
         "title": "图像缩放",
         "inputs": {
-            "images": "图像"
+            "image": "图像"
         },
         "widgets": {
             "upscale_method": "缩放方法",
@@ -619,7 +622,7 @@
     "ImageScaleBy": {
         "title": "图像按系数缩放",
         "inputs": {
-            "images": "图像"
+            "image": "图像"
         },
         "widgets": {
             "upscale_method": "缩放方法",
@@ -640,7 +643,7 @@
             "image": "图像"
         },
         "outputs": {
-            "UPSCALE_MODEL": "放大模型"
+            "IMAGE": "图像"
         }
     },
 
@@ -741,7 +744,8 @@
     "LoadImage": {
         "title": "加载图像",
         "widgets": {
-            "image": "图像"
+            "image": "图像",
+            "choose file to upload": "上传文件"
         },
         "outputs": {
             "IMAGE": "图像",
@@ -799,14 +803,14 @@
     "ImageCompositeMasked": {
         "title": "图像遮罩复合",
         "inputs": {
-            "destination": "目标",
-            "source": "源",
+            "destination": "目标图像",
+            "source": "源图像",
             "mask": "遮罩"
         },
         "widgets": {
             "x": "X",
             "y": "Y",
-            "resize_source": "缩放源"
+            "resize_source": "缩放源图像"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -820,7 +824,8 @@
         "title": "加载图像遮罩",
         "widgets": {
             "image": "图像",
-            "channel": "通道"
+            "channel": "通道",
+            "choose file to upload": "上传文件"
         },
         "outputs": {
             "MASK": "遮罩"
@@ -888,7 +893,8 @@
     "MaskComposite": {
         "title": "遮罩混合",
         "inputs": {
-            "mask": "遮罩"
+            "destination": "目标遮罩",
+            "source": "源遮罩"
         },
         "widgets": {
             "x": "X",
@@ -918,6 +924,73 @@
         },
         "outputs": {
             "MASK": "遮罩"
+        }
+    },
+    
+
+
+
+    "VAEDecodeTiled": {
+        "title": "VAE分块解码",
+        "inputs": {
+            "samples": "Latent",
+            "vae": "VAE"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "VAEEncodeTiled": {
+        "title": "VAE分块编码",
+        "inputs": {
+            "pixels": "图像",
+            "vae": "VAE"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "TomePatchModel": {
+        "title": "Tome合并模型Token",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "ratio": "比率"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "SaveLatent": {
+        "title": "保存Latent",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "widgets": {
+            "samples": "Latent"
+        }
+    },
+    "LoadLatent": {
+        "title": "读取Latent",
+        "widgets": {
+            "filename_prefix": "文件名前缀"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "LatentBlend": {
+        "title": "Latent混合",
+        "inputs": {
+            "samples1": "Latent1",
+            "samples2": "Latent2"
+        },
+        "widgets": {
+            "blend_factor": "系数"
+        },
+        "outputs": {
+            "LATENT": "Latent"
         }
     },
 
@@ -1002,7 +1075,7 @@
     "CLIPTextEncodeSDXL": {
         "title": "CLIP文本编码SDXL",
         "inputs": {
-            "conditioning": "条件"
+            "clip": "CLIP"
         },
         "widgets": {
             "width": "宽度",
@@ -1021,7 +1094,7 @@
     "CLIPTextEncodeSDXLRefiner": {
         "title": "CLIP文本编码SDXL优化",
         "inputs": {
-            "conditioning": "条件"
+            "clip": "CLIP"
         },
         "widgets": {
             "ascore": "美学分数",
@@ -1119,73 +1192,6 @@
         },
         "outputs": {
             "MODEL": "模型"
-        }
-    },
-
-
-
-
-    "VAEDecodeTiled": {
-        "title": "VAE分块解码",
-        "inputs": {
-            "samples": "Latent",
-            "vae": "VAE"
-        },
-        "outputs": {
-            "IMAGE": "图像"
-        }
-    },
-    "VAEEncodeTiled": {
-        "title": "VAE分块编码",
-        "inputs": {
-            "pixels": "图像",
-            "vae": "VAE"
-        },
-        "outputs": {
-            "LATENT": "Latent"
-        }
-    },
-    "TomePatchModel": {
-        "title": "Tome合并模型Token",
-        "inputs": {
-            "model": "模型"
-        },
-        "widgets": {
-            "ratio": "比率"
-        },
-        "outputs": {
-            "MODEL": "模型"
-        }
-    },
-    "SaveLatent": {
-        "title": "保存Latent",
-        "widgets": {
-            "latent": "Latent"
-        },
-        "outputs": {
-            "LATENT": "Latent"
-        }
-    },
-    "LoadLatent": {
-        "title": "读取Latent",
-        "inputs": {
-            "samples": "Latent"
-        },
-        "widgets": {
-            "filename_prefix": "文件名前缀"
-        }
-    },
-    "LatentBlend": {
-        "title": "Latent混合",
-        "inputs": {
-            "samples1": "Latent1",
-            "samples2": "Latent2"
-        },
-        "widgets": {
-            "blend_factor": "系数"
-        },
-        "outputs": {
-            "LATENT": "Latent"
         }
     }
 }

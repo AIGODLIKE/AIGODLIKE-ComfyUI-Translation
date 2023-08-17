@@ -2,7 +2,7 @@
     "ImpactKSamplerBasicPipe": {
         "title": "K采样器(节点束)",
         "inputs": {
-            "BASIC_PIPE": "基础节点束",
+            "basic_pipe": "基础节点束",
             "latent_image": "Latent"
         },
         "widgets": {
@@ -27,13 +27,12 @@
     "ImpactKSamplerAdvancedBasicPipe": {
         "title": "K采样器(高级节点束)",
         "inputs": {
-            "BASIC_PIPE": "基础节点束",
-            "add_noise": "添加噪波",
-            "latent_image": "Latent",
-            "return_with_leftover_noise": "返回噪波"
+            "basic_pipe": "基础节点束",
+            "latent_image": "Latent"
         },
         "widgets": {
-            "seed": "随机种",
+            "add_noise": "添加噪波",
+            "noise_seed": "随机种",
             "control_after_generate": "运行后操作",
                 "fixed": "固定",
                 "increment": "增加",
@@ -43,7 +42,10 @@
             "cfg": "CFG",
             "sampler_name": "采样器",
             "scheduler": "调度器",
-            "denoise": "降噪"
+            "denoise": "降噪",
+            "start_at_step": "开始降噪步数",
+            "end_at_step": "结束降噪步数",
+            "return_with_leftover_noise": "返回噪波"
         },
         "outputs": {
             "BASIC_PIPE": "基础节点束",
@@ -220,7 +222,7 @@
         }
     },
     "ReencodeLatentPipe": {
-        "title": "重编码Latent节点束",
+        "title": "重编码Latent(节点束)",
         "inputs": {
             "samples": "Latent",
             "input_basic_pipe": "解码节点束",
@@ -369,7 +371,7 @@
         }
     },
     "Segs & Mask ForEach": {
-        "title": "批量Seg遮罩",
+        "title": "Seg遮罩(批量)",
         "inputs": {
             "segs": "Seg",
             "mask": "遮罩"
@@ -460,7 +462,10 @@
             "sampler_name": "采样器",
             "scheduler": "调度器",
             "denoise": "降噪",
-            "feather": "羽化"
+            "feather": "羽化",
+            "noise_mask": "仅生成遮罩",
+            "force_inpaint": "强制重绘",
+            "wildcard": "通配符"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -489,7 +494,10 @@
             "sampler_name": "采样器",
             "scheduler": "调度器",
             "denoise": "降噪",
-            "feather": "羽化"
+            "feather": "羽化",
+            "noise_mask": "仅生成遮罩",
+            "force_inpaint": "强制重绘",
+            "wildcard": "通配符"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -522,7 +530,10 @@
             "sampler_name": "采样器",
             "scheduler": "调度器",
             "denoise": "降噪",
-            "feather": "羽化"
+            "feather": "羽化",
+            "noise_mask": "仅生成遮罩",
+            "force_inpaint": "强制重绘",
+            "wildcard": "通配符"
         },
         "outputs": {
             "image": "图像",
@@ -554,7 +565,10 @@
             "sampler_name": "采样器",
             "scheduler": "调度器",
             "denoise": "降噪",
-            "feather": "羽化"
+            "feather": "羽化",
+            "noise_mask": "仅生成遮罩",
+            "force_inpaint": "强制重绘",
+            "wildcard": "通配符"
         },
         "outputs": {
             "image": "图像",
@@ -1580,6 +1594,21 @@
         "title": "条件停止迭代",
         "inputs": {
             "cond": "条件"
+        }
+    },
+
+
+
+    "ImpactLogger": {
+        "title": "输出日志",
+        "inputs": {
+            "data": "数据"
+        }
+    },
+    "ImpactDummyInput": {
+        "title": "虚拟输入",
+        "outputs": {
+            "*": "输出"
         }
     },
 

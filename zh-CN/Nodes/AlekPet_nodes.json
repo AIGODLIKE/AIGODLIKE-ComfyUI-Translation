@@ -24,7 +24,7 @@
         }
     },
     "TranslateCLIPTextEncodeNode": {
-        "title": "翻译CLIP文本编码器",
+        "title": "CLIP文本编码器(翻译)",
         "inputs": {
             "clip": "CLIP"
         },

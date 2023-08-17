@@ -9,6 +9,11 @@
         },
         "widgets": {
             "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
             "steps": "步数",
             "cfg": "CFG",
             "sampler_name": "采样器",
@@ -30,6 +35,11 @@
         },
         "widgets": {
             "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
             "steps": "步数",
             "cfg": "CFG",
             "sampler_name": "采样器",

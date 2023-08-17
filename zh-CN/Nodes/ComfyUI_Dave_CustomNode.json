@@ -21,14 +21,14 @@
             "index": "条件索引",
             "x": "X",
             "y": "Y",
-            "sdn_width": "宽度",
-            "sdn_height": "高度",
+            "width": "宽度",
+            "height": "高度",
             "strength": "强度"
         },
         "outputs": {
             "CONDITIONING": "条件",
             "resolutionX": "分辨率X",
-            "resulutionY": "分辨率Y"
+            "resolutionY": "分辨率Y"
         }
     },
     "ConditioningUpscale": {
