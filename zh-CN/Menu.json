@@ -105,5 +105,19 @@
     "Never": "从不",
     "On Trigger": "触发器触发",
     "Prompt has no outputs": "提示词没有输出",
-    "Reconnecting...": "重新连接中..."
+    "Reconnecting...": "重新连接中...",
+    "Prompt outputs failed validation": "提示词输出验证异常",
+    "Required input is missing": "缺少输入",
+    "Return type mismatch between linked nodes": "接口类型不匹配",
+    "Exception when validating inner node": "内部节点验证出现异常",
+    "Custom validation failed for node": "自定义节点验证出现异常",
+    "Value {} smaller than min of {}": "值小于最小值",
+    "Value {} bigger than max of {}": "值大于最大值",
+    "Value not in list": "值不在列表内",
+    "Exception when validating node": "节点验证出现异常",
+    "control_after_generate": "运行后操作",
+        "fixed": "固定",
+        "increment": "增加",
+        "decrement": "减少",
+        "randomize": "随机"
 }

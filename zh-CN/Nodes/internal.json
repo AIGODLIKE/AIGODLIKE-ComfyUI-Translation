@@ -70,7 +70,7 @@
 
 
     "CheckpointLoaderSimple": {
-        "title": "Checkpoint加载器",
+        "title": "Checkpoint加载器(简易)",
         "widgets": {
             "ckpt_name": "Checkpoint名称"
         },
@@ -425,7 +425,7 @@
             "samples": "Latent"
         },
         "widgets": {
-            "amount": "数量"
+            "amount": "次数"
         },
         "outputs": {
             "LATENT": "Latent"
@@ -926,6 +926,73 @@
             "MASK": "遮罩"
         }
     },
+    
+
+
+
+    "VAEDecodeTiled": {
+        "title": "VAE分块解码",
+        "inputs": {
+            "samples": "Latent",
+            "vae": "VAE"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "VAEEncodeTiled": {
+        "title": "VAE分块编码",
+        "inputs": {
+            "pixels": "图像",
+            "vae": "VAE"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "TomePatchModel": {
+        "title": "Tome合并模型Token",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "ratio": "比率"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "SaveLatent": {
+        "title": "保存Latent",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "widgets": {
+            "samples": "Latent"
+        }
+    },
+    "LoadLatent": {
+        "title": "读取Latent",
+        "widgets": {
+            "filename_prefix": "文件名前缀"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "LatentBlend": {
+        "title": "Latent混合",
+        "inputs": {
+            "samples1": "Latent1",
+            "samples2": "Latent2"
+        },
+        "widgets": {
+            "blend_factor": "系数"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
 
 
 
@@ -1125,73 +1192,6 @@
         },
         "outputs": {
             "MODEL": "模型"
-        }
-    },
-
-
-
-
-    "VAEDecodeTiled": {
-        "title": "VAE分块解码",
-        "inputs": {
-            "samples": "Latent",
-            "vae": "VAE"
-        },
-        "outputs": {
-            "IMAGE": "图像"
-        }
-    },
-    "VAEEncodeTiled": {
-        "title": "VAE分块编码",
-        "inputs": {
-            "pixels": "图像",
-            "vae": "VAE"
-        },
-        "outputs": {
-            "LATENT": "Latent"
-        }
-    },
-    "TomePatchModel": {
-        "title": "Tome合并模型Token",
-        "inputs": {
-            "model": "模型"
-        },
-        "widgets": {
-            "ratio": "比率"
-        },
-        "outputs": {
-            "MODEL": "模型"
-        }
-    },
-    "SaveLatent": {
-        "title": "保存Latent",
-        "inputs": {
-            "samples": "Latent"
-        },
-        "widgets": {
-            "samples": "Latent"
-        }
-    },
-    "LoadLatent": {
-        "title": "读取Latent",
-        "widgets": {
-            "filename_prefix": "文件名前缀"
-        },
-        "outputs": {
-            "LATENT": "Latent"
-        }
-    },
-    "LatentBlend": {
-        "title": "Latent混合",
-        "inputs": {
-            "samples1": "Latent1",
-            "samples2": "Latent2"
-        },
-        "widgets": {
-            "blend_factor": "系数"
-        },
-        "outputs": {
-            "LATENT": "Latent"
         }
     }
 }

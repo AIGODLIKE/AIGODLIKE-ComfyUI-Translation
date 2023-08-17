@@ -462,7 +462,8 @@
             "sampler_name": "采样器",
             "scheduler": "调度器",
             "denoise": "降噪",
-            "feather": "羽化"
+            "feather": "羽化",
+            "wildcard": "通配符"
         },
         "outputs": {
             "IMAGE": "图像"
