@@ -40,8 +40,8 @@
             "conditioning": "条件"
         },
         "widgets": {
-            "sdn_width": "宽度",
-            "sdn_height": "高度",
+            "width": "宽度",
+            "height": "高度",
             "crop_w": "裁剪宽度",
             "crop_h": "裁剪高度",
             "target_width": "目标宽度",
@@ -57,8 +57,8 @@
             "conditioning": "条件"
         },
         "widgets": {
-            "sdn_width": "宽度",
-            "sdn_height": "高度",
+            "width": "宽度",
+            "height": "高度",
             "ascore": "美学分数"
         },
         "outputs": {

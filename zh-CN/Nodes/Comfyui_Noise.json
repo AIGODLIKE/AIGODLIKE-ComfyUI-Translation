@@ -24,8 +24,8 @@
         "widgets": {
             "source": "生成源",
             "seed": "随机种",
-            "sdn_width": "宽度",
-            "sdn_height": "高度",
+            "width": "宽度",
+            "height": "高度",
             "batch_size": "批次大小"
         },
         "outputs": {

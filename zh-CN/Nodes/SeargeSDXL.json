@@ -613,7 +613,7 @@
             "parameters": "参数组"
         }
     },
-    "SeargeStyleProcessor": {
+    "SeargeStylePreprocessor": {
         "title": "Sear风格处理器",
         "inputs": {
             "inputs": "输入组"
