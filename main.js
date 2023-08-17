@@ -141,8 +141,8 @@ export class TUtils {
 
 	static applyContextMenuTranslation(app) {
 		// 右键上下文菜单
-		var f = app.canvas.getCanvasMenuOptions;
-		app.canvas.getCanvasMenuOptions = function () {
+		var f = LGraphCanvas.prototype.getCanvasMenuOptions;
+		LGraphCanvas.prototype.getCanvasMenuOptions = function () {
 			var res = f.apply(this, arguments);
 			let menuT = TUtils.T.Menu;
 			for (let item of res) {

@@ -98,6 +98,12 @@ async def get_translation(request):
 
 
 def rmtree(path: Path):
+    # unlink symbolic link
+    if Path(path.resolve()).as_posix() != path.as_posix():
+        path.unlink()
+        return
+    if not path.exists():
+        return
     if path.is_file():
         path.unlink()
     elif path.is_dir():
@@ -111,8 +117,17 @@ def rmtree(path: Path):
 
 def register():
     aigodlike_ext_path = COMFY_PATH.joinpath("web", "extensions", ADDON_NAME)
-    if aigodlike_ext_path.exists():
-        rmtree(aigodlike_ext_path)
+    rmtree(aigodlike_ext_path)
+    link_func = lambda src, dst: os.symlink(src, dst)
+    if os.name == "nt":
+        import _winapi
+        link_func = _winapi.CreateJunction
+    try:
+        link_func(CUR_PATH.as_posix(), aigodlike_ext_path.as_posix())
+    except Exception as e:
+        sys.stderr.write(f"[agl/register error]: {e}\n")
+        sys.stderr.flush()
+    return
     aigodlike_ext_path.mkdir(parents=True, exist_ok=True)
     # 复制所有js文件
     for data in CUR_PATH.glob("*.js"):
@@ -143,8 +158,6 @@ def unregister():
     #     data.unlink()
 
     aigodlike_ext_path = COMFY_PATH.joinpath("web", "extensions", ADDON_NAME)
-    if not aigodlike_ext_path.exists():
-        return
     try:
         rmtree(aigodlike_ext_path)
     except BaseException:
