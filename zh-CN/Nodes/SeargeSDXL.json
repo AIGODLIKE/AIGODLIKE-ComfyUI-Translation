@@ -262,7 +262,7 @@
     "SeargeCheckpointLoader": {
         "title": "SearCheckpoint加载器",
         "inputs": {
-            "ckpt_name": "ckpt模型名称"
+            "ckpt_name": "CKPT模型名称"
         },
         "outputs": {
             "MODEL": "模型",

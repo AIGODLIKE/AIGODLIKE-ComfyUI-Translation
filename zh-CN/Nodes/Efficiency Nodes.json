@@ -94,7 +94,7 @@
             "cnet_stack": "ControlNet堆"
         },
         "widgets": {
-            "ckpt_name": "模型名称",
+            "ckpt_name": "CKPT模型名称",
             "vae_name": "VAE",
             "clip_skip": "CLIPskip",
             "lora_name": "LoRA",
