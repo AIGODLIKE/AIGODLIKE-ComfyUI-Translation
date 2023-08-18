@@ -636,6 +636,23 @@
             "IMAGE": "图像"
         }
     },
+    "ImageScaleToTotalPixels": {
+        "title": "图像按像素放大",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "upscale_method": "缩放方法",
+                "nearest-exact": "邻近-精确",
+                "bilinear": "双线性插值",
+                "area": "区域",
+                "bicubic": "双三次插值",
+            "megapixels": "像素数量"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
 
 
     "ImageBlend": {
