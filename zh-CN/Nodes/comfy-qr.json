@@ -6,8 +6,8 @@
             "text": "内容",
             "module_size": "模块大小",
             "max_image_size": "最大图像大小",
-            "fill_hex": "内容HEX",
-            "back_hex": "背景HEX",
+            "fill_hexcolor": "内容HEX",
+            "back_hexcolor": "背景HEX",
             "error_correction": "容错能力",
             "border": "边界大小"
         },
@@ -23,8 +23,8 @@
             "protocol": "格式",
             "text": "内容",
             "image_size": "图像大小",
-            "fill_hex": "内容HEX",
-            "back_hex": "背景HEX",
+            "fill_hexcolor": "内容HEX",
+            "back_hexcolor": "背景HEX",
             "error_correction": "容错能力",
             "border": "边界大小",
             "resampling": "重采样",
@@ -40,15 +40,15 @@
             "QR_VERSION": "QR版本"
         }
     },
-    "comfyui-qr-by-module-split": {
+    "comfy-qr-by-module-split": {
         "title": "QR码(分割)",
         "widgets": {
             "protocol": "格式",
             "text": "内容",
             "module_size": "模块大小",
             "max_image_size": "最大图像大小",
-            "fill_hex": "内容HEX",
-            "back_hex": "背景HEX",
+            "fill_hexcolor": "内容HEX",
+            "back_hexcolor": "背景HEX",
             "error_correction": "容错能力",
             "border": "边界大小"
         },
@@ -61,7 +61,7 @@
             "IMAGE_SIZE": "图像大小"
         }
     },
-    "comfyui-qr-mask_errors": {
+    "comfy-qr-mask_errors": {
         "title": "QR码(容错校验)",
         "inputs": {
             "source_qr": "源QR图像",
@@ -69,7 +69,7 @@
         },
         "widgets": {
             "module_size": "模块大小",
-            "greyscale_method": "灰度计算模式",
+            "grayscale_method": "灰度计算模式",
                 "mean": "平均",
             "aggregate_method": "色值计算模式",
             "evaluate": "计算目标",
