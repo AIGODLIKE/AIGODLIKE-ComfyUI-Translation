@@ -22,7 +22,7 @@
     "BNK_NoisyLatentImage": {
         "title": "噪波Latent",
         "widgets": {
-            "source": "生成源",
+            "source": "生成设备",
             "seed": "随机种",
             "control_after_generate": "运行后操作",
                 "fixed": "固定",

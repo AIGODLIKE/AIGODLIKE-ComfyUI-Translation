@@ -1,0 +1,89 @@
+{
+    "comfy-qr-by-module-size": {
+        "title": "QR码(模块)",
+        "widgets": {
+            "protocol": "格式",
+            "text": "内容",
+            "module_size": "模块大小",
+            "max_image_size": "最大图像大小",
+            "fill_hexcolor": "内容HEX",
+            "back_hexcolor": "背景HEX",
+            "error_correction": "容错能力",
+            "border": "边界大小"
+        },
+        "outputs": {
+            "QR_CODE": "QR图像",
+            "QR_VERSION": "QR版本",
+            "IMAGE_SIZE": "图像大小"
+        }
+    },
+    "comfy-qr-by-image-size": {
+        "title": "QR码(图像)",
+        "widgets": {
+            "protocol": "格式",
+            "text": "内容",
+            "image_size": "图像大小",
+            "fill_hexcolor": "内容HEX",
+            "back_hexcolor": "背景HEX",
+            "error_correction": "容错能力",
+            "border": "边界大小",
+            "resampling": "重采样",
+                "bicubic": "双三次插值",
+                "bilinear": "双线性插值",
+                "box": "方框滤波",
+                "Hamming": "汉明窗",
+                "Lanczos": "Lanczos插值",
+                "nearest": "最近邻近"
+        },
+        "outputs": {
+            "QR_CODE": "QR图像",
+            "QR_VERSION": "QR版本"
+        }
+    },
+    "comfy-qr-by-module-split": {
+        "title": "QR码(分割)",
+        "widgets": {
+            "protocol": "格式",
+            "text": "内容",
+            "module_size": "模块大小",
+            "max_image_size": "最大图像大小",
+            "fill_hexcolor": "内容HEX",
+            "back_hexcolor": "背景HEX",
+            "error_correction": "容错能力",
+            "border": "边界大小"
+        },
+        "outputs": {
+            "QR_CODE": "QR图像",
+            "MODULE_LAYER": "模块图像",
+            "FINDER_LAYER": "定位图像",
+            "FINDER_MASK": "定位遮罩",
+            "QR_VERSION": "QR版本",
+            "IMAGE_SIZE": "图像大小"
+        }
+    },
+    "comfy-qr-mask_errors": {
+        "title": "QR码(容错校验)",
+        "inputs": {
+            "source_qr": "源QR图像",
+            "modified_qr": "修改QR图像"
+        },
+        "widgets": {
+            "module_size": "模块大小",
+            "grayscale_method": "灰度计算模式",
+                "mean": "平均",
+            "aggregate_method": "色值计算模式",
+            "evaluate": "计算目标",
+                "full_qr": "整体",
+                "module_pattern": "模块",
+                "finder_pattern": "定位",
+            "error_difficulty": "容错难度",
+            "inverted_pattern": "反转内容"
+        },
+        "outputs": {
+            "QR_ERROR_MASK": "QR错误遮罩",
+            "PERCENT_ERROR": "错误占比",
+            "CORRELATION": "相关系数",
+            "RMSE": "误差值"
+        }
+    }
+}
