@@ -577,6 +577,84 @@
             "cropped_refined_alpha": "细化通道"
         }
     },
+    "NoiseInjectionDetailerHookProvider": {
+        "title": "NoiseInjectionDetailerHookProvider",
+        "widgets": {
+            "source": "生成设备",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "strength": "强度"
+        },
+        "outputs": {
+            "DETAILER_HOOK": "细化约束"
+        }
+    },
+    "NoiseInjectionHookProvider": {
+        "title": "NoiseInjectionHookProvider",
+        "widgets": {
+            "scheduler": "调度器",
+            "source": "生成设备",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "start_strength": "初始强度",
+            "end_strength": "最终强度"
+        }
+    },
+    "SEGSDetailer": {
+        "title": "Seg细化",
+        "inputs": {
+            "image": "图像",
+            "segs": "Seg",
+            "basic_pipe": "基础节点束"
+        },
+        "widgets": {
+            "guide_size": "引导大小",
+            "max_size": "最大引导",
+            "seed": "随机种",
+                "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "SEGSPaste": {
+        "title": "Seg粘贴",
+        "inputs": {
+            "image": "图像",
+            "segs": "Seg",
+            "ref_image_opt": "参考图像"
+        },
+        "widgets": {
+            "feather": "羽化"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "SEGSPreview": {
+        "title": "Seg预览",
+        "inputs": {
+            "segs": "Seg",
+            "fallback_image_opt": "备用图像"
+        }
+    },
 
 
 
@@ -863,53 +941,6 @@
             "cropped_enhanced_alpha": "细化部分",
             "mask": "遮罩",
             "detailer": "细化节点束"
-        }
-    },
-    "SEGSDetailer": {
-        "title": "Seg细化",
-        "inputs": {
-            "image": "图像",
-            "segs": "Seg",
-            "basic_pipe": "基础节点束"
-        },
-        "widgets": {
-            "guide_size": "引导大小",
-            "max_size": "最大引导",
-            "seed": "随机种",
-                "control_after_generate": "运行后操作",
-                "fixed": "固定",
-                "increment": "增加",
-                "decrement": "减少",
-                "randomize": "随机",
-            "steps": "步数",
-            "cfg": "CFG",
-            "sampler_name": "采样器",
-            "scheduler": "调度器",
-            "denoise": "降噪"
-        },
-        "outputs": {
-            "SEGS": "Seg"
-        }
-    },
-    "SEGSPaste": {
-        "title": "Seg粘贴",
-        "inputs": {
-            "image": "图像",
-            "segs": "Seg",
-            "ref_image_opt": "参考图像"
-        },
-        "widgets": {
-            "feather": "羽化"
-        },
-        "outputs": {
-            "IMAGE": "图像"
-        }
-    },
-    "SEGSPreview": {
-        "title": "Seg预览",
-        "inputs": {
-            "segs": "Seg",
-            "fallback_image_opt": "备用图像"
         }
     },
 
