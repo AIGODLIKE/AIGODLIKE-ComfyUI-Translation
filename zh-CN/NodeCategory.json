@@ -6,7 +6,7 @@
         "gligen": "GLIGEN",
         "advanced": "高级",
         "cutoff": "截断",
-    "latent": "潜空间",
+    "latent": "Latent",
         "inpaint": "内补",
         "batch": "批处理",
         "transform": "变换",

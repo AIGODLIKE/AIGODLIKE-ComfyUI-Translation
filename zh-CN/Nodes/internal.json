@@ -588,7 +588,7 @@
         "widgets": {
             "x": "X",
             "y": "Y",
-            "resize_source": "缩放源Latent"
+            "resize_source": "拉伸源Latent"
         },
         "outputs": {
             "LATENT": "Latent"
@@ -810,7 +810,7 @@
         "widgets": {
             "x": "X",
             "y": "Y",
-            "resize_source": "缩放源图像"
+            "resize_source": "拉伸源图像"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -921,6 +921,19 @@
             "top": "上",
             "right": "右",
             "bottom": "下"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "GrowMask": {
+        "title": "遮罩扩展",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "expand": "扩展",
+            "tapered_corners": "倒角"
         },
         "outputs": {
             "MASK": "遮罩"
