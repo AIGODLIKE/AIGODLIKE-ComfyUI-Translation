@@ -1445,7 +1445,7 @@
             "wildcard_text": "通配文本",
             "populated_text": "输入文本",
             "mode": "是否输入",
-            "Select to add LoRA": "添加Lora"
+            "Select to add LoRA": "添加LoRA"
         },
         "outputs": {
             "MODEL": "模型",

@@ -289,11 +289,11 @@
         }
     },
     "SeargeLoraLoader": {
-        "title": "SearLora加载器",
+        "title": "SearLoRA加载器",
         "inputs": {
             "model": "模型",
             "clip": "CLIP",
-            "lora_name": "Lora名称"
+            "lora_name": "LoRA名称"
         },
         "widgets": {
             "strength_model": "模型强度",
@@ -422,7 +422,7 @@
             "vae_model": "VAE模型",
             "main_upscale_model": "主放大模型",
             "support_upscale_model": "次放大模型",
-            "lora_model": "Lora模型"
+            "lora_model": "LoRA模型"
         },
         "outputs": {
             "model_names": "模型名称"
@@ -472,7 +472,7 @@
         }
     },
     "SeargeInput7": {
-        "title": "SearLora",
+        "title": "SearLoRA",
         "inputs": {
             "inputs": "输入组"
         },
@@ -550,7 +550,7 @@
             "vae_model": "VAE模型",
             "main_upscale_model": "主放大模型",
             "support_upscale_model": "次放大模型",
-            "lora_model": "Lora模型"
+            "lora_model": "LoRA模型"
         }
     },
     "SeargeOutput5": {
@@ -583,7 +583,7 @@
         }
     },
     "SeargeOutput7": {
-        "title": "SearLora",
+        "title": "SearLoRA",
         "inputs": {
             "parameters": "参数组"
         },
