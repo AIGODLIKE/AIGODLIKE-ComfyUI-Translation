@@ -252,9 +252,12 @@
             "image": "图像"
         },
         "widgets": {
-            "lower_threshold": "低阈值",
-            "upper_threshold": "高阈值",
-            "hsv_channel": "HSV通道"
+            "low_threshold": "低阈值",
+            "high_threshold": "高阈值",
+            "hsv_channel": "HSV通道",
+                "hue": "色调",
+                "saturation": "饱和度",
+                "value": "明度"
         },
         "outputs": {
             "IMAGE": "图像"

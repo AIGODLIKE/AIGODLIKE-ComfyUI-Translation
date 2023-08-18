@@ -15,6 +15,11 @@
                 "Hold": "不变",
                 "Script": "脚本",
             "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
             "steps": "步数",
             "cfg": "CFG",
             "sampler_name": "采样器",
@@ -53,7 +58,12 @@
             "add_noise": "添加噪波",
                 "enable": "是",
                 "disable": "否",
-            "seed": "随机种",
+            "noise_seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
             "steps": "步数",
             "cfg": "CFG",
             "sampler_name": "采样器",
@@ -61,6 +71,7 @@
             "start_at_step": "开始降噪步数",
             "end_at_step": "结束降噪步数",
             "denoise": "降噪",
+            "return_with_leftover_noise": "返回噪波",
             "preview_method": "预览方法",
             "vae_decode": "VAE解码",
                 "true": "是",
@@ -79,20 +90,20 @@
     "Efficient Loader": {
         "title": "效率加载器",
         "inputs": {
-            "lora_stack": "Lora堆",
+            "lora_stack": "LoRA堆",
             "cnet_stack": "ControlNet堆"
         },
         "widgets": {
-            "ckpt_name": "模型名称",
+            "ckpt_name": "CKPT模型名称",
             "vae_name": "VAE",
             "clip_skip": "CLIPskip",
-            "lora_name": "Lora",
-            "lora_model_strength": "Lora模型强度",
-            "lora_clip_strength": "LoraCLIP强度",
+            "lora_name": "LoRA",
+            "lora_model_strength": "LoRA模型强度",
+            "lora_clip_strength": "LoRACLIP强度",
             "positive": "正面提示词",
             "negative": "负面提示词",
             "empty_latent_width": "宽度",
-            "empth_latent_height": "高度",
+            "empty_latent_height": "高度",
             "batch_size": "批次大小"
         },
         "outputs": {
@@ -110,31 +121,31 @@
 
 
     "LoRA Stacker": {
-        "title": "Lora堆",
+        "title": "LoRA堆",
         "inputs": {
-            "lora_stack": "Lora堆"
+            "lora_stack": "LoRA堆"
         },
         "widgets": {
-            "lora_name_1": "Lora1",
-            "lora_name_2": "Lora2",
-            "lora_name_3": "Lora3",
-            "lora_wt_1": "Lora权重1",
-            "lora_wt_2": "Lora权重2",
-            "lora_wt_3": "Lora权重3"
+            "lora_name_1": "LoRA1",
+            "lora_name_2": "LoRA2",
+            "lora_name_3": "LoRA3",
+            "lora_wt_1": "LoRA权重1",
+            "lora_wt_2": "LoRA权重2",
+            "lora_wt_3": "LoRA权重3"
         },
         "outputs": {
-            "LORA_STACK": "Lora堆"
+            "LORA_STACK": "LoRA堆"
         }
     },
     "LoRA Stacker Adv.": {
-        "title": "Lora堆(高级)",
+        "title": "LoRA堆(高级)",
         "inputs": {
-            "lora_stack": "Lora堆"
+            "lora_stack": "LoRA堆"
         },
         "widgets": {
-            "lora_name_1": "Lora1",
-            "lora_name_2": "Lora2",
-            "lora_name_3": "Lora3",
+            "lora_name_1": "LoRA1",
+            "lora_name_2": "LoRA2",
+            "lora_name_3": "LoRA3",
             "model_str_1": "模型强度1",
             "model_str_2": "模型强度2",
             "model_str_3": "模型强度3",
@@ -143,7 +154,7 @@
             "clip_str_3": "CLIP强度3"
         },
         "outputs": {
-            "LORA_STACK": "Lora堆"
+            "LORA_STACK": "LoRA堆"
         }
     },
     "Control Net Stacker": {
@@ -319,22 +330,22 @@
     "XY Input: LoRA": {
         "title": "LoRA",
         "inputs": {
-            "lora_stack": "Lora堆"
+            "lora_stack": "LoRA堆"
         },
         "widgets": {
             "model_strengths": "模型权重",
             "clip_strengths": "CLIP权重",
-            "lora_name_1": "模型1",
-            "lora_name_2": "模型2",
-            "lora_name_3": "模型3",
-            "lora_name_4": "模型4",
-            "lora_name_5": "模型5"
+            "lora_name_1": "LoRA1",
+            "lora_name_2": "LoRA2",
+            "lora_name_3": "LoRA3",
+            "lora_name_4": "LoRA4",
+            "lora_name_5": "LoRA5"
         }
     },
     "XY Input: LoRA Adv.": {
         "title": "LoRA(高级)",
         "inputs": {
-            "lora_stack": "Lora堆"
+            "lora_stack": "LoRA堆"
         },
         "widgets": {
             "model_str_1": "模型权重1",

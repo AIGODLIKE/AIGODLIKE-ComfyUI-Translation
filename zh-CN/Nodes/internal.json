@@ -90,13 +90,13 @@
         }
     },
     "LoraLoader": {
-        "title": "Lora加载器",
+        "title": "LoRA加载器",
         "inputs": {
-            "MODEL": "模型",
-            "CLIP": "CLIP"
+            "model": "模型",
+            "clip": "CLIP"
         },
         "widgets": {
-            "lora_name": "lora名称",
+            "lora_name": "LoRA名称",
             "strength_model": "模型强度",
             "strength_clip": "CLIP强度"
         },
@@ -105,20 +105,10 @@
             "CLIP": "CLIP"
         }
     },
-    "VAELoaControlNetLoaderder": {
-        "title": "ControlNet加载器",
-        "widgets": {
-            "control_net_name": "controlnet名称"
-        },
-        "outputs": {
-            "CONTROL_NET": "ControlNet",
-            "control_net": "ControlNet"
-        }
-    },
     "ControlNetLoader": {
         "title": "ControlNet加载器",
         "widgets": {
-            "control_net_name": "controlnet名称"
+            "control_net_name": "ControlNet名称"
         },
         "outputs": {
             "CONTROL_NET": "ControlNet"
@@ -130,7 +120,7 @@
             "MODEL": "模型"
         },
         "widgets": {
-            "control_net_name": "controlnet名称"
+            "control_net_name": "ControlNet名称"
         },
         "outputs": {
             "CONTROL_NET": "ControlNet"
@@ -588,7 +578,7 @@
         "widgets": {
             "x": "X",
             "y": "Y",
-            "resize_source": "缩放源Latent"
+            "resize_source": "拉伸源Latent"
         },
         "outputs": {
             "LATENT": "Latent"
@@ -810,7 +800,7 @@
         "widgets": {
             "x": "X",
             "y": "Y",
-            "resize_source": "缩放源图像"
+            "resize_source": "拉伸源图像"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -921,6 +911,19 @@
             "top": "上",
             "right": "右",
             "bottom": "下"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "GrowMask": {
+        "title": "遮罩扩展",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "expand": "扩展",
+            "tapered_corners": "倒角"
         },
         "outputs": {
             "MASK": "遮罩"

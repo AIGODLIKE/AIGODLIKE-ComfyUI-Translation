@@ -12,7 +12,8 @@
             "frame_number": "帧数"
         },
         "outputs": {
-            "MODEL": "模型"
+            "MODEL": "模型",
+            "LATENT": "Latent"
         }
     },
     "AnimateDiffLoader_v2": {
@@ -26,7 +27,8 @@
             "frame_number": "帧数"
         },
         "outputs": {
-            "MODEL": "模型"
+            "MODEL": "模型",
+            "LATENT": "Latent"
         }
     },
     "AnimateDiffUnload": {
