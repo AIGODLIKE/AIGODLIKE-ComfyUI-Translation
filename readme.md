@@ -3,9 +3,12 @@ A plugin for multilingual translation of [ComfyUI](https://github.com/comfyanony
 ## ComfyUI users in other languages, I need your help
 I hope ComfyUI can support more languages besides Chinese and English, such as French, German, Japanese, Korean, etc. However, I believe that translation should be done by native speakers of each language. So I need your help, let's go fight for ComfyUI together!
 ## Language supported
-1. Chinese简体中文
-2. English
-3. Korean한국어
+
+|COMFYUI Translation|Chinese简体中文|English|Japanese日本語|Korean한국어|Your language|
+|:----|:----|:----|:----|:----|:----|
+|Menu|√|√|TODO|√|TODO|
+|NodeCategory|√|√|TODO|TODO|TODO|
+|Nodes|√|√|TODO|TODO|TODO|
 ## Function
 1. Translate all UI of ComfyUI
 ![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/323f3f84-e9c0-421e-9089-470e5a5ac350)
@@ -16,6 +19,34 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 3. Support for adding other languages
 4. Support translation custom nodes
 5. **(2023/8/16)** Support one-click switching between English/currently set language
+6. **(2023/8/19)** Support for multilingual translation of custom nodes * (in production)
+
+|Custom Node Name|Chinese|English|Japanese|Korean|
+|:----|:----|:----|:----|:----|
+|[AGL-ComfyUI-Translation](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION)|√|√|TODO|TODO|
+|[Advanced Encode](https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb)|√|√|TODO|TODO|
+|[AlekPet Nodes](https://github.com/AlekPet/ComfyUI_Custom_Nodes_AlekPet)|√|√|TODO|TODO|
+|[AnimateDiff](https://github.com/guoyww/AnimateDiff)|√|√|TODO|TODO|
+|[TiledKSampler](https://github.com/BlenderNeko/ComfyUI_TiledKSampler)|√|√|TODO|TODO|
+|[CLIP Seg](https://github.com/biegert/ComfyUI-CLIPSeg)|√|√|TODO|TODO|
+|[ControlNet Preprocessors](https://github.com/Fannovel16/comfy_controlnet_preprocessors)|√|√|TODO|TODO|
+|[Comfy-QR](https://github.com/coreyryanhanson/comfy-qr)|√|√|TODO|TODO|
+|[ComfyUI_Cutoff](https://github.com/BlenderNeko/ComfyUI_Cutoff)|√|√|TODO|TODO|
+|[Davemane42 Nodes](https://github.com/Davemane42/ComfyUI_Dave_CustomNode)|√|√|TODO|TODO|
+|[EllangoK Postprocessing](https://github.com/EllangoK/ComfyUI-post-processing-nodes)|√|√|TODO|TODO|
+|[ComfyUI_Noise](https://github.com/BlenderNeko/ComfyUI_Noise)|√|√|TODO|TODO|
+|[ComfyUI-WD14-Tagger](https://github.com/pythongosssss/ComfyUI-WD14-Tagger)|√|√|TODO|TODO|
+|[ComfyUI-Restart-Sampling](https://github.com/ssitu/ComfyUI_restart_sampling)|√|√|TODO|TODO|
+|[Vextra Nodes](https://github.com/diontimmer/ComfyUI-Vextra-Nodes)|√|√|TODO|TODO|
+|[ComfyUI_experiments](https://github.com/comfyanonymous/ComfyUI_experiments)|√|√|TODO|TODO|
+|[Efficiency Nodes](https://github.com/LucianoCirino/efficiency-nodes-comfyui)|√|√|TODO|TODO|
+|[Impact Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack)|√|√|TODO|TODO|
+|[Impact Subpack](https://github.com/ltdrdata/ComfyUI-Impact-Subpack)|√|√|TODO|TODO|
+|[Fast Decode](https://github.com/nagolinc/ComfyUI_FastVAEDecorder_SDXL)|√|√|TODO|TODO|
+|[Image Grid](https://github.com/LEv145/images-grid-comfy-plugin)|√|√|TODO|TODO|
+|[SeargeSDXL](https://github.com/SeargeDP/SeargeSDXL)|√|√|TODO|TODO|
+
+
 ## How to install
 AIGODLIKE-COMFYUI-TRANSLATION is equivalent to a custom node, you can use any method you like, just put it in folder custom_nodes
 Then run:
