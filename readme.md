@@ -46,6 +46,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Image Grid](https://github.com/LEv145/images-grid-comfy-plugin)|√|√|TODO|TODO|
 |[SeargeSDXL](https://github.com/SeargeDP/SeargeSDXL)|√|√|TODO|TODO|
 
+The above only includes translations for the UI. If you are a developer and need me to help you translate your interface, you can go directly to the [ComfyUI Plugins List](https://github.com/WASasquatch/comfyui-plugins) to add your custom node project, or send an issue, as long as I can see it, I will translate it (it will take some time)
 
 ## How to install
 AIGODLIKE-COMFYUI-TRANSLATION is equivalent to a custom node, you can use any method you like, just put it in folder custom_nodes
