@@ -1100,7 +1100,7 @@
             "upscale_model_opt": "放大模型"
         },
         "widgets": {
-            "scale_method": "放大方法",
+            "scale_method": "缩放方法",
                 "nearest-exact": "邻近-精确",
                 "bilinear": "双线性插值",
                 "area": "区域",
@@ -1122,7 +1122,7 @@
             "pk_hook_opt": "约束"
         },
         "widgets": {
-            "scale_method": "放大方法",
+            "scale_method": "缩放方法",
                 "nearest-exact": "邻近-精确",
                 "bilinear": "双线性插值",
                 "area": "区域",
@@ -1145,7 +1145,7 @@
             "pk_hook_opt": "约束"
         },
         "widgets": {
-            "scale_method": "放大方法",
+            "scale_method": "缩放方法",
                 "nearest-exact": "邻近-精确",
                 "bilinear": "双线性插值",
                 "area": "区域",
@@ -1202,7 +1202,7 @@
             "pk_hook_opt": "约束"
         },
         "widgets": {
-            "scale_method": "放大方法",
+            "scale_method": "缩放方法",
                 "nearest-exact": "邻近-精确",
                 "bilinear": "双线性插值",
                 "area": "区域",
@@ -1233,7 +1233,7 @@
             "pk_hook_opt": "约束"
         },
         "widgets": {
-            "scale_method": "放大方法",
+            "scale_method": "缩放方法",
                 "nearest-exact": "邻近-精确",
                 "bilinear": "双线性插值",
                 "area": "区域",
@@ -1267,7 +1267,7 @@
             "pk_hook_full_opt": "全局约束"
         },
         "widgets": {
-            "scale_method": "放大方法",
+            "scale_method": "缩放方法",
                 "nearest-exact": "邻近-精确",
                 "bilinear": "双线性插值",
                 "area": "区域",
@@ -1300,7 +1300,7 @@
             "pk_hook_full_opt": "全局约束"
         },
         "widgets": {
-            "scale_method": "放大方法",
+            "scale_method": "缩放方法",
                 "nearest-exact": "邻近-精确",
                 "bilinear": "双线性插值",
                 "area": "区域",

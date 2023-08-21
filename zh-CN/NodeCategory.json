@@ -39,7 +39,7 @@
         "experimental": "实验",
         "Logic": "逻辑",
             "_for_test": "测试",
-        "Debug": "Debug",
+        "Debug": "调试",
     "postprocessing1": "后处理",
         "Blends": "混合",
         "Effects": "效果",
@@ -83,6 +83,20 @@
             "Outputs": "输出",
             "Generated": "生成",
         "Legacy": "旧版",
+    "Derfuu_nodes": "Derfu节点",
+        "Variables": "变量",
+        "Functions": "功能",
+            "Converters": "转换",
+        "Tuples": "元组",
+            "Modded nodes": "自设节点",
+                "Conditioning": "条件",
+                "Conditions": "条件",
+                "Latents": "Latent",
+        "Math": "数学",
+            "Trigonometry": "三角函数",
+        
+
+
 
     "basic_pipe": "基础节点束",
     "bbox_detector": "BBox检测",
@@ -94,6 +108,9 @@
     "segm_detector": "Segm检测",
     "sam_model": "SAM模型",
     "vae": "VAE",
+
+
+
 
     "LATENT": "Latent",
     "MODEL": "模型",
