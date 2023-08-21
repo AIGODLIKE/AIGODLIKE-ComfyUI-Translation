@@ -119,5 +119,10 @@
         "fixed": "固定",
         "increment": "增加",
         "decrement": "减少",
-        "randomize": "随机"
+        "randomize": "随机",
+    "Manager": "管理器",
+    "\nThe custom node DB is currently being updated, and updates to custom nodes are being checked for.\nNOTE: Update only checks for extensions that have been fetched.\n": "\n自定义节点数据库正在更新中, 并且正在检查自定义节点的更新.\n注意: 更新只检查已获取的扩展.\n",
+    "Save as": "另存为",
+    "Save to workflows": "保存到工作流",
+    "Install Custom Nodes": "安装自定义节点"
 }

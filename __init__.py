@@ -118,7 +118,7 @@ def rmtree(path: Path):
 def register():
     aigodlike_ext_path = COMFY_PATH.joinpath("web", "extensions", ADDON_NAME)
     rmtree(aigodlike_ext_path)
-    link_func = lambda src, dst: os.symlink(src, dst)
+    link_func = shutil.copytree
     if os.name == "nt":
         import _winapi
         link_func = _winapi.CreateJunction

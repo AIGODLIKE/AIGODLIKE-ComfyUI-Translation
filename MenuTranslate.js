@@ -32,6 +32,11 @@ export function applyMenuTranslation(T) {
   );
 
   observeFactory(
+    document.querySelector(".comfy-menu"),
+    handleViewQueueComfyListObserver
+  );
+
+  observeFactory(
     document.querySelector(".comfy-menu").querySelectorAll(".comfy-list")[0],
     handleViewQueueComfyListObserver
   );
@@ -47,6 +52,13 @@ export function applyMenuTranslation(T) {
       for (let mutation of mutationsList) {
         for (const node of mutation.addedNodes) {
           translateAllText(node);
+          if(node.classList.contains("comfy-modal")) {
+            observeFactory(node, (mutationsList, observer) => {
+              for (let mutation of mutationsList) {
+                translateAllText(mutation.target);
+              }
+            });
+          }
         }
       }
     }
