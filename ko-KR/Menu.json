@@ -156,5 +156,9 @@
     "Try Install":"설치 시도",
     "Uninstall":"설치 제거",
     "Disable":"비활성화",
-    "Enable":"활성화"
+    "Enable":"활성화",
+    "Filename":"파일명",
+    "input search keyword":"검색 할 키워드를 입력하세요",
+    "Tags":"태그",
+    "Download":"다운"
 }
