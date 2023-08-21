@@ -1,0 +1,422 @@
+{
+    "Float": {
+        "tilte": "浮点",
+        "widgets": {
+            "Value": "值"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "Integer": {
+        "tilte": "整数",
+        "widgets": {
+            "Value": "值"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "Text": {
+        "tilte": "文本",
+        "widgets": {
+            "Text": "文本"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Text Box": {
+        "tilte": "文本框",
+        "widgets": {
+            "Text": "文本"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+
+
+
+
+    "Float debug print": {
+        "tilte": "浮点调试输出",
+        "widgets": {
+            "Prefix": "前缀",
+            "Value": "值"
+        }
+    },
+    "Int debug print": {
+        "tilte": "整数调试输出",
+        "widgets": {
+            "Prefix": "前缀",
+            "Value": "值"
+        }
+    },
+    "Tuple debug print": {
+        "title": "元组调试输出",
+        "inputs": {
+            "Value": "值"
+        },
+        "widgets": {
+            "Prefix": "前缀"
+        }
+    },
+    "String debug print": {
+        "title": "字符串调试输出",
+        "widgets": {
+            "Prefix": "前缀",
+            "Text": "文本"
+        }
+    },
+
+
+
+    "Int to float": {
+        "title": "整数到浮点",
+        "widgets": {
+            "Value": "值"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "Ceil": {
+        "title": "向上取整",
+        "widgets": {
+            "Value": "值"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "Floor": {
+        "title": "向下取整",
+        "widgets": {
+            "Value": "值"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "Absolute value": {
+        "title": "绝对值",
+        "widgets": {
+            "Value": "值",
+            "negative_out": "返回负值"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+
+
+    "Random": {
+        "title": "随机值",
+        "widgets": {
+            "Value_A": "阈值A",
+            "Value_B": "阈值B"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "Get latent size": {
+        "title": "获取Latent尺寸",
+        "inputs": {
+            "latent": "Latent"
+        },
+        "widgets": {
+            "original": "初始Latent"
+        },
+        "outputs": {
+            "INT": "整数",
+            "TUPLE": "元组"
+        }
+    },
+    "Get image size": {
+        "title": "获取图像尺寸",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "INT": "整数",
+            "TUPLE": "元组"
+        }
+    },
+
+
+
+
+    "Tuple": {
+        "title": "元组",
+        "widgets": {
+            "Value_A": "值A",
+            "Value_B": "值B",
+            "round": "四舍五入"
+        },
+        "outputs": {
+            "TUPLE": "元组"
+        }
+    },
+    "Int to tuple": {
+        "title": "整数到元组",
+        "widgets": {
+            "Value_A": "值A",
+            "Value_B": "值B"
+        },
+        "outputs": {
+            "TUPLE": "元组"
+        }
+    },
+    "Tuple to floats": {
+        "title": "元组到浮点",
+        "inputs": {
+            "Tuple": "元组"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "Tuple to ints": {
+        "title": "元组到整数",
+        "inputs": {
+            "Tuple": "元组"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "Tuple swap": {
+        "title": "元组转换",
+        "inputs": {
+            "Tuple": "元组"
+        },
+        "outputs": {
+            "TUPLE": "元组"
+        }
+    },
+    "Tuple multiply": {
+        "title": "元组相乘",
+        "inputs": {
+            "Tuple": "元组"
+        },
+        "widgets": {
+            "Value": "值"
+        },
+        "outputs": {
+            "TUPLE": "元组"
+        }
+    },
+
+
+    "Conditioning set area with tuples": {
+        "title": "设置条件区域",
+        "inputs": {
+            "conditioning": "条件",
+            "size_tuple": "尺寸元组",
+            "offset_tuple": "偏移元组"
+        },
+        "widgets": {
+            "strength": "强度"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "LatentComposite with tuples": {
+        "title": "Latent元组复合",
+        "inputs": {
+            "samples_to": "目标Latent",
+            "samples_from": "源Latent",
+            "position_tuple": "位置元组"
+        },
+        "widgets": {
+        },
+        "outputs": {
+        }
+    },
+
+
+
+
+    "Sum": {
+        "title": "相加",
+        "widgets": {
+            "Value_A": "值A",
+            "Value_B": "值B"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "Subtract": {
+        "title": "相减",
+        "widgets": {
+            "Value_A": "值A",
+            "Value_B": "值B"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "Multiply": {
+        "title": "相乘",
+        "widgets": {
+            "Value_A": "值A",
+            "Value_B": "值B"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "Divide": {
+        "title": "相除",
+        "widgets": {
+            "numerator": "分子",
+            "denominator": "分母"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "Power": {
+        "title": "乘方",
+        "widgets": {
+            "Value": "值",
+            "Exponent": "指数"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "Square root": {
+        "title": "平方根",
+        "widgets": {
+            "Value": "值"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+
+
+    "Sinus": {
+        "title": "正弦",
+        "widgets": {
+            "value": "值",
+            "type": "类型",
+            "arcSin": "反正弦"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "Cosines": {
+        "title": "余弦",
+        "widgets": {
+            "value": "值",
+            "type": "类型",
+            "arcCos": "反余弦"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "Tangent": {
+        "title": "正切",
+        "widgets": {
+            "value": "值",
+            "type": "类型",
+            "arcTab": "反正切"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+
+
+
+
+    "Latent Scale by ratio": {
+        "title": "Latent按系数放大",
+        "inputs": {
+            "latent": "Latent"
+        },
+        "widgets": {
+            "modifer": "系数",
+            "scale_method": "缩放方法",
+            "crop": "裁剪",
+                "disabled": "关闭",
+                "enabled": "开启"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "Latent Scale to side": {
+        "title": "Latent按边放大",
+        "inputs": {
+            "latent": "Latent"
+        },
+        "widgets": {
+            "side_length": "边长度",
+            "side": "边",
+                "Width": "宽",
+            "scale_method": "缩放方法",
+            "crop": "裁剪",
+                "disabled": "关闭",
+                "enabled": "开启"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "Image Scale by ratio": {
+        "title": "Latent按系数放大",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "modifer": "系数",
+            "scale_method": "缩放方法",
+            "crop": "裁剪",
+                "disabled": "关闭",
+                "enabled": "开启"
+        },
+        "outputs": {
+            "Image": "图像"
+        }
+    },
+    "Image Scale to side": {
+        "title": "图像按边放大",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "side_length": "边长度",
+            "side": "边",
+                "Width": "宽",
+            "scale_method": "缩放方法",
+            "crop": "裁剪",
+                "disabled": "关闭",
+                "enabled": "开启"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Conditioning area scale by ratio": {
+        "title": "条件区域按系数放大",
+        "inputs": {
+            "conditioning": "条件"
+        },
+        "widgets": {
+            "modifer": "系数",
+            "strength_modifer": "强度"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    }
+}

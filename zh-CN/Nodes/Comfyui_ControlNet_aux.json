@@ -1,0 +1,43 @@
+{
+    "Manga2Anime_LineArt_Preprocessor": {
+        "title": "MangaAnime漫画艺术线预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "DWPreprocessor": {
+        "title": "DW姿态预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "detect_hand": "检测手部",
+            "detect_body": "检测身体",
+            "detect_face": "检测面部"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Scribble_XDoG_Preprocessor": {
+        "title": "ScribbleXDoG涂鸦预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "SAM Segmentor": {
+        "title": "SAM分割",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    }
+}

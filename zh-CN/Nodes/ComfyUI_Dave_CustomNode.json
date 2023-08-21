@@ -2,8 +2,8 @@
     "MultiLatentComposite": {
         "title": "多Latent复合",
         "inputs": {
-            "samples_to": "采样到",
-            "samples_from0": "采样从"
+            "samples_to": "目标Latent",
+            "samples_from0": "源Latent"
         },
         "outputs": {
             "LATENT": "Latent"
