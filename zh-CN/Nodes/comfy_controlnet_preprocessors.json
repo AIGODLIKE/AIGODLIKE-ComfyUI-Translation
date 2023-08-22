@@ -38,7 +38,8 @@
             "image": "图像"
         },
         "widgets": {
-            "threshold": "阈值"
+            "threshold": "阈值",
+            "bin_threshold": "阈值"
         },
         "outputs": {
             "IMAGE": "图像"

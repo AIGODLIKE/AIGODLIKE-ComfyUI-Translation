@@ -1,0 +1,485 @@
+{
+    "Checkpoint Loader": {
+        "title": "Checkpoint加载器",
+        "widgets": {
+            "config_name": "配置名称",
+            "ckpt_name": "Checkpoint名称"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "VAE": "VAE",
+            "NAME_STRING": "名称字符串"
+        }
+    },
+    "Diffusers Model Loader": {
+        "title": "扩散模型加载器",
+        "widgets": {
+            "model_path": "模型路径"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "VAE": "VAE",
+            "NAME_STRING": "名称字符串"
+        }
+    },
+    "Diffusers Hub Model Down-Loader": {
+        "title": "扩散模型下载器",
+        "widgets": {
+            "repo_id": "仓库ID",
+            "revision": "修改"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "VAE": "VAE",
+            "NAME_STRING": "名称字符串"
+        }
+    },
+
+    "BLIP Model Loader": {
+        "title": "BLIP模型加载器",
+        "widgets": {
+            "blip_model": "BLIP模型"
+        },
+        "outputs": {
+            "BLIP_MODEL": "BLIP模型"
+        }
+    },
+    "Checkpoint Loader (Simple)": {
+        "title": "Checkpoint加载器(简易)",
+        "widgets": {
+            "config_name": "配置名称",
+            "ckpt_name": "Checkpoint名称"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "VAE": "VAE",
+            "NAME_STRING": "名称字符串"
+        }
+    },
+    "CLIPSeg Model Loader": {
+        "title": "CLIP分割模型加载器",
+        "widgets": {
+            "model": "模型"
+        },
+        "outputs": {
+            "clipseg_model": "CLIP分割模型"
+        }
+    },
+    "Lora Loader": {
+        "title": "LoRA加载器",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称",
+            "strength_model": "模型强度",
+            "strength_clip": "CLIP强度"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "NAME_STRING": "名称字符串"
+        }
+    },
+    "Load Lora": {
+        "title": "加载LoRA",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称",
+            "strength_model": "模型强度",
+            "strength_clip": "CLIP强度"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "NAME_STRING": "名称字符串"
+        }
+    },
+    "MiDaS Model Loader": {
+        "title": "MiDaS模型加载器",
+        "widgets": {
+            "midas_model": "MiDaS模型"
+        },
+        "outputs": {
+            "midas_model": "MiDaS模型"
+        }
+    },
+    "unCLIP Checkpoint Loader": {
+        "title": "逆CLIPCheckpoint加载器",
+        "widgets": {
+            "ckpt_name": "Checkpoint名称"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "VAE": "VAE",
+            "CLIP_VISION": "CLIP视觉",
+            "NAME_STRING": "名称字符串"
+        }
+    },
+    "Upscale Model Loader": {
+        "title": "放大模型加载器",
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "UPSCALE_MODEL": "放大模型",
+            "MODEL_NAME_TEXT": "模型名称文本"
+        }
+    },
+
+
+
+    "Latent Noise Injection": {
+        "title": "Latent加入噪波",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "widgets": {
+            "noise_std": "噪波数量"
+        }
+    },
+    "Latent Upscale by Factor (WAS)": {
+        "title": "Latent按系数缩放(WAS)",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "widgets": {
+            "mode": "模式",
+            "factor": "系数",
+            "align": "对齐"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "Tensor Batch to Image": {
+        "title": "选取图像",
+        "inputs": {
+            "inmages_batch": "图像"
+        },
+        "widgets": {
+            "batch_image_number": "序号"
+        }
+    },
+    "Blend Latents": {
+        "title": "混合Latent",
+        "inputs": {
+            "latent_a": "LatentA",
+            "latent_b": "LatentB"
+        },
+        "widgets": {
+            "operation": "混合方法",
+            "blend": "系数"
+        }
+    },
+    
+    
+
+    "Cache Node": {
+        "title": "缓存节点",
+        "inputs": {
+            "latent": "Latent",
+            "image": "图像",
+            "conditioning": "条件"
+        },
+        "widgets": {
+            "latent_suffix": "Latent后缀",
+            "image_suffix": "图像后缀",
+            "conditioning_suffix": "条件后缀",
+            "output_path": "输出路径"
+        },
+        "outputs": {
+            "latent_filename": "Latent文件名",
+            "image_filename": "图像文件名",
+            "conditioning_filename": "条件文件名"
+        }
+    },
+    "Load Cache": {
+        "title": "读取缓存",
+        "widgets": {
+            "latent_path": "Latent路径",
+            "image_path": "图像路径",
+            "conditioning_path": "条件路径"
+        },
+        "outputs": {
+            "LATENT": "Latent",
+            "IMAGE": "图像",
+            "CONDITIONING": "条件"
+        }
+    },
+    "Image Load": {
+        "title": "图像加载",
+        "widgets": {
+            "image_path": "图像路径",
+            "RGBA": "RGBA"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "filename_text": "文件名"
+        }
+    },
+    "Image Save": {
+        "title": "图像保存",
+        "inputs": {
+            "output_path": "输出路径"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀",
+            "filename_delimiter": "文件名分隔符",
+            "filename_number_padding": "文件名数字填充",
+            "filename_number_start": "文件名数字开头",
+            "extension": "文件后缀",
+            "quality": "质量",
+            "lossless_webp": "高质量webp",
+            "overwrite_mode": "覆盖模式",
+            "show_history": "显示历史",
+            "show_history_by_prefux": "由前缀显示历史",
+            "embed_workflow": "保存工作流",
+            "show_previews": "开启预览"
+        }
+    },
+    "Load Image Batch": {
+        "title": "加载批次图像",
+        "widgets": {
+            "mode": "模式",
+            "index": "编号",
+            "label": "标签",
+            "path": "路径",
+            "pattern": "pattern",
+            "allow_RGBA_output": "使用RGBA输出"
+        }
+    },
+    "Load Text File": {
+        "title": "加载文本",
+        "widgets": {
+            "filt_path": "文件路径",
+            "dictionay_name": "字典名"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "DICT": "字典"
+        }
+    },
+    "Save Text File": {
+        "title": "保存文本",
+        "inputs": {
+            "text": "字符串"
+        },
+        "widgets": {
+            "path": "路径",
+            "filename_prefix": "文件名前缀",
+            "filename_delimiter": "文件名分隔符",
+            "filename_number_padding": "文件名数字填充"
+        }
+    },
+
+
+
+    "CLIPTextEncode (NSP)": {
+        "title": "CLIP文本编码器(NSP)",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "text": "文本",
+            "mode": "模式",
+            "noodle_key": "NoodleSoup提示词",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作"
+        },
+        "outputs": {
+            "conditioning": "条件",
+            "parsed_text": "解析文本",
+            "raw_text": "文本"
+        }
+    },
+    "CLIPTextEncode (BlenderNeko Advanced + NSP)": {
+        "title": "CLIP文本编码器(BNK+NSP)",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "text": "文本",
+            "mode": "模式",
+            "noodle_key": "NoodleSoup提示词",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "token_normalization": "Token规格化",
+                "none": "无",
+                "length": "长度",
+                "mean": "平均",
+                "length+mean": "混合",
+            "weight_interpretation": "权重插值方式"
+        },
+        "outputs": {
+            "conditioning": "条件",
+            "parsed_text": "解析文本",
+            "raw_text": "文本"
+        }
+    },
+
+
+
+    "CLIP Input Switch": {
+        "title": "CLIP切换",
+        "inputs": {
+            "clip_a": "CLIP_a",
+            "clip_b": "CLIP_b",
+            "boolean_number": "布尔"
+        },
+        "outputs": {
+            "CLIP": "CLIP"
+        }
+    },
+        "CLIP Vision Input Switch": {
+        "title": "CLIP视觉切换",
+        "inputs": {
+            "clip_vision_a": "CLIP视觉_a",
+            "clip_vision_b": "CLIP视觉_b",
+            "boolean_number": "布尔"
+        },
+        "outputs": {
+            "CLIP_VISION": "CLIP视觉"
+        }
+    },
+    "Conditioning Input Switch": {
+        "title": "条件切换",
+        "inputs": {
+            "conditioning_a": "条件_a",
+            "conditioning_b": "条件_b",
+            "boolean_number": "布尔"
+        },
+        "outputs": {
+            "conditioning": "条件"
+        }
+    },
+    "Control Net Input Switch": {
+        "title": "ControlNet切换",
+        "inputs": {
+            "control_net_a": "ControlNet_a",
+            "control_net_b": "ControlNet_b",
+            "boolean_number": "布尔"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "Latent Input Switch": {
+        "title": "Latent切换",
+        "inputs": {
+            "latent_a": "Latent_a",
+            "latent_b": "Latent_b",
+            "boolean_number": "布尔"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "Logic Boolean": {
+        "title": "布尔",
+        "widgets": {
+            "boolean_number": "布尔"
+        },
+        "outputs": {
+            "NUMBER": "数字",
+            "INT": "整数"
+        }
+    },
+    "Image Aspect Ratio": {
+        "title": "图像长宽比",
+        "inputs": {
+            "image": "图像",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "aspect_number": "比率数字",
+            "aspect_float": "比率浮点",
+            "is_landscape_bool": "是横图",
+            "aspect_ratio_common": "aspect_ratio_common",
+            "aspect_type": "长宽比类型"
+        }
+    },
+    "Image Input Switch": {
+        "title": "图像切换",
+        "inputs": {
+            "image_a": "图像_a",
+            "image_b": "图像_b",
+            "boolean_number": "布尔"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Model Input Switch": {
+        "title": "模型切换",
+        "inputs": {
+            "model_a": "模型_a",
+            "model_b": "模型_b",
+            "boolean_number": "布尔"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "Number Input Switch": {
+        "title": "数字切换",
+        "inputs": {
+            "number_a": "数字_a",
+            "number_b": "数字_b",
+            "boolean_number": "布尔"
+        },
+        "widgets": {
+            "returen_boolean": "返回布尔",
+            "comparison": "比较"
+        },
+        "outputs": {
+            "NUMBER": "数字",
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
+    "Text Input Switch": {
+        "title": "文本切换",
+        "inputs": {
+            "text_a": "文本_a",
+            "text_b": "文本_b",
+            "boolean_number": "布尔"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Upscale Model Switch": {
+        "title": "放大模型切换",
+        "inputs": {
+            "upscale_model_a": "放大模型_a",
+            "upscale_model_b": "放大模型_b",
+            "boolean_number": "布尔"
+        },
+        "outputs": {
+            "UPSCALE_MODEL": "放大模型"
+        }
+    },
+    "VAE Input Switch": {
+        "title": "VAE切换",
+        "inputs": {
+            "vae_a": "VAE_a",
+            "vae_b": "VAE_b",
+            "boolean_number": "布尔"
+        },
+        "outputs": {
+            "VAE": "VAE"
+        }
+    }
+}

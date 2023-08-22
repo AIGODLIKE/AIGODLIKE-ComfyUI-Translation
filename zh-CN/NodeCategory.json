@@ -61,7 +61,7 @@
         "color_style": "颜色风格",
         "tile": "平铺",
         "shuffle": "内容重组",
-    "ControlNet preprocessors": "ControlNet预处理器",
+    "ControlNet Preprocessors": "ControlNet预处理器",
         "Line Extractors": "线条",
         "T2IAdapter-only": "T2I适配",
         "Faces and Poses": "面部与姿态",

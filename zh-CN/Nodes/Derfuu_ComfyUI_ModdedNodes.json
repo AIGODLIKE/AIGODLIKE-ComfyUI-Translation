@@ -210,7 +210,7 @@
     },
 
 
-    "Conditioning set area with tuples": {
+    "ConditioningSetArea with tuples": {
         "title": "设置条件区域",
         "inputs": {
             "conditioning": "条件",
