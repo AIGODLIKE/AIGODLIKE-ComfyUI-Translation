@@ -1,6 +1,6 @@
 {
     "Float": {
-        "tilte": "浮点",
+        "title": "浮点",
         "widgets": {
             "Value": "值"
         },
@@ -9,7 +9,7 @@
         }
     },
     "Integer": {
-        "tilte": "整数",
+        "title": "整数",
         "widgets": {
             "Value": "值"
         },
@@ -18,7 +18,7 @@
         }
     },
     "Text": {
-        "tilte": "文本",
+        "title": "文本",
         "widgets": {
             "Text": "文本"
         },
@@ -27,7 +27,7 @@
         }
     },
     "Text Box": {
-        "tilte": "文本框",
+        "title": "文本框",
         "widgets": {
             "Text": "文本"
         },
@@ -40,14 +40,14 @@
 
 
     "Float debug print": {
-        "tilte": "浮点调试输出",
+        "title": "浮点调试输出",
         "widgets": {
             "Prefix": "前缀",
             "Value": "值"
         }
     },
     "Int debug print": {
-        "tilte": "整数调试输出",
+        "title": "整数调试输出",
         "widgets": {
             "Prefix": "前缀",
             "Value": "值"
@@ -210,7 +210,7 @@
     },
 
 
-    "Conditioning set area with tuples": {
+    "ConditioningSetArea with tuples": {
         "title": "设置条件区域",
         "inputs": {
             "conditioning": "条件",

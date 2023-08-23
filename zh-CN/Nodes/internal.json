@@ -637,7 +637,7 @@
         }
     },
     "ImageScaleToTotalPixels": {
-        "title": "图像按像素放大",
+        "title": "图像按像素缩放",
         "inputs": {
             "image": "图像"
         },
