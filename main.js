@@ -69,7 +69,7 @@ export class TUtils {
 			// }
 			let class_type = nodeType.comfyClass ? nodeType.comfyClass : nodeType.type;
 			if (nodesT.hasOwnProperty(class_type)) {
-				nodeType.title = nodesT[class_type]["title"];
+				nodeType.title = nodesT[class_type]["title"] || nodeType.title;
 			}
 		}
 	}
@@ -176,7 +176,7 @@ export class TUtils {
 					continue;
 				}
 				// widgets and inputs
-				var matchInput = value.content.match(reInput);
+				var matchInput = value.content?.match(reInput);
 				if (matchInput) {
 					var match = matchInput[1];
 					options.extra.inputs?.find(i => {
@@ -192,7 +192,7 @@ export class TUtils {
 					value.content = cvt + match + tinp;
 					continue;
 				}
-				var matchWidget = value.content.match(reWidget);
+				var matchWidget = value.content?.match(reWidget);
 				if (matchWidget) {
 					var match = matchWidget[1];
 					options.extra.inputs?.find(i => {
