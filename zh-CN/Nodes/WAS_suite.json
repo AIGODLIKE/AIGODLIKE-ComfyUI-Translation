@@ -647,8 +647,262 @@
         "title": "随机数",
         "widgets": {
             "number_type": "数字类型",
-                "integer": "整数"
-
+                "integer": "整数",
+                "float": "浮点",
+                "bool": "布尔",
+            "minimum": "最小值",
+            "maximum": "最大值"
+        },
+        "outputs": {
+            "NUMBER": "数字",
+            "FLOAT": "浮点",
+            "INT": "整数"
         }
+    },
+    "Seed (Legacy)": {
+        "title": "随机种(旧版)",
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机"
+        },
+        "outputs": {
+            "SEED": "随机种"
+        }
+    },
+    "True Random.org Number Generator": {
+        "title": "Random.org随机数生成",
+        "widgets": {
+            "api_key": "API_key",
+            "minimum": "最小值",
+            "maximum": "最大值",
+            "mode": "模式",
+                "random": "随机",
+                "fixed": "固定"
+        },
+        "outputs": {
+            "NUMBER": "数字",
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
+
+
+
+    "Create Grid Image": {
+        "title": "创建图表",
+        "widgets": {
+            "image_path": "图像路径",
+            "pattern_glob": "pattern_glob",
+            "include_subfolder": "包含子文件夹",
+                "flase": "否",
+                "true": "是",
+            "border_width": "边框宽度",
+            "number_of_columns": "列数",
+            "max_cell_size": "图像大小",
+            "border_red": "红色边框",
+            "border_green": "绿色边框",
+            "border_blue": "蓝色边框"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Image Crop Face": {
+        "title": "面部裁剪",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "crop_padding_factor": "裁剪",
+            "cascade_xml": "cascade配置文件"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "CROP_DATA": "裁剪数据"
+        }
+    },
+    "Image Crop Location": {
+        "title": "裁剪位置",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "top": "上",
+            "left": "左",
+            "right": "右",
+            "bottom": "下"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "CROP_DATA": "裁剪数据"
+        }
+    },
+    "Image Crop Square Location": {
+        "title": "裁剪方块位置",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "size": "尺寸"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "CROP_DATA": "裁剪数据"
+        }
+    },
+    "Image Paste Face": {
+        "title": "粘贴面部",
+        "inputs": {
+            "image": "图像",
+            "crop_image": "裁剪图像",
+            "crop_data": "裁剪数据"
+        },
+        "widgets": {
+            "crop_blending": "混合",
+            "crop_sharpening": "锐化"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK_IMAGE": "遮罩图像"
+        }
+    },
+    "Image Paste Crop": {
+        "title": "粘贴裁剪",
+        "inputs": {
+            "image": "图像",
+            "crop_image": "裁剪图像",
+            "crop_data": "裁剪数据"
+        },
+        "widgets": {
+            "crop_blending": "混合",
+            "crop_sharpening": "锐化"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Image Paste Crop by Location": {
+        "title": "粘贴裁剪位置",
+        "inputs": {
+            "image": "图像",
+            "crop_image": "裁剪图像"
+        },
+        "widgets": {
+            "top": "上",
+            "left": "左",
+            "right": "右",
+            "bottom": "下",
+            "crop_blending": "混合",
+            "crop_sharpening": "锐化"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Image Pixelate": {
+        "title": "图像像素化",
+        "inputs": {
+            "images": "图像",
+            "color_palettes": "调色板"
+        },
+        "widgets": {
+            "pixelation_size": "像素大小",
+            "num_colors": "颜色数量",
+            "init_mode": "模式",
+            "max_iterations": "最大迭代次数",
+            "dither": "抖动",
+            "dither_mode": "抖动模式",
+            "color_palette_mode": "调色模式",
+            "reverse_palette": "反转调色"
+        },
+        "images": "图像"
+    },
+    "Image Mix RGB Channels": {
+        "title": "混合RGB通道",
+        "inputs": {
+            "red_channel": "红色通道",
+            "green_channel": "绿色通道",
+            "blue_channel": "蓝色通道"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Image Remove Background (Alpha)": {
+        "title": "移除背景(透明)",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "mode": "模式",
+            "threshold": "阈值",
+            "threshold_tolerance": "阈值偏差"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
+    "Image Remove Color": {
+        "title": "移除RGB颜色",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "target_red": "目标R",
+            "target_green": "目标G",
+            "target_blue": "目标B",
+            "replace_red": "替换R",
+            "replace_green": "替换G",
+            "replace_blue": "替换B",
+            "clip_threshold": "CLIP阈值"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Image Seamless Texture": {
+        "title": "无缝材质",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "blending": "混合",
+            "tiled": "分块",
+            "tiles": "分块数量"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
+    "Image Select Channel": {
+        "title": "选择通道",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "channel": "通道",
+                "red": "红色",
+                "green": "绿色",
+                "blue": "蓝色"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Image Tiled": {
+        "title": "分块图像",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "num_tiles": "分块数量"
+        },
+        "IMAGES": "图像"
     }
 }
