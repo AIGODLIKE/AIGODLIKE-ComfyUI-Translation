@@ -69,7 +69,7 @@ export class TUtils {
 			// }
 			let class_type = nodeType.comfyClass ? nodeType.comfyClass : nodeType.type;
 			if (nodesT.hasOwnProperty(class_type)) {
-				nodeType.title = nodesT[class_type]["title"];
+				nodeType.title = nodesT[class_type]["title"] || nodeType.title;
 			}
 		}
 	}
