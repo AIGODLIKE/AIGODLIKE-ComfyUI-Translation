@@ -176,7 +176,7 @@ export class TUtils {
 					continue;
 				}
 				// widgets and inputs
-				var matchInput = value.content.match(reInput);
+				var matchInput = value.content?.match(reInput);
 				if (matchInput) {
 					var match = matchInput[1];
 					options.extra.inputs?.find(i => {
@@ -192,7 +192,7 @@ export class TUtils {
 					value.content = cvt + match + tinp;
 					continue;
 				}
-				var matchWidget = value.content.match(reWidget);
+				var matchWidget = value.content?.match(reWidget);
 				if (matchWidget) {
 					var match = matchWidget[1];
 					options.extra.inputs?.find(i => {

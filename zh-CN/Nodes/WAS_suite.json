@@ -432,6 +432,23 @@
             "MODEL": "模型"
         }
     },
+    "Number Input Switch": {
+        "title": "数字切换",
+        "inputs": {
+            "number_a": "数字_a",
+            "number_b": "数字_b",
+            "boolean_number": "布尔"
+        },
+        "widgets": {
+            "return_boolean": "返回布尔",
+            "comparison": "比较"
+        },
+        "outputs": {
+            "NUMBER": "数字",
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
     "Number Input Condition": {
         "title": "数字切换",
         "inputs": {
@@ -616,7 +633,7 @@
         }
     },
     "Number Counter": {
-        "tilte": "计数",
+        "title": "计数",
         "inputs": {
             "reset_bool": "重置布尔"
         },
@@ -880,8 +897,8 @@
             "images": "图像"
         }
     },
-    "Image Select Channel": {
-        "title": "选择通道",
+    "Image Select Color": {
+        "title": "选择颜色",
         "inputs": {
             "image": "图像"
         },
@@ -890,6 +907,18 @@
                 "red": "红色",
                 "green": "绿色",
                 "blue": "蓝色"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Image Threshold": {
+        "title": "图像阈值",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "threshold": "阈值"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -904,5 +933,372 @@
             "num_tiles": "分块数量"
         },
         "IMAGES": "图像"
+    },
+
+    "CLIPSeg Masking": {
+        "title": "CLIPSeg遮罩",
+        "inputs": {
+            "image": "图像",
+            "clipseg_model": "CLIP分割模型"
+        },
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "MASK": "遮罩",
+            "MASK_IMAGE": "遮罩图像"
+        }
+    },
+    "CLIPSeg Batch Masking": {
+        "title": "CLIPSeg批量遮罩",
+        "inputs": {
+            "image_a": "图像_a",
+            "image_b": "图像_b",
+            "image_c": "图像_c",
+            "image_d": "图像_d",
+            "image_e": "图像_e",
+            "image_f": "图像_f"
+        },
+        "widgets": {
+            "text_a": "文本_a",
+            "text_b": "文本_b",
+            "text_c": "文本_c",
+            "text_d": "文本_d",
+            "text_e": "文本_e",
+            "text_f": "文本_f"
+        },
+        "outputs": {
+            "IMAGES_BATCH": "图像",
+            "MASKS_BATCH": "遮罩",
+            "MASK_IMAGES_BATCH": "图像遮罩"
+        }
+    },
+    "Convert Masks to Images": {
+        "title": "遮罩到图像",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "outputs": {
+            "IMAGES": "图像"
+        }
+    },
+    "Image to Latent Mask": {
+        "title": "图像到Latent遮罩",
+        "inputs": {
+            "iamges": "图像"
+        },
+        "widgets": {
+            "channel": "通道",
+                "alpha": "透明",
+                "red": "红色",
+                "green": "绿色",
+                "blue": "蓝色"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Masks Add": {
+        "title": "遮罩相加",
+        "inputs": {
+            "mask_a": "遮罩_a",
+            "mask_b": "遮罩_b"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Masks Subtract": {
+        "title": "遮罩相减",
+        "inputs": {
+            "mask_a": "遮罩_a",
+            "mask_b": "遮罩_b"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Arbitrary Region": {
+        "title": "遮罩区域",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "size": "尺寸",
+            "threshold": "阈值"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Batch to Mask": {
+        "title": "遮罩组合并",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "batch_number": "批次数量"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "Mask Batch": {
+        "title": "遮罩批次",
+        "inputs": {
+            "masks_a": "遮罩_a",
+            "masks_b": "遮罩_b",
+            "masks_c": "遮罩_c",
+            "masks_d": "遮罩_d"
+        },
+        "outputs": {
+            "masks": "遮罩"
+        }
+    },
+    "Mask Ceiling Region": {
+        "title": "遮罩向上取整",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Crop Dominant Region": {
+        "title": "遮罩裁剪主要区域",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "padding": "分区"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Crop Minority Region": {
+        "title": "遮罩裁剪次要区域",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "padding": "分区"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Crop Region": {
+        "title": "遮罩裁剪区域",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "padding": "分区",
+            "region_type": "区域类型",
+                "dominant": "主要",
+                "minority": "次要"
+        },
+        "outputs": {
+            "cropped_mask": "遮罩",
+            "crop_data": "裁剪数据",
+            "top_int": "上",
+            "left_int": "左",
+            "right_int": "右",
+            "bottom_int": "下",
+            "width_int": "宽度",
+            "height_int": "高度"
+        }
+    },
+    "Mask Paste Region": {
+        "title": "遮罩粘贴区域",
+        "inputs": {
+            "mask": "遮罩",
+            "crop_mask": "裁剪遮罩",
+            "crop_data": "裁剪数据"
+        },
+        "widgets": {
+            "crop_blending": "混合",
+            "crop_sharpening": "锐化"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "Mask Dilate Region": {
+        "title": "遮罩膨胀",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "iterations": "迭代次数"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Dominant Region": {
+        "title": "遮罩主要区域",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "threshold": "阈值"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Erode Region": {
+        "title": "遮罩消融",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "iterations": "迭代次数"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Fill Holes": {
+        "title": "遮罩填充漏洞",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Floor Region": {
+        "title": "遮罩向下取整",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Gaussian Region": {
+        "title": "遮罩高斯模糊",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "radius": "范围"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Invert": {
+        "title": "遮罩反转",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Minority Region": {
+        "title": "遮罩次要区域",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "threshold": "阈值"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Smooth Region": {
+        "title": "遮罩平滑",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "sigma": "Sigma"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Threshold Region": {
+        "title": "遮罩二值化",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "black_threshold": "黑色阈值",
+            "white_threshold": "白色阈值"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Masks Combine Regions": {
+        "title": "遮罩合并",
+        "inputs": {
+            "masks_a": "遮罩_a",
+            "masks_b": "遮罩_b",
+            "masks_c": "遮罩_c",
+            "masks_d": "遮罩_d",
+            "masks_e": "遮罩_e",
+            "masks_f": "遮罩_f"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Masks Combine Batch": {
+        "title": "遮罩批量合并",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "SAM Model Loader": {
+        "title": "SAM模型加载器",
+        "widgets": {
+            "model_size": "模型规格"
+        },
+        "outputs": {
+            "SAM_MODEL": "SAM模型"
+        }
+    },
+    "SAM Parameters": {
+        "title": "SAM参数",
+        "widgets": {
+            "point": "点",
+            "lebels": "层"
+        },
+        "outputs": {
+            "SAM_PARAMETERS": "SAM参数"
+        }
+    },
+    "SAM Parameters Combine": {
+        "title": "SAM参数合并",
+        "inputs": {
+            "sam_parameters_a": "SAM参数_a",
+            "sam_parameters_b": "SAM参数_b"
+        },
+        "outputs": {
+            "SAM_PARAMETERS": "SAM参数"
+        }
+    },
+    "SAM Image Mask": {
+        "title": "SAM图像遮罩",
+        "inputs": {
+            "sam_model": "SAM模型",
+            "sam_parameters": "SAM参数",
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
     }
 }
