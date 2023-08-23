@@ -363,7 +363,7 @@
             "conditioning": "条件"
         }
     },
-    "Control Net Input Switch": {
+    "Control Net Model Input Switch": {
         "title": "ControlNet切换",
         "inputs": {
             "control_net_a": "ControlNet_a",
@@ -432,7 +432,7 @@
             "MODEL": "模型"
         }
     },
-    "Number Input Switch": {
+    "Number Input Condition": {
         "title": "数字切换",
         "inputs": {
             "number_a": "数字_a",
@@ -440,7 +440,7 @@
             "boolean_number": "布尔"
         },
         "widgets": {
-            "returen_boolean": "返回布尔",
+            "return_boolean": "返回布尔",
             "comparison": "比较"
         },
         "outputs": {
@@ -480,6 +480,175 @@
         },
         "outputs": {
             "VAE": "VAE"
+        }
+    },
+
+
+
+    "Image Size to Number": {
+        "title": "图像尺寸到数字",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "width_num": "宽度数字",
+            "height_num": "高度数字",
+            "width_float": "宽度浮点",
+            "height_float": "高度浮点",
+            "width_int": "宽度整数",
+            "height_int": "高度整数"
+        }
+    },
+    "Latent Size to Number": {
+        "title": "Latent尺寸到数字",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "outputs": {
+            "tensor_w_num": "宽度数字",
+            "tensor_h_hum": "高度数字",
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
+    "Number Operation": {
+        "title": "数字运算",
+        "inputs": {
+            "number_a": "数字_a",
+            "number_b": "数字_b"
+        },
+        "widgets": {
+            "operation": "操作",
+                "addition": "相加",
+                "subtraction": "相减",
+                "division": "相除",
+                "floor division": "相除(向下取整)",
+                "multiplication": "相乘",
+                "exponentiation": "乘方",
+                "modulus": "模数",
+                "greater-than": "大于",
+                "greater-than or equals": "大于等于",
+                "less-than": "小于",
+                "less-than or equals": "小于等于",
+                "quals": "等于",
+                "does not equal": "不等于"
+        },
+        "outputs": {
+            "NUMBER": "数字",
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
+    "Number to Float": {
+        "title": "数字到浮点",
+        "inputs": {
+            "number": "数字"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "Number to Int": {
+        "title": "数字到整数",
+        "inputs": {
+            "number": "数字"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "Number to Seed": {
+        "title": "数字到随机种",
+        "inputs": {
+            "number": "数字"
+        },
+        "outputs": {
+            "SEED": "随机种"
+        }
+    },
+    "Number to String": {
+        "title": "数字到字符串",
+        "inputs": {
+            "number": "数字"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Number to Text": {
+        "title": "数字到文本",
+        "inputs": {
+            "number": "数字"
+        },
+        "outputs": {
+            "Text": "文本"
+        }
+    },
+
+    "Number Multiple Of": {
+        "title": "数字倍数",
+        "inputs": {
+            "number": "数字"
+        },
+        "widgets": {
+            "multiple": "倍数"
+        },
+        "outputs": {
+            "NUMBER": "数字",
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
+
+    "Constant Number": {
+        "title": "常数",
+        "widgets": {
+            "number_type": "数字类型",
+                "integer": "整数",
+                "float": "浮点",
+                "bool": "布尔",
+            "number": "数字"
+        },
+        "outputs": {
+            "NUMBER": "数字",
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
+    "Number Counter": {
+        "tilte": "计数",
+        "inputs": {
+            "reset_bool": "重置布尔"
+        },
+        "widgets": {
+            "number_type": "数字类型",
+                "integer": "整数",
+                "float": "浮点",
+            "mode": "模式",
+                "increment": "增加",
+                "decrement": "减少",
+            "start": "开始",
+            "step": "步数"
+        },
+        "outputs": {
+            "number": "数字",
+            "float": "浮点",
+            "int": "整数"
+        }
+    },
+    "Number PI": {
+        "title": "Pi",
+        "outputs": {
+            "NUMBER": "数字",
+            "FLOAT": "浮点"
+        }
+    },
+    "Random Number": {
+        "title": "随机数",
+        "widgets": {
+            "number_type": "数字类型",
+                "integer": "整数"
+
         }
     }
 }
