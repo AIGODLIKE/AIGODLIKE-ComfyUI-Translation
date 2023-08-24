@@ -39,5 +39,14 @@
         "outputs": {
             "IMAGE": "图像"
         }
+    },
+    "SAMPreprocessor": {
+        "title": "SAM预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
     }
 }

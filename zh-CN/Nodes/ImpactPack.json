@@ -176,6 +176,18 @@
             "SEGS": "Seg"
         }
     },
+    "ImpactSwitch": {
+        "title": "切换",
+        "inputs": {
+            "input1": "输入1",
+            "input2": "输入2",
+            "input3": "输入3",
+            "input4": "输入4"
+        },
+        "outputs": {
+            "*": "输出"
+        }
+    },
     "SEGSToImageList": {
         "title": "Seg到图像列表",
         "inputs": {
