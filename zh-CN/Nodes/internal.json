@@ -245,6 +245,19 @@
             "CLIP": "CLIP"
         }
     },
+    "Conditioning (Average)": {
+        "title": "条件平均",
+        "inputs": {
+            "conditioning_to": "条件到",
+            "conditioning_from": "条件从"
+        },
+        "widgets": {
+            "conditioning_to_strength": "系数"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
     "ConditioningAverage": {
         "title": "条件平均",
         "inputs": {
@@ -458,7 +471,7 @@
         },
         "widgets": {
             "flip_method": "翻转方法",
-                "x-axis: vertically": "X轴:垂直",
+                "x-axis: vertically": "X轴:竖直",
                 "y-axis: horizontally": "Y轴:水平"
         },
         "outputs": {

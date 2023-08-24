@@ -33,7 +33,7 @@
                 "box": "方框滤波",
                 "Hamming": "汉明窗",
                 "Lanczos": "Lanczos插值",
-                "nearest": "最近邻近"
+                "nearest": "邻近"
         },
         "outputs": {
             "QR_CODE": "QR图像",
