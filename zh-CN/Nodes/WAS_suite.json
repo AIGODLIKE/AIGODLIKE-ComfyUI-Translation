@@ -1334,7 +1334,7 @@
             "tile_size": "分块大小"
         },
         "outputs": {
-            "composited_image": "图像",
+            "composited_images": "图像",
             "ssao_images": "AO图像",
             "specular_mask_images": "高光图像"
         }
@@ -1349,17 +1349,17 @@
             "strength": "强度",
             "radius": "范围",
             "specular_threshold": "高光阈值",
-            "color_occlusion": "颜色遮蔽"
+            "colored_occlusion": "颜色遮蔽"
         },
         "outputs": {
-            "composited_image": "图像",
+            "composited_images": "图像",
             "ssdo_images": "DO图像",
-            "ssdo_images_masks": "DO图像遮罩",
+            "ssdo_image_masks": "DO图像遮罩",
             "light_source_image_masks": "光源遮罩"
         }
     },
     "Image Bloom Filter": {
-        "title": "高光",
+        "title": "泛光",
         "inputs": {
             "image": "图像"
         },
@@ -1377,7 +1377,7 @@
             "images": "图像"
         },
         "widgets": {
-            "enable_threnshold": "使用阈值",
+            "enable_threshold": "使用阈值",
             "threshold_low": "低阈值",
             "threshold_high": "高阈值"
         },
@@ -1395,7 +1395,7 @@
             "green_offset": "绿移",
             "blue_offset": "蓝移",
             "intensity": "强度",
-            "fade_redius": "消失范围"
+            "fade_radius": "消失范围"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -1408,14 +1408,14 @@
         },
         "widgets": {
             "iterations": "迭代次数",
-            "kernel_size": ""
+            "kernel_size": "核心大小"
         },
         "outputs": {
             "image": "图像"
         }
     },
     "Image Dragan Photography Filter": {
-        "title": "AndrzejDragan风格",
+        "title": "Dragan风格",
         "inputs": {
             "image": "图像"
         },
@@ -1426,7 +1426,8 @@
             "sharpness": "锐度",
             "highpass_radius": "高反差范围",
             "highpass_samples": "高反差采样",
-            "highpass_strength": "高反差强度"
+            "highpass_strength": "高反差强度",
+            "colorize": "着色"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -1548,7 +1549,7 @@
         },
         "widgets": {
             "amplitude": "振幅",
-            "frenquency": "频率"
+            "frequency": "频率"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -1584,56 +1585,302 @@
             "IMAGE": "图像"
         }
     },
-    "12345": {
-        "title": "12435",
+
+
+
+
+    "Image Analyze": {
+        "title": "图像分析",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
+            "mode": "模式",
+                "Black White Levels": "黑白阶",
+                "RGB Levels": "RGB阶"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
-    "12345": {
-        "title": "12435",
+    "Image Color Palette": {
+        "title": "颜色调色板",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
+            "colors": "颜色数量",
+            "mode": "模式",
+                "chart": "图表",
+                "back_to_back": "临近"
+        },
+        "outputs": {
+            "image": "图像",
+            "color_palettes": "颜色列表"
+        }
+    },
+    "Image to Seed": {
+        "title": "图像到随机种",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+
+
+
+
+    "Image Displacement Warp": {
+        "title": "图像置换",
+        "inputs": {
+            "images": "图像",
+            "displacement_maps": "置换图像"
+        },
+        "widgets": {
+            "amplitude": "幅度"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
+    "Image Flip": {
+        "title": "图像翻转",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "mode": "模式",
+                "horizontal": "水平",
+                "vertical": "竖直"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
+    "Image Padding": {
+        "title": "图像外扩",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "feathering": "羽化",
+            "feather_second_pass": "使用二次羽化",
+                "false": "否",
+                "true": "是",
+            "top_padding": "上",
+            "left_padding": "左",
+            "right_padding": "右",
+            "bottom_padding": "下"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
-    "12345": {
-        "title": "12435",
+    "Image Resize": {
+        "title": "图像调整大小",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
+            "mode": "模式",
+                "rescale": "缩放",
+                "resize": "拉伸",
+            "supersample": "超采样",
+                "true": "是",
+                "false": "否",
+            "resampling": "重采样",
+                "lanczos": "lanczos插值",
+                "nearest": "邻近",
+                "bicubic": "双三次插值",
+                "bilinear": "双线性插值",
+            "rescale_factor": "缩放系数",
+            "resize_width": "拉伸宽度",
+            "resize_height": "拉伸高度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
-    "12345": {
-        "title": "12435",
+    "Image Rotate": {
+        "title": "图像旋转",
         "inputs": {
-            "image": "图像"
+            "images": "图像"
         },
         "widgets": {
+            "mode": "模式",
+                "transpose": "替换",
+                "internal": "本体",
+            "rotation": "旋转角度",
+            "sampler": "采样",
+                "nearest": "邻近",
+                "bicubic": "双三次插值",
+                "bilinear": "双线性插值"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
+    "Image Stitch": {
+        "title": "图像缝合",
+        "inputs": {
+            "image_a": "图像_a",
+            "image_b": "图像_b"
+        },
+        "widgets": {
+            "stitch": "缝合方向",
+                "top": "上",
+                "left": "左",
+                "right": "右",
+                "bottom": "下",
+            "feathering": "羽化"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
-    "12345": {
-        "title": "12435",
+    "Image Transpose": {
+        "title": "图像填充",
         "inputs": {
-            "image": "图像"
+            "image": "图像",
+            "image_overlay": "覆盖图像"
         },
         "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "X": "X",
+            "Y": "Y",
+            "rotation": "旋转角度",
+            "feathering": "羽化"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+
+
+
+    "Image Power Noise": {
+        "title": "生成幂律噪波",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "frequency": "频率",
+            "attenuation": "衰减",
+            "noise_type": "噪波类型",
+                "grey": "灰",
+                "white": "白",
+                "pink": "粉",
+                "blue": "蓝",
+                "green": "绿",
+                "mix": "混合",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "Image Perlin Noise": {
+        "title": "生成柏林噪波",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "scale": "缩放",
+            "octaves": "八度",
+            "persistence": "持久",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "Image Perlin Power Fractal": {
+        "title": "生成柏林分形噪波",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "scale": "缩放",
+            "octaves": "八度",
+            "persistence": "持久",
+            "lacunarity": "间隙度",
+            "exponent": "指数",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "Image to Noise": {
+        "title": "图像到噪波",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "num_colors": "颜色数量",
+            "black_mix": "黑色混合",
+            "gaussian_mix": "高斯混合",
+            "brightness": "明度",
+            "output_mode": "输出模式",
+                "batch": "批次",
+                "list": "列表",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "Image Voronoi Noise Filter": {
+        "title": "Voronoi噪声",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "density": "密度",
+            "modulator": "幅度",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "flat": "平化",
+            "RGB_output": "输出RGB"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+
+    "Image Generate Gradient": {
+        "title": "生成渐变",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "direction": "方向",
+                "horizontal": "水平",
+                "vertical": "竖直",
+            "tolerance": "偏差",
+            "gradient_stops": "渐变停止"
         },
         "outputs": {
             "IMAGE": "图像"

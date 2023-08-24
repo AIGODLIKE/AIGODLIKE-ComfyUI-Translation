@@ -98,7 +98,7 @@
             "green_direction": "绿移方向",
             "blue_shift": "蓝移",
             "blue_direction": "蓝移方向",
-                "horizontal": "平行",
+                "horizontal": "水平",
                 "vertical": "竖直"
         },
         "outputs": {

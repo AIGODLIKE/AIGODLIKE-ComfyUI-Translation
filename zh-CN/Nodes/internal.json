@@ -471,7 +471,7 @@
         },
         "widgets": {
             "flip_method": "翻转方法",
-                "x-axis: vertically": "X轴:垂直",
+                "x-axis: vertically": "X轴:竖直",
                 "y-axis: horizontally": "Y轴:水平"
         },
         "outputs": {
