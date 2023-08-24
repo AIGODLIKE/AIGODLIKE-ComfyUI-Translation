@@ -1,6 +1,0 @@
-{
-    "conditioning": "conditioning[example]",
-    "latent": "latent[example]",
-    "loaders": "loaders[example]",
-    "image": "image[example]"
-}
