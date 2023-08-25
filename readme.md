@@ -23,28 +23,32 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 
 |Custom Node Name|Chinese|English|Japanese|Korean|
 |:----|:----|:----|:----|:----|
-|[AGL-ComfyUI-Translation](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION)|√|√|TODO|TODO|
 |[Advanced Encode](https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb)|√|√|TODO|TODO|
+|[AGL-ComfyUI-Translation](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION)|√|√|TODO|TODO|
 |[AlekPet Nodes](https://github.com/AlekPet/ComfyUI_Custom_Nodes_AlekPet)|√|√|TODO|TODO|
 |[AnimateDiff](https://github.com/guoyww/AnimateDiff)|√|√|TODO|TODO|
-|[TiledKSampler](https://github.com/BlenderNeko/ComfyUI_TiledKSampler)|√|√|TODO|TODO|
 |[CLIP Seg](https://github.com/biegert/ComfyUI-CLIPSeg)|√|√|TODO|TODO|
 |[ControlNet Preprocessors](https://github.com/Fannovel16/comfy_controlnet_preprocessors)|√|√|TODO|TODO|
-|[Comfy-QR](https://github.com/coreyryanhanson/comfy-qr)|√|√|TODO|TODO|
-|[ComfyUI_Cutoff](https://github.com/BlenderNeko/ComfyUI_Cutoff)|√|√|TODO|TODO|
+|[ControlNet Preprocessors AUX](https://github.com/Fannovel16/comfyui_controlnet_aux)|√|√|TODO|TODO|
+|[Cutoff](https://github.com/BlenderNeko/ComfyUI_Cutoff)|√|√|TODO|TODO|
 |[Davemane42 Nodes](https://github.com/Davemane42/ComfyUI_Dave_CustomNode)|√|√|TODO|TODO|
-|[EllangoK Postprocessing](https://github.com/EllangoK/ComfyUI-post-processing-nodes)|√|√|TODO|TODO|
-|[ComfyUI_Noise](https://github.com/BlenderNeko/ComfyUI_Noise)|√|√|TODO|TODO|
-|[ComfyUI-WD14-Tagger](https://github.com/pythongosssss/ComfyUI-WD14-Tagger)|√|√|TODO|TODO|
-|[ComfyUI-Restart-Sampling](https://github.com/ssitu/ComfyUI_restart_sampling)|√|√|TODO|TODO|
-|[Vextra Nodes](https://github.com/diontimmer/ComfyUI-Vextra-Nodes)|√|√|TODO|TODO|
-|[ComfyUI_experiments](https://github.com/comfyanonymous/ComfyUI_experiments)|√|√|TODO|TODO|
 |[Efficiency Nodes](https://github.com/LucianoCirino/efficiency-nodes-comfyui)|√|√|TODO|TODO|
-|[Impact Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack)|√|√|TODO|TODO|
-|[Impact Subpack](https://github.com/ltdrdata/ComfyUI-Impact-Subpack)|√|√|TODO|TODO|
+|[EllangoK Postprocessing](https://github.com/EllangoK/ComfyUI-post-processing-nodes)|√|√|TODO|TODO|
+|[experiments](https://github.com/comfyanonymous/ComfyUI_experiments)|√|√|TODO|TODO|
 |[Fast Decode](https://github.com/nagolinc/ComfyUI_FastVAEDecorder_SDXL)|√|√|TODO|TODO|
 |[Image Grid](https://github.com/LEv145/images-grid-comfy-plugin)|√|√|TODO|TODO|
+|[Impact Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack)|√|√|TODO|TODO|
+|[Impact Subpack](https://github.com/ltdrdata/ComfyUI-Impact-Subpack)|√|√|TODO|TODO|
+|[Latent2RGB](https://github.com/bvhari/ComfyUI_LatentToRGB)|√|√|TODO|TODO|
+|[Manager](https://github.com/ltdrdata/ComfyUI-Manager)|√|√|TODO|TODO|
+|[Noise](https://github.com/BlenderNeko/ComfyUI_Noise)|√|√|TODO|TODO|
+|[QR](https://github.com/coreyryanhanson/comfy-qr)|√|√|TODO|TODO|
+|[Restart-Sampling](https://github.com/ssitu/ComfyUI_restart_sampling)|√|√|TODO|TODO|
 |[SeargeSDXL](https://github.com/SeargeDP/SeargeSDXL)|√|√|TODO|TODO|
+|[TiledKSampler](https://github.com/BlenderNeko/ComfyUI_TiledKSampler)|√|√|TODO|TODO|
+|[Vextra Nodes](https://github.com/diontimmer/ComfyUI-Vextra-Nodes)|√|√|TODO|TODO|
+|[WAS Suite](https://github.com/WASasquatch/was-node-suite-comfyui)|√|√|TODO|TODO|
+|[WD14-Tagger](https://github.com/pythongosssss/ComfyUI-WD14-Tagger)|√|√|TODO|TODO|
 
 The above only includes translations for the UI. If you are a developer and need me to help you translate your interface, you can go directly to the [ComfyUI Plugins List](https://github.com/WASasquatch/comfyui-plugins) to add your custom node project, or send an issue, as long as I can see it, I will translate it (it will take some time)
 
