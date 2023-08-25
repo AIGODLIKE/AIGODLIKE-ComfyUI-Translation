@@ -115,7 +115,7 @@
             "Analyze": "分析",
             "Adjustment": "调整",
             "AI": "AI",
-            "Bound": "绑定",
+            "Bound": "边界范围",
         "Animation": "动画",
             "Writer": "写入",
         "Integer": "整数",
@@ -134,6 +134,11 @@
     "segm_detector": "Segm检测",
     "sam_model": "SAM模型",
     "vae": "VAE",
+    "dict": "字典",
+    "number": "数字",
+    "string": "字符串",
+    "seed": "随机种",
+    "upscale_model": "放大模型",
 
 
 
@@ -186,5 +191,16 @@
     "CHECKPOINT_NAME": "CKPT模型名称",
     "VAE_NAME": "VAE模型",
     "UPSCALER_NAME": "放大模型",
-    "LORA_NAME": "LoRA模型"
+    "LORA_NAME": "LoRA模型",
+    "BLIP_MODE": "BLIP模型",
+    "NUMBER": "数字",
+    "CLIPSEG_MODEL": "CLIPSeg模型",
+    "DICT": "字典",
+    "LIST": "列表",
+    "CROP_DATA": "裁剪数据",
+    "MIDAS_MODEL": "MiDaS模型",
+    "SEED": "随机种",
+    "SAM_PARAMETERS": "SAM参数",
+    "IMAGE_BOUNDS": "边界"
+
 }  

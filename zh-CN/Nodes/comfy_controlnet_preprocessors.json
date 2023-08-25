@@ -28,6 +28,11 @@
         "inputs": {
             "image": "图像"
         },
+        "widgets": {
+            "safe": "增稳",
+                "enable": "开启",
+                "disable": "关闭"
+        },
         "outputs": {
             "IMAGE": "图像"
         }
