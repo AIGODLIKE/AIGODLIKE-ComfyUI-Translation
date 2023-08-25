@@ -2479,5 +2479,366 @@
         "outputs": {
             "latent(s)": "Latent"
         }
+    },
+
+
+
+    "BLIP Analyze Image": {
+        "title": "BLIP分析图像",
+        "inputs": {
+            "image": "图像",
+            "blip_model": "BLIP模型"
+        },
+        "widgets": {
+            "mode": "模式",
+                "caption": "说明",
+                "interrogate": "询问",
+            "question": "问题"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "String to Text": {
+        "title": "字符串到文本",
+        "widgets": {
+            "string": "字符串"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Text to Conditioning": {
+        "title": "文本到条件",
+        "inputs": {
+            "clip": "CLIP",
+            "text": "文本"
+        },
+        "outputs":{
+            "CONDITIONING": "条件"
+        }
+    },
+    "Text to Number": {
+        "title": "文本到数字",
+        "inputs": {
+            "text": "文本"
+        },
+        "outputs": {
+            "NUMBER": "数字"
+        }
+    },
+    "Text to String": {
+        "title": "文本到字符串",
+        "inputs": {
+            "text": "文本"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Text String Truncate": {
+        "title": "文本截取",
+        "inputs": {
+            "text": "文本",
+            "text_b": "文本_b",
+            "text_c": "文本_c",
+            "text_d": "文本_d"
+        },
+        "widgets": {
+            "truncate_by": "截取目标",
+                "character": "字母",
+                "word": "单词",
+            "truncate_from": "截取自",
+            "truncate_to": "截取到"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+
+
+
+    "Text Add Tokens": {
+        "title": "文本添加Token",
+        "widgets": {
+            "tokens": "Token",
+            "print_current_tokens": "输出当前Token",
+                "false": "否",
+                "true": "是"
+        }
+    },
+    "Text Add Token by Input": {
+        "title": "文本输入添加Token",
+        "inputs": {
+            "token_name": "Token名称",
+            "token_value": "Token值"
+        },
+        "widgets": {
+            "print_current_tokens": "输出当前Token",
+                "false": "否",
+                "true": "是"
+        }
+    },
+    "Text Parse Tokens": {
+        "title": "文本分析Token",
+        "inputs": {
+            "text": "文本"
+        }
+    },
+
+
+
+    "Text Compare": {
+        "title": "文本比较",
+        "inputs": {
+            "text_a": "文本_a",
+            "text_b": "文本_b"
+        },
+        "widgets": {
+            "mode": "模式",
+                "similarity": "相似度",
+                "difference": "差值",
+            "tolerance": "偏差"
+        },
+        "outputs": {
+            "TEXT_A_PASS": "文本_A",
+            "TEXT_B_PASS": "文本_B",
+            "BOOL_NUMBER": "布尔",
+            "SCORE_NUMBER": "分数",
+            "COMPARISON_TEXT": "比较文本"
+        }
+    },
+    "Text Find and Replace by Dictionary": {
+        "title": "文本字典替换",
+        "inputs": {
+            "dictionary": "字典"
+        },
+        "widgets": {
+            "text": "文本",
+            "replacement_key": "替换",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Text Find and Replace Input": {
+        "title": "文本输入替换",
+        "inputs": {
+            "text": "文本",
+            "find": "目标",
+            "replace": "替换",
+            "dictionary": "字典"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Text Find and Replace": {
+        "title": "文本替换",
+        "inputs": {
+            "dictionary": "字典",
+            "text": "文本"
+        },
+        "widgets": {
+            "find": "目标",
+            "replace": "替换"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+
+
+
+    "Text Parse A1111 Embeddings": {
+        "title": "分析A1111嵌入文本",
+        "inputs": {
+            "text": "文本"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Text Parse Noodle Soup Prompts": {
+        "title": "分析NoodleSoup提示词",
+        "inputs": {
+            "text": "文本"
+        },
+        "widgets": {
+            "mode": "模式",
+                "Noodle Soup Prompts": "NoodleSoup提示词",
+                "Wildcards": "通配符",
+            "noodle_key": "NoodleSoup提示词",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+
+
+
+    "Prompt Styles Selector": {
+        "title": "提示词风格选择",
+        "widgets": {
+            "style": "风格",
+                "Nond": "无"
+        },
+        "outputs": {
+            "positive_string": "正面字符串",
+            "negative_string": "负面字符串"
+        }
+    },
+    "Prompt Multiple Styles Selector": {
+        "title": "提示词多风格选择",
+        "widgets": {
+            "style1": "风格1",
+            "style2": "风格2",
+            "style3": "风格3",
+            "style4": "风格4"
+        },
+        "outputs": {
+            "positive_string": "正面字符串",
+            "negative_string": "负面字符串"
+        }
+    },
+    "Text Dictionary Update": {
+        "title": "更新字典",
+        "inputs": {
+            "dictionary_a": "字典_a",
+            "dictionary_b": "字典_b",
+            "dictionary_c": "字典_c",
+            "dictionary_d": "字典_d"
+        },
+        "outputs": {
+            "DICT": "字典"
+        }
+    },
+    "Text Concatenate": {
+        "title": "文本连锁",
+        "inputs": {
+            "text_a": "文本_a",
+            "text_b": "文本_b",
+            "text_c": "文本_c",
+            "text_d": "文本_d"
+        },
+        "widgets": {
+            "linebreak_addition": "换行",
+                "false": "否",
+                "true": "是"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Text List": {
+        "title": "文本列表",
+        "inputs": {
+            "text_a": "文本_a",
+            "text_b": "文本_b",
+            "text_c": "文本_c",
+            "text_d": "文本_d",
+            "text_e": "文本_e",
+            "text_f": "文本_f",
+            "text_g": "文本_g"
+        },
+        "outputs": {
+            "LIST": "列表"
+        }
+    },
+    "Text List Concatenate": {
+        "title": "文本列表连锁",
+        "inputs": {
+            "list_a": "文本_a",
+            "list_b": "文本_b",
+            "list_c": "文本_c",
+            "list_d": "文本_d"
+        },
+        "outputs": {
+            "LIST": "列表"
+        }
+    },
+    "Text Load Line From File": {
+        "title": "文本按行加载",
+        "inputs": {
+            "multiline_text": "多行文本"
+        },
+        "widgets": {
+            "file_path": "文件路径",
+            "dictionary_name": "字典名",
+            "label": "标签",
+            "mode": "模式",
+                "automatic": "自动",
+                "index": "编号"
+        },
+        "outputs": {
+            "line_text": "文本行",
+            "dictionary": "字典"
+        }
+    },
+    "Text Multiline": {
+        "title": "多行文本",
+        "widgets": {
+            "text": "文本",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Text Random Line": {
+        "title": "文本随机行",
+        "inputs": {
+            "text": "文本"
+        },
+        "widgets": {
+            "search_seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Text String": {
+        "title": "文本字符串",
+        "widgets": {
+            "text": "文本",
+            "text_a": "文本_a",
+            "text_b": "文本_b",
+            "text_c": "文本_c",
+            "text_d": "文本_d"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Text Random Prompt": {
+        "title": "随机提示词",
+        "widgets": {
+            "search_seed": "随机种"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
     }
 }
