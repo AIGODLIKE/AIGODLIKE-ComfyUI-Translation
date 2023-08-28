@@ -1044,7 +1044,8 @@
             "negative": "负面提示词"
         },
         "outputs": {
-            "BASIC_PIPE": "基础节点束"
+            "BASIC_PIPE": "基础节点束",
+            "basic_pipe": "基础节点束"
         }
     },
     "FromBasicPipe": {
