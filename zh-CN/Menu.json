@@ -130,6 +130,8 @@
     "Set Horizontal": "设为水平接口",
     "Rename Slot": "重命名接口",
     "Bypass": "忽略节点",
+    "CopyTree": "拷贝节点树",
+    "PasteTree": "粘贴节点树",
     
     "Manager": "管理器",
     "ComfyUI Manager Menu": "ComfyUI管理器",
