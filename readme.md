@@ -5,7 +5,7 @@ I hope ComfyUI can support more languages besides Chinese and English, such as F
 
 **[8.28] Japanese translation will start production ~ expected to take 1-3 weeks**
 
-**[ZH-TC] Traditional Chinese translation needs help~**
+**[TC] Traditional Chinese translation needs help~**
 
 **[Korean] Korean translation needs help~**
 
