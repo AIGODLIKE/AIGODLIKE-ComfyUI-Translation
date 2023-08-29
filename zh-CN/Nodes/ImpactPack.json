@@ -444,6 +444,15 @@
             "MASK": "遮罩"
         }
     },
+    "RemoveNoiseMask": {
+        "title": "移除噪波遮罩",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
 
 
 
@@ -590,7 +599,7 @@
         }
     },
     "NoiseInjectionDetailerHookProvider": {
-        "title": "NoiseInjectionDetailerHookProvider",
+        "title": "插入噪波细化约束器",
         "widgets": {
             "source": "生成设备",
             "seed": "随机种",
@@ -606,7 +615,7 @@
         }
     },
     "NoiseInjectionHookProvider": {
-        "title": "NoiseInjectionHookProvider",
+        "title": "插入噪波约束器",
         "widgets": {
             "scheduler": "调度器",
             "source": "生成设备",
@@ -618,6 +627,9 @@
                 "randomize": "随机",
             "start_strength": "初始强度",
             "end_strength": "最终强度"
+        },
+        "outputs": {
+            "PK_HOOK": "约束"
         }
     },
     "SEGSDetailer": {

@@ -838,7 +838,9 @@
             "color_palette_mode": "调色模式",
             "reverse_palette": "反转调色"
         },
-        "images": "图像"
+        "outputs": {
+            "images": "图像"
+        }
     },
     "Image Mix RGB Channels": {
         "title": "混合RGB通道",
@@ -947,7 +949,9 @@
         "widgets": {
             "num_tiles": "分块数量"
         },
-        "IMAGES": "图像"
+        "outputs": {
+            "IMAGES": "图像"
+        }
     },
 
     "CLIPSeg Masking": {
