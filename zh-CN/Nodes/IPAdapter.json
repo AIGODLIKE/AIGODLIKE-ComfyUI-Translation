@@ -1,5 +1,5 @@
 {
-    "Load IPAdapter": {
+    "IPAdapter": {
         "title": "IP适配加载器",
         "inputs": {
             "model": "模型",

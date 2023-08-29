@@ -11,7 +11,7 @@
         }
     },
     
-    "Color Blend": {
+    "ColorBlend": {
         "title": "颜色混合",
         "inputs": {
             "bw_layer": "黑白层图像",
