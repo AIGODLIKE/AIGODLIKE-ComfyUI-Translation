@@ -1,0 +1,21 @@
+{
+    "IPAdapter": {
+        "title": "IP适配加载器",
+        "inputs": {
+            "model": "模型",
+            "image": "图像",
+            "clip_vision": "CLIP视觉",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "weight": "权重",
+            "model_name": "模型名称",
+                "undefined": "未定义",
+            "dtype": "数据类型"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP_VISION_OUTPUT": "CLIP视觉输出"
+        }
+    }
+}

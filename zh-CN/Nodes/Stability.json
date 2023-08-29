@@ -1,0 +1,35 @@
+{
+    "ControlLoraSave": {
+        "title": "保存ControlLora",
+        "inputs": {
+            "model": "模型",
+            "control_net": "ControlNet"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀",
+            "rank": "Rank"
+        }
+    },
+    
+    "ColorBlend": {
+        "title": "颜色混合",
+        "inputs": {
+            "bw_layer": "黑白层图像",
+            "color_layer": "颜色层图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+
+    "GetImageSize": {
+        "title": "获取图像尺寸",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "width": "宽度",
+            "height": "高度"
+        }
+    }
+}

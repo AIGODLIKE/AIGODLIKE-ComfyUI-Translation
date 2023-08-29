@@ -102,6 +102,8 @@
                 "Latents": "Latent",
         "Math": "数学",
             "Trigonometry": "三角函数",
+    "stability": "Stability节点",
+        "controlnet": "ControlNet",
     "WAS Suite": "WAS节点",
             "Advanced": "高级",
             "Generate": "生成",
