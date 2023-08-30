@@ -1,5 +1,6 @@
 import os
 import json
+import platform
 import sys
 import numpy as np
 import builtins
@@ -107,6 +108,11 @@ def rmtree(path: Path):
     if path.is_file():
         path.unlink()
     elif path.is_dir():
+        # 移除 .git
+        if path.name == ".git" and platform.system() == "darwin":
+            from subprocess import call
+            call(['rm', '-rf', path.as_posix()])
+            return
         for child in path.iterdir():
             rmtree(child)
         try:
