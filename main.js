@@ -114,7 +114,7 @@ export class TUtils {
 			this.inputs?.forEach(i => {
 				if (oldInputs.includes(i.name))
 					return;
-				if (i.widget?.name in t["widgets"]) {
+				if (t["widgets"] && i.widget?.name in t["widgets"]) {
 					i.label = t["widgets"][i.widget?.name];
 				}
 			});
@@ -157,16 +157,16 @@ export class TUtils {
 		const f2 = LiteGraph.ContextMenu;
 		LiteGraph.ContextMenu = function (values, options) {
 			if (options.hasOwnProperty("title") && options.title in TUtils.T.Nodes) {
-				options.title = TUtils.T.Nodes[options.title]["title"];
+				options.title = TUtils.T.Nodes[options.title]["title"] || options.title;
 			}
 			// Convert {w.name} to input
 			// Convert {w.name} to widget
 			var t = TUtils.T.Menu;
 			var reInput = /Convert (.*) to input/;
 			var reWidget = /Convert (.*) to widget/;
-			var cvt = ("Convert " in t) ? t["Convert "] : "Convert ";
-			var tinp = (" to input" in t) ? t[" to input"] : " to input";
-			var twgt = (" to widget" in t) ? t[" to widget"] : " to widget";
+			var cvt = t["Convert "] || "Convert ";
+			var tinp = t[" to input"] || " to input";
+			var twgt = t[" to widget"] || " to widget";
 			for (let value of values) {
 				if (value == null || !value.hasOwnProperty("content"))
 					continue;

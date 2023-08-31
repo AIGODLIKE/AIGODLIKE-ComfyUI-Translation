@@ -43,6 +43,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[EllangoK Postprocessing](https://github.com/EllangoK/ComfyUI-post-processing-nodes)|√|√|TODO|TODO|
 |[experiments](https://github.com/comfyanonymous/ComfyUI_experiments)|√|√|TODO|TODO|
 |[Fast Decode](https://github.com/nagolinc/ComfyUI_FastVAEDecorder_SDXL)|√|√|TODO|TODO|
+|[IPAdapter](https://github.com/laksjdjf/IPAdapter-ComfyUI)|√|√|TODO|TODO|
 |[Image Grid](https://github.com/LEv145/images-grid-comfy-plugin)|√|√|TODO|TODO|
 |[Impact Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack)|√|√|TODO|TODO|
 |[Impact Subpack](https://github.com/ltdrdata/ComfyUI-Impact-Subpack)|√|√|TODO|TODO|
@@ -52,10 +53,12 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[QR](https://github.com/coreyryanhanson/comfy-qr)|√|√|TODO|TODO|
 |[Restart-Sampling](https://github.com/ssitu/ComfyUI_restart_sampling)|√|√|TODO|TODO|
 |[SeargeSDXL](https://github.com/SeargeDP/SeargeSDXL)|√|√|TODO|TODO|
+|[StabilityNodes](https://github.com/Stability-AI/stability-ComfyUI-nodes)|√|√|TODO|TODO|
 |[TiledKSampler](https://github.com/BlenderNeko/ComfyUI_TiledKSampler)|√|√|TODO|TODO|
 |[Vextra Nodes](https://github.com/diontimmer/ComfyUI-Vextra-Nodes)|√|√|TODO|TODO|
 |[WAS Suite](https://github.com/WASasquatch/was-node-suite-comfyui)|√|√|TODO|TODO|
 |[WD14-Tagger](https://github.com/pythongosssss/ComfyUI-WD14-Tagger)|√|√|TODO|TODO|
+|[IPAdapter](https://github.com/laksjdjf/IPAdapter-ComfyUI)|√|√|TODO|TODO|
 
 The above only includes translations for the UI. If you are a developer and need me to help you translate your interface, you can go directly to the [ComfyUI Plugins List](https://github.com/WASasquatch/comfyui-plugins) to add your custom node project, or send an issue, as long as I can see it, I will translate it (it will take some time)
 
@@ -156,7 +159,8 @@ Launch ComfyUI and open the menu. Click on the language option to switch languag
 ## Limitations
 1. Supports direct switching of any language node to the target language, but will lose custom names
 2. A small portion of options that use Enum type data cannot be translated
-![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/da2295c3-7020-43bd-b904-446b877aebd8)
+![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/b9684863-4342-4cc8-a790-efd44d792c95)
+
 
 
 
