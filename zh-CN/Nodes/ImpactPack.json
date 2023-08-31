@@ -533,7 +533,8 @@
             "clip": "CLIP",
             "vae": "VAE",
             "positive": "正面提示词",
-            "negative": "负面提示词"
+            "negative": "负面提示词",
+            "detailer_hook": "细化约束"
         },
         "widgets": {
             "guide_size": "引导大小",
@@ -869,7 +870,8 @@
             "negative": "负面提示词",
             "bbox_detector": "BBox检测",
             "sam_model_opt": "SAM模型",
-            "segm_detector_opt": "Segm检测"
+            "segm_detector_opt": "Segm检测",
+            "detailer_hook": "细化约束"
         },
         "widgets": {
             "guide_size": "引导大小",
@@ -889,6 +891,8 @@
             "scheduler": "调度器",
             "denoise": "降噪",
             "feather": "羽化",
+            "noise_mask": "仅生成遮罩",
+            "force_inpaint": "强制重绘",
             "bbox_threshold": "BBox阈值",
             "bbox_dilation": "BBox膨胀",
             "bbox_crop_factor": "BBox裁剪系数",
@@ -902,6 +906,7 @@
                 "mask-points": "遮罩点",
                 "mask-point-bbox": "遮罩点BBox",
             "sam_dilation": "SAM膨胀",
+            "sam_threhold": "SAM阈值",
             "sam_bbox_expansion": "SAMBBox扩展",
             "sam_mask_hint_threshold": "SAM遮罩检测阈值",
             "sam_mask_hint_use_negative": "SAM负面遮罩提示",
