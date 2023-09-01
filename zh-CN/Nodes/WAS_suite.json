@@ -113,7 +113,7 @@
         }
     },
     "unCLIP Checkpoint Loader": {
-        "title": "逆CLIPCheckpoint加载器",
+        "title": "unCLIPCheckpoint加载器",
         "widgets": {
             "ckpt_name": "Checkpoint名称"
         },
