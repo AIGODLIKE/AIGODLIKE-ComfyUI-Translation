@@ -48,7 +48,7 @@
     "Load": "加载",
     "Cancel": "取消",
     "Refresh": "重刷新",
-    "Clipspace": "CLIP 空间",
+    "Clipspace": "剪贴空间",
     "Clear": "清除",
     "Load Default": "加载默认",
     "Switch Locale": "切换语言",
@@ -134,6 +134,11 @@
     "CopyTree": "拷贝节点树",
     "PasteTree": "粘贴节点树",
     "Load Batch Task": "加载批处理任务",
+    "nearest-exact": "邻近-精确",
+    "bilinear": "双线性插值",
+    "area": "区域",
+    "bislerp": "球面线性",
+    "bicubic": "双三次插值",
     
     "Manager": "管理器",
     "ComfyUI Manager Menu": "ComfyUI管理器",
@@ -178,5 +183,16 @@
     "Filter: disabled": "过滤：停用",
     "Filter: update": "过滤：更新",
     "Filter: installed": "过滤：已安装",
-    "Filter: not-installed": "过滤：未安装"
+    "Filter: not-installed": "过滤：未安装",
+
+    
+    "none": "无(最快)",
+    "auto": "自动",
+    "taesd": "TAESD(慢)",
+    "latent2rgb": "Latent到图像(快)",
+    "true": "是",
+    "treu (tiled)": "是(分块)",
+    "false": "否",
+    "output only": "仅输出",
+    "output only (tiled)": "仅输出(分块)"
 }
