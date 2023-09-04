@@ -146,7 +146,7 @@
         }
     },
     "unCLIPCheckpointLoader": {
-        "title": "逆CLIPCheckpoint加载器",
+        "title": "unCLIPCheckpoint加载器",
         "widgets": {
             "ckpt_name": "Checkpoint名称"
         },
@@ -334,7 +334,7 @@
         }
     },
     "unCLIPConditioning": {
-        "title": "逆CLIP条件",
+        "title": "unCLIP条件",
         "inputs": {
             "conditioning": "条件",
             "clip_vision_output": "CLIP视觉输出"

@@ -113,7 +113,7 @@
         }
     },
     "unCLIP Checkpoint Loader": {
-        "title": "逆CLIPCheckpoint加载器",
+        "title": "unCLIPCheckpoint加载器",
         "widgets": {
             "ckpt_name": "Checkpoint名称"
         },
@@ -145,6 +145,31 @@
         },
         "widgets": {
             "noise_std": "噪波数量"
+        }
+    },
+    "Perlin Power Fractal Latent": {
+        "title": "柏林幂律分形噪波",
+        "inputs": {
+            "VAE": "VAE"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "scale": "缩放",
+            "octaves": "八度",
+            "persistence": "持久",
+            "lacunarity": "间隙度",
+            "exponent": "指数",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "latents": "Latent"
         }
     },
     "Latent Upscale by Factor (WAS)": {
@@ -2535,6 +2560,22 @@
         "title": "文本到字符串",
         "inputs": {
             "text": "文本"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Text Shuffle": {
+        "title": "文本重组",
+        "widgets": {
+            "text": "文本",
+            "separator": "分隔符",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机"
         },
         "outputs": {
             "STRING": "字符串"

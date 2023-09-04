@@ -26,10 +26,16 @@
             "scheduler": "调度器",
             "denoise": "降噪",
             "preview_method": "预览方法",
+                "none": "无(最快)",
+                "auto": "自动",
+                "taesd": "TAESD(慢)",
+                "latent2rgb": "Latent到图像(快)",
             "vae_decode": "VAE解码",
                 "true": "是",
+                "treu (tiled)": "是(分块)",
                 "false": "否",
-                "output only": "仅输出"
+                "output only": "仅输出",
+                "output only (tiled)": "仅输出(分块)"
         },
         "outputs": {
             "MODEL": "模型",
@@ -73,15 +79,62 @@
             "denoise": "降噪",
             "return_with_leftover_noise": "返回噪波",
             "preview_method": "预览方法",
+                "none": "无(最快)",
+                "auto": "自动",
+                "taesd": "TAESD(慢)",
+                "latent2rgb": "Latent到图像(快)",
             "vae_decode": "VAE解码",
                 "true": "是",
+                "treu (tiled)": "是(分块)",
                 "false": "否",
-                "output only": "仅输出"
+                "output only": "仅输出",
+                "output only (tiled)": "仅输出(分块)"
         },
         "outputs": {
             "MODEL": "模型",
             "CONDITIONING+": "正面条件",
             "CONDITIONING-": "负面条件",
+            "LATENT": "Latent",
+            "VAE": "VAE",
+            "IMAGE": "图像"
+        }
+    },
+    "KSampler SDXL (Eff.)": {
+        "title": "K采样器(SDXL效率)",
+        "inputs": {
+            "sdxl_tuple": "SDXL元组",
+            "latent_image": "Latent",
+            "optional_vae": "VAE",
+            "script": "脚本"
+        },
+        "widgets": {
+            "sampler_state": "采样状态",
+                "Sample": "采样",
+                "Hold": "不变",
+                "Script": "脚本",
+            "noise_seed": "随机种",
+                "Randomize": "随机",
+                "Last Queued Seed": "上一个随机种",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "start_at_step": "开始降噪步数",
+            "refine_at_step": "开始优化步数",
+            "preview_method": "预览方法",
+                "none": "无(最快)",
+                "auto": "自动",
+                "taesd": "TAESD(慢)",
+                "latent2rgb": "Latent到图像(快)",
+            "vae_decode": "VAE解码",
+                "true": "是",
+                "treu (tiled)": "是(分块)",
+                "false": "否",
+                "output only": "仅输出",
+                "output only (tiled)": "仅输出(分块)"
+        },
+        "outputs": {
+            "SDXL_TUPLE": "SDXL元组",
             "LATENT": "Latent",
             "VAE": "VAE",
             "IMAGE": "图像"
@@ -96,7 +149,7 @@
         "widgets": {
             "ckpt_name": "CKPT模型名称",
             "vae_name": "VAE",
-            "clip_skip": "CLIPskip",
+            "clip_skip": "CLIP Skip",
             "lora_name": "LoRA",
             "lora_model_strength": "LoRA模型强度",
             "lora_clip_strength": "LoRACLIP强度",
@@ -113,6 +166,33 @@
             "LATENT": "Latent",
             "VAE": "VAE",
             "CLIP": "CLIP",
+            "DEPENDENCIES": "依赖"
+        }
+    },
+    "Eff. Loader SDXL": {
+        "title": "效率加载器(SDXL)",
+        "inputs": {
+            "lora_stack": "LoRA堆",
+            "cnet_stack": "ControlNet堆"
+        },
+        "widgets": {
+            "base_ckpt_name": "基础模型",
+            "base_clip_skip": "基础CLIP Skip",
+            "refiner_ckpt_name": "优化模型",
+            "refiner_clip_skip": "优化CLIP Skip",
+            "positive_ascore": "正面美学分数",
+            "negative_ascore": "负面美学分数",
+            "vae_name": "VAE",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "empty_latent_width": "宽度",
+            "empty_latent_height": "高度",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "SDXL_TUPLE": "SDXL元组",
+            "LATENT": "Latent",
+            "VAE": "VAE",
             "DEPENDENCIES": "依赖"
         }
     },
@@ -171,6 +251,52 @@
             "CNET_STACK": "ControlNet堆"
         }
     },
+    "Apply ControlNet Stack": {
+        "title": "应用ControlNet堆",
+        "inputs": {
+            "conditioning": "条件",
+            "cnet_stack": "ControlNet堆"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+
+
+
+    "Pack SDXL Tuple": {
+        "title": "打包SDXL元组",
+        "inputs": {
+            "base_model": "基础模型",
+            "base_clip": "基础CLIP",
+            "base_positive": "基础正面提示词",
+            "base_negative": "负面提示词",
+            "refiner_model": "模型",
+            "refiner_clip": "CLIP",
+            "refiner_positive": "正面提示词",
+            "refiner_negative": "负面提示词"
+        },
+        "outputs": {
+            "SDXL_TUPLE": "SDXL元组"
+        }
+    },
+    "Unpack SDXL Tuple": {
+        "title": "解包SDXL元组",
+        "inputs": {
+            "sdxl_tuple": "SDXL元组"
+        },
+        "outputs": {
+            "BASE_MODEL": "基础模型",
+            "BASE_CLIP": "基础CLIP",
+            "REFINER_MODEL": "优化模型",
+            "REFINER_CLIP": "优化CLIP",
+            "BASE_CONDITIONING+": "基础正面条件",
+            "BASE_CONDITIONING-": "基础负面条件",
+            "REFINER_CONDITIONING+": "优化正面条件",
+            "REFINER_CONDITIONING-": "优化负面条件"
+        }
+    },
+
 
 
     "XY Plot": {
@@ -191,6 +317,28 @@
             "SCRIPT": "脚本"
         }
     },
+    "HighRes-Fix Script": {
+        "title": "高清修复",
+        "inputs": {
+            "script": "脚本"
+        },
+        "widgets": {
+            "latent_upscale_method": "Latent缩放方法",
+                "nearest-exact": "邻近-精确",
+                "bilinear": "双线性插值",
+                "area": "区域",
+                "bislerp": "球面线性",
+                "bicubic": "双三次插值",
+            "upscale_by": "缩放系数",
+            "hires_steps": "高清修复步数",
+            "denoise": "降噪",
+            "iterations": "迭代次数"
+        },
+        "outputs": {
+            "SCRIPT": "脚本"
+        }
+    },
+
 
 
     "XY Input: Seeds++ Batch": {
@@ -233,6 +381,116 @@
             "batch_count": "个数",
             "first_cfg": "初始CFG",
             "end_cfg": "最终CFG"
+        }
+    },
+    "XY Input: Sampler/Scheduler": {
+        "title": "采样调度器",
+        "widgets": {
+            "target_parameter": "目标参数",
+                "sampler": "采样器",
+                "scheduler": "调度器",
+                "sampler & scheduler": "采样和调度",
+            "input_count": "输入数量",
+            "sampler_1": "采样器_1",
+            "sampler_2": "采样器_2",
+            "sampler_3": "采样器_3",
+            "sampler_4": "采样器_4",
+            "sampler_5": "采样器_5",
+            "sampler_6": "采样器_6",
+            "sampler_7": "采样器_7",
+            "sampler_8": "采样器_8",
+            "sampler_9": "采样器_9",
+            "sampler_10": "采样器_10",
+            "sampler_11": "采样器_11",
+            "sampler_12": "采样器_12",
+            "sampler_13": "采样器_13",
+            "sampler_14": "采样器_14",
+            "sampler_15": "采样器_15",
+            "sampler_16": "采样器_16",
+            "sampler_17": "采样器_17",
+            "sampler_18": "采样器_18",
+            "sampler_19": "采样器_19",
+            "sampler_20": "采样器_20",
+            "sampler_21": "采样器_21",
+            "sampler_22": "采样器_22",
+            "sampler_23": "采样器_23",
+            "sampler_24": "采样器_24",
+            "sampler_25": "采样器_25",
+            "sampler_26": "采样器_26",
+            "sampler_27": "采样器_27",
+            "sampler_28": "采样器_28",
+            "sampler_29": "采样器_29",
+            "sampler_30": "采样器_30",
+            "sampler_31": "采样器_31",
+            "sampler_32": "采样器_32",
+            "sampler_33": "采样器_33",
+            "sampler_34": "采样器_34",
+            "sampler_35": "采样器_35",
+            "sampler_36": "采样器_36",
+            "sampler_37": "采样器_37",
+            "sampler_38": "采样器_38",
+            "sampler_39": "采样器_39",
+            "sampler_40": "采样器_40",
+            "sampler_41": "采样器_41",
+            "sampler_42": "采样器_42",
+            "sampler_43": "采样器_43",
+            "sampler_44": "采样器_44",
+            "sampler_45": "采样器_45",
+            "sampler_46": "采样器_46",
+            "sampler_47": "采样器_47",
+            "sampler_48": "采样器_48",
+            "sampler_49": "采样器_49",
+            "sampler_50": "采样器_50",
+            "scheduler_1": "调度器_1",
+            "scheduler_2": "调度器_2",
+            "scheduler_3": "调度器_3",
+            "scheduler_4": "调度器_4",
+            "scheduler_5": "调度器_5",
+            "scheduler_6": "调度器_6",
+            "scheduler_7": "调度器_7",
+            "scheduler_8": "调度器_8",
+            "scheduler_9": "调度器_9",
+            "scheduler_10": "调度器_10",
+            "scheduler_11": "调度器_11",
+            "scheduler_12": "调度器_12",
+            "scheduler_13": "调度器_13",
+            "scheduler_14": "调度器_14",
+            "scheduler_15": "调度器_15",
+            "scheduler_16": "调度器_16",
+            "scheduler_17": "调度器_17",
+            "scheduler_18": "调度器_18",
+            "scheduler_19": "调度器_19",
+            "scheduler_20": "调度器_20",
+            "scheduler_21": "调度器_21",
+            "scheduler_22": "调度器_22",
+            "scheduler_23": "调度器_23",
+            "scheduler_24": "调度器_24",
+            "scheduler_25": "调度器_25",
+            "scheduler_26": "调度器_26",
+            "scheduler_27": "调度器_27",
+            "scheduler_28": "调度器_28",
+            "scheduler_29": "调度器_29",
+            "scheduler_30": "调度器_30",
+            "scheduler_31": "调度器_31",
+            "scheduler_32": "调度器_32",
+            "scheduler_33": "调度器_33",
+            "scheduler_34": "调度器_34",
+            "scheduler_35": "调度器_35",
+            "scheduler_36": "调度器_36",
+            "scheduler_37": "调度器_37",
+            "scheduler_38": "调度器_38",
+            "scheduler_39": "调度器_39",
+            "scheduler_40": "调度器_40",
+            "scheduler_41": "调度器_41",
+            "scheduler_42": "调度器_42",
+            "scheduler_43": "调度器_43",
+            "scheduler_44": "调度器_44",
+            "scheduler_45": "调度器_45",
+            "scheduler_46": "调度器_46",
+            "scheduler_47": "调度器_47",
+            "scheduler_48": "调度器_48",
+            "scheduler_49": "调度器_49",
+            "scheduler_50": "调度器_50"
         }
     },
     "XY Input: Sampler": {
@@ -278,8 +536,66 @@
             "vae_5": "VAE5"
         }
     },
+    "XY Input: Prompt S/R": {
+        "title": "替换提示词",
+        "widgets": {
+            "target_prompt": "目标提示词",
+            "search_txt": "检索",
+            "replace_count": "替换数量",
+            "replace_1": "替换_1",
+            "replace_2": "替换_2",
+            "replace_3": "替换_3",
+            "replace_4": "替换_4",
+            "replace_5": "替换_5",
+            "replace_6": "替换_6",
+            "replace_7": "替换_7",
+            "replace_8": "替换_8",
+            "replace_9": "替换_9",
+            "replace_10": "替换_10",
+            "replace_11": "替换_11",
+            "replace_12": "替换_12",
+            "replace_13": "替换_13",
+            "replace_14": "替换_14",
+            "replace_15": "替换_15",
+            "replace_16": "替换_16",
+            "replace_17": "替换_17",
+            "replace_18": "替换_18",
+            "replace_19": "替换_19",
+            "replace_20": "替换_20",
+            "replace_21": "替换_21",
+            "replace_22": "替换_22",
+            "replace_23": "替换_23",
+            "replace_24": "替换_24",
+            "replace_25": "替换_25",
+            "replace_26": "替换_26",
+            "replace_27": "替换_27",
+            "replace_28": "替换_28",
+            "replace_29": "替换_29",
+            "replace_30": "替换_30",
+            "replace_31": "替换_31",
+            "replace_32": "替换_32",
+            "replace_33": "替换_33",
+            "replace_34": "替换_34",
+            "replace_35": "替换_35",
+            "replace_36": "替换_36",
+            "replace_37": "替换_37",
+            "replace_38": "替换_38",
+            "replace_39": "替换_39",
+            "replace_40": "替换_40",
+            "replace_41": "替换_41",
+            "replace_42": "替换_42",
+            "replace_43": "替换_43",
+            "replace_44": "替换_44",
+            "replace_45": "替换_45",
+            "replace_46": "替换_46",
+            "replace_47": "替换_47",
+            "replace_48": "替换_48",
+            "replace_49": "替换_49"
+
+        }
+    },
     "XY Input: Positive Prompt S/R": {
-        "title": "替换正面条件",
+        "title": "替换正面提示词",
         "widgets": {
             "search_txt": "检索",
             "replace_count": "替换数量",
@@ -291,7 +607,7 @@
         }
     },
     "XY Input: Negative Prompt S/R": {
-        "title": "替换负面条件",
+        "title": "替换负面提示词",
         "widgets": {
             "search_txt": "检索",
             "replace_count": "替换数量",
@@ -302,6 +618,21 @@
             "replace_5": "替换5"
         }
     },
+    "XY Input: Aesthetic Score": {
+        "title": "美学分数",
+        "widgets": {
+            "target_ascore": "目标分数",
+            "batch_count": "个数",
+            "first_ascore": "初始分数",
+            "last_ascore": "最终分数"
+        }
+    },
+    "XY Input: Refiner On/Off": {
+        "title": "优化开关",
+        "widgets": {
+            "refine_at_percent": "开始优化时间"
+        }
+    },
     "XY Input: Checkpoint": {
         "title": "模型",
         "widgets": {
@@ -310,21 +641,21 @@
             "ckpt_name_3": "模型3",
             "ckpt_name_4": "模型4",
             "ckpt_name_5": "模型5",
-            "clip_skip_1": "CLIPskip1",
-            "clip_skip_2": "CLIPskip2",
-            "clip_skip_3": "CLIPskip3",
-            "clip_skip_4": "CLIPskip4",
-            "clip_skip_5": "CLIPskip5"
+            "clip_skip_1": "CLIP Skip1",
+            "clip_skip_2": "CLIP Skip2",
+            "clip_skip_3": "CLIP Skip3",
+            "clip_skip_4": "CLIP Skip4",
+            "clip_skip_5": "CLIP Skip5"
         }
     },
     "XY Input: Clip Skip": {
-        "title": "CLIPskip",
+        "title": "CLIP Skip",
         "widgets": {
-            "clip_skip_1": "CLIPskip1",
-            "clip_skip_2": "CLIPskip2",
-            "clip_skip_3": "CLIPskip3",
-            "clip_skip_4": "CLIPskip4",
-            "clip_skip_5": "CLIPskip5"
+            "clip_skip_1": "CLIP Skip1",
+            "clip_skip_2": "CLIP Skip2",
+            "clip_skip_3": "CLIP Skip3",
+            "clip_skip_4": "CLIP Skip4",
+            "clip_skip_5": "CLIP Skip5"
         }
     },
     "XY Input: LoRA": {
@@ -340,6 +671,31 @@
             "lora_name_3": "LoRA3",
             "lora_name_4": "LoRA4",
             "lora_name_5": "LoRA5"
+        }
+    },
+    "XY Input: LoRA Plot": {
+        "title": "LoRA表",
+        "inputs": {
+            "lora_stack": "LoRA堆"
+        },
+        "widgets": {
+            "input_mode": "输入模式",
+                "X: LoRA Batch, Y: LoRA Weight": "X:LoRA批次,Y:LoRA权重",
+                "X: LoRA Batch, Y: Model Strength": "X:LoRA批次,Y:模型权重",
+                "X: LoRA Batch, Y: Clip Strength": "X:LoRA批次,Y:CLIP权重",
+                "X: Model Strength, Y: Clip Strength": "X:模型权重,Y:CLIP权重",
+            "lora_name": "LoRA",
+            "model_strength": "模型权重",
+            "clip_strength": "CLIP权重",
+            "X_batch_count": "X数量",
+            "X_batch_path": "X路径",
+            "X_subdirectories": "X子文件夹",
+            "X_batch_sort": "X排序",
+            "X_first_value": "X初始值",
+            "X_last_value": "X最终值",
+            "Y_batch_count": "Y数量",
+            "Y_first_value": "Y初始值",
+            "Y_last_value": "Y最终值"
         }
     },
     "XY Input: LoRA Adv.": {
@@ -373,6 +729,53 @@
             "node_state": "节点状态",
                 "Enabled": "开启",
                 "Disabled": "关闭"
+        }
+    },
+    "XY Input: Control Net":{
+        "title": "ControlNet",
+        "inputs": {
+            "control_net": "ControlNet",
+            "image": "图像",
+            "cnet_stack": "ControlNet堆"
+        },
+        "widgets": {
+            "target_parameter": "目标参数",
+            "batch_count": "个数",
+            "first_strength": "初始强度",
+            "last_strength": "最终强度",
+            "first_start_percent": "初始开始引导时间",
+            "last_start_percent": "最终开始引导时间",
+            "first_end_percent": "初始结束引导时间",
+            "last_end_percent": "最终结束引导时间",
+            "strength": "强度",
+            "start_percent": "开始引导时间",
+            "end_percent": "结束引导时间"
+        }
+    },
+    "XY Input: Control Net Plot":{
+        "title": "ControlNet表",
+        "inputs": {
+            "control_net": "ControlNet",
+            "image": "图像",
+            "cnet_stack": "ControlNet堆"
+        },
+        "widgets": {
+            "plot_type": "类型",
+                "X: Strength, Y: Start%": "X:强度,Y:开始时间",
+                "X: Strength, Y: End%": "X:强度,Y:结束时间",
+                "X: Start%, Y: Strength": "X:开始时间,Y:强度",
+                "X: Start%, Y: End%": "X:开始时间,Y:结束时间",
+                "X: End%, Y: Strength": "X:结束时间,Y:强度",
+                "X: End%, Y: Start%": "X:结束时间,Y:开始时间",
+            "strength": "强度",
+            "start_percent": "开始引导时间",
+            "end_percent": "结束引导时间",
+            "X_batch_count": "X数量",
+            "X_first_value": "X初始值",
+            "X_last_value": "X最终值",
+            "Y_batch_count": "Y数量",
+            "Y_first_value": "Y初始值",
+            "Y_last_value": "Y最终值"
         }
     },
     "XY Input: Control Net Strengths": {
