@@ -986,10 +986,36 @@
             "negative": "负面提示词",
             "bbox_detector": "BBox检测",
             "sam_model_opt": "SAM模型",
-            "segm_detector_opt": "Segm检测"
+            "segm_detector_opt": "Segm检测",
+            "detailer_hook": "细化约束"
         },
         "outputs": {
             "detailer_pipe":"细化节点束"
+        }
+    },
+    "ToDetailerPipeSDXL": {
+        "title": "到细化束(SDXL)",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "refiner_model": "优化模型",
+            "refiner_clip": "优化CLIP",
+            "refiner_positive": "优化正面提示词",
+            "refiner_negative": "优化负面提示词",
+            "bbox_detector": "BBox检测",
+            "sam_model_opt": "SAM模型",
+            "segm_detector_opt": "Segm检测",
+            "detailer_hook": "细化约束"
+        },
+        "widgets": {
+            "wildcard": "通配符",
+            "Select the LoRA to add to the text": "选择LoRA"
+        },
+        "outputs": {
+            "detailer_pipe": "细化节点束"
         }
     },
     "FromDetailerPipe": {
@@ -1005,11 +1031,12 @@
             "negative": "负面提示词",
             "bbox_detector": "BBox检测",
             "sam_model_opt": "SAM模型",
-            "segm_detector_opt": "Segm检测"
+            "segm_detector_opt": "Segm检测",
+            "detailer_hook": "细化约束"
         }
     },
     "FromDetailerPipe_v2": {
-        "title": "从细化束",
+        "title": "从细化束_v2",
         "inputs": {
             "detailer_pipe": "细化节点束"
         },
@@ -1025,6 +1052,28 @@
             "segm_detector_opt": "Segm检测"
         }
     },
+    "FromDetailerPipeSDXL": {
+        "title": "从细化束(SDXL)",
+        "inputs": {
+            "detailer_pipe": "细化节点束"
+        },
+        "outputs": {
+            "detailer_pipe": "细化节点束",
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "bbox_detector": "BBox检测",
+            "sam_model_opt": "SAM模型",
+            "segm_detector_opt": "Segm检测",
+            "detailer_hook": "细化约束",
+            "refiner_model": "优化模型",
+            "refiner_clip": "优化CLIP",
+            "refiner_positive": "优化正面提示词",
+            "refiner_negative": "优化负面提示词"
+        }
+    },
     "EditDetailerPipe": {
         "title": "编辑细化束",
         "inputs": {
@@ -1036,7 +1085,8 @@
             "negative": "负面提示词",
             "bbox_detector": "BBox检测",
             "sam_model_opt": "SAM模型",
-            "segm_detector_opt": "Segm检测"
+            "segm_detector_opt": "Segm检测",
+            "detailer_hook": "细化约束"
         },
         "outputs": {
             "detailer_pipe": "细化节点束"
@@ -1112,10 +1162,55 @@
             "BASIC_PIPE": "基础节点束",
             "bbox_detector": "BBox检测",
             "sam_model_opt": "SAM模型",
-            "segm_detector_opt": "Segm检测"
+            "segm_detector_opt": "Segm检测",
+            "detailer_hook": "细化约束"
         },
         "outputs": {
             "DETAILER_PIPE": "细化节点束"
+        }
+    },
+    "BasicPipeToDetailerPipeSDXL": {
+        "title": "基础束到细化束(SDXL)",
+        "inputs": {
+            "base_basic_pipe": "基础基础节点束",
+            "refiner_basic_pipe": "优化基础节点束",
+            "bbox_detector": "BBox检测",
+            "sam_model_opt": "SAM模型",
+            "segm_detector_opt": "Segm检测",
+            "detailer_hook": "细化约束"
+        },
+        "widgets": {
+            "wildcard": "通配符",
+            "Select the LoRA to add to the text": "选择LoRA"
+        },
+        "outputs": {
+            "DETAILER_PIPE": "细化节点束"
+        }
+    },
+    "EditDetailerPipeSDXL": {
+        "title": "编辑细化束(SDXL)",
+        "inputs": {
+            "detailer_pipe": "细化节点束",
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "bbox_detector": "BBox检测",
+            "sam_model_opt": "SAM模型",
+            "segm_detector_opt": "Segm检测",
+            "detailer_hook": "细化约束",
+            "refiner_model": "优化模型",
+            "refiner_clip": "优化CLIP",
+            "refiner_positive": "优化正面提示词",
+            "refiner_negative": "优化负面提示词"
+        },
+        "widgets": {
+            "wildcard": "通配符",
+            "Select the LoRA to add to the text": "选择LoRA"
+        },
+        "outputs": {
+            "detailer_pipe": "细化节点束"
         }
     },
     
