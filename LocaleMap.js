@@ -11,10 +11,10 @@ export const LOCALES = {
     "nativeName": "exampleDisplayName",
     "englishName": "enName"
   },
-  // "ja-JP": {
-  //   "nativeName": "日本語",
-  //   "englishName": "Japanese"
-  // },
+   "ja-JP": {
+     "nativeName": "日本語",
+     "englishName": "Japanese"
+  },
   // "ach": {
   //   "nativeName": "Lwo",
   //   "englishName": "Acholi"
