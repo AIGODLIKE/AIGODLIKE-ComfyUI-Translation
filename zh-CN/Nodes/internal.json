@@ -875,6 +875,18 @@
                 "blue": "蓝色"
         }
     },
+    "ImageColorToMask": {
+        "title": "图像颜色到遮罩",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "color": "颜色"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
     "SolidMask": {
         "title": "纯块遮罩",
         "widgets": {
