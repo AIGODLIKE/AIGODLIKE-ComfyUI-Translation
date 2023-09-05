@@ -13,7 +13,7 @@ I hope ComfyUI can support more languages besides Chinese and English, such as F
 
 |COMFYUI Translation|Chinese简体中文|English|Japanese日本語|Korean한국어|Your language|
 |:----|:----|:----|:----|:----|:----|
-|Menu|√|√|TODO|√|TODO|
+|Menu|√|√|√|√|TODO|
 |NodeCategory|√|√|TODO|TODO|TODO|
 |Nodes|√|√|TODO|TODO|TODO|
 ## Function
