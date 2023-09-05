@@ -465,6 +465,27 @@
                 "in a lab": "实验室",
                 "rendered in a 2.5D isometric perspective. Soft gradients add dimension, pastel color scheme": "等距粉彩",
             "lighting": "光源"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "CSL": {
+        "title": "分隔符列表",
+        "widgets": {
+            "csl": "分隔符列表"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Comma Separated List": {
+        "title": "分隔符列表",
+        "widgets": {
+            "csl": "分隔符列表"
+        },
+        "outputs": {
+            "STRING": "字符串"
         }
     }
 }
