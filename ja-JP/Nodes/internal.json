@@ -1,0 +1,1242 @@
+{
+    "Note": {
+        "title": "メモ"
+    },
+    "PrimitiveNode": {
+        "title": "Primitiveメモ",
+        "outputs": {
+            "connect to widget input": "ウィジェット入力に接続"
+        }
+    },
+    "Reroute": {
+        "title": "迂回"
+    },
+    "KSampler": {
+        "title": "Kサンプラー",
+        "inputs": {
+            "model": "モデル",
+            "positive": "正面",
+            "negative": "负面",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "seed": "乱数種",
+            "control_after_generate": "生成後の制御",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "ランダム",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "サンプラー",
+            "scheduler": "スケジューラー",
+            "denoise": "ノイズ"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "KSamplerAdvanced": {
+        "title": "Kサンプラー(高级)",
+        "inputs": {
+            "model": "モデル",
+            "positive": "正面",
+            "negative": "负面",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "add_noise": "ノイズを追加",
+            "noise_seed": "乱数種",
+            "control_after_generate": "生成後の制御",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "ランダム",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "サンプラー",
+            "scheduler": "スケジューラー",
+            "denoise": "ノイズ",
+            "start_at_step": "开始ノイズ步数",
+            "end_at_step": "结束ノイズ步数",
+            "return_with_leftover_noise": "ノイズが残る"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+
+
+
+
+    "CheckpointLoaderSimple": {
+        "title": "Checkpointローダー(簡易)",
+        "widgets": {
+            "ckpt_name": "Checkpoint名"
+        },
+        "outputs": {
+            "model": "モデル",
+            "CLIP": "CLIP",
+            "VAE": "VAE"
+        }
+    },
+    "VAELoader": {
+        "title": "VAEローダー",
+        "widgets": {
+            "vae_name": "VAE名"
+        },
+        "outputs": {
+            "vae": "VAE"
+        }
+    },
+    "LoraLoader": {
+        "title": "LoRAローダー",
+        "inputs": {
+            "model": "モデル",
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "lora_name": "LoRA名",
+            "strength_model": "モデル強度",
+            "strength_clip": "CLIP強度"
+        },
+        "outputs": {
+            "model": "モデル",
+            "CLIP": "CLIP"
+        }
+    },
+    "ControlNetLoader": {
+        "title": "ControlNetローダー",
+        "widgets": {
+            "control_net_name": "ControlNet名"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "DiffControlNetLoader": {
+        "title": "DiffControlNetローダー",
+        "inputs": {
+            "MODEL": "モデル"
+        },
+        "widgets": {
+            "control_net_name": "ControlNet名"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "StyleModelLoader": {
+        "title": "画風モデルローダー",
+        "widgets": {
+            "style_model_name": "画風モデル名"
+        },
+        "outputs": {
+            "STYLE_MODEL": "画風モデル",
+            "style_model": "画風モデル"
+        }
+    },
+    "CLIPVisionLoader": {
+        "title": "CLIP视觉ローダー",
+        "widgets": {
+            "clip_name": "CLIP名"
+        },
+        "outputs": {
+            "CLIP_VISION": "CLIP视觉"
+        }
+    },
+    "unCLIPCheckpointLoader": {
+        "title": "unCLIPCheckpointローダー",
+        "widgets": {
+            "ckpt_name": "Checkpoint名"
+        },
+        "outputs": {
+            "model": "モデル",
+            "CLIP": "CLIP",
+            "VAE": "VAE",
+            "CLIP_VISION": "CLIP视觉"
+        }
+    },
+    "GLIGENLoader": {
+        "title": "GLIGENローダー",
+        "widgets": {
+            "gligen_name": "GLIGEN名"
+        },
+        "outputs": {
+            "GLIGEN": "GLIGENモデル"
+        }
+    },
+    "UpscaleModelLoader": {
+        "title": "放大モデルローダー",
+        "widgets": {
+            "model_name": "放大モデル名"
+        },
+        "outputs": {
+            "UPSCALE_MODEL": "放大モデル"
+        }
+    },
+    "HypernetworkLoader": {
+        "title": "超網ローダー",
+        "inputs": {
+            "model": "モデル"
+        },
+        "widgets": {
+            "hypernetwork_name": "超網名",
+            "strength": "強度"
+        },
+        "outputs": {
+            "MODEL": "モデル"
+        }
+    },
+
+
+
+
+    "StyleModelApply": {
+        "title": "画風モデル应用",
+        "inputs": {
+            "conditioning": "条件",
+            "style_model": "画風モデル",
+            "clip_vision_output": "CLIP视觉输出"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "GLIGENTextBoxApply": {
+        "title": "GLIGEN文本框应用",
+        "inputs": {
+            "conditioning_to": "条件",
+            "clip": "CLIP",
+            "gligen_textbox_model": "GLIGENモデル"
+        },
+        "widgets": {
+            "text": "文本",
+            "width": "宽度",
+            "height": "高度",
+            "x": "X",
+            "y": "Y"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "CLIPTextEncode": {
+        "title": "CLIP文本编码器",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "CLIPSetLastLayer": {
+        "title": "CLIP设置停止层",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "stop_at_clip_layer": "停止在CLIP层"
+        },
+        "outputs": {
+            "CLIP": "CLIP"
+        }
+    },
+    "Conditioning (Average)": {
+        "title": "条件平均",
+        "inputs": {
+            "conditioning_to": "条件到",
+            "conditioning_from": "条件从"
+        },
+        "widgets": {
+            "conditioning_to_strength": "系数"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "ConditioningAverage": {
+        "title": "条件平均",
+        "inputs": {
+            "conditioning_to": "条件到",
+            "conditioning_from": "条件从"
+        },
+        "widgets": {
+            "conditioning_to_strength": "系数"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "ConditioningCombine": {
+        "title": "条件合并",
+        "inputs": {
+            "conditioning_1": "条件1",
+            "conditioning_2": "条件2"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "ConditioningConcat": {
+        "title": "条件联结",
+        "widgets": {
+            "conditioning_to": "条件到",
+            "conditioning_from": "条件从"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "ConditioningSetArea": {
+        "title": "条件采样区域",
+        "inputs": {
+            "conditioning": "条件"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "x": "X",
+            "y": "Y",
+            "strength": "強度"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "ConditioningSetMask": {
+        "title": "条件设置遮罩",
+        "inputs": {
+            "conditioning": "条件",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "strength": "強度",
+            "set_cond_area": "设置条件区域",
+                "default": "默认",
+                "mask bounds": "遮罩边界"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "CLIPVisionEncode": {
+        "title": "CLIP视觉编码",
+        "inputs": {
+            "clip_vision": "CLIP视觉",
+            "image": "图像"
+        },
+        "outputs": {
+            "CLIP_VISION_OUTPUT": "CLIP视觉输出"
+        }
+    },
+    "unCLIPConditioning": {
+        "title": "unCLIP条件",
+        "inputs": {
+            "conditioning": "条件",
+            "clip_vision_output": "CLIP视觉输出"
+        },
+        "widgets": {
+            "strength": "強度",
+            "noise_augmentation": "噪波增强"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "ControlNetApply": {
+        "title": "ControlNet应用",
+        "inputs": {
+            "conditioning": "条件",
+            "control_net": "ControlNet",
+            "image": "图像"
+        },
+        "widgets": {
+            "strength": "強度"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "ControlNetApplyAdvanced": {
+        "title": "ControlNet应用(高级)",
+        "inputs": {
+            "positive": "正面",
+            "negative": "负面",
+            "control_net": "ControlNet",
+            "image": "图像"
+        },
+        "widgets": {
+            "strength": "強度",
+            "start_percent": "开始时间",
+            "end_percent": "结束时间"
+        },
+        "outputs": {
+            "positive": "正面",
+            "negative": "负面提示词"
+        }
+    },
+
+
+
+
+    "VAEEncodeForInpaint": {
+        "title": "VAE内补编码器",
+        "inputs": {
+            "pixels": "图像",
+            "vae": "VAE",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "grow_mask_by": "遮罩延展"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "SetLatentNoiseMask": {
+        "title": "设置Latent噪波遮罩",
+        "inputs": {
+            "samples": "Latent",
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+
+
+    "LatentFromBatch": {
+        "title": "从批次获取Latent",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "widgets": {
+            "batch_index": "批次索引",
+            "length": "长度"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "RepeatLatentBatch": {
+        "title": "复制批次",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "widgets": {
+            "amount": "次数"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "RebatchLatents": {
+        "title": "重设批次",
+        "inputs": {
+            "latents": "Latent"
+        },
+        "widgets": {
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+
+
+    "LatentRotate": {
+        "title": "Latent旋转",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "widgets": {
+            "rotation": "旋转",
+                "none": "无",
+                "90 degrees": "90度",
+                "180 degrees": "180度",
+                "270 degrees": "270度"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "LatentFlip": {
+        "title": "Latent翻转",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "widgets": {
+            "flip_method": "翻转方法",
+                "x-axis: vertically": "X轴:竖直",
+                "y-axis: horizontally": "Y轴:水平"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "LatentCrop": {
+        "title": "Latent裁剪",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "x": "X",
+            "y": "Y"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+
+
+    "VAEDecode": {
+        "title": "VAE解码",
+        "inputs": {
+            "samples": "Latent",
+            "vae": "VAE"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "VAEEncode": {
+        "title": "VAE编码",
+        "inputs": {
+            "pixels": "图像",
+            "vae": "VAE"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "EmptyLatentImage": {
+        "title": "空Latent",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "LatentUpscale": {
+        "title": "Latent缩放",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "widgets": {
+            "upscale_method": "缩放方法",
+                "nearest-exact": "邻近-精确",
+                "bilinear": "双线性插值",
+                "area": "区域",
+                "bislerp": "球面线性",
+                "bicubic": "双三次插值",
+            "width": "宽度",
+            "height": "高度",
+            "crop": "裁剪",
+                "enabled": "开启",
+                "disabled": "关闭"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "LatentUpscaleBy": {
+        "title": "Latent按系数缩放",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "widgets": {
+            "upscale_method": "缩放方法",
+                "nearest-exact": "邻近-精确",
+                "bilinear": "双线性插值",
+                "area": "区域",
+                "bislerp": "球面线性",
+                "bicubic": "双三次插值",
+            "scale_by": "系数"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "LatentComposite": {
+        "title": "Latent复合",
+        "inputs": {
+            "samples_to": "目标Latent",
+            "samples_from": "源Latent"
+        },
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "feather": "羽化"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "LatentCompositeMasked": {
+        "title": "Latent遮罩复合",
+        "inputs": {
+            "destination": "目标Latent",
+            "source": "源Latent",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "resize_source": "拉伸源Latent"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+
+
+
+
+    "ImageScale": {
+        "title": "图像缩放",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "upscale_method": "缩放方法",
+                "nearest-exact": "邻近-精确",
+                "bilinear": "双线性插值",
+                "area": "区域",
+                "bicubic": "双三次插值",
+            "width": "宽度",
+            "height": "高度",
+            "crop": "裁剪",
+                "enabled": "开启",
+                "disabled": "关闭"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageScaleBy": {
+        "title": "图像按系数缩放",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "upscale_method": "缩放方法",
+                "nearest-exact": "邻近-精确",
+                "bilinear": "双线性插值",
+                "area": "区域",
+                "bicubic": "双三次插值",
+            "scale_by": "系数"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageUpscaleWithModel": {
+        "title": "图像通过モデル放大",
+        "inputs": {
+            "upscale_model": "放大モデル",
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageScaleToTotalPixels": {
+        "title": "图像按像素缩放",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "upscale_method": "缩放方法",
+                "nearest-exact": "邻近-精确",
+                "bilinear": "双线性插值",
+                "area": "区域",
+                "bicubic": "双三次插值",
+            "megapixels": "像素数量"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+
+
+    "ImageBlend": {
+        "title": "图像混合",
+        "inputs": {
+            "image1": "图像1",
+            "image2": "图像2"
+        },
+        "widgets": {
+            "blend_factor": "系数",
+            "blend_mode": "混合模式",
+                "normal": "正常",
+                "multiply": "正片叠底",
+                "screen": "滤色",
+                "overlay": "叠加",
+                "soft_light": "柔光"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageBlur": {
+        "title": "图像模糊",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "blur_radius": "模糊半径",
+            "sigma": "Sigma"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageQuantize": {
+        "title": "图像量化",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "colors": "颜色数量",
+            "dither": "抖动",
+                "none": "无",
+                "floyd-steinberg": "弗洛伊德算法"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageSharpen": {
+        "title": "图像锐化",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "sharpen_radius": "锐化范围",
+            "sigma": "Sigma",
+            "alpha": "透明"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+
+
+    "Canny": {
+        "title": "Canny",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "low_threshold": "低阈值",
+            "high_threshold": "高阈值"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+
+
+    "SaveImage": {
+        "title": "保存图像",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀"
+        }
+    },
+    "PreviewImage": {
+        "title": "预览图像",
+        "inputs": {
+            "images": "图像"
+        }
+    },
+    "LoadImage": {
+        "title": "加载图像",
+        "widgets": {
+            "image": "图像",
+            "choose file to upload": "上传文件"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    },
+    "ImageInvert": {
+        "title": "图像反转",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageBatch": {
+        "title": "图像组合批次",
+        "inputs": {
+            "image1": "图像1",
+            "image2": "图像2"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImagePadForOutpaint": {
+        "title": "外补画板",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "left": "左",
+            "top": "上",
+            "right": "右",
+            "bottom": "下",
+            "feathering": "羽化"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    },
+    "EmptyImage": {
+        "title": "空图像",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "batch_size": "批次大小",
+            "color": "颜色"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageCompositeMasked": {
+        "title": "图像遮罩复合",
+        "inputs": {
+            "destination": "目标图像",
+            "source": "源图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "resize_source": "拉伸源图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+
+
+
+
+    "LoadImageMask": {
+        "title": "加载图像遮罩",
+        "widgets": {
+            "image": "图像",
+            "channel": "通道",
+            "choose file to upload": "上传文件"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "MaskToImage": {
+        "title": "遮罩到图像",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageToMask": {
+        "title": "图像到遮罩",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "channel": "通道"
+        },
+        "outputs": {
+            "MASK": "遮罩",
+                "red": "红色",
+                "green": "绿色",
+                "blue": "蓝色"
+        }
+    },
+    "ImageColorToMask": {
+        "title": "图像颜色到遮罩",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "color": "颜色"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "SolidMask": {
+        "title": "纯块遮罩",
+        "widgets": {
+            "value": "明度",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "InvertMask": {
+        "title": "遮罩反转",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "CropMask": {
+        "title": "遮罩裁剪",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "MaskComposite": {
+        "title": "遮罩混合",
+        "inputs": {
+            "destination": "目标遮罩",
+            "source": "源遮罩"
+        },
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "operation": "混合方法",
+                "multiply": "相乘",
+                "add": "相加",
+                "subtract": "相减",
+                "and": "和",
+                "or": "或",
+                "xor": "异或"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "FeatherMask": {
+        "title": "遮罩羽化",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "left": "左",
+            "top": "上",
+            "right": "右",
+            "bottom": "下"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "GrowMask": {
+        "title": "遮罩扩展",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "expand": "扩展",
+            "tapered_corners": "倒角"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    
+
+
+
+    "VAEDecodeTiled": {
+        "title": "VAE分块解码",
+        "inputs": {
+            "samples": "Latent",
+            "vae": "VAE"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "VAEEncodeTiled": {
+        "title": "VAE分块编码",
+        "inputs": {
+            "pixels": "图像",
+            "vae": "VAE"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "TomePatchModel": {
+        "title": "Tome合并モデルToken",
+        "inputs": {
+            "model": "モデル"
+        },
+        "widgets": {
+            "ratio": "比率"
+        },
+        "outputs": {
+            "MODEL": "モデル"
+        }
+    },
+    "SaveLatent": {
+        "title": "保存Latent",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "widgets": {
+            "samples": "Latent"
+        }
+    },
+    "LoadLatent": {
+        "title": "读取Latent",
+        "widgets": {
+            "filename_prefix": "文件名前缀"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "LatentBlend": {
+        "title": "Latent混合",
+        "inputs": {
+            "samples1": "Latent1",
+            "samples2": "Latent2"
+        },
+        "widgets": {
+            "blend_factor": "系数"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+
+
+
+
+    "DiffusersLoader": {
+        "title": "扩散ローダー",
+        "widgets": {
+            "model_path": "モデル路径"
+        },
+        "outputs": {
+            "model": "モデル",
+            "CLIP": "CLIP",
+            "VAE": "VAE"
+        }
+    },
+    "CLIPLoader": {
+        "title": "CLIPローダー",
+        "widgets": {
+            "clip_name": "CLIP名"
+        },
+        "outputs": {
+            "CLIP": "CLIP"
+        }
+    },
+    "CheckpointLoader": {
+        "title": "Checkpointローダー",
+        "widgets": {
+            "config_name": "配置名",
+            "ckpt_name": "Checkpoint名"
+        },
+        "outputs": {
+            "model": "モデル",
+            "CLIP": "CLIP",
+            "VAE": "VAE"
+        }
+    },
+    "UNETLoader": {
+        "title": "UNETローダー",
+        "widgets": {
+            "unet_name": "UNET名"
+        },
+        "outputs": {
+            "MODEL": "モデル"
+        }
+    },
+    "DualCLIPLoader": {
+        "title": "双CLIPローダー",
+        "widgets": {
+            "clip_name1": "CLIP1",
+            "clip_name2": "CLIP2"
+        },
+        "outputs": {
+            "CLIP": "CLIP"
+        }
+    },
+
+
+    "ConditioningZeroOut": {
+        "title": "条件零化",
+        "inputs": {
+            "conditioning": "条件"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "ConditioningSetTimestepRange": {
+        "title": "设置条件时间",
+        "inputs": {
+            "conditioning": "条件"
+        },
+        "widgets": {
+            "start": "开始",
+            "end": "结束"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "CLIPTextEncodeSDXL": {
+        "title": "CLIP文本编码SDXL",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "crop_w": "裁剪宽度",
+            "crop_h": "裁剪高度",
+            "target_width": "目标宽度",
+            "target_height": "目标高度",
+            "text_g": "ViT-bigG文本",
+            "text_l": "ViT-L文本"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "CLIPTextEncodeSDXLRefiner": {
+        "title": "CLIP文本编码SDXL优化",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "ascore": "美学分数",
+            "width": "宽度",
+            "height": "高度",
+            "text": "文本"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+
+
+    "ModelMergeSimple": {
+        "title": "融合モデル",
+        "inputs": {
+            "model1": "モデル1",
+            "model2": "モデル2"
+        },
+        "widgets": {
+            "ratio": "比率"
+        },
+        "outputs": {
+            "MODEL": "モデル"
+        }
+    },
+    "ModelMergeBlocks": {
+        "title": "分层融合モデル",
+        "inputs": {
+            "model1": "モデル1",
+            "model2": "モデル2"
+        },
+        "outputs": {
+            "MODEL": "モデル"
+        }
+    },
+    "CheckpointSave": {
+        "title": "保存モデル",
+        "inputs": {
+            "model": "モデル",
+            "clip": "CLIP",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀"
+        }
+    },
+    "CLIPMergeSimple": {
+        "title": "融合CLIP",
+        "inputs": {
+            "clip1": "CLIP1",
+            "clip2": "CLIP2"
+        },
+        "widgets": {
+            "ratio": "比率"
+        },
+        "outputs": {
+        }
+    },
+    "ModelMergeBlockNumber": {
+        "title": "分层数融合モデル",
+        "inputs": {
+            "model1": "モデル1",
+            "model2": "モデル2"
+        },
+        "outputs": {
+            "MODEL": "モデル"
+        }
+    },
+    "ModelMergeSDXL": {
+        "title": "融合SDXLモデル",
+        "inputs": {
+            "model1": "モデル1",
+            "model2": "モデル2"
+        },
+        "outputs": {
+            "MODEL": "モデル"
+        }
+    },
+    "ModelMergeSDXLTransformers": {
+        "title": "融合SDXLモデルTransformers",
+        "inputs": {
+            "model1": "モデル1",
+            "model2": "モデル2"
+        },
+        "outputs": {
+            "MODEL": "モデル"
+        }
+    },
+    "ModelMergeSDXLDetailedTransformers": {
+        "title": "融合SDXLモデルTransformers(高级)",
+        "inputs": {
+            "model1": "モデル1",
+            "model2": "モデル2"
+        },
+        "outputs": {
+            "MODEL": "モデル"
+        }
+    }
+}
