@@ -1,0 +1,19 @@
+{
+    "LLLiteLoader": {
+        "title": "LLLite加载器",
+        "inputs": {
+            "model": "模型",
+            "cond_image": "图像"
+        },
+        "widgets": {
+            "model_name": "模型名称",
+            "strength": "强度",
+            "steps": "步数",
+            "start_percent": "开始时间",
+            "end_percent": "结束时间"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    }
+}
