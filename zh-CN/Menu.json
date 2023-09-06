@@ -173,7 +173,7 @@
     "Preview method: None (very fast)": "预览方法：无(最快)",
     "Preview method: Auto": "预览方法：自动",
     "Preview method: TAESD (slow)": "预览方法：TAESD(慢)",
-    "Preview method: Latent2RGB (fast)": "预览方法：Latent到图像(快)",
+    "Preview method: Latent2RGB (fast)": "预览方法：Latent2RGB(快)",
     "Badge: None": "标签：无",
     "Badge: Nickname": "标签：简称",
     "Badge: #ID Nickname": "标签：ID+简称",
