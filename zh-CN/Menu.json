@@ -179,6 +179,7 @@
     "Badge: #ID Nickname": "标签：ID+简称",
     "Channel: default": "数据库通道：默认",
     "Channel: recent": "数据库通道：新版",
+    "Channel: legacy": "数据库通道：旧版",
     "Filter: all": "过滤：全部",
     "Filter: disabled": "过滤：停用",
     "Filter: update": "过滤：更新",
