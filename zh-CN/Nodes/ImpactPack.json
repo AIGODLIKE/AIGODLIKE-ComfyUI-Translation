@@ -74,6 +74,20 @@
             "SEGS": "Seg"
         }
     },
+    "ImpactControlNetApplySEGS": {
+        "title": "ControlNet应用Seg",
+        "inputs": {
+            "segs": "Seg",
+            "control_net": "ControlNet",
+            "segs_preprocessor": "Seg预处理"
+        },
+        "widgets": {
+            "strength": "强度"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
     "PreviewBridge": {
         "title": "桥接预览",
         "inputs": {

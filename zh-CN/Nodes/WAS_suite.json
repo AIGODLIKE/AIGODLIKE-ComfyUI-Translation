@@ -2449,6 +2449,27 @@
             "LATENT": "Latent"
         }
     },
+    "KSampler (WAS)": {
+        "title": "K采样器(WAS)",
+        "inputs": {
+            "model": "模型",
+            "seed": "随机种",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
     "KSampler Cycle": {
         "title": "K采样器(Cycle)",
         "inputs": {

@@ -1,15 +1,15 @@
 {
     "Note": {
-        "title": "メモ"
+        "title": "注記"
     },
     "PrimitiveNode": {
-        "title": "Primitiveメモ",
+        "title": "Primitiveノード",
         "outputs": {
             "connect to widget input": "ウィジェット入力に接続"
         }
     },
     "Reroute": {
-        "title": "迂回"
+        "title": "リルート"
     },
     "KSampler": {
         "title": "Kサンプラー",
@@ -23,21 +23,21 @@
             "seed": "乱数種",
             "control_after_generate": "生成後の制御",
                 "fixed": "固定",
-                "increment": "增加",
-                "decrement": "减少",
+                "increment": "増加",
+                "decrement": "減少",
                 "randomize": "ランダム",
-            "steps": "步数",
+            "steps": "ステップ数",
             "cfg": "CFG",
-            "sampler_name": "サンプラー",
-            "scheduler": "スケジューラー",
-            "denoise": "ノイズ"
+            "sampler_name": "サンプラー名",
+            "scheduler": "スケジューラ",
+            "denoise": "ノイズ除去"
         },
         "outputs": {
             "LATENT": "Latent"
         }
     },
     "KSamplerAdvanced": {
-        "title": "Kサンプラー(高级)",
+        "title": "Kサンプラー（高度）",
         "inputs": {
             "model": "モデル",
             "positive": "正面",
@@ -45,21 +45,21 @@
             "latent_image": "Latent"
         },
         "widgets": {
-            "add_noise": "ノイズを追加",
-            "noise_seed": "乱数種",
+            "add_noise": "ノイズ追加",
+            "noise_seed": "ノイズ乱数種",
             "control_after_generate": "生成後の制御",
                 "fixed": "固定",
-                "increment": "增加",
-                "decrement": "减少",
+                "increment": "増加",
+                "decrement": "減少",
                 "randomize": "ランダム",
-            "steps": "步数",
+            "steps": "ステップ数",
             "cfg": "CFG",
-            "sampler_name": "サンプラー",
-            "scheduler": "スケジューラー",
-            "denoise": "ノイズ",
-            "start_at_step": "开始ノイズ步数",
-            "end_at_step": "结束ノイズ步数",
-            "return_with_leftover_noise": "ノイズが残る"
+            "sampler_name": "サンプラー名",
+            "scheduler": "スケジューラ",
+            "denoise": "ノイズ除去",
+            "start_at_step": "開始ステップ",
+            "end_at_step": "終了ステップ",
+            "return_with_leftover_noise": "残りのノイズを返す"
         },
         "outputs": {
             "LATENT": "Latent"
@@ -68,14 +68,14 @@
 
 
 
-
+    
     "CheckpointLoaderSimple": {
-        "title": "Checkpointローダー(簡易)",
+        "title": "チェックポイントローダー（簡易）",
         "widgets": {
-            "ckpt_name": "Checkpoint名"
+            "ckpt_name": "チェックポイント名"
         },
         "outputs": {
-            "model": "モデル",
+            "MODEL": "モデル",
             "CLIP": "CLIP",
             "VAE": "VAE"
         }
@@ -101,7 +101,7 @@
             "strength_clip": "CLIP強度"
         },
         "outputs": {
-            "model": "モデル",
+            "MODEL": "モデル",
             "CLIP": "CLIP"
         }
     },
@@ -127,34 +127,34 @@
         }
     },
     "StyleModelLoader": {
-        "title": "画風モデルローダー",
+        "title": "スタイルモデルローダー",
         "widgets": {
-            "style_model_name": "画風モデル名"
+            "style_model_name": "スタイルモデル名"
         },
         "outputs": {
-            "STYLE_MODEL": "画風モデル",
-            "style_model": "画風モデル"
+            "STYLE_MODEL": "スタイルモデル",
+            "style_model": "スタイルモデル"
         }
     },
     "CLIPVisionLoader": {
-        "title": "CLIP视觉ローダー",
+        "title": "CLIPビジョンローダー",
         "widgets": {
             "clip_name": "CLIP名"
         },
         "outputs": {
-            "CLIP_VISION": "CLIP视觉"
+            "CLIP_VISION": "CLIPビジョン"
         }
     },
     "unCLIPCheckpointLoader": {
-        "title": "unCLIPCheckpointローダー",
+        "title": "unCLIPチェックポイントローダー",
         "widgets": {
-            "ckpt_name": "Checkpoint名"
+            "ckpt_name": "チェックポイント名"
         },
         "outputs": {
-            "model": "モデル",
+            "MODEL": "モデル",
             "CLIP": "CLIP",
             "VAE": "VAE",
-            "CLIP_VISION": "CLIP视觉"
+            "CLIP_VISION": "CLIPビジョン"
         }
     },
     "GLIGENLoader": {
@@ -167,53 +167,53 @@
         }
     },
     "UpscaleModelLoader": {
-        "title": "扩大モデルローダー",
+        "title": "アップスケールモデルローダー",
         "widgets": {
-            "model_name": "扩大モデル名"
+            "model_name": "アップスケールモデル名"
         },
         "outputs": {
-            "UPSCALE_MODEL": "扩大モデル"
+            "UPSCALE_MODEL": "アップスケールモデル"
         }
     },
     "HypernetworkLoader": {
-        "title": "超網ローダー",
+        "title": "ハイパーネットワークローダー",
         "inputs": {
             "model": "モデル"
         },
         "widgets": {
-            "hypernetwork_name": "超網名",
+            "hypernetwork_name": "ハイパーネットワーク名",
             "strength": "強度"
         },
         "outputs": {
             "MODEL": "モデル"
         }
     },
-
+       
 
 
 
     "StyleModelApply": {
-        "title": "画風モデル应用",
+        "title": "スタイルモデル適用",
         "inputs": {
             "conditioning": "条件",
-            "style_model": "画風モデル",
-            "clip_vision_output": "CLIP视觉输出"
+            "style_model": "スタイルモデル",
+            "clip_vision_output": "CLIPビジョン出力"
         },
         "outputs": {
             "CONDITIONING": "条件"
         }
     },
     "GLIGENTextBoxApply": {
-        "title": "GLIGEN文本应用",
+        "title": "GLIGENテキストボックス適用",
         "inputs": {
             "conditioning_to": "条件",
             "clip": "CLIP",
             "gligen_textbox_model": "GLIGENモデル"
         },
         "widgets": {
-            "text": "文本",
+            "text": "テキスト",
             "width": "幅",
-            "height": "高",
+            "height": "高さ",
             "x": "X",
             "y": "Y"
         },
@@ -222,57 +222,57 @@
         }
     },
     "CLIPTextEncode": {
-        "title": "CLIPテキストエンコード",
+        "title": "CLIPテキストエンコーダー",
         "inputs": {
             "clip": "CLIP"
         },
         "widgets": {
-            "text": "文本"
+            "text": "テキスト"
         },
         "outputs": {
             "CONDITIONING": "条件"
         }
     },
     "CLIPSetLastLayer": {
-        "title": "CLIP深さを制限",
+        "title": "CLIP最終レイヤー設定",
         "inputs": {
             "clip": "CLIP"
         },
         "widgets": {
-            "stop_at_clip_layer": "停止在CLIP层"
+            "stop_at_clip_layer": "CLIPレイヤーで停止"
         },
         "outputs": {
             "CLIP": "CLIP"
         }
     },
     "Conditioning (Average)": {
-        "title": "条件平均",
+        "title": "条件（平均）",
         "inputs": {
-            "conditioning_to": "条件到",
-            "conditioning_from": "条件从"
+            "conditioning_to": "条件先",
+            "conditioning_from": "条件元"
         },
         "widgets": {
-            "conditioning_to_strength": "けいすう"
+            "conditioning_to_strength": "強度"
         },
         "outputs": {
             "CONDITIONING": "条件"
         }
     },
     "ConditioningAverage": {
-        "title": "条件平均",
+        "title": "条件（平均）",
         "inputs": {
-            "conditioning_to": "条件到",
-            "conditioning_from": "条件从"
+            "conditioning_to": "条件先",
+            "conditioning_from": "条件元"
         },
         "widgets": {
-            "conditioning_to_strength": "けいすう"
+            "conditioning_to_strength": "強度"
         },
         "outputs": {
             "CONDITIONING": "条件"
         }
     },
     "ConditioningCombine": {
-        "title": "条件マージ",
+        "title": "条件結合",
         "inputs": {
             "conditioning_1": "条件1",
             "conditioning_2": "条件2"
@@ -282,10 +282,10 @@
         }
     },
     "ConditioningConcat": {
-        "title": "条件れんけつ",
+        "title": "条件連結",
         "widgets": {
-            "conditioning_to": "条件到",
-            "conditioning_from": "条件从"
+            "conditioning_to": "条件先",
+            "conditioning_from": "条件元"
         },
         "outputs": {
             "CONDITIONING": "条件"
@@ -298,7 +298,7 @@
         },
         "widgets": {
             "width": "幅",
-            "height": "高",
+            "height": "高さ",
             "x": "X",
             "y": "Y",
             "strength": "強度"
@@ -308,51 +308,51 @@
         }
     },
     "ConditioningSetMask": {
-        "title": "条件设置遮罩",
+        "title": "条件マスク設定",
         "inputs": {
             "conditioning": "条件",
-            "mask": "遮罩"
+            "mask": "マスク"
         },
         "widgets": {
             "strength": "強度",
-            "set_cond_area": "设置条件area",
-                "default": "默认",
-                "mask bounds": "遮罩边界"
+            "set_cond_area": "条件エリア設定",
+                "default": "デフォルト",
+                "mask bounds": "マスク境界"
         },
         "outputs": {
             "CONDITIONING": "条件"
         }
     },
     "CLIPVisionEncode": {
-        "title": "CLIP视觉エンコード",
+        "title": "CLIPビジョンエンコード",
         "inputs": {
-            "clip_vision": "CLIP视觉",
-            "image": "图像"
+            "clip_vision": "CLIPビジョン",
+            "image": "画像"
         },
         "outputs": {
-            "CLIP_VISION_OUTPUT": "CLIP视觉输出"
-        }
+            "CLIP_VISION_OUTPUT": "CLIPビジョン出力"
+    }
     },
     "unCLIPConditioning": {
         "title": "unCLIP条件",
         "inputs": {
             "conditioning": "条件",
-            "clip_vision_output": "CLIP视觉输出"
+            "clip_vision_output": "CLIPビジョン出力"
         },
         "widgets": {
             "strength": "強度",
-            "noise_augmentation": "噪波增强"
+            "noise_augmentation": "ノイズ増強"
         },
         "outputs": {
             "CONDITIONING": "条件"
         }
     },
     "ControlNetApply": {
-        "title": "ControlNet应用",
+        "title": "ControlNet適用",
         "inputs": {
             "conditioning": "条件",
             "control_net": "ControlNet",
-            "image": "图像"
+            "image": "画像"
         },
         "widgets": {
             "strength": "強度"
@@ -362,21 +362,21 @@
         }
     },
     "ControlNetApplyAdvanced": {
-        "title": "ControlNet应用(高级)",
+        "title": "ControlNet適用（高度）",
         "inputs": {
             "positive": "正面",
             "negative": "负面",
             "control_net": "ControlNet",
-            "image": "图像"
+            "image": "画像"
         },
         "widgets": {
             "strength": "強度",
-            "start_percent": "开始时间",
-            "end_percent": "结束时间"
+            "start_percent": "開始パーセント",
+            "end_percent": "終了パーセント"
         },
         "outputs": {
             "positive": "正面",
-            "negative": "负面提示词"
+            "negative": "负面"
         }
     },
 
@@ -384,78 +384,78 @@
 
 
     "VAEEncodeForInpaint": {
-        "title": "VAE内补エンコード器",
+        "title": "VAE内部エンコーダー",
         "inputs": {
-            "pixels": "图像",
+            "pixels": "ピクセル",
             "vae": "VAE",
-            "mask": "遮罩"
+            "mask": "マスク"
         },
         "widgets": {
-            "grow_mask_by": "遮罩延展"
+            "grow_mask_by": "マスクを拡大"
         },
         "outputs": {
             "LATENT": "Latent"
         }
     },
     "SetLatentNoiseMask": {
-        "title": "设置Latent噪波遮罩",
+        "title": "Latentノイズマスク設定",
         "inputs": {
             "samples": "Latent",
-            "mask": "遮罩"
+            "mask": "マスク"
         },
         "outputs": {
             "LATENT": "Latent"
         }
     },
-
-
+    
+    
     "LatentFromBatch": {
-        "title": "从批次获取Latent",
+        "title": "バッチからLatent取得",
         "inputs": {
             "samples": "Latent"
         },
         "widgets": {
-            "batch_index": "批次索引",
-            "length": "长度"
+            "batch_index": "バッチインデックス",
+            "length": "長さ"
         },
         "outputs": {
             "LATENT": "Latent"
         }
     },
     "RepeatLatentBatch": {
-        "title": "复制批次",
+        "title": "バッチの繰り返し",
         "inputs": {
             "samples": "Latent"
         },
         "widgets": {
-            "amount": "次数"
+            "amount": "回数"
         },
         "outputs": {
             "LATENT": "Latent"
         }
     },
     "RebatchLatents": {
-        "title": "重设批次",
+        "title": "Latentの再バッチ処理",
         "inputs": {
             "latents": "Latent"
         },
         "widgets": {
-            "batch_size": "批次大小"
+            "batch_size": "バッチサイズ"
         },
         "outputs": {
             "LATENT": "Latent"
         }
     },
-
-
+    
+    
     "LatentRotate": {
-        "title": "Latent旋转",
+        "title": "Latent回転",
         "inputs": {
             "samples": "Latent"
         },
         "widgets": {
-            "rotation": "旋转",
-                "none": "无",
+            "rotation": "回転",
+                "none": "なし",
                 "90 degrees": "90度",
                 "180 degrees": "180度",
                 "270 degrees": "270度"
@@ -465,27 +465,27 @@
         }
     },
     "LatentFlip": {
-        "title": "Latent翻转",
+        "title": "Latent反転",
         "inputs": {
             "samples": "Latent"
         },
         "widgets": {
-            "flip_method": "翻转方法",
-                "x-axis: vertically": "X轴:竖直",
-                "y-axis: horizontally": "Y轴:水平"
+            "flip_method": "反転方法",
+                "x-axis: vertically": "X軸:垂直",
+                "y-axis: horizontally": "Y軸:水平"
         },
         "outputs": {
             "LATENT": "Latent"
         }
     },
     "LatentCrop": {
-        "title": "Latentトリミング",
+        "title": "Latentクロップ",
         "inputs": {
             "samples": "Latent"
         },
         "widgets": {
             "width": "幅",
-            "height": "高",
+            "height": "高さ",
             "x": "X",
             "y": "Y"
         },
@@ -493,22 +493,22 @@
             "LATENT": "Latent"
         }
     },
-
-
+    
+    
     "VAEDecode": {
-        "title": "VAE解読",
+        "title": "VAEデコード",
         "inputs": {
             "samples": "Latent",
             "vae": "VAE"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "VAEEncode": {
         "title": "VAEエンコード",
         "inputs": {
-            "pixels": "图像",
+            "pixels": "ピクセル",
             "vae": "VAE"
         },
         "outputs": {
@@ -516,217 +516,217 @@
         }
     },
     "EmptyLatentImage": {
-        "title": "空Latent",
+        "title": "空のLatent画像",
         "widgets": {
             "width": "幅",
-            "height": "高",
-            "batch_size": "批次大小"
+            "height": "高さ",
+            "batch_size": "バッチサイズ"
         },
         "outputs": {
             "LATENT": "Latent"
         }
     },
     "LatentUpscale": {
-        "title": "Latentズーム",
+        "title": "Latentアップスケール",
         "inputs": {
             "samples": "Latent"
         },
         "widgets": {
-            "upscale_method": "ズーム方法",
-                "nearest-exact": "nearest-exact",
-                "bilinear": "bilinear",
-                "area": "area",
-                "bislerp": "bislerp",
-                "bicubic": "bicubic",
+            "upscale_method": "アップスケール方法",
+                "nearest-exact": "最近傍-正確",
+                "bilinear": "バイリニア補間",
+                "area": "エリア",
+                "bislerp": "バイスフィアリニア",
+                "bicubic": "バイキュービック補間",
             "width": "幅",
-            "height": "高",
-            "crop": "トリミング",
-                "enabled": "開",
-                "disabled": "閉"
+            "height": "高さ",
+            "crop": "クロップ",
+                "enabled": "有効",
+                "disabled": "無効"
         },
         "outputs": {
             "LATENT": "Latent"
         }
     },
     "LatentUpscaleBy": {
-        "title": "Latent按けいすうズーム",
+        "title": "Latent比率アップスケール",
         "inputs": {
             "samples": "Latent"
         },
         "widgets": {
-            "upscale_method": "ズーム方法",
-                "nearest-exact": "nearest-exact",
-                "bilinear": "bilinear",
-                "area": "area",
-                "bislerp": "bislerp",
-                "bicubic": "bicubic",
-            "scale_by": "けいすう"
+            "upscale_method": "アップスケール方法",
+                "nearest-exact": "最近傍-正確",
+                "bilinear": "バイリニア補間",
+                "area": "エリア",
+                "bislerp": "バイスフィアリニア",
+                "bicubic": "バイキュービック補間",
+            "scale_by": "比率"
         },
         "outputs": {
             "LATENT": "Latent"
         }
     },
     "LatentComposite": {
-        "title": "Latent复合",
+        "title": "Latentコンポジット",
         "inputs": {
-            "samples_to": "目标Latent",
-            "samples_from": "源Latent"
+            "samples_to": "目標Latent",
+            "samples_from": "ソースLatent"
         },
         "widgets": {
             "x": "X",
             "y": "Y",
-            "feather": "羽化"
+            "feather": "フェザー"
         },
         "outputs": {
             "LATENT": "Latent"
         }
     },
     "LatentCompositeMasked": {
-        "title": "Latent遮罩复合",
+        "title": "マスク付きLatentコンポジット",
         "inputs": {
-            "destination": "目标Latent",
-            "source": "源Latent",
-            "mask": "遮罩"
+            "destination": "目標Latent",
+            "source": "ソースLatent",
+            "mask": "マスク"
         },
         "widgets": {
             "x": "X",
             "y": "Y",
-            "resize_source": "引張源Latent"
+            "resize_source": "ソースLatentをリサイズ"
         },
         "outputs": {
             "LATENT": "Latent"
         }
     },
-
+    
 
 
 
     "ImageScale": {
-        "title": "图像ズーム",
+        "title": "画像のスケーリング",
         "inputs": {
-            "image": "图像"
+            "image": "画像"
         },
         "widgets": {
-            "upscale_method": "ズーム方法",
-                "nearest-exact": "nearest-exact",
-                "bilinear": "bilinear",
-                "area": "area",
-                "bicubic": "bicubic",
+            "upscale_method": "スケーリング方法",
+                "nearest-exact": "最近傍-正確",
+                "bilinear": "バイリニア補間",
+                "area": "領域",
+                "bicubic": "バイキュービック補間",
             "width": "幅",
-            "height": "高",
-            "crop": "トリミング",
-                "enabled": "開",
-                "disabled": "閉"
+            "height": "高さ",
+            "crop": "クロップ",
+                "enabled": "有効",
+                "disabled": "無効"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "ImageScaleBy": {
-        "title": "图像按けいすうズーム",
+        "title": "係数で画像をスケーリング",
         "inputs": {
-            "image": "图像"
+            "image": "画像"
         },
         "widgets": {
-            "upscale_method": "ズーム方法",
-                "nearest-exact": "nearest-exact",
-                "bilinear": "bilinear",
-                "area": "area",
-                "bicubic": "bicubic",
-            "scale_by": "けいすう"
+            "upscale_method": "スケーリング方法",
+                "nearest-exact": "最近傍-正確",
+                "bilinear": "バイリニア補間",
+                "area": "領域",
+                "bicubic": "バイキュービック補間",
+            "scale_by": "係数"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "ImageUpscaleWithModel": {
-        "title": "图像モデル扩大",
+        "title": "モデルを使用して画像をアップスケール",
         "inputs": {
-            "upscale_model": "扩大モデル",
-            "image": "图像"
+            "upscale_model": "アップスケールモデル",
+            "image": "画像"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "ImageScaleToTotalPixels": {
-        "title": "图像按画素ズーム",
+        "title": "ピクセル数に合わせて画像をスケーリング",
         "inputs": {
-            "image": "图像"
+            "image": "画像"
         },
         "widgets": {
-            "upscale_method": "ズーム方法",
-                "nearest-exact": "nearest-exact",
-                "bilinear": "bilinear",
-                "area": "area",
-                "bicubic": "bicubic",
-            "megapixels": "画素数量"
+            "upscale_method": "スケーリング方法",
+                "nearest-exact": "最近傍-正確",
+                "bilinear": "バイリニア補間",
+                "area": "領域",
+                "bicubic": "バイキュービック補間",
+            "megapixels": "メガピクセル数"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
-
+    
 
     "ImageBlend": {
-        "title": "图像混合",
+        "title": "画像ブレンド",
         "inputs": {
-            "image1": "图像1",
-            "image2": "图像2"
+            "image1": "画像1",
+            "image2": "画像2"
         },
         "widgets": {
-            "blend_factor": "けいすう",
-            "blend_mode": "混合モード",
-                "normal": "normal",
-                "multiply": "multiply",
-                "screen": "screen",
-                "overlay": "overlay",
-                "soft_light": "soft_light"
+            "blend_factor": "ブレンド係数",
+            "blend_mode": "ブレンドモード",
+                "normal": "通常",
+                "multiply": "乗算",
+                "screen": "スクリーン",
+                "overlay": "オーバーレイ",
+                "soft_light": "ソフトライト"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "ImageBlur": {
-        "title": "图像模糊",
+        "title": "画像ぼかし",
         "inputs": {
-            "image": "图像"
+            "image": "画像"
         },
         "widgets": {
-            "blur_radius": "模糊半径",
-            "sigma": "Sigma"
+            "blur_radius": "ぼかし半径",
+            "sigma": "シグマ"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "ImageQuantize": {
-        "title": "图像量化",
+        "title": "画像量子化",
         "inputs": {
-            "image": "图像"
+            "image": "画像"
         },
         "widgets": {
-            "colors": "颜色数量",
-            "dither": "抖动",
-                "none": "无",
-                "floyd-steinberg": "弗洛伊德算法"
+            "colors": "色数",
+            "dither": "ディザ",
+                "none": "なし",
+                "floyd-steinberg": "フロイド・スタインバーグ"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "ImageSharpen": {
-        "title": "图像锐化",
+        "title": "画像シャープ化",
         "inputs": {
-            "image": "图像"
+            "image": "画像"
         },
         "widgets": {
-            "sharpen_radius": "锐化范围",
-            "sigma": "Sigma",
-            "alpha": "透明"
+            "sharpen_radius": "シャープ化半径",
+            "sigma": "シグマ",
+            "alpha": "アルファ"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
 
@@ -734,106 +734,106 @@
     "Canny": {
         "title": "Canny",
         "inputs": {
-            "image": "图像"
+            "image": "画像"
         },
         "widgets": {
-            "low_threshold": "低阈值",
-            "high_threshold": "高阈值"
+            "low_threshold": "低い閾値",
+            "high_threshold": "高い閾値"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
 
 
     "SaveImage": {
-        "title": "保存图像",
+        "title": "画像保存",
         "inputs": {
-            "images": "图像"
+            "images": "画像"
         },
         "widgets": {
-            "filename_prefix": "文件名前缀"
+            "filename_prefix": "ファイル名のプレフィックス"
         }
     },
     "PreviewImage": {
-        "title": "预览图像",
+        "title": "画像プレビュー",
         "inputs": {
-            "images": "图像"
+            "images": "画像"
         }
     },
     "LoadImage": {
-        "title": "加载图像",
+        "title": "画像読み込み",
         "widgets": {
-            "image": "图像",
-            "choose file to upload": "上传文件"
+            "image": "画像",
+            "choose file to upload": "ファイルを選択してアップロード"
         },
         "outputs": {
-            "IMAGE": "图像",
-            "MASK": "遮罩"
+            "IMAGE": "画像",
+            "MASK": "マスク"
         }
     },
     "ImageInvert": {
-        "title": "图像反转",
+        "title": "画像反転",
         "inputs": {
-            "image": "图像"
+            "image": "画像"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "ImageBatch": {
-        "title": "图像组合批次",
+        "title": "画像バッチ結合",
         "inputs": {
-            "image1": "图像1",
-            "image2": "图像2"
+            "image1": "画像1",
+            "image2": "画像2"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "ImagePadForOutpaint": {
-        "title": "外补画板",
+        "title": "外部用画像パッド",
         "inputs": {
-            "image": "图像"
+            "image": "画像"
         },
         "widgets": {
             "left": "左",
             "top": "上",
             "right": "右",
             "bottom": "下",
-            "feathering": "羽化"
+            "feathering": "フェザリング"
         },
         "outputs": {
-            "IMAGE": "图像",
-            "MASK": "遮罩"
+            "IMAGE": "画像",
+            "MASK": "マスク"
         }
     },
     "EmptyImage": {
-        "title": "空图像",
+        "title": "空の画像",
         "widgets": {
             "width": "幅",
-            "height": "高",
-            "batch_size": "批次大小",
-            "color": "颜色"
+            "height": "高さ",
+            "batch_size": "バッチサイズ",
+            "color": "色"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "ImageCompositeMasked": {
-        "title": "图像遮罩复合",
+        "title": "マスク合成画像",
         "inputs": {
-            "destination": "目标图像",
-            "source": "源图像",
-            "mask": "遮罩"
+            "destination": "対象画像",
+            "source": "ソース画像",
+            "mask": "マスク"
         },
         "widgets": {
             "x": "X",
             "y": "Y",
-            "resize_source": "引張源图像"
+            "resize_source": "ソース画像のリサイズ"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
 
@@ -841,112 +841,112 @@
 
 
     "LoadImageMask": {
-        "title": "加载图像遮罩",
+        "title": "マスク画像読み込み",
         "widgets": {
-            "image": "图像",
-            "channel": "通道",
-            "choose file to upload": "上传文件"
+            "image": "画像",
+            "channel": "チャンネル",
+            "choose file to upload": "ファイルを選択してアップロード"
         },
         "outputs": {
-            "MASK": "遮罩"
+            "MASK": "マスク"
         }
     },
     "MaskToImage": {
-        "title": "遮罩到图像",
+        "title": "マスクから画像",
         "inputs": {
-            "mask": "遮罩"
+            "mask": "マスク"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "ImageToMask": {
-        "title": "图像到遮罩",
+        "title": "画像からマスク",
         "inputs": {
-            "image": "图像"
+            "image": "画像"
         },
         "widgets": {
-            "channel": "通道"
+            "channel": "チャンネル"
         },
         "outputs": {
-            "MASK": "遮罩",
-                "red": "红色",
-                "green": "绿色",
-                "blue": "蓝色"
+            "MASK": "マスク",
+                "red": "赤",
+                "green": "緑",
+                "blue": "青"
         }
     },
     "ImageColorToMask": {
-        "title": "图像颜色到遮罩",
+        "title": "画像色からマスク",
         "inputs": {
-            "image": "图像"
+            "image": "画像"
         },
         "widgets": {
-            "color": "颜色"
+            "color": "色"
         },
         "outputs": {
-            "MASK": "遮罩"
+            "MASK": "マスク"
         }
     },
     "SolidMask": {
-        "title": "纯块遮罩",
+        "title": "塗りつぶしマスク",
         "widgets": {
             "value": "明度",
             "width": "幅",
-            "height": "高"
+            "height": "高さ"
         },
         "outputs": {
-            "MASK": "遮罩"
+            "MASK": "マスク"
         }
     },
     "InvertMask": {
-        "title": "遮罩反转",
+        "title": "マスク反転",
         "inputs": {
-            "mask": "遮罩"
+            "mask": "マスク"
         },
         "outputs": {
-            "MASK": "遮罩"
+            "MASK": "マスク"
         }
     },
     "CropMask": {
-        "title": "遮罩トリミング",
+        "title": "マスク切り取り",
         "inputs": {
-            "mask": "遮罩"
+            "mask": "マスク"
         },
         "widgets": {
             "x": "X",
             "y": "Y",
             "width": "幅",
-            "height": "高"
+            "height": "高さ"
         },
         "outputs": {
-            "MASK": "遮罩"
+            "MASK": "マスク"
         }
     },
     "MaskComposite": {
-        "title": "遮罩混合",
+        "title": "マスク合成",
         "inputs": {
-            "destination": "目标遮罩",
-            "source": "源遮罩"
+            "destination": "対象マスク",
+            "source": "ソースマスク"
         },
         "widgets": {
             "x": "X",
             "y": "Y",
-            "operation": "混合方法",
-                "multiply": "相乘",
-                "add": "相加",
-                "subtract": "相减",
-                "and": "和",
-                "or": "或",
-                "xor": "异或"
+            "operation": "操作",
+                "multiply": "乗算",
+                "add": "加算",
+                "subtract": "減算",
+                "and": "AND",
+                "or": "OR",
+                "xor": "XOR"
         },
         "outputs": {
-            "MASK": "遮罩"
+            "MASK": "マスク"
         }
     },
     "FeatherMask": {
-        "title": "遮罩羽化",
+        "title": "マスクフェザリング",
         "inputs": {
-            "mask": "遮罩"
+            "mask": "マスク"
         },
         "widgets": {
             "left": "左",
@@ -955,20 +955,20 @@
             "bottom": "下"
         },
         "outputs": {
-            "MASK": "遮罩"
+            "MASK": "マスク"
         }
     },
     "GrowMask": {
-        "title": "遮罩扩展",
+        "title": "マスク拡大",
         "inputs": {
-            "mask": "遮罩"
+            "mask": "マスク"
         },
         "widgets": {
-            "expand": "扩展",
-            "tapered_corners": "倒角"
+            "expand": "拡大",
+            "tapered_corners": "テーパードコーナー"
         },
         "outputs": {
-            "MASK": "遮罩"
+            "MASK": "マスク"
         }
     },
     
@@ -976,27 +976,27 @@
 
 
     "VAEDecodeTiled": {
-        "title": "VAE分块解読",
+        "title": "VAE分割デコード",
         "inputs": {
-            "samples": "Latent",
+            "samples": "潜在変数",
             "vae": "VAE"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "VAEEncodeTiled": {
-        "title": "VAE分块エンコード",
+        "title": "VAE分割エンコード",
         "inputs": {
-            "pixels": "图像",
+            "pixels": "画像",
             "vae": "VAE"
         },
         "outputs": {
-            "LATENT": "Latent"
+            "LATENT": "潜在変数"
         }
     },
     "TomePatchModel": {
-        "title": "TomeマージモデルToken",
+        "title": "Tomeパッチモデル",
         "inputs": {
             "model": "モデル"
         },
@@ -1008,34 +1008,34 @@
         }
     },
     "SaveLatent": {
-        "title": "保存Latent",
+        "title": "潜在変数を保存",
         "inputs": {
-            "samples": "Latent"
+            "samples": "潜在変数"
         },
         "widgets": {
-            "samples": "Latent"
+            "samples": "潜在変数"
         }
     },
     "LoadLatent": {
-        "title": "读取Latent",
+        "title": "潜在変数を読み込み",
         "widgets": {
-            "filename_prefix": "文件名前缀"
+            "filename_prefix": "ファイル名のプレフィックス"
         },
         "outputs": {
-            "LATENT": "Latent"
+            "LATENT": "潜在変数"
         }
     },
     "LatentBlend": {
-        "title": "Latent混合",
+        "title": "潜在変数のブレンド",
         "inputs": {
-            "samples1": "Latent1",
-            "samples2": "Latent2"
+            "samples1": "潜在変数1",
+            "samples2": "潜在変数2"
         },
         "widgets": {
-            "blend_factor": "けいすう"
+            "blend_factor": "係数"
         },
         "outputs": {
-            "LATENT": "Latent"
+            "LATENT": "潜在変数"
         }
     },
 
@@ -1043,12 +1043,12 @@
 
 
     "DiffusersLoader": {
-        "title": "扩散ローダー",
+        "title": "拡散器ローダー",
         "widgets": {
-            "model_path": "モデル路径"
+            "model_path": "モデルのパス"
         },
         "outputs": {
-            "model": "モデル",
+            "MODEL": "モデル",
             "CLIP": "CLIP",
             "VAE": "VAE"
         }
@@ -1056,7 +1056,7 @@
     "CLIPLoader": {
         "title": "CLIPローダー",
         "widgets": {
-            "clip_name": "CLIP名"
+            "clip_name": "CLIPの名前"
         },
         "outputs": {
             "CLIP": "CLIP"
@@ -1065,11 +1065,11 @@
     "CheckpointLoader": {
         "title": "Checkpointローダー",
         "widgets": {
-            "config_name": "配置名",
-            "ckpt_name": "Checkpoint名"
+            "config_name": "設定名",
+            "ckpt_name": "Checkpointの名前"
         },
         "outputs": {
-            "model": "モデル",
+            "MODEL": "モデル",
             "CLIP": "CLIP",
             "VAE": "VAE"
         }
@@ -1077,14 +1077,14 @@
     "UNETLoader": {
         "title": "UNETローダー",
         "widgets": {
-            "unet_name": "UNET名"
+            "unet_name": "UNETの名前"
         },
         "outputs": {
             "MODEL": "モデル"
         }
     },
     "DualCLIPLoader": {
-        "title": "双CLIPローダー",
+        "title": "デュアルCLIPローダー",
         "widgets": {
             "clip_name1": "CLIP1",
             "clip_name2": "CLIP2"
@@ -1096,7 +1096,7 @@
 
 
     "ConditioningZeroOut": {
-        "title": "条件零化",
+        "title": "条件をゼロ化",
         "inputs": {
             "conditioning": "条件"
         },
@@ -1105,47 +1105,47 @@
         }
     },
     "ConditioningSetTimestepRange": {
-        "title": "设置条件时间",
+        "title": "条件のタイムステップ範囲を設定",
         "inputs": {
             "conditioning": "条件"
         },
         "widgets": {
-            "start": "开始",
-            "end": "结束"
+            "start": "開始",
+            "end": "終了"
         },
         "outputs": {
             "CONDITIONING": "条件"
         }
     },
     "CLIPTextEncodeSDXL": {
-        "title": "CLIP文本エンコードSDXL",
+        "title": "CLIPテキストエンコードSDXL",
         "inputs": {
             "clip": "CLIP"
         },
         "widgets": {
             "width": "幅",
-            "height": "高",
-            "crop_w": "トリミング幅",
-            "crop_h": "トリミング高",
-            "target_width": "目标幅",
-            "target_height": "目标高",
-            "text_g": "ViT-bigG文本",
-            "text_l": "ViT-L文本"
+            "height": "高さ",
+            "crop_w": "クロップ幅",
+            "crop_h": "クロップ高さ",
+            "target_width": "ターゲット幅",
+            "target_height": "ターゲット高さ",
+            "text_g": "ViT-bigGテキスト",
+            "text_l": "ViT-Lテキスト"
         },
         "outputs": {
             "CONDITIONING": "条件"
         }
     },
     "CLIPTextEncodeSDXLRefiner": {
-        "title": "CLIP文本エンコードSDXL优化",
+        "title": "CLIPテキストエンコードSDXLリファイナー",
         "inputs": {
             "clip": "CLIP"
         },
         "widgets": {
-            "ascore": "美学分数",
+            "ascore": "美学スコア",
             "width": "幅",
-            "height": "高",
-            "text": "文本"
+            "height": "高さ",
+            "text": "テキスト"
         },
         "outputs": {
             "CONDITIONING": "条件"
@@ -1154,7 +1154,7 @@
 
 
     "ModelMergeSimple": {
-        "title": "融合モデル",
+        "title": "モデルのマージ",
         "inputs": {
             "model1": "モデル1",
             "model2": "モデル2"
@@ -1167,7 +1167,7 @@
         }
     },
     "ModelMergeBlocks": {
-        "title": "分层融合モデル",
+        "title": "モデルのブロックマージ",
         "inputs": {
             "model1": "モデル1",
             "model2": "モデル2"
@@ -1177,18 +1177,18 @@
         }
     },
     "CheckpointSave": {
-        "title": "保存モデル",
+        "title": "モデルの保存",
         "inputs": {
             "model": "モデル",
             "clip": "CLIP",
             "vae": "VAE"
         },
         "widgets": {
-            "filename_prefix": "文件名前缀"
+            "filename_prefix": "ファイル名のプレフィックス"
         }
     },
     "CLIPMergeSimple": {
-        "title": "融合CLIP",
+        "title": "CLIPのマージ",
         "inputs": {
             "clip1": "CLIP1",
             "clip2": "CLIP2"
@@ -1200,7 +1200,7 @@
         }
     },
     "ModelMergeBlockNumber": {
-        "title": "分层数融合モデル",
+        "title": "ブロック番号モデルのマージ",
         "inputs": {
             "model1": "モデル1",
             "model2": "モデル2"
@@ -1210,7 +1210,7 @@
         }
     },
     "ModelMergeSDXL": {
-        "title": "融合SDXLモデル",
+        "title": "SDXLモデルのマージ",
         "inputs": {
             "model1": "モデル1",
             "model2": "モデル2"
@@ -1220,7 +1220,7 @@
         }
     },
     "ModelMergeSDXLTransformers": {
-        "title": "融合SDXLモデルTransformers",
+        "title": "SDXLモデルTransformersのマージ",
         "inputs": {
             "model1": "モデル1",
             "model2": "モデル2"
@@ -1230,7 +1230,7 @@
         }
     },
     "ModelMergeSDXLDetailedTransformers": {
-        "title": "融合SDXLモデルTransformers(高级)",
+        "title": "SDXLモデルTransformersの詳細マージ",
         "inputs": {
             "model1": "モデル1",
             "model2": "モデル2"
