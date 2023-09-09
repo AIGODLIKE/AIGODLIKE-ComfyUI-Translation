@@ -197,7 +197,7 @@
         },
         "widgets": {
             "detect_pose": "检测姿态",
-            "detect_hand": "检测手部",
+            "detect_body": "检测身体",
             "detect_face": "检测面部",
                 "enable": "开启",
                 "disable": "关闭",
