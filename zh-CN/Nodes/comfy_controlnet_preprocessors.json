@@ -284,6 +284,9 @@
         "inputs": {
             "image": "图像"
         },
+        "widgets": {
+            "resolution": "分辨率"
+        },
         "outputs": {
             "IMAGE": "图像"
         }
