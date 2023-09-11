@@ -136,7 +136,7 @@
         },
         "widgets": {
             "a": "角度",
-            "bg_thresold": "背景阈值"
+            "bg_threshold": "背景阈值"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -149,7 +149,7 @@
         },
         "widgets": {
             "a": "角度",
-            "bg_thresold": "背景阈值"
+            "bg_threshold": "背景阈值"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -162,7 +162,8 @@
         },
         "widgets": {
             "rm_nearest": "前景移除",
-            "rm_background": "背景移除"
+            "rm_background": "背景移除",
+            "boost": "强化"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -197,7 +198,7 @@
         },
         "widgets": {
             "detect_pose": "检测姿态",
-            "detect_hand": "检测手部",
+            "detect_body": "检测身体",
             "detect_face": "检测面部",
                 "enable": "开启",
                 "disable": "关闭",
@@ -283,6 +284,9 @@
         "title": "Color颜色预处理器",
         "inputs": {
             "image": "图像"
+        },
+        "widgets": {
+            "resolution": "分辨率"
         },
         "outputs": {
             "IMAGE": "图像"

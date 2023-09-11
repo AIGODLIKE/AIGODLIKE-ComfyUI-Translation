@@ -1,4 +1,4 @@
-# AIGODLIKE-COMFYUI-TRANSLATION
+# AIGODLIKE-ComfyUI-Translation
 A plugin for multilingual translation of [ComfyUI](https://github.com/comfyanonymous/ComfyUI)，This plugin implements translation of resident menu bar/search bar/right-click context menu/node, etc
 ## ComfyUI users in other languages, I need your help
 I hope ComfyUI can support more languages besides Chinese and English, such as French, German, Japanese, Korean, etc. However, I believe that translation should be done by native speakers of each language. So I need your help, let's go fight for ComfyUI together!
@@ -15,7 +15,7 @@ I hope ComfyUI can support more languages besides Chinese and English, such as F
 |:----|:----|:----|:----|:----|:----|
 |Menu|√|√|√|√|TODO|
 |NodeCategory|√|√|√|TODO|TODO|
-|Nodes|√|√|TODO|TODO|TODO|
+|Nodes|√|√|√|TODO|TODO|
 ## Function
 1. Translate all UI of ComfyUI
 ![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/323f3f84-e9c0-421e-9089-470e5a5ac350)

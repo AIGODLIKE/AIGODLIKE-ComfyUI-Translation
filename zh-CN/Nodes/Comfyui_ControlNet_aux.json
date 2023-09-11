@@ -22,10 +22,25 @@
             "IMAGE": "图像"
         }
     },
+    "AIO_Preprocessor": {
+        "title": "Aux集成预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "preprocessor": "预处理器"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "Scribble_XDoG_Preprocessor": {
         "title": "ScribbleXDoG涂鸦预处理器",
         "inputs": {
             "image": "图像"
+        },
+        "widgets": {
+            "threshold": "阈值"
         },
         "outputs": {
             "IMAGE": "图像"
