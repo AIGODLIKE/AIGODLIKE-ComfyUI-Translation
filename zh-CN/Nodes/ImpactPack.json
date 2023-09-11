@@ -202,6 +202,18 @@
             "*": "输出"
         }
     },
+    "ImpactInversedSwtich": {
+        "title": "反转切换",
+        "inputs": {
+            "input": "输入"
+        },
+        "widgets": {
+            "select": "选择"
+        },
+        "outputs": {
+            "*": "输出"
+        }
+    },
     "SEGSToImageList": {
         "title": "Seg到图像列表",
         "inputs": {
@@ -401,6 +413,30 @@
         "inputs": {
             "segs": "Seg",
             "mask": "遮罩"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "MediaPipeFaceMeshToSEGS": {
+        "title": "MediaPipe面部网格到Seg",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "crop_factor": "裁剪系数",
+            "bbox_fill": "填充BBox",
+            "crop_min_size": "裁剪最小尺寸",
+            "drop_size": "最小尺寸",
+            "dilation": "膨胀",
+            "face": "面部",
+            "mouth": "嘴部",
+            "left_eyebrow": "左眉毛",
+            "left_eye": "左眼",
+            "left_pupil": "左瞳孔",
+            "right_eyebrow": "右眉毛",
+            "right_eye": "右眼",
+            "right_pupil": "右瞳孔"
         },
         "outputs": {
             "SEGS": "Seg"
