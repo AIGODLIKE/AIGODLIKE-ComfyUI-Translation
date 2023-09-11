@@ -307,6 +307,22 @@
             "CONDITIONING": "条件"
         }
     },
+    "ConditioningSetAreaPercentage": {
+        "title": "係数による条件サンプリング領域の設定",
+        "inputs": {
+            "conditioning": "条件"
+        },
+        "widgets": {
+            "width": "幅",
+            "height": "高さ",
+            "x": "X",
+            "y": "Y",
+            "strength": "強度"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
     "ConditioningSetMask": {
         "title": "条件マスク設定",
         "inputs": {
