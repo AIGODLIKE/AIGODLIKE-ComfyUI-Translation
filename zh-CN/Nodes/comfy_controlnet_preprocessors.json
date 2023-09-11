@@ -162,7 +162,7 @@
         },
         "widgets": {
             "rm_nearest": "前景移除",
-            "rm_background": "背景移除"
+            "rm_background": "背景移除",
             "boost": "强化"
         },
         "outputs": {
