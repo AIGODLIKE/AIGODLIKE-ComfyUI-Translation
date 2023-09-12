@@ -51,5 +51,36 @@
         "outputs": {
             "LATENT": "Latent"
         }
+    },
+    "KRestartSamplerAdv": {
+        "title": "K采样器(高级重启)",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "add_noise": "添加噪波",
+            "noise_seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "start_at_step": "开始降噪步数",
+            "end_at_step": "结束降噪步数",
+            "return_with_leftover_noise": "返回噪波",
+            "restart_scheduler": "重启调度器",
+            "segments": "分段"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
     }
 }
