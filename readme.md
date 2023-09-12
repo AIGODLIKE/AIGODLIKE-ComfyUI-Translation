@@ -55,6 +55,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[SeargeSDXL](https://github.com/SeargeDP/SeargeSDXL)|√|√|TODO|TODO|
 |[StabilityNodes](https://github.com/Stability-AI/stability-ComfyUI-nodes)|√|√|TODO|TODO|
 |[TiledKSampler](https://github.com/BlenderNeko/ComfyUI_TiledKSampler)|√|√|TODO|TODO|
+|[UltimateSDUpscale](https://github.com/ssitu/ComfyUI_UltimateSDUpscale)|√|√|TODO|TODO|
 |[Vextra Nodes](https://github.com/diontimmer/ComfyUI-Vextra-Nodes)|√|√|TODO|TODO|
 |[WAS Suite](https://github.com/WASasquatch/was-node-suite-comfyui)|√|√|TODO|TODO|
 |[WD14-Tagger](https://github.com/pythongosssss/ComfyUI-WD14-Tagger)|√|√|TODO|TODO|
