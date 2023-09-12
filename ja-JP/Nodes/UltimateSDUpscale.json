@@ -1,0 +1,90 @@
+{
+    "UltimateSDUpscale": {
+        "title": "SD放大",
+        "inputs": {
+            "image": "图像",
+            "model": "モデル",
+            "positive": "正面",
+            "negative": "负面",
+            "vae": "VAE",
+            "upscale_model": "放大モデル"
+        },
+        "widgets": {
+            "upscale_by": "放大係数",
+            "seed": "乱数種",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "ランダム",
+            "steps": "ステップ数",
+            "cfg": "CFG",
+            "sampler_name": "サンプラー名",
+            "scheduler": "スケジューラ",
+            "denoise": "ノイズ除去",
+            "mode_type": "模式类型",
+                "Linear": "线性",
+                "Chess": "棋盘格",
+                "None": "无",
+            "tile_width": "デコード幅",
+            "tile_height": "デコード高さ",
+            "mask_blur": "ぼかし",
+            "tile_padding": "デコード分区",
+            "seam_fix_mode": "接缝修复模式",
+                "Band Pass": "仅接触",
+                "Half Tile": "偏移半块",
+                "Half Tile + Intersections": "偏移半块+径向交叉",
+            "seam_fix_denoise": "接缝修复ノイズ除去",
+            "seam_fix_width": "接缝修复幅",
+            "seam_fix_mask_blur": "接缝修复ぼかし",
+            "seam_fix_padding": "接缝修复分区",
+            "force_uniform_tiles": "强制统一デコード"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "UltimateSDUpscaleNoUpscale": {
+        "title": "SD放大(不放大)",
+        "inputs": {
+            "upscaled_image": "放大图像",
+            "model": "モデル",
+            "positive": "正面",
+            "negative": "负面",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "seed": "乱数種",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "ランダム",
+            "steps": "ステップ数",
+            "cfg": "CFG",
+            "sampler_name": "サンプラー名",
+            "scheduler": "スケジューラ",
+            "denoise": "ノイズ除去",
+            "mode_type": "模式类型",
+                "Linear": "线性",
+                "Chess": "棋盘格",
+                "None": "无",
+            "tile_width": "デコード幅",
+            "tile_height": "デコード高さ",
+            "mask_blur": "ぼかし",
+            "tile_padding": "デコード分区",
+            "seam_fix_mode": "接缝修复模式",
+                "Band Pass": "仅接触",
+                "Half Tile": "偏移半块",
+                "Half Tile + Intersections": "偏移半块+径向交叉",
+            "seam_fix_denoise": "接缝修复ノイズ除去",
+            "seam_fix_width": "接缝修复幅",
+            "seam_fix_mask_blur": "接缝修复ぼかし",
+            "seam_fix_padding": "接缝修复分区",
+            "force_uniform_tiles": "强制统一デコード"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    }
+}

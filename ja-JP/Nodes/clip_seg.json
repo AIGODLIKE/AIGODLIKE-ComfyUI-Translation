@@ -1,0 +1,39 @@
+{
+    "CLIPSeg":{
+        "title": "CLIP语义分割",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "text": "テキスト",
+            "blur": "ぼかし",
+            "threshold": "閾値",
+            "dilation_factor": "膨胀"
+        },
+        "outputs": {
+            "Mask": "マスク",
+            "Heatmap Mask": "热度图",
+            "BW Mask": "灰度图"
+        }
+    },
+    "CombineSegMasks":{
+        "title": "結合分割マスク",
+        "inputs": {
+            "input_image": "图像",
+            "mask_1": "マスク1",
+            "mask_2": "マスク2",
+            "mask_3": "マスク3"
+        },
+        "widgets": {
+            "text": "テキスト",
+            "blur": "ぼかし",
+            "threshold": "閾値",
+            "dilation_factor": "膨胀"
+        },
+        "outputs": {
+            "Combined Mask": "マスク",
+            "Heatmap Mask": "热度图",
+            "BW Mask": "灰度图"
+        }
+    }
+}

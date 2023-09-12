@@ -121,7 +121,7 @@
         "increment": "増加",
         "decrement": "減少",
         "randomize": "ランダム",
-    "Save as": "名前を付けて保存",
+    "Save as": "名を付けて保存",
     "Save to workflows": "ワークフローに保存",
     "Show Type": "タイプを表示",
     "Hide Type": "タイプを非表示",
@@ -146,7 +146,7 @@
     " Skip update check": "跳过更新检查",
     "Install Custom Nodes": "安装节点",
     "Install Missing Custom Nodes": "安装缺失节点",
-    "Install Models": "安装模型",
+    "Install Models": "安装モデル",
     "Update ComfyUI": "更新ComfyUI",
     "Updating ComfyUI...": "更新ComfyUI中...",
     "Fetch Updates": "检查更新",
@@ -163,10 +163,10 @@
     "Install": "安装",
     "Uninstall": "卸载",
     "Installed": "已安装",
-    "Disable": "关闭",
+    "Disable": "無効",
     "Enable": "启用",
     "Base": "基模",
-    "Name": "名称",
+    "Name": "名",
     "Filename": "文件名",
     "Download": "下载",
 
@@ -191,8 +191,8 @@
     "taesd": "TAESD(慢)",
     "latent2rgb": "Latent到图像(快)",
     "true": "是",
-    "treu (tiled)": "是(分块)",
+    "treu (tiled)": "是(デコード)",
     "false": "否",
-    "output only": "仅输出",
-    "output only (tiled)": "仅输出(分块)"
+    "output only": "仅出力",
+    "output only (tiled)": "仅出力(デコード)"
 }

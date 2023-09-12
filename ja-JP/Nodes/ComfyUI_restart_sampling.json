@@ -1,0 +1,86 @@
+{
+    "KRestartSamplerSimple": {
+        "title": "Kサンプラー(簡易重启)",
+        "inputs": {
+            "model": "モデル",
+            "positive": "正面",
+            "negative": "负面",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "seed": "乱数種",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "ランダム",
+            "steps": "ステップ数",
+            "cfg": "CFG",
+            "sampler_name": "サンプラー名",
+            "scheduler": "スケジューラ",
+            "denoise": "ノイズ除去",
+            "segments": "分段"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "KRestartSampler": {
+        "title": "Kサンプラー(重启)",
+        "inputs": {
+            "model": "モデル",
+            "positive": "正面",
+            "negative": "负面",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "seed": "乱数種",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "ランダム",
+            "steps": "ステップ数",
+            "cfg": "CFG",
+            "sampler_name": "サンプラー名",
+            "scheduler": "スケジューラ",
+            "denoise": "ノイズ除去",
+            "restart_scheduler": "重启スケジューラ",
+            "segments": "分段"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "KRestartSamplerAdv": {
+        "title": "Kサンプラー(高さ重启)",
+        "inputs": {
+            "model": "モデル",
+            "positive": "正面",
+            "negative": "负面",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "add_noise": "ノイズ追加",
+            "noise_seed": "乱数種",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "ランダム",
+            "steps": "ステップ数",
+            "cfg": "CFG",
+            "sampler_name": "サンプラー名",
+            "scheduler": "スケジューラ",
+            "denoise": "ノイズ除去",
+            "start_at_step": "開始ノイズ除去ステップ数",
+            "end_at_step": "終了ノイズ除去ステップ数",
+            "return_with_leftover_noise": "残りのノイズを返す",
+            "restart_scheduler": "重启スケジューラ",
+            "segments": "分段"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    }
+}

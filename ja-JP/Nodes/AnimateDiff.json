@@ -1,0 +1,57 @@
+{
+    "AnimateDiffLoader": {
+        "title": "动态扩散ローダー",
+        "inputs": {
+            "model": "モデル",
+            "init_latent": "初始Latent"
+        },
+        "widgets": {
+            "model_name": "モデル",
+            "width": "幅",
+            "height": "高さ",
+            "frame_number": "帧数"
+        },
+        "outputs": {
+            "MODEL": "モデル",
+            "LATENT": "Latent"
+        }
+    },
+    "AnimateDiffLoader_v2": {
+        "title": "动态扩散ローダーv2",
+        "inputs": {
+            "model": "モデル",
+            "init_latent": "初始Latent"
+        },
+        "widgets": {
+            "model_name": "モデル",
+            "frame_number": "帧数"
+        },
+        "outputs": {
+            "MODEL": "モデル",
+            "LATENT": "Latent"
+        }
+    },
+    "AnimateDiffUnload": {
+        "title": "卸载动态扩散",
+        "inputs": {
+            "model": "モデル"
+        },
+        "outputs": {
+            "MODEL": "モデル"
+        }
+    },
+    "AnimateDiffCombine": {
+        "title": "結合为GIF",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "frame_rate": "帧率",
+            "loop_count": "循环次数",
+            "save_image": "是否保存",
+                "Enabled": "是",
+                "Disabled": "否",
+            "filename_prefix": "文件名缀"
+        }
+    }
+}

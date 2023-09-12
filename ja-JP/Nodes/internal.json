@@ -37,7 +37,7 @@
         }
     },
     "KSamplerAdvanced": {
-        "title": "Kサンプラー（高度）",
+        "title": "Kサンプラー（高さ）",
         "inputs": {
             "model": "モデル",
             "positive": "正面",
@@ -46,7 +46,7 @@
         },
         "widgets": {
             "add_noise": "ノイズ追加",
-            "noise_seed": "ノイズ乱数種",
+            "noise_seed": "乱数種",
             "control_after_generate": "生成後の制御",
                 "fixed": "固定",
                 "increment": "増加",
@@ -72,7 +72,7 @@
     "CheckpointLoaderSimple": {
         "title": "チェックポイントローダー（簡易）",
         "widgets": {
-            "ckpt_name": "チェックポイント名"
+            "ckpt_name": "CKPTモデル名"
         },
         "outputs": {
             "MODEL": "モデル",
@@ -148,7 +148,7 @@
     "unCLIPCheckpointLoader": {
         "title": "unCLIPチェックポイントローダー",
         "widgets": {
-            "ckpt_name": "チェックポイント名"
+            "ckpt_name": "CKPTモデル名"
         },
         "outputs": {
             "MODEL": "モデル",
@@ -378,7 +378,7 @@
         }
     },
     "ControlNetApplyAdvanced": {
-        "title": "ControlNet適用（高度）",
+        "title": "ControlNet適用（高さ）",
         "inputs": {
             "positive": "正面",
             "negative": "负面",
@@ -444,7 +444,7 @@
             "samples": "Latent"
         },
         "widgets": {
-            "amount": "回数"
+            "回数": "回数"
         },
         "outputs": {
             "LATENT": "Latent"
@@ -532,7 +532,7 @@
         }
     },
     "EmptyLatentImage": {
-        "title": "空のLatent画像",
+        "title": "空Latent",
         "widgets": {
             "width": "幅",
             "height": "高さ",
@@ -685,14 +685,14 @@
     
 
     "ImageBlend": {
-        "title": "画像ブレンド",
+        "title": "画像混合",
         "inputs": {
             "image1": "画像1",
             "image2": "画像2"
         },
         "widgets": {
-            "blend_factor": "ブレンド係数",
-            "blend_mode": "ブレンドモード",
+            "blend_factor": "混合係数",
+            "blend_mode": "混合モード",
                 "normal": "通常",
                 "multiply": "乗算",
                 "screen": "スクリーン",
@@ -717,7 +717,7 @@
         }
     },
     "ImageQuantize": {
-        "title": "画像量子化",
+        "title": "画像量化",
         "inputs": {
             "image": "画像"
         },
@@ -839,7 +839,7 @@
     "ImageCompositeMasked": {
         "title": "マスク合成画像",
         "inputs": {
-            "destination": "対象画像",
+            "destination": "目標画像",
             "source": "ソース画像",
             "mask": "マスク"
         },
@@ -994,7 +994,7 @@
     "VAEDecodeTiled": {
         "title": "VAE分割デコード",
         "inputs": {
-            "samples": "潜在変数",
+            "samples": "Latent",
             "vae": "VAE"
         },
         "outputs": {
@@ -1008,7 +1008,7 @@
             "vae": "VAE"
         },
         "outputs": {
-            "LATENT": "潜在変数"
+            "LATENT": "Latent"
         }
     },
     "TomePatchModel": {
@@ -1024,34 +1024,34 @@
         }
     },
     "SaveLatent": {
-        "title": "潜在変数を保存",
+        "title": "Latentを保存",
         "inputs": {
-            "samples": "潜在変数"
+            "samples": "Latent"
         },
         "widgets": {
-            "samples": "潜在変数"
+            "samples": "Latent"
         }
     },
     "LoadLatent": {
-        "title": "潜在変数を読み込み",
+        "title": "Latentを読み込み",
         "widgets": {
             "filename_prefix": "ファイル名のプレフィックス"
         },
         "outputs": {
-            "LATENT": "潜在変数"
+            "LATENT": "Latent"
         }
     },
     "LatentBlend": {
-        "title": "潜在変数のブレンド",
+        "title": "Latent混合",
         "inputs": {
-            "samples1": "潜在変数1",
-            "samples2": "潜在変数2"
+            "samples1": "Latent1",
+            "samples2": "Latent2"
         },
         "widgets": {
             "blend_factor": "係数"
         },
         "outputs": {
-            "LATENT": "潜在変数"
+            "LATENT": "Latent"
         }
     },
 
@@ -1072,7 +1072,7 @@
     "CLIPLoader": {
         "title": "CLIPローダー",
         "widgets": {
-            "clip_name": "CLIPの名前"
+            "clip_name": "CLIPの名"
         },
         "outputs": {
             "CLIP": "CLIP"
@@ -1082,7 +1082,7 @@
         "title": "Checkpointローダー",
         "widgets": {
             "config_name": "設定名",
-            "ckpt_name": "Checkpointの名前"
+            "ckpt_name": "Checkpointの名"
         },
         "outputs": {
             "MODEL": "モデル",
@@ -1093,7 +1093,7 @@
     "UNETLoader": {
         "title": "UNETローダー",
         "widgets": {
-            "unet_name": "UNETの名前"
+            "unet_name": "UNETの名"
         },
         "outputs": {
             "MODEL": "モデル"
