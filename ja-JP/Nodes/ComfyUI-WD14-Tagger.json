@@ -1,0 +1,18 @@
+{
+    "WD14Tagger|pysssss": {
+        "title": "WD14反推提示词",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "model": "モデル",
+            "threshold": "置信度",
+            "character_threshold": "角色置信度",
+            "exclude_tags": "排除标签",
+            "tags": "标签"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    }
+}

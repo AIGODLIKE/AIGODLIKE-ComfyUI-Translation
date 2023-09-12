@@ -1,0 +1,19 @@
+{
+    "LLLiteLoader": {
+        "title": "LLLiteローダー",
+        "inputs": {
+            "model": "モデル",
+            "cond_image": "图像"
+        },
+        "widgets": {
+            "model_name": "モデル名",
+            "strength": "強度",
+            "steps": "ステップ数",
+            "start_percent": "開始时间",
+            "end_percent": "終了时间"
+        },
+        "outputs": {
+            "MODEL": "モデル"
+        }
+    }
+}

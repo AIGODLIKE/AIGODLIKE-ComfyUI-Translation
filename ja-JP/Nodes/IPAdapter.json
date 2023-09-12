@@ -1,0 +1,21 @@
+{
+    "IPAdapter": {
+        "title": "IP适配ローダー",
+        "inputs": {
+            "model": "モデル",
+            "image": "图像",
+            "clip_vision": "CLIPビジョン",
+            "mask": "マスク"
+        },
+        "widgets": {
+            "weight": "权重",
+            "model_name": "モデル名",
+                "undefined": "未定义",
+            "dtype": "数据类型"
+        },
+        "outputs": {
+            "MODEL": "モデル",
+            "CLIP_VISION_OUTPUT": "CLIPビジョン出力"
+        }
+    }
+}
