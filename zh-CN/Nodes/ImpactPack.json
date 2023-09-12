@@ -220,6 +220,18 @@
             "*": "输出"
         }
     },
+    "ImpactInversedSwtich": {
+        "title": "反转切换",
+        "inputs": {
+            "input": "输入"
+        },
+        "widgets": {
+            "select": "选择"
+        },
+        "outputs": {
+            "*": "输出"
+        }
+    },
     "SEGSToImageList": {
         "title": "Seg到图像列表",
         "inputs": {
