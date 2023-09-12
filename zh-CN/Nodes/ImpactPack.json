@@ -198,11 +198,17 @@
             "input3": "输入3",
             "input4": "输入4"
         },
+        "widgets": {
+            "select": "选择",
+            "sel_mode": "选择模式",
+                "select_on_execution": "运行",
+                "select_on_prompt": "提示词"
+        },
         "outputs": {
             "*": "输出"
         }
     },
-    "ImpactInversedSwtich": {
+    "ImpactInversedSwitch": {
         "title": "反转切换",
         "inputs": {
             "input": "输入"
