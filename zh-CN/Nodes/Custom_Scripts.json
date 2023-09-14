@@ -91,7 +91,7 @@
             "*": "输出"
         }
     },
-    "ReroutePrimitve|pysssss": {
+    "ReroutePrimitive|pysssss": {
         "title": "Primitive连接点",
         "inputs": {
             "value": "值"
@@ -160,6 +160,17 @@
                 "overwrite": "覆盖",
                 "new only": "仅新文件",
             "insert": "插入",
+            "text": "文本"
+        }
+    },
+
+    "PresetText|pysssss": {
+        "title": "预设文本",
+        "widgets": {
+            "value": "值",
+            "Manage": "管理"
+        },
+        "outputs": {
             "text": "文本"
         }
     }
