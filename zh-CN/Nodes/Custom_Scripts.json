@@ -100,6 +100,15 @@
             "*": "输出"
         }
     },
+    "ReroutePrimitve 🐍": {
+        "title": "Primitive连接点",
+        "inputs": {
+            "value": "值"
+        },
+        "outputs": {
+            "*": "输出"
+        }
+    },
     "ShowText|pysssss": {
         "title": "展示文本",
         "widgets": {
