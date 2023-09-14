@@ -31,15 +31,15 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |Custom Node Name|Chinese|English|Japanese|Korean|
 |:----|:----|:----|:----|:----|
 |[Advanced Encode](https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb)|√|√|TODO|TODO|
-|[AGL-ComfyUI-Translation](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION)|√|√|TODO|TODO|
+|[AGL-ComfyUI-Translation](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION)|√|√|√|TODO|
 |[AlekPet Nodes](https://github.com/AlekPet/ComfyUI_Custom_Nodes_AlekPet)|√|√|TODO|TODO|
-|[AnimateDiff](https://github.com/guoyww/AnimateDiff)|√|√|TODO|TODO|
+|[AnimateDiff](https://github.com/guoyww/AnimateDiff)|√|√|√|TODO|
 |[CLIP Seg](https://github.com/biegert/ComfyUI-CLIPSeg)|√|√|TODO|TODO|
 |[ControlNet Preprocessors](https://github.com/Fannovel16/comfy_controlnet_preprocessors)|√|√|TODO|TODO|
 |[ControlNet Preprocessors AUX](https://github.com/Fannovel16/comfyui_controlnet_aux)|√|√|TODO|TODO|
 |[Cutoff](https://github.com/BlenderNeko/ComfyUI_Cutoff)|√|√|TODO|TODO|
-|[Davemane42 Nodes](https://github.com/Davemane42/ComfyUI_Dave_CustomNode)|√|√|TODO|TODO|
-|[Efficiency Nodes](https://github.com/LucianoCirino/efficiency-nodes-comfyui)|√|√|TODO|TODO|
+|[Davemane42 Nodes](https://github.com/Davemane42/ComfyUI_Dave_CustomNode)|√|√|√|TODO|
+|[Efficiency Nodes](https://github.com/LucianoCirino/efficiency-nodes-comfyui)|√|√|√|TODO|
 |[EllangoK Postprocessing](https://github.com/EllangoK/ComfyUI-post-processing-nodes)|√|√|TODO|TODO|
 |[experiments](https://github.com/comfyanonymous/ComfyUI_experiments)|√|√|TODO|TODO|
 |[Fast Decode](https://github.com/nagolinc/ComfyUI_FastVAEDecorder_SDXL)|√|√|TODO|TODO|
@@ -54,12 +54,11 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Restart-Sampling](https://github.com/ssitu/ComfyUI_restart_sampling)|√|√|TODO|TODO|
 |[SeargeSDXL](https://github.com/SeargeDP/SeargeSDXL)|√|√|TODO|TODO|
 |[StabilityNodes](https://github.com/Stability-AI/stability-ComfyUI-nodes)|√|√|TODO|TODO|
-|[TiledKSampler](https://github.com/BlenderNeko/ComfyUI_TiledKSampler)|√|√|TODO|TODO|
+|[TiledKSampler](https://github.com/BlenderNeko/ComfyUI_TiledKSampler)|√|√|√|TODO|
 |[UltimateSDUpscale](https://github.com/ssitu/ComfyUI_UltimateSDUpscale)|√|√|TODO|TODO|
 |[Vextra Nodes](https://github.com/diontimmer/ComfyUI-Vextra-Nodes)|√|√|TODO|TODO|
 |[WAS Suite](https://github.com/WASasquatch/was-node-suite-comfyui)|√|√|TODO|TODO|
 |[WD14-Tagger](https://github.com/pythongosssss/ComfyUI-WD14-Tagger)|√|√|TODO|TODO|
-|[IPAdapter](https://github.com/laksjdjf/IPAdapter-ComfyUI)|√|√|TODO|TODO|
 
 The above only includes translations for the UI. If you are a developer and need me to help you translate your interface, you can go directly to the [ComfyUI Plugins List](https://github.com/WASasquatch/comfyui-plugins) to add your custom node project, or send an issue, as long as I can see it, I will translate it (it will take some time)
 
