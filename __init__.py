@@ -127,12 +127,13 @@ def rmtree(path: Path):
 def register():
     aigodlike_ext_path = COMFY_PATH.joinpath("web", "extensions", ADDON_NAME)
     rmtree(aigodlike_ext_path)
-    link_func = shutil.copytree
-    if os.name == "nt":
-        import _winapi
-        link_func = _winapi.CreateJunction
     try:
-        link_func(CUR_PATH.as_posix(), aigodlike_ext_path.as_posix())
+        if os.name == "nt":
+            import _winapi
+            _winapi.CreateJunction(CUR_PATH.as_posix(), aigodlike_ext_path.as_posix())
+        else:
+            # 复制时过滤 .git
+            shutil.copytree(CUR_PATH.as_posix(), aigodlike_ext_path.as_posix(), ignore=shutil.ignore_patterns(".git"))
     except Exception as e:
         sys.stderr.write(f"[agl/register error]: {e}\n")
         sys.stderr.flush()
