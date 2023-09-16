@@ -109,9 +109,12 @@ def rmtree(path: Path):
         path.unlink()
     elif path.is_dir():
         # 移除 .git
-        if path.name == ".git" and platform.system() == "darwin":
-            from subprocess import call
-            call(['rm', '-rf', path.as_posix()])
+        if path.name == ".git":
+            if platform.system() == "darwin":
+                from subprocess import call
+                call(['rm', '-rf', path.as_posix()])
+            elif platform.system() == "Windows":
+                os.system(f'rd/s/q "{path.as_posix()}"')
             return
         for child in path.iterdir():
             rmtree(child)
