@@ -1184,7 +1184,7 @@
         }
     },
     "ModelMergeBlocks": {
-        "title": "分层融合模型",
+        "title": "融合模型(分层)",
         "inputs": {
             "model1": "模型1",
             "model2": "模型2"
@@ -1217,7 +1217,7 @@
         }
     },
     "ModelMergeBlockNumber": {
-        "title": "分层数融合模型",
+        "title": "融合模型(分层数)",
         "inputs": {
             "model1": "模型1",
             "model2": "模型2"
@@ -1228,6 +1228,29 @@
     },
     "ModelMergeSDXL": {
         "title": "融合SDXL模型",
+        "inputs": {
+            "model1": "模型1",
+            "model2": "模型2"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "ModelMergeSubtract": {
+        "title": "融合模型(相减)",
+        "inputs": {
+            "model1": "模型1",
+            "model2": "模型2"
+        },
+        "widgets": {
+            "multiplier": "系数"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "ModelMergeAdd": {
+        "title": "模型融合(相加)",
         "inputs": {
             "model1": "模型1",
             "model2": "模型2"
