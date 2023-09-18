@@ -105,7 +105,7 @@
     "On Event": "事件触发",
     "Never": "从不",
     "On Trigger": "触发器触发",
-    "Prompt has no outputs": "提示词没有输出",
+    "Prompt has no outputs": "提示词队列没有输出",
     "Reconnecting...": "重新连接中...",
     "Prompt outputs failed validation": "提示词输出验证异常",
     "Required input is missing": "缺少输入",
