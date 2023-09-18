@@ -30,14 +30,14 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 
 |Custom Node Name|Chinese|English|Japanese|Korean|
 |:----|:----|:----|:----|:----|
-|[Advanced Encode](https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb)|√|√|TODO|TODO|
+|[Advanced Encode](https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb)|√|√|√|TODO|
 |[AGL-ComfyUI-Translation](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION)|√|√|√|TODO|
-|[AlekPet Nodes](https://github.com/AlekPet/ComfyUI_Custom_Nodes_AlekPet)|√|√|TODO|TODO|
+|[AlekPet Nodes](https://github.com/AlekPet/ComfyUI_Custom_Nodes_AlekPet)|√|√|√|TODO|
 |[AnimateDiff](https://github.com/guoyww/AnimateDiff)|√|√|√|TODO|
-|[CLIP Seg](https://github.com/biegert/ComfyUI-CLIPSeg)|√|√|TODO|TODO|
+|[CLIP Seg](https://github.com/biegert/ComfyUI-CLIPSeg)|√|√|√|TODO|
 |[ControlNet Preprocessors](https://github.com/Fannovel16/comfy_controlnet_preprocessors)|√|√|TODO|TODO|
 |[ControlNet Preprocessors AUX](https://github.com/Fannovel16/comfyui_controlnet_aux)|√|√|TODO|TODO|
-|[Cutoff](https://github.com/BlenderNeko/ComfyUI_Cutoff)|√|√|TODO|TODO|
+|[Cutoff](https://github.com/BlenderNeko/ComfyUI_Cutoff)|√|√|√|TODO|
 |[Davemane42 Nodes](https://github.com/Davemane42/ComfyUI_Dave_CustomNode)|√|√|√|TODO|
 |[Efficiency Nodes](https://github.com/LucianoCirino/efficiency-nodes-comfyui)|√|√|√|TODO|
 |[EllangoK Postprocessing](https://github.com/EllangoK/ComfyUI-post-processing-nodes)|√|√|TODO|TODO|
