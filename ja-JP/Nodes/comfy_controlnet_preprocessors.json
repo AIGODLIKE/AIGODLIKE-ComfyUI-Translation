@@ -192,7 +192,7 @@
 
 
     "OpenposePreprocessor": {
-        "title": "Openpose姿态预处理器",
+        "title": "Openpose姿勢预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -209,12 +209,12 @@
         }
     },
     "MediaPipe-HandPosePreprocessor": {
-        "title": "MediaPipe姿态预处理器",
+        "title": "MediaPipe姿勢预处理器",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
-            "detect_pose": "检测姿态",
+            "detect_pose": "检测姿勢",
             "detect_hands": "检测手部",
                 "enable": "有効",
                 "disable": "無効"
@@ -228,7 +228,7 @@
 
 
     "SemSegPreprocessor": {
-        "title": "Sem语义分割预处理器",
+        "title": "Semセグメント预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -237,7 +237,7 @@
         }
     },
     "UniFormer-SemSegPreprocessor": {
-        "title": "UniFormer语义分割预处理器",
+        "title": "UniFormerセグメント预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -246,7 +246,7 @@
         }
     },
     "OneFormer-COCO-SemSegPreprocessor": {
-        "title": "OF-COCO语义分割预处理器",
+        "title": "OF-COCOセグメント预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -255,7 +255,7 @@
         }
     },
     "OneFormer-ADE20K-SemSegPreprocessor": {
-        "title": "OF-ADE20K语义分割预处理器",
+        "title": "OF-ADE20Kセグメント预处理器",
         "inputs": {
             "image": "图像"
         },

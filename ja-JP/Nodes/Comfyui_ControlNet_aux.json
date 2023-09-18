@@ -9,7 +9,7 @@
         }
     },
     "DWPreprocessor": {
-        "title": "DW姿态预处理器",
+        "title": "DW姿勢预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -74,19 +74,19 @@
                 "LeReS-DepthMapPreprocessor": "LeReS深度预处理器",
                 "BAE-NormalMapPreprocessor": "BAE法向预处理器",
                 "Zoe-DepthMapPreprocessor": "Zoe深度预处理器",
-                "OpenposePreprocessor": "Openpose姿态预处理器",
-                "MediaPipe-HandPosePreprocessor": "MediaPipe姿态预处理器",
-                "SemSegPreprocessor": "Sem语义分割预处理器",
-                "UniFormer-SemSegPreprocessor": "UniFormer语义分割预处理器",
-                "OneFormer-COCO-SemSegPreprocessor": "OF-COCO语义分割预处理器",
-                "OneFormer-ADE20K-SemSegPreprocessor": "OF-ADE20K语义分割预处理器",
+                "OpenposePreprocessor": "Openpose姿勢预处理器",
+                "MediaPipe-HandPosePreprocessor": "MediaPipe姿勢预处理器",
+                "SemSegPreprocessor": "Semセグメント预处理器",
+                "UniFormer-SemSegPreprocessor": "UniFormerセグメント预处理器",
+                "OneFormer-COCO-SemSegPreprocessor": "OF-COCOセグメント预处理器",
+                "OneFormer-ADE20K-SemSegPreprocessor": "OF-ADE20Kセグメント预处理器",
                 "MediaPipe-FaceMeshPreprocessor": "MediaPipe面部网格预处理器",
                 "ColorPreprocessor": "Color颜色预处理器",
                 "TilePreprocessor": "Tile平铺预处理器",
                 "InpaintPreprocessor": "Inpaint内补预处理器",
                 "ShufflePreprocessor": "Shuffle内容重组预处理器",
                 "Manga2Anime_LineArt_Preprocessor": "",
-                "DWPreprocessor": "DW姿态预处理器",
+                "DWPreprocessor": "DW姿勢预处理器",
                 "Scribble_XDoG_Preprocessor": "ScribbleXDoG涂鸦预处理器",
                 "SAM Segmentor": "SAM分割",
                 "SAMPreprocessor": "SAM预处理器"

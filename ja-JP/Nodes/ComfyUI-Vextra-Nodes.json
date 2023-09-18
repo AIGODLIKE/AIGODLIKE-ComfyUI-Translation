@@ -106,7 +106,7 @@
         }
     },
     "Pixel Sort": {
-        "title": "像素重排序",
+        "title": "ピクセル重排序",
         "inputs": {
             "images": "图像",
             "mask_image": "マスク图像",

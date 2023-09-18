@@ -1,6 +1,6 @@
 {
     "CLIPSeg":{
-        "title": "CLIP语义分割",
+        "title": "CLIPセグメント",
         "inputs": {
             "image": "图像"
         },

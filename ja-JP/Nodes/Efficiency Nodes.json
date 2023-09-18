@@ -585,7 +585,7 @@
     "XY Input: Sampler/Scheduler": {
         "title": "采样スケジューラ",
         "widgets": {
-            "target_parameter": "目標参数",
+            "target_parameter": "目標パラメタ",
                 "sampler": "采样器",
                 "scheduler": "スケジューラ",
                 "sampler & scheduler": "采样和调度",
@@ -938,7 +938,7 @@
             "cnet_stack": "ControlNet堆"
         },
         "widgets": {
-            "target_parameter": "目標参数",
+            "target_parameter": "目標パラメタ",
             "batch_count": "个数",
             "first_strength": "初始強度",
             "last_strength": "最终強度",

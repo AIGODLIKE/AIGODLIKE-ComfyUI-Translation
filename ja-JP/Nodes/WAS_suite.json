@@ -848,13 +848,13 @@
         }
     },
     "Image Pixelate": {
-        "title": "图像像素化",
+        "title": "图像ピクセル化",
         "inputs": {
             "images": "图像",
             "color_palettes": "调色板"
         },
         "widgets": {
-            "pixelation_size": "像素大小",
+            "pixelation_size": "ピクセル大小",
             "num_colors": "色数",
             "init_mode": "模式",
             "max_iterations": "最大迭代次数",
@@ -1194,7 +1194,7 @@
         }
     },
     "Mask Erode Region": {
-        "title": "マスク消融",
+        "title": "マスク溶解",
         "inputs": {
             "masks": "マスク"
         },
@@ -1229,7 +1229,7 @@
             "masks": "マスク"
         },
         "widgets": {
-            "radius": "范围"
+            "radius": "レアル"
         },
         "outputs": {
             "MASKS": "マスク"
@@ -1314,30 +1314,30 @@
         }
     },
     "SAM Parameters": {
-        "title": "SAM参数",
+        "title": "SAMパラメタ",
         "widgets": {
             "point": "点",
             "lebels": "层"
         },
         "outputs": {
-            "SAM_PARAMETERS": "SAM参数"
+            "SAM_PARAMETERS": "SAMパラメタ"
         }
     },
     "SAM Parameters Combine": {
-        "title": "SAM参数結合",
+        "title": "SAMパラメタ結合",
         "inputs": {
-            "sam_parameters_a": "SAM参数_a",
-            "sam_parameters_b": "SAM参数_b"
+            "sam_parameters_a": "SAMパラメタ_a",
+            "sam_parameters_b": "SAMパラメタ_b"
         },
         "outputs": {
-            "SAM_PARAMETERS": "SAM参数"
+            "SAM_PARAMETERS": "SAMパラメタ"
         }
     },
     "SAM Image Mask": {
         "title": "SAM图像マスク",
         "inputs": {
             "sam_model": "SAMモデル",
-            "sam_parameters": "SAM参数",
+            "sam_parameters": "SAMパラメタ",
             "image": "图像"
         },
         "outputs": {
@@ -1356,7 +1356,7 @@
         },
         "widgets": {
             "strength": "強度",
-            "radius": "范围",
+            "radius": "レアル",
             "ao_blur": "ぼかし",
             "specular_threshold": "高光閾値",
             "enable_specular_masking": "使用高光マスク",
@@ -1376,7 +1376,7 @@
         },
         "widgets": {
             "strength": "強度",
-            "radius": "范围",
+            "radius": "レアル",
             "specular_threshold": "高光閾値",
             "colored_occlusion": "颜色遮蔽"
         },
@@ -1388,12 +1388,12 @@
         }
     },
     "Image Bloom Filter": {
-        "title": "泛光",
+        "title": "グロー",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
-            "radius": "范围",
+            "radius": "レアル",
             "intensity": "強度"
         },
         "outputs": {
@@ -1424,7 +1424,7 @@
             "green_offset": "绿移",
             "blue_offset": "蓝移",
             "intensity": "強度",
-            "fade_radius": "消失范围"
+            "fade_radius": "消失レアル"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -1453,7 +1453,7 @@
             "contrast": "对比度",
             "brightness": "明度",
             "sharpness": "锐度",
-            "highpass_radius": "高反差范围",
+            "highpass_radius": "高反差レアル",
             "highpass_samples": "高反差采样",
             "highpass_strength": "高反差強度",
             "colorize": "着色"
@@ -1477,7 +1477,7 @@
         }
     },
     "Image Film Grain": {
-        "title": "胶片颗粒",
+        "title": "フィルム粒",
         "inputs": {
             "image": "图像"
         },
@@ -1531,7 +1531,7 @@
             "images": "图像"
         },
         "widgets": {
-            "radius": "范围",
+            "radius": "レアル",
             "strength": "強度",
             "color_output": "出力颜色",
             "neutral_background": "正常背景",
@@ -1607,7 +1607,7 @@
                 "mock": "模拟",
                 "gaussian": "高斯",
                 "box": "方框",
-            "radius": "范围",
+            "radius": "レアル",
             "samples": "采样次数"
         },
         "outputs": {
@@ -1681,8 +1681,8 @@
         },
         "widgets": {
             "mode": "模式",
-                "horizontal": "水平",
-                "vertical": "竖直"
+                "horizontal": "横型",
+                "vertical": "縦型"
         },
         "outputs": {
             "images": "图像"
@@ -1906,8 +1906,8 @@
             "width": "幅",
             "height": "高さ",
             "direction": "方向",
-                "horizontal": "水平",
-                "vertical": "竖直",
+                "horizontal": "横型",
+                "vertical": "縦型",
             "tolerance": "偏差",
             "gradient_stops": "渐变停止"
         },
@@ -2218,7 +2218,7 @@
             "image": "图像"
         },
         "widgets": {
-            "transition_frames": "帧数",
+            "transition_frames": "フレームレート",
             "image_delay_ms": "延迟毫秒",
             "duration_ms": "持续毫秒",
             "loops": "循环次数",
@@ -2238,7 +2238,7 @@
             "image": "图像"
         },
         "widgets": {
-            "transition_frames": "帧数",
+            "transition_frames": "フレームレート",
             "image_delay_sec": "延迟秒",
             "fps": "帧率",
             "max_size": "最大尺寸",
@@ -2259,7 +2259,7 @@
             "image_b": "图像_b"
         },
         "widgets": {
-            "transition_frames": "帧数",
+            "transition_frames": "フレームレート",
             "still_image_delay_ms": "延迟毫秒",
             "duration_ms": "持续毫秒",
             "loops": "循环次数",
@@ -2278,7 +2278,7 @@
     "Create Morph Image from Path": {
         "title": "路径生成动态图像",
         "widgets": {
-            "transition_frames": "帧数",
+            "transition_frames": "フレームレート",
             "still_image_delay_ms": "延迟毫秒",
             "duration_ms": "持续毫秒",
             "loops": "循环次数",
@@ -2297,7 +2297,7 @@
     "Create Video from Path": {
         "title": "路径生成视频",
         "widgets": {
-            "transition_frames": "帧数",
+            "transition_frames": "フレームレート",
             "still_image_delay_ms": "延迟毫秒",
             "fps": "帧率",
             "max_size": "最大尺寸",
@@ -2519,7 +2519,7 @@
             "neg_add_strength_scaling": "负面添加強度缩放",
             "neg_add_strength_cutoff": "负面添加強度截断",
             "sharpen_strength": "锐化強度",
-            "sharpen_radius": "锐化范围",
+            "sharpen_radius": "锐化レアル",
             "steps_scaling": "ステップ数缩放",
             "steps_control": "ステップ数控制",
             "steps_scaling_value": "ステップ数缩放值",

@@ -325,7 +325,7 @@
         }
     },
     "ImpactSEGSRangeFilter": {
-        "title": "Seg范围过滤",
+        "title": "Segレアル过滤",
         "inputs": {
             "segs": "Seg"
         },
@@ -762,8 +762,8 @@
         "widgets": {
             "detection_hint": "检测提示",
                 "center-1": "中心",
-                "horizontal-2": "水平",
-                "vertical-2": "竖直",
+                "horizontal-2": "横型",
+                "vertical-2": "縦型",
                 "rect-4": "斜角",
                 "diamond-4": "菱形",
                 "mask-area": "マスクエリア",
@@ -788,8 +788,8 @@
         "widgets": {
             "detection_hint": "检测提示",
                 "center-1": "中心",
-                "horizontal-2": "水平",
-                "vertical-2": "竖直",
+                "horizontal-2": "横型",
+                "vertical-2": "縦型",
                 "rect-4": "斜角",
                 "diamond-4": "菱形",
                 "mask-area": "マスクエリア",
@@ -966,8 +966,8 @@
             "bbox_crop_factor": "BBox裁剪係数",
             "sam_detection_hint": "SAM检测提示",
                 "center-1": "中心",
-                "horizontal-2": "水平",
-                "vertical-2": "竖直",
+                "horizontal-2": "横型",
+                "vertical-2": "縦型",
                 "rect-4": "斜角",
                 "diamond-4": "菱形",
                 "mask-area": "マスクエリア",
@@ -1019,8 +1019,8 @@
             "bbox_crop_factor": "BBox裁剪係数",
             "sam_detection_hint": "SAM检测提示",
                 "center-1": "中心",
-                "horizontal-2": "水平",
-                "vertical-2": "竖直",
+                "horizontal-2": "横型",
+                "vertical-2": "縦型",
                 "rect-4": "斜角",
                 "diamond-4": "菱形",
                 "mask-area": "マスクエリア",
@@ -1286,7 +1286,7 @@
 
 
     "LatentPixelScale": {
-        "title": "Latent像素缩放",
+        "title": "Latentピクセル缩放",
         "inputs": {
             "samples": "Latent",
             "vae": "VAE",
@@ -1305,7 +1305,7 @@
         }
     },
     "PixelKSampleUpscalerProvider": {
-        "title": "K采样像素缩放器",
+        "title": "K采样ピクセル缩放器",
         "inputs": {
             "model": "モデル",
             "vae": "VAE",
@@ -1331,7 +1331,7 @@
         }
     },
     "PixelKSampleUpscalerProviderPipe": {
-        "title": "K采样像素缩放器(节点束)",
+        "title": "K采样ピクセル缩放器(节点束)",
         "inputs": {
             "basic_pipe": "基础节点束",
             "upscale_model_opt": "放大モデル",
@@ -1385,7 +1385,7 @@
         }
     },
     "PixelTiledKSampleUpscalerProvider": {
-        "title": "K采样像素缩放器(デコード)",
+        "title": "K采样ピクセル缩放器(デコード)",
         "inputs": {
             "model": "モデル",
             "vae": "VAE",
@@ -1416,7 +1416,7 @@
         }
     },
     "PixelTiledKSampleUpscalerProviderPipe": {
-        "title": "K采样像素缩放器(デコード节点束)",
+        "title": "K采样ピクセル缩放器(デコード节点束)",
         "inputs": {
             "model": "モデル",
             "vae": "VAE",
