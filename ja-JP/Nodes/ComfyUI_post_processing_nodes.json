@@ -35,7 +35,7 @@
         }
     },
     "Dissolve": {
-        "title": "消融",
+        "title": "溶解",
         "inputs": {
             "image1": "图像1",
             "image2": "图像2"
@@ -48,7 +48,7 @@
         }
     },
     "DodgeAndBurn": {
-        "title": "减淡加深",
+        "title": "ダッジ・バーン",
         "inputs": {
             "image1": "图像1",
             "image2": "图像2"
@@ -56,14 +56,14 @@
         "widgets": {
             "intensity": "強度",
             "mode": "模式",
-                "dodge": "减淡",
-                "burn": "加深",
-                "dodge_and_burn": "减淡后加深",
-                "burn_and_dodge": "加深后减淡",
-                "color_dodge": "颜色减淡",
-                "color_burn": "颜色加深",
-                "linear_dodge": "线性减淡",
-                "linear_burn": "线性加深"
+                "dodge": "ダッジ",
+                "burn": "バーン",
+                "dodge_and_burn": "ダッジ后バーン",
+                "burn_and_dodge": "バーン后ダッジ",
+                "color_dodge": "颜色ダッジ",
+                "color_burn": "颜色バーン",
+                "linear_dodge": "线性ダッジ",
+                "linear_burn": "线性バーン"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -73,40 +73,40 @@
 
 
     "AsciiArt": {
-        "title": "Ascii字符",
+        "title": "Asciiアート",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
-            "char_size": "字符间距",
-            "font_size": "字符大小"
+            "char_size": "文字間隔",
+            "font_size": "文字サイズ"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "ChromaticAberration": {
-        "title": "色差偏移",
+        "title": "色収差",
         "inputs": {
             "image1": "图像1",
             "image2": "图像2"
         },
         "widgets": {
-            "red_shift": "红移",
-            "red_direction": "红移方向",
-            "green_shift": "绿移",
-            "green_direction": "绿移方向",
-            "blue_shift": "蓝移",
-            "blue_direction": "蓝移方向",
-                "horizontal": "水平",
-                "vertical": "竖直"
+            "red_shift": "赤方偏移",
+            "red_direction": "赤方偏移方向",
+            "green_shift": "緑方偏移",
+            "green_direction": "緑方偏移方向",
+            "blue_shift": "青方偏移",
+            "blue_direction": "青方偏移方向",
+                "horizontal": "横型",
+                "vertical": "縦型"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "FilmGrain": {
-        "title": "胶片颗粒",
+        "title": "フィルム粒",
         "inputs": {
             "image": "图像"
         },
@@ -114,32 +114,32 @@
             "intensity": "強度",
             "scale": "缩放",
             "temperature": "温度",
-            "vignette": "暗角"
+            "vignette": "ヴィネット"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "Glow": {
-        "title": "泛光",
+        "title": "グロー",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
             "intensity": "強度",
-            "blur_radius": "ぼかし范围"
+            "blur_radius": "ぼかしレアル"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "PencilSketch": {
-        "title": "素描",
+        "title": "鉛画",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
-            "blur_radius": "ぼかし范围",
+            "blur_radius": "ぼかしレアル",
             "sharpen_alpha": "透明閾値"
         },
         "outputs": {
@@ -147,12 +147,12 @@
         }
     },
     "Pixelize": {
-        "title": "像素化",
+        "title": "ピクセル化",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
-            "pixel_size": "像素尺寸"
+            "pixel_size": "ピクセル尺寸"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -173,7 +173,7 @@
         }
     },
     "Vignette": {
-        "title": "暗角",
+        "title": "ヴィネット",
         "inputs": {
             "image": "图像"
         },
@@ -194,7 +194,7 @@
             "image": "图像"
         },
         "widgets": {
-            "blur_radius": "ぼかし范围",
+            "blur_radius": "ぼかしレアル",
             "sigma": "Sigma"
         },
         "outputs": {
@@ -207,7 +207,7 @@
             "image": "图像"
         },
         "widgets": {
-            "blur_radius": "ぼかし范围",
+            "blur_radius": "ぼかしレアル",
             "method": "方法",
                 "mean": "平均",
                 "gaussian": "高斯"
@@ -222,7 +222,7 @@
             "image": "图像"
         },
         "widgets": {
-            "sharpen_radius": "锐化范围",
+            "sharpen_radius": "锐化レアル",
             "alpha": "透明"
         },
         "outputs": {
@@ -268,7 +268,7 @@
 
 
     "ColorCorrect": {
-        "title": "颜色校正",
+        "title": "色調補正",
         "inputs": {
             "image": "图像"
         },
@@ -285,7 +285,7 @@
         }
     },
     "ColorTint": {
-        "title": "颜色过渡",
+        "title": "色合い",
         "inputs": {
             "image": "图像"
         },
@@ -318,21 +318,21 @@
         }
     },
     "Parabolize": {
-        "title": "颜色曲线",
+        "title": "色カーブ",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
             "coeoff": "係数",
-            "vertex_x": "端点X",
-            "vertex_y": "端点Y"
+            "vertex_x": "X",
+            "vertex_y": "Y"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "Quantize": {
-        "title": "量化",
+        "title": "クォンタイズ",
         "inputs": {
             "image": "图像"
         },
@@ -340,14 +340,14 @@
             "colors": "色数",
             "dither": "ディザ",
                 "none": "无",
-                "floyd-steinberg": "弗洛伊德算法"
+                "floyd-steinberg": "フロイト"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "Solarize": {
-        "title": "颜色反转",
+        "title": "色反転",
         "inputs": {
             "image": "图像"
         },

@@ -9,7 +9,7 @@
             "model_name": "モデル",
             "width": "幅",
             "height": "高さ",
-            "frame_number": "帧数"
+            "frame_number": "フレームレート"
         },
         "outputs": {
             "MODEL": "モデル",
@@ -24,7 +24,7 @@
         },
         "widgets": {
             "model_name": "モデル",
-            "frame_number": "帧数"
+            "frame_number": "フレームレート"
         },
         "outputs": {
             "MODEL": "モデル",
@@ -52,6 +52,36 @@
                 "Enabled": "是",
                 "Disabled": "否",
             "filename_prefix": "文件名缀"
+        }
+    },
+    "AnimateDiffSampler": {
+        "title": "动态扩散采样器",
+        "inputs": {
+            "motion_module": "运动模块",
+            "model": "モデル",
+            "positive": "正面",
+            "negative": "负面",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "inject_method": "注入メソッド",
+                "default": "既定",
+                "legacy": "旧版",
+            "frame_number": "フレームレート",
+            "seed": "乱数種",
+            "control_after_generate": "生成後の制御",
+                "fixed": "固定",
+                "increment": "増加",
+                "decrement": "減少",
+                "randomize": "ランダム",
+            "steps": "ステップ数",
+            "cfg": "CFG",
+            "sampler_name": "サンプラー名",
+            "scheduler": "スケジューラ",
+            "denoise": "ノイズ除去"
+        },
+        "outputs": {
+            "LATENT": "Latent"
         }
     }
 }

@@ -488,7 +488,7 @@
         "widgets": {
             "flip_method": "反転方法",
                 "x-axis: vertically": "X軸:垂直",
-                "y-axis: horizontally": "Y軸:水平"
+                "y-axis: horizontally": "Y軸:横型"
         },
         "outputs": {
             "LATENT": "Latent"

@@ -40,6 +40,15 @@
             "MODEL": "模型"
         }
     },
+    "AnimateDiffModuleLoader": {
+        "title": "动态扩散组件加载器",
+        "widgets": {
+            "model_name": "模型"
+        },
+        "outputs": {
+            "MOTION_MODULE": "运动模块"
+        }
+    },
     "AnimateDiffCombine": {
         "title": "合并为GIF",
         "inputs": {
@@ -57,12 +66,17 @@
     "AnimateDiffSampler": {
         "title": "动态扩散采样器",
         "inputs": {
+            "motion_module": "运动模块",
             "model": "模型",
             "positive": "正面提示词",
             "negative": "负面提示词",
             "latent_image": "Latent"
         },
         "widgets": {
+            "inject_method": "模块插入方式",
+                "default": "默认",
+                "legacy": "旧版",
+            "frame_number": "帧数",
             "seed": "随机种",
             "control_after_generate": "运行后操作",
                 "fixed": "固定",

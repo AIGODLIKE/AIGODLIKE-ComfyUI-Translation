@@ -1,6 +1,6 @@
 {
     "BNK_CutoffBasePrompt": {
-        "title": "截断エリアPrompt",
+        "title": "遮断エリアPrompt",
         "inputs": {
             "clip": "CLIP"
         },
@@ -8,31 +8,31 @@
             "text": "テキスト"
         },
         "outputs": {
-            "CLIPREGION": "CLIP范围"
+            "CLIPREGION": "CLIPレアル"
         }
     },
     "BNK_CutoffSetRegions": {
-        "title": "截断設定范围",
+        "title": "遮断設定レアル",
         "inputs": {
-            "clip_regions": "CLIP范围"
+            "clip_regions": "CLIPレアル"
         },
         "widgets": {
-            "region_text": "范围文本",
+            "region_text": "レアル文本",
             "target_text": "目標文本",
             "weight": "权重"
         },
         "outputs": {
-            "CLIPREGION": "CLIP范围"
+            "CLIPREGION": "CLIPレアル"
         }
     },
     "BNK_CutoffRegionsToConditioning": {
-        "title": "截断范围到条件",
+        "title": "遮断レアル到条件",
         "inputs": {
-            "clip_regions": "CLIP范围"
+            "clip_regions": "CLIPレアル"
         },
         "widgets": {
             "mask_token": "tokenマスク",
-            "strict_mask": "严格范围",
+            "strict_mask": "严格レアル",
             "start_from_masked": "从エリア開始"
         },
         "outputs": {
@@ -40,13 +40,13 @@
         }
     },
     "BNK_CutoffRegionsToConditioning_ADV": {
-        "title": "截断范围到条件(高さ)",
+        "title": "遮断レアル到条件(高さ)",
         "inputs": {
-            "clip_regions": "CLIP范围"
+            "clip_regions": "CLIPレアル"
         },
         "widgets": {
             "mask_token": "tokenマスク",
-            "strict_mask": "严格范围",
+            "strict_mask": "严格レアル",
             "start_from_masked": "从エリア開始",
             "token_normalization": "Token规格化",
                 "none": "无",

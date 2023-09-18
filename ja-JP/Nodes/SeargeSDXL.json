@@ -491,10 +491,10 @@
     "SeargeOutput1": {
         "title": "Sear文本",
         "inputs": {
-            "parameters": "参数组"
+            "parameters": "パラメタ组"
         },
         "outputs": {
-            "parameters": "参数组",
+            "parameters": "パラメタ组",
             "main_prompt": "主提示词",
             "secondary_prompt": "次提示词",
             "style_prompt": "风格提示词",
@@ -507,10 +507,10 @@
     "SeargeOutput2": {
         "title": "Sear采样",
         "inputs": {
-            "parameters": "参数组"
+            "parameters": "パラメタ组"
         },
         "outputs": {
-            "parameters": "参数组",
+            "parameters": "パラメタ组",
             "seed": "乱数種",
             "image_width": "幅",
             "image_height": "高さ",
@@ -525,10 +525,10 @@
     "SeargeOutput3": {
         "title": "SearSDXL",
         "inputs": {
-            "parameters": "参数组"
+            "parameters": "パラメタ组"
         },
         "outputs": {
-            "parameters": "参数组",
+            "parameters": "パラメタ组",
             "denoise": "ノイズ除去",
             "base_ratio": "基础占比",
             "refiner_strength": "优化強度",
@@ -556,10 +556,10 @@
     "SeargeOutput5": {
         "title": "Sear条件权重",
         "inputs": {
-            "parameters": "参数组"
+            "parameters": "パラメタ组"
         },
         "outputs": {
-            "parameters": "参数组",
+            "parameters": "パラメタ组",
             "base_conditioning_scale": "基础条件缩放",
             "refiner_conditioning_scale": "优化条件缩放",
             "style_prompt_power": "风格強度",
@@ -569,10 +569,10 @@
     "SeargeOutput6": {
         "title": "Sear高清修复",
         "inputs": {
-            "parameters": "参数组"
+            "parameters": "パラメタ组"
         },
         "outputs": {
-            "parameters": "参数组",
+            "parameters": "パラメタ组",
             "hrf_steps": "ステップ数",
             "hrf_denoise": "ノイズ除去",
             "hrf_upscale_factor": "缩放係数",
@@ -585,32 +585,32 @@
     "SeargeOutput7": {
         "title": "SearLoRA",
         "inputs": {
-            "parameters": "参数组"
+            "parameters": "パラメタ组"
         },
         "outputs": {
-            "parameters": "参数组",
+            "parameters": "パラメタ组",
             "lora_strength": "強度"
         }
     },
     "SeargeGenerated1": {
         "title": "Sear生成",
         "inputs": {
-            "parameters": "参数组"
+            "parameters": "パラメタ组"
         },
         "outputs": {
-            "parameters": "参数组",
+            "parameters": "パラメタ组",
             "operation_selector": "操作選択",
             "style_selector": "风格選択",
             "prompt_style_group": "提示词风格组"
         }
     },
     "SeargeParameterProcessor": {
-        "title": "Sear参数处理器",
+        "title": "Searパラメタ处理器",
         "inputs": {
             "inputs": "输入组"
         },
         "outputs": {
-            "parameters": "参数组"
+            "parameters": "パラメタ组"
         }
     },
     "SeargeStylePreprocessor": {
