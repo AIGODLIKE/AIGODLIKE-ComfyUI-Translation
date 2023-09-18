@@ -25,12 +25,25 @@
         }
     },    
     "ModelSamplerTonemapNoiseTest": {
-        "title": "噪波采样色调映射",
+        "title": "噪波色调映射",
         "inputs": {
             "model": "模型"
         },
         "widgets": {
-            "multiplier": "倍数"
+            "multiplier": "系数"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "TonemapNoiseWithRescaleCFG": {
+        "title": "噪波色调映射与缩放CFG",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "tonemap_multiplie": "映射系数",
+            "rescale_multiplier": "缩放系数"
         },
         "outputs": {
             "MODEL": "模型"
