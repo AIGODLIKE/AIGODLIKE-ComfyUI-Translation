@@ -88,6 +88,71 @@
             "SEGS": "Seg"
         }
     },
+    "ImpactDecomposeSEGS": {
+        "title": "Seg分解",
+        "inputs": {
+            "segs": "Seg"
+        },
+        "outputs": {
+            "SEGS_HEADER": "Seg_Header",
+            "SEG_ELT": "Seg_ELT"
+        }
+    },
+    "ImpactAssembleSEGS": {
+        "title": "Seg组合",
+        "inputs": {
+            "seg_header": "Seg_Header",
+            "seg_elt": "Seg_ELT"
+        },
+        "outputs": {
+            "Seg": "Seg"
+        }
+    },
+    "ImpactDilate_Mask_SEG_ELT": {
+        "title": "SegELT膨胀",
+        "inputs": {
+            "seg_elt": "Seg_ELT"
+        },
+        "widgets": {
+            "dilation": "膨胀"
+        },
+        "outputs": {
+            "SEG_ELT": "Seg_ELT"
+        }
+    },
+    "ImpactDilateMask": {
+        "title": "遮罩膨胀",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "dilation": "膨胀"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "ImpactScaleBy_BBOX_SEG_ELT": {
+        "title": "SegELT缩放",
+        "inputs": {
+            "seg": "Seg"
+        },
+        "widgets": {
+            "scale_by": "系数"
+        },
+        "outputs": {
+            "SEG_ELT": "Seg_ELT"
+        }
+    },
+    "ImpactSEGSToMaskBatch": {
+        "title": "Seg到遮罩组",
+        "inputs": {
+            "segs": "Seg"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
     "PreviewBridge": {
         "title": "桥接预览",
         "inputs": {
@@ -501,6 +566,15 @@
         },
         "outputs": {
             "MASK": "遮罩"
+        }
+    },
+    "MaskListToMaskBatch": {
+        "title": "遮罩列表到遮罩组",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
         }
     },
     "SegsToCombinedMask": {
