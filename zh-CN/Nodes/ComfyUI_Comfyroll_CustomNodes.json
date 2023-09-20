@@ -1,5 +1,5 @@
 {
-    "Comfyroll_ImageInputSwitch": {
+    "CR Image Input Switch": {
         "title": "图像切换(CR)",
         "inputs": {
             "image1": "图像1",
@@ -12,7 +12,7 @@
             "IMAGE": "图像"
         }
     },
-    "Comfyroll_ImageInputSwitch_4way": {
+    "CR Image Input Switch (4 way)": {
         "title": "图像切换(CR-4路)",
         "inputs": {
             "image1": "图像1",
@@ -27,7 +27,7 @@
             "IMAGE": "图像"
         }
     },
-    "Comfyroll_LatentInputSwitch": {
+    "CR Latent Input Switch": {
         "title": "Latent切换(CR)",
         "inputs": {
             "latent1": "Latent1",
@@ -40,7 +40,7 @@
             "LATENT": "Latent"
         }
     },
-    "Comfyroll_ConditioningInputSwitch": {
+    "CR Conditioning Input Switch": {
         "title": "条件切换(CR)",
         "inputs": {
             "conditioning1": "条件1",
@@ -53,7 +53,7 @@
             "CONDITIONING": "条件"
         }
     },
-    "Comfyroll_ClipInputSwitch": {
+    "CR Clip Input Switch": {
         "title": "CLIP切换(CR)",
         "inputs": {
             "clip1": "CLIP1",
@@ -66,7 +66,7 @@
             "CLIP": "CLIP"
         }
     },
-    "Comfyroll_ModelInputSwitch": {
+    "CR Model Input Switch": {
         "title": "模型切换(CR)",
         "inputs": {
             "model1": "模型1",
@@ -79,7 +79,7 @@
             "MODEL": "模型"
         }
     },
-    "Comfyroll_ControlNetInputSwitch": {
+    "CR ControlNet Input Switch": {
         "title": "ControlNet切换(CR)",
         "inputs": {
             "control_net1": "ControlNet1",
@@ -92,7 +92,7 @@
             "CONTROL_NET": "ControlNet"
         }
     },
-    "Comfyroll_TextInputSwitch": {
+    "CR Text Input Switch": {
         "title": "文本切换(CR)",
         "inputs": {
             "text1": "文本1",
@@ -105,7 +105,7 @@
             "STRING": "字符串"
         }
     },
-    "Comfyroll_TextInputSwitch_4way": {
+    "CR Text Input Switch (4 way)": {
         "title": "文本切换(CR-4路)",
         "inputs": {
             "text1": "文本1",
@@ -120,7 +120,7 @@
             "STRING": "字符串"
         }
     },
-    "Comfyroll_ModelAndCLIPInputSwitch": {
+    "CR Switch Model and CLIP": {
         "title": "模型CLIP切换(CR)",
         "inputs": {
             "model1": "模型1",
@@ -140,7 +140,7 @@
 
 
 
-    "Comfyroll_LoraLoader": {
+    "CR Load LoRA": {
         "title": "LoRA加载器(CR)",
         "inputs": {
             "model": "模型",
@@ -159,7 +159,7 @@
             "CLIP": "CLIP"
         }
     },
-    "Comfyroll_LoRA_Stack": {
+    "CR LoRA Stack": {
         "title": "LoRA堆(CR)",
         "inputs": {
             "lora_stack": "LoRA堆"
@@ -169,21 +169,21 @@
                 "On": "开启",
                 "Off": "关闭",
             "lora_name_1": "LoRA名称1",
-            "strength_model_1": "模型强度1",
-            "strength_clip_1": "CLIP强度1",
+            "model_weight_1": "模型强度1",
+            "clip_weight_1": "CLIP强度1",
             "switch_2": "开关2",
             "lora_name_2": "LoRA名称2",
-            "strength_model_2": "模型强度2",
-            "strength_clip_2": "CLIP强度2",
+            "model_weight_2": "模型强度2",
+            "clip_weight_2": "CLIP强度2",
             "switch_3": "开关3",
             "lora_name_3": "LoRA名称3",
-            "strength_model_3": "模型强度3",
-            "strength_clip_3": "CLIP强度3"
+            "model_weight_3": "模型强度3",
+            "clip_weight_3": "CLIP强度3"
         },
         "outputs": {
         }
     },
-    "Comfyroll_ApplyLoRA_Stack": {
+    "CR Apply LoRA Stack": {
         "title": "应用LoRA堆(CR)",
         "inputs": {
             "model": "模型",
@@ -199,7 +199,7 @@
 
 
 
-    "Comfyroll_ApplyControlNet": {
+    "CR Apply ControlNet": {
         "title": "应用ControlNet(CR)",
         "inputs": {
             "conditioning": "条件",
@@ -214,7 +214,7 @@
             "CONDITIONING": "条件"
         }
     },
-    "Comfyroll_ControlNetStack": {
+    "CR Multi-ControlNet Stack": {
         "title": "ControlNet堆(CR)",
         "inputs": {
             "image_1": "图像1",
@@ -243,7 +243,7 @@
             "CONTROLNET_STACK": "ControlNet堆"
         }
     },
-    "Comfyroll_ApplyControlNetStack": {
+    "CR Apply Multi-ControlNet": {
         "title": "应用ControlNet堆(CR)",
         "inputs": {
             "base_positive": "正面提示词",
@@ -264,7 +264,7 @@
 
 
 
-    "Comfyroll_ImageSize_Float": {
+    "CR Image Size": {
         "title": "图像尺寸(CR)",
         "widgets": {
             "width": "宽度",
@@ -276,7 +276,7 @@
             "FLOAT": "浮点"
         }
     },
-    "Comfyroll_ImageOutput": {
+    "CR Image Output": {
         "title": "图像输出(CR)",
         "inputs": {
             "images": "图像"
@@ -286,7 +286,7 @@
             "filename_prefix": "文件名前缀"
         }
     },
-    "Comfyroll_AspectRatio": {
+    "CR Aspect Ratio": {
         "title": "宽高比(CR)",
         "widgets": {
             "width": "宽度",
@@ -311,7 +311,7 @@
             "FLOAT": "浮点"
         }
     },
-    "Comfyroll_prompt_mixer": {
+    "CR SDXL Prompt Mixer": {
         "title": "SDXL提示词(CR)",
         "widgets": {
             "prompt_positive": "正面提示词",
@@ -334,7 +334,7 @@
             "neg_r": "负面优化文本"
         }
     },
-    "Comfyroll_AspectRatio_SDXL": {
+    "CR Aspect Ratio SDXL": {
         "title": "SDXL宽高比(CR)",
         "widgets": {
             "width": "宽度",
@@ -363,7 +363,7 @@
 
 
 
-    "Comfyroll_Int_Multiple_Of": {
+    "CR Integer Multiple": {
         "title": "整数乘以(CR)",
         "widgets": {
             "integer": "整数",
@@ -377,7 +377,7 @@
 
 
 
-    "Comfyroll_SeedToInt": {
+    "CR Seed to Int": {
         "title": "随机种到整数(CR)",
         "inputs": {
             "seed": "随机种"
@@ -386,7 +386,7 @@
             "INT": "整数"
         }
     },
-    "Comfyroll_Seed": {
+    "CR Seed": {
         "title": "随机种(CR)",
         "widgets": {
             "seed": "随机种",
@@ -404,7 +404,7 @@
 
 
 
-    "CR_IntegerToString": {
+    "CR Integer To String": {
         "title": "整数到字符串(CR)",
         "widgets": {
             "int_": "整数"
@@ -413,7 +413,7 @@
             "STRING": "字符串"
         }
     },
-    "CR_FloatToString": {
+    "CR Float To String": {
         "title": "浮点到字符串(CR)",
         "widgets": {
             "float_": "浮点"
@@ -426,7 +426,7 @@
 
 
 
-    "Comfyroll_Color_Tint": {
+    "CR Color Tint": {
         "title": "颜色渐变(CR)",
         "inputs": {
             "image": "图像"
@@ -439,7 +439,7 @@
             "IMAGE": "图像"
         }
     },
-    "Comfyroll_Halftone_Grid": {
+    "CR Halftone Grid": {
         "title": "半色调网格(CR)",
         "widgets": {
             "width": "宽度",
@@ -458,7 +458,7 @@
             "IMAGE": "图像"
         }
     },
-    "Comfyroll_AspectRatio_v2": {
+    "CR SD1.5 Aspect Ratio": {
         "title": "SD1.5宽高比(CR)",
         "widgets": {
             "width": "宽度",
@@ -488,7 +488,7 @@
 
 
 
-    "Comfyroll_InputLatentsText": {
+    "CR Img2Img Process Switch": {
         "title": "Latent切换(CR-图生图)",
         "inputs": {
             "txt2img": "文生图",
@@ -501,7 +501,7 @@
             "LATENT": "Latent"
         }
     },
-    "Comfyroll_HiResFixSwitch": {
+    "CR Hires Fix Process Switch": {
         "title": "Latent切换(CR-高清修复)",
         "inputs": {
             "latent_upscale": "放大Latent",
@@ -514,7 +514,7 @@
             "LATENT": "Latent"
         }
     },
-    "Comfyroll_BatchProcessSwitch": {
+    "CR Batch Process Switch": {
         "title": "图像切换(CR-批处理)",
         "inputs": {
             "image": "图像",
@@ -529,7 +529,7 @@
     },
 
 
-    "Comfyroll_LatentBatchSize": {
+    "CR Latent Batch Size": {
         "title": "Latent批次大小(CR)",
         "inputs": {
             "latent": "Latent"
@@ -543,7 +543,7 @@
     },
 
 
-    "Comfyroll_ApplyModelMerge": {
+    "CR Apply Model Merge": {
         "title": "应用模型融合(CR)",
         "inputs": {
             "model_stack": "模型堆"
@@ -561,7 +561,7 @@
             "model_mix_info": "模型融合信息"
         }
     },
-    "Comfyroll_ModelMergeStack": {
+    "CR Model Merge Stack": {
         "title": "模型融合堆(CR)",
         "inputs": {
             "model_stack": "模型堆"
@@ -585,7 +585,7 @@
 
 
 
-    "CR_module_pipe_loader": {
+    "CR Module Pipe Loader": {
         "title": "模块节点束(CR)",
         "inputs": {
             "model": "模型",
@@ -609,7 +609,7 @@
             "pipe": "节点束"
         }
     },
-    "CR_module_input": {
+    "CR Module Input": {
         "title": "模块输入(CR)",
         "inputs": {
             "pipe": "节点束"
@@ -626,7 +626,7 @@
             "seed": "随机种"
         }
     },
-    "CR_module_output": {
+    "CR Module Output": {
         "title": "模块输出(CR)",
         "inputs": {
             "pipe": "节点束",
@@ -651,7 +651,7 @@
             "pipe": "节点束"
         }
     },
-    "CR_input_switch_pipe": {
+    "CR Pipe Switch": {
         "title": "节点束切换(CR)",
         "inputs": {
             "pipe1": "节点束1",
@@ -667,7 +667,7 @@
 
 
 
-    "CR_image_pipe_in": {
+    "CR Image Pipe In": {
         "title": "图像到节点束(CR)",
         "inputs": {
             "image": "图像"
@@ -681,7 +681,7 @@
             "pipe": "节点束"
         }
     },
-    "CR_image_pipe_edit": {
+    "CR Image Pipe Edit": {
         "title": "节点束编辑(CR)",
         "inputs": {
             "pipe": "节点束",
@@ -696,7 +696,7 @@
             "pipe": "节点束"
         }
     },
-    "CR_image_pipe_out": {
+    "CR Image Pipe Out": {
         "title": "节点数输出(CR)",
         "inputs": {
             "pipe": "节点束"
@@ -712,7 +712,7 @@
 
 
 
-    "Comfyroll_prompt_mixer_v2": {
+    "CR SDXL Prompt Mix Presets": {
         "title": "SDXL提示词v2(CR)",
         "widgets": {
             "prompt_positive": "正面提示词",
@@ -730,7 +730,7 @@
             "neg_r": "负面优化文本"
         }
     },
-    "Comfyroll_SDXL_AspectRatio_v2": {
+    "CR SDXL Aspect Ratio": {
         "title": "SDXL宽高比v2(CR)",
         "widgets": {
             "width": "宽度",
@@ -748,7 +748,7 @@
             "batch_size": "批次大小"
         }
     },
-    "Comfyroll_SDXLStyleText": {
+    "CR SDXL Style Text": {
         "title": "SDXL风格文本(CR)",
         "widgets": {
             "positive_style": "正面风格",
@@ -759,7 +759,7 @@
             "negative_prompt_text_l": "负面提示词L"
         }
     },
-    "Comfyroll_SDXLBasePromptEncoder": {
+    "CR SDXL Base Prompt Encoder": {
         "title": "SDXL基础提示词",
         "inputs": {
             "base_clip": "基础CLIP"
@@ -777,7 +777,9 @@
             "target_width": "目标宽度",
             "target_height": "目标高度"
         },
-        "base_positive": "正面提示词",
-        "base_negative": "负面提示词"
+        "outputs": {
+            "base_positive": "正面提示词",
+            "base_negative": "负面提示词"
+        }
     }
 }
