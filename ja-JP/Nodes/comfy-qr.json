@@ -32,7 +32,7 @@
                 "bilinear": "バイリニア補間",
                 "box": "方框滤波",
                 "Hamming": "汉明窗",
-                "Lanczos": "Lanczos插值",
+                "Lanczos": "Lanczos插値",
                 "nearest": "邻近"
         },
         "outputs": {
@@ -71,7 +71,7 @@
             "module_size": "模块大小",
             "grayscale_method": "灰度计算模式",
                 "mean": "平均",
-            "aggregate_method": "色值计算模式",
+            "aggregate_method": "色値计算模式",
             "evaluate": "计算目標",
                 "full_qr": "整体",
                 "module_pattern": "模块",
@@ -83,7 +83,7 @@
             "QR_ERROR_MASK": "QR错误マスク",
             "PERCENT_ERROR": "错误占比",
             "CORRELATION": "相关係数",
-            "RMSE": "误差值"
+            "RMSE": "误差値"
         }
     }
 }

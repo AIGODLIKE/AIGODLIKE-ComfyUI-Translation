@@ -179,23 +179,23 @@
         }
     },
     "SeargeIntegerConstant": {
-        "title": "Sear整数值",
+        "title": "Sear整数値",
         "widgets": {
-            "value": "值"
+            "value": "値"
         },
         "outputs": {
-            "value": "值"
+            "value": "値"
         }
     },
     "SeargeIntegerPair": {
         "title": "Sear整数对",
         "widgets": {
-            "value1": "值1",
-            "value2": "值2"
+            "value1": "値1",
+            "value2": "値2"
         },
         "outputs": {
-            "value1": "值1",
-            "value2": "值2"
+            "value1": "値1",
+            "value2": "値2"
         }
     },
     "SeargeIntegerMath": {
@@ -210,32 +210,32 @@
     "SeargeIntegerScaler": {
         "title": "Sear整数缩放",
         "widgets": {
-            "value": "值",
+            "value": "値",
             "factor": "係数",
             "multiple_of": "倍数"
         },
         "outputs": {
-            "value": "值"
+            "value": "値"
         }
     },
     "SeargeFloatConstant": {
-        "title": "Sear浮点值",
+        "title": "Sear浮点値",
         "widgets": {
-            "value": "值"
+            "value": "値"
         },
         "outputs": {
-            "value": "值"
+            "value": "値"
         }
     },
     "SeargeFloatPair": {
         "title": "Sear浮点对",
         "widgets": {
-            "value1": "值1",
-            "value2": "值2"
+            "value1": "値1",
+            "value2": "値2"
         },
         "outputs": {
-            "value1": "值1",
-            "value2": "值2"
+            "value1": "値1",
+            "value2": "値2"
         }
     },
     "SeargeFloatMath": {
@@ -440,7 +440,7 @@
             "negative_prompt_power": "负面风格強度",
             "style_template": "风格模板",
             "none": "无",
-            "from preprocessor": "从预处理器",
+            "from preprocessor": "从前処理",
             "test": "测试"
         },
         "outputs": {

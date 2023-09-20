@@ -53,7 +53,7 @@
                 "length": "长度",
                 "mean": "平均",
                 "length+mean": "混合",
-            "weight_interpretation": "权重插值方式"
+            "weight_interpretation": "权重插値方式"
         },
         "outputs": {
             "CONDITIONING": "条件"

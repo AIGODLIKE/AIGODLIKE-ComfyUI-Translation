@@ -9,7 +9,7 @@
             "blend_mode": "混合模式",
                 "add": "相加",
                 "subtract": "相减",
-                "difference": "差值"
+                "difference": "差値"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -60,10 +60,10 @@
                 "burn": "バーン",
                 "dodge_and_burn": "ダッジ后バーン",
                 "burn_and_dodge": "バーン后ダッジ",
-                "color_dodge": "颜色ダッジ",
-                "color_burn": "颜色バーン",
-                "linear_dodge": "线性ダッジ",
-                "linear_burn": "线性バーン"
+                "color_dodge": "色ダッジ",
+                "color_burn": "色バーン",
+                "linear_dodge": "線性ダッジ",
+                "linear_burn": "線性バーン"
         },
         "outputs": {
             "IMAGE": "图像"
