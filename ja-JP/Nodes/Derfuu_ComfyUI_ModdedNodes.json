@@ -2,7 +2,7 @@
     "Float": {
         "title": "浮点",
         "widgets": {
-            "Value": "值"
+            "Value": "値"
         },
         "outputs": {
             "FLOAT": "浮点"
@@ -11,7 +11,7 @@
     "Integer": {
         "title": "整数",
         "widgets": {
-            "Value": "值"
+            "Value": "値"
         },
         "outputs": {
             "INT": "整数"
@@ -43,20 +43,20 @@
         "title": "浮点调试出力",
         "widgets": {
             "Prefix": "前缀",
-            "Value": "值"
+            "Value": "値"
         }
     },
     "Int debug print": {
         "title": "整数调试出力",
         "widgets": {
             "Prefix": "前缀",
-            "Value": "值"
+            "Value": "値"
         }
     },
     "Tuple debug print": {
         "title": "元组调试出力",
         "inputs": {
-            "Value": "值"
+            "Value": "値"
         },
         "widgets": {
             "Prefix": "前缀"
@@ -75,7 +75,7 @@
     "Int to float": {
         "title": "整数到浮点",
         "widgets": {
-            "Value": "值"
+            "Value": "値"
         },
         "outputs": {
             "FLOAT": "浮点"
@@ -84,7 +84,7 @@
     "Ceil": {
         "title": "向上取整",
         "widgets": {
-            "Value": "值"
+            "Value": "値"
         },
         "outputs": {
             "INT": "整数"
@@ -93,17 +93,17 @@
     "Floor": {
         "title": "向下取整",
         "widgets": {
-            "Value": "值"
+            "Value": "値"
         },
         "outputs": {
             "INT": "整数"
         }
     },
     "Absolute value": {
-        "title": "绝对值",
+        "title": "绝对値",
         "widgets": {
-            "Value": "值",
-            "negative_out": "返回负值"
+            "Value": "値",
+            "negative_out": "返回负値"
         },
         "outputs": {
             "FLOAT": "浮点"
@@ -112,7 +112,7 @@
 
 
     "Random": {
-        "title": "ランダム值",
+        "title": "ランダム値",
         "widgets": {
             "Value_A": "閾値A",
             "Value_B": "閾値B"
@@ -151,8 +151,8 @@
     "Tuple": {
         "title": "元组",
         "widgets": {
-            "Value_A": "值A",
-            "Value_B": "值B",
+            "Value_A": "値A",
+            "Value_B": "値B",
             "round": "四舍五入"
         },
         "outputs": {
@@ -162,8 +162,8 @@
     "Int to tuple": {
         "title": "整数到元组",
         "widgets": {
-            "Value_A": "值A",
-            "Value_B": "值B"
+            "Value_A": "値A",
+            "Value_B": "値B"
         },
         "outputs": {
             "TUPLE": "元组"
@@ -202,7 +202,7 @@
             "Tuple": "元组"
         },
         "widgets": {
-            "Value": "值"
+            "Value": "値"
         },
         "outputs": {
             "TUPLE": "元组"
@@ -243,8 +243,8 @@
     "Sum": {
         "title": "相加",
         "widgets": {
-            "Value_A": "值A",
-            "Value_B": "值B"
+            "Value_A": "値A",
+            "Value_B": "値B"
         },
         "outputs": {
             "FLOAT": "浮点"
@@ -253,8 +253,8 @@
     "Subtract": {
         "title": "相减",
         "widgets": {
-            "Value_A": "值A",
-            "Value_B": "值B"
+            "Value_A": "値A",
+            "Value_B": "値B"
         },
         "outputs": {
             "FLOAT": "浮点"
@@ -263,8 +263,8 @@
     "Multiply": {
         "title": "相乘",
         "widgets": {
-            "Value_A": "值A",
-            "Value_B": "值B"
+            "Value_A": "値A",
+            "Value_B": "値B"
         },
         "outputs": {
             "FLOAT": "浮点"
@@ -283,7 +283,7 @@
     "Power": {
         "title": "乘方",
         "widgets": {
-            "Value": "值",
+            "Value": "値",
             "Exponent": "指数"
         },
         "outputs": {
@@ -293,7 +293,7 @@
     "Square root": {
         "title": "平方根",
         "widgets": {
-            "Value": "值"
+            "Value": "値"
         },
         "outputs": {
             "FLOAT": "浮点"
@@ -304,7 +304,7 @@
     "Sinus": {
         "title": "正弦",
         "widgets": {
-            "value": "值",
+            "value": "値",
             "type": "类型",
             "arcSin": "反正弦"
         },
@@ -315,7 +315,7 @@
     "Cosines": {
         "title": "余弦",
         "widgets": {
-            "value": "值",
+            "value": "値",
             "type": "类型",
             "arcCos": "反余弦"
         },
@@ -326,7 +326,7 @@
     "Tangent": {
         "title": "正切",
         "widgets": {
-            "value": "值",
+            "value": "値",
             "type": "类型",
             "arcTab": "反正切"
         },

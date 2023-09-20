@@ -144,7 +144,7 @@
             "samples": "Latent"
         },
         "widgets": {
-            "noise_std": "噪波数量"
+            "noise_std": "噪波量"
         }
     },
     "Perlin Power Fractal Latent": {
@@ -344,7 +344,7 @@
                 "length": "长度",
                 "mean": "平均",
                 "length+mean": "混合",
-            "weight_interpretation": "权重插值方式"
+            "weight_interpretation": "权重插値方式"
         },
         "outputs": {
             "conditioning": "条件",
@@ -692,8 +692,8 @@
                 "integer": "整数",
                 "float": "浮点",
                 "bool": "布尔",
-            "minimum": "最小值",
-            "maximum": "最大值"
+            "minimum": "最小値",
+            "maximum": "最大値"
         },
         "outputs": {
             "NUMBER": "数字",
@@ -719,8 +719,8 @@
         "title": "Random.orgランダム数生成",
         "widgets": {
             "api_key": "API_key",
-            "minimum": "最小值",
-            "maximum": "最大值",
+            "minimum": "最小値",
+            "maximum": "最大値",
             "mode": "模式",
                 "random": "ランダム",
                 "fixed": "固定"
@@ -754,7 +754,7 @@
         }
     },
     "Image Crop Face": {
-        "title": "面部裁剪",
+        "title": "顔面裁剪",
         "inputs": {
             "image": "图像"
         },
@@ -799,7 +799,7 @@
         }
     },
     "Image Paste Face": {
-        "title": "粘贴面部",
+        "title": "粘贴顔面",
         "inputs": {
             "image": "图像",
             "crop_image": "裁剪图像",
@@ -893,7 +893,7 @@
         }
     },
     "Image Remove Color": {
-        "title": "移除RGB颜色",
+        "title": "移除RGB色",
         "inputs": {
             "image": "图像"
         },
@@ -918,14 +918,14 @@
         "widgets": {
             "blending": "混合",
             "tiled": "デコード",
-            "tiles": "デコード数量"
+            "tiles": "デコード量"
         },
         "outputs": {
             "images": "图像"
         }
     },
     "Image Select Color": {
-        "title": "選択颜色",
+        "title": "選択色",
         "inputs": {
             "image": "图像"
         },
@@ -940,7 +940,7 @@
         }
     },
     "Image Select Channel": {
-        "title": "選択颜色",
+        "title": "選択色",
         "inputs": {
             "image": "图像"
         },
@@ -972,7 +972,7 @@
             "image": "图像"
         },
         "widgets": {
-            "num_tiles": "デコード数量"
+            "num_tiles": "デコード量"
         },
         "outputs": {
             "IMAGES": "图像"
@@ -1081,7 +1081,7 @@
             "masks": "マスク"
         },
         "widgets": {
-            "batch_number": "批次数量"
+            "batch_number": "批次量"
         },
         "outputs": {
             "MASK": "マスク"
@@ -1269,7 +1269,7 @@
         }
     },
     "Mask Threshold Region": {
-        "title": "マスク二值化",
+        "title": "マスク二値化",
         "inputs": {
             "masks": "マスク"
         },
@@ -1352,7 +1352,7 @@
         "title": "环境光遮蔽(AO)",
         "inputs": {
             "images": "图像",
-            "depth_images": "深度图"
+            "depth_images": "ふかみ图"
         },
         "widgets": {
             "strength": "強度",
@@ -1372,13 +1372,13 @@
         "title": "方向性遮蔽(DO)",
         "inputs": {
             "images": "图像",
-            "depth_images": "深度图"
+            "depth_images": "ふかみ图"
         },
         "widgets": {
             "strength": "強度",
             "radius": "レアル",
             "specular_threshold": "高光閾値",
-            "colored_occlusion": "颜色遮蔽"
+            "colored_occlusion": "色遮蔽"
         },
         "outputs": {
             "composited_images": "图像",
@@ -1401,7 +1401,7 @@
         }
     },
     "Image Canny Filter": {
-        "title": "线条",
+        "title": "線条",
         "inputs": {
             "images": "图像"
         },
@@ -1463,7 +1463,7 @@
         }
     },
     "Image Edge Detection Filter": {
-        "title": "边缘检测",
+        "title": "边缘発見",
         "inputs": {
             "image": "图像"
         },
@@ -1492,7 +1492,7 @@
         }
     },
     "Image Filter Adjustments": {
-        "title": "颜色调整",
+        "title": "色调整",
         "inputs": {
             "image": "图像"
         },
@@ -1533,7 +1533,7 @@
         "widgets": {
             "radius": "レアル",
             "strength": "強度",
-            "color_output": "出力颜色",
+            "color_output": "出力色",
             "neutral_background": "正常背景",
                 "true": "是",
                 "false": "否"
@@ -1543,13 +1543,13 @@
         }
     },
     "Image Median Filter": {
-        "title": "中值平滑",
+        "title": "中値平滑",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
             "diameter": "直径",
-            "sigma_color": "Sigma颜色",
+            "sigma_color": "Sigma色",
             "sigma_space": "Sigma空间"
         },
         "outputs": {
@@ -1600,7 +1600,7 @@
         "title": "伪景深",
         "inputs": {
             "image": "图像",
-            "depth": "深度图"
+            "depth": "ふかみ图"
         },
         "widgets": {
             "mode": "模式",
@@ -1633,7 +1633,7 @@
         }
     },
     "Image Color Palette": {
-        "title": "颜色调色板",
+        "title": "色调色板",
         "inputs": {
             "image": "图像"
         },
@@ -1645,7 +1645,7 @@
         },
         "outputs": {
             "image": "图像",
-            "color_palettes": "颜色列表"
+            "color_palettes": "色列表"
         }
     },
     "Image to Seed": {
@@ -1720,7 +1720,7 @@
                 "true": "是",
                 "false": "否",
             "resampling": "重采样",
-                "lanczos": "lanczos插值",
+                "lanczos": "lanczos插値",
                 "nearest": "邻近",
                 "bicubic": "バイキュービック補間",
                 "bilinear": "バイリニア補間",
@@ -1982,7 +1982,7 @@
         }
     },
     "MiDaS Depth Approximation": {
-        "title": "MiDaS深度近似",
+        "title": "MiDaSふかみ近似",
         "inputs": {
             "image": "图像",
             "midas_model": "MiDaSモデル"
@@ -1990,7 +1990,7 @@
         "widgets": {
             "use_cpu": "使用CPU",
             "midas_type": "MiDaS类型",
-            "invert_depth": "反转深度"
+            "invert_depth": "反转ふかみ"
         },
         "outputs": {
             "images": "图像"
@@ -2172,11 +2172,11 @@
         "widgets": {
             "mode": "模式",
                 "add": "相加",
-                "color": "颜色",
-                "color_burn": "颜色加深",
-                "color_dodge": "颜色减淡",
+                "color": "色",
+                "color_burn": "色加深",
+                "color_dodge": "色减淡",
                 "darken": "变暗",
-                "difference": "差值",
+                "difference": "差値",
                 "exclusion": "排除",
                 "hard_light": "硬光",
                 "hue": "色相",
@@ -2201,7 +2201,7 @@
         }
     },
     "Images to Linear": {
-        "title": "图像线性",
+        "title": "图像線性",
         "inputs": {
             "images": "图像"
         },
@@ -2317,7 +2317,7 @@
             "video_path": "视频路径",
             "output_path": "出力路径",
             "prefix": "前缀",
-            "filenumber_digits": "文件名数字数量",
+            "filenumber_digits": "文件名数字量",
             "extension": "文件后缀"
         },
         "outputs": {
@@ -2508,7 +2508,7 @@
                 "bilinear": "バイリニア補間",
                 "bicubic": "バイキュービック補間",
                 "nearest": "邻近",
-                "lanczos": "lanczos插值",
+                "lanczos": "lanczos插値",
             "secondary_start_cycle": "第二開始循环",
             "pos_add_mode": "正面添加模式",
             "pos_add_strength": "正面添加強度",
@@ -2522,7 +2522,7 @@
             "sharpen_radius": "锐化レアル",
             "steps_scaling": "ステップ数缩放",
             "steps_control": "ステップ数控制",
-            "steps_scaling_value": "ステップ数缩放值",
+            "steps_scaling_value": "ステップ数缩放値",
             "steps_cutoff": "ステップ数截断",
             "denoise_cutoff": "ノイズ除去截断"
         },
@@ -2637,7 +2637,7 @@
         "title": "文本输入添加Token",
         "inputs": {
             "token_name": "Token名",
-            "token_value": "Token值"
+            "token_value": "Token値"
         },
         "widgets": {
             "print_current_tokens": "出力当前Token",
@@ -2663,7 +2663,7 @@
         "widgets": {
             "mode": "模式",
                 "similarity": "相似度",
-                "difference": "差值",
+                "difference": "差値",
             "tolerance": "偏差"
         },
         "outputs": {

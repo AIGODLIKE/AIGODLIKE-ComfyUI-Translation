@@ -1,103 +1,117 @@
 {
     "HEDPreprocessor": {
-        "title": "HEDぼかし线预处理器",
+        "title": "HEDぼかし線前処理",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
             "version": "版本",
-            "safe": "增稳",
-                "disable": "無効",
-                "enable": "有効"
+            "safe": "安定",
+                "disable": "閉",
+                "enable": "開",
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "ScribblePreprocessor": {
-        "title": "Scribble涂鸦预处理器",
+        "title": "Scribble落書前処理",
         "inputs": {
             "image": "图像"
+        },
+        "widgets": {
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "FakeScribblePreprocessor": {
-        "title": "FakeScribble伪涂鸦预处理器",
+        "title": "FakeScribble伪落書前処理",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
-            "safe": "增稳",
-                "enable": "有効",
-                "disable": "無効"
+            "safe": "安定",
+                "enable": "開",
+                "disable": "閉",
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "BinaryPreprocessor": {
-        "title": "Binary二值化预处理器",
+        "title": "Binary二値化前処理",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
             "threshold": "閾値",
-            "bin_threshold": "閾値"
+            "bin_threshold": "閾値",
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "PiDiNetPreprocessor": {
-        "title": "PidiNetぼかし线预处理器",
+        "title": "PidiNetぼかし線前処理",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
-            "safe": "增稳",
-                "disable": "無効",
-                "enable": "有効"
+            "safe": "安定",
+                "disable": "閉",
+                "enable": "開",
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "LineArtPreprocessor": {
-        "title": "LineArt艺术线预处理器",
+        "title": "LineArt艺术線前処理",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
             "coarse": "粗糙化",
-                "disable": "無効",
-                "enable": "有効"
+                "disable": "閉",
+                "enable": "開",
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "AnimeLineArtPreprocessor": {
-        "title": "AnimeLineArt动漫艺术线预处理器",
+        "title": "AnimeLineArt动漫艺术線前処理",
         "inputs": {
             "image": "图像"
+        },
+        "widgets": {
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "Manga2Anime-LineArtPreprocessor": {
-        "title": "Manga2Anime-LineArt漫画艺术线预处理器",
+        "title": "Manga2Anime-LineArt漫画艺术線前処理",
         "inputs": {
             "image": "图像"
+        },
+        "widgets": {
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "CannyEdgePreprocessor": {
-        "title": "Canny细致线预处理器",
+        "title": "Canny细致線前処理",
         "inputs": {
             "image": "图像"
         },
@@ -105,21 +119,23 @@
             "low_threshold": "低閾値",
             "high_threshold": "高閾値",
             "l2gradient": "L2范数",
-                "disable": "無効",
-                "enable": "有効"
+                "disable": "閉",
+                "enable": "開",
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "M-LSDPreprocessor": {
-        "title": "M-LSD线段预处理器",
+        "title": "M-LSD線段前処理",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
             "score_threshold": "刻痕閾値",
-            "dist_threshold": "距离閾値"
+            "dist_threshold": "距离閾値",
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -130,58 +146,67 @@
 
 
     "MiDaS-DepthMapPreprocessor": {
-        "title": "MiDaS深度预处理器",
+        "title": "MiDaSふかみ前処理",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
             "a": "角度",
-            "bg_threshold": "背景閾値"
+            "bg_threshold": "背景閾値",
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "MiDaS-NormalMapPreprocessor": {
-        "title": "MiDaS法向预处理器",
+        "title": "MiDaSほうへい前処理",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
             "a": "角度",
-            "bg_threshold": "背景閾値"
+            "bg_threshold": "背景閾値",
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "LeReS-DepthMapPreprocessor": {
-        "title": "LeReS深度预处理器",
+        "title": "LeReSふかみ前処理",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
             "rm_nearest": "前景移除",
             "rm_background": "背景移除",
-            "boost": "强化"
+            "boost": "强化",
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "BAE-NormalMapPreprocessor": {
-        "title": "BAE法向预处理器",
+        "title": "BAEほうへい前処理",
         "inputs": {
             "image": "图像"
+        },
+        "widgets": {
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "Zoe-DepthMapPreprocessor": {
-        "title": "Zoe深度预处理器",
+        "title": "Zoeふかみ前処理",
         "inputs": {
             "image": "图像"
+        },
+        "widgets": {
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -192,32 +217,34 @@
 
 
     "OpenposePreprocessor": {
-        "title": "Openpose姿勢预处理器",
+        "title": "Openpose姿勢前処理",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
-            "detect_hand": "检测手部",
-            "detect_body": "检测身体",
-            "detect_face": "检测面部",
-                "enable": "有効",
-                "disable": "無効",
-            "version": "版本"
+            "detect_hand": "発見手部",
+            "detect_body": "発見体",
+            "detect_face": "発見顔面",
+                "enable": "開",
+                "disable": "閉",
+            "version": "版本",
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "MediaPipe-HandPosePreprocessor": {
-        "title": "MediaPipe姿勢预处理器",
+        "title": "MediaPipe姿勢前処理",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
-            "detect_pose": "检测姿勢",
-            "detect_hands": "检测手部",
-                "enable": "有効",
-                "disable": "無効"
+            "detect_pose": "発見姿勢",
+            "detect_hands": "発見手部",
+                "enable": "開",
+                "disable": "閉",
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -228,36 +255,48 @@
 
 
     "SemSegPreprocessor": {
-        "title": "Semセグメント预处理器",
+        "title": "Semセグメント前処理",
         "inputs": {
             "image": "图像"
+        },
+        "widgets": {
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "UniFormer-SemSegPreprocessor": {
-        "title": "UniFormerセグメント预处理器",
+        "title": "UniFormerセグメント前処理",
         "inputs": {
             "image": "图像"
+        },
+        "widgets": {
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "OneFormer-COCO-SemSegPreprocessor": {
-        "title": "OF-COCOセグメント预处理器",
+        "title": "OF-COCOセグメント前処理",
         "inputs": {
             "image": "图像"
+        },
+        "widgets": {
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "OneFormer-ADE20K-SemSegPreprocessor": {
-        "title": "OF-ADE20Kセグメント预处理器",
+        "title": "OF-ADE20Kセグメント前処理",
         "inputs": {
             "image": "图像"
+        },
+        "widgets": {
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -268,60 +307,64 @@
 
 
     "MediaPipe-FaceMeshPreprocessor": {
-        "title": "MediaPipe面部网格预处理器",
+        "title": "MediaPipe顔面网格前処理",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
-            "max_faces": "最大面部数量",
-            "min_confidence": "最小置信度"
+            "max_faces": "最大顔面量",
+            "min_confidence": "最小置信度",
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "ColorPreprocessor": {
-        "title": "Color颜色预处理器",
+        "title": "Color色前処理",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
-            "resolution": "分辨率"
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "TilePreprocessor": {
-        "title": "Tile平铺预处理器",
+        "title": "Tileタイル前処理",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
-            "pyrUp_iters": "迭代次数"
+            "pyrUp_iters": "迭代次数",
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "InpaintPreprocessor": {
-        "title": "Inpaint内补预处理器",
+        "title": "Inpaint内补前処理",
         "inputs": {
             "image": "图像",
-            "mask": "マスク"
+            "mask": "遮罩"
         },
         "widgets": {
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "ShufflePreprocessor": {
-        "title": "Shuffle内容重组预处理器",
+        "title": "Shuffle内容重组前処理",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
+            "resolution": "解像度"
         },
         "outputs": {
             "IMAGE": "图像"

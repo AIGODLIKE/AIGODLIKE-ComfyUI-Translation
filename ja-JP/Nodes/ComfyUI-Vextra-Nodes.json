@@ -1,6 +1,6 @@
 {
     "Flatten Colors": {
-        "title": "平化颜色",
+        "title": "平化色",
         "inputs": {
             "images": "图像"
         },
@@ -22,12 +22,12 @@
             "x": "X",
             "y": "Y",
             "text": "テキスト",
-            "color": "颜色",
+            "color": "色",
             "anchor": "锚点",
                 "Bottom Left Corner": "左下角",
                 "Center": "中心",
             "rotate": "回転",
-            "color_mode": "颜色模式"
+            "color_mode": "色模式"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -52,9 +52,9 @@
             "images": "图像"
         },
         "widgets": {
-            "glitch_回数": "故障数量",
-            "color_offset": "颜色偏移",
-            "scane_lines": "扫描线",
+            "glitch_回数": "故障量",
+            "color_offset": "色偏移",
+            "scane_lines": "扫描線",
                 "Disable": "無効",
                 "Enable": "有効",
             "seed": "乱数種",
@@ -180,21 +180,21 @@
         "widgets": {
             "width": "幅",
             "height": "高さ",
-            "color": "颜色",
+            "color": "色",
             "batch_size": "バッチサイズ",
-            "color_mode": "颜色模式"
+            "color_mode": "色模式"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "Swap Color Mode": {
-        "title": "切换颜色模式",
+        "title": "切换色模式",
         "inputs": {
             "images": "图像"
         },
         "widgets": {
-            "color_mode": "颜色模式"
+            "color_mode": "色模式"
         },
         "outputs": {
             "IMAGE": "图像"

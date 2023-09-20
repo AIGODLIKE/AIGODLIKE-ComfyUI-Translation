@@ -81,7 +81,7 @@
         }
     },
     "BNK_SlerpLatent": {
-        "title": "Latent插值",
+        "title": "Latent插値",
         "inputs": {
         "latents1": "Latent1",
         "latents2": "Latent2",

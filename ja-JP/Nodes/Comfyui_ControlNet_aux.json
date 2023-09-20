@@ -1,6 +1,6 @@
 {
     "Manga2Anime_LineArt_Preprocessor": {
-        "title": "MangaAnime漫画艺术线预处理器",
+        "title": "MangaAnime漫画艺术線前処理",
         "inputs": {
             "image": "图像"
         },
@@ -9,21 +9,21 @@
         }
     },
     "DWPreprocessor": {
-        "title": "DW姿勢预处理器",
+        "title": "DW姿勢前処理",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
-            "detect_hand": "检测手部",
-            "detect_body": "检测身体",
-            "detect_face": "检测面部"
+            "detect_hand": "発見手部",
+            "detect_body": "発見体",
+            "detect_face": "発見顔面"
         },
         "outputs": {
             "IMAGE": "图像"
         }
     },
     "Scribble_XDoG_Preprocessor": {
-        "title": "ScribbleXDoG涂鸦预处理器",
+        "title": "ScribbleXDoG落書前処理",
         "inputs": {
             "image": "图像"
         },
@@ -44,7 +44,7 @@
         }
     },
     "SAMPreprocessor": {
-        "title": "SAM预处理器",
+        "title": "SAM前処理",
         "inputs": {
             "image": "图像"
         },
@@ -53,43 +53,43 @@
         }
     },
     "AIO_Preprocessor": {
-        "title": "Aux集成预处理器",
+        "title": "Aux集成前処理",
         "inputs": {
             "image": "图像"
         },
         "widgets": {
-            "preprocessor": "预处理器",
-                "HEDPreprocessor": "HEDぼかし线预处理器",
-                "ScribblePreprocessor": "Scribble涂鸦预处理器",
-                "FakeScribblePreprocessor": "FakeScribble伪涂鸦预处理器",
-                "BinaryPreprocessor": "Binary二值化预处理器",
-                "PiDiNetPreprocessor": "PidiNetぼかし线预处理器",
-                "LineArtPreprocessor": "LineArt艺术线预处理器",
-                "AnimeLineArtPreprocessor": "AnimeLineArt动漫艺术线预处理器",
-                "Manga2Anime-LineArtPreprocessor": "Manga2Anime-LineArt漫画艺术线预处理器",
-                "CannyEdgePreprocessor": "Canny细致线预处理器",
-                "M-LSDPreprocessor": "M-LSD线段预处理器",
-                "MiDaS-DepthMapPreprocessor": "MiDaS深度预处理器",
-                "MiDaS-NormalMapPreprocessor": "MiDaS法向预处理器",
-                "LeReS-DepthMapPreprocessor": "LeReS深度预处理器",
-                "BAE-NormalMapPreprocessor": "BAE法向预处理器",
-                "Zoe-DepthMapPreprocessor": "Zoe深度预处理器",
-                "OpenposePreprocessor": "Openpose姿勢预处理器",
-                "MediaPipe-HandPosePreprocessor": "MediaPipe姿勢预处理器",
-                "SemSegPreprocessor": "Semセグメント预处理器",
-                "UniFormer-SemSegPreprocessor": "UniFormerセグメント预处理器",
-                "OneFormer-COCO-SemSegPreprocessor": "OF-COCOセグメント预处理器",
-                "OneFormer-ADE20K-SemSegPreprocessor": "OF-ADE20Kセグメント预处理器",
-                "MediaPipe-FaceMeshPreprocessor": "MediaPipe面部网格预处理器",
-                "ColorPreprocessor": "Color颜色预处理器",
-                "TilePreprocessor": "Tile平铺预处理器",
-                "InpaintPreprocessor": "Inpaint内补预处理器",
-                "ShufflePreprocessor": "Shuffle内容重组预处理器",
+            "preprocessor": "前処理",
+                "HEDPreprocessor": "HEDぼかし線前処理",
+                "ScribblePreprocessor": "Scribble落書前処理",
+                "FakeScribblePreprocessor": "FakeScribble伪落書前処理",
+                "BinaryPreprocessor": "Binary二値化前処理",
+                "PiDiNetPreprocessor": "PidiNetぼかし線前処理",
+                "LineArtPreprocessor": "LineArt艺术線前処理",
+                "AnimeLineArtPreprocessor": "AnimeLineArt动漫艺术線前処理",
+                "Manga2Anime-LineArtPreprocessor": "Manga2Anime-LineArt漫画艺术線前処理",
+                "CannyEdgePreprocessor": "Canny细致線前処理",
+                "M-LSDPreprocessor": "M-LSD線段前処理",
+                "MiDaS-DepthMapPreprocessor": "MiDaSふかみ前処理",
+                "MiDaS-NormalMapPreprocessor": "MiDaSほうへい前処理",
+                "LeReS-DepthMapPreprocessor": "LeReSふかみ前処理",
+                "BAE-NormalMapPreprocessor": "BAEほうへい前処理",
+                "Zoe-DepthMapPreprocessor": "Zoeふかみ前処理",
+                "OpenposePreprocessor": "Openpose姿勢前処理",
+                "MediaPipe-HandPosePreprocessor": "MediaPipe姿勢前処理",
+                "SemSegPreprocessor": "Semセグメント前処理",
+                "UniFormer-SemSegPreprocessor": "UniFormerセグメント前処理",
+                "OneFormer-COCO-SemSegPreprocessor": "OF-COCOセグメント前処理",
+                "OneFormer-ADE20K-SemSegPreprocessor": "OF-ADE20Kセグメント前処理",
+                "MediaPipe-FaceMeshPreprocessor": "MediaPipe顔面网格前処理",
+                "ColorPreprocessor": "Color色前処理",
+                "TilePreprocessor": "Tileタイル前処理",
+                "InpaintPreprocessor": "Inpaint内补前処理",
+                "ShufflePreprocessor": "Shuffle内容重组前処理",
                 "Manga2Anime_LineArt_Preprocessor": "",
-                "DWPreprocessor": "DW姿勢预处理器",
-                "Scribble_XDoG_Preprocessor": "ScribbleXDoG涂鸦预处理器",
+                "DWPreprocessor": "DW姿勢前処理",
+                "Scribble_XDoG_Preprocessor": "ScribbleXDoG落書前処理",
                 "SAM Segmentor": "SAM分割",
-                "SAMPreprocessor": "SAM预处理器"
+                "SAMPreprocessor": "SAM前処理"
         },
         "outputs": {
             "IMAGE": "图像"

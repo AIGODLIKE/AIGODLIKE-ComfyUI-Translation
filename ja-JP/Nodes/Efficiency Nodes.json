@@ -557,7 +557,7 @@
     "XY Input: Steps": {
         "title": "ステップ数",
         "widgets": {
-            "selection_count": "選択数量"
+            "selection_count": "選択量"
         }
     },
     "XY Input: Start at Step": {
@@ -589,7 +589,7 @@
                 "sampler": "采样器",
                 "scheduler": "スケジューラ",
                 "sampler & scheduler": "采样和调度",
-            "input_count": "输入数量",
+            "input_count": "输入量",
             "sampler_1": "采样器_1",
             "sampler_2": "采样器_2",
             "sampler_3": "采样器_3",
@@ -720,7 +720,7 @@
     "XY Input: Denoise": {
         "title": "ノイズ除去",
         "widgets": {
-            "select_count": "選択数量",
+            "select_count": "選択量",
             "first_denoise": "初始ノイズ除去",
             "end_denoise": "最终ノイズ除去"
         }
@@ -740,7 +740,7 @@
         "widgets": {
             "target_prompt": "目標提示词",
             "search_txt": "检索",
-            "replace_count": "替换数量",
+            "replace_count": "替换量",
             "replace_1": "替换_1",
             "replace_2": "替换_2",
             "replace_3": "替换_3",
@@ -797,7 +797,7 @@
         "title": "替换正面",
         "widgets": {
             "search_txt": "检索",
-            "replace_count": "替换数量",
+            "replace_count": "替换量",
             "replace_1": "替换1",
             "replace_2": "替换2",
             "replace_3": "替换3",
@@ -809,7 +809,7 @@
         "title": "替换负面",
         "widgets": {
             "search_txt": "检索",
-            "replace_count": "替换数量",
+            "replace_count": "替换量",
             "replace_1": "替换1",
             "replace_2": "替换2",
             "replace_3": "替换3",
@@ -886,15 +886,15 @@
             "lora_name": "LoRA",
             "model_strength": "モデル权重",
             "clip_strength": "CLIP权重",
-            "X_batch_count": "X数量",
+            "X_batch_count": "X量",
             "X_batch_path": "X路径",
             "X_subdirectories": "X子文件夹",
             "X_batch_sort": "X排序",
-            "X_first_value": "X初始值",
-            "X_last_value": "X最终值",
-            "Y_batch_count": "Y数量",
-            "Y_first_value": "Y初始值",
-            "Y_last_value": "Y最终值"
+            "X_first_value": "X初始値",
+            "X_last_value": "X最终値",
+            "Y_batch_count": "Y量",
+            "Y_first_value": "Y初始値",
+            "Y_last_value": "Y最终値"
         }
     },
     "XY Input: LoRA Adv.": {
@@ -969,12 +969,12 @@
             "strength": "強度",
             "start_percent": "開始引导时间",
             "end_percent": "終了引导时间",
-            "X_batch_count": "X数量",
-            "X_first_value": "X初始值",
-            "X_last_value": "X最终值",
-            "Y_batch_count": "Y数量",
-            "Y_first_value": "Y初始值",
-            "Y_last_value": "Y最终值"
+            "X_batch_count": "X量",
+            "X_first_value": "X初始値",
+            "X_last_value": "X最终値",
+            "Y_batch_count": "Y量",
+            "Y_first_value": "Y初始値",
+            "Y_last_value": "Y最终値"
         }
     },
     "XY Input: Control Net Strengths": {
@@ -994,9 +994,9 @@
         "title": "手动输入",
         "widgets": {
             "X_type": "X类型",
-            "X_value": "X值",
+            "X_value": "X値",
             "Y_type": "Y类型",
-            "Y_value": "Y值"
+            "Y_value": "Y値"
         }
     },
     "Manual XY Entry Info": {
