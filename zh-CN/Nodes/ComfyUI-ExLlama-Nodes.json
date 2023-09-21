@@ -1,0 +1,47 @@
+{
+    "ZuellniExLlamaLoader": {
+        "title": "ExLLaMA加载器",
+        "widgets": {
+            "model_dir": "模型路径",
+            "max_seq_len": "最大序列长度"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "ZuellniExLlamaGenerator": {
+        "title": "ExLLaMA生成器",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "lora_dir": "LoRA路径",
+            "stop_on_newline": "换行停止",
+            "temperature": "温度",
+            "max_tokens": "最大Token数量",
+            "top_k": "top_k",
+            "top_l": "top_l",
+            "typical": "typical",
+            "penalty": "重复惩罚",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "Prompt": "提示词"
+        },
+        "outputs": {
+            "TEXT": "文本"
+        }
+    },
+    "ZuellniExLlamaPreviewer": {
+        "title": "ExLLaMA预览文本",
+        "inputs": {
+            "text": "文本"
+        },
+        "widgets": {
+            "text": "文本"
+        }
+    }
+}
