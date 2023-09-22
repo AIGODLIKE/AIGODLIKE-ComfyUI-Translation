@@ -2694,7 +2694,7 @@
         }
     },
     "Text Find and Replace Input": {
-        "title": "文本输入替换",
+        "title": "文本搜索替换",
         "inputs": {
             "text": "文本",
             "find": "目标",
@@ -2702,7 +2702,11 @@
             "dictionary": "字典"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "字符串",
+            "result_text": "文本",
+            "replacement_count_number": "替换数量(数字)",
+            "replacement_count_float": "替换数量(浮点)",
+            "replacement_count_int": "替换数量(整数)"
         }
     },
     "Text Find and Replace": {

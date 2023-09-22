@@ -108,6 +108,40 @@
             "Seg": "Seg"
         }
     },
+    "ImpactFrom_SEG_ELT": {
+        "title": "从Seg_ELT",
+        "inputs": {
+            "seg_elt": "Seg_ELT"
+        },
+        "outputs": {
+            "seg_elt": "Seg_ELT",
+            "cropped_image": "裁剪图像",
+            "cropped_mask": "裁剪遮罩",
+            "crop_region": "裁剪区域",
+            "bbox": "BBox",
+            "control_net_wrapper": "ControlNet置换",
+            "confidence": "置信度",
+            "label": "标签"
+        }
+    },
+    "ImpactEdit_SEG_ELT": {
+        "title": "编辑Seg_ELT",
+        "inputs": {
+            "seg_elt": "Seg_ELT",
+            "cropped_image": "裁剪图像",
+            "cropped_mask": "裁剪遮罩",
+            "crop_region": "裁剪区域",
+            "bbox": "BBox",
+            "control_net_wrapper": "ControlNet置换"
+        },
+        "widgets": {
+            "confidence_opt": "置信度",
+            "label_opt": "标签"
+        },
+        "outputs": {
+            "SEG_ELT": "Seg_ELT"
+        }
+    },
     "ImpactDilate_Mask_SEG_ELT": {
         "title": "SegELT膨胀",
         "inputs": {
