@@ -1947,7 +1947,7 @@
         }
     },
     "RegionalSampler": {
-        "title": "区域采样",
+        "title": "区域采样器",
         "inputs": {
             "samples": "Latent",
             "base_sampler": "K采样器(高级)",
@@ -1962,7 +1962,36 @@
                 "randomize": "随机",
             "steps": "步数",
             "denoise": "降噪",
+            "restore_latent": "临时Latent",
             "overlap_factor": "覆盖系数"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "RegionalSamplerAdvanced": {
+        "title": "区域采样器(高级)",
+        "inputs": {
+            "samples": "Latent",
+            "latent_image": "Latent",
+            "base_sampler": "K采样器(高级)",
+            "regional_prompts": "区域提示词"
+        },
+        "widgets": {
+            "add_noise": "添加噪波",
+            "seed": "随机种",
+            "noise_seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "start_at_step": "开始降噪步数",
+            "end_at_step": "结束降噪步数",
+            "overlap_factor": "覆盖系数",
+            "restore_latent": "临时Latent",
+            "return_with_leftover_noise": "返回噪波"
         },
         "outputs": {
             "LATENT": "Latent"
