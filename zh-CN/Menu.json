@@ -1305,5 +1305,11 @@
     "MEAN": "平均",
     "ZERO": "零",
     "AD": "绝对差值",
-    "STD": "标准差值"
+    "STD": "标准差值",
+
+    "aux": "aux",
+    
+    "Just Resize": "仅拉伸",
+    "Crop and Resize": "裁剪并拉伸",
+    "Resize and Fill": "拉伸并填充"
 }

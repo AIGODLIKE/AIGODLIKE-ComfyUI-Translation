@@ -106,5 +106,74 @@
         "outputs": {
             "IMAGE": "图像"
         }
+    },
+    "RaftOpticalFlowPreprocessor": {
+        "title": "RAFT光流预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "model_filename": "模型名",
+            "num_flow_updates": "光流数",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "SIX_CHANNEL_IMAGE": "六通道图像",
+            "OPTICAL_FLOW_PREVIEW": "光流预览"
+        }
+    },
+    "PixelPerfectResolution": {
+        "title": "完美像素",
+        "inputs": {
+            "original_image": "图像"
+        },
+        "widgets": {
+            "image_gen_width": "宽度",
+            "image_gen_height": "高度",
+            "resize_mode": "拉伸模式",
+                "Just Resize": "仅拉伸",
+                "Crop and Resize": "裁剪并拉伸",
+                "Resize and Fill": "拉伸并填充"
+        },
+        "outputs": {
+            "RESOLUTION (INT)": "分辨率(整数)"
+        }
+    },
+    "ImageGenResolutionFromImage": {
+        "title": "图像分辨率",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE_GEN_WIDTH (INT)": "宽度(整数)",
+            "IMAGE_GEN_HEIGHT (INT)": "高度(整数)"
+        }
+    },
+    "ImageGenResolutionFromLatent": {
+        "title": "Latent分辨率",
+        "inputs": {
+            "latent": "Latent"
+        },
+        "outputs": {
+            "IMAGE_GEN_WIDTH (INT)": "宽度(整数)",
+            "IMAGE_GEN_HEIGHT (INT)": "高度(整数)"
+        }
+    },
+    "HintImageEnchance": {
+        "title": "图像提示增强",
+        "inputs": {
+            "hint_image": "提示图像"
+        },
+        "widgets": {
+            "image_gen_width": "宽度",
+            "image_gen_height": "高度",
+            "resize_mode": "拉伸模式",
+                "Just Resize": "仅拉伸",
+                "Crop and Resize": "裁剪并拉伸",
+                "Resize and Fill": "拉伸并填充"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
     }
 }
