@@ -2,6 +2,12 @@
     "PromptGenerator": {
         "title": "提示词生成",
         "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
             "subject": "主体",
             "artform": "艺术形式",
                 "photography": "照片",
@@ -468,7 +474,9 @@
             "lighting": "光源"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "字符串",
+            "prompt": "提示词",
+            "seed": "随机种"
         }
     },
     "CSL": {
