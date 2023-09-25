@@ -5,7 +5,7 @@
             "model": "模型"
         },
         "widgets": {
-            "mimic_cfg": "模拟CFG",
+            "mimic_scale": "模拟CFG",
             "threshold_percentile": "阈值百分比"
         },
         "outputs": {
@@ -18,7 +18,7 @@
             "model": "模型"
         },
         "widgets": {
-            "mimic_cfg": "模拟CFG",
+            "mimic_scale": "模拟CFG",
             "threshold_percentile": "阈值百分比",
             "mimic_mode": "模拟模式",
                 "Constant": "常数",
