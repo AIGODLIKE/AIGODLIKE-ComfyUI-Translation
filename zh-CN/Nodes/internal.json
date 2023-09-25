@@ -998,6 +998,9 @@
             "samples": "Latent",
             "vae": "VAE"
         },
+        "widgets": {
+            "tile_size": "分块尺寸"
+        },
         "outputs": {
             "IMAGE": "图像"
         }
@@ -1007,6 +1010,9 @@
         "inputs": {
             "pixels": "图像",
             "vae": "VAE"
+        },
+        "widgets": {
+            "tile_size": "分块尺寸"
         },
         "outputs": {
             "LATENT": "Latent"
@@ -1030,7 +1036,8 @@
             "samples": "Latent"
         },
         "widgets": {
-            "samples": "Latent"
+            "samples": "Latent",
+            "latent": "Latent"
         }
     },
     "LoadLatent": {

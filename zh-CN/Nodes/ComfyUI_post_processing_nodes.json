@@ -51,7 +51,9 @@
         "title": "减淡加深",
         "inputs": {
             "image1": "图像1",
-            "image2": "图像2"
+            "image2": "图像2",
+            "image": "图像",
+            "mask": "遮罩"
         },
         "widgets": {
             "intensity": "强度",
@@ -89,7 +91,8 @@
         "title": "色差偏移",
         "inputs": {
             "image1": "图像1",
-            "image2": "图像2"
+            "image2": "图像2",
+            "image": "图像"
         },
         "widgets": {
             "red_shift": "红移",
@@ -178,7 +181,7 @@
             "image": "图像"
         },
         "widgets": {
-            "Vignette": "强度"
+            "Vignette": "暗角"
         },
         "outputs": {
             "IMAGE": "图像"

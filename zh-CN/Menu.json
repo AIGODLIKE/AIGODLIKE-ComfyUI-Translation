@@ -139,6 +139,8 @@
     "area": "区域",
     "bislerp": "球面线性",
     "bicubic": "双三次插值",
+    "sdn_width": "宽度",
+    "sdn_height": "高度",
 
     "Open in MaskEditor": "在遮罩编辑器中打开",
 
@@ -1230,5 +1232,38 @@
     "YlGn": "黄绿",
     "YlGnBu": "黄绿蓝",
     "YlOrBr": "黄橙",
-    "YlOrRd": "黄橙红"
+    "YlOrRd": "黄橙红",
+
+    "select_on_execution": "运行",
+    "select_on_prompt": "提示词",
+    "all": "全部",
+    "hand": "手部",
+    "face": "面部",
+    "mouth": "嘴部",
+    "eyes": "眼睛",
+    "eyebrows": "眉毛",
+    "left_eyebrow": "左眉毛",
+    "left_eye": "左眼",
+    "left_pupil": "左瞳孔",
+    "right_eyebrow": "右眉毛",
+    "right_eye": "右眼",
+    "right_pupil": "右瞳孔",
+    "short_sleeved_shirt": "短袖衬衫",
+    "long_sleeved_shirt": "长袖衬衫",
+    "short_sleeved_outwear": "短袖外套",
+    "long_sleeved_outwear": "长袖外套",
+    "vest": "背心",
+    "sling": "吊带",
+    "shorts": "短裤",
+    "trousers": "长裤",
+    "skirt": "裙子",
+    "short_sleeved_dress": "短袖连衣裙",
+    "long_sleeved_dress": "长袖连衣裙",
+    "vest_dress": "背心连衣裙",
+    "sling_dress": "吊带连衣裙",
+
+    "inside": "内部",
+    "outside": "外部",
+    "ascending": "升序",
+    "descending": "降序"
 }

@@ -189,10 +189,13 @@
     "Tensor Batch to Image": {
         "title": "选取图像",
         "inputs": {
-            "inmages_batch": "图像"
+            "images_batch": "图像"
         },
         "widgets": {
             "batch_image_number": "序号"
+        },
+        "outputs": {
+            "IMAGE": "图像"
         }
     },
     "Blend Latents": {
@@ -204,6 +207,9 @@
         "widgets": {
             "operation": "混合方法",
             "blend": "系数"
+        },
+        "outputs": {
+            "LATENT": "Latent"
         }
     },
     
@@ -421,7 +427,7 @@
         }
     },
     "Image Aspect Ratio": {
-        "title": "图像长宽比",
+        "title": "图像宽高比",
         "inputs": {
             "image": "图像",
             "width": "宽度",
@@ -431,8 +437,8 @@
             "aspect_number": "比率数字",
             "aspect_float": "比率浮点",
             "is_landscape_bool": "是横图",
-            "aspect_ratio_common": "aspect_ratio_common",
-            "aspect_type": "长宽比类型"
+            "aspect_ratio_common": "常用宽高比",
+            "aspect_type": "宽高比类型"
         }
     },
     "Image Input Switch": {
