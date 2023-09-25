@@ -57,6 +57,8 @@
     "Prompt for filename when saving workflow": "保存工作流时是否需要填入文件名",
     "When displaying a preview in the image widget, convert it to a lightweight image, e.g. webp, jpeg, webp;50, etc.": "轻量化图像组件中的预览图象, 如webp, jpeg等",
     "Disable sliders.": "禁用滑块",
+    "Disable rounding floats (requires page reload).": "禁用浮点舍入(需重载页面)",
+    "Decimal places [0 = auto] (requires page reload).": "小数位[0=自动](需重载页面)",
     "Enable Dev mode Options": "启用开发模式选项",
     "Save menu position": "保存菜单位置",
     "Logging": "日志",
@@ -202,6 +204,8 @@
     "Installed": "已安装",
     "Disable": "关闭",
     "Enable": "启用",
+    "disable": "关闭",
+    "enable": "启用",
     "Base": "基模",
     "Name": "名称",
     "Filename": "文件名",
@@ -234,6 +238,8 @@
     "output only (tiled)": "仅输出(分块)",
 
 
+
+    "Alek": "Alek",
 
     "af": "南非荷兰语",
     "sq": "阿尔巴尼亚语",
@@ -348,7 +354,7 @@
     "arabic": "阿拉伯语",
     "armenian": "亚美尼亚语",
     "azerbaijani": "阿塞拜疆语",
-    "assamesa": "阿萨姆语",
+    "assamese": "阿萨姆语",
     "aymara": "艾马拉语",
     "bambara": " 班巴拉语",
     "basque": "巴斯克语",
@@ -481,17 +487,23 @@
     "ChatGptTranslator [api-key]": "ChatGPT [API]",
     "DeeplTranslator": "DeepL",
     "GoogleTranslator": "Google",
+    "GoogleTranslator [free]": "Google [免费]",
     "LibreTranslator": "Libre",
+    "LibreTranslator [free or api_key]": "Libre [免费或API]",
     "LingueeTranslator [word(s) only]": "Linguee [仅字词]",
+    "LingueeTranslator [free - word(s) only]": "Linguee [免费-仅字词]",
     "MyMemoryTranslator": "MyMemory",
+    "MyMemoryTranslator [free]": "MyMemory [免费]",
     "MicrosoftTranslator [api-key]": "微软 [API]",
     "PapagoTranslator [client_id, secret_key]": "Papago [用户ID,密钥]",
-    "PonsTranslator": "Pons [仅字词]",
     "PonsTranslator [word(s) only]": "Pons [仅字词]",
+    "PonsTranslator [free - word(s) only]": "Pons [免费-仅字词]",
     "QcriTranslator [api-key]": "QCRI [API]",
+    "QcriTranslator [free or api_key]": "QCRI [免费或API]",
     "YandexTranslator [api-key]": "Yandex [API]",
 
 
+    "Dagtho": "Dagtho",
     
     "base": "基础",
     "sai-3d-model": "SAI-3D模型",
@@ -1055,6 +1067,9 @@
     "rendered in a 2.5D isometric perspective. Soft gradients add dimension, pastel color scheme": "等距粉彩",
     "in a labrendered in a 2.5D isometric perspective. Soft gradients add dimension, pastel color scheme": "等距粉彩实验室",
 
+
+    "CustomScript": "CustomScript",
+
     "Arrange (float left)": "对齐到左侧",
     "Arrange (float right)": "对齐到右侧",
     "Follow execution": "跟随运行",
@@ -1104,6 +1119,9 @@
         "Node Class": "节点名",
         "Widget Name": "组件名",
         "Default Value": "默认值",
+    "🐍 Widget & Property Defaults:": "组件默认属性",
+        "e.g. CheckpointLoaderSimple": "例：Checkpoint加载器(简易)",
+    "🐍 Default Workflow": "默认工作流",
     "🐍 Image Feed Location:": "图像面板位置",
         "bottom": "下",
         "top": "上",
@@ -1120,7 +1138,9 @@
     "Add New": "添加",
     "[None]": "空",
 
-  
+
+    "CR": "CR",
+
     "On": "开",
     "Off": "关",
     "custom": "自定义",
@@ -1265,5 +1285,31 @@
     "inside": "内部",
     "outside": "外部",
     "ascending": "升序",
-    "descending": "降序"
+    "descending": "降序",
+
+
+    "DynThr": "DynThr",
+
+    "Constant": "常数",
+    "Sawtooth": "锯齿波",
+    "Cosine Repeating": "余弦循环",
+    "Linear Repeating": "线性循环",
+    "Power Down": "幂函数下降",
+    "Power Up": "幂函数上升",
+    "Half Cosine Up": "半余弦上升",
+    "Cosine Up": "余弦上升",
+    "Linear Up": "线性上升",
+    "Half Cosine Down": "半余弦下降",
+    "Consine Down": "余弦下降",
+    "Linear Down": "线性下降",
+    "MEAN": "平均",
+    "ZERO": "零",
+    "AD": "绝对差值",
+    "STD": "标准差值",
+
+    "aux": "aux",
+    
+    "Just Resize": "仅拉伸",
+    "Crop and Resize": "裁剪并拉伸",
+    "Resize and Fill": "拉伸并填充"
 }

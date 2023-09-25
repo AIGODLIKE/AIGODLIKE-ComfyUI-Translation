@@ -535,7 +535,7 @@
     "LatentMultiply": {
         "title": "Latent相乘",
         "inputs": {
-            "samples1": "Latent"
+            "samples": "Latent"
         },
         "widgets": {
             "multiplier": "系数"

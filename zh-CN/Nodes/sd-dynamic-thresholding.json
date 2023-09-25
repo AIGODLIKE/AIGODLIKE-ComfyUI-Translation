@@ -1,0 +1,53 @@
+{
+    "DynamicThresholdingSimple": {
+        "title": "动态阈值(简易)",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "mimic_scale": "模拟CFG",
+            "threshold_percentile": "阈值百分比"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "DynamicThresholdingFull": {
+        "title": "动态阈值",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "mimic_scale": "模拟CFG",
+            "threshold_percentile": "阈值百分比",
+            "mimic_mode": "模拟模式",
+                "Constant": "常数",
+                "Sawtooth": "锯齿波",
+                "Cosine Repeating": "余弦循环",
+                "Linear Repeating": "线性循环",
+                "Power Down": "幂函数下降",
+                "Power Up": "幂函数上升",
+                "Half Cosine Up": "半余弦上升",
+                "Cosine Up": "余弦上升",
+                "Linear Up": "线性上升",
+                "Half Cosine Down": "半余弦下降",
+                "Consine Down": "余弦下降",
+                "Linear Down": "线性下降",
+            "mimic_scale_min": "最小模拟",
+            "cfg_mode": "CFG模式",
+            "cfg_scale_min": "最小CFG",
+            "sched_val": "调度定义值",
+            "separate_feature_channels": "区分通道",
+            "scaling_startpoint": "缩放起始点",
+                "MEAN": "平均",
+                "ZERO": "零",
+            "variability_measure": "变量检测",
+                "AD": "绝对差值",
+                "STD": "标准差值",
+            "interpolate_phi": "混合插值"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    }
+}
