@@ -21,6 +21,18 @@
             "LORA": "LoRA"
         }
     },
+    "ZuellniExLlamaLora": {
+        "title": "ExLLaMALoRA加载器",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "lora_dir": "LoRA路径"
+        },
+        "outputs": {
+            "LORA": "LoRA"
+        }
+    },
     "ZuellniExLlamaGenerator": {
         "title": "ExLLaMA生成器",
         "inputs": {
@@ -42,6 +54,7 @@
                 "increment": "增加",
                 "decrement": "减少",
                 "randomize": "随机",
+            "prompt": "提示词",
             "Prompt": "提示词",
             "PROMPT": "提示词"
         },
