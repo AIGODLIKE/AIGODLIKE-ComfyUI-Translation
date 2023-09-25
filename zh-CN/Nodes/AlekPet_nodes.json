@@ -11,7 +11,8 @@
     "PainterNode": {
         "title": "绘画",
         "widgets": {
-            "image": "图像"
+            "image": "图像",
+            "Clear Canvas": "清除画布"
         },
         "outputs": {
             "IMAGE": "图像",
@@ -21,7 +22,9 @@
     "PoseNode": {
         "title": "姿态",
         "widgets": {
-            "image": "图像"
+            "image": "图像",
+            "Add pose": "添加姿势",
+            "Reset pose": "重置姿势"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -146,7 +149,8 @@
             "text": "文本"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "条件",
+            "STRING": "字符串"
         }
     },
     "DeepTranslatorCLIPTextEncodeNode": {
@@ -300,18 +304,26 @@
                 "ChatGptTranslator [api-key]": "ChatGPT [API]",
                 "DeeplTranslator": "DeepL",
                 "GoogleTranslator": "Google",
+                "GoogleTranslator [free]": "Google [免费]",
                 "LibreTranslator": "Libre",
+                "LibreTranslator [free or api_key]": "Libre [免费或API]",
                 "LingueeTranslator [word(s) only]": "Linguee [仅字词]",
+                "LingueeTranslator [free - word(s) only]": "Linguee [免费-仅字词]",
                 "MyMemoryTranslator": "MyMemory",
+                "MyMemoryTranslator [free]": "MyMemory [免费]",
                 "MicrosoftTranslator [api-key]": "微软 [API]",
                 "PapagoTranslator [client_id, secret_key]": "Papago [用户ID,密钥]",
                 "PonsTranslator [word(s) only]": "Pons [仅字词]",
+                "PonsTranslator [free - word(s) only]": "Pons [免费-仅字词]",
                 "QcriTranslator [api-key]": "QCRI [API]",
+                "QcriTranslator [free or api-key]": "QCRI [免费或API]",
                 "YandexTranslator [api-key]": "Yandex [API]",
             "text": "文本"
         },
         "outputs": {
-            "text": "文本"
+            "text": "文本",
+            "CONDITIONING": "条件",
+            "STRING": "字符串"
         }
     },
     "TranslateTextNode": {
@@ -337,7 +349,11 @@
             "proxies": "代理",
             "auth_data": "账户信息",
             "service": "服务",
-            "text": "文本"
+            "text": "文本",
+            "Show proxy": "显示代理",
+            "Hide proxy": "隐藏代理",
+            "Show authorization": "显示账户信息",
+            "Hide authorization": "隐藏账户信息"
         },
         "outputs": {
             "text": "文本"
