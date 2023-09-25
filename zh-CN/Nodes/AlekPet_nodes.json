@@ -14,7 +14,8 @@
             "image": "图像"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "图像",
+            "MASK": "遮罩"
         }
     },
     "PoseNode": {

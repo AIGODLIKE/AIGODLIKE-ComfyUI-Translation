@@ -54,7 +54,7 @@
         "widgets": {
             "glitch_amount": "故障数量",
             "color_offset": "颜色偏移",
-            "scane_lines": "扫描线",
+            "scan_lines": "扫描线",
                 "Disable": "关闭",
                 "Enable": "开启",
             "seed": "随机种",
@@ -166,10 +166,12 @@
                 "increment": "增加",
                 "decrement": "减少",
                 "randomize": "随机",
-            "prompt": "提示词"
+            "prompt": "提示词",
+            "Prompt": "提示词"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "图像",
+            "STRING": "字符串"
         }
     },
     "Create Solid Color": {

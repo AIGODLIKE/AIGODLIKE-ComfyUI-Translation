@@ -127,12 +127,12 @@
     "ImpactEdit_SEG_ELT": {
         "title": "编辑Seg_ELT",
         "inputs": {
-            "seg_elt": "Seg_ELT",
-            "cropped_image": "裁剪图像",
-            "cropped_mask": "裁剪遮罩",
-            "crop_region": "裁剪区域",
-            "bbox": "BBox",
-            "control_net_wrapper": "ControlNet置换"
+            "seg_elt_opt": "Seg_ELT",
+            "cropped_image_opt": "裁剪图像",
+            "cropped_mask_opt": "裁剪遮罩",
+            "crop_region_opt": "裁剪区域",
+            "bbox_opt": "BBox",
+            "control_net_wrapper_opt": "ControlNet置换"
         },
         "widgets": {
             "confidence_opt": "置信度",
@@ -252,7 +252,14 @@
             "mask3": "遮罩3",
             "images4": "图像4",
             "mask4": "遮罩4",
-            "select": "选择"
+            "select": "选择",
+            "mask1_opt": "遮罩1",
+            "images2_opt": "图像2",
+            "mask2_opt": "遮罩2",
+            "images3_opt": "图像3",
+            "mask3_opt": "遮罩3",
+            "images4_opt": "图像4",
+            "mask4_opt": "遮罩4"
         },
         "outputs": {
             "IMAGE" :"图像",
@@ -262,31 +269,39 @@
     "LatentSwitch": {
         "title": "Latent切换",
         "inputs": {
+            "input1": "输入1",
             "latent1": "Latent1",
             "latent2_opt": "Latent2",
             "latent3_opt": "Latent3",
             "latent4_opt": "Latent4"
         },
         "widgets": {
-            "select": "选择"
+            "select": "选择",
+            "sel_mode": "选择模式"
         },
         "outputs": {
-            "LATENT": "Latent"
+            "LATENT": "Latent",
+            "selected_value": "值",
+            "selected_label": "标签"
         }
     },
     "SEGSSwitch": {
         "title": "Seg切换",
         "inputs": {
+            "input1": "输入1",
             "Seg": "Seg1",
             "segs2_opt": "Seg2",
             "segs3_opt": "Seg3",
             "segs4_opt": "Seg4"
         },
         "widgets": {
-            "select": "选择"
+            "select": "选择",
+            "sel_mode": "选择模式"
         },
         "outputs": {
-            "SEGS": "Seg"
+            "SEGS": "Seg",
+            "selected_value": "值",
+            "selected_label": "标签"
         }
     },
     "ImpactSwitch": {
@@ -304,7 +319,9 @@
                 "select_on_prompt": "提示词"
         },
         "outputs": {
-            "*": "输出"
+            "*": "输出",
+            "selected_value": "值",
+            "selected_label": "标签"
         }
     },
     "ImpactInversedSwitch": {
@@ -370,7 +387,8 @@
         "widgets": {
             "tile_mode": "分块模式",
                 "Decode(input) only": "仅解码",
-                "Encode(output) only": "仅编码"
+                "Encode(output) only": "仅编码",
+            "tile_size": "分块尺寸"
         },
         "outputs": {
             "LATENT": "Latent"
@@ -420,7 +438,9 @@
             "labels": "标签"
         },
         "outputs": {
-            "SEGS": "Seg"
+            "SEGS": "Seg",
+            "filtered_SEGS": "屏蔽Seg",
+            "remained_SEGS": "剩余Seg"
         }
     },
     "ImpactSEGSRangeFilter": {
@@ -431,10 +451,13 @@
         "widgets": {
             "target": "目标",
             "min_value": "最小值",
-            "max_value": "最大值"
+            "max_value": "最大值",
+            "mode": "模式"
         },
         "outputs": {
-            "SEGS": "Seg"
+            "SEGS": "Seg",
+            "filtered_SEGS": "屏蔽Seg",
+            "remained_SEGS": "剩余Seg"
         }
     },
     "ImpactSEGSOrderedFilter": {
@@ -443,11 +466,15 @@
             "segs": "Seg"
         },
         "widgets": {
+            "target": "目标",
+            "order": "顺序",
             "take_start": "开始序号",
             "take_count": "数量"
         },
         "outputs": {
-            "SEGS": "Seg"
+            "SEGS": "Seg",
+            "filtered_SEGS": "屏蔽Seg",
+            "remained_SEGS": "剩余Seg"
         }
     },
     "ImpactStringSelector": {
@@ -529,7 +556,8 @@
         "title": "Seg遮罩(批量)",
         "inputs": {
             "segs": "Seg",
-            "mask": "遮罩"
+            "mask": "遮罩",
+            "masks": "遮罩组"
         },
         "outputs": {
             "SEGS": "Seg"
@@ -593,7 +621,7 @@
     "MasksToMaskList": {
         "title": "遮罩组到遮罩列表",
         "inputs": {
-            "mask": "遮罩"
+            "masks": "遮罩组"
         },
         "widgets": {
             "threshold": "阈值"
@@ -608,7 +636,7 @@
             "mask": "遮罩"
         },
         "outputs": {
-            "MASKS": "遮罩"
+            "MASKS": "遮罩组"
         }
     },
     "SegsToCombinedMask": {
@@ -641,13 +669,15 @@
             "clip": "CLIP",
             "vae": "VAE",
             "positive": "正面提示词",
-            "negative": "负面提示词"
+            "negative": "负面提示词",
+            "detailer_hook": "细化约束"
         },
         "widgets": {
             "guide_size": "引导大小",
             "guide_size_for": "引导目标",
                 "bbox": "BBox",
                 "crop_region": "裁剪区域",
+            "max_size": "最大尺寸",
             "seed": "随机种",
             "control_after_generate": "运行后操作",
                 "fixed": "固定",
@@ -673,13 +703,16 @@
         "inputs": {
             "image": "图像",
             "segs": "Seg",
-            "basic_pipe": "基础节点束"
+            "basic_pipe": "基础节点束",
+            "detailer_hook": "细化约束",
+            "refiner_basic_pipe": "优化基础节点束"
         },
         "widgets": {
             "guide_size": "引导大小",
             "guide_size_for": "引导目标",
                 "bbox": "BBox",
                 "crop_region": "裁剪区域",
+            "max_size": "最大尺寸",
             "seed": "随机种",
             "control_after_generate": "运行后操作",
                 "fixed": "固定",
@@ -694,10 +727,15 @@
             "feather": "羽化",
             "noise_mask": "仅生成遮罩",
             "force_inpaint": "强制重绘",
-            "wildcard": "通配符"
+            "wildcard": "通配符",
+            "refiner_ratio": "优化比率"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "图像",
+            "image": "图像",
+            "segs": "Seg",
+            "basic_pipe": "基础节点束",
+            "cnet_images": "ControlNet图像"
         }
     },
     "DetailerForEachDebug": {
@@ -717,6 +755,7 @@
             "guide_size_for": "引导目标",
                 "bbox": "BBox",
                 "crop_region": "裁剪区域",
+            "max_size": "最大尺寸",
             "seed": "随机种",
             "control_after_generate": "运行后操作",
                 "fixed": "固定",
@@ -737,7 +776,8 @@
             "image": "图像",
             "cropped": "裁剪图像",
             "cropped_refined": "细化图像",
-            "cropped_refined_alpha": "细化通道"
+            "cropped_refined_alpha": "细化通道",
+            "cnet_images": "ControlNet图像"
         }
     },
     "DetailerForEachDebugPipe": {
@@ -745,13 +785,16 @@
         "inputs": {
             "image": "图像",
             "segs": "Seg",
-            "basic_pipe": "基础节点束"
+            "basic_pipe": "基础节点束",
+            "detailer_hook": "细化约束",
+            "refiner_basic_pipe": "优化基础节点束"
         },
         "widgets": {
             "guide_size": "引导大小",
             "guide_size_for": "引导目标",
                 "bbox": "BBox",
                 "crop_region": "裁剪区域",
+            "max_size": "最大尺寸",
             "seed": "随机种",
             "control_after_generate": "运行后操作",
                 "fixed": "固定",
@@ -766,13 +809,17 @@
             "feather": "羽化",
             "noise_mask": "仅生成遮罩",
             "force_inpaint": "强制重绘",
-            "wildcard": "通配符"
+            "wildcard": "通配符",
+            "refiner_ratio": "优化比率"
         },
         "outputs": {
             "image": "图像",
+            "segs": "Seg",
+            "basic_pipe": "基础节点束",
             "cropped": "裁剪图像",
             "cropped_refined": "细化图像",
-            "cropped_refined_alpha": "细化通道"
+            "cropped_refined_alpha": "细化通道",
+            "cnet_images": "ControlNet图像"
         }
     },
     "NoiseInjectionDetailerHookProvider": {
@@ -795,6 +842,7 @@
         "title": "插入噪波约束器",
         "widgets": {
             "scheduler": "调度器",
+            "scheduler_for_iteration": "调度器",
             "source": "生成设备",
             "seed": "随机种",
             "control_after_generate": "运行后操作",
@@ -814,11 +862,15 @@
         "inputs": {
             "image": "图像",
             "segs": "Seg",
-            "basic_pipe": "基础节点束"
+            "basic_pipe": "基础节点束",
+            "refiner_basic_pipe": "优化基础节点束"
         },
         "widgets": {
             "guide_size": "引导大小",
-            "max_size": "最大引导",
+            "guide_size_for": "引导目标",
+                "bbox": "BBox",
+                "crop_region": "裁剪区域",
+            "max_size": "最大尺寸",
             "seed": "随机种",
                 "control_after_generate": "运行后操作",
                 "fixed": "固定",
@@ -829,10 +881,15 @@
             "cfg": "CFG",
             "sampler_name": "采样器",
             "scheduler": "调度器",
-            "denoise": "降噪"
+            "denoise": "降噪",
+            "noise_mask": "仅生成遮罩",
+            "force_inpaint": "强制重绘",
+            "refiner_ratio": "优化比率"
         },
         "outputs": {
-            "SEGS": "Seg"
+            "SEGS": "Seg",
+            "segs": "Seg",
+            "cnet_images": "ControlNet图像"
         }
     },
     "SEGSPaste": {
@@ -865,7 +922,8 @@
         "inputs": {
             "sam_model": "SAM模型",
             "segs": "Seg",
-            "images": "图像"
+            "images": "图像",
+            "image": "图像"
         },
         "widgets": {
             "detection_hint": "检测提示",
@@ -878,6 +936,7 @@
                 "mask-points": "遮罩点",
                 "mask-point-bbox": "遮罩点BBox",
             "dilation": "膨胀",
+            "threshold": "阈值",
             "bbox_expansion": "BBox扩展",
             "mask_hint_threshold": "遮罩检测阈值",
             "mask_hint_use_negative": "负面遮罩提示"
@@ -891,7 +950,8 @@
         "inputs": {
             "sam_model": "SAM模型",
             "segs": "Seg",
-            "images": "图像"
+            "images": "图像",
+            "image": "图像"
         },
         "widgets": {
             "detection_hint": "检测提示",
@@ -904,6 +964,7 @@
                 "mask-points": "遮罩点",
                 "mask-point-bbox": "遮罩点BBox",
             "dilation": "膨胀",
+            "threshold": "阈值",
             "bbox_expansion": "BBox扩展",
             "mask_hint_threshold": "遮罩检测阈值",
             "mask_hint_use_negative": "负面遮罩提示"
@@ -1051,7 +1112,7 @@
         },
         "widgets": {
             "guide_size": "引导大小",
-            "max_size": "最大引导",
+            "max_size": "最大尺寸",
             "guide_size_for": "引导目标",
                 "bbox": "BBox",
                 "crop_region": "裁剪区域",
@@ -1093,7 +1154,8 @@
             "cropped_refined": "细化图像",
             "cropped_enhanced_alpha": "细化部分",
             "mask": "遮罩",
-            "detailer_pipe": "细化节点束"
+            "detailer_pipe": "细化节点束",
+            "cnet_images": "ControlNet图像"
         }
     },
     "FaceDetailerPipe": {
@@ -1104,7 +1166,7 @@
         },
         "widgets": {
             "guide_size": "引导大小",
-            "max_size": "最大引导",
+            "max_size": "最大尺寸",
             "guide_size_for": "引导目标",
                 "bbox": "BBox",
                 "crop_region": "裁剪区域",
@@ -1138,14 +1200,16 @@
             "sam_bbox_expansion": "SAMBBox扩展",
             "sam_mask_hint_threshold": "SAM遮罩检测阈值",
             "sam_mask_hint_use_negative": "SAM负面遮罩提示",
-            "drop_size": "最小尺寸"
+            "drop_size": "最小尺寸",
+            "refiner_ratio": "优化比率"
         },
         "outputs": {
             "image": "图像",
             "cropped_refined": "细化图像",
             "cropped_enhanced_alpha": "细化部分",
             "mask": "遮罩",
-            "detailer": "细化节点束"
+            "detailer": "细化节点束",
+            "cnet_images": "ControlNet图像"
         }
     },
 
@@ -1164,6 +1228,9 @@
             "sam_model_opt": "SAM模型",
             "segm_detector_opt": "Segm检测",
             "detailer_hook": "细化约束"
+        },
+        "widgets": {
+            "Select to add LoRA": "添加LoRA"
         },
         "outputs": {
             "detailer_pipe":"细化节点束"
@@ -1188,6 +1255,7 @@
         },
         "widgets": {
             "wildcard": "通配符",
+            "Select to add LoRA": "添加LoRA",
             "Select the LoRA to add to the text": "选择LoRA"
         },
         "outputs": {
@@ -1225,7 +1293,8 @@
             "negative": "负面提示词",
             "bbox_detector": "BBox检测",
             "sam_model_opt": "SAM模型",
-            "segm_detector_opt": "Segm检测"
+            "segm_detector_opt": "Segm检测",
+            "detailer_hook": "细化约束"
         }
     },
     "FromDetailerPipeSDXL": {
@@ -1261,8 +1330,15 @@
             "negative": "负面提示词",
             "bbox_detector": "BBox检测",
             "sam_model_opt": "SAM模型",
+            "sam_model": "SAM模型",
             "segm_detector_opt": "Segm检测",
+            "segm_detector": "Segm检测",
             "detailer_hook": "细化约束"
+        },
+        "widgets": {
+            "wildcard": "通配符",
+            "Select the LoRA to add to the text": "选择LoRA",
+            "Select to add LoRA": "添加LoRA"
         },
         "outputs": {
             "detailer_pipe": "细化节点束"
@@ -1274,7 +1350,9 @@
             "detailer_pipe": "细化节点束"
         },
         "outputs": {
-            "BASIC_PIPE": "基础节点束"
+            "BASIC_PIPE": "基础节点束",
+            "basic_pipe": "基础节点束",
+            "refiner_basic_pipe": "优化基础节点束"
         }
     },
     "ToBasicPipe": {
@@ -1307,10 +1385,12 @@
     "FromBasicPipe_v2": {
         "title": "从基础束v2",
         "inputs": {
-            "BASIC_PIPE": "基础节点束"
+            "BASIC_PIPE": "基础节点束",
+            "basic_pipe": "基础节点束"
         },
         "outputs": {
             "BASIC_PIPE": "基础节点束",
+            "basic_pipe": "基础节点束",
             "model": "模型",
             "clip": "CLIP",
             "vae": "VAE",
@@ -1322,6 +1402,7 @@
         "title": "编辑基础束",
         "inputs": {
             "BASIC_PIPE": "基础节点束",
+            "basic_pipe": "基础节点束",
             "model": "模型",
             "clip": "CLIP",
             "vae": "VAE",
@@ -1329,20 +1410,28 @@
             "negative": "负面提示词"
         },
         "outputs": {
-            "BASIC_PIPE": "基础节点束"
+            "BASIC_PIPE": "基础节点束",
+            "basic_pipe": "基础节点束"
         }
     },
     "BasicPipeToDetailerPipe": {
         "title": "基础束到细化束",
         "inputs": {
             "BASIC_PIPE": "基础节点束",
+            "basic_pipe": "基础节点束",
             "bbox_detector": "BBox检测",
             "sam_model_opt": "SAM模型",
             "segm_detector_opt": "Segm检测",
             "detailer_hook": "细化约束"
         },
+        "widgets": {
+            "wildcard": "通配符",
+            "Select the LoRA to add to the text": "选择LoRA",
+            "Select to add LoRA": "添加LoRA"
+        },
         "outputs": {
-            "DETAILER_PIPE": "细化节点束"
+            "DETAILER_PIPE": "细化节点束",
+            "detailer_pipe": "细化节点束"
         }
     },
     "BasicPipeToDetailerPipeSDXL": {
@@ -1357,10 +1446,12 @@
         },
         "widgets": {
             "wildcard": "通配符",
-            "Select the LoRA to add to the text": "选择LoRA"
+            "Select the LoRA to add to the text": "选择LoRA",
+            "Select to add LoRA": "添加LoRA"
         },
         "outputs": {
-            "DETAILER_PIPE": "细化节点束"
+            "DETAILER_PIPE": "细化节点束",
+            "detailer_pipe": "细化节点束"
         }
     },
     "EditDetailerPipeSDXL": {
@@ -1374,7 +1465,9 @@
             "negative": "负面提示词",
             "bbox_detector": "BBox检测",
             "sam_model_opt": "SAM模型",
+            "sam_model": "SAM模型",
             "segm_detector_opt": "Segm检测",
+            "segm_detector": "Segm检测",
             "detailer_hook": "细化约束",
             "refiner_model": "优化模型",
             "refiner_clip": "优化CLIP",
@@ -1383,7 +1476,8 @@
         },
         "widgets": {
             "wildcard": "通配符",
-            "Select the LoRA to add to the text": "选择LoRA"
+            "Select the LoRA to add to the text": "选择LoRA",
+            "Select to add LoRA": "添加LoRA"
         },
         "outputs": {
             "detailer_pipe": "细化节点束"
@@ -1427,12 +1521,19 @@
                 "nearest-exact": "邻近-精确",
                 "bilinear": "双线性插值",
                 "area": "区域",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
             "steps": "步数",
             "cfg": "CFG",
             "sampler_name": "采样器",
             "scheduler": "调度器",
             "denoise": "降噪",
-            "use_tiled_vae": "使用分块VAE"
+            "use_tiled_vae": "使用分块VAE",
+            "tile_size": "分块尺寸"
         },
         "outputs": {
             "UPSCALER": "缩放"
@@ -1450,12 +1551,19 @@
                 "nearest-exact": "邻近-精确",
                 "bilinear": "双线性插值",
                 "area": "区域",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
             "steps": "步数",
             "cfg": "CFG",
             "sampler_name": "采样器",
             "scheduler": "调度器",
             "denoise": "降噪",
-            "use_tiled_vae": "使用分块VAE"
+            "use_tiled_vae": "使用分块VAE",
+            "tile_size": "分块尺寸"
         },
         "outputs": {
             "UPSCALER": "缩放"
@@ -1507,6 +1615,12 @@
                 "nearest-exact": "邻近-精确",
                 "bilinear": "双线性插值",
                 "area": "区域",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
             "steps": "步数",
             "cfg": "CFG",
             "sampler_name": "采样器",
@@ -1531,13 +1645,20 @@
             "positive": "正面提示词",
             "negative": "负面提示词",
             "upscale_model_opt": "放大模型",
-            "pk_hook_opt": "约束"
+            "pk_hook_opt": "约束",
+            "basic_pipe": "基础节点束"
         },
         "widgets": {
             "scale_method": "缩放方法",
                 "nearest-exact": "邻近-精确",
                 "bilinear": "双线性插值",
                 "area": "区域",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
             "steps": "步数",
             "cfg": "CFG",
             "sampler_name": "采样器",
@@ -1581,7 +1702,8 @@
                 "interleave1+last1": "交错1+连续1",
                 "interleave2+last1": "交错2+连续1",
                 "interleave3+last1": "交错3+连续1",
-            "use_tiled_vae": "使用分块VAE"
+            "use_tiled_vae": "使用分块VAE",
+            "tile_size": "分块尺寸"
         },
         "outputs": {
             "UPSCALER": "缩放"
@@ -1614,7 +1736,8 @@
                 "interleave1+last1": "交错1+连续1",
                 "interleave2+last1": "交错2+连续1",
                 "interleave3+last1": "交错3+连续1",
-            "use_tiled_vae": "使用分块VAE"
+            "use_tiled_vae": "使用分块VAE",
+            "tile_size": "分块尺寸"
         },
         "outputs": {
             "UPSCALER": "缩放"
@@ -1761,7 +1884,13 @@
         "widgets": {
             "wildcard_text": "通配文本",
             "populated_text": "输入文本",
-            "mode": "是否输入"
+            "mode": "是否输入",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机"
         },
         "outputs": {
             "STRING": "字符串"
@@ -1771,7 +1900,13 @@
         "title": "通配符编码",
         "inputs": {
             "model": "模型",
-            "clip": "CLIP"
+            "clip": "CLIP",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机"
         },
         "widgets": {
             "wildcard_text": "通配文本",
@@ -1782,7 +1917,8 @@
         "outputs": {
             "MODEL": "模型",
             "CLIP": "CLIP",
-            "CONDITIONING": "条件"
+            "CONDITIONING": "条件",
+            "conditioning": "条件"
         }
     },
 
@@ -1796,7 +1932,8 @@
             "advanced_sampler": "K采样器(高级)"
         },
         "outputs": {
-            "regional_prompts": "区域提示词"
+            "regional_prompts": "区域提示词",
+            "REGIONAL_PROMPTS": "区域提示词"
         }
     },
     "CombineRegionalPrompts": {

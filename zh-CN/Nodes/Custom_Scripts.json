@@ -85,7 +85,7 @@
                 "multi": "多个",
             "node_mode": "节点模式",
                 "reuse": "复用",
-                "creat": "生成"
+                "create": "生成"
         },
         "outputs": {
             "*": "输出"

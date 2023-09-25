@@ -512,6 +512,40 @@
     },
 
 
+    "LatentAdd": {
+        "title": "Latent相加",
+        "inputs": {
+            "samples1": "Latent1",
+            "samples2": "Latent2"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "LatentSubtract": {
+        "title": "Latent相减",
+        "inputs": {
+            "samples1": "Latent1",
+            "samples2": "Latent2"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "LatentMultiply": {
+        "title": "Latent相乘",
+        "inputs": {
+            "samples1": "Latent"
+        },
+        "widgets": {
+            "multiplier": "系数"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+
+
     "VAEDecode": {
         "title": "VAE解码",
         "inputs": {
@@ -998,6 +1032,9 @@
             "samples": "Latent",
             "vae": "VAE"
         },
+        "widgets": {
+            "tile_size": "分块尺寸"
+        },
         "outputs": {
             "IMAGE": "图像"
         }
@@ -1007,6 +1044,9 @@
         "inputs": {
             "pixels": "图像",
             "vae": "VAE"
+        },
+        "widgets": {
+            "tile_size": "分块尺寸"
         },
         "outputs": {
             "LATENT": "Latent"
@@ -1030,7 +1070,8 @@
             "samples": "Latent"
         },
         "widgets": {
-            "samples": "Latent"
+            "samples": "Latent",
+            "latent": "Latent"
         }
     },
     "LoadLatent": {
@@ -1055,6 +1096,21 @@
             "LATENT": "Latent"
         }
     },
+    "FreeU": {
+        "title": "FreeU模型重加权",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "b1": "B1",
+            "b2": "B2",
+            "s1": "S1",
+            "s2": "S2"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    }
 
 
 
