@@ -161,10 +161,10 @@
     "SeargePromptText": {
         "title": "Sear提示词文本",
         "widgets": {
-            "prompt": "Prompt"
+            "prompt": "提示词"
         },
         "outputs": {
-            "prompt": "Prompt"
+            "prompt": "提示词"
         }
     },
     "SeargePromptCombiner": {
