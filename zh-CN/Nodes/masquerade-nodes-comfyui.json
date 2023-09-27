@@ -1,0 +1,329 @@
+{
+    "Mask By Text": {
+        "title": "文本生成遮罩",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "prompt": "正面提示词",
+            "negative_prompt": "负面提示词",
+            "precision": "置信度",
+            "normalize": "规格化"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Mask Morphology": {
+        "title": "遮罩形态学",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "distance": "距离",
+            "op": "操作",
+                "dilate": "膨胀",
+                "erode": "侵蚀",
+                "open": "侵蚀后膨胀",
+                "close": "膨胀后侵蚀"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Combine Masks": {
+        "title": "合并遮罩",
+        "inputs": {
+            "image1": "图像1",
+            "image2": "图像2"
+        },
+        "widgets": {
+            "op": "操作",
+                "union (max)": "最大值",
+                "intersection (min)": "最小值",
+                "difference": "差值",
+                "multiply": "相乘",
+                "multiply_alpha": "相乘(透明)",
+                "add": "相加",
+                "greater_or_equal": "大于或等于",
+                "greater": "大于",
+            "clamp_result": "钳制",
+            "round_result": "舍入"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Unary Mask Op": {
+        "title": "单遮罩操作",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "op": "操作",
+                "invert": "反转",
+                "average": "平均",
+                "round": "舍入",
+                "clamp": "钳制",
+                "abs": "绝对"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Unary Image Op": {
+        "title": "单图像操作",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "op": "操作",
+                "invert": "反转",
+                "average": "平均",
+                "round": "舍入",
+                "clamp": "钳制",
+                "abs": "绝对"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Image To Mask": {
+        "title": "图像到遮罩",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "method": "方法",
+                "intensity": "强度/明度",
+                "alpha": "透明"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "Mix Images By Mask": {
+        "title": "遮罩混合图像",
+        "inputs": {
+            "image1": "图像1",
+            "image2": "图像2",
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Mix Color By Mask": {
+        "title": "遮罩混合颜色",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "r": "红",
+            "g": "绿",
+            "b": "蓝"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Mask To Region": {
+        "title": "遮罩到区域",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "padding": "分区",
+            "constraints": "约束",
+                "keep_ratio": "保持宽高比",
+                "keep_ratio_divisible": "保持宽高比并分区",
+                "multiple_of": "乘以",
+                "ignore": "无",
+            "constraint_x": "约束X",
+            "constraint_y": "约束y",
+            "min_width": "最小宽度",
+            "min_height": "最小高度",
+            "batch_behavior": "批次操作",
+                "match_ratio": "匹配宽高比",
+                "match_size": "匹配分辨率"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Cut By Mask": {
+        "title": "遮罩裁剪",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "mask_mapping_optional": "遮罩映射"
+        },
+        "widgets": {
+            "force_resize_width": "拉伸宽度",
+            "force_resize_height": "拉伸高度"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Paste By Mask": {
+        "title": "遮罩粘贴",
+        "inputs": {
+            "image_base": "源图像",
+            "image_to_paste": "目标图像",
+            "mask": "遮罩",
+            "mask_mapping_optional": "遮罩映射"
+        },
+        "widgets": {
+            "resize_behavior": "拉伸模式",
+                "resize": "拉伸",
+                "keep_ratio_fill": "保持宽高比并填充",
+                "keep_ratio_fit": "保持宽高比并适应",
+                "source_size": "原大小",
+                "source_size_unmasked": "原大小(无遮罩)"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Get Image Size": {
+        "title": "获取图像尺寸",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "Change Channel Count": {
+        "title": "改变通道",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "kind": "类型",
+                "mask" :"遮罩",
+                "RGB": "RGB",
+                "RGBA": "RGBA"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Constant Mask": {
+        "title": "常遮罩",
+        "inputs": {
+            "copy_image_size": "图像"
+        },
+        "widgets": {
+            "value": "值",
+            "explicit_height": "高度",
+            "explicit_width": "宽度"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Prune By Mask": {
+        "title": "遮罩修剪",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Separate Mask Components": {
+        "title": "分离遮罩元素",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK_MAPPING": "遮罩映射"
+        }
+    },
+    "Create Rect Mask": {
+        "title": "矩形遮罩",
+        "inputs": {
+            "copy_image_size": "图像"
+        },
+        "widgets": {
+            "mode": "模式",
+                "percent": "百分比",
+                "pixels": "像素",
+            "origin": "锚点",
+                "topleft": "左上",
+                "bottomleft": "左下",
+                "topright": "右上",
+                "bottomright": "右下",
+            "x": "X",
+            "y": "Y",
+            "width": "宽度",
+            "height": "高度",
+            "image_width": "图像宽度",
+            "image_height": "图像高度"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Make Image Batch": {
+        "title": "图像组合批次",
+        "inputs": {
+            "image1": "图像1",
+            "image2": "图像2",
+            "image3": "图像3",
+            "image4": "图像4",
+            "image5": "图像5",
+            "image6": "图像6"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Create QR Code": {
+        "title": "生成QR码",
+        "widgets": {
+            "text": "文本",
+            "size": "尺寸",
+            "qr_version": "QR版本",
+            "box_size": "模块大小",
+            "border": "边框宽度",
+            "error_correction": "容错"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Convert Color Space": {
+        "title": "转换色彩空间",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "in_space": "输入空间",
+            "out_space": "输出空间"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "MasqueradeIncrementer": {
+        "title": "Masque整数",
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "max_value": "最大值"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    }
+}
