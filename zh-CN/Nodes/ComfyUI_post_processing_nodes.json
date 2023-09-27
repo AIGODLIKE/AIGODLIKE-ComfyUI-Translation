@@ -198,7 +198,9 @@
         },
         "widgets": {
             "blur_radius": "模糊范围",
-            "sigma": "Sigma"
+            "radius": "模糊范围",
+            "sigma": "Sigma",
+            "sigma_factor": "Sigma"
         },
         "outputs": {
             "IMAGE": "图像"
