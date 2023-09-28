@@ -43,6 +43,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Custom-Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts)|√|√|TODO|TODO|
 |[Davemane42 Nodes](https://github.com/Davemane42/ComfyUI_Dave_CustomNode)|√|√|√|TODO|
 |[Dagthomas Nodes](https://github.com/dagthomas/comfyui_dagthomas)|√|√|TODO|TODO|
+|[Dynamic Thresholding](https://github.com/mcmonkeyprojects/sd-dynamic-thresholding)|√|√|TODO|TODO|
 |[Efficiency Nodes](https://github.com/LucianoCirino/efficiency-nodes-comfyui)|√|√|√|TODO|
 |[EllangoK Postprocessing](https://github.com/EllangoK/ComfyUI-post-processing-nodes)|√|√|TODO|TODO|
 |[ExLlama nodes](https://github.com/Zuellni/ComfyUI-ExLlama-Nodes)|√|√|TODO|TODO|
@@ -54,6 +55,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Impact Subpack](https://github.com/ltdrdata/ComfyUI-Impact-Subpack)|√|√|TODO|TODO|
 |[Latent2RGB](https://github.com/bvhari/ComfyUI_LatentToRGB)|√|√|TODO|TODO|
 |[Manager](https://github.com/ltdrdata/ComfyUI-Manager)|√|√|TODO|TODO|
+|[Masquerade Nodes](https://github.com/BadCafeCode/masquerade-nodes-comfyui)|√|√|TODO|TODO|
 |[Noise](https://github.com/BlenderNeko/ComfyUI_Noise)|√|√|TODO|TODO|
 |[QR](https://github.com/coreyryanhanson/comfy-qr)|√|√|TODO|TODO|
 |[Restart-Sampling](https://github.com/ssitu/ComfyUI_restart_sampling)|√|√|TODO|TODO|
