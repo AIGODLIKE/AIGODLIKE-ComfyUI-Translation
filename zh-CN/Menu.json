@@ -146,6 +146,9 @@
     "Yes": "是",
     "yes": "是",
     "No": "否",
+    "Set Group Nodes to Never": "停用该组节点",
+    "Set Group Nodes to Always": "启用该组节点",
+    "Bypass Group Nodes": "忽略该组节点",
 
     "Open in MaskEditor": "在遮罩编辑器中打开",
 
@@ -175,7 +178,7 @@
     "TilePreprocessor": "Tile平铺预处理器",
     "InpaintPreprocessor": "Inpaint内补预处理器",
     "ShufflePreprocessor": "Shuffle内容重组预处理器",
-    "Manga2Anime_LineArt_Preprocessor": "",
+    "Manga2Anime_LineArt_Preprocessor": "MangaAnime漫画艺术线预处理器",
     "DWPreprocessor": "DW姿态预处理器",
     "Scribble_XDoG_Preprocessor": "ScribbleXDoG涂鸦预处理器",
     "SAM Segmentor": "SAM分割",
@@ -1348,5 +1351,12 @@
     "topleft": "左上",
     "bottomleft": "左下",
     "topright": "右上",
-    "bottomright": "右下"
+    "bottomright": "右下",
+
+    "advcnet": "advcnet",
+    
+    "ease-in-out": "渐进渐出",
+    "ease-in": "渐进",
+    "ease-out": "渐出",
+    "linear": "线性"
 }
