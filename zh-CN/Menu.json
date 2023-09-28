@@ -1351,5 +1351,12 @@
     "topleft": "左上",
     "bottomleft": "左下",
     "topright": "右上",
-    "bottomright": "右下"
+    "bottomright": "右下",
+
+    "advcnet": "advcnet",
+    
+    "ease-in-out": "渐进渐出",
+    "ease-in": "渐进",
+    "ease-out": "渐出",
+    "linear": "线性"
 }
