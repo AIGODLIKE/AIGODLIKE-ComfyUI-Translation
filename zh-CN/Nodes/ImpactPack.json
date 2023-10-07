@@ -377,6 +377,20 @@
             "SEGS": "Seg"
         }
     },
+    "ImpactSEGSPicker": {
+        "title": "Seg选择",
+        "inputs": {
+            "segs": "Seg",
+            "fallback_image_opt": "备用图像"
+        },
+        "widgets": {
+            "picks": "选择",
+            "pick": "选择"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
     "ReencodeLatent": {
         "title": "重编码Latent",
         "inputs": {
@@ -637,6 +651,15 @@
         },
         "outputs": {
             "MASKS": "遮罩组"
+        }
+    },
+    "ImageListToImageBatch": {
+        "title": "图像列表到图像组",
+        "inputs": {
+            "images": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
         }
     },
     "SegsToCombinedMask": {
