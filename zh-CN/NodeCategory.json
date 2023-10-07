@@ -17,6 +17,7 @@
         "preprocessors": "预处理",
     "mask": "遮罩",
     "_for_testing": "测试",
+        "custom_sampling": "自定义采样",
     "advanced1": "高级",
         "loaders1": "加载器",
             "deprecated": "已弃用",
@@ -131,6 +132,9 @@
     "Zuellni": "Zue节点",
     "mcmonkey": "mcm节点",
     "Masquerade Nodes": "Masque节点",
+    "Adv-ControlNet 🛂🅐🅒🅝": "高级ControlNet",
+        "keyframes": "关键帧",
+        "weights": "权重",
         
 
 
