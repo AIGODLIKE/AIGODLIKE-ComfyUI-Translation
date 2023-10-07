@@ -1083,6 +1083,131 @@
             "LATENT": "Latent"
         }
     },
+    "SamplerCustom": {
+        "title": "自定义采样器",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "sampler": "采样器",
+            "sigmas": "Sigmas",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "add_noise": "添加噪波",
+            "noise_seed": "随机种",
+            "cfg": "CFG"
+        },
+        "outputs": {
+            "output": "输出",
+            "denoised_output": "降噪输出"
+        }
+    },
+    "KarrasScheduler": {
+        "title": "Karras调度器",
+        "widgets": {
+            "steps": "步数",
+            "sigma_max": "最大Sigma",
+            "sigma_min": "最小Sigma",
+            "rho": "rho"
+        },
+        "outputs": {
+            "SIGMAS": "Sigmas"
+        }
+    },
+    "ExponentialScheduler": {
+        "title": "Exponential调度器",
+        "widgets": {
+            "steps": "步数",
+            "sigma_max": "最大Sigma",
+            "sigma_min": "最小Sigma"
+        },
+        "outputs": {
+            "SIGMAS": "Sigmas"
+        }
+    },
+    "PolyexponentialScheduler": {
+        "title": "Polyexponential调度器",
+        "widgets": {
+            "steps": "步数",
+            "sigma_max": "最大Sigma",
+            "sigma_min": "最小Sigma",
+            "rho": "rho"
+        },
+        "outputs": {
+            "SIGMAS": "Sigmas"
+        }
+    },
+    "VPScheduler": {
+        "title": "VP调度器",
+        "widgets": {
+            "steps": "步数",
+            "beta_d": "beta_d",
+            "beta_min": "beta_min",
+            "eps_s": "eps_s"
+        },
+        "outputs": {
+            "SIGMAS": "Sigmas"
+        }
+    },
+    "KSamplerSelect": {
+        "title": "K采样器选择",
+        "widgets": {
+            "sampler_name": "采样器"
+        },
+        "outputs": {
+            "SAMPLER": "采样器"
+        }
+    },
+    "SamplerDPMPP_2M_SDE": {
+        "title": "DPMPP_2M_SDE采样器",
+        "widgets": {
+            "solver_type": "类型",
+            "eta": "eta",
+            "s_noise": "s_noise",
+            "noise_device": "设备"
+        },
+        "outputs": {
+            "SAMPLER": "采样器"
+        }
+    },
+    "SamplerDPMPP_SDE": {
+        "title": "DPMPP_SDE采样器",
+        "widgets": {
+            "eta": "eta",
+            "s_noise": "s_noise",
+            "r": "r",
+            "noise_device": "设备"
+        },
+        "outputs": {
+            "SAMPLER": "采样器"
+        }
+    },
+    "BasicScheduler": {
+        "title": "基础调度器",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "scheduler": "调度器",
+            "steps": "步数"
+        },
+        "outputs": {
+            "SIGMAS": "Sigmas"
+        }
+    },
+    "SplitSigmas": {
+        "title": "分离Sigmas",
+        "inputs": {
+            "sigmas": "Sigmas"
+        },
+        "widgets": {
+            "step": "步数"
+        },
+        "outputs": {
+            "SIGMAS": "Sigmas"
+        }
+    },
     "LatentBlend": {
         "title": "Latent混合",
         "inputs": {
