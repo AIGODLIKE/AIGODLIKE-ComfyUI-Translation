@@ -1096,6 +1096,7 @@
         "widgets": {
             "add_noise": "添加噪波",
             "noise_seed": "随机种",
+            "control_after_generate": "运行后操作",
             "cfg": "CFG"
         },
         "outputs": {
