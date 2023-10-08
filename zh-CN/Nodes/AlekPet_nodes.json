@@ -5,7 +5,8 @@
             "text": "文本"
         },
         "widgets": {
-            "text": "文本"
+            "text": "文本",
+            "STRING": "字符串"
         }
     },
     "PainterNode": {
