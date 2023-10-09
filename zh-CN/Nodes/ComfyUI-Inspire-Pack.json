@@ -1,0 +1,419 @@
+{
+    "XY Input: Lora Block Weight //Inspire": {
+        "title": "XY输入：LoRA分层权重",
+        "widgets": {
+            "category_filter": "标签过滤",
+            "lora_name": "LoRA名称",
+            "strength_model": "模型强度",
+            "strength_clip": "CLIP强度",
+            "inverse": "反转",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "A": "A",
+            "B": "B",
+            "preset": "预设",
+            "block_vectors": "层权重",
+            "heatmap_palette": "热度选项",
+                "cividis": "cividis",
+                "inferno": "炼狱",
+                "plasma": "等离子",
+                "magma": "岩浆",
+                "viridis": "翠绿",
+            "heatmap_alpha": "热度透明",
+            "heatmap_strength": "热度强度",
+            "xyplot_mode": "XY模式",
+                "Simple": "简易",
+                "Diff": "差值",
+                "Diff+Heatmap": "差值+热度"
+        },
+        "ouptuts": {
+            "X (vectors)": "X (向量)",
+            "Y (effect_compares)": "Y (效果)"
+        }
+    },
+    "LoraLoaderBlockWeight //Inspire": {
+        "title": "LoRA加载器(分层)",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "category_filter": "标签过滤",
+            "lora_name": "LoRA名称",
+            "strength_model": "模型强度",
+            "strength_clip": "CLIP强度",
+            "inverse": "反转",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "A": "A",
+            "B": "B",
+            "preset": "预设",
+            "block_vectors": "层权重",
+            "bypass": "停用"
+        },
+        "ouptuts": {
+            "model": "模型",
+            "clip": "CLIP",
+            "populated_vector": "填充向量"
+        }
+    },
+    "LoraBlockInfo //Inspire": {
+        "title": "LoRA分层信息",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称",
+            "block_info": "层信息"
+        }
+    },
+
+
+
+
+    "OpenPose_Preprocessor_Provider_for_SEGS //Inspire": {
+        "title": "OpenPose预处理(Seg)",
+        "widgets": {
+            "detect_hand": "检测手部",
+            "detect_body": "检测身体",
+            "detect_face": "检测面部",
+            "resolution_upscale": "分辨率放大"
+        },
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理"
+        }
+    },
+    "DWPreprocessor_Provider_for_SEGS //Inspire": {
+        "title": "DWPose预处理(Seg)",
+        "widgets": {
+            "detect_hand": "检测手部",
+            "detect_body": "检测身体",
+            "detect_face": "检测面部",
+            "resolution_upscale": "分辨率放大"
+        },
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理"
+        }
+    },
+    "MiDaS_DepthMap_Preprocessor_Provider_for_SEGS //Inspire": {
+        "title": "MiDaS深度预处理(Seg)",
+        "widgets": {
+            "a": "角度",
+            "bg_threshold": "背景阈值"
+        },
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理"
+        }
+    },
+    "LeRes_DepthMap_Preprocessor_Provider_for_SEGS //Inspire": {
+        "title": "LeRes深度预处理(Seg)",
+        "widgets": {
+            "rm_nearest": "移除近景",
+            "rm_background": "移除背景",
+            "boost": "增强"
+        },
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理"
+        }
+    },
+    "Canny_Preprocessor_Provider_for_SEGS //Inspire": {
+        "title": "Canny预处理(Seg)",
+        "widgets": {
+            "low_threshold": "低阈值",
+            "high_threshold": "高阈值"
+        },
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理"
+        }
+    },
+    "MediaPipe_FaceMesh_Preprocessor_Provider_for_SEGS //Inspire": {
+        "title": "MediaPipe面部网格预处理(Seg)",
+        "widgets": {
+            "max_faces": "最大面部数量",
+            "min_confidence": "最小置信度",
+            "resolution_upscale": "分辨率放大"
+        },
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理"
+        }
+    },
+    "MediaPipeFaceMeshDetectorProvider //Inspire": {
+        "title": "MediaPipe面部网格检测",
+        "widgets": {
+            "max_faces": "最大面部数量",
+            "face": "面部",
+            "mouth": "嘴部",
+            "left_eyebrow": "左眉毛",
+            "left_eye": "左眼",
+            "left_pupil": "左瞳孔",
+            "right_eyebrow": "右眉毛",
+            "right_eye": "右眼",
+            "right_pupil": "右瞳孔"
+        },
+        "outputs": {
+            "BBOX_DETECTOR": "BBox检测",
+            "SEGM_DETECTOR": "SEGM检测"
+        }
+    },
+    "HEDPreprocessor_Provider_for_SEGS //Inspire": {
+        "title": "HED预处理(Seg)",
+        "widgets": {
+            "safe": "增稳"
+        },
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理"
+        }
+    },
+    "FakeScribblePreprocessor_Provider_for_SEGS //Inspire": {
+        "title": "FakeScribble预处理(Seg)",
+        "widgets": {
+            "safe": "增稳"
+        },
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理"
+        }
+    },
+    "AnimeLineArt_Preprocessor_Provider_for_SEGS //Inspire": {
+        "title": "AnimeLineArt预处理(Seg)",
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理"
+        }
+    },
+    "Manga2Anime_LineArt_Preprocessor_Provider_for_SEGS //Inspire": {
+        "title": "Manga2Anime_LineArt预处理(Seg)",
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理"
+        }
+    },
+    "LineArt_Preprocessor_Provider_for_SEGS //Inspire": {
+        "title": "LineArt预处理(Seg)",
+        "widgets": {
+            "coarse": "粗糙化"
+        },
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理"
+        }
+    },
+    "Color_Preprocessor_Provider_for_SEGS //Inspire": {
+        "title": "Color预处理(Seg)",
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理"
+        }
+    },
+
+
+
+    "KSampler //Inspire": {
+        "title": "K采样器(Inspire)",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "noise_mode": "噪波模式"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "KSamplerAdvanced //Inspire": {
+        "title": "K采样器(高级Inspire)",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "add_noise": "添加噪波",
+            "noise_seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "start_at_step": "开始降噪步数",
+            "end_at_step": "结束降噪步数",
+            "noise_mode": "噪波模式",
+            "return_with_leftover_noise": "返回噪波"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+
+
+
+    "LoadPromptFromDir //Inspire": {
+        "title": "加载提示词(路径)",
+        "widgets": {
+            "prompt": "提示词"
+        },
+        "outputs": {
+            "ZIPPED_PROMPT": "提示词包"
+        }
+    },
+    "LoadPromptFromFile //Inspire": {
+        "title": "加载提示词(文件)",
+        "wdigets": {
+            "prompt": "提示词"
+        },
+        "outputs": {
+            "ZIPPED_PROMPT": "提示词包"
+        }
+    },
+    "UnzipPrompt //Inspire": {
+        "title": "解包提示词",
+        "inputs": {
+            "zipped_prompt": "提示词包"
+        },
+        "outputs": {
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "name": "名称"
+        }
+    },
+    "ZipPrompt //Inpire": {
+        "title": "打包提示词",
+        "widgets": {
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "name": "名称"
+        },
+        "outputs": {
+            "ZIPPED_PROMPT": "提示词包"
+        }
+    },
+    "PromptExtractpr //Inspire": {
+        "title": "提取提示词",
+        "widgets": {
+            "image": "图像",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "info": "信息"
+        },
+        "outputs": {
+            "positive": "正面提示词",
+            "negative": "负面提示词"
+        }
+    },
+
+
+
+    "KSamplerProgress //Inspire": {
+        "title": "K采样器(过程)",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+
+
+
+    "GlobalSeed //Inspire": {
+        "title": "全局随机种",
+        "widgets": {
+            "value": "值(明度)",
+            "mode": "模式",
+            "action": "行为",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+                "increment for each node": "每个节点增加",
+                "decrement for each node": "每个节点减少",
+                "randomize for each node": "每个节点随机",
+            "last_seed": "上个随机种"
+        }
+    },
+
+
+
+
+    "LoadImagesFromDire //Inspire": {
+        "title": "加载图像(路径)",
+        "widgets": {
+            "directory": "路径",
+            "image_load_cap": "图像加载上限",
+            "start_index": "起始索引"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩",
+            "INT": "整数"
+        }
+    },
+
+
+    "RegionalPromptSimple //Inspire": {
+        "title": "区域提示词(简易)",
+        "inputs": {
+            "basic_pipe": "基础束",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "wildcard_prompt": "通配符提示词"
+        },
+        "outputs": {
+            "REGIONAL_PROMPTS": "区域提示词"
+        }
+    },
+    "RegionalPromptColorMask //Inspire": {
+        "title": "区域提示词(颜色遮罩)",
+        "inputs": {
+            "basic_pipe": "基础束",
+            "color_mask": "颜色遮罩"
+        },
+        "widgets": {
+            "mask_color": "遮罩颜色",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "wildcard_prompt": "通配符提示词"
+        },
+        "outputs": {
+            "REGIONAL_PROMPTS": "区域提示词",
+            "MASK": "遮罩"
+        }
+    }
+}
