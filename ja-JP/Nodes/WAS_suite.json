@@ -9,7 +9,7 @@
             "MODEL": "モデル",
             "CLIP": "CLIP",
             "VAE": "VAE",
-            "NAME_STRING": "名字符串"
+            "NAME_STRING": "名ストリング"
         }
     },
     "Diffusers Model Loader": {
@@ -21,7 +21,7 @@
             "MODEL": "モデル",
             "CLIP": "CLIP",
             "VAE": "VAE",
-            "NAME_STRING": "名字符串"
+            "NAME_STRING": "名ストリング"
         }
     },
     "Diffusers Hub Model Down-Loader": {
@@ -34,7 +34,7 @@
             "MODEL": "モデル",
             "CLIP": "CLIP",
             "VAE": "VAE",
-            "NAME_STRING": "名字符串"
+            "NAME_STRING": "名ストリング"
         }
     },
 
@@ -57,7 +57,7 @@
             "MODEL": "モデル",
             "CLIP": "CLIP",
             "VAE": "VAE",
-            "NAME_STRING": "名字符串"
+            "NAME_STRING": "名ストリング"
         }
     },
     "CLIPSeg Model Loader": {
@@ -83,7 +83,7 @@
         "outputs": {
             "MODEL": "モデル",
             "CLIP": "CLIP",
-            "NAME_STRING": "名字符串"
+            "NAME_STRING": "名ストリング"
         }
     },
     "Load Lora": {
@@ -100,7 +100,7 @@
         "outputs": {
             "MODEL": "モデル",
             "CLIP": "CLIP",
-            "NAME_STRING": "名字符串"
+            "NAME_STRING": "名ストリング"
         }
     },
     "MiDaS Model Loader": {
@@ -122,7 +122,7 @@
             "CLIP": "CLIP",
             "VAE": "VAE",
             "CLIP_VISION": "CLIPビジョン",
-            "NAME_STRING": "名字符串"
+            "NAME_STRING": "名ストリング"
         }
     },
     "Upscale Model Loader": {
@@ -260,7 +260,7 @@
         },
         "widgets": {
             "filename_prefix": "文件名缀",
-            "filename_delimiter": "文件名分隔符",
+            "filename_delimiter": "文件名デリミタ",
             "filename_number_padding": "文件名数字填充",
             "filename_number_start": "文件名数字开头",
             "extension": "文件后缀",
@@ -291,19 +291,19 @@
             "dictionray_name": "字典名"
         },
         "outputs": {
-            "STRING": "字符串",
+            "STRING": "ストリング",
             "DICT": "字典"
         }
     },
     "Save Text File": {
         "title": "保存文本",
         "inputs": {
-            "text": "字符串"
+            "text": "ストリング"
         },
         "widgets": {
             "path": "路径",
             "filename_prefix": "文件名缀",
-            "filename_delimiter": "文件名分隔符",
+            "filename_delimiter": "文件名デリミタ",
             "filename_number_padding": "文件名数字填充"
         }
     },
@@ -499,7 +499,7 @@
             "boolean_number": "布尔"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
     "Upscale Model Switch": {
@@ -609,12 +609,12 @@
         }
     },
     "Number to String": {
-        "title": "数字到字符串",
+        "title": "数字到ストリング",
         "inputs": {
             "number": "数字"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
     "Number to Text": {
@@ -857,7 +857,7 @@
             "pixelation_size": "ピクセル大小",
             "num_colors": "色数",
             "init_mode": "模式",
-            "max_iterations": "最大迭代次数",
+            "max_iterations": "最大反復回数",
             "dither": "ディザ",
             "dither_mode": "ディザ模式",
             "color_palette_mode": "调色模式",
@@ -879,7 +879,7 @@
         }
     },
     "Image Remove Background (Alpha)": {
-        "title": "移除背景(透明)",
+        "title": "削除背景(透明)",
         "inputs": {
             "images": "图像"
         },
@@ -893,7 +893,7 @@
         }
     },
     "Image Remove Color": {
-        "title": "移除RGB色",
+        "title": "削除RGB色",
         "inputs": {
             "image": "图像"
         },
@@ -1175,7 +1175,7 @@
             "masks": "マスク"
         },
         "widgets": {
-            "iterations": "迭代次数"
+            "iterations": "反復回数"
         },
         "outputs": {
             "MASKS": "マスク"
@@ -1199,7 +1199,7 @@
             "masks": "マスク"
         },
         "widgets": {
-            "iterations": "迭代次数"
+            "iterations": "反復回数"
         },
         "outputs": {
             "MASKS": "マスク"
@@ -1436,7 +1436,7 @@
             "images": "图像"
         },
         "widgets": {
-            "iterations": "迭代次数",
+            "iterations": "反復回数",
             "kernel_size": "核心大小"
         },
         "outputs": {
@@ -1503,8 +1503,8 @@
             "sharpness": "锐度",
             "blur": "ぼかし",
             "gaussian_blur": "高斯ぼかし",
-            "edge_enhance": "边缘强化",
-            "detail_enhance": "细节强化",
+            "edge_enhance": "边缘高める",
+            "detail_enhance": "细节高める",
                 "false": "否",
                 "true": "是"
         },
@@ -1645,7 +1645,7 @@
         },
         "outputs": {
             "image": "图像",
-            "color_palettes": "色列表"
+            "color_palettes": "色リスト"
         }
     },
     "Image to Seed": {
@@ -1867,7 +1867,7 @@
             "brightness": "明度",
             "output_mode": "出力模式",
                 "batch": "批次",
-                "list": "列表",
+                "list": "リスト",
             "seed": "乱数種",
             "control_after_generate": "运行后操作",
                 "fixed": "固定",
@@ -1968,7 +1968,7 @@
 
 
     "Image Rembg (Remove Background)": {
-        "title": "移除背景",
+        "title": "削除背景",
         "inputs": {
             "images": "图像"
         },
@@ -2005,7 +2005,7 @@
             "use_cpu": "使用CPU",
             "midas_model": "MiDaS类型",
             "midas_type": "MiDaS类型",
-            "remove": "移除",
+            "remove": "削除",
                 "background": "背景",
                 "foreground": "前景",
             "threshold": "閾値",
@@ -2360,7 +2360,7 @@
                 "false": "否",
             "output_path": "出力路径",
             "filename_prefix": "文件名缀",
-            "filename_delimiter": "文件名分隔符",
+            "filename_delimiter": "文件名デリミタ",
             "filename_number_padding": "文件名数字填充"
         }
     },
@@ -2383,7 +2383,7 @@
             "label": "标签"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
 
@@ -2408,7 +2408,7 @@
             "dictionary_name": "字典名"
         },
         "ooutputs": {
-            "STRING": "字符串",
+            "STRING": "ストリング",
             "DICT": "字典"
         }
     },
@@ -2546,16 +2546,16 @@
             "question": "问题"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
     "String to Text": {
-        "title": "字符串到文本",
+        "title": "ストリング到文本",
         "widgets": {
-            "string": "字符串"
+            "string": "ストリング"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
     "Text to Conditioning": {
@@ -2578,19 +2578,19 @@
         }
     },
     "Text to String": {
-        "title": "文本到字符串",
+        "title": "文本到ストリング",
         "inputs": {
             "text": "テキスト"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
     "Text Shuffle": {
         "title": "文本重组",
         "widgets": {
             "text": "テキスト",
-            "separator": "分隔符",
+            "separator": "デリミタ",
             "seed": "乱数種",
             "control_after_generate": "运行后操作",
                 "fixed": "固定",
@@ -2599,7 +2599,7 @@
                 "randomize": "ランダム"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
     "Text String Truncate": {
@@ -2618,7 +2618,7 @@
             "truncate_to": "截取到"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
 
@@ -2690,7 +2690,7 @@
                 "randomize": "ランダム"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
     "Text Find and Replace Input": {
@@ -2702,7 +2702,7 @@
             "dictionary": "字典"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
     "Text Find and Replace": {
@@ -2716,7 +2716,7 @@
             "replace": "替换"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
 
@@ -2728,7 +2728,7 @@
             "text": "テキスト"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
     "Text Parse Noodle Soup Prompts": {
@@ -2749,7 +2749,7 @@
                 "randomize": "ランダム"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
 
@@ -2762,8 +2762,8 @@
                 "Nond": "无"
         },
         "outputs": {
-            "positive_string": "正面字符串",
-            "negative_string": "负面字符串"
+            "positive_string": "正面ストリング",
+            "negative_string": "负面ストリング"
         }
     },
     "Prompt Multiple Styles Selector": {
@@ -2775,8 +2775,8 @@
             "style4": "风格4"
         },
         "outputs": {
-            "positive_string": "正面字符串",
-            "negative_string": "负面字符串"
+            "positive_string": "正面ストリング",
+            "negative_string": "负面ストリング"
         }
     },
     "Text Dictionary Update": {
@@ -2805,11 +2805,11 @@
                 "true": "是"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
     "Text List": {
-        "title": "文本列表",
+        "title": "文本リスト",
         "inputs": {
             "text_a": "文本_a",
             "text_b": "文本_b",
@@ -2820,11 +2820,11 @@
             "text_g": "文本_g"
         },
         "outputs": {
-            "LIST": "列表"
+            "LIST": "リスト"
         }
     },
     "Text List Concatenate": {
-        "title": "文本列表连锁",
+        "title": "文本リスト连锁",
         "inputs": {
             "list_a": "文本_a",
             "list_b": "文本_b",
@@ -2832,7 +2832,7 @@
             "list_d": "文本_d"
         },
         "outputs": {
-            "LIST": "列表"
+            "LIST": "リスト"
         }
     },
     "Text Load Line From File": {
@@ -2865,7 +2865,7 @@
                 "randomize": "ランダム"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
     "Text Random Line": {
@@ -2882,11 +2882,11 @@
                 "randomize": "ランダム"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
     "Text String": {
-        "title": "文本字符串",
+        "title": "文本ストリング",
         "widgets": {
             "text": "テキスト",
             "text_a": "文本_a",
@@ -2895,7 +2895,7 @@
             "text_d": "文本_d"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
     "Text Random Prompt": {
@@ -2904,7 +2904,7 @@
             "search_seed": "乱数種"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     }
 }

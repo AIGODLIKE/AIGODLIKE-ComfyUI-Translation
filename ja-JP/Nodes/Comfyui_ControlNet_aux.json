@@ -65,7 +65,7 @@
                 "BinaryPreprocessor": "Binary二値化前処理",
                 "PiDiNetPreprocessor": "PidiNetぼかし線前処理",
                 "LineArtPreprocessor": "LineArt艺术線前処理",
-                "AnimeLineArtPreprocessor": "AnimeLineArt动漫艺术線前処理",
+                "AnimeLineArtPreprocessor": "AnimeLineArtアニメ艺术線前処理",
                 "Manga2Anime-LineArtPreprocessor": "Manga2Anime-LineArt漫画艺术線前処理",
                 "CannyEdgePreprocessor": "Canny细致線前処理",
                 "M-LSDPreprocessor": "M-LSD線段前処理",

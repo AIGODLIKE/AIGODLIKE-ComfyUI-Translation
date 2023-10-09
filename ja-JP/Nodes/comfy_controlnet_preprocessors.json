@@ -77,7 +77,7 @@
             "image": "图像"
         },
         "widgets": {
-            "coarse": "粗糙化",
+            "coarse": "粗い",
                 "disable": "閉",
                 "enable": "開",
             "resolution": "解像度"
@@ -87,7 +87,7 @@
         }
     },
     "AnimeLineArtPreprocessor": {
-        "title": "AnimeLineArt动漫艺术線前処理",
+        "title": "AnimeLineArtアニメ艺术線前処理",
         "inputs": {
             "image": "图像"
         },
@@ -118,7 +118,7 @@
         "widgets": {
             "low_threshold": "低閾値",
             "high_threshold": "高閾値",
-            "l2gradient": "L2范数",
+            "l2gradient": "L2グラディエント",
                 "disable": "閉",
                 "enable": "開",
             "resolution": "解像度"
@@ -134,7 +134,7 @@
         },
         "widgets": {
             "score_threshold": "刻痕閾値",
-            "dist_threshold": "距离閾値",
+            "dist_threshold": "距離閾値",
             "resolution": "解像度"
         },
         "outputs": {
@@ -179,9 +179,9 @@
             "image": "图像"
         },
         "widgets": {
-            "rm_nearest": "前景移除",
-            "rm_background": "背景移除",
-            "boost": "强化",
+            "rm_nearest": "前景削除",
+            "rm_background": "背景削除",
+            "boost": "高める",
             "resolution": "解像度"
         },
         "outputs": {
@@ -312,8 +312,8 @@
             "image": "图像"
         },
         "widgets": {
-            "max_faces": "最大顔面量",
-            "min_confidence": "最小置信度",
+            "max_faces": "最大顔量",
+            "min_confidence": "最小信頼度",
             "resolution": "解像度"
         },
         "outputs": {
@@ -338,7 +338,7 @@
             "image": "图像"
         },
         "widgets": {
-            "pyrUp_iters": "迭代次数",
+            "pyrUp_iters": "反復回数",
             "resolution": "解像度"
         },
         "outputs": {
