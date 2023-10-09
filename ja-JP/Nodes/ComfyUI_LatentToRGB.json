@@ -1,6 +1,6 @@
 {
     "LatentToRGB": {
-        "title": "Latent图像预览",
+        "title": "Latent画像プレビュー",
         "inputs": {
             "samples": "Latent"
         },

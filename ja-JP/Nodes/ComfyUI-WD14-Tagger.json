@@ -6,13 +6,13 @@
         },
         "widgets": {
             "model": "モデル",
-            "threshold": "置信度",
-            "character_threshold": "角色置信度",
+            "threshold": "信頼度",
+            "character_threshold": "角色信頼度",
             "exclude_tags": "排除标签",
             "tags": "标签"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     }
 }

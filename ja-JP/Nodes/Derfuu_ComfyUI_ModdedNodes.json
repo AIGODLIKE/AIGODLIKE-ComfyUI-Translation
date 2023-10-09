@@ -23,7 +23,7 @@
             "Text": "テキスト"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
     "Text Box": {
@@ -32,7 +32,7 @@
             "Text": "テキスト"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
 
@@ -63,7 +63,7 @@
         }
     },
     "String debug print": {
-        "title": "字符串调试出力",
+        "title": "ストリング调试出力",
         "widgets": {
             "Prefix": "前缀",
             "Text": "テキスト"

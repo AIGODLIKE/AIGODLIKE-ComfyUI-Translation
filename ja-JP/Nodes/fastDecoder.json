@@ -1,6 +1,6 @@
 {
     "FastLatentToImage": {
-        "title": "快速预览Latent",
+        "title": "プレビューLatent",
         "inputs": {
             "latent": "Latent"
         },

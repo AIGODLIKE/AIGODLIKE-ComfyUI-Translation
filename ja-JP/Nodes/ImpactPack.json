@@ -233,7 +233,7 @@
         }
     },
     "SEGSToImageList": {
-        "title": "Seg到图像列表",
+        "title": "Seg到图像リスト",
         "inputs": {
             "segs": "Seg",
             "fallback_image_opt": "备用图像"
@@ -243,7 +243,7 @@
         }
     },
     "ImpactSEGSToMaskList": {
-        "title": "Seg到マスク列表",
+        "title": "Seg到マスクリスト",
         "inputs": {
             "segs": "Seg"
         },
@@ -294,7 +294,7 @@
         }
     },
     "ImpactImageBatchToImageList": {
-        "title": "图像组到图像列表",
+        "title": "图像组到图像リスト",
         "inputs": {
             "image": "图像"
         },
@@ -303,7 +303,7 @@
         }
     },
     "ImpactMakeImageList": {
-        "title": "制作图像列表",
+        "title": "制作图像リスト",
         "inputs": {
             "image1": "图像"
         },
@@ -352,14 +352,14 @@
         }
     },
     "ImpactStringSelector": {
-        "title": "字符串選択",
+        "title": "ストリング選択",
         "widgets": {
-            "strings": "字符串",
+            "strings": "ストリング",
             "multiline": "多行文本",
             "select": "選択"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
 
@@ -492,7 +492,7 @@
         }
     },
     "MasksToMaskList": {
-        "title": "マスク组到マスク列表",
+        "title": "マスク组到マスクリスト",
         "inputs": {
             "mask": "マスク"
         },
@@ -513,7 +513,7 @@
         }
     },
     "RemoveNoiseMask": {
-        "title": "移除噪波マスク",
+        "title": "削除噪波マスク",
         "inputs": {
             "samples": "Latent"
         },
@@ -1354,7 +1354,7 @@
         }
     },
     "IterativeLatentUpscale": {
-        "title": "Latent迭代缩放",
+        "title": "Latent反復缩放",
         "inputs": {
             "samples": "Latent",
             "upscaler": "缩放"
@@ -1369,7 +1369,7 @@
         }
     },
     "IterativeImageUpscale": {
-        "title": "图像迭代缩放",
+        "title": "图像反復缩放",
         "inputs": {
             "pixels": "图像",
             "upscaler": "缩放",
@@ -1656,7 +1656,7 @@
             "mode": "是否输入"
         },
         "outputs": {
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
     "ImpactWildcardEncode": {
@@ -1815,7 +1815,7 @@
         }
     },
     "ImpactConditionalStopIteration": {
-        "title": "条件停止迭代",
+        "title": "条件停止反復",
         "inputs": {
             "cond": "条件"
         }

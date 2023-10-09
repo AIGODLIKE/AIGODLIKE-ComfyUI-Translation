@@ -531,7 +531,7 @@
             "upscale_by": "缩放係数",
             "hires_steps": "高清修复ステップ数",
             "denoise": "ノイズ除去",
-            "iterations": "迭代次数"
+            "iterations": "反復回数"
         },
         "outputs": {
             "SCRIPT": "脚本"
@@ -1051,7 +1051,7 @@
         "outputs": {
             "INT": "整数",
             "FLOAT": "浮点",
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
     "Evaluate Floats": {
@@ -1065,11 +1065,11 @@
         "outputs": {
             "INT": "整数",
             "FLOAT": "浮点",
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
     "Evaluate Strings": {
-        "title": "字符串运算",
+        "title": "ストリング运算",
         "widgets": {
             "python_expression": "Python表达式",
             "print_to_console": "出力至控制台",
@@ -1079,7 +1079,7 @@
         "outputs": {
             "INT": "整数",
             "FLOAT": "浮点",
-            "STRING": "字符串"
+            "STRING": "ストリング"
         }
     },
     "Simple Eval Examples": {
