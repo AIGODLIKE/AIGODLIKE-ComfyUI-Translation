@@ -1,0 +1,89 @@
+{
+    "IPAdapterModelLoader": {
+        "title": "IP适配模型加载器",
+        "widgets": {
+            "ipadapter_file": "IP适配文件"
+        },
+        "outputs": {
+            "IPADAPTER": "IP适配"
+        }
+    },
+    "IPAdapterApply": {
+        "title": "IP适配应用",
+        "inputs": {
+            "ipadapter": "IP适配",
+            "clip_vision": "CLIP视觉",
+            "image": "图像",
+            "model": "模型"
+        },
+        "widgets": {
+            "weight": "权重",
+            "noise": "噪波增强"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterApplyEncoded": {
+        "title": "IP适配应用(已编码)",
+        "inputs": {
+            "ipadapter": "IP适配",
+            "embeds": "嵌入组",
+            "model": "模型"
+        },
+        "widgets": {
+            "weight": "权重",
+            "noise": "噪波增强"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "PrepImageForClipVision": {
+        "title": "CLIP视觉图像处理",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "interpolation": "插值方式",
+            "crop_position": "裁剪位置",
+            "sharpening": "锐化",
+            "add_weight": "添加权重"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "IPAdapterEncoder": {
+        "title": "IP适配编码",
+        "inputs": {
+            "clip_vision": "CLIP视觉",
+            "image": "图像"
+        },
+        "widgets": {
+            "plus": "plus",
+            "noise": "噪波增强"
+        },
+        "outputs": {
+            "EMBEDS": "嵌入组"
+        }
+    },
+    "IPAdapterSaveEmbeds": {
+        "title": "保存嵌入组",
+        "inputs": {
+            "embeds": "嵌入组"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀"
+        }
+    },
+    "IPAdapterLoadEmbeds": {
+        "title": "读取嵌入组",
+        "widgets": {
+            "embeds": "嵌入组"
+        },
+        "outputs": {
+            "EMBEDS": "嵌入组"
+        }
+    }
+}
