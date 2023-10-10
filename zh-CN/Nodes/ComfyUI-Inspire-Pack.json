@@ -12,7 +12,7 @@
             "A": "A",
             "B": "B",
             "preset": "预设",
-            "block_vectors": "层权重",
+            "block_vector": "层权重",
             "heatmap_palette": "热度选项",
                 "cividis": "cividis",
                 "inferno": "炼狱",
@@ -263,7 +263,7 @@
 
 
 
-    "LoadPromptFromDir //Inspire": {
+    "LoadPromptsFromDir //Inspire": {
         "title": "加载提示词(路径)",
         "widgets": {
             "prompt": "提示词"
@@ -272,7 +272,7 @@
             "ZIPPED_PROMPT": "提示词包"
         }
     },
-    "LoadPromptFromFile //Inspire": {
+    "LoadPromptsFromFile //Inspire": {
         "title": "加载提示词(文件)",
         "wdigets": {
             "prompt": "提示词"
@@ -292,7 +292,7 @@
             "name": "名称"
         }
     },
-    "ZipPrompt //Inpire": {
+    "ZipPrompt //Inspire": {
         "title": "打包提示词",
         "widgets": {
             "positive": "正面提示词",
@@ -303,7 +303,7 @@
             "ZIPPED_PROMPT": "提示词包"
         }
     },
-    "PromptExtractpr //Inspire": {
+    "PromptExtractor //Inspire": {
         "title": "提取提示词",
         "widgets": {
             "image": "图像",
@@ -367,7 +367,7 @@
 
 
 
-    "LoadImagesFromDire //Inspire": {
+    "LoadImagesFromDir //Inspire": {
         "title": "加载图像(路径)",
         "widgets": {
             "directory": "路径",
