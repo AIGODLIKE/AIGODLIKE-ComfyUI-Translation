@@ -1,0 +1,119 @@
+{
+    "ADE_AnimateDiffUniformContextOptions": {
+        "title": "动态扩散上下文选项",
+        "widgets": {
+            "context_length": "上下文长度",
+            "context_stride": "上下文步幅",
+            "context_overlap": "上下文重叠",
+            "context_schedule": "上下文调度器",
+            "closed_loop": "闭合上下文循环"
+        },
+        "outputs": {
+            "CONTEXT_OPTIONS": "上下文设置"
+        }
+    },
+    "ADE_AnimateDiffLoaderWithContext": {
+        "title": "动态扩散加载器(上下文)",
+        "inputs": {
+            "model": "模型",
+            "context_options": "上下文设置",
+            "motion_lora": "动态LoRA"
+        },
+        "widgets": {
+            "model_name": "模型名称",
+            "beta_schedule": "调度器"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "ADE_AnimateDiffLoRALoader": {
+        "title": "动态LoRA加载器",
+        "inputs": {
+            "prev_motion_lora": "前LoRA"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称",
+            "strength": "强度"
+        },
+        "outputs": {
+            "MOTION_LORA": "动态LoRA"
+        }
+    },
+    "ADE_AnimateDiffUnload": {
+        "title": "动态扩散卸载器",
+        "inputs": {
+            "model": "模型"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+
+
+
+    "ADE_EmptyLatentImageLarge": {
+        "title": "空Latent(大型)",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    
+    "CheckpointLoaderSimpleWithNoiseSelect": {
+        "title": "Checkpoint加载器(简易噪波)",
+        "widgets": {
+            "ckpt_name": "ckpt名称",
+            "beta_schedule": "调度器"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "VAE": "VAE"
+        }
+    },
+
+
+
+    "AnimateDiffLoaderV1": {
+        "title": "动态扩散加载器v1",
+        "inputs": {
+            "model": "模型",
+            "latents": "Latent"
+        },
+        "widgets": {
+            "model_name": "模型名称",
+            "unlimited_area_hack": "无限制区域",
+            "beta_schedule": "调度器"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "LATENT": "Latent"
+        }
+    },
+    "ADE_AnimateDiffLoaderV1Advanced": {
+        "title": "动态扩散加载器v1(高级)",
+        "inputs": {
+            "model": "模型",
+            "latents": "Latent"
+        },
+        "widgets": {
+            "model_name": "模型名称",
+            "unlimited_area_hack": "无限制区域",
+            "context_length": "上下文长度",
+            "context_stride": "上下文步幅",
+            "context_overlap": "上下文重叠",
+            "context_schedule": "上下文调度器",
+            "closed_loop": "闭合上下文循环",
+            "beta_schedule": "调度器"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "LATENT": "Latent"
+        }
+    }
+}
