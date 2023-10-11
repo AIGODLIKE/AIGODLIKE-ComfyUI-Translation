@@ -1364,8 +1364,8 @@
             "crop_h": "裁剪高度",
             "target_width": "目标宽度",
             "target_height": "目标高度",
-            "text_g": "ViT-bigG文本",
-            "text_l": "ViT-L文本"
+            "text_g": "G文本",
+            "text_l": "L文本"
         },
         "outputs": {
             "CONDITIONING": "条件"

@@ -1145,8 +1145,8 @@
             "crop_h": "クロップ高さ",
             "target_width": "ターゲット幅",
             "target_height": "ターゲット高さ",
-            "text_g": "ViT-bigGテキスト",
-            "text_l": "ViT-Lテキスト"
+            "text_g": "Gテキスト",
+            "text_l": "Lテキスト"
         },
         "outputs": {
             "CONDITIONING": "条件"

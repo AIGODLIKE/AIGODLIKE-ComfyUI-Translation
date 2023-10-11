@@ -187,6 +187,7 @@
 
     
     "Manager": "管理器",
+
     "ComfyUI Manager Menu": "ComfyUI管理器",
     " Use local DB": "使用本地数据",
     " Skip update check": "跳过更新检查",
@@ -198,6 +199,7 @@
     "Fetch Updates": "检查更新",
     "Fetching updates...": "检查更新中...",
     "There is an updated extension available.": "存在可用更新",
+    "ComfyUI is already up to date with the latest version.": "ComfyUI已是最新版本。",
     "Alternatives of A1111": "A1111替代",
     "ComfyUI Community Manual": "ComfyUI社区手册",
     "\nThe custom node DB is currently being updated, and updates to custom nodes are being checked for.\nNOTE: Update only checks for extensions that have been fetched.\n": "\n现在正在更新已安装的节点。\n注意: 仅更新已检查出更新的节点.\n",

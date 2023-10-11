@@ -1,0 +1,318 @@
+{
+    "Lerp": {
+        "title": "线性",
+        "widgets": {
+            "num_Images": "图像数量",
+            "strength": "强度",
+            "current_frame": "当前帧"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
+    "SinWave": {
+        "title": "正弦波",
+        "widgets": {
+            "phase": "相位角",
+            "amplitude": "振幅",
+            "x_translation": "X偏移",
+            "y_translation": "Y偏移",
+            "current_frame": "当前帧"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
+    "InvSinWave": {
+        "title": "反正弦波",
+        "widgets": {
+            "phase": "相位角",
+            "amplitude": "振幅",
+            "x_translation": "X偏移",
+            "y_translation": "Y偏移",
+            "current_frame": "当前帧"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
+    "CosWave": {
+        "title": "余弦波",
+        "widgets": {
+            "phase": "相位角",
+            "amplitude": "振幅",
+            "x_translation": "X偏移",
+            "y_translation": "Y偏移",
+            "current_frame": "当前帧"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
+    "InvCosWave": {
+        "title": "反余弦波",
+        "widgets": {
+            "phase": "相位角",
+            "amplitude": "振幅",
+            "x_translation": "X偏移",
+            "y_translation": "Y偏移",
+            "current_frame": "当前帧"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
+    "SquareWave": {
+        "title": "方波",
+        "widgets": {
+            "phase": "相位角",
+            "amplitude": "振幅",
+            "x_translation": "X偏移",
+            "y_translation": "Y偏移",
+            "current_frame": "当前帧"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
+    "SawtoothWave": {
+        "title": "锯齿波",
+        "widgets": {
+            "phase": "相位角",
+            "step_increment": "步进",
+            "x_translation": "X偏移",
+            "start_value": "起始值",
+            "current_frame": "当前帧"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
+    "TriangleWave": {
+        "title": "三角波",
+        "widgets": {
+            "phase": "相位角",
+            "amplitude": "振幅",
+            "x_translation": "X偏移",
+            "y_translation": "Y偏移",
+            "current_frame": "当前帧"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
+    "AbsCosWave": {
+        "title": "绝对余弦波",
+        "widgets": {
+            "phase": "相位角",
+            "amplitude": "振幅",
+            "x_translation": "X偏移",
+            "max_value": "最大值",
+            "current_frame": "当前帧"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
+    "AbsSinWave": {
+        "title": "绝对正弦波",
+        "widgets": {
+            "phase": "相位角",
+            "amplitude": "振幅",
+            "x_translation": "X偏移",
+            "max_value": "最大值",
+            "current_frame": "当前帧"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
+
+
+
+    "PromptSchedule": {
+        "title": "提示词调度",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "text": "文本",
+            "max_frames": "最大帧数",
+            "current_frame": "当前帧",
+            "pre_text": "预置文本",
+            "app_text": "附加文本",
+            "pw_a": "提示词权重A(pw_a)",
+            "pw_b": "提示词权重B(pw_b)",
+            "pw_c": "提示词权重C(pw_c)",
+            "pw_d": "提示词权重D(pw_d)"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "ValueSchedule": {
+        "title": "值调度",
+        "widgets": {
+            "text": "文本",
+            "max_frames": "最大帧数",
+            "current_frame": "当前帧"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
+    "StringSchedule": {
+        "title": "字符串调度",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "text": "文本",
+            "max_frames": "最大帧数",
+            "current_frame": "当前帧",
+            "pre_text": "预置文本",
+            "app_text": "附加文本",
+            "pw_a": "提示词权重A(pw_a)",
+            "pw_b": "提示词权重B(pw_b)",
+            "pw_c": "提示词权重C(pw_c)",
+            "pw_d": "提示词权重D(pw_d)"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "PromptScheduleNodeFlow": {
+        "title": "提示词调度流",
+        "widgets": {
+            "text": "文本",
+            "num_frames": "帧数",
+            "in_text": "预置文本",
+            "max_frames": "最大帧数"
+        },
+        "outputs": {
+            "INT": "整数",
+            "STRING": "字符串"
+        }
+    },
+    "PromptScheduleNodeFlowEnd": {
+        "title": "提示词调度流结尾",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "text": "文本",
+            "max_frames": "最大帧数",
+            "current_frame": "当前帧",
+            "pre_text": "预置文本",
+            "app_text": "附加文本",
+            "pw_a": "提示词权重A(pw_a)",
+            "pw_b": "提示词权重B(pw_b)",
+            "pw_c": "提示词权重C(pw_c)",
+            "pw_d": "提示词权重D(pw_d)"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "PromptScheduleEncodeSDXL": {
+        "title": "提示词调度编码(SDXL)",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "crop_w": "裁剪宽度",
+            "crop_h": "裁剪高度",
+            "target_width": "目标宽度",
+            "target_height": "目标高度",
+            "text_g": "G文本",
+            "text_l": "L文本",
+            "max_frames": "最大帧数",
+            "current_frame": "当前帧",
+            "pre_text_G": "预置G文本",
+            "app_text_G": "附加G文本",
+            "pre_text_L": "预置L文本",
+            "app_text_L": "附加L文本",
+            "pw_a": "提示词权重A(pw_a)",
+            "pw_b": "提示词权重B(pw_b)",
+            "pw_c": "提示词权重C(pw_c)",
+            "pw_d": "提示词权重D(pw_d)"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+
+
+
+    "BatchPromptSchedule": {
+        "title": "提示词调度(批次)",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "text": "文本",
+            "max_frames": "最大帧数",
+            "pre_text": "预置文本",
+            "app_text": "附加文本",
+            "pw_a": "提示词权重A(pw_a)",
+            "pw_b": "提示词权重B(pw_b)",
+            "pw_c": "提示词权重C(pw_c)",
+            "pw_d": "提示词权重D(pw_d)"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "BatchValueSchedule": {
+        "title": "值调度(批次)",
+        "widgets": {
+            "text": "文本",
+            "max_frames": "最大帧数"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
+    "BatchPromptScheduleEncodeSDXL": {
+        "title": "提示词调度编码(批次SDXL)",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "crop_w": "裁剪宽度",
+            "crop_h": "裁剪高度",
+            "target_width": "目标宽度",
+            "target_height": "目标高度",
+            "text_g": "G文本",
+            "text_l": "L文本",
+            "max_frames": "最大帧数",
+            "pre_text_G": "预置G文本",
+            "app_text_G": "附加G文本",
+            "pre_text_L": "预置L文本",
+            "app_text_L": "附加L文本",
+            "pw_a": "提示词权重A(pw_a)",
+            "pw_b": "提示词权重B(pw_b)",
+            "pw_c": "提示词权重C(pw_c)",
+            "pw_d": "提示词权重D(pw_d)"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    }
+}
