@@ -35,6 +35,15 @@
             "STRING": "字符串"
         }
     },
+    "Text box": {
+        "title": "文本框",
+        "widgets": {
+            "Text": "文本"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
 
 
 
