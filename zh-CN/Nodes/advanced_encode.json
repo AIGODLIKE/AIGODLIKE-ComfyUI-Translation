@@ -23,8 +23,8 @@
             "clip": "CLIP"
         },
         "widgets": {
-            "text_l": "ViT_L条件",
-            "text_g": "ViT_BigG条件",
+            "text_l": "L条件",
+            "text_g": "G条件",
             "token_normalization": "Token规格化",
                 "none": "无",
                 "length": "长度",
