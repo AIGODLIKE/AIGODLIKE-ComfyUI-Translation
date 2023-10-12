@@ -79,7 +79,6 @@ def compile_translation(locale):
                                 "NodeCategory": node_category_translation,
                                 "Menu": menu_translation
                                 },
-                           indent=4,
                            ensure_ascii=False)
     # translations_path.write_text(json_data, encoding="utf-8")
     return json_data
