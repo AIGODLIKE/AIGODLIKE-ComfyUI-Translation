@@ -425,7 +425,7 @@
         }
     },
     "ImpactImageBatchToImageList": {
-        "title": "图像组到图像列表",
+        "title": "图像批次到图像列表",
         "inputs": {
             "image": "图像"
         },
@@ -435,6 +435,15 @@
     },
     "ImpactMakeImageList": {
         "title": "制作图像列表",
+        "inputs": {
+            "image1": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImpactMakeImageBatch": {
+        "title": "制作图像批次",
         "inputs": {
             "image1": "图像"
         },
@@ -654,7 +663,7 @@
         }
     },
     "ImageListToImageBatch": {
-        "title": "图像列表到图像组",
+        "title": "图像列表到图像批次",
         "inputs": {
             "images": "图像"
         },
