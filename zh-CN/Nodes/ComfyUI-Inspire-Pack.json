@@ -363,6 +363,53 @@
             "last_seed": "上个随机种"
         }
     },
+    "WildcardEncode //Inspire": {
+        "title": "通配符编码",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "token_normalization": "Token规格化",
+            "weight_interpolation": "权重插值方式",
+            "wildcard_text": "通配文本",
+            "populated_text": "填充文本",
+            "mode": "模式",
+            "Select to add LoRA": "添加LoRA",
+                "Select the LoRA to add to the text": "选择LoRA",
+            "Select to add Wildcard": "添加通配符",
+                "Select the Wildcard to add to the text": "选择通配符",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机"
+        },
+        "outputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "conditioning": "条件",
+            "populated_text": "填充文本"
+        }
+    },
+    "BindImageListPromptList //Inspire": {
+        "title": "绑定图像提示词列表",
+        "inputs": {
+            "imamges": "图像",
+            "zipped_prompt": "提示词包"
+        },
+        "widgets": {
+            "default_positive": "默认正面提示词",
+            "default_negative": "默认负面提示词"
+        },
+        "outputs": {
+            "image": "图像",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "prompt_label": "提示词标签"
+        }
+    },
 
 
 

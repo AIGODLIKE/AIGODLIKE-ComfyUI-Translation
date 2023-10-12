@@ -115,5 +115,24 @@
             "MODEL": "模型",
             "LATENT": "Latent"
         }
+    },
+    "ADE_AnimateDiffCombine": {
+        "title": "动态扩散合并",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "frame_rate": "帧率",
+            "loop_count": "循环次数",
+            "filename_prefix": "文件名前缀",
+            "format": "格式",
+            "pingpong": "Ping-Pong",
+            "save_image": "是否保存",
+                "Enabled": "是",
+                "Disabled": "否"
+        },
+        "outputs": {
+            "GIF": "GIF"
+        }
     }
 }
