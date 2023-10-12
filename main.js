@@ -18,7 +18,7 @@ export class TUtils {
 	static setLocale(locale) {
 		localStorage[TUtils.LOCALE_ID_LAST] = localStorage.getItem(TUtils.LOCALE_ID) || "en-US";
 		localStorage[TUtils.LOCALE_ID] = locale;
-		TUtils.syncTranslation();
+		// TUtils.syncTranslation();
 	}
 
 	static syncTranslation(OnFinished = () => { }) {
@@ -119,6 +119,18 @@ export class TUtils {
 				}
 			});
 			return res;
+		};
+		let onInputAdded = node.onInputAdded;
+		node.onInputAdded = function (slot) {
+			if (onInputAdded)
+				res = onInputAdded.apply(this, arguments);
+			console.log(slot);
+			let t = TUtils.T.Nodes[this.comfyClass];
+			if (t["widgets"] && slot.name in t["widgets"]) {
+				slot.label = t["widgets"][slot.name];
+			}
+			if (onInputAdded)
+				return res;
 		};
 	}
 
@@ -282,11 +294,11 @@ export class TUtils {
 						})]),
 				])
 			},
-			defaultValue: "en-US",
+			defaultValue: localStorage[id] || "en-US",
 			async onChange(value) {
 				if (!value)
 					return;
-				if (value != localStorage[id]) {
+				if (localStorage[id] != undefined && value != localStorage[id]) {
 					TUtils.setLocale(value);
 					location.reload();
 				}
