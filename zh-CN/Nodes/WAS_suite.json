@@ -213,6 +213,26 @@
         }
     },
     
+
+    "Bus Node": {
+        "title": "节点总线",
+        "inputs": {
+            "bus": "总线",
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE",
+            "positive": "正面提示词",
+            "negative": "负面提示词"
+        },
+        "outputs": {
+            "bus": "总线",
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE",
+            "positive": "正面提示词",
+            "negative": "负面提示词"
+        }
+    },
     
 
     "Cache Node": {
@@ -372,7 +392,7 @@
             "CLIP": "CLIP"
         }
     },
-        "CLIP Vision Input Switch": {
+    "CLIP Vision Input Switch": {
         "title": "CLIP视觉切换",
         "inputs": {
             "clip_vision_a": "CLIP视觉_a",
@@ -450,6 +470,20 @@
         },
         "outputs": {
             "IMAGE": "图像"
+        }
+    },
+    "Lora Input Switch": {
+        "title": "LoRA切换",
+        "inputs": {
+            "model_a": "模型_a",
+            "clip_a": "CLIP_a",
+            "model_b": "模型_b",
+            "clip_b": "CLIP_b",
+            "boolean_number": "布尔"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP"
         }
     },
     "Model Input Switch": {
@@ -748,6 +782,23 @@
             "include_subfolder": "包含子文件夹",
                 "flase": "否",
                 "true": "是",
+            "border_width": "边框宽度",
+            "number_of_columns": "列数",
+            "max_cell_size": "图像大小",
+            "border_red": "红色边框",
+            "border_green": "绿色边框",
+            "border_blue": "蓝色边框"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Create Grid Image from Batch": {
+        "title": "从批次图像创建图表",
+        "inputs": {
+            "iamges": "图像"
+        },
+        "widgets": {
             "border_width": "边框宽度",
             "number_of_columns": "列数",
             "max_cell_size": "图像大小",
