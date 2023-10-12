@@ -381,7 +381,7 @@
             "LATENT": "Latent"
         }
     },
-    "Image Scale by ratio": {
+    "Image scale by ratio": {
         "title": "Latent按系数放大",
         "inputs": {
             "image": "图像"
@@ -397,7 +397,7 @@
             "Image": "图像"
         }
     },
-    "Image Scale to side": {
+    "Image scale to side": {
         "title": "图像按边放大",
         "inputs": {
             "image": "图像"
