@@ -1128,6 +1128,8 @@
         "ReroutePrimitive|pysssss": "Primitive连接点",
         "[none]": "无",
     "🐍 Preset Text Replacement Regex": "预设文本正则替换",
+    "The regex should return two named capture groups: id (the name of the preset text to use), replace (the matched text to replace)": "应返回两个已命名的捕获组：id（要使用的预设文本名称）、replace（要替换的匹配文本）",
+    "🐍 Use number input on value entry": "在输入值时改为输入数字",
     "🐍 Show Image On Menu": "在菜单显示图像",
     "🐍 Widget Defaults:": "组件默认",
         "Manage": "管理",
