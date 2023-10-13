@@ -1374,5 +1374,14 @@
 
     "increment for each node": "每个节点增加",
     "decrement for each node": "每个节点减少",
-    "randomize for each node": "每个节点随机"
+    "randomize for each node": "每个节点随机",
+
+    "ue": "ue",
+
+    "Toggle UE link visibility": "切换全局输入可视化",
+    "Send only within my group(s)": "仅在当前组内生效",
+    "Remove group restriction": "移除组内限制",
+    "Anything Everywhere show node details": "全局输入显示节点细节",
+    "Anything Everywhere check loops": "全局输入检测循环",
+    "Anything Everywhere animate UE links": "全局输入连线动画"
 }
