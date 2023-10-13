@@ -416,10 +416,61 @@
     "CR Float To String": {
         "title": "浮点到字符串(CR)",
         "widgets": {
-            "float_": "浮点"
+            "float_": "浮点",
+            "float": "浮点"
         },
         "outputs": {
             "STRING": "字符串"
+        }
+    },
+    "CR String To Number": {
+        "title": "字符串到数字(CR)",
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "INT": "整数",
+            "FLOAT": "浮点"
+        }
+    },
+    "CR Split String": {
+        "title": "分割字符串(CR)",
+        "widgets": {
+            "text": "文本",
+            "delimiter": "分隔符"
+        },
+        "outputs": {
+            "string_1": "字符串_1",
+            "string_2": "字符串_2",
+            "string_3": "字符串_3",
+            "string_4": "字符串_4"
+        }
+    },
+    "CR Text List To String": {
+        "title": "文本列表到字符串(CR)",
+        "widgets": {
+            "text_list": "文本列表"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "CR String To Combo": {
+        "title": "字符串到Combo(CR)",
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "*": "输出"
+        }
+    },
+    "CR Prompt Text": {
+        "title": "提示词文本(CR)",
+        "widgets": {
+            "prompt": "提示词"
+        },
+        "outputs": {
+            "prompt": "提示词文本"
         }
     },
 
@@ -842,6 +893,164 @@
                 "bicubic": "双三次插值",
             "supersample": "超采样",
             "rounding_modulus": "舍入到倍数"
+        }
+    },
+
+
+
+    "CR XY List": {
+        "title": "XY图表(CR)",
+        "widgets": {
+            "index": "编号",
+            "list1": "列表1",
+            "x_prepend": "X预置",
+            "x_append": "X附加",
+            "x_annotation_prepend": "X预置注释",
+            "list2": "列表2",
+            "y_prepend": "Y预置",
+            "y_append": "Y附加",
+            "y_annotation_prepend": "Y预置注释"
+        },
+        "outputs": {
+            "X": "X",
+            "Y": "Y",
+            "x_annotation": "X注释",
+            "y_annotation": "Y注释",
+            "trigger": "触发器"
+        }
+    },
+    "CR XY Interpolate": {
+        "title": "XY插值(CR)",
+        "widgets": {
+            "x_columns": "X列数",
+            "x_start_value": "X起始值",
+            "x_step": "X步数",
+            "x_annotation_prepend": "X预置注释",
+            "y_rows": "Y行数",
+            "y_start_value": "Y起始值",
+            "y_step": "Y步数",
+            "y_annotation_prepend": "Y预置注释",
+            "index": "编号",
+            "gradient_profile": "渐变",
+                "Lerp": ""
+        },
+        "outputs": {
+            "X": "X",
+            "Y": "Y",
+            "x_annotation": "X注释",
+            "y_annotation": "Y注释",
+            "trigger": "触发器"
+        }
+    },
+    "CR XY Index": {
+        "title": "XY编号(CR)",
+        "widgets": {
+            "x_columns": "X列数",
+            "y_rows": "Y行数",
+            "index": "编号"
+        },
+        "outputs": {
+            "x": "X",
+            "y": "Y"
+        }
+    },
+    "CR XY From Folder": {
+        "title": "XY文件夹(CR)",
+        "widgets": {
+            "image_folder": "图像文件夹",
+            "start_index": "起始编号",
+            "end_index": "结束编号",
+            "max_columns": "最大列数",
+            "x_annotation": "X注释",
+            "y_annotation": "Y注释",
+            "font_size": "字体大小",
+            "gap": "间隙",
+            "trigger": "触发器"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "trigger": "触发器"
+        }
+    },
+    "CR XY Save Grid Image": {
+        "title": "XY保存图表(CR)",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "mode": "模式",
+                "Save": "保存",
+                "Previw": "预览",
+            "output_folder": "输出文件夹",
+            "filename_prefix": "文件名前缀",
+            "file_format": "格式",
+            "output_path": "输出路径",
+            "trigger": "触发器"
+        }
+    },
+
+
+
+    "CR Index": {
+        "title": "编号",
+        "widgets": {
+            "index": "编号"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "CR Index Increment": {
+        "title": "编号增加",
+        "widgets": {
+            "index": "编号",
+            "interval": "间隔"
+        },
+        "outputs": {
+            "index": "编号",
+            "interval": "间隔"
+        }
+    },
+    "CR Index Multiply": {
+        "title": "编号相乘",
+        "widgets": {
+            "index": "编号",
+            "factor": "系数"
+        },
+        "outputs": {
+            "index": "编号",
+            "factor": "系数"
+        }
+    },
+    "CR Index Reset": {
+        "title": "编号重置",
+        "widgets": {
+            "index": "编号",
+            "reset_to": "重置到"
+        },
+        "outputs": {
+            "index": "编号",
+            "reset_to": "重置到"
+        }
+    },
+    "CR Trigger": {
+        "title": "触发器",
+        "widgets": {
+            "index": "编号",
+            "trigger_value": "触发值"
+        },
+        "outputs": {
+            "index": "编号",
+            "trigger": "触发器"
+        }
+    },
+    "CR Float To Integer": {
+        "title": "浮点到整数",
+        "widgets": {
+            "float": "浮点"
+        },
+        "outputs": {
+            "INT": "整数"
         }
     }
 }
