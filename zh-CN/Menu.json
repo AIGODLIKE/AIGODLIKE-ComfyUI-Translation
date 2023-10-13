@@ -1385,5 +1385,14 @@
     "Remove group restriction": "移除组内限制",
     "Anything Everywhere show node details": "全局输入显示节点细节",
     "Anything Everywhere check loops": "全局输入检测循环",
-    "Anything Everywhere animate UE links": "全局输入连线动画"
+    "Anything Everywhere animate UE links": "全局输入连线动画",
+
+    "VHS": "VHS",
+
+    "match A": "匹配A",
+    "match B": "匹配B",
+    "match smaller": "匹配更小的",
+    "match larger": "匹配更大的",
+    "ceter": "中心",
+    "Disabled": "关闭"
 }
