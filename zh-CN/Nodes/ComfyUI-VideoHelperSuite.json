@@ -1,0 +1,241 @@
+{
+    "VHS_SplitLatents": {
+        "title": "拆分Latent",
+        "inputs": {
+            "latents": "Latent"
+        },
+        "widgets": {
+            "split_index": "拆分索引"
+        },
+        "outputs": {
+            "LATENT_A": "Latent_A",
+            "A_count": "A组计数",
+            "LATENT_B": "Latent_B",
+            "B_count": "B组计数"
+        }
+    },
+    "VHS_MergeLatents": {
+        "title": "融合Latent",
+        "inputs": {
+            "latents_A": "Latent_A",
+            "latents_B": "Latent_B"
+        },
+        "widgets": {
+            "merge_strategy": "融合策略",
+                "match A": "匹配A",
+                "match B": "匹配B",
+                "match smaller": "匹配更小的",
+                "match larger": "匹配更大的",
+            "scale_method": "缩放方法",
+                "nearest-exact": "邻近-精确",
+                "bilinear": "双线性插值",
+                "area": "区域",
+                "bislerp": "球面线性",
+                "bicubic": "双三次插值",
+            "crop": "裁剪",
+                "disabled": "关闭",
+                "ceter": "中心"
+        },
+        "outputs": {
+            "LATENT": "Latent",
+            "count": "计数"
+        }
+    },
+    "VHS_SelectEveryNthLatent": {
+        "title": "选择Latent",
+        "inputs": {
+            "latents": "Latent"
+        },
+        "widgets": {  
+            "select_every_nth": "模选"
+        },
+        "outputs": {
+            "LATENT": "Latent",
+            "count": "计数"
+        }
+    },
+    "VHS_GetLatentCount": {
+        "title": "获取Latent数量",
+        "inputs": {
+            "latents": "Latent"
+        },
+        "outputs": {
+            "count": "计数"
+        }
+    },
+    "VHS_DuplicateLatents": {
+        "title": "复制Latent",
+        "inputs": {
+            "latents": "Latent"
+        },
+        "widgets": {
+            "multiply_by": "系数"
+        },
+        "outputs": {
+            "LATENT": "Latent",
+            "count": "计数"
+        }
+    },
+
+
+    "VHS_SplitImages": {
+        "title": "拆分图像",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "split_index": "拆分索引"
+        },
+        "outputs": {
+            "IMAGE_A": "图像_A",
+            "A_count": "A组计数",
+            "IMAGE_B": "图像_B",
+            "B_count": "B组计数"
+        }
+    },
+    "VHS_MergeImages": {
+        "title": "融合图像",
+        "inputs": {
+            "images_A": "图像_A",
+            "images_B": "图像_B"
+        },
+        "widgets": {
+            "merge_strategy": "融合策略",
+                "match A": "匹配A",
+                "match B": "匹配B",
+                "match smaller": "匹配更小的",
+                "match larger": "匹配更大的",
+            "scale_method": "缩放方法",
+                "nearest-exact": "邻近-精确",
+                "bilinear": "双线性插值",
+                "area": "区域",
+                "bislerp": "球面线性",
+                "bicubic": "双三次插值",
+            "crop": "裁剪",
+                "disabled": "关闭",
+                "ceter": "中心"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "count": "计数"
+        }
+    },
+    "VHS_SelectEveryNthImage": {
+        "title": "选择图像",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {  
+            "select_every_nth": "模选"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "count": "计数"
+        }
+    },
+    "VHS_GetImageCount": {
+        "title": "获取图像数量",
+        "inputs": {
+            "images": "图像"
+        },
+        "outputs": {
+            "count": "计数"
+        }
+    },
+    "VHS_DuplicateImages": {
+        "title": "复制图像",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "multiply_by": "系数"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "count": "计数"
+        }
+    },
+
+
+
+    "VHS_VideoCombine": {
+        "title": "合并为视频",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "frame_rate": "帧率",
+            "loop_count": "循环次数",
+            "filename_prefix": "文件名前缀",
+            "format": "格式",
+            "pingpong": "Ping-Pong",
+            "save_image": "保存图像",
+            "Sync playback": ""
+        }
+    },
+
+
+    
+    "VHS_LoadVideo": {
+        "title": "加载视频",
+        "widgets": {
+            "video": "视频",
+            "choose file to upload": "选择文件上传",
+            "force_rate": "强制帧率",
+            "force_size": "强制尺寸",
+                "Disabled": "关闭",
+            "frame_load_cap": "帧数读取上限",
+            "skip_first_frames": "跳过第一帧",
+            "select_every_nth": "模选"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "frame_count": "帧计数"
+        }
+    },
+    "VHS_LoadVideoPath": {
+        "title": "加载路径视频",
+        "widgets": {
+            "video": "视频",
+            "force_rate": "强制帧率",
+            "force_size": "强制尺寸",
+                "Disabled": "关闭",
+            "frame_load_cap": "帧数读取上限",
+            "skip_first_frames": "跳过第一帧",
+            "select_every_nth": "模选"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "frame_count": "帧计数"
+        }
+    },
+    "VHS_LoadImages": {
+        "title": "加载图像",
+        "widgets": {
+            "directory": "路径",
+            "choose folder to upload": "选择文件夹上传",
+            "image_load_cap": "图像读取上限",
+            "skip_first_images": "跳过第一张图",
+            "select_every_nth": "模选"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩",
+            "INT": "整数"
+        }
+    },
+    "VHS_LoadImagesPath": {
+        "title": "加载路径图像",
+        "widgets": {
+            "directory": "路径",
+            "image_load_cap": "图像读取上限",
+            "skip_first_imagess": "跳过第一张图",
+            "select_every_nth": "模选"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩",
+            "INT": "整数"
+        }
+    }
+}

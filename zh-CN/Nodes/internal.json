@@ -126,7 +126,7 @@
         "title": "VP调度器",
         "widgets": {
             "steps": "步数",
-            "beta_d": "beta_d",
+            "beta_d": "beta_D",
             "beta_min": "beta_min",
             "eps_s": "eps_s"
         },

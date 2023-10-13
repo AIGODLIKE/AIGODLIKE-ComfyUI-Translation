@@ -127,9 +127,9 @@
             "tidy_tags": "整理词条",
                 "yes": "是",
                 "no": "否",
-            "text_a": "文本A",
-            "text_b": "文本B",
-            "text_c": "文本C"
+            "text_a": "文本_A",
+            "text_b": "文本_B",
+            "text_c": "文本_C"
         },
         "outputs": {
             "STRING": "字符串"

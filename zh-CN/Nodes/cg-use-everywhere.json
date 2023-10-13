@@ -1,0 +1,47 @@
+{
+    "Seed Everywhere": {
+        "title": "全局随机种",
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "Anything Everywhere": {
+        "title": "全局输入",
+        "inputs": {
+            "anything": "输入"
+        }
+    },
+    "Anything Everywhere3": {
+        "title": "全局输入3",
+        "inputs": {
+            "anything": "输入",
+            "anything2": "输入2",
+            "anything3": "输入3"
+        }
+    },
+    "Anything Everywhere?": {
+        "title": "全局输入?",
+        "inputs": {
+            "anything": "输入"
+        },
+        "widgets": {
+            "title_regex": "名称正则",
+            "input_regex": "输入正则"
+        }
+    },
+    "Prompts Everywhere": {
+        "title": "全局提示词",
+        "inputs": {
+            "(^prompt|^positive)": "正面提示词",
+            "meg": "负面提示词"
+        }
+    }
+}
