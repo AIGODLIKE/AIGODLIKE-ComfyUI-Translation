@@ -201,8 +201,8 @@
     "Blend Latents": {
         "title": "混合Latent",
         "inputs": {
-            "latent_a": "LatentA",
-            "latent_b": "LatentB"
+            "latent_a": "Latent_A",
+            "latent_b": "Latent_B"
         },
         "widgets": {
             "operation": "混合方法",
@@ -384,8 +384,8 @@
     "CLIP Input Switch": {
         "title": "CLIP切换",
         "inputs": {
-            "clip_a": "CLIP_a",
-            "clip_b": "CLIP_b",
+            "clip_a": "CLIP_A",
+            "clip_b": "CLIP_B",
             "boolean_number": "布尔"
         },
         "outputs": {
@@ -395,8 +395,8 @@
     "CLIP Vision Input Switch": {
         "title": "CLIP视觉切换",
         "inputs": {
-            "clip_vision_a": "CLIP视觉_a",
-            "clip_vision_b": "CLIP视觉_b",
+            "clip_vision_a": "CLIP视觉_A",
+            "clip_vision_b": "CLIP视觉_B",
             "boolean_number": "布尔"
         },
         "outputs": {
@@ -406,8 +406,8 @@
     "Conditioning Input Switch": {
         "title": "条件切换",
         "inputs": {
-            "conditioning_a": "条件_a",
-            "conditioning_b": "条件_b",
+            "conditioning_a": "条件_A",
+            "conditioning_b": "条件_B",
             "boolean_number": "布尔"
         },
         "outputs": {
@@ -417,8 +417,8 @@
     "Control Net Model Input Switch": {
         "title": "ControlNet切换",
         "inputs": {
-            "control_net_a": "ControlNet_a",
-            "control_net_b": "ControlNet_b",
+            "control_net_a": "ControlNet_A",
+            "control_net_b": "ControlNet_B",
             "boolean_number": "布尔"
         },
         "outputs": {
@@ -428,8 +428,8 @@
     "Latent Input Switch": {
         "title": "Latent切换",
         "inputs": {
-            "latent_a": "Latent_a",
-            "latent_b": "Latent_b",
+            "latent_a": "Latent_A",
+            "latent_b": "Latent_B",
             "boolean_number": "布尔"
         },
         "outputs": {
@@ -464,8 +464,8 @@
     "Image Input Switch": {
         "title": "图像切换",
         "inputs": {
-            "image_a": "图像_a",
-            "image_b": "图像_b",
+            "image_a": "图像_A",
+            "image_b": "图像_B",
             "boolean_number": "布尔"
         },
         "outputs": {
@@ -475,10 +475,10 @@
     "Lora Input Switch": {
         "title": "LoRA切换",
         "inputs": {
-            "model_a": "模型_a",
-            "clip_a": "CLIP_a",
-            "model_b": "模型_b",
-            "clip_b": "CLIP_b",
+            "model_a": "模型_A",
+            "clip_a": "CLIP_A",
+            "model_b": "模型_B",
+            "clip_b": "CLIP_B",
             "boolean_number": "布尔"
         },
         "outputs": {
@@ -489,8 +489,8 @@
     "Model Input Switch": {
         "title": "模型切换",
         "inputs": {
-            "model_a": "模型_a",
-            "model_b": "模型_b",
+            "model_a": "模型_A",
+            "model_b": "模型_B",
             "boolean_number": "布尔"
         },
         "outputs": {
@@ -500,8 +500,8 @@
     "Number Input Switch": {
         "title": "数字切换",
         "inputs": {
-            "number_a": "数字_a",
-            "number_b": "数字_b",
+            "number_a": "数字_A",
+            "number_b": "数字_B",
             "boolean_number": "布尔"
         },
         "widgets": {
@@ -517,8 +517,8 @@
     "Number Input Condition": {
         "title": "数字切换",
         "inputs": {
-            "number_a": "数字_a",
-            "number_b": "数字_b",
+            "number_a": "数字_A",
+            "number_b": "数字_B",
             "boolean_number": "布尔"
         },
         "widgets": {
@@ -534,8 +534,8 @@
     "Text Input Switch": {
         "title": "文本切换",
         "inputs": {
-            "text_a": "文本_a",
-            "text_b": "文本_b",
+            "text_a": "文本_A",
+            "text_b": "文本_B",
             "boolean_number": "布尔"
         },
         "outputs": {
@@ -545,8 +545,8 @@
     "Upscale Model Switch": {
         "title": "放大模型切换",
         "inputs": {
-            "upscale_model_a": "放大模型_a",
-            "upscale_model_b": "放大模型_b",
+            "upscale_model_a": "放大模型_A",
+            "upscale_model_b": "放大模型_B",
             "boolean_number": "布尔"
         },
         "outputs": {
@@ -556,8 +556,8 @@
     "VAE Input Switch": {
         "title": "VAE切换",
         "inputs": {
-            "vae_a": "VAE_a",
-            "vae_b": "VAE_b",
+            "vae_a": "VAE_A",
+            "vae_b": "VAE_B",
             "boolean_number": "布尔"
         },
         "outputs": {
@@ -596,8 +596,8 @@
     "Number Operation": {
         "title": "数字运算",
         "inputs": {
-            "number_a": "数字_a",
-            "number_b": "数字_b"
+            "number_a": "数字_A",
+            "number_b": "数字_B"
         },
         "widgets": {
             "operation": "操作",
@@ -1053,20 +1053,20 @@
     "CLIPSeg Batch Masking": {
         "title": "CLIPSeg批量遮罩",
         "inputs": {
-            "image_a": "图像_a",
-            "image_b": "图像_b",
-            "image_c": "图像_c",
-            "image_d": "图像_d",
-            "image_e": "图像_e",
-            "image_f": "图像_f"
+            "image_a": "图像_A",
+            "image_b": "图像_B",
+            "image_c": "图像_C",
+            "image_d": "图像_D",
+            "image_e": "图像_E",
+            "image_f": "图像_F"
         },
         "widgets": {
-            "text_a": "文本_a",
-            "text_b": "文本_b",
-            "text_c": "文本_c",
-            "text_d": "文本_d",
-            "text_e": "文本_e",
-            "text_f": "文本_f"
+            "text_a": "文本_A",
+            "text_b": "文本_B",
+            "text_c": "文本_C",
+            "text_d": "文本_D",
+            "text_e": "文本_E",
+            "text_f": "文本_F"
         },
         "outputs": {
             "IMAGES_BATCH": "图像",
@@ -1102,8 +1102,8 @@
     "Masks Add": {
         "title": "遮罩相加",
         "inputs": {
-            "mask_a": "遮罩_a",
-            "mask_b": "遮罩_b"
+            "mask_a": "遮罩_A",
+            "mask_b": "遮罩_B"
         },
         "outputs": {
             "MASKS": "遮罩"
@@ -1112,8 +1112,8 @@
     "Masks Subtract": {
         "title": "遮罩相减",
         "inputs": {
-            "mask_a": "遮罩_a",
-            "mask_b": "遮罩_b"
+            "mask_a": "遮罩_A", 
+            "mask_b": "遮罩_B"
         },
         "outputs": {
             "MASKS": "遮罩"
@@ -1147,9 +1147,9 @@
     "Mask Batch": {
         "title": "遮罩批次",
         "inputs": {
-            "masks_a": "遮罩_a",
-            "masks_b": "遮罩_b",
-            "masks_c": "遮罩_c",
+            "masks_a": "遮罩_A",
+            "masks_b": "遮罩_B",
+            "masks_c": "遮罩_C",
             "masks_d": "遮罩_d"
         },
         "outputs": {
@@ -1341,11 +1341,11 @@
     "Masks Combine Regions": {
         "title": "遮罩合并",
         "inputs": {
-            "masks_a": "遮罩_a",
-            "masks_b": "遮罩_b",
-            "masks_c": "遮罩_c",
-            "masks_d": "遮罩_d",
-            "masks_e": "遮罩_e",
+            "masks_a": "遮罩_A",
+            "masks_b": "遮罩_B",
+            "masks_c": "遮罩_C",
+            "masks_d": "遮罩_D",
+            "masks_e": "遮罩_E",
             "masks_f": "遮罩_f"
         },
         "outputs": {
@@ -1383,7 +1383,7 @@
     "SAM Parameters Combine": {
         "title": "SAM参数合并",
         "inputs": {
-            "sam_parameters_a": "SAM参数_a",
+            "sam_parameters_a": "SAM参数_A",
             "sam_parameters_b": "SAM参数_b"
         },
         "outputs": {
@@ -1811,7 +1811,7 @@
     "Image Stitch": {
         "title": "图像缝合",
         "inputs": {
-            "image_a": "图像_a",
+            "image_a": "图像_A",
             "image_b": "图像_b"
         },
         "widgets": {
@@ -2171,9 +2171,9 @@
     "Image Batch": {
         "title": "图像组合批次",
         "inputs": {
-            "images_a": "图像_a",
-            "images_b": "图像_b",
-            "images_c": "图像_c",
+            "images_a": "图像_A",
+            "images_b": "图像_B",
+            "images_c": "图像_C",
             "images_d": "图像_d"
         },
         "outputs": {
@@ -2196,8 +2196,8 @@
     "Image Blend by Mask": {
         "title": "图像遮罩混合",
         "inputs": {
-            "images_a": "图像_a",
-            "images_b": "图像_b",
+            "images_a": "图像_A",
+            "images_b": "图像_B",
             "mask": "遮罩图像"
         },
         "widgets": {
@@ -2210,7 +2210,7 @@
     "Image Blend": {
         "title": "图像混合",
         "inputs": {
-            "images_a": "图像_a",
+            "images_a": "图像_A",
             "images_b": "图像_b"
         },
         "widgets": {
@@ -2223,7 +2223,7 @@
     "Image Blending Mode": {
         "title": "图像混合模式",
         "inputs": {
-            "images_a": "图像_a",
+            "images_a": "图像_A",
             "images_b": "图像_b"
         },
         "widgets": {
@@ -2312,7 +2312,7 @@
     "Create Morph Image": {
         "title": "生成动态图像",
         "inputs": {
-            "image_a": "图像_a",
+            "image_a": "图像_A",
             "image_b": "图像_b"
         },
         "widgets": {
@@ -2326,8 +2326,8 @@
             "filetype": "文件类型"
         },
         "outputs": {
-            "image_a_pass": "图像_a",
-            "image_b_pass": "图像_b",
+            "image_a_pass": "图像_A",
+            "image_b_pass": "图像_B",
             "filepath_text": "文件路径",
             "filename_text": "文件名"
         }
@@ -2663,8 +2663,8 @@
         "title": "文本截取",
         "inputs": {
             "text": "文本",
-            "text_b": "文本_b",
-            "text_c": "文本_c",
+            "text_b": "文本_B",
+            "text_c": "文本_C",
             "text_d": "文本_d"
         },
         "widgets": {
@@ -2714,7 +2714,7 @@
     "Text Compare": {
         "title": "文本比较",
         "inputs": {
-            "text_a": "文本_a",
+            "text_a": "文本_A",
             "text_b": "文本_b"
         },
         "widgets": {
@@ -2847,9 +2847,9 @@
     "Text Dictionary Update": {
         "title": "更新字典",
         "inputs": {
-            "dictionary_a": "字典_a",
-            "dictionary_b": "字典_b",
-            "dictionary_c": "字典_c",
+            "dictionary_a": "字典_A",
+            "dictionary_b": "字典_B",
+            "dictionary_c": "字典_C",
             "dictionary_d": "字典_d"
         },
         "outputs": {
@@ -2859,9 +2859,9 @@
     "Text Concatenate": {
         "title": "文本连锁",
         "inputs": {
-            "text_a": "文本_a",
-            "text_b": "文本_b",
-            "text_c": "文本_c",
+            "text_a": "文本_A",
+            "text_b": "文本_B",
+            "text_c": "文本_C",
             "text_d": "文本_d"
         },
         "widgets": {
@@ -2876,12 +2876,12 @@
     "Text List": {
         "title": "文本列表",
         "inputs": {
-            "text_a": "文本_a",
-            "text_b": "文本_b",
-            "text_c": "文本_c",
-            "text_d": "文本_d",
-            "text_e": "文本_e",
-            "text_f": "文本_f",
+            "text_a": "文本_A",
+            "text_b": "文本_B",
+            "text_c": "文本_C",
+            "text_d": "文本_D",
+            "text_e": "文本_E",
+            "text_f": "文本_F",
             "text_g": "文本_g"
         },
         "outputs": {
@@ -2891,9 +2891,9 @@
     "Text List Concatenate": {
         "title": "文本列表连锁",
         "inputs": {
-            "list_a": "文本_a",
-            "list_b": "文本_b",
-            "list_c": "文本_c",
+            "list_a": "文本_A",
+            "list_b": "文本_B",
+            "list_c": "文本_C",
             "list_d": "文本_d"
         },
         "outputs": {
@@ -2954,9 +2954,9 @@
         "title": "文本字符串",
         "widgets": {
             "text": "文本",
-            "text_a": "文本_a",
-            "text_b": "文本_b",
-            "text_c": "文本_c",
+            "text_a": "文本_A",
+            "text_b": "文本_B",
+            "text_c": "文本_C",
             "text_d": "文本_d"
         },
         "outputs": {
