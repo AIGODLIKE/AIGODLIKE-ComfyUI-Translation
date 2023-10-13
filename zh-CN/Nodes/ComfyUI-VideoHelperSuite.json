@@ -87,9 +87,9 @@
             "split_index": "拆分索引"
         },
         "outputs": {
-            "LATENT_A": "图像_A",
+            "IMAGE_A": "图像_A",
             "A_count": "A组计数",
-            "LATENT_B": "图像_B",
+            "IMAGE_B": "图像_B",
             "B_count": "B组计数"
         }
     },
@@ -214,8 +214,8 @@
         "widgets": {
             "directory": "路径",
             "choose folder to upload": "选择文件夹上传",
-            "image_load_cap": "帧数读取上限",
-            "skip_first_images": "跳过第一帧",
+            "image_load_cap": "图像读取上限",
+            "skip_first_images": "跳过第一张图",
             "select_every_nth": "模选"
         },
         "outputs": {
@@ -229,7 +229,7 @@
         "widgets": {
             "directory": "路径",
             "image_load_cap": "图像读取上限",
-            "skip_first_frames": "跳过第一帧",
+            "skip_first_imagess": "跳过第一张图",
             "select_every_nth": "模选"
         },
         "outputs": {
