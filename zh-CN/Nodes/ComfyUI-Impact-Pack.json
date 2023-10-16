@@ -451,6 +451,24 @@
             "IMAGE": "图像"
         }
     },
+    "ImpactCombineConditionings": {
+        "title": "合并条件",
+        "inputs": {
+            "conditioning1": "条件1",
+            "conditioning2": "条件2",
+            "conditioning3": "条件3",
+            "conditioning4": "条件4",
+            "conditioning5": "条件5",
+            "conditioning6": "条件6",
+            "conditioning7": "条件7",
+            "conditioning8": "条件8",
+            "conditioning9": "条件9",
+            "conditioning10": "条件10"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
     "ImpactSEGSLabelFilter": {
         "title": "Seg标签过滤",
         "inputs": {
@@ -2054,6 +2072,60 @@
         },
         "outputs": {
             "INT": "整数"
+        }
+    },
+    "ImpactQueueTrigger": {
+        "title": "队列触发器",
+        "inputs": {
+            "signal": "信号"
+        },
+        "widgets": {
+            "mode": "模式"
+        },
+        "outputs": {
+            "signal_opt": "信号"
+        }
+    },
+    "ImpactSetWidgetValue": {
+        "title": "设置组件值",
+        "inputs": {
+            "signal": "信号"
+        },
+        "widgets": {
+            "node_id": "节点ID",
+            "widget_name": "组件名称",
+            "boolean_value": "布尔",
+            "int_value": "整数",
+            "float_value": "浮点",
+            "string_value": "字符串"
+        },
+        "outputs": {
+            "signal_opt": "信号"
+        }
+    },
+    "ImpactNodeSetMuteState": {
+        "title": "停用节点",
+        "inputs": {
+            "signal": "信号"
+        },
+        "widgets": {
+            "node_id": "节点ID",
+            "set_state": "状态"
+        },
+        "outputs": {
+            "signal_opt": "信号"
+        }
+    },
+    "ImpactControlBridget": {
+        "title": "控制桥接",
+        "inputs": {
+            "value": "值"
+        },
+        "widgets": {
+            "mode": "模式"
+        },
+        "outputs": {
+            "value": "值"
         }
     },
 
