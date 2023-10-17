@@ -338,10 +338,48 @@
             "cfg": "CFG",
             "sampler_name": "采样器",
             "scheduler": "调度器",
-            "denoise": "降噪"
+            "denoise": "降噪",
+            "noise_mode": "噪波模式",
+            "interval": "间隔",
+            "omit_start_latent": "忽略起始Latent"
         },
         "outputs": {
-            "LATENT": "Latent"
+            "latent": "Latent",
+            "progress_latent": "过程Latent"
+        }
+    },
+    "KSamplerAdvancedProgress //Inspire": {
+        "title": "K采样器(高级过程)",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "latent_image": "Latent",
+            "prev_progress_latent_opt": "前过程Latent"
+        },
+        "widgets": {
+            "add_noise": "添加噪波",
+            "noise_seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "start_at_step": "开始降噪步数",
+            "end_at_step": "结束降噪步数",
+            "noise_mode": "噪波模式",
+            "return_with_leftover_noise": "返回噪波",
+            "interval": "间隔",
+            "omit_start_latent": "忽略起始Latent"
+        },
+        "outputs": {
+            "latent": "Latent",
+            "progress_latent": "过程Latent"
         }
     },
 
@@ -460,6 +498,38 @@
         },
         "outputs": {
             "REGIONAL_PROMPTS": "区域提示词",
+            "MASK": "遮罩"
+        }
+    },
+    "RegionalConditioningSimple //Inspire": {
+        "title": "区域条件(简易)",
+        "inputs": {
+            "clip": "CLIP",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "strength": "强度",
+            "set_cond_area": "设置条件区域",
+            "prompt": "提示词"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "RegionalConditioningColorMask //Inspire": {
+        "title": "区域条件(颜色遮罩)",
+        "inputs": {
+            "clip": "CLIP",
+            "color_mask": "颜色遮罩"
+        },
+        "widgets": {
+            "mask_color": "遮罩颜色",
+            "strength": "强度",
+            "set_cond_area": "设置条件区域",
+            "prompt": "提示词"
+        },
+        "outputs": {
+            "CONDITIONING": "条件",
             "MASK": "遮罩"
         }
     }

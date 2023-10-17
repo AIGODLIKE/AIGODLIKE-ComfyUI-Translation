@@ -151,6 +151,13 @@
     "Set Group Nodes to Always": "启用该组节点",
     "Bypass Group Nodes": "忽略该组节点",
     "Show executing node": "显示正在运行的节点",
+    "Node name for S&R": "用于搜索的节点名",
+    "Select Nodes": "选择全部节点",
+    "Align": "对齐",
+    "Top": "上",
+    "Bottom": "下",
+    "Left": "左",
+    "Right": "右",
 
     "Open in MaskEditor": "在遮罩编辑器中打开",
 
