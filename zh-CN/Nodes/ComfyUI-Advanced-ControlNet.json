@@ -40,6 +40,18 @@
             "LATENT_KEYFRAME": "Latent关键帧"
         }
     },
+    "LatentKeyframeBatchedGroup": {
+        "title": "Latent关键帧组合",
+        "inputs": {
+            "prev_latent_keyframe": "Latent关键帧"
+        },
+        "widgets": {
+            "strengths": "强度"
+        },
+        "outputs": {
+            "LATENT_KEYFRAME": "Latent关键帧"
+        }
+    },
     "LatentKeyframeTiming": {
         "title": "Latent关键帧插值",
         "inputs": {
@@ -88,6 +100,26 @@
         }
     },
 
+    "ACN_AdvancedControlNetApply": {
+        "title": "高级ControlNet应用",
+        "inputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "control_net": "ControlNet",
+            "image": "图像",
+            "mask_optional": "遮罩"
+        },
+        "widgets": {
+            "strength": "强度",
+            "start_percent": "开始位置",
+            "end_percent": "结束位置"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件"
+        }
+    },
+    
     "ScaledSoftControlNetWeights": {
         "title": "缩放柔和ControlNet权重",
         "widgets": {
