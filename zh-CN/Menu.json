@@ -158,9 +158,10 @@
     "Bottom": "下",
     "Left": "左",
     "Right": "右",
-    "Add Seleced Nodes To Group": "将选中的节点添加到组",
-    "Fit Group To Nodes": "缩放组边框以适配节点",
-    
+    "Add Seleced Nodes To Group": "添加到组",
+    "Add Group For Selected Nodes": "建立组",
+    "Fit Group To Nodes": "缩放组到节点",
+
 
     "Open in MaskEditor": "在遮罩编辑器中打开",
 
