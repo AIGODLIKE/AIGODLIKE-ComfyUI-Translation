@@ -385,6 +385,83 @@
 
 
 
+    "CacheBackendData //Inspire": {
+        "tiitle": "缓存后端数据(字符串键)",
+        "inputs": {
+            "data": "数据"
+        },
+        "widgets": {
+            "key": "键",
+            "tag": "数据标签"
+        },
+        "outputs": {
+            "data opt": "数据"
+        }
+    },
+    "CacheBackendDataNumberKey //Inspire": {
+        "title": "缓存后端数据(数字键)",
+        "inputs": {
+            "data": "数据"
+        },
+        "widgets": {
+            "key": "键",
+            "tag": "数据标签"
+        },
+        "outputs": {
+            "data opt": "数据"
+        }
+    },
+    "RetrieveBackendData //Inspire": {
+        "title": "检索后端数据(字符串键)",
+        "widgets": {
+            "key": "键"
+        },
+        "outputs": {
+            "data": "数据"
+        }
+    },
+    "RetrieveBackendDataNumberKey //Inspire": {
+        "title": "检索后端数据(数字键)",
+        "widgets": {
+            "key": "键"
+        },
+        "outputs": {
+            "data": "数据"
+        }
+    },
+    "RemoveBackendData //Inspire": {
+        "title": "移除后端数据(字符串键)",
+        "inputs": {
+            "signal_opt": "信号(可选)"
+        },
+        "widgets": {
+            "key": "键"
+        },
+        "outputs": {
+            "signal": "信号"
+        }
+    },
+    "RemoveBackendDataNumberKey //Inspire": {
+        "title": "移除后端数据(数字键)",
+        "inputs": {
+            "signal_opt": "信号(可选)"
+        },
+        "widgets": {
+            "key": "键"
+        },
+        "outputs": {
+            "signal": "信号"
+        }
+    },
+    "ShowCachedInfo //Inspire": {
+        "title": "显示缓存信息",
+        "widgets": {
+            "cache_info": "缓存信息"
+        }
+    },
+
+
+
     "GlobalSeed //Inspire": {
         "title": "全局随机种",
         "widgets": {
