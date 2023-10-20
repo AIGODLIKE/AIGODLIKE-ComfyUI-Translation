@@ -1,4 +1,15 @@
 {
+    "LoadImage //Inspire": {
+        "title": "加载图像(Inspire)",
+        "widgets": {
+            "image": "图像",
+            "image_data": "图像数据"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    },
     "XY Input: Lora Block Weight //Inspire": {
         "title": "XY输入：LoRA分层权重",
         "widgets": {
@@ -197,6 +208,12 @@
     },
     "Color_Preprocessor_Provider_for_SEGS //Inspire": {
         "title": "Color预处理(Seg)",
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理"
+        }
+    },
+    "InpaintPreprocessor_Provider_for_SEGS //Inspire": {
+        "title": "Inpaint预处理(Seg)",
         "outputs": {
             "SEGS_PREPROCESSOR": "Seg预处理"
         }
