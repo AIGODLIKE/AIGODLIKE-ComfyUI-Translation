@@ -386,7 +386,7 @@
 
 
     "CacheBackendData //Inspire": {
-        "tiitle": "缓存后端数据(字符串键)",
+        "title": "缓存后端数据(字符串键)",
         "inputs": {
             "data": "数据"
         },
