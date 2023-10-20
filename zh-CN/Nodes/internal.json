@@ -1273,6 +1273,21 @@
             "MODEL": "模型"
         }
     },
+    "FreeU_V2": {
+        "title": "FreeU_V2模型重加权",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "b1": "B1",
+            "b2": "B2",
+            "s1": "S1",
+            "s2": "S2"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
 
 
 

@@ -509,6 +509,83 @@
             "IMAGE": "图像"
         }
     },
+    "CR Color Bars": {
+        "title": "颜色栅格(CR)",
+        "widgets": {
+            "mode": "模式",
+                "2-color": "2色",
+            "width": "宽度",
+            "height": "高度",
+            "color1": "颜色1",
+            "color2": "颜色2",
+            "orientation": "方向",
+                "vertical": "竖直",
+                "horizontal": "水平",
+                "diagonal": "斜角",
+            "bar_frequency": "密度"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "CR Style Bars": {
+        "title": "风格栅格(CR)",
+        "widgets": {
+            "mode": "模式",
+                "color bars": "颜色",
+                "sin wave": "正弦波",
+                "gradient bars": "渐变",
+            "width": "宽度",
+            "height": "高度",
+            "orientation": "方向",
+                "vertical": "竖直",
+                "horizontal": "水平",
+                "diagonal": "斜角",
+            "bar_frequency": "密度"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "CR Checker Pattern": {
+        "title": "棋盘格(CR)",
+        "widgets": {
+            "mode": "模式",
+                "regular": "正常",
+                "stepped": "阶梯",
+            "width": "宽度",
+            "height": "高度",
+            "color1": "颜色1",
+            "color2": "颜色2",
+            "orientation": "方向",
+                "vertical": "竖直",
+                "horizontal": "水平",
+                "diagonal": "斜角",
+            "grid_frenquency": "栅格密度",
+            "step": "阶梯步长"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "CR Color Gradient": {
+        "title": "渐变色(CR)",
+        "widgets": {
+            "mode": "模式",
+                "linear": "线性",
+                "radial": "径向",
+            "width": "宽度",
+            "height": "高度",
+            "start_color": "起始色",
+            "end_color": "终点色",
+            "orientation": "方向",
+                "vertical": "竖直",
+                "horizontal": "水平"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "CR SD1.5 Aspect Ratio": {
         "title": "SD1.5宽高比(CR)",
         "widgets": {

@@ -2116,7 +2116,7 @@
             "signal_opt": "信号"
         }
     },
-    "ImpactControlBridget": {
+    "ImpactControlBridge": {
         "title": "控制桥接",
         "inputs": {
             "value": "值"

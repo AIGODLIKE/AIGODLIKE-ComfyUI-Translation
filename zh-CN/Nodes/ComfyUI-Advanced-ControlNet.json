@@ -1,17 +1,17 @@
 {
     "TimestepKeyframe": {
-        "title": "间隔关键帧",
+        "title": "帧间隔",
         "inputs": {
             "control_net_weights": "ControlNet权重",
             "t2i_adapter_weights": "T2I适配权重",
             "latent_keyframe": "Latent关键帧",
-            "prev_timestep_keyframe": "间隔关键帧"
+            "prev_timestep_keyframe": "帧间隔"
         },
         "widgets": {
             "start_percent": "开始位置"
         },
         "outputs": {
-            "TIMESTEP_KEYFRAME": "间隔关键帧"
+            "TIMESTEP_KEYFRAME": "帧间隔"
         }
     },
     "LatentKeyframe": {
@@ -40,14 +40,26 @@
             "LATENT_KEYFRAME": "Latent关键帧"
         }
     },
-    "LatentKeyframeTiming": {
-        "title": "Latent关键时间",
+    "LatentKeyframeBatchedGroup": {
+        "title": "Latent关键帧组合",
         "inputs": {
             "prev_latent_keyframe": "Latent关键帧"
         },
         "widgets": {
-            "batch_index_from": "批次索引从",
-            "batch_index_to": "批次索引到",
+            "strengths": "强度"
+        },
+        "outputs": {
+            "LATENT_KEYFRAME": "Latent关键帧"
+        }
+    },
+    "LatentKeyframeTiming": {
+        "title": "Latent关键帧插值",
+        "inputs": {
+            "prev_latent_keyframe": "Latent关键帧"
+        },
+        "widgets": {
+            "batch_index_from": "批次序号从",
+            "batch_index_to_excl": "批次序号到",
             "strength_from": "强度从",
             "strength_to": "强度到",
             "interpolation": "插值方式",
@@ -55,7 +67,7 @@
                 "ease-in": "渐进",
                 "ease-out": "渐出",
                 "linear": "线性",
-            "flip_weights": "翻转权重"
+            "flip_weights": "反转权重"
         },
         "outputs": {
             "LATENT_KEYFRAME": "Latent关键帧"
@@ -65,7 +77,7 @@
     "ControlNetLoaderAdvanced": {
         "title": "ControlNet加载器(高级)",
         "inputs": {
-            "timestep_keyframe": "间隔关键帧"
+            "timestep_keyframe": "帧间隔"
         },
         "widgets": {
             "control_net_name": "ControlNet名称"
@@ -78,7 +90,7 @@
         "title": "DiffControlNet加载器(高级)",
         "inputs": {
             "model": "模型",
-            "timestep_keyframe": "间隔关键帧"
+            "timestep_keyframe": "帧间隔"
         },
         "widgets": {
             "control_net_name": "ControlNet名称"
@@ -88,15 +100,35 @@
         }
     },
 
+    "ACN_AdvancedControlNetApply": {
+        "title": "高级ControlNet应用",
+        "inputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "control_net": "ControlNet",
+            "image": "图像",
+            "mask_optional": "遮罩"
+        },
+        "widgets": {
+            "strength": "强度",
+            "start_percent": "开始位置",
+            "end_percent": "结束位置"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件"
+        }
+    },
+    
     "ScaledSoftControlNetWeights": {
         "title": "缩放柔和ControlNet权重",
         "widgets": {
             "base_multiplier": "系数",
-            "flip_weights": "翻转权重"
+            "flip_weights": "反转权重"
         },
         "outputs": {
             "CONTROL_NET_WEIGHTS": "ControlNet权重",
-            "TIMESTEP_KEYFRAME": "间隔关键帧"
+            "TIMESTEP_KEYFRAME": "帧间隔"
         }
     },
     "SoftControlNetWeights": {
@@ -115,11 +147,11 @@
             "weight_10": "权重10",
             "weight_11": "权重11",
             "weight_12": "权重12",
-            "flip_weights": "翻转权重"
+            "flip_weights": "反转权重"
         },
         "outputs": {
             "CONTROL_NET_WEIGHTS": "ControlNet权重",
-            "TIMESTEP_KEYFRAME": "间隔关键帧"
+            "TIMESTEP_KEYFRAME": "帧间隔"
         }
     },
     "CustomControlNetWeights": {
@@ -138,11 +170,11 @@
             "weight_10": "权重10",
             "weight_11": "权重11",
             "weight_12": "权重12",
-            "flip_weights": "翻转权重"
+            "flip_weights": "反转权重"
         },
         "outputs": {
             "CONTROL_NET_WEIGHTS": "ControlNet权重",
-            "TIMESTEP_KEYFRAME": "间隔关键帧"
+            "TIMESTEP_KEYFRAME": "帧间隔"
         }
     },
     "SoftT2IAdapterWeights": {
@@ -152,11 +184,11 @@
             "weight_01": "权重01",
             "weight_02": "权重02",
             "weight_03": "权重03",
-            "flip_weights": "翻转权重"
+            "flip_weights": "反转权重"
         },
         "outputs": {
             "T2I_ADAPTER_WEIGHTS": "T2I适配权重",
-            "TIMESTEP_KEYFRAME": "间隔关键帧"
+            "TIMESTEP_KEYFRAME": "帧间隔"
         }
     },
     "CustomT2IAdapterWeights": {
@@ -166,11 +198,11 @@
             "weight_01": "权重01",
             "weight_02": "权重02",
             "weight_03": "权重03",
-            "flip_weights": "翻转权重"
+            "flip_weights": "反转权重"
         },
         "outputs": {
             "T2I_ADAPTER_WEIGHTS": "T2I适配权重",
-            "TIMESTEP_KEYFRAME": "间隔关键帧"
+            "TIMESTEP_KEYFRAME": "帧间隔"
         }
     },
     "LoadImagesFromDirectory": {

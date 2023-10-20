@@ -1,4 +1,15 @@
 {
+    "LoadImage //Inspire": {
+        "title": "加载图像(Inspire)",
+        "widgets": {
+            "image": "图像",
+            "image_data": "图像数据"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    },
     "XY Input: Lora Block Weight //Inspire": {
         "title": "XY输入：LoRA分层权重",
         "widgets": {
@@ -201,6 +212,12 @@
             "SEGS_PREPROCESSOR": "Seg预处理"
         }
     },
+    "InpaintPreprocessor_Provider_for_SEGS //Inspire": {
+        "title": "Inpaint预处理(Seg)",
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理"
+        }
+    },
 
 
 
@@ -380,6 +397,83 @@
         "outputs": {
             "latent": "Latent",
             "progress_latent": "过程Latent"
+        }
+    },
+
+
+
+    "CacheBackendData //Inspire": {
+        "title": "缓存后端数据(字符串键)",
+        "inputs": {
+            "data": "数据"
+        },
+        "widgets": {
+            "key": "键",
+            "tag": "数据标签"
+        },
+        "outputs": {
+            "data opt": "数据"
+        }
+    },
+    "CacheBackendDataNumberKey //Inspire": {
+        "title": "缓存后端数据(数字键)",
+        "inputs": {
+            "data": "数据"
+        },
+        "widgets": {
+            "key": "键",
+            "tag": "数据标签"
+        },
+        "outputs": {
+            "data opt": "数据"
+        }
+    },
+    "RetrieveBackendData //Inspire": {
+        "title": "检索后端数据(字符串键)",
+        "widgets": {
+            "key": "键"
+        },
+        "outputs": {
+            "data": "数据"
+        }
+    },
+    "RetrieveBackendDataNumberKey //Inspire": {
+        "title": "检索后端数据(数字键)",
+        "widgets": {
+            "key": "键"
+        },
+        "outputs": {
+            "data": "数据"
+        }
+    },
+    "RemoveBackendData //Inspire": {
+        "title": "移除后端数据(字符串键)",
+        "inputs": {
+            "signal_opt": "信号(可选)"
+        },
+        "widgets": {
+            "key": "键"
+        },
+        "outputs": {
+            "signal": "信号"
+        }
+    },
+    "RemoveBackendDataNumberKey //Inspire": {
+        "title": "移除后端数据(数字键)",
+        "inputs": {
+            "signal_opt": "信号(可选)"
+        },
+        "widgets": {
+            "key": "键"
+        },
+        "outputs": {
+            "signal": "信号"
+        }
+    },
+    "ShowCachedInfo //Inspire": {
+        "title": "显示缓存信息",
+        "widgets": {
+            "cache_info": "缓存信息"
         }
     },
 
