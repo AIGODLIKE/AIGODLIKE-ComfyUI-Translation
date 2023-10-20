@@ -1,0 +1,149 @@
+{
+    "FABRICPatchModel": {
+        "title": "Fabric修补模型",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "pos_latents": "正面Latent",
+            "neg_latents": "负面Latent"
+        },
+        "widgets": {
+            "pos_weight": "正面权重",
+            "neg_weight": "负面权重"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "FABRICPatchModelAdv":{
+        "title": "Fabric修补模型(高级)",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "null_pos": "空正面条件",
+            "null_neg": "空负面条件",
+            "pos_latents": "正面Latent",
+            "neg_latents": "负面Latent"
+        },
+        "widgets": {
+            "pos_weight": "正面权重",
+            "neg_weight": "负面权重"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "LatentBatch": {
+        "title": "Latent组合批次",
+        "inputs": {
+            "latent1": "Latent1",
+            "latent2": "Latent2"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "KSamplerFABRIC": {
+        "title": "K采样器(Fabric)",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "latent_image": "Latent",
+            "clip": "CLIP",
+            "pos_latents": "正面Latent",
+            "neg_latents": "负面Latent"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "pos_weight": "正面权重",
+            "neg_weight": "负面权重",
+            "feedback_percent": "反馈占比"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "KSamplerFABRICAdv": {
+        "title": "K采样器(FabricAdv)",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "latent_image": "Latent",
+            "clip": "CLIP",
+            "null_pos": "空正面条件",
+            "null_neg": "空负面条件",
+            "pos_latents": "正面Latent",
+            "neg_latents": "负面Latent"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "pos_weight": "正面权重",
+            "neg_weight": "负面权重",
+            "feedback_start": "反馈开始步数",
+            "feedback_end": "反馈结束步数"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "KSamplerAdvFABRICAdv": {
+        "title": "K采样器(高级FabricAdv)",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "latent_image": "Latent",
+            "clip": "CLIP",
+            "null_pos": "空正面条件",
+            "null_neg": "空负面条件",
+            "pos_latents": "正面Latent",
+            "neg_latents": "负面Latent"
+        },
+        "widgets": {
+            "add_noise": "添加噪波",
+            "noise_seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "start_at_step": "开始降噪步数",
+            "end_at_step": "结束降噪步数",
+            "return_with_leftover_noise": "返回噪波",
+            "pos_weight": "正面权重",
+            "neg_weight": "负面权重",
+            "feedback_start": "反馈开始步数",
+            "feedback_end": "反馈结束步数"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    }
+}
