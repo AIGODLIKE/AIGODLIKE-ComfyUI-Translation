@@ -1,0 +1,97 @@
+{
+    "BNK_Unsampler": {
+        "title": "逆K採樣器",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示詞",
+            "negative": "負面提示詞",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "steps": "步數",
+            "cfg": "CFG",
+            "end_at_step": "結束步數",
+            "sampler_name": "採樣器",
+            "scheduler": "調度器",
+            "normalize": "正規化"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "BNK_NoisyLatentImage": {
+        "title": "噪聲Latent",
+        "widgets": {
+            "source": "生成設備",
+            "seed": "隨機種子",
+            "control_after_generate": "執行後操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機",
+            "width": "寬度",
+            "height": "高度",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "BNK_GetSigma": {
+        "title": "獲取Sigma",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "sampler_name": "採樣器",
+            "scheduler": "調度器",
+            "steps": "步數",
+            "start_at_step": "開始步數",
+            "end_at_step": "結束步數"
+        },
+        "outputs": {
+            "FLOAT": "浮點數"
+        }
+    },
+    "BNK_InjectNoise": {
+        "title": "插入噪聲",
+        "inputs": {
+            "latents": "Latent",
+            "noise": "噪聲Latent",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "strength": "強度"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "BNK_DuplicateBatchIndex": {
+        "title": "複製索引批次",
+        "inputs": {
+            "latents": "Latent"
+        },
+        "widgets": {
+            "batch_index": "批次索引",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "BNK_SlerpLatent": {
+        "title": "Latent插值",
+        "inputs": {
+        "latents1": "Latent1",
+        "latents2": "Latent2",
+        "mask": "遮罩"
+        },
+        "widgets": {
+            "factor": "係數"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    }
+}

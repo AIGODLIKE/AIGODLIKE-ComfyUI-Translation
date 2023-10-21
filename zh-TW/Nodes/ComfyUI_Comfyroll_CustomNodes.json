@@ -1,0 +1,847 @@
+{
+    "CR Image Input Switch": {
+        "title": "圖像切換(CR)",
+        "inputs": {
+            "image1": "圖像1",
+            "image2": "圖像2"
+        },
+        "widgets": {
+            "Input": "輸入"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "CR Image Input Switch (4 way)": {
+        "title": "圖像切換(CR-4路)",
+        "inputs": {
+            "image1": "圖像1",
+            "image2": "圖像2",
+            "image3": "圖像3",
+            "image4": "圖像4"
+        },
+        "widgets": {
+            "Input": "輸入"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "CR Latent Input Switch": {
+        "title": "Latent切換(CR)",
+        "inputs": {
+            "latent1": "Latent1",
+            "latent2": "Latent2"
+        },
+        "widgets": {
+            "Input": "輸入"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "CR Conditioning Input Switch": {
+        "title": "條件切換(CR)",
+        "inputs": {
+            "conditioning1": "條件1",
+            "conditioning2": "條件2"
+        },
+        "widgets": {
+            "Input": "輸入"
+        },
+        "outputs": {
+            "CONDITIONING": "條件"
+        }
+    },
+    "CR Clip Input Switch": {
+        "title": "CLIP切換(CR)",
+        "inputs": {
+            "clip1": "CLIP1",
+            "clip2": "CLIP2"
+        },
+        "widgets": {
+            "Input": "輸入"
+        },
+        "outputs": {
+            "CLIP": "CLIP"
+        }
+    },
+    "CR Model Input Switch": {
+        "title": "模型切換(CR)",
+        "inputs": {
+            "model1": "模型1",
+            "model2": "模型2"
+        },
+        "widgets": {
+            "Input": "輸入"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "CR ControlNet Input Switch": {
+        "title": "ControlNet切換(CR)",
+        "inputs": {
+            "control_net1": "ControlNet1",
+            "control_net2": "ControlNet2"
+        },
+        "widgets": {
+            "Input": "輸入"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "CR Text Input Switch": {
+        "title": "文本切換(CR)",
+        "inputs": {
+            "text1": "文本1",
+            "text2": "文本2"
+        },
+        "widgets": {
+            "Input": "輸入"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "CR Text Input Switch (4 way)": {
+        "title": "文本切換(CR-4路)",
+        "inputs": {
+            "text1": "文本1",
+            "text2": "文本2",
+            "text3": "文本3",
+            "text4": "文本4"
+        },
+        "widgets": {
+            "Input": "輸入"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "CR Switch Model and CLIP": {
+        "title": "模型CLIP切換(CR)",
+        "inputs": {
+            "model1": "模型1",
+            "model2": "模型2",
+            "clip1": "CLIP1",
+            "clip2": "CLIP2"
+        },
+        "widgets": {
+            "Input": "輸入"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP"
+        }
+    },
+
+
+
+
+    "CR Load LoRA": {
+        "title": "LoRA載入器(CR)",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "switch": "開關",
+                "On": "開啟",
+                "Off": "關閉",
+            "lora_name": "LoRA名稱",
+            "strength_model": "模型強度",
+            "strength_clip": "CLIP強度"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP"
+        }
+    },
+    "CR LoRA Stack": {
+        "title": "LoRA堆(CR)",
+        "inputs": {
+            "lora_stack": "LoRA堆"
+        },
+        "widgets": {
+            "switch_1": "開關1",
+                "On": "開啟",
+                "Off": "關閉",
+            "lora_name_1": "LoRA名稱1",
+            "model_weight_1": "模型強度1",
+            "clip_weight_1": "CLIP強度1",
+            "switch_2": "開關2",
+            "lora_name_2": "LoRA名稱2",
+            "model_weight_2": "模型強度2",
+            "clip_weight_2": "CLIP強度2",
+            "switch_3": "開關3",
+            "lora_name_3": "LoRA名稱3",
+            "model_weight_3": "模型強度3",
+            "clip_weight_3": "CLIP強度3"
+        },
+        "outputs": {
+        }
+    },
+    "CR Apply LoRA Stack": {
+        "title": "應用LoRA堆疊(CR)",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "lora_stack": "LoRA堆疊"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP"
+        }
+    },
+
+
+
+
+    "CR Apply ControlNet": {
+        "title": "應用ControlNet(CR)",
+        "inputs": {
+            "conditioning": "條件",
+            "control_net": "ControlNet",
+            "image": "圖像"
+        },
+        "widgets": {
+            "switch": "切換",
+            "strength": "強度"
+        },
+        "outputs": {
+            "CONDITIONING": "條件"
+        }
+    },
+    "CR Multi-ControlNet Stack": {
+        "title": "ControlNet堆(CR)",
+        "inputs": {
+            "image_1": "圖像1",
+            "image_2": "圖像2",
+            "image_3": "圖像3",
+            "controlnet_stack": "ControlNet堆"
+        },
+        "widgets": {
+            "switch_1": "開關1",
+            "controlnet_1": "ControlNet1",
+            "controlnet_strength_1": "強度1",
+            "start_percent_1": "開始時間1",
+            "end_percent_1": "結束時間1",
+            "switch_2": "開關2",
+            "controlnet_2": "ControlNet2",
+            "controlnet_strength_2": "強度2",
+            "start_percent_2": "開始時間2",
+            "end_percent_2": "結束時間2",
+            "switch_3": "開關3",
+            "controlnet_3": "ControlNet3",
+            "controlnet_strength_3": "強度3",
+            "start_percent_3": "開始時間3",
+            "end_percent_3": "結束時間3"
+        },
+        "outputs": {
+            "CONTROLNET_STACK": "ControlNet堆"
+        }
+    },
+    "CR Apply Multi-ControlNet": {
+        "title": "應用ControlNet堆(CR)",
+        "inputs": {
+            "base_positive": "正面提示詞",
+            "base_negative": "負面提示詞",
+            "controlnet_stack": "ControlNet堆"
+        },
+        "widgets": {
+            "switch": "開關",
+                "On": "開啟",
+                "Off": "關閉"
+        },
+        "outputs": {
+            "base_pos": "正面提示詞",
+            "base_neg": "負面提示詞"
+        }
+    },
+
+
+
+
+    "CR Image Size": {
+        "title": "圖像尺寸(CR)",
+        "widgets": {
+            "width": "寬度",
+            "height": "高度",
+            "upscale_factor": "放大係數"
+        },
+        "outputs": {
+            "INT": "整數",
+            "FLOAT": "浮點數"
+        }
+    },
+    "CR Image Output": {
+        "title": "圖像輸出(CR)",
+        "inputs": {
+            "images": "圖像"
+        },
+        "widgets": {
+            "output_type": "輸出類型",
+            "filename_prefix": "文件名前綴"
+        }
+    },
+    "CR Aspect Ratio": {
+        "title": "寬高比(CR)",
+        "widgets": {
+            "width": "寬度",
+            "height": "高度",
+            "aspect_ratio": "寬高比",
+                "custom": "自定義",
+                "1:1 square 512x512": "1:1 方形 512x512",
+                "1:1 square 1024x1024": "1:1 方形 1024x1024",
+                "2:3 portrait 512x768": "2:3 人像 512x768",
+                "3:4 portrait 512x682": "3:4 人像 512x682",
+                "3:2 landscape 768x512": "3:2 景觀 768x512",
+                "4:3 landscape 682x512": "4:3 景觀 682x512",
+                "16:9 cinema 910x512": "16:9 影視 910x512",
+                "2:1 cinema 1024x512": "2:1 影視 1024x512",
+            "swap_dimensions": "切換寬高",
+            "upscale_factor1": "放大係數1",
+            "upscale_factor2": "放大係數2",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "INT": "整數",
+            "FLOAT": "浮點數"
+        }
+    },
+    "CR SDXL Prompt Mixer": {
+        "title": "SDXL提示詞(CR)",
+        "widgets": {
+            "prompt_positive": "正面提示詞",
+            "prompt_negative": "負面提示詞",
+            "style_positive": "正面風格",
+            "style_negative": "負面風格",
+            "preset": "預設",
+                "preset 1": "預設1",
+                "preset 2": "預設2",
+                "preset 3": "預設3",
+                "preset 4": "預設4",
+                "preset 5": "預設5"
+        },
+        "outputs": {
+            "pos_g": "正面bigG文本",
+            "pos_l": "正面L文本",
+            "pos_r": "正面優化文本",
+            "neg_g": "負面bigG文本",
+            "neg_l": "負面L文本",
+            "neg_r": "負面優化文本"
+        }
+    },
+    "CR Aspect Ratio SDXL": {
+        "title": "SDXL寬高比(CR)",
+        "widgets": {
+            "width": "寬度",
+            "height": "高度",
+            "aspect_ratio": "寬高比",
+                "custom": "自定義",
+                "1:1 square 512x512": "1:1 方形 512x512",
+                "1:1 square 1024x1024": "1:1 方形 1024x1024",
+                "2:3 portrait 512x768": "2:3 人像 512x768",
+                "3:4 portrait 512x682": "3:4 人像 512x682",
+                "3:2 landscape 768x512": "3:2 景觀 768x512",
+                "4:3 landscape 682x512": "4:3 景觀 682x512",
+                "16:9 cinema 910x512": "16:9 影視 910x512",
+                "2:1 cinema 1024x512": "2:1 影視 1024x512",
+            "swap_dimensions": "切換寬高",
+            "upscale_factor1": "放大係數1",
+            "upscale_factor2": "放大係數2",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "INT": "整數",
+            "FLOAT": "浮點數"
+        }
+    },
+
+
+
+
+    "CR Integer Multiple": {
+        "title": "整數乘以(CR)",
+        "widgets": {
+            "integer": "整數",
+            "multiple": "係數"
+        },
+        "outputs": {
+            "INT": "整數"
+        }
+    },
+
+
+
+
+    "CR Seed to Int": {
+        "title": "隨機種到整數(CR)",
+        "inputs": {
+            "seed": "隨機種"
+        },
+        "outputs": {
+            "INT": "整數"
+        }
+    },
+    "CR Seed": {
+        "title": "隨機種(CR)",
+        "widgets": {
+            "seed": "隨機種",
+            "control_after_generate": "運行後操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機"
+        },
+        "outputs": {
+            "seed": "隨機種"
+        }
+    },
+
+
+
+
+    "CR Integer To String": {
+        "title": "整數到字符串(CR)",
+        "widgets": {
+            "int_": "整數"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "CR Float To String": {
+        "title": "浮點數到字符串(CR)",
+        "widgets": {
+            "float_": "浮點數"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+
+
+
+
+    "CR Color Tint": {
+        "title": "顏色漸變(CR)",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "strength": "強度",
+            "mode": "模式"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "CR Halftone Grid": {
+        "title": "半色調網格(CR)",
+        "widgets": {
+            "width": "寬度",
+            "height": "高度",
+            "dot_style": "網點類型",
+            "reverse_dot_style": "反轉網點",
+            "dot_frequency": "網點頻率",
+            "background_color": "背景顏色",
+            "background_R": "背景紅色",
+            "background_B": "背景藍色",
+            "background_G": "背景綠色",
+            "x_pos": "位置X",
+            "y_pos": "位置Y"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "CR SD1.5 Aspect Ratio": {
+        "title": "SD1.5寬高比(CR)",
+        "widgets": {
+            "width": "寬度",
+            "height": "高度",
+            "aspect_ratio": "寬高比",
+                "custom": "自定義",
+                "1:1 square 512x512": "1:1 方形 512x512",
+                "1:1 square 1024x1024": "1:1 方形 1024x1024",
+                "2:3 portrait 512x768": "2:3 人像 512x768",
+                "3:4 portrait 512x682": "3:4 人像 512x682",
+                "3:2 landscape 768x512": "3:2 景觀 768x512",
+                "4:3 landscape 682x512": "4:3 景觀 682x512",
+                "16:9 cinema 910x512": "16:9 影視 910x512",
+                "2:1 cinema 1024x512": "2:1 影視 1024x512",
+            "swap_dimensions": "切換寬高",
+            "upscale_factor": "放大係數",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "width": "寬度",
+            "height": "高度",
+            "upscale_factor": "放大係數",
+            "batch_size": "批次大小"
+        }
+    },
+
+
+
+
+    "CR Img2Img Process Switch": {
+        "title": "Latent切換(CR-圖生圖)",
+        "inputs": {
+            "txt2img": "文生圖",
+            "img2img": "圖生圖"
+        },
+        "widgets": {
+            "Input": "輸入"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "CR Hires Fix Process Switch": {
+        "title": "Latent切換(CR-高畫質修復)",
+        "inputs": {
+            "latent_upscale": "放大Latent",
+            "image_upscale": "放大圖像"
+        },
+        "widgets": {
+            "Input": "輸入"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "CR Batch Process Switch": {
+        "title": "圖像切換(CR-批處理)",
+        "inputs": {
+            "image": "圖像",
+            "image_batch": "圖像批次"
+        },
+        "widgets": {
+            "Input": "輸入"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+
+
+    "CR Latent Batch Size": {
+        "title": "Latent批次大小(CR)",
+        "inputs": {
+            "latent": "Latent"
+        },
+        "widgets": {
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+
+
+    "CR Apply Model Merge": {
+        "title": "應用模型融合(CR)",
+        "inputs": {
+            "model_stack": "模型堆"
+        },
+        "widgets": {
+            "merge_method": "融合方法",
+                "Rescursive": "遞歸",
+                "Weighted": "權重",
+            "normalise_ratios": "正規化比率",
+            "weight_factor": "權重係數"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "model_mix_info": "模型融合信息"
+        }
+    },
+    "CR Model Merge Stack": {
+        "title": "模型融合堆(CR)",
+        "inputs": {
+            "model_stack": "模型堆"
+        },
+        "widgets": {
+            "switch_1": "開關1",
+            "ckpt_name1": "模型名1",
+            "model_ratio1": "模型比率1",
+            "switch_2": "開關2",
+            "ckpt_name2": "模型名2",
+            "model_ratio2": "模型比率2",
+            "switch_3": "開關3",
+            "ckpt_name3": "模型名3",
+            "model_ratio3": "模型比率3"
+        },
+        "outputs": {
+            "MODEL_STACK": "模型堆"
+        }
+    },
+
+
+
+
+    "CR Module Pipe Loader": {
+        "title": "模塊節點束(CR)",
+        "inputs": {
+            "model": "模型",
+            "pos": "正面提示詞",
+            "neg": "負面提示詞",
+            "latent": "Latent",
+            "vae": "VAE",
+            "clip": "CLIP",
+            "controlnet": "ControlNet",
+            "image": "圖像"
+        },
+        "widgets": {
+            "seed": "隨機種",
+            "control_after_generate": "運行後操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機"
+        },
+        "outputs": {
+            "pipe": "節點束"
+        }
+    },
+    "CR Module Input": {
+        "title": "模塊輸入(CR)",
+        "inputs": {
+            "pipe": "節點束"
+        },
+        "outputs": {
+            "model": "模型",
+            "pos": "正面提示詞",
+            "neg": "負面提示詞",
+            "latent": "Latent",
+            "vae": "VAE",
+            "clip": "CLIP",
+            "controlnet": "ControlNet",
+            "image": "圖像",
+            "seed": "隨機種"
+        }
+    },
+    "CR Module Output": {
+        "title": "模塊輸出(CR)",
+        "inputs": {
+            "pipe": "節點束",
+            "model": "模型",
+            "pos": "正面提示詞",
+            "neg": "負面提示詞",
+            "latent": "Latent",
+            "vae": "VAE",
+            "clip": "CLIP",
+            "controlnet": "ControlNet",
+            "image": "圖像"
+        },
+        "widgets": {
+            "seed": "隨機種",
+            "control_after_generate": "運行後操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機"
+        },
+        "outputs": {
+            "pipe": "節點束"
+        }
+    },
+    "CR Pipe Switch": {
+        "title": "節點束切換(CR)",
+        "inputs": {
+            "pipe1": "節點束1",
+            "pipe2": "節點束2"
+        },
+        "widgets": {
+            "Input": "輸入"
+        },
+        "outputs": {
+            "PIPE_LINE": "節點束"
+        }
+    },
+
+
+
+    "CR Image Pipe In": {
+        "title": "圖像到節點束(CR)",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "width": "寬度",
+            "height": "高度",
+            "upscale_factor": "放大係數"
+        },
+        "outputs": {
+            "pipe": "節點束"
+        }
+    },
+    "CR Image Pipe Edit": {
+        "title": "節點束編輯(CR)",
+        "inputs": {
+            "pipe": "節點束",
+            "image": "圖像"
+        },
+        "widgets": {
+            "width": "寬度",
+            "height": "高度",
+            "upscale_factor": "放大係數"
+        },
+        "outputs": {
+            "pipe": "節點束"
+        }
+    },
+    "CR Image Pipe Out": {
+        "title": "節點數輸出(CR)",
+        "inputs": {
+            "pipe": "節點束"
+        },
+        "outputs": {
+            "pipe": "節點束",
+            "image": "圖像",
+            "width": "寬度",
+            "height": "高度",
+            "upscale_factor": "放大係數"
+        }
+    },
+
+
+
+    "CR SDXL Prompt Mix Presets": {
+        "title": "SDXL提示詞v2(CR)",
+        "widgets": {
+            "prompt_positive": "正面提示詞",
+            "prompt_negative": "負面提示詞",
+            "style_positive": "正面風格",
+            "style_negative": "負面風格",
+            "preset": "預設"
+        },
+        "outputs": {
+            "pos_g": "正面bigG文本",
+            "pos_l": "正面L文本",
+            "pos_r": "正面優化文本",
+            "neg_g": "負面bigG文本",
+            "neg_l": "負面L文本",
+            "neg_r": "負面優化文本"
+        }
+    },
+    "CR SDXL Aspect Ratio": {
+        "title": "SDXL寬高比v2(CR)",
+        "widgets": {
+            "width": "寬度",
+            "height": "高度",
+            "aspect_ratio": "寬高比",
+            "swap_dimensions": "切換寬高",
+            "upscale_factor1": "放大係數1",
+            "upscale_factor2": "放大係數2",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "width": "寬度",
+            "height": "高度",
+            "upscale_factor": "放大係數",
+            "batch_size": "批次大小"
+        }
+    },
+    "CR SDXL Style Text": {
+        "title": "SDXL風格文本(CR)",
+        "widgets": {
+            "positive_style": "正面風格",
+            "negative_style": "負面風格"
+        },
+        "outputs": {
+            "positive_prompt_text_l": "正面提示詞L",
+            "negative_prompt_text_l": "負面提示詞L"
+        }
+    },
+    "CR SDXL Base Prompt Encoder": {
+        "title": "SDXL基礎提詞",
+        "inputs": {
+            "base_clip": "基礎CLIP"
+        },
+        "widgets": {
+            "pos_g": "正面bigG文本",
+            "pos_l": "正面L文本",
+            "neg_g": "負面bigG文本",
+            "neg_l": "負面L文本",
+            "preset": "預設",
+            "base_width": "基礎寬度",
+            "base_height": "基礎高度",
+            "crop_w": "裁剪寬度",
+            "crop_h": "裁剪高度",
+            "target_width": "目標寬度",
+            "target_height": "目標高度"
+        },
+        "outputs": {
+            "base_positive": "正面提示詞",
+            "base_negative": "負面提示詞"
+        }
+    },
+    
+
+    "CR Multi Upscale Stack": {
+        "title": "多重放大堆(CR)",
+        "inputs": {
+            "upscale_stack": "放大堆"
+        },
+        "widgets": {
+            "switch_1": "開關1",
+            "upscale_model_1": "放大模型1",
+            "rescale_factor_1": "縮放係數1",
+            "switch_2": "開關2",
+            "upscale_model_2": "放大模型2",
+            "rescale_factor_2": "縮放係數2",
+            "switch_3": "開關3",
+            "upscale_model_3": "放大模型3",
+            "rescale_factor_3": "縮放係數3"
+        },
+        "outputs": {
+            "UPSCALE_STACK": "放大堆"
+        }
+    },
+    "CR Upscale Image": {
+        "title": "放大圖像(CR)",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "upscale_model": "放大模型",
+            "mode": "模式",
+                "rescale": "縮放",
+                "resize": "拉伸",
+            "rescale_factor": "縮放係數",
+            "resize_width": "拉伸寬度",
+            "resampling_method": "重採樣方法",
+                "Lanczos": "Lanczos插值",
+                "nearest": "鄰近",
+                "bilinear": "雙線性插值",
+                "bicubic": "雙三次插值",
+            "supersample": "超採樣",
+            "rounding_modulus": "捨入到倍數"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "CR Apply Multi Upscale": {
+        "title": "應用多重放大(CR)",
+        "inputs": {
+            "image": "圖像",
+            "upscale_stack": "放大堆"
+        },
+        "widgets": {
+            "resampling_method": "重採樣方法",
+                "Lanczos": "Lanczos插值",
+                "nearest": "鄰近",
+                "bilinear": "雙線性插值",
+                "bicubic": "雙三次插值",
+            "supersample": "超採樣",
+            "rounding_modulus": "捨入到倍數"
+        }
+    }
+}

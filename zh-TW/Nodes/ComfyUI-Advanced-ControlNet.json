@@ -1,0 +1,189 @@
+{
+    "TimestepKeyframe": {
+        "title": "間隔關鍵幀",
+        "inputs": {
+            "control_net_weights": "ControlNet權重",
+            "t2i_adapter_weights": "T2I適配權重",
+            "latent_keyframe": "Latent關鍵幀",
+            "prev_timestep_keyframe": "間隔關鍵幀"
+        },
+        "widgets": {
+            "start_percent": "開始位置"
+        },
+        "outputs": {
+            "TIMESTEP_KEYFRAME": "間隔關鍵幀"
+        }
+    },
+    "LatentKeyframe": {
+        "title": "Latent關鍵幀",
+        "inputs": {
+            "prev_latent_keyframe": "Latent關鍵幀"
+        },
+        "widgets": {
+            "batch_index": "批次索引",
+            "strength": "強度"
+        },
+        "outputs": {
+            "LATENT_KEYFRAME": "Latent關鍵幀"
+        }
+    },
+    "LatentKeyframeGroup": {
+        "title": "Latent關鍵幀組",
+        "inputs": {
+            "prev_latent_keyframe": "Latent關鍵幀",
+            "latent_image_opt": "Latent"
+        },
+        "widgets": {
+            "index_strength": "索引強度"
+        },
+        "outputs": {
+            "LATENT_KEYFRAME": "Latent關鍵幀"
+        }
+    },
+    "LatentKeyframeTiming": {
+        "title": "Latent關鍵時間",
+        "inputs": {
+            "prev_latent_keyframe": "Latent關鍵幀"
+        },
+        "widgets": {
+            "batch_index_from": "批次索引從",
+            "batch_index_to": "批次索引到",
+            "strength_from": "強度從",
+            "strength_to": "強度到",
+            "interpolation": "插值方式",
+                "ease-in-out": "漸進漸出",
+                "ease-in": "漸進",
+                "ease-out": "漸出",
+                "linear": "線性",
+            "flip_weights": "翻轉權重"
+        },
+        "outputs": {
+            "LATENT_KEYFRAME": "Latent關鍵幀"
+        }
+    },
+
+    "ControlNetLoaderAdvanced": {
+        "title": "ControlNet載入器(進階)",
+        "inputs": {
+            "timestep_keyframe": "間隔關鍵幀"
+        },
+        "widgets": {
+            "control_net_name": "ControlNet名稱"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "DiffControlNetLoaderAdvanced": {
+        "title": "DiffControlNet載入器(進階)",
+        "inputs": {
+            "model": "模型",
+            "timestep_keyframe": "間隔關鍵幀"
+        },
+        "widgets": {
+            "control_net_name": "ControlNet名稱"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+
+    "ScaledSoftControlNetWeights": {
+        "title": "縮放柔和ControlNet權重",
+        "widgets": {
+            "base_multiplier": "係數",
+            "flip_weights": "翻轉權重"
+        },
+        "outputs": {
+            "CONTROL_NET_WEIGHTS": "ControlNet權重",
+            "TIMESTEP_KEYFRAME": "間隔關鍵幀"
+        }
+    },
+    "SoftControlNetWeights": {
+        "title": "柔和ControlNet權重",
+        "widgets": {
+            "weight_00": "權重00",
+            "weight_01": "權重01",
+            "weight_02": "權重02",
+            "weight_03": "權重03",
+            "weight_04": "權重04",
+            "weight_05": "權重05",
+            "weight_06": "權重06",
+            "weight_07": "權重07",
+            "weight_08": "權重08",
+            "weight_09": "權重09",
+            "weight_10": "權重10",
+            "weight_11": "權重11",
+            "weight_12": "權重12",
+            "flip_weights": "翻轉權重"
+        },
+        "outputs": {
+            "CONTROL_NET_WEIGHTS": "ControlNet權重",
+            "TIMESTEP_KEYFRAME": "間隔關鍵幀"
+        }
+    },
+    "CustomControlNetWeights": {
+        "title": "自定義ControlNet權重",
+        "widgets": {
+            "weight_00": "權重00",
+            "weight_01": "權重01",
+            "weight_02": "權重02",
+            "weight_03": "權重03",
+            "weight_04": "權重04",
+            "weight_05": "權重05",
+            "weight_06": "權重06",
+            "weight_07": "權重07",
+            "weight_08": "權重08",
+            "weight_09": "權重09",
+            "weight_10": "權重10",
+            "weight_11": "權重11",
+            "weight_12": "權重12",
+            "flip_weights": "翻轉權重"
+        },
+        "outputs": {
+            "CONTROL_NET_WEIGHTS": "ControlNet權重",
+            "TIMESTEP_KEYFRAME": "間隔關鍵幀"
+        }
+    },
+    "SoftT2IAdapterWeights": {
+        "title": "柔和T2I適配權重",
+        "widgets": {
+            "weight_00": "權重00",
+            "weight_01": "權重01",
+            "weight_02": "權重02",
+            "weight_03": "權重03",
+            "flip_weights": "翻轉權重"
+        },
+        "outputs": {
+            "T2I_ADAPTER_WEIGHTS": "T2I適配權重",
+            "TIMESTEP_KEYFRAME": "間隔關鍵幀"
+        }
+    },
+    "CustomT2IAdapterWeights": {
+        "title": "自定義T2I適配權重",
+        "widgets": {
+            "weight_00": "權重00",
+            "weight_01": "權重01",
+            "weight_02": "權重02",
+            "weight_03": "權重03",
+            "flip_weights": "翻轉權重"
+        },
+        "outputs": {
+            "T2I_ADAPTER_WEIGHTS": "T2I適配權重",
+            "TIMESTEP_KEYFRAME": "間隔關鍵幀"
+        }
+    },
+    "LoadImagesFromDirectory": {
+        "title": "從路徑載入圖像",
+        "widgets": {
+            "directory": "路徑",
+            "image_load_cap": "圖像載入上限",
+            "start_index": "初始索引"
+        },
+        "outputs": {
+            "IMAGE": "圖像",
+            "MASK": "遮罩",
+            "INT": "整數"
+        }
+    }
+}
