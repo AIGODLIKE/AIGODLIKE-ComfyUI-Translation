@@ -1,0 +1,90 @@
+{
+    "UltimateSDUpscale": {
+        "title": "SD放大",
+        "inputs": {
+            "image": "圖像",
+            "model": "模型",
+            "positive": "正面提示詞",
+            "negative": "負面提示詞",
+            "vae": "VAE",
+            "upscale_model": "放大模型"
+        },
+        "widgets": {
+            "upscale_by": "放大係數",
+            "seed": "隨機種子",
+            "control_after_generate": "執行後操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機",
+            "steps": "步數",
+            "cfg": "CFG",
+            "sampler_name": "採樣器",
+            "scheduler": "調度器",
+            "denoise": "降噪",
+            "mode_type": "模式類型",
+                "Linear": "線性",
+                "Chess": "棋盤格",
+                "None": "無",
+            "tile_width": "分塊寬度",
+            "tile_height": "分塊高度",
+            "mask_blur": "模糊",
+            "tile_padding": "分塊分區",
+            "seam_fix_mode": "接縫修復模式",
+                "Band Pass": "僅接觸",
+                "Half Tile": "偏移半塊",
+                "Half Tile + Intersections": "偏移半塊+徑向交叉",
+            "seam_fix_denoise": "接縫修復降噪",
+            "seam_fix_width": "接縫修復寬度",
+            "seam_fix_mask_blur": "接縫修復模糊",
+            "seam_fix_padding": "接縫修復分區",
+            "force_uniform_tiles": "強制統一分塊"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "UltimateSDUpscaleNoUpscale": {
+        "title": "SD放大(不放大)",
+        "inputs": {
+            "upscaled_image": "放大圖像",
+            "model": "模型",
+            "positive": "正面提示詞",
+            "negative": "負面提示詞",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "seed": "隨機種子",
+            "control_after_generate": "執行後操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機",
+            "steps": "步數",
+            "cfg": "CFG",
+            "sampler_name": "採樣器",
+            "scheduler": "調度器",
+            "denoise": "降噪",
+            "mode_type": "模式類型",
+                "Linear": "線性",
+                "Chess": "棋盤格",
+                "None": "無",
+            "tile_width": "分塊寬度",
+            "tile_height": "分塊高度",
+            "mask_blur": "模糊",
+            "tile_padding": "分塊分區",
+            "seam_fix_mode": "接縫修復模式",
+                "Band Pass": "僅接觸",
+                "Half Tile": "偏移半塊",
+                "Half Tile + Intersections": "偏移半塊+徑向交叉",
+            "seam_fix_denoise": "接縫修復降噪",
+            "seam_fix_width": "接縫修復寬度",
+            "seam_fix_mask_blur": "接縫修復模糊",
+            "seam_fix_padding": "接縫修復分區",
+            "force_uniform_tiles": "強制統一分塊"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    }
+}

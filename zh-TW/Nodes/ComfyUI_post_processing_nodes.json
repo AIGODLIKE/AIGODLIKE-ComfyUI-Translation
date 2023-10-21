@@ -1,0 +1,366 @@
+{
+    "ArithmeticBlend": {
+        "title": "算術混合",
+        "inputs": {
+            "image1": "圖像1",
+            "image2": "圖像2"
+        },
+        "widgets": {
+            "blend_mode": "混合模式",
+                "add": "相加",
+                "subtract": "相減",
+                "difference": "差值"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Blend": {
+        "title": "混合",
+        "inputs": {
+            "image1": "圖像1",
+            "image2": "圖像2"
+        },
+        "widgets": {
+            "blend_factor": "混合係數",
+            "blend_mode": "混合模式",
+                "normal": "正常",
+                "multiply": "色彩增值",
+                "screen": "濾色",
+                "overlay": "疊加",
+                "soft_light": "柔光"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Dissolve": {
+        "title": "溶解",
+        "inputs": {
+            "image1": "圖像1",
+            "image2": "圖像2"
+        },
+        "widgets": {
+            "dissolve_factor": "溶解係數"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "DodgeAndBurn": {
+        "title": "減淡加深",
+        "inputs": {
+            "image1": "圖像1",
+            "image2": "圖像2",
+            "image": "圖像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "intensity": "強度",
+            "mode": "模式",
+                "dodge": "減淡dodge",
+                "burn": "加深burn",
+                "dodge_and_burn": "減淡dodge後加深burn",
+                "burn_and_dodge": "加深burn後減淡dodge",
+                "color_dodge": "顏色減淡dodge",
+                "color_burn": "顏色加深burn",
+                "linear_dodge": "線性減淡dodge",
+                "linear_burn": "線性加深burn"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+
+
+
+    "AsciiArt": {
+        "title": "Ascii字符",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "char_size": "字符間距",
+            "font_size": "字符大小"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "ChromaticAberration": {
+        "title": "色差偏移",
+        "inputs": {
+            "image1": "圖像1",
+            "image2": "圖像2",
+            "image": "圖像"
+        },
+        "widgets": {
+            "red_shift": "紅移",
+            "red_direction": "紅移方向",
+            "green_shift": "綠移",
+            "green_direction": "綠移方向",
+            "blue_shift": "藍移",
+            "blue_direction": "藍移方向",
+                "horizontal": "水平",
+                "vertical": "豎直"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "FilmGrain": {
+        "title": "膠片顆粒",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "intensity": "強度",
+            "scale": "縮放",
+            "temperature": "溫度",
+            "vignette": "暗角"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Glow": {
+        "title": "泛光",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "intensity": "強度",
+            "blur_radius": "模糊範圍"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "PencilSketch": {
+        "title": "素描",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "blur_radius": "模糊範圍",
+            "sharpen_alpha": "透明閾值"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Pixelize": {
+        "title": "像素化",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "pixel_size": "像素尺寸"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "SineWave": {
+        "title": "正弦波",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "amplitude": "強度",
+            "frequency": "頻率",
+            "direction": "方向"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Vignette": {
+        "title": "暗角",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "Vignette": "暗角"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+
+    
+
+
+    "Blur": {
+        "title": "模糊",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "blur_radius": "模糊範圍",
+            "radius": "模糊範圍",
+            "sigma": "Sigma",
+            "sigma_factor": "Sigma"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "KuwaharaBlur": {
+        "title": "Kuwahara模糊",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "blur_radius": "模糊範圍",
+            "method": "方法",
+                "mean": "平均",
+                "gaussian": "高斯"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Sharpen": {
+        "title": "銳化",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "sharpen_radius": "銳化範圍",
+            "alpha": "透明"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+
+
+
+
+    "CannyEdgeMask": {
+        "title": "Canny邊緣遮罩",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "lower_threshold": "低閾值",
+            "upper_threshold": "高閾值"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "HSVThresholdMask": {
+        "title": "HSV閾值遮罩",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "low_threshold": "低閾值",
+            "high_threshold": "高閾值",
+            "hsv_channel": "HSV通道",
+                "hue": "色調",
+                "saturation": "飽和度",
+                "value": "明度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+
+
+
+
+    "ColorCorrect": {
+        "title": "顏色校正",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "temperature": "溫度",
+            "hue": "色調",
+            "brightness": "明度",
+            "contrast": "對比度",
+            "saturation": "飽和度",
+            "gamma": "伽馬"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "ColorTint": {
+        "title": "顏色過渡",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "strength": "強度",
+            "mode": "模式",
+                "sepia": "褐色",
+                "red": "紅色",
+                "green": "綠色",
+                "blue": "藍色",
+                "cyan": "青色",
+                "magenta": "品紅",
+                "yellow": "黃色",
+                "purple": "紫色",
+                "orange": "橙色",
+                "warm": "暖色",
+                "coll": "冷色",
+                "lime": "橙綠",
+                "navy": "深藍",
+                "vintage": "覆古",
+                "rose": "淡紅",
+                "teal": "深青",
+                "maroon": "紅褐",
+                "peach": "桃色",
+                "lavender": "淡紫",
+                "olive": "黃綠"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Parabolize": {
+        "title": "顏色曲線",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "coeoff": "係數",
+            "vertex_x": "端點X",
+            "vertex_y": "端點Y"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Quantize": {
+        "title": "量化",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "colors": "顏色數量",
+            "dither": "抖動",
+                "none": "無",
+                "floyd-steinberg": "弗洛伊德算法"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Solarize": {
+        "title": "顏色反轉",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "threshold": "閾值"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    }
+}
