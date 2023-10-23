@@ -20,6 +20,9 @@
                 "increment": "增加",
                 "decrement": "减少",
                 "randomize": "随机",
+            "🎲 Randomize / ♻️ Last Queued Seed": "随机 / 上次",
+            "➕ Increment / ♻️ Last Queued Seed": "增加 / 上次",
+            "➖ Decrement / ♻️ Last Queued Seed": "减少 / 上次",
             "steps": "步数",
             "cfg": "CFG",
             "sampler_name": "采样器",
@@ -70,6 +73,9 @@
                 "increment": "增加",
                 "decrement": "减少",
                 "randomize": "随机",
+            "🎲 Randomize / ♻️ Last Queued Seed": "随机 / 上次",
+            "➕ Increment / ♻️ Last Queued Seed": "增加 / 上次",
+            "➖ Decrement / ♻️ Last Queued Seed": "减少 / 上次",
             "steps": "步数",
             "cfg": "CFG",
             "sampler_name": "采样器",
@@ -115,6 +121,9 @@
             "noise_seed": "随机种",
                 "Randomize": "随机",
                 "Last Queued Seed": "上一个随机种",
+            "🎲 Randomize / ♻️ Last Queued Seed": "随机 / 上次",
+            "➕ Increment / ♻️ Last Queued Seed": "增加 / 上次",
+            "➖ Decrement / ♻️ Last Queued Seed": "减少 / 上次",
             "steps": "步数",
             "cfg": "CFG",
             "sampler_name": "采样器",
@@ -155,6 +164,12 @@
             "lora_clip_strength": "LoRACLIP强度",
             "positive": "正面提示词",
             "negative": "负面提示词",
+            "token_normalization": "Token规格化",
+                "none": "无",
+                "length": "长度",
+                "mean": "平均",
+                "length+mean": "混合",
+            "weight_interpretation": "权重插值方式",
             "empty_latent_width": "宽度",
             "empty_latent_height": "高度",
             "batch_size": "批次大小"
@@ -185,6 +200,12 @@
             "vae_name": "VAE",
             "positive": "正面提示词",
             "negative": "负面提示词",
+            "token_normalization": "Token规格化",
+                "none": "无",
+                "length": "长度",
+                "mean": "平均",
+                "length+mean": "混合",
+            "weight_interpretation": "权重插值方式",    
             "empty_latent_width": "宽度",
             "empty_latent_height": "高度",
             "batch_size": "批次大小"
@@ -209,6 +230,7 @@
             "input_mode": "输入模式",
                 "simple": "简易",
                 "advanced": "高级",
+            "lora_count": "LoRA数量",
             "lora_name_1": "LoRA_1",
             "lora_name_2": "LoRA_2",
             "lora_name_3": "LoRA_3",
@@ -516,6 +538,25 @@
             "SCRIPT": "脚本"
         }
     },
+    "Noise Control Script": {
+        "title": "控制噪波",
+        "inputs": {
+            "script": "脚本"
+        },
+        "widgets": {
+            "rng_source": "随机生成来源",
+            "cfg_denoiser": "CFG降噪",
+            "add_seed_noise": "添加随机种噪波",
+            "seed": "随机种",
+            "🎲 Randomize / ♻️ Last Queued Seed": "随机 / 上次",
+            "➕ Increment / ♻️ Last Queued Seed": "增加 / 上次",
+            "➖ Decrement / ♻️ Last Queued Seed": "减少 / 上次",
+            "weight": "权重"
+        },
+        "outputs": {
+            "SCRIPT": "脚本"
+        }
+    },
     "HighRes-Fix Script": {
         "title": "高清修复",
         "inputs": {
@@ -532,6 +573,50 @@
             "hires_steps": "高清修复步数",
             "denoise": "降噪",
             "iterations": "迭代次数"
+        },
+        "outputs": {
+            "SCRIPT": "脚本"
+        }
+    },
+    "Tiled Upscaler Script": {
+        "title": "分块采样放大",
+        "inputs": {
+            "script": "脚本"
+        },
+        "widgets": {
+            "upscale_by": "缩放系数",
+            "tile_size": "分块尺寸",
+            "tiling_strategy": "无缝分块策略",
+                "random": "随机",
+                "padded": "分区",
+                "simple": "简易",
+            "tiling_steps": "分块步数",
+            "seed": "随机种",
+            "🎲 Randomize / ♻️ Last Queued Seed": "随机 / 上次",
+            "➕ Increment / ♻️ Last Queued Seed": "增加 / 上次",
+            "➖ Decrement / ♻️ Last Queued Seed": "减少 / 上次",
+            "denoise": "降噪",
+            "use_controlnet": "使用ControlNet",
+            "tile_controlnet": "分块ControlNet",
+            "strength": "强度"
+        },
+        "outputs": {
+            "SCRIPT": "脚本"
+        }
+    },
+    "AnimateDiff Script": {
+        "title": "动态扩散",
+        "inputs": {
+            "context_options": "上下文选项"
+        },
+        "widgets": {
+            "motion_model": "运动模块",
+            "beta_schedule": "调度器",
+            "frame_rate": "帧率",
+            "loop_count": "循环次数",
+            "format": "格式",
+            "pingpong": "Ping-Pong",
+            "save_image": "保存图像"
         },
         "outputs": {
             "SCRIPT": "脚本"
