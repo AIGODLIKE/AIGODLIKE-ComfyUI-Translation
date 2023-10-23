@@ -568,6 +568,24 @@
             "IMAGE": "图像"
         }
     },
+    "CR Polygons": {
+        "title": "多边面(CR)",
+        "widgets": {
+            "mode": "模式",
+                "hexagons": "六边面",
+                "triangles": "三边面",
+            "width": "宽度",
+            "height": "高度",
+            "rows": "行数",
+            "columns": "列数",
+            "face_color": "面色",
+            "line_color": "线色",
+            "line_width": "线宽"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "CR Color Gradient": {
         "title": "渐变色(CR)",
         "widgets": {
@@ -581,6 +599,130 @@
             "orientation": "方向",
                 "vertical": "竖直",
                 "horizontal": "水平"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "CR Starburst Lines": {
+        "title": "辐射线(CR)",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "num_lines": "线数量",
+            "line_length": "线长度",
+            "line_width": "线宽",
+            "line_color": "线色",
+            "background_color": "背景色",
+            "center_x": "中心X",
+            "center_y": "中心Y"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "CR Starburst Colors": {
+        "title": "辐射颜色",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "num_triangles": "三角数量",
+            "color_1": "颜色_1",
+            "color_2": "颜色_2",
+            "center_x": "中心X",
+            "center_y": "中心Y",
+            "bbox_factor": "范围系数"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "CR Draw Text": {
+        "title": "艺术字(CR)",
+        "widgets": {
+            "image_width": "宽度",
+            "image_height": "高度",
+            "text": "文本",
+            "font_name": "字体",
+            "font_size": "字体大小",
+            "font_color": "字体颜色",
+            "background_color": "背景颜色",
+            "alignment_options": "对齐到",
+                "center": "中心",
+                "top left": "左上",
+                "top right": "右上",
+                "top center":" 中上",
+                "bottom left": "左下",
+                "bottom right": "右下",
+                "bottom center": "中下",
+            "justify": "两端对齐",
+            "text_padding": "文本分区",
+            "position_x": "位置X",
+            "position_y": "位置Y",
+            "rotation_angle": "旋转角度",
+            "rotation_options": "旋转设置"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "CR Mask Text": {
+        "title": "遮罩字(CR)",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "image_width": "宽度",
+            "image_height": "高度",
+            "text": "文本",
+            "font_name": "字体",
+            "font_size": "字体大小",
+            "background_color": "背景颜色",
+            "alignment_options": "对齐到",
+                "center": "中心",
+                "top left": "左上",
+                "top right": "右上",
+                "top center":" 中上",
+                "bottom left": "左下",
+                "bottom right": "右下",
+                "bottom center": "中下",
+            "justify": "两端对齐",
+            "text_padding": "文本分区",
+            "position_x": "位置X",
+            "position_y": "位置Y",
+            "rotation_angle": "旋转角度",
+            "rotation_options": "旋转设置"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "CR Composite Text": {
+        "title": "合成字(CR)",
+        "inputs": {
+            "image_text": "字体图像",
+            "image_background": "背景图像"
+        },
+        "widgets": {
+            "image_width": "宽度",
+            "image_height": "高度",
+            "text": "文本",
+            "font_name": "字体",
+            "font_size": "字体大小",
+            "alignment_options": "对齐到",
+                "center": "中心",
+                "top left": "左上",
+                "top right": "右上",
+                "top center":" 中上",
+                "bottom left": "左下",
+                "bottom right": "右下",
+                "bottom center": "中下",
+            "justify": "两端对齐",
+            "text_padding": "文本分区",
+            "position_x": "位置X",
+            "position_y": "位置Y",
+            "rotation_angle": "旋转角度",
+            "rotation_options": "旋转设置"
         },
         "outputs": {
             "IMAGE": "图像"
