@@ -1406,5 +1406,25 @@
     "match smaller": "匹配更小的",
     "match larger": "匹配更大的",
     "ceter": "中心",
-    "Disabled": "关闭"
+    "Disabled": "关闭",
+
+    "eff": "eff",
+
+    "🔄 Swap with...": "替换为",
+    "📜 Add script...": "添加脚本",
+    "🌱 Seed behavior...": "随机种操作",
+        "🎲 Randomize": "随机",
+        "➕ Increment": "增加",
+        "➖ Decrement": "减少",
+    "⛓ Add link...": "添加连接",
+        "KSampler + XY Plot": "K采样器+XY图表",
+    "🔍 View model info...": "查看模型信息",
+        "ckpt_name": "模型名称",
+        "⚠️ Unknown": "未知",
+        "View raw metadata": "查看元数据",
+        "Notes:": "注释:",
+        "✏️ Edit": "编辑",
+    "📐 Set Resolution...": "设置分辨率",
+    "✏️ Add 𝚇 input...": "添加X输入",
+    "✏️ Add 𝚈 input...": "添加Y输入"
 }

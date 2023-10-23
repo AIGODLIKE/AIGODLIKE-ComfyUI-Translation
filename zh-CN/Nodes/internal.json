@@ -1288,6 +1288,18 @@
             "MODEL": "模型"
         }
     },
+    "HyperTile": {
+        "title": "超分块",
+        "inputs":{ 
+            "model": "模型"
+        },
+        "widgets": {
+            "tile_size": "分块尺寸",
+            "swap_size": "分割尺寸",
+            "max_depth": "最大深度",
+            "scale_depth": "缩放深度"
+        }
+    },
 
 
 
