@@ -888,6 +888,12 @@
             "DETAILER_HOOK": "细化约束"
         }
     },
+    "CoreMLDetailerHookProvider": {
+        "title": "CoreML细化约束器",
+        "outputs": {
+            "DETAILER_HOOK": "细化约束"
+        }
+    },
     "NoiseInjectionHookProvider": {
         "title": "插入噪波约束器",
         "widgets": {
