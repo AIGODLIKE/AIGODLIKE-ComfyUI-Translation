@@ -17,7 +17,8 @@
         "inputs": {
             "model": "模型",
             "context_options": "上下文设置",
-            "motion_lora": "动态LoRA"
+            "motion_lora": "动态LoRA",
+            "motion_model_settings": "动态模型设置"
         },
         "widgets": {
             "model_name": "模型名称",
@@ -25,6 +26,12 @@
         },
         "outputs": {
             "MODEL": "模型"
+        }
+    },
+    "ADE_AnimateDiffModelSettings": {
+        "title": "动态扩散模型设置",
+        "outputs": {
+            "MOTION_MODEL_SETTINGS": "动态模型设置"
         }
     },
     "ADE_AnimateDiffLoRALoader": {
