@@ -1,0 +1,22 @@
+{
+    "LCMSampler": {
+        "title": "LCM采样器",
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "size": "分辨率",
+            "num_images": "图像数量",
+            "use_fp16": "使用fp16",
+            "positive_prompt": "正面提示词"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    }
+}
