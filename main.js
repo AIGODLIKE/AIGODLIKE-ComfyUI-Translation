@@ -123,7 +123,7 @@ export class TUtils {
 		let onInputAdded = node.onInputAdded;
 		node.onInputAdded = function (slot) {
 			if (onInputAdded)
-				res = onInputAdded.apply(this, arguments);
+				var res = onInputAdded.apply(this, arguments);
 			console.log(slot);
 			let t = TUtils.T.Nodes[this.comfyClass];
 			if (t["widgets"] && slot.name in t["widgets"]) {
