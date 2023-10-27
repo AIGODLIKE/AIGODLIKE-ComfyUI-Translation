@@ -23,7 +23,7 @@ export class TUtils {
 
 	static syncTranslation(OnFinished = () => { }) {
 		var locale = localStorage.getItem(TUtils.LOCALE_ID) || "en-US";
-		var url = "/agl/get_translation";
+		var url = "./agl/get_translation";
 		var request = new XMLHttpRequest();
 		request.open("post", url);
 		request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
