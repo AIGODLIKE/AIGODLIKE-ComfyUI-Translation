@@ -1,0 +1,86 @@
+{
+    "KRestartSamplerSimple": {
+        "title": "簡易重啟K採樣器",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提詞",
+            "negative": "負面提詞",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "seed": "種子",
+            "control_after_generate": "執行後",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機",
+            "steps": "步數",
+            "cfg": "CFG",
+            "sampler_name": "採樣器",
+            "scheduler": "調度器",
+            "denoise": "降噪",
+            "segments": "分段"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "KRestartSampler": {
+        "title": "重啟K採樣器",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提詞",
+            "negative": "負面提詞",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "seed": "隨機種子",
+            "control_after_generate": "執行後",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機",
+            "steps": "步數",
+            "cfg": "CFG",
+            "sampler_name": "採樣器",
+            "scheduler": "調度器",
+            "denoise": "降噪",
+            "restart_scheduler": "重啟調度器",
+            "segments": "分段"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "KRestartSamplerAdv": {
+        "title": "重啟K採樣器(進階)",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示詞",
+            "negative": "負面提示詞",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "add_noise": "增加噪聲",
+            "noise_seed": "隨機種子",
+            "control_after_generate": "執行後",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機",
+            "steps": "步數",
+            "cfg": "CFG",
+            "sampler_name": "採樣器",
+            "scheduler": "調度器",
+            "denoise": "降噪",
+            "start_at_step": "開始步數",
+            "end_at_step": "結束步數",
+            "return_with_leftover_noise": "返回噪聲",
+            "restart_scheduler": "重啟調度器",
+            "segments": "分段"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    }
+}

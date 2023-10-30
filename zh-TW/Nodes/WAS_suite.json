@@ -1,0 +1,2920 @@
+{
+    "Checkpoint Loader": {
+        "title": "Checkpoint載入器",
+        "widgets": {
+            "config_name": "配置名稱",
+            "ckpt_name": "Checkpoint名稱"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "VAE": "VAE",
+            "NAME_STRING": "名稱字符串"
+        }
+    },
+    "Diffusers Model Loader": {
+        "title": "擴散模型載入器",
+        "widgets": {
+            "model_path": "模型路徑"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "VAE": "VAE",
+            "NAME_STRING": "名稱字符串"
+        }
+    },
+    "Diffusers Hub Model Down-Loader": {
+        "title": "擴散模型下載器",
+        "widgets": {
+            "repo_id": "倉庫ID",
+            "revision": "修改"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "VAE": "VAE",
+            "NAME_STRING": "名稱字符串"
+        }
+    },
+
+    "BLIP Model Loader": {
+        "title": "BLIP模型載入器",
+        "widgets": {
+            "blip_model": "BLIP模型"
+        },
+        "outputs": {
+            "BLIP_MODEL": "BLIP模型"
+        }
+    },
+    "Checkpoint Loader (Simple)": {
+        "title": "Checkpoint載入器(簡易)",
+        "widgets": {
+            "config_name": "配置名稱",
+            "ckpt_name": "Checkpoint名稱"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "VAE": "VAE",
+            "NAME_STRING": "名稱字符串"
+        }
+    },
+    "CLIPSeg Model Loader": {
+        "title": "CLIP分割模型載入器",
+        "widgets": {
+            "model": "模型"
+        },
+        "outputs": {
+            "clipseg_model": "CLIP分割模型"
+        }
+    },
+    "Lora Loader": {
+        "title": "LoRA載入器",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "lora_name": "LoRA名稱",
+            "strength_model": "模型強度",
+            "strength_clip": "CLIP強度"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "NAME_STRING": "名稱字符串"
+        }
+    },
+    "Load Lora": {
+        "title": "載入LoRA",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "lora_name": "LoRA名稱",
+            "strength_model": "模型強度",
+            "strength_clip": "CLIP強度"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "NAME_STRING": "名稱字符串"
+        }
+    },
+    "MiDaS Model Loader": {
+        "title": "MiDaS模型載入器",
+        "widgets": {
+            "midas_model": "MiDaS模型"
+        },
+        "outputs": {
+            "midas_model": "MiDaS模型"
+        }
+    },
+    "unCLIP Checkpoint Loader": {
+        "title": "unCLIPCheckpoint載入器",
+        "widgets": {
+            "ckpt_name": "Checkpoint名稱"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "VAE": "VAE",
+            "CLIP_VISION": "CLIP視覺",
+            "NAME_STRING": "名稱字符串"
+        }
+    },
+    "Upscale Model Loader": {
+        "title": "放大模型載入器",
+        "widgets": {
+            "model_name": "模型名稱"
+        },
+        "outputs": {
+            "UPSCALE_MODEL": "放大模型",
+            "MODEL_NAME_TEXT": "模型名稱文本"
+        }
+    },
+
+
+
+    "Latent Noise Injection": {
+        "title": "Latent加入噪聲",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "widgets": {
+            "noise_std": "噪聲數量"
+        }
+    },
+    "Perlin Power Fractal Latent": {
+        "title": "柏林冪律分形噪聲",
+        "inputs": {
+            "VAE": "VAE"
+        },
+        "widgets": {
+            "width": "寬度",
+            "height": "高度",
+            "scale": "縮放",
+            "octaves": "八度",
+            "persistence": "持久",
+            "lacunarity": "間隙度",
+            "exponent": "指數",
+            "seed": "隨機種子",
+            "control_after_generate": "執行後操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "latents": "Latent"
+        }
+    },
+    "Latent Upscale by Factor (WAS)": {
+        "title": "Latent按係數縮放(WAS)",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "widgets": {
+            "mode": "模式",
+            "factor": "係數",
+            "align": "對齊"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "Tensor Batch to Image": {
+        "title": "選取圖像",
+        "inputs": {
+            "images_batch": "圖像"
+        },
+        "widgets": {
+            "batch_image_number": "序號"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Blend Latents": {
+        "title": "混合Latent",
+        "inputs": {
+            "latent_a": "LatentA",
+            "latent_b": "LatentB"
+        },
+        "widgets": {
+            "operation": "混合方法",
+            "blend": "係數"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    
+    
+
+    "Cache Node": {
+        "title": "快取節點",
+        "inputs": {
+            "latent": "Latent",
+            "image": "圖像",
+            "conditioning": "條件"
+        },
+        "widgets": {
+            "latent_suffix": "Latent後綴",
+            "image_suffix": "圖像後綴",
+            "conditioning_suffix": "條件後綴",
+            "output_path": "輸出路徑"
+        },
+        "outputs": {
+            "latent_filename": "Latent文件名",
+            "image_filename": "圖像文件名",
+            "conditioning_filename": "條件文件名"
+        }
+    },
+    "Load Cache": {
+        "title": "讀取快取",
+        "widgets": {
+            "latent_path": "Latent路徑",
+            "image_path": "圖像路徑",
+            "conditioning_path": "條件路徑"
+        },
+        "outputs": {
+            "LATENT": "Latent",
+            "IMAGE": "圖像",
+            "CONDITIONING": "條件"
+        }
+    },
+    "Image Load": {
+        "title": "圖像載入",
+        "widgets": {
+            "image_path": "圖像路徑",
+            "RGBA": "RGBA"
+        },
+        "outputs": {
+            "image": "圖像",
+            "mask": "遮罩",
+            "filename_text": "文件名"
+        }
+    },
+    "Image Save": {
+        "title": "圖像儲存",
+        "inputs": {
+            "output_path": "輸出路徑"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前綴",
+            "filename_delimiter": "文件名分隔符",
+            "filename_number_padding": "文件名數字填充",
+            "filename_number_start": "文件名數字開頭",
+            "extension": "文件後綴",
+            "quality": "質量",
+            "lossless_webp": "高質量webp",
+            "overwrite_mode": "覆蓋模式",
+            "show_history": "顯示歷史",
+            "show_history_by_prefux": "由前綴顯示歷史",
+            "embed_workflow": "儲存工作流",
+            "show_previews": "開啟預覽"
+        }
+    },
+    "Load Image Batch": {
+        "title": "載入批次圖像",
+        "widgets": {
+            "mode": "模式",
+            "index": "編號",
+            "label": "標籤",
+            "path": "路徑",
+            "pattern": "模式",
+            "allow_RGBA_output": "使用RGBA輸出"
+        }
+    },
+    "Load Text File": {
+        "title": "載入文本",
+        "widgets": {
+            "filt_path": "文件路徑",
+            "dictionray_name": "字典名"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "DICT": "字典"
+        }
+    },
+    "Save Text File": {
+        "title": "儲存文本",
+        "inputs": {
+            "text": "字符串"
+        },
+        "widgets": {
+            "path": "路徑",
+            "filename_prefix": "文件名前綴",
+            "filename_delimiter": "文件名分隔符",
+            "filename_number_padding": "文件名數字填充"
+        }
+    },
+
+
+
+    "CLIPTextEncode (NSP)": {
+        "title": "CLIP文本編碼器(NSP)",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "text": "文本",
+            "mode": "模式",
+            "noodle_key": "NoodleSoup提示詞",
+            "seed": "隨機種子",
+            "control_after_generate": "執行後操作"
+        },
+        "outputs": {
+            "conditioning": "條件",
+            "parsed_text": "解析文本",
+            "raw_text": "文本"
+        }
+    },
+    "CLIPTextEncode (BlenderNeko Advanced + NSP)": {
+        "title": "CLIP文本編碼器(BNK+NSP)",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "text": "文本",
+            "mode": "模式",
+            "noodle_key": "NoodleSoup提示詞",
+            "seed": "隨機種子",
+            "control_after_generate": "執行後操作",
+            "token_normalization": "Token正規化",
+                "none": "無",
+                "length": "長度",
+                "mean": "平均",
+                "length+mean": "混合",
+            "weight_interpretation": "權重插值方式"
+        },
+        "outputs": {
+            "conditioning": "條件",
+            "parsed_text": "解析文本",
+            "raw_text": "文本"
+        }
+    },
+
+
+
+    "CLIP Input Switch": {
+        "title": "CLIP切換",
+        "inputs": {
+            "clip_a": "CLIP_a",
+            "clip_b": "CLIP_b",
+            "boolean_number": "boolean布林值"
+        },
+        "outputs": {
+            "CLIP": "CLIP"
+        }
+    },
+        "CLIP Vision Input Switch": {
+        "title": "CLIP視覺切換",
+        "inputs": {
+            "clip_vision_a": "CLIP視覺_a",
+            "clip_vision_b": "CLIP視覺_b",
+            "boolean_number": "boolean布林值"
+        },
+        "outputs": {
+            "CLIP_VISION": "CLIP視覺"
+        }
+    },
+    "Conditioning Input Switch": {
+        "title": "條件切換",
+        "inputs": {
+            "conditioning_a": "條件_a",
+            "conditioning_b": "條件_b",
+            "boolean_number": "boolean布林值"
+        },
+        "outputs": {
+            "conditioning": "條件"
+        }
+    },
+    "Control Net Model Input Switch": {
+        "title": "ControlNet切換",
+        "inputs": {
+            "control_net_a": "ControlNet_a",
+            "control_net_b": "ControlNet_b",
+            "boolean_number": "boolean布林值"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "Latent Input Switch": {
+        "title": "Latent切換",
+        "inputs": {
+            "latent_a": "Latent_a",
+            "latent_b": "Latent_b",
+            "boolean_number": "boolean布林值"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "Logic Boolean": {
+        "title": "boolean布林值",
+        "widgets": {
+            "boolean_number": "boolean布林值"
+        },
+        "outputs": {
+            "NUMBER": "數字",
+            "INT": "整數"
+        }
+    },
+    "Image Aspect Ratio": {
+        "title": "圖像寬高比",
+        "inputs": {
+            "image": "圖像",
+            "width": "寬度",
+            "height": "高度"
+        },
+        "outputs": {
+            "aspect_number": "比率數字",
+            "aspect_float": "比率浮點數",
+            "is_landscape_bool": "是橫圖",
+            "aspect_ratio_common": "常用寬高比",
+            "aspect_type": "寬高比類型"
+        }
+    },
+    "Image Input Switch": {
+        "title": "圖像切換",
+        "inputs": {
+            "image_a": "圖像_a",
+            "image_b": "圖像_b",
+            "boolean_number": "boolean布林值"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Model Input Switch": {
+        "title": "模型切換",
+        "inputs": {
+            "model_a": "模型_a",
+            "model_b": "模型_b",
+            "boolean_number": "boolean布林值"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "Number Input Switch": {
+        "title": "數字切換",
+        "inputs": {
+            "number_a": "數字_a",
+            "number_b": "數字_b",
+            "boolean_number": "boolean布林值"
+        },
+        "widgets": {
+            "return_boolean": "返回boolean布林值",
+            "comparison": "比較"
+        },
+        "outputs": {
+            "NUMBER": "數字",
+            "FLOAT": "浮點數",
+            "INT": "整數"
+        }
+    },
+    "Number Input Condition": {
+        "title": "數字切換",
+        "inputs": {
+            "number_a": "數字_a",
+            "number_b": "數字_b",
+            "boolean_number": "boolean布林值"
+        },
+        "widgets": {
+            "return_boolean": "返回boolean布林值",
+            "comparison": "比較"
+        },
+        "outputs": {
+            "NUMBER": "數字",
+            "FLOAT": "浮點數",
+            "INT": "整數"
+        }
+    },
+    "Text Input Switch": {
+        "title": "文本切換",
+        "inputs": {
+            "text_a": "文本_a",
+            "text_b": "文本_b",
+            "boolean_number": "boolean布林值"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Upscale Model Switch": {
+        "title": "放大模型切換",
+        "inputs": {
+            "upscale_model_a": "放大模型_a",
+            "upscale_model_b": "放大模型_b",
+            "boolean_number": "boolean布林值"
+        },
+        "outputs": {
+            "UPSCALE_MODEL": "放大模型"
+        }
+    },
+    "VAE Input Switch": {
+        "title": "VAE切換",
+        "inputs": {
+            "vae_a": "VAE_a",
+            "vae_b": "VAE_b",
+            "boolean_number": "boolean布林值"
+        },
+        "outputs": {
+            "VAE": "VAE"
+        }
+    },
+
+
+
+    "Image Size to Number": {
+        "title": "圖像尺寸到數字",
+        "inputs": {
+            "image": "圖像"
+        },
+        "outputs": {
+            "width_num": "寬度數字",
+            "height_num": "高度數字",
+            "width_float": "寬度浮點數",
+            "height_float": "高度浮點數",
+            "width_int": "寬度整數",
+            "height_int": "高度整數"
+        }
+    },
+    "Latent Size to Number": {
+        "title": "Latent尺寸到數字",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "outputs": {
+            "tensor_w_num": "寬度數字",
+            "tensor_h_hum": "高度數字",
+            "FLOAT": "浮點數",
+            "INT": "整數"
+        }
+    },
+    "Number Operation": {
+        "title": "數字運算",
+        "inputs": {
+            "number_a": "數字_a",
+            "number_b": "數字_b"
+        },
+        "widgets": {
+            "operation": "操作",
+                "addition": "相加",
+                "subtraction": "相減",
+                "division": "相除",
+                "floor division": "相除(向下取整)",
+                "multiplication": "相乘",
+                "exponentiation": "乘方",
+                "modulus": "模數",
+                "greater-than": "大於",
+                "greater-than or equals": "大於等於",
+                "less-than": "小於",
+                "less-than or equals": "小於等於",
+                "quals": "等於",
+                "does not equal": "不等於"
+        },
+        "outputs": {
+            "NUMBER": "數字",
+            "FLOAT": "浮點數",
+            "INT": "整數"
+        }
+    },
+    "Number to Float": {
+        "title": "數字到浮點數",
+        "inputs": {
+            "number": "數字"
+        },
+        "outputs": {
+            "FLOAT": "浮點數"
+        }
+    },
+    "Number to Int": {
+        "title": "數字到整數",
+        "inputs": {
+            "number": "數字"
+        },
+        "outputs": {
+            "INT": "整數"
+        }
+    },
+    "Number to Seed": {
+        "title": "數字到隨機種",
+        "inputs": {
+            "number": "數字"
+        },
+        "outputs": {
+            "SEED": "隨機種子"
+        }
+    },
+    "Number to String": {
+        "title": "數字到字符串",
+        "inputs": {
+            "number": "數字"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Number to Text": {
+        "title": "數字到文本",
+        "inputs": {
+            "number": "數字"
+        },
+        "outputs": {
+            "Text": "文本"
+        }
+    },
+
+    "Number Multiple Of": {
+        "title": "數字倍數",
+        "inputs": {
+            "number": "數字"
+        },
+        "widgets": {
+            "multiple": "倍數"
+        },
+        "outputs": {
+            "NUMBER": "數字",
+            "FLOAT": "浮點數",
+            "INT": "整數"
+        }
+    },
+
+    "Constant Number": {
+        "title": "常數",
+        "widgets": {
+            "number_type": "數字類型",
+                "integer": "整數",
+                "float": "浮點數",
+                "bool": "boolean布林值",
+            "number": "數字"
+        },
+        "outputs": {
+            "NUMBER": "數字",
+            "FLOAT": "浮點數",
+            "INT": "整數"
+        }
+    },
+    "Number Counter": {
+        "title": "計數",
+        "inputs": {
+            "reset_bool": "重置boolean布林值"
+        },
+        "widgets": {
+            "number_type": "數字類型",
+                "integer": "整數",
+                "float": "浮點數",
+            "mode": "模式",
+                "increment": "增加",
+                "decrement": "減少",
+            "start": "開始",
+            "step": "步數"
+        },
+        "outputs": {
+            "number": "數字",
+            "float": "浮點數",
+            "int": "整數"
+        }
+    },
+    "Number PI": {
+        "title": "Pi",
+        "outputs": {
+            "NUMBER": "數字",
+            "FLOAT": "浮點數"
+        }
+    },
+    "Random Number": {
+        "title": "隨機數",
+        "widgets": {
+            "number_type": "數字類型",
+                "integer": "整數",
+                "float": "浮點數",
+                "bool": "boolean布林值",
+            "minimum": "最小值",
+            "maximum": "最大值"
+        },
+        "outputs": {
+            "NUMBER": "數字",
+            "FLOAT": "浮點數",
+            "INT": "整數"
+        }
+    },
+    "Seed (Legacy)": {
+        "title": "隨機種子(舊版)",
+        "widgets": {
+            "seed": "隨機種子",
+            "control_after_generate": "執行後操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機"
+        },
+        "outputs": {
+            "SEED": "隨機種子"
+        }
+    },
+    "True Random.org Number Generator": {
+        "title": "Random.org隨機數生成",
+        "widgets": {
+            "api_key": "API_key",
+            "minimum": "最小值",
+            "maximum": "最大值",
+            "mode": "模式",
+                "random": "隨機",
+                "fixed": "固定"
+        },
+        "outputs": {
+            "NUMBER": "數字",
+            "FLOAT": "浮點數",
+            "INT": "整數"
+        }
+    },
+
+
+
+    "Create Grid Image": {
+        "title": "創建圖表",
+        "widgets": {
+            "image_path": "圖像路徑",
+            "pattern_glob": "全局模式",
+            "include_subfolder": "包含子文件夾",
+                "flase": "否",
+                "true": "是",
+            "border_width": "邊框寬度",
+            "number_of_columns": "列數",
+            "max_cell_size": "圖像大小",
+            "border_red": "紅色邊框",
+            "border_green": "綠色邊框",
+            "border_blue": "藍色邊框"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Crop Face": {
+        "title": "面部裁剪",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "crop_padding_factor": "裁剪",
+            "cascade_xml": "cascade配置文件"
+        },
+        "outputs": {
+            "IMAGE": "圖像",
+            "CROP_DATA": "裁剪數據"
+        }
+    },
+    "Image Crop Location": {
+        "title": "裁剪位置",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "top": "上",
+            "left": "左",
+            "right": "右",
+            "bottom": "下"
+        },
+        "outputs": {
+            "IMAGE": "圖像",
+            "CROP_DATA": "裁剪數據"
+        }
+    },
+    "Image Crop Square Location": {
+        "title": "裁剪方塊位置",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "size": "尺寸"
+        },
+        "outputs": {
+            "IMAGE": "圖像",
+            "CROP_DATA": "裁剪數據"
+        }
+    },
+    "Image Paste Face": {
+        "title": "黏貼面部",
+        "inputs": {
+            "image": "圖像",
+            "crop_image": "裁剪圖像",
+            "crop_data": "裁剪數據"
+        },
+        "widgets": {
+            "crop_blending": "混合",
+            "crop_sharpening": "銳化"
+        },
+        "outputs": {
+            "IMAGE": "圖像",
+            "MASK_IMAGE": "遮罩圖像"
+        }
+    },
+    "Image Paste Crop": {
+        "title": "黏貼裁剪",
+        "inputs": {
+            "image": "圖像",
+            "crop_image": "裁剪圖像",
+            "crop_data": "裁剪數據"
+        },
+        "widgets": {
+            "crop_blending": "混合",
+            "crop_sharpening": "銳化"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Paste Crop by Location": {
+        "title": "黏貼裁剪位置",
+        "inputs": {
+            "image": "圖像",
+            "crop_image": "裁剪圖像"
+        },
+        "widgets": {
+            "top": "上",
+            "left": "左",
+            "right": "右",
+            "bottom": "下",
+            "crop_blending": "混合",
+            "crop_sharpening": "銳化"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Pixelate": {
+        "title": "圖像像素化",
+        "inputs": {
+            "images": "圖像",
+            "color_palettes": "調色板"
+        },
+        "widgets": {
+            "pixelation_size": "像素大小",
+            "num_colors": "顏色數量",
+            "init_mode": "模式",
+            "max_iterations": "最大叠代次數",
+            "dither": "抖動",
+            "dither_mode": "抖動模式",
+            "color_palette_mode": "調色模式",
+            "reverse_palette": "反轉調色"
+        },
+        "outputs": {
+            "images": "圖像"
+        }
+    },
+    "Image Mix RGB Channels": {
+        "title": "混合RGB通道",
+        "inputs": {
+            "red_channel": "紅色通道",
+            "green_channel": "綠色通道",
+            "blue_channel": "藍色通道"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Remove Background (Alpha)": {
+        "title": "移除背景(透明)",
+        "inputs": {
+            "images": "圖像"
+        },
+        "widgets": {
+            "mode": "模式",
+            "threshold": "閾值",
+            "threshold_tolerance": "閾值偏差"
+        },
+        "outputs": {
+            "images": "圖像"
+        }
+    },
+    "Image Remove Color": {
+        "title": "移除RGB顏色",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "target_red": "目標R",
+            "target_green": "目標G",
+            "target_blue": "目標B",
+            "replace_red": "替換R",
+            "replace_green": "替換G",
+            "replace_blue": "替換B",
+            "clip_threshold": "CLIP閾值"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Seamless Texture": {
+        "title": "無縫材質",
+        "inputs": {
+            "images": "圖像"
+        },
+        "widgets": {
+            "blending": "混合",
+            "tiled": "分塊",
+            "tiles": "分塊數量"
+        },
+        "outputs": {
+            "images": "圖像"
+        }
+    },
+    "Image Select Color": {
+        "title": "選擇顏色",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "channel": "通道",
+                "red": "紅色",
+                "green": "綠色",
+                "blue": "藍色"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Select Channel": {
+        "title": "選擇顏色",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "channel": "通道",
+                "red": "紅色",
+                "green": "綠色",
+                "blue": "藍色"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Threshold": {
+        "title": "圖像閾值",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "threshold": "閾值"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Tiled": {
+        "title": "分塊圖像",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "num_tiles": "分塊數量"
+        },
+        "outputs": {
+            "IMAGES": "圖像"
+        }
+    },
+
+    "CLIPSeg Masking": {
+        "title": "CLIPSeg遮罩",
+        "inputs": {
+            "image": "圖像",
+            "clipseg_model": "CLIP分割模型"
+        },
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "MASK": "遮罩",
+            "MASK_IMAGE": "遮罩圖像"
+        }
+    },
+    "CLIPSeg Batch Masking": {
+        "title": "CLIPSeg批量遮罩",
+        "inputs": {
+            "image_a": "圖像_a",
+            "image_b": "圖像_b",
+            "image_c": "圖像_c",
+            "image_d": "圖像_d",
+            "image_e": "圖像_e",
+            "image_f": "圖像_f"
+        },
+        "widgets": {
+            "text_a": "文本_a",
+            "text_b": "文本_b",
+            "text_c": "文本_c",
+            "text_d": "文本_d",
+            "text_e": "文本_e",
+            "text_f": "文本_f"
+        },
+        "outputs": {
+            "IMAGES_BATCH": "圖像",
+            "MASKS_BATCH": "遮罩",
+            "MASK_IMAGES_BATCH": "圖像遮罩"
+        }
+    },
+    "Convert Masks to Images": {
+        "title": "遮罩到圖像",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "outputs": {
+            "IMAGES": "圖像"
+        }
+    },
+    "Image to Latent Mask": {
+        "title": "圖像到Latent遮罩",
+        "inputs": {
+            "iamges": "圖像"
+        },
+        "widgets": {
+            "channel": "通道",
+                "alpha": "透明",
+                "red": "紅色",
+                "green": "綠色",
+                "blue": "藍色"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Masks Add": {
+        "title": "遮罩相加",
+        "inputs": {
+            "mask_a": "遮罩_a",
+            "mask_b": "遮罩_b"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Masks Subtract": {
+        "title": "遮罩相減",
+        "inputs": {
+            "mask_a": "遮罩_a",
+            "mask_b": "遮罩_b"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Arbitrary Region": {
+        "title": "遮罩區域",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "size": "尺寸",
+            "threshold": "閾值"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Batch to Mask": {
+        "title": "批次遮罩到遮罩",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "batch_number": "批次數量"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "Mask Batch": {
+        "title": "遮罩批次",
+        "inputs": {
+            "masks_a": "遮罩_a",
+            "masks_b": "遮罩_b",
+            "masks_c": "遮罩_c",
+            "masks_d": "遮罩_d"
+        },
+        "outputs": {
+            "masks": "遮罩"
+        }
+    },
+    "Mask Ceiling Region": {
+        "title": "遮罩向上取整",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Crop Dominant Region": {
+        "title": "遮罩裁剪主要區域",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "padding": "分區"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Crop Minority Region": {
+        "title": "遮罩裁剪次要區域",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "padding": "分區"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Crop Region": {
+        "title": "遮罩裁剪區域",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "padding": "分區",
+            "region_type": "區域類型",
+                "dominant": "主要",
+                "minority": "次要"
+        },
+        "outputs": {
+            "cropped_mask": "遮罩",
+            "crop_data": "裁剪數據",
+            "top_int": "上",
+            "left_int": "左",
+            "right_int": "右",
+            "bottom_int": "下",
+            "width_int": "寬度",
+            "height_int": "高度"
+        }
+    },
+    "Mask Paste Region": {
+        "title": "遮罩黏貼區域",
+        "inputs": {
+            "mask": "遮罩",
+            "crop_mask": "裁剪遮罩",
+            "crop_data": "裁剪數據"
+        },
+        "widgets": {
+            "crop_blending": "混合",
+            "crop_sharpening": "銳化"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "Mask Dilate Region": {
+        "title": "遮罩膨脹",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "iterations": "叠代次數"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Dominant Region": {
+        "title": "遮罩主要區域",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "threshold": "閾值"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Erode Region": {
+        "title": "遮罩消融",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "iterations": "叠代次數"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Fill Holes": {
+        "title": "遮罩填充漏洞",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Floor Region": {
+        "title": "遮罩向下取整",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Gaussian Region": {
+        "title": "遮罩高斯模糊",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "radius": "範圍"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Invert": {
+        "title": "遮罩反轉",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Minority Region": {
+        "title": "遮罩次要區域",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "threshold": "閾值"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Smooth Region": {
+        "title": "遮罩平滑",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "sigma": "Sigma"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Mask Threshold Region": {
+        "title": "遮罩二值化",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "black_threshold": "黑色閾值",
+            "white_threshold": "白色閾值"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Masks Combine Regions": {
+        "title": "遮罩合併",
+        "inputs": {
+            "masks_a": "遮罩_a",
+            "masks_b": "遮罩_b",
+            "masks_c": "遮罩_c",
+            "masks_d": "遮罩_d",
+            "masks_e": "遮罩_e",
+            "masks_f": "遮罩_f"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "Masks Combine Batch": {
+        "title": "遮罩批量合併",
+        "inputs": {
+            "masks": "遮罩"
+        },
+        "outputs": {
+            "MASKS": "遮罩"
+        }
+    },
+    "SAM Model Loader": {
+        "title": "SAM模型載入器",
+        "widgets": {
+            "model_size": "模型規格"
+        },
+        "outputs": {
+            "SAM_MODEL": "SAM模型"
+        }
+    },
+    "SAM Parameters": {
+        "title": "SAM參數",
+        "widgets": {
+            "point": "點",
+            "lebels": "層"
+        },
+        "outputs": {
+            "SAM_PARAMETERS": "SAM參數"
+        }
+    },
+    "SAM Parameters Combine": {
+        "title": "SAM參數合併",
+        "inputs": {
+            "sam_parameters_a": "SAM參數_a",
+            "sam_parameters_b": "SAM參數_b"
+        },
+        "outputs": {
+            "SAM_PARAMETERS": "SAM參數"
+        }
+    },
+    "SAM Image Mask": {
+        "title": "SAM圖像遮罩",
+        "inputs": {
+            "sam_model": "SAM模型",
+            "sam_parameters": "SAM參數",
+            "image": "圖像"
+        },
+        "outputs": {
+            "IMAGE": "圖像",
+            "MASK": "遮罩"
+        }
+    },
+
+
+
+    "Image SSAO (Ambient Occlusion)": {
+        "title": "環境光遮蔽(AO)",
+        "inputs": {
+            "images": "圖像",
+            "depth_images": "深度圖"
+        },
+        "widgets": {
+            "strength": "強度",
+            "radius": "範圍",
+            "ao_blur": "模糊",
+            "specular_threshold": "高光閾值",
+            "enable_specular_masking": "使用高光遮罩",
+            "tile_size": "分塊大小"
+        },
+        "outputs": {
+            "composited_images": "圖像",
+            "ssao_images": "AO圖像",
+            "specular_mask_images": "高光圖像"
+        }
+    },
+    "Image SSDO (Direct Occlusion)": {
+        "title": "方向性遮蔽(DO)",
+        "inputs": {
+            "images": "圖像",
+            "depth_images": "深度圖"
+        },
+        "widgets": {
+            "strength": "強度",
+            "radius": "範圍",
+            "specular_threshold": "高光閾值",
+            "colored_occlusion": "顏色遮蔽"
+        },
+        "outputs": {
+            "composited_images": "圖像",
+            "ssdo_images": "DO圖像",
+            "ssdo_image_masks": "DO圖像遮罩",
+            "light_source_image_masks": "光源遮罩"
+        }
+    },
+    "Image Bloom Filter": {
+        "title": "泛光",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "radius": "範圍",
+            "intensity": "強度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Canny Filter": {
+        "title": "線條",
+        "inputs": {
+            "images": "圖像"
+        },
+        "widgets": {
+            "enable_threshold": "使用閾值",
+            "threshold_low": "低閾值",
+            "threshold_high": "高閾值"
+        },
+        "outputs": {
+            "images": "圖像"
+        }
+    },
+    "Image Chromatic Aberration": {
+        "title": "色差",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "red_offset": "紅移",
+            "green_offset": "綠移",
+            "blue_offset": "藍移",
+            "intensity": "強度",
+            "fade_radius": "消失範圍"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Lucy Sharpen": {
+        "title": "銳化",
+        "inputs": {
+            "images": "圖像"
+        },
+        "widgets": {
+            "iterations": "叠代次數",
+            "kernel_size": "核心大小"
+        },
+        "outputs": {
+            "image": "圖像"
+        }
+    },
+    "Image Dragan Photography Filter": {
+        "title": "Dragan風格",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "saturation": "飽和度",
+            "contrast": "對比度",
+            "brightness": "明度",
+            "sharpness": "銳度",
+            "highpass_radius": "高反差範圍",
+            "highpass_samples": "高反差採樣",
+            "highpass_strength": "高反差強度",
+            "colorize": "著色"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Edge Detection Filter": {
+        "title": "邊緣檢測",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "mode": "模式",
+                "normal": "正常",
+                "laplacian": "拉普拉斯"
+        },
+        "outputs": {
+            "image": "圖像"
+        }
+    },
+    "Image Film Grain": {
+        "title": "膠片顆粒",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "density": "密度",
+            "intensity": "強度",
+            "highlights": "高光",
+            "supersample_factor": "超採樣係數"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Filter Adjustments": {
+        "title": "顏色調整",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "brightness": "明度",
+            "contrast": "對比度",
+            "saturation": "飽和度",
+            "sharpness": "銳度",
+            "blur": "模糊",
+            "gaussian_blur": "高斯模糊",
+            "edge_enhance": "邊緣強化",
+            "detail_enhance": "細節強化",
+                "false": "否",
+                "true": "是"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Gradient Map": {
+        "title": "漸變映射",
+        "inputs": {
+            "image": "圖像",
+            "gradient_image": "漸變圖像"
+        },
+        "widgets": {
+            "flip_left_right": "反轉左右"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image High Pass Filter": {
+        "title": "高反差",
+        "inputs": {
+            "images": "圖像"
+        },
+        "widgets": {
+            "radius": "範圍",
+            "strength": "強度",
+            "color_output": "輸出顏色",
+            "neutral_background": "正常背景",
+                "true": "是",
+                "false": "否"
+        },
+        "outputs": {
+            "images": "圖像"
+        }
+    },
+    "Image Median Filter": {
+        "title": "中值平滑",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "diameter": "直徑",
+            "sigma_color": "Sigma顏色",
+            "sigma_space": "Sigma空間"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Monitor Effects Filter": {
+        "title": "主要效果",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "mode": "模式",
+                "Digital Distortion": "電子",
+                "Signal Distortion": "信號",
+                "TV Distortion": "TV"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Nova Filter": {
+        "title": "新星",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "amplitude": "振幅",
+            "frequency": "頻率"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Style Filter": {
+        "title": "風格化",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "style": "風格"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image fDOF Filter": {
+        "title": "偽景深",
+        "inputs": {
+            "image": "圖像",
+            "depth": "深度圖"
+        },
+        "widgets": {
+            "mode": "模式",
+                "mock": "模擬",
+                "gaussian": "高斯",
+                "box": "方框",
+            "radius": "範圍",
+            "samples": "採樣次數"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+
+
+
+
+    "Image Analyze": {
+        "title": "圖像分析",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "mode": "模式",
+                "Black White Levels": "黑白階",
+                "RGB Levels": "RGB階"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Color Palette": {
+        "title": "顏色調色板",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "colors": "顏色數量",
+            "mode": "模式",
+                "chart": "圖表",
+                "back_to_back": "臨近"
+        },
+        "outputs": {
+            "image": "圖像",
+            "color_palettes": "顏色列表"
+        }
+    },
+    "Image to Seed": {
+        "title": "圖像到隨機種",
+        "inputs": {
+            "image": "圖像"
+        },
+        "outputs": {
+            "INT": "整數"
+        }
+    },
+
+
+
+
+    "Image Displacement Warp": {
+        "title": "圖像置換",
+        "inputs": {
+            "images": "圖像",
+            "displacement_maps": "置換圖像"
+        },
+        "widgets": {
+            "amplitude": "幅度"
+        },
+        "outputs": {
+            "images": "圖像"
+        }
+    },
+    "Image Flip": {
+        "title": "圖像翻轉",
+        "inputs": {
+            "images": "圖像"
+        },
+        "widgets": {
+            "mode": "模式",
+                "horizontal": "水平",
+                "vertical": "豎直"
+        },
+        "outputs": {
+            "images": "圖像"
+        }
+    },
+    "Image Padding": {
+        "title": "圖像外擴",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "feathering": "羽化",
+            "feather_second_pass": "使用二次羽化",
+                "false": "否",
+                "true": "是",
+            "top_padding": "上",
+            "left_padding": "左",
+            "right_padding": "右",
+            "bottom_padding": "下"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Resize": {
+        "title": "圖像調整大小",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "mode": "模式",
+                "rescale": "縮放",
+                "resize": "拉伸",
+            "supersample": "超採樣",
+                "true": "是",
+                "false": "否",
+            "resampling": "重採樣",
+                "lanczos": "lanczos插值",
+                "nearest": "鄰近",
+                "bicubic": "雙三次插值",
+                "bilinear": "雙線性插值",
+            "rescale_factor": "縮放係數",
+            "resize_width": "拉伸寬度",
+            "resize_height": "拉伸高度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Rotate": {
+        "title": "圖像旋轉",
+        "inputs": {
+            "images": "圖像"
+        },
+        "widgets": {
+            "mode": "模式",
+                "transpose": "替換",
+                "internal": "本體",
+            "rotation": "旋轉角度",
+            "sampler": "採樣",
+                "nearest": "鄰近",
+                "bicubic": "雙三次插值",
+                "bilinear": "雙線性插值"
+        },
+        "outputs": {
+            "images": "圖像"
+        }
+    },
+    "Image Stitch": {
+        "title": "圖像縫合",
+        "inputs": {
+            "image_a": "圖像_a",
+            "image_b": "圖像_b"
+        },
+        "widgets": {
+            "stitch": "縫合方向",
+                "top": "上",
+                "left": "左",
+                "right": "右",
+                "bottom": "下",
+            "feathering": "羽化"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Transpose": {
+        "title": "圖像填充",
+        "inputs": {
+            "image": "圖像",
+            "image_overlay": "覆蓋圖像"
+        },
+        "widgets": {
+            "width": "寬度",
+            "height": "高度",
+            "X": "X",
+            "Y": "Y",
+            "rotation": "旋轉角度",
+            "feathering": "羽化"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+
+
+
+    "Image Power Noise": {
+        "title": "生成冪律噪聲",
+        "widgets": {
+            "width": "寬度",
+            "height": "高度",
+            "frequency": "頻率",
+            "attenuation": "衰減",
+            "noise_type": "噪聲類型",
+                "grey": "灰",
+                "white": "白",
+                "pink": "粉",
+                "blue": "藍",
+                "green": "綠",
+                "mix": "混合",
+            "seed": "隨機種子",
+            "control_after_generate": "執行後操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機"
+        },
+        "outputs": {
+            "image": "圖像"
+        }
+    },
+    "Image Perlin Noise": {
+        "title": "生成柏林噪聲",
+        "widgets": {
+            "width": "寬度",
+            "height": "高度",
+            "scale": "縮放",
+            "octaves": "八度",
+            "persistence": "持久",
+            "seed": "隨機種子",
+            "control_after_generate": "執行後操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機"
+        },
+        "outputs": {
+            "image": "圖像"
+        }
+    },
+    "Image Perlin Power Fractal": {
+        "title": "生成柏林分形噪聲",
+        "widgets": {
+            "width": "寬度",
+            "height": "高度",
+            "scale": "縮放",
+            "octaves": "八度",
+            "persistence": "持久",
+            "lacunarity": "間隙度",
+            "exponent": "指數",
+            "seed": "隨機種子",
+            "control_after_generate": "執行後操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機"
+        },
+        "outputs": {
+            "image": "圖像"
+        }
+    },
+    "Image to Noise": {
+        "title": "圖像到噪聲",
+        "inputs": {
+            "images": "圖像"
+        },
+        "widgets": {
+            "num_colors": "顏色數量",
+            "black_mix": "黑色混合",
+            "gaussian_mix": "高斯混合",
+            "brightness": "明度",
+            "output_mode": "輸出模式",
+                "batch": "批次",
+                "list": "列表",
+            "seed": "隨機種子",
+            "control_after_generate": "執行後操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機"
+        },
+        "outputs": {
+            "image": "圖像"
+        }
+    },
+    "Image Voronoi Noise Filter": {
+        "title": "Voronoi噪聲",
+        "widgets": {
+            "width": "寬度",
+            "height": "高度",
+            "density": "密度",
+            "modulator": "幅度",
+            "seed": "隨機種子",
+            "control_after_generate": "執行後操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機",
+            "flat": "平化",
+            "RGB_output": "輸出RGB"
+        },
+        "outputs": {
+            "image": "圖像"
+        }
+    },
+
+    "Image Generate Gradient": {
+        "title": "生成漸變",
+        "widgets": {
+            "width": "寬度",
+            "height": "高度",
+            "direction": "方向",
+                "horizontal": "水平",
+                "vertical": "豎直",
+            "tolerance": "偏差",
+            "gradient_stops": "漸變停止"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+
+
+
+    "Image Levels Adjustment": {
+        "title": "色階調整",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "black_level": "黑色階",
+            "mid_level": "中階",
+            "white_level": "白色階"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Rotate Hue": {
+        "title": "旋轉色相",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "hue_shift": "色相偏移"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Shadows and Highlights": {
+        "title": "陰影與高光",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "shadow_threshold": "陰影閾值",
+            "shadow_factor": "陰影係數",
+            "shadow_smoothing": "陰影平滑",
+            "highlight_threshold": "高光閾值",
+            "highlight_factor": "高光係數",
+            "highlight_smoothing": "高光平滑",
+            "simplify_isolation": "簡化"
+        },
+        "outputs": {
+            "image": "圖像",
+            "shadow_map": "陰影圖像",
+            "highlight_map": "高光圖像"
+        }
+    },
+
+
+
+    "Image Rembg (Remove Background)": {
+        "title": "移除背景",
+        "inputs": {
+            "images": "圖像"
+        },
+        "widgets": {
+            "transparency": "透明",
+                "true": "是",
+                "false": "否"
+        },
+        "outputs": {
+            "iamges": "圖像"
+        }
+    },
+    "MiDaS Depth Approximation": {
+        "title": "MiDaS深度近似",
+        "inputs": {
+            "image": "圖像",
+            "midas_model": "MiDaS模型"
+        },
+        "widgets": {
+            "use_cpu": "使用CPU",
+            "midas_type": "MiDaS類型",
+            "invert_depth": "反轉深度"
+        },
+        "outputs": {
+            "images": "圖像"
+        }
+    },
+    "MiDaS Mask Image": {
+        "title": "MiDaS遮罩圖像",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "use_cpu": "使用CPU",
+            "midas_model": "MiDaS類型",
+            "midas_type": "MiDaS類型",
+            "remove": "移除",
+                "background": "背景",
+                "foreground": "前景",
+            "threshold": "閾值",
+                "false": "否",
+                "true": "是",
+            "threshold_high": "高閾值",
+            "threshold_low": "低閾值",
+            "threshold_mid": "中閾值",
+            "smoothing": "平滑",
+            "background_red": "紅色背景",
+            "background_green": "綠色背景",
+            "background_blue": "藍色背景"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+
+
+
+    "Image Bounds": {
+        "title": "圖像邊界",
+        "inputs": {
+            "image": "圖像"
+        },
+        "outputs": {
+            "IMAGE_BOUNDS": "邊界"
+        }
+    },
+    "Inset Image Bounds": {
+        "title": "設定邊界",
+        "inputs": {
+            "image_bounds": "邊界"
+        },
+        "widgets": {
+            "inset_left": "左",
+            "inset_top": "上",
+            "inset_right": "右",
+            "inset_bottom": "下"
+        },
+        "outputs": {
+            "IMAGE_BOUNDS": "邊界"
+        }
+    },
+    "Bounded Image Blend": {
+        "title": "圖像邊界覆合",
+        "inputs": {
+            "target": "目標圖像",
+            "target_bounds": "目標邊界",
+            "source": "覆合圖像"
+        },
+        "widgets": {
+            "blend_factor": "混合係數",
+            "feathering": "羽化"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Bounded Image Blend with Mask": {
+        "title": "圖像邊界遮罩覆合",
+        "inputs": {
+            "target": "目標圖像",
+            "target_bounds": "目標邊界",
+            "target_mask": "目標遮罩",
+            "source": "覆合圖像"
+        },
+        "widgets": {
+            "blend_factor": "混合係數",
+            "feathering": "羽化"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Bounded Image Crop": {
+        "title": "圖像邊界裁剪",
+        "inputs": {
+            "image": "圖像",
+            "image_bounds": "邊界"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Bounded Image Crop with Mask": {
+        "title": "圖像遮罩邊界",
+        "inputs": {
+            "image": "圖像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "padding_left": "外擴左",
+            "padding_top": "外擴上",
+            "padding_right": "外擴右",
+            "padding_bottom": "外擴下"
+        },
+        "outputs": {
+            "IMAGE": "圖像",
+            "IMAGE_BOUNDS": "邊界"
+        }
+    },
+
+
+
+    "Image Batch": {
+        "title": "圖像組合批次",
+        "inputs": {
+            "images_a": "圖像_a",
+            "images_b": "圖像_b",
+            "images_c": "圖像_c",
+            "images_d": "圖像_d"
+        },
+        "outputs": {
+            "image": "圖像"
+        }
+    },
+    "Image Blank": {
+        "title": "空圖像",
+        "widgets": {
+            "width": "寬度",
+            "height": "高度",
+            "red": "紅色",
+            "green": "綠色",
+            "blue": "藍色"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Blend by Mask": {
+        "title": "圖像遮罩混合",
+        "inputs": {
+            "images_a": "圖像_a",
+            "images_b": "圖像_b",
+            "mask": "遮罩圖像"
+        },
+        "widgets": {
+            "blend_percentage": "係數"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Image Blend": {
+        "title": "圖像混合",
+        "inputs": {
+            "images_a": "圖像_a",
+            "images_b": "圖像_b"
+        },
+        "widgets": {
+            "blend_percentage": "係數"
+        },
+        "outputs": {
+            "image": "圖像"
+        }
+    },
+    "Image Blending Mode": {
+        "title": "圖像混合模式",
+        "inputs": {
+            "images_a": "圖像_a",
+            "images_b": "圖像_b"
+        },
+        "widgets": {
+            "mode": "模式",
+                "add": "相加",
+                "color": "顏色",
+                "color_burn": "顏色加深",
+                "color_dodge": "顏色減淡",
+                "darken": "變暗",
+                "difference": "差值",
+                "exclusion": "排除",
+                "hard_light": "硬光",
+                "hue": "色相",
+                "lighten": "變亮",
+                "multiply": "正片疊底",
+                "screen": "濾色",
+                "overlay": "疊加",
+                "soft_light": "柔光",
+            "blend_percentage": "係數"
+        },
+        "outputs": {
+            "image": "圖像"
+        }
+    },
+    "Images to RGB": {
+        "title": "圖像到RGB",
+        "inputs": {
+            "images": "圖像"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Images to Linear": {
+        "title": "圖像線性",
+        "inputs": {
+            "images": "圖像"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+
+
+
+    "Write to GIF": {
+        "title": "寫入到GIF",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "transition_frames": "幀數",
+            "image_delay_ms": "延遲毫秒",
+            "duration_ms": "持續毫秒",
+            "loops": "循環次數",
+            "max_size": "最大尺寸",
+            "output_path": "輸出路徑",
+            "filename": "文件名"
+        },
+        "outputs": {
+            "IMAGE_PASS": "圖像",
+            "filepath_text": "文件路徑",
+            "filename_text": "文件名"
+        }
+    },
+    "Write to Video": {
+        "title": "寫入到視頻",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "transition_frames": "幀數",
+            "image_delay_sec": "延遲秒",
+            "fps": "幀率",
+            "max_size": "最大尺寸",
+            "output_path": "輸出路徑",
+            "filename": "文件名",
+            "codec": "編碼格式"
+        },
+        "outputs": {
+            "IMAGE_PASS": "圖像",
+            "filepath_text": "文件路徑",
+            "filename_text": "文件名"
+        }
+    },
+    "Create Morph Image": {
+        "title": "生成動態圖像",
+        "inputs": {
+            "image_a": "圖像_a",
+            "image_b": "圖像_b"
+        },
+        "widgets": {
+            "transition_frames": "幀數",
+            "still_image_delay_ms": "延遲毫秒",
+            "duration_ms": "持續毫秒",
+            "loops": "循環次數",
+            "max_size": "最大尺寸",
+            "output_path": "輸出路徑",
+            "filename": "文件名",
+            "filetype": "文件類型"
+        },
+        "outputs": {
+            "image_a_pass": "圖像_a",
+            "image_b_pass": "圖像_b",
+            "filepath_text": "文件路徑",
+            "filename_text": "文件名"
+        }
+    },
+    "Create Morph Image from Path": {
+        "title": "路徑生成動態圖像",
+        "widgets": {
+            "transition_frames": "幀數",
+            "still_image_delay_ms": "延遲毫秒",
+            "duration_ms": "持續毫秒",
+            "loops": "循環次數",
+            "max_size": "最大尺寸",
+            "input_path": "輸入路徑",
+            "input_pattern": "輸入模式",
+            "output_path": "輸出路徑",
+            "filename": "文件名",
+            "filetype": "文件類型"
+        },
+        "outputs": {
+            "filepath_text": "文件路徑",
+            "filename_text": "文件名"
+        }
+    },
+    "Create Video from Path": {
+        "title": "路徑生成視頻",
+        "widgets": {
+            "transition_frames": "幀數",
+            "still_image_delay_ms": "延遲毫秒",
+            "fps": "幀率",
+            "max_size": "最大尺寸",
+            "input_path": "輸入路徑",
+            "output_path": "輸出路徑",
+            "filename": "文件名",
+            "codec": "編碼格式"
+        },
+        "outputs": {
+            "filepath_text": "文件路徑",
+            "filename_text": "文件名"
+        }
+    },
+    "Video Dump Frames": {
+        "title": "視頻到序列幀",
+        "widgets": {
+            "video_path": "視頻路徑",
+            "output_path": "輸出路徑",
+            "prefix": "前綴",
+            "filenumber_digits": "文件名數字數量",
+            "extension": "文件後綴"
+        },
+        "outputs": {
+            "filepath_text": "文件路徑",
+            "filename_text": "文件名"
+        }
+    },
+
+
+
+    "Debug Number to Console": {
+        "title": "輸出數字到控制台",
+        "inputs": {
+            "number": "數字"
+        },
+        "widgets": {
+            "label": "標籤"
+        },
+        "outputs": {
+            "NUMBER": "數字"
+        }
+    },
+    "Dictionary to Console": {
+        "title": "輸出字典到控制台",
+        "inputs": {
+            "dictionary": "字典"
+        },
+        "widgets": {
+            "label": "標籤"
+        },
+        "outputs": {
+            "DICT": "字典"
+        }
+    },
+    "Export API": {
+        "title": "導出API",
+        "widgets": {
+            "save_prompt_api": "儲存提示詞API",
+                "true": "是",
+                "false": "否",
+            "output_path": "輸出路徑",
+            "filename_prefix": "文件名前綴",
+            "filename_delimiter": "文件名分隔符",
+            "filename_number_padding": "文件名數字填充"
+        }
+    },
+    "Samples Passthrough (Stat System)": {
+        "title": "輸出系統信息",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "outputs": {
+            "samples": "Latent"
+        }
+    },
+    "Text to Console": {
+        "title": "輸出文本到控制台",
+        "inputs": {
+            "text": "文本"
+        },
+        "widgets": {
+            "text": "文本",
+            "label": "標籤"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+
+
+
+    "Image History Loader": {
+        "title": "圖像歷史",
+        "widgets": {
+            "image": "圖像",
+                "No History": "無歷史"
+        },
+        "outputs": {
+            "image": "圖像",
+            "filename_text": "文件名"
+        }
+    },
+    "Text File History Loader": {
+        "title": "文本歷史",
+        "widgets": {
+            "file": "文件",
+                "No History": "無歷史",
+            "dictionary_name": "字典名"
+        },
+        "ooutputs": {
+            "STRING": "字符串",
+            "DICT": "字典"
+        }
+    },
+
+
+
+    "Integer place counter": {
+        "title": "整數空間計數",
+        "widgets": {
+            "int_input": "整數輸入"
+        },
+        "outputs": {
+            "INT_PLACES": "整數空間"
+        }
+    },
+
+
+
+
+    "KSampler (Legacy)": {
+        "title": "K採樣器(舊版)",
+        "inputs": {
+            "model": "模型",
+            "seed": "隨機種子",
+            "positive": "正面提示詞",
+            "negative": "負面提示詞",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "seed": "隨機種子",
+            "steps": "步數",
+            "cfg": "CFG",
+            "sampler_name": "採樣器",
+            "scheduler": "調度器",
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "KSampler (WAS)": {
+        "title": "K採樣器(WAS)",
+        "inputs": {
+            "model": "模型",
+            "seed": "隨機種子",
+            "positive": "正面提示詞",
+            "negative": "負面提示詞",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "seed": "隨機種子",
+            "steps": "步數",
+            "cfg": "CFG",
+            "sampler_name": "採樣器",
+            "scheduler": "調度器",
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "KSampler Cycle": {
+        "title": "K採樣器(Cycle)",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示詞",
+            "negative": "負面提示詞",
+            "latent_image": "Latent",
+            "vae": "VAE",
+            "secondary_model": "第二模型",
+            "upscale_model": "放大模型",
+            "processor_model": "處理模型",
+            "pos_additive": "正面增加",
+            "neg_additive": "負面增加"
+        },
+        "widgets": {
+            "seed": "隨機種子",
+            "control_after_generate": "執行後操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機",
+            "steps": "步數",
+            "cfg": "CFG",
+            "sampler_name": "採樣器",
+            "scheduler": "調度器",
+            "tiled_vae": "分塊VAE",
+                "disable": "關閉",
+                "enable": "開啟",
+            "latent_upscale": "縮放Latent",
+            "upscale_factor": "縮放係數",
+            "upscale_cycles": "縮放循環",
+            "starting_denoise": "初始降噪",
+            "cycle_denoise": "Cycle降噪",
+            "scale_denoise": "縮放降噪",
+            "scale_sampling": "縮放採樣",
+                "bilinear": "雙線性插值",
+                "bicubic": "雙三次插值",
+                "nearest": "鄰近",
+                "lanczos": "lanczos插值",
+            "secondary_start_cycle": "第二開始循環",
+            "pos_add_mode": "正面增加模式",
+            "pos_add_strength": "正面增加強度",
+            "pos_add_strength_scaling": "正面增加強度縮放",
+            "pos_add_strength_cutoff": "正面增加強度截斷",
+            "neg_add_mode": "負面增加模式",
+            "neg_add_strength": "負面增加強度",
+            "neg_add_strength_scaling": "負面增加強度縮放",
+            "neg_add_strength_cutoff": "負面增加強度截斷",
+            "sharpen_strength": "銳化強度",
+            "sharpen_radius": "銳化範圍",
+            "steps_scaling": "步數縮放",
+            "steps_control": "步數控制",
+            "steps_scaling_value": "步數縮放值",
+            "steps_cutoff": "步數截斷",
+            "denoise_cutoff": "降噪截斷"
+        },
+        "outputs": {
+            "latent(s)": "Latent"
+        }
+    },
+
+
+
+    "BLIP Analyze Image": {
+        "title": "BLIP分析圖像",
+        "inputs": {
+            "image": "圖像",
+            "blip_model": "BLIP模型"
+        },
+        "widgets": {
+            "mode": "模式",
+                "caption": "說明",
+                "interrogate": "詢問",
+            "question": "問題"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "String to Text": {
+        "title": "字符串到文本",
+        "widgets": {
+            "string": "字符串"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Text to Conditioning": {
+        "title": "文本到條件",
+        "inputs": {
+            "clip": "CLIP",
+            "text": "文本"
+        },
+        "outputs":{
+            "CONDITIONING": "條件"
+        }
+    },
+    "Text to Number": {
+        "title": "文本到數字",
+        "inputs": {
+            "text": "文本"
+        },
+        "outputs": {
+            "NUMBER": "數字"
+        }
+    },
+    "Text to String": {
+        "title": "文本到字符串",
+        "inputs": {
+            "text": "文本"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Text Shuffle": {
+        "title": "文本重組",
+        "widgets": {
+            "text": "文本",
+            "separator": "分隔符",
+            "seed": "隨機種子",
+            "control_after_generate": "執行後操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Text String Truncate": {
+        "title": "文本截取",
+        "inputs": {
+            "text": "文本",
+            "text_b": "文本_b",
+            "text_c": "文本_c",
+            "text_d": "文本_d"
+        },
+        "widgets": {
+            "truncate_by": "截取目標",
+                "character": "字母",
+                "word": "單詞",
+            "truncate_from": "截取自",
+            "truncate_to": "截取到"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+
+
+
+    "Text Add Tokens": {
+        "title": "文本增加Token",
+        "widgets": {
+            "tokens": "Token",
+            "print_current_tokens": "輸出當前Token",
+                "false": "否",
+                "true": "是"
+        }
+    },
+    "Text Add Token by Input": {
+        "title": "文本輸入增加Token",
+        "inputs": {
+            "token_name": "Token名稱",
+            "token_value": "Token值"
+        },
+        "widgets": {
+            "print_current_tokens": "輸出當前Token",
+                "false": "否",
+                "true": "是"
+        }
+    },
+    "Text Parse Tokens": {
+        "title": "文本分析Token",
+        "inputs": {
+            "text": "文本"
+        }
+    },
+
+
+
+    "Text Compare": {
+        "title": "文本比較",
+        "inputs": {
+            "text_a": "文本_a",
+            "text_b": "文本_b"
+        },
+        "widgets": {
+            "mode": "模式",
+                "similarity": "相似度",
+                "difference": "差值",
+            "tolerance": "偏差"
+        },
+        "outputs": {
+            "TEXT_A_PASS": "文本_A",
+            "TEXT_B_PASS": "文本_B",
+            "BOOL_NUMBER": "boolean布林值",
+            "SCORE_NUMBER": "分數",
+            "COMPARISON_TEXT": "比較文本"
+        }
+    },
+    "Text Find and Replace by Dictionary": {
+        "title": "文本字典替換",
+        "inputs": {
+            "dictionary": "字典"
+        },
+        "widgets": {
+            "text": "文本",
+            "replacement_key": "替換",
+            "seed": "隨機種子",
+            "control_after_generate": "執行後操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Text Find and Replace Input": {
+        "title": "文本搜索替換",
+        "inputs": {
+            "text": "文本",
+            "find": "目標",
+            "replace": "替換",
+            "dictionary": "字典"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "result_text": "文本",
+            "replacement_count_number": "替換數量(數字)",
+            "replacement_count_float": "替換數量(浮點數)",
+            "replacement_count_int": "替換數量(整數)"
+        }
+    },
+    "Text Find and Replace": {
+        "title": "文本替換",
+        "inputs": {
+            "dictionary": "字典",
+            "text": "文本"
+        },
+        "widgets": {
+            "find": "目標",
+            "replace": "替換"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+
+
+
+    "Text Parse A1111 Embeddings": {
+        "title": "分析A1111嵌入文本",
+        "inputs": {
+            "text": "文本"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Text Parse Noodle Soup Prompts": {
+        "title": "分析NoodleSoup提示詞",
+        "inputs": {
+            "text": "文本"
+        },
+        "widgets": {
+            "mode": "模式",
+                "Noodle Soup Prompts": "NoodleSoup提示詞",
+                "Wildcards": "通配符",
+            "noodle_key": "NoodleSoup提示詞",
+            "seed": "隨機種子",
+            "control_after_generate": "執行後操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+
+
+
+    "Prompt Styles Selector": {
+        "title": "提示詞風格選擇",
+        "widgets": {
+            "style": "風格",
+                "Nond": "無"
+        },
+        "outputs": {
+            "positive_string": "正面字符串",
+            "negative_string": "負面字符串"
+        }
+    },
+    "Prompt Multiple Styles Selector": {
+        "title": "提示詞多風格選擇",
+        "widgets": {
+            "style1": "風格1",
+            "style2": "風格2",
+            "style3": "風格3",
+            "style4": "風格4"
+        },
+        "outputs": {
+            "positive_string": "正面字符串",
+            "negative_string": "負面字符串"
+        }
+    },
+    "Text Dictionary Update": {
+        "title": "更新字典",
+        "inputs": {
+            "dictionary_a": "字典_a",
+            "dictionary_b": "字典_b",
+            "dictionary_c": "字典_c",
+            "dictionary_d": "字典_d"
+        },
+        "outputs": {
+            "DICT": "字典"
+        }
+    },
+    "Text Concatenate": {
+        "title": "文本連鎖",
+        "inputs": {
+            "text_a": "文本_a",
+            "text_b": "文本_b",
+            "text_c": "文本_c",
+            "text_d": "文本_d"
+        },
+        "widgets": {
+            "linebreak_addition": "換行",
+                "false": "否",
+                "true": "是"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Text List": {
+        "title": "文本列表",
+        "inputs": {
+            "text_a": "文本_a",
+            "text_b": "文本_b",
+            "text_c": "文本_c",
+            "text_d": "文本_d",
+            "text_e": "文本_e",
+            "text_f": "文本_f",
+            "text_g": "文本_g"
+        },
+        "outputs": {
+            "LIST": "列表"
+        }
+    },
+    "Text List Concatenate": {
+        "title": "文本列表連鎖",
+        "inputs": {
+            "list_a": "文本_a",
+            "list_b": "文本_b",
+            "list_c": "文本_c",
+            "list_d": "文本_d"
+        },
+        "outputs": {
+            "LIST": "列表"
+        }
+    },
+    "Text Load Line From File": {
+        "title": "文本按行載入",
+        "inputs": {
+            "multiline_text": "多行文本"
+        },
+        "widgets": {
+            "file_path": "文件路徑",
+            "dictionary_name": "字典名",
+            "label": "標籤",
+            "mode": "模式",
+                "automatic": "自動",
+                "index": "編號"
+        },
+        "outputs": {
+            "line_text": "文本行",
+            "dictionary": "字典"
+        }
+    },
+    "Text Multiline": {
+        "title": "多行文本",
+        "widgets": {
+            "text": "文本",
+            "seed": "隨機種子",
+            "control_after_generate": "執行後操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Text Random Line": {
+        "title": "文本隨機行",
+        "inputs": {
+            "text": "文本"
+        },
+        "widgets": {
+            "search_seed": "隨機種子",
+            "control_after_generate": "執行後操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Text String": {
+        "title": "文本字符串",
+        "widgets": {
+            "text": "文本",
+            "text_a": "文本_a",
+            "text_b": "文本_b",
+            "text_c": "文本_c",
+            "text_d": "文本_d"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Text Random Prompt": {
+        "title": "隨機提示詞",
+        "widgets": {
+            "search_seed": "隨機種子"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    }
+}

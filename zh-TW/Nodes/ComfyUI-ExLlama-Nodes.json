@@ -1,0 +1,75 @@
+{
+    "ZuellniExLlamaLoader": {
+        "title": "ExLLaMA載入器",
+        "widgets": {
+            "model_dir": "模型路徑",
+            "max_seq_len": "最大序列長度"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "ZuellniExLlamaLoraLoader": {
+        "title": "ExLLaMALoRA載入器",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "lora_dir": "LoRA路徑"
+        },
+        "outputs": {
+            "LORA": "LoRA"
+        }
+    },
+    "ZuellniExLlamaLora": {
+        "title": "ExLLaMALoRA載入器",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "lora_dir": "LoRA路徑"
+        },
+        "outputs": {
+            "LORA": "LoRA"
+        }
+    },
+    "ZuellniExLlamaGenerator": {
+        "title": "ExLLaMA生成器",
+        "inputs": {
+            "model": "模型",
+            "lora": "LoRA"
+        },
+        "widgets": {
+            "lora_dir": "LoRA路徑",
+            "stop_on_newline": "換行停止",
+            "temperature": "溫度",
+            "max_tokens": "最大Token數量",
+            "top_k": "top_k",
+            "top_l": "top_l",
+            "typical": "typical",
+            "penalty": "重複懲罰",
+            "seed": "隨機種子",
+            "control_after_generate": "執行後操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機",
+            "prompt": "提示詞",
+            "Prompt": "提示詞",
+            "PROMPT": "提示詞"
+        },
+        "outputs": {
+            "TEXT": "文本"
+        }
+    },
+    "ZuellniExLlamaPreviewer": {
+        "title": "ExLLaMA預覽文本",
+        "inputs": {
+            "text": "文本"
+        },
+        "widgets": {
+            "text": "文本",
+            "TEXT": "文本"
+        }
+    }
+}

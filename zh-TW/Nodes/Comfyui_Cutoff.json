@@ -1,0 +1,62 @@
+{
+    "BNK_CutoffBasePrompt": {
+        "title": "Cutoff提詞Prompt",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "CLIPREGION": "CLIP範圍"
+        }
+    },
+    "BNK_CutoffSetRegions": {
+        "title": "Cutoff設定範圍",
+        "inputs": {
+            "clip_regions": "CLIP範圍"
+        },
+        "widgets": {
+            "region_text": "範圍文本",
+            "target_text": "目標文本",
+            "weight": "權重"
+        },
+        "outputs": {
+            "CLIPREGION": "CLIP範圍"
+        }
+    },
+    "BNK_CutoffRegionsToConditioning": {
+        "title": "Cutoff範圍到條件",
+        "inputs": {
+            "clip_regions": "CLIP範圍"
+        },
+        "widgets": {
+            "mask_token": "token遮罩",
+            "strict_mask": "嚴格範圍",
+            "start_from_masked": "從區域開始"
+        },
+        "outputs": {
+            "CONDITIONING": "條件"
+        }
+    },
+    "BNK_CutoffRegionsToConditioning_ADV": {
+        "title": "Cutoff範圍到條件(進階)",
+        "inputs": {
+            "clip_regions": "CLIP範圍"
+        },
+        "widgets": {
+            "mask_token": "token遮罩",
+            "strict_mask": "嚴格範圍",
+            "start_from_masked": "從區域開始",
+            "token_normalization": "Token正規化",
+                "none": "無",
+                "length": "長度",
+                "mean": "平均",
+                "length+mean": "混合",
+            "weight_interpretation": "權重插值方式"
+        },
+        "outputs": {
+            "CONDITIONING": "條件"
+        }
+    }
+}

@@ -1,0 +1,373 @@
+{
+    "HEDPreprocessor": {
+        "title": "HED軟邊預處理",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "version": "版本",
+            "safe": "增穩",
+                "disable": "關閉",
+                "enable": "開啟",
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "ScribblePreprocessor": {
+        "title": "Scribble塗鴉預處理",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "FakeScribblePreprocessor": {
+        "title": "FakeScribble偽塗鴉預處理",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "safe": "增穩",
+                "enable": "開啟",
+                "disable": "關閉",
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "BinaryPreprocessor": {
+        "title": "Binary二值化預處理",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "threshold": "閾值",
+            "bin_threshold": "閾值",
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "PiDiNetPreprocessor": {
+        "title": "PidiNet像素差異預處理",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "safe": "增穩",
+                "disable": "關閉",
+                "enable": "開啟",
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "LineArtPreprocessor": {
+        "title": "LineArt線稿預處理",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "coarse": "粗糙化",
+                "disable": "關閉",
+                "enable": "開啟",
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "AnimeLineArtPreprocessor": {
+        "title": "AnimeLineArt動漫線稿預處理器",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Manga2Anime-LineArtPreprocessor": {
+        "title": "Manga2Anime-LineArt漫畫線稿預處理",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "CannyEdgePreprocessor": {
+        "title": "Canny線條預處理器",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "low_threshold": "低閾值",
+            "high_threshold": "高閾值",
+            "l2gradient": "L2梯度",
+                "disable": "關閉",
+                "enable": "開啟",
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "M-LSDPreprocessor": {
+        "title": "M-LSD線段預處理器",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "score_threshold": "刻痕閾值",
+            "dist_threshold": "距離閾值",
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+
+
+
+
+    "MiDaS-DepthMapPreprocessor": {
+        "title": "MiDaS深度預處理",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "a": "角度",
+            "bg_threshold": "背景閾值",
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "MiDaS-NormalMapPreprocessor": {
+        "title": "MiDaSNormal法線預處理",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "a": "角度",
+            "bg_threshold": "背景閾值",
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "LeReS-DepthMapPreprocessor": {
+        "title": "LeReS深度預處理",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "rm_nearest": "前景移除",
+            "rm_background": "背景移除",
+            "boost": "強化",
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "BAE-NormalMapPreprocessor": {
+        "title": "BAE法向預處理器",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "Zoe-DepthMapPreprocessor": {
+        "title": "Zoe深度預處理器",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+
+
+
+
+    "OpenposePreprocessor": {
+        "title": "Openpose姿態預處理器",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "detect_hand": "檢測手部",
+            "detect_body": "檢測身體",
+            "detect_face": "檢測面部",
+                "enable": "開啟",
+                "disable": "關閉",
+            "version": "版本",
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "MediaPipe-HandPosePreprocessor": {
+        "title": "MediaPipe姿態預處理器",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "detect_pose": "檢測姿態",
+            "detect_hands": "檢測手部",
+                "enable": "開啟",
+                "disable": "關閉",
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+
+
+
+
+    "SemSegPreprocessor": {
+        "title": "Sem語義分割預處理器",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "UniFormer-SemSegPreprocessor": {
+        "title": "UniFormer語義分割預處理器",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "OneFormer-COCO-SemSegPreprocessor": {
+        "title": "OF-COCO語義分割預處理器",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "OneFormer-ADE20K-SemSegPreprocessor": {
+        "title": "OF-ADE20K語義分割預處理器",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+
+
+
+
+    "MediaPipe-FaceMeshPreprocessor": {
+        "title": "MediaPipe面部網格預處理器",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "max_faces": "最大面部數量",
+            "min_confidence": "最小置信度",
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "ColorPreprocessor": {
+        "title": "Color顏色預處理器",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "TilePreprocessor": {
+        "title": "Tile分塊預處理器",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "pyrUp_iters": "叠代次數",
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "InpaintPreprocessor": {
+        "title": "Inpaint內補預處理器",
+        "inputs": {
+            "image": "圖像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    },
+    "ShufflePreprocessor": {
+        "title": "Shuffle內容重組預處理器",
+        "inputs": {
+            "image": "圖像"
+        },
+        "widgets": {
+            "resolution": "解析度"
+        },
+        "outputs": {
+            "IMAGE": "圖像"
+        }
+    }
+}

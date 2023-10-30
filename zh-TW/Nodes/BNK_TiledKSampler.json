@@ -1,0 +1,68 @@
+{
+    "BNK_TiledKSampler": {
+        "title": "Tiled K採樣器",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示詞",
+            "negative": "負面提示詞",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "seed": "種子",
+            "control_after_generate": "執行後",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機",
+            "tile_width": "分塊寬度",
+            "tile_height": "分塊高度",
+            "tiling_strategy": "分塊策略",
+                "random": "隨機",
+                "padded": "分區",
+                "simple": "簡易",
+            "steps": "步數",
+            "cfg": "CFG",
+            "sampler_name": "採樣器",
+            "scheduler": "調度器",
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "BNK_TiledKSamplerAdvanced": {
+        "title": "Tiled K採樣器(進階)",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面提示詞",
+            "negative": "負面提示詞",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "add_noise": "增加噪聲",
+            "noise_seed": "隨機種",
+            "control_after_generate": "執行後",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "減少",
+                "randomize": "隨機",
+            "tile_width": "分塊寬度",
+            "tile_height": "分塊高度",
+            "tiling_strategy": "分塊策略",
+                "random": "隨機",
+                "padded": "分區",
+                "simple": "簡易",
+            "steps": "步數",
+            "cfg": "CFG",
+            "sampler_name": "採樣器",
+            "scheduler": "調度器",
+            "start_at_step": "開始步數",
+            "end_at_step": "結束步數",
+            "return_with_leftover_noise": "返回噪聲",
+            "preview": "預覽圖象"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    }
+}

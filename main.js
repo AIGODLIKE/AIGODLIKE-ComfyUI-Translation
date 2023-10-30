@@ -23,7 +23,7 @@ export class TUtils {
 
 	static syncTranslation(OnFinished = () => { }) {
 		var locale = localStorage.getItem(TUtils.LOCALE_ID) || "en-US";
-		var url = "/agl/get_translation";
+		var url = "./agl/get_translation";
 		var request = new XMLHttpRequest();
 		request.open("post", url);
 		request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -123,7 +123,7 @@ export class TUtils {
 		let onInputAdded = node.onInputAdded;
 		node.onInputAdded = function (slot) {
 			if (onInputAdded)
-				res = onInputAdded.apply(this, arguments);
+				var res = onInputAdded.apply(this, arguments);
 			console.log(slot);
 			let t = TUtils.T.Nodes[this.comfyClass];
 			if (t["widgets"] && slot.name in t["widgets"]) {

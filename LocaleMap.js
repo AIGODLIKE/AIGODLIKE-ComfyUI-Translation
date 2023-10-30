@@ -3,6 +3,10 @@ export const LOCALES = {
     "nativeName": "中文",
     "englishName": "Chinese Simplified"
   },
+  "zh-TW": {
+    "nativeName": "繁體中文",
+    "englishName": "Traditional Chinese"
+  },
   "en-US": {
     "nativeName": "English (US)",
     "englishName": "English (US)"
