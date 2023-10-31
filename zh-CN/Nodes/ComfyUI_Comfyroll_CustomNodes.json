@@ -1326,5 +1326,56 @@
             "image": "图像",
             "show_help": "显示帮助"
         }
+    },
+    "CR VAE Input Switch": {
+        "title": "VAE切换(CR)",
+        "inputs": {
+            "VAE1": "VAE1",
+            "VAE2": "VAE2"
+        },
+        "widgets": {
+            "Input": "输入"
+        },
+        "outputs": {
+            "VAE": "VAE"
+        }
+    },
+    "CR Radial Gradient": {
+        "title": "径向渐变(CR)",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "start_color": "起始色",
+            "end_color": "终点色",
+            "gradient distance": "渐变距离",
+            "radial_center_x": "中心X",
+            "radial_center_y": "中心Y",
+            "start_color_hex": "起始色HEX",
+            "end_color_hex": "终点色HEX"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "CR Image Panel": {
+        "title": "图像面板(CR)",
+        "inputs": {
+            "image_1": "图像_1",
+            "image_2": "图像_2",
+            "image_3": "图像_3",
+            "image_4": "图像_4"
+        },
+        "widgets": {
+            "border_thickness": "边框厚度",
+            "border_color": "边框颜色",
+            "outline_thickness": "轮廓线厚度",
+            "outline_color": "轮廓线颜色",
+            "layout_direction": "布局方向",
+            "border_color_hex": "边框颜色HEX"
+        },
+        "outputs": {
+            "image": "图像",
+            "show_help": "显示帮助"
+        }
     }
 }
