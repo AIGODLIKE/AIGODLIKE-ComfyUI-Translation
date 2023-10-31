@@ -314,5 +314,86 @@
         "outputs": {
             "CONDITIONING": "条件"
         }
+    },
+    "BatchStringSchedule": {
+        "title": "字符串调度(批次)",
+        "widgets": {
+            "text": "文本",
+            "max_frames": "最大帧数",
+            "pre_text": "预置文本",
+            "app_text": "附加文本",
+            "pw_a": "提示词权重A(pw_a)",
+            "pw_b": "提示词权重B(pw_b)",
+            "pw_c": "提示词权重C(pw_c)",
+            "pw_d": "提示词权重D(pw_d)"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "BatchValueScheduleLatentInput": {
+        "title": "Latent值调度(批次)",
+        "inputs": {
+            "num_latents": "Latent"
+        },
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "INT": "整数",
+            "LATENT": "Latent"
+        }
+    },
+    "BatchPromptScheduleSDXLLatentInput": {
+        "title": "提示词调度(批次SDXL)",
+        "inputs": {
+            "clip": "CLIP",
+            "num_latents": "Latent"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "crop_w": "裁剪宽度",
+            "crop_h": "裁剪高度",
+            "target_width": "目标宽度",
+            "target_height": "目标高度",
+            "text_g": "G文本",
+            "text_l": "L文本",
+            "max_frames": "最大帧数",
+            "pre_text_G": "预置G文本",
+            "app_text_G": "附加G文本",
+            "pre_text_L": "预置L文本",
+            "app_text_L": "附加L文本",
+            "pw_a": "提示词权重A(pw_a)",
+            "pw_b": "提示词权重B(pw_b)",
+            "pw_c": "提示词权重C(pw_c)",
+            "pw_d": "提示词权重D(pw_d)"
+        },
+        "outputs": {
+            "CONDITIONING": "条件",
+            "LATENT": "Latent"
+        }
+    },
+    "BatchPromptScheduleLatentInput": {
+        "title": "Latent提示词调度(批次)",
+        "inputs": {
+            "clip": "CLIP",
+            "num_latents": "Latent"
+        },
+        "widgets": {
+            "text": "文本",
+            "max_frames": "最大帧数",
+            "pre_text": "预置文本",
+            "app_text": "附加文本",
+            "pw_a": "提示词权重A(pw_a)",
+            "pw_b": "提示词权重B(pw_b)",
+            "pw_c": "提示词权重C(pw_c)",
+            "pw_d": "提示词权重D(pw_d)"
+        },
+        "outputs": {
+            "CONDITIONING": "条件",
+            "LATENT": "Latent"
+        }
     }
 }

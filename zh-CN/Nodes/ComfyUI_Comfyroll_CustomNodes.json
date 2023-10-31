@@ -1271,5 +1271,111 @@
         "outputs": {
             "INT": "整数"
         }
+    },
+
+
+
+    "CR Overlay Text": {
+        "title": "文字覆盖(CR)",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "text": "文本",
+            "font_name": "字体",
+            "font_size": "字体大小",
+            "font_color": "字体颜色",
+            "align": "对齐到",
+                "top": "顶",
+                "center": "中心",
+                "bottom": "底",
+            "justify": "两端对齐",
+                "left": "左",
+                "right": "右",
+            "margins": "页边距",
+            "line_spacing": "行间距",
+            "position_x": "位置X",
+            "position_y": "位置Y",
+            "rotation_angle": "旋转角度",
+            "rotation_options": "旋转设置",
+                "text center": "文本中心",
+                "image center": "图像中心",
+            "font_color_hex": "字体颜色HEX"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "CR Simple Meme Template": {
+        "title": "简易meme模板(CR)",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "preset": "预设",
+            "text_top": "文本上",
+            "text_bottom": "文本下",
+            "font_name": "字体",
+            "max_font_size": "最大字体大小",
+            "font_color": "字体颜色",
+            "font_outline": "字体轮廓线",
+            "bar_color": "条颜色",
+            "bar_options": "条设置"
+        },
+        "outputs": {
+            "image": "图像",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR VAE Input Switch": {
+        "title": "VAE切换(CR)",
+        "inputs": {
+            "VAE1": "VAE1",
+            "VAE2": "VAE2"
+        },
+        "widgets": {
+            "Input": "输入"
+        },
+        "outputs": {
+            "VAE": "VAE"
+        }
+    },
+    "CR Radial Gradient": {
+        "title": "径向渐变(CR)",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "start_color": "起始色",
+            "end_color": "终点色",
+            "gradient distance": "渐变距离",
+            "radial_center_x": "中心X",
+            "radial_center_y": "中心Y",
+            "start_color_hex": "起始色HEX",
+            "end_color_hex": "终点色HEX"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "CR Image Panel": {
+        "title": "图像面板(CR)",
+        "inputs": {
+            "image_1": "图像_1",
+            "image_2": "图像_2",
+            "image_3": "图像_3",
+            "image_4": "图像_4"
+        },
+        "widgets": {
+            "border_thickness": "边框厚度",
+            "border_color": "边框颜色",
+            "outline_thickness": "轮廓线厚度",
+            "outline_color": "轮廓线颜色",
+            "layout_direction": "布局方向",
+            "border_color_hex": "边框颜色HEX"
+        },
+        "outputs": {
+            "image": "图像",
+            "show_help": "显示帮助"
+        }
     }
 }
