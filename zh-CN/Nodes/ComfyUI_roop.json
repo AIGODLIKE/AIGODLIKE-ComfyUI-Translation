@@ -8,7 +8,7 @@
         "widgets": {
             "swap_model": "替换模型",
             "faces_index": "面部编号",
-            "console_logging_level:": "控制台日志等级"
+            "console_logging_level": "控制台日志等级"
         },
         "outputs": {
             "IMAGE": "图像"
