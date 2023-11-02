@@ -446,6 +446,16 @@
             "string_4": "字符串_4"
         }
     },
+    "CR Value": {
+        "title": "值(CR)",
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": { 
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
     "CR Text List To String": {
         "title": "文本列表到字符串(CR)",
         "widgets": {

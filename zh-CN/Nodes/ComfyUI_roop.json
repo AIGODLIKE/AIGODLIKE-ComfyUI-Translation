@@ -1,0 +1,17 @@
+{
+    "roop": {
+        "title": "ROOP",
+        "inputs": {
+            "image": "图像",
+            "reference_image": "参考图像"
+        },
+        "widgets": {
+            "swap_model": "替换模型",
+            "faces_index": "面部编号",
+            "console_logging_level": "控制台日志等级"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    }
+}

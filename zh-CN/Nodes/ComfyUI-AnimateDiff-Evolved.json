@@ -1,4 +1,23 @@
 {
+    
+    "ADE_AnimateDiffModelSettingsSimple": {
+        "title": "动态扩散模型设置(简易)",
+        "outputs": {
+            "MOTION_MODEL_SETTINGS": "动态模型设置"
+        }
+    },
+    "ADE_AnimateDiffModelSettings": {
+        "title": "动态扩散模型设置",
+        "outputs": {
+            "MOTION_MODEL_SETTINGS": "动态模型设置"
+        }
+    },
+    "ADE_AnimateDiffModelSettingsAdvancedAttnStrengths": {
+        "title": "动态扩散模型设置(高级)",
+        "outputs": {
+            "MOTION_MODEL_SETTINGS": "动态模型设置"
+        }
+    },
     "ADE_AnimateDiffUniformContextOptions": {
         "title": "动态扩散上下文选项",
         "widgets": {
@@ -26,12 +45,6 @@
         },
         "outputs": {
             "MODEL": "模型"
-        }
-    },
-    "ADE_AnimateDiffModelSettings": {
-        "title": "动态扩散模型设置",
-        "outputs": {
-            "MOTION_MODEL_SETTINGS": "动态模型设置"
         }
     },
     "ADE_AnimateDiffLoRALoader": {
