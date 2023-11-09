@@ -395,5 +395,71 @@
             "CONDITIONING": "条件",
             "LATENT": "Latent"
         }
+    },
+
+
+
+    "StringConcatenate": {
+        "title": "字符串连锁",
+        "widgets": {
+            "text": "文本_A",
+            "text_b": "文本_B",
+            "text_c": "文本_C",
+            "text_d": "文本_D",
+            "text_e": "文本_E",
+            "text_f": "文本_F",
+            "text_g": "文本_G",
+            "frame_b": "帧_B",
+            "frame_c": "帧_C",
+            "frame_d": "帧_D",
+            "frame_e": "帧_E",
+            "frame_f": "帧_F",
+            "frame_g": "帧_G"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Init FizzFrame": {
+        "title": "初始化Fizz帧",
+        "inputs": {
+            "previous_frame": "上一帧",
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "frame": "帧",
+            "positive_text": "正面文本",
+            "negative_text": "负面文本",
+            "general_positive": "通用正面",
+            "general_negative": "通用负面"
+        },
+        "outputs": {
+            "FIZZFRAME": "Fizz帧",
+            "CONDITIONING": "条件"
+        }
+    },
+    "FizzFrame": {
+        "title": "Fizz帧",
+        "inputs": {
+            "previous_frame": "上一帧"
+        },
+        "widgets": {
+            "frame": "帧",
+            "positive_text": "正面文本",
+            "negative_text": "负面文本"
+        },
+        "outputs": {
+            "FIZZFRAME": "Fizz帧",
+            "CONDITIONING": "条件"
+        }
+    },
+    "FizzFrameConcatenate": {
+        "title": "Fizz帧连锁",
+        "inputs": {
+            "frame": "帧"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
     }
 }
