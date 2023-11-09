@@ -58,11 +58,20 @@
         "title": "IP适配编码",
         "inputs": {
             "clip_vision": "CLIP视觉",
-            "image": "图像"
+            "image": "图像",
+            "image_1": "图像_1",
+            "image_2": "图像_2",
+            "image_3": "图像_3",
+            "image_4": "图像_4"
         },
         "widgets": {
             "plus": "plus",
-            "noise": "噪波增强"
+            "ipadapter_plus": "使用plus",
+            "noise": "噪波增强",
+            "weight_1": "权重_1",
+            "weight_2": "权重_2",
+            "weight_3": "权重_3",
+            "weight_4": "权重_4"
         },
         "outputs": {
             "EMBEDS": "嵌入组"

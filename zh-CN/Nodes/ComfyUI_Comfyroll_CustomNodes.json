@@ -1387,5 +1387,89 @@
             "image": "图像",
             "show_help": "显示帮助"
         }
+    },
+    "CR Arabic Text RTL": {
+        "title": "阿拉伯文本RTL(CR)",
+        "widgets": {
+            "arabic_text": "文本"
+        },
+        "outputs": {
+            "arabic_text_rtl": "文本",
+            "show help": "显示帮助"
+        }
+    },
+    "CR Halftone Filter": {
+        "title": "半调滤镜(CR)",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "dot_size": "网点大小",
+            "dot_style": "网点类型",
+            "scale": "缩放",
+            "angle_c": "C角度",
+            "angle_m": "M角度",
+            "angle_y": "Y角度",
+            "angle_k": "K角度",
+            "greyscale": "灰度",
+            "antialias": "抗锯齿",
+            "antialias_scale": "抗锯齿缩放",
+            "border_blending": "边框融合"
+        },
+        "outputs": {
+            "image": "图像",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Page Layout": {
+        "title": "页面布局(CR)",
+        "inputs": {
+            "image_panel": "图像面版"
+        },
+        "widgets": {
+            "layout_options": "布局选项",
+                "header": "页头",
+                "footer": "页尾",
+                "header and footer": "页头页尾",
+                "no header or footer": "无",
+            "header_height": "页头高度",
+            "header_text": "页头文本",
+            "header_align": "页头对齐",
+            "footer_height": "页尾高度",
+            "footer_text": "页尾文本",
+            "footer_align": "页尾对齐",
+            "font_name": "字体",
+            "font_color": "字体颜色",
+            "header_font_size": "页头字体大小",
+            "footer_font_size": "页尾字体大小",
+            "border_thickness": "边框厚度",
+            "border_color": "边框颜色",
+            "background_color": "背景色",
+            "font_color_hex": "字体颜色HEX",
+            "border_color_hex": "边框颜色HEX",
+            "bg_color_hex": "背景色HEX"
+        },
+        "outputs": {
+            "image": "图像",
+            "show help": "显示帮助"
+        }
+    },
+    "CR Image Grid Panel": {
+        "title": "图像表格面板",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "border_thickness": "边框厚度",
+            "border_color": "边框颜色",
+            "outline_thickness": "轮廓线厚度",
+            "outline_color": "轮廓线颜色",
+            "max_columns": "最大列数",
+            "border_color_hex": "边框颜色HEX"
+        },
+        "outputs": {
+            "image": "图像",
+            "show_help": "显示帮助"
+        }
     }
 }

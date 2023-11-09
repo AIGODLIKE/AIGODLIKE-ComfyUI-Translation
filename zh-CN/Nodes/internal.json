@@ -1470,6 +1470,15 @@
             "filename_prefix": "文件名前缀"
         }
     },
+    "CLIPSave": {
+        "title": "保存CLIP",
+        "inputs": {
+            "CLIP": "CLIP"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀"
+        }
+    },
     "ModelMergeBlockNumber": {
         "title": "融合模型(分层数)",
         "inputs": {
@@ -1531,6 +1540,19 @@
         },
         "outputs": {
             "MODEL": "模型"
+        }
+    },
+
+    "ModelSamplingDiscrete": {
+        "title": "模型离散采样方法",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "sampling": "采样",
+                "eps": "等概率抽样",
+                "v-prediction": "V预测",
+                "zsnr": "规格化信噪比"
         }
     }
 }

@@ -333,6 +333,23 @@
             "negative": "负面提示词"
         }
     },
+    "PromptBuilder //Inspire": {
+        "title": "提示词搭建",
+        "widgets": {
+            "category": "类型",
+                "picture quality": "质量",
+                "Compositiong form": "构图",
+                "angle of view": "视角",
+                "shot": "镜头",
+                "style": "风格",
+                "picture effect": "效果",
+            "preset": "预设",
+            "text": "文本"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
 
 
 
@@ -559,6 +576,18 @@
             "INT": "整数"
         }
     },
+    "LoadImagesListFromDir //Inspire": {
+        "title": "加载图像列表(路径)",
+        "widgets": {
+            "directory": "路径",
+            "image_load_cap": "图像加载上限",
+            "start_index": "起始索引"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    },
 
 
     "RegionalPromptSimple //Inspire": {
@@ -625,6 +654,22 @@
         "outputs": {
             "CONDITIONING": "条件",
             "MASK": "遮罩"
+        }
+    },
+
+    
+
+    "FloatRange //Inspire": {
+        "title": "浮点范围",
+        "widgets": {
+            "start": "起始值",
+            "stop": "终止值",
+            "step": "步长",
+            "limit": "限制值",
+            "ensure_end": "确认终止"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
         }
     }
 }

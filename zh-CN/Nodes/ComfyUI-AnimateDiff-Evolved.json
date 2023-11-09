@@ -18,6 +18,22 @@
             "MOTION_MODEL_SETTINGS": "动态模型设置"
         }
     },
+    "ADE_AnimateDiffModelSettings_Release": {
+        "title": "动态扩散模型设置(发行)",
+        "inputs": {
+            "mask_motion_scale": "遮罩"
+        },
+        "widgets": {
+            "min_motion_scale": "最小动态缩放",
+            "max_motion_scale": "最大动态缩放"
+        },
+        "outputs": {
+            "MOTION_MODEL_SETTINGS": "动态模型设置"
+        }
+    },
+
+
+
     "ADE_AnimateDiffUniformContextOptions": {
         "title": "动态扩散上下文选项",
         "widgets": {
