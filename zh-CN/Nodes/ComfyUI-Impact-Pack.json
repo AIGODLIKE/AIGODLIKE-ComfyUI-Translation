@@ -1270,6 +1270,48 @@
     },
 
 
+
+    "MaskDetailerPipe": {
+        "title": "遮罩细化(节点束)",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "basic_pipe": "基础节点束",
+            "refiner_basic_pipe_opt": "优化基础节点束",
+            "detailer_hook": "细化约束"
+        },
+        "widgets": {
+            "guide_size": "引导大小",
+            "guide_size_for": "引导目标",
+            "max_size": "最大尺寸",
+            "mask_mode": "遮罩模式",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "feather": "羽化",
+            "crop_factor": "裁剪系数",
+            "drop_size": "最小尺寸",
+            "refiner_ratio": "优化比率",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "image": "图像",
+            "cropped_refined": "细化图像",
+            "cropped_enhanced_alpha": "细化部分",
+            "basic_pipe": "基础节点束",
+            "refiner_basic_pipe_opt": "优化基础节点束"
+        }
+    },
+
+
     
 
     "ToDetailerPipe": {
@@ -2217,6 +2259,39 @@
         "title": "虚拟输入",
         "outputs": {
             "*": "输出"
+        }
+    },
+
+
+
+    "ImpactHFTransformersClassifierProvider": {
+        "title": "HFTransformer分类器",
+        "widgets": {
+            "preset_repo_id": "预设仓库ID",
+            "manual_repo_id": "手动仓库ID",
+            "device_mode": "设备模式",
+                "AUTO": "自动",
+                "Prefer GPU": "优先GPU",
+                "CPU": "CPU"
+        },
+        "outputs": {
+            "TRANSFORMERS_CLASSIFIER": "TF分类器"
+        }
+    },
+    "ImpactSEGSClassify": {
+        "title": "Seg分类",
+        "inputs": {
+            "classifier": "分类器",
+            "segs": "Seg",
+            "ref_image_opt": "参考图像"
+        },
+        "widgets": {
+            "preset_expr": "预设表达式",
+            "manual_expr": "手动表达式"
+        },
+        "outputs": {
+            "filtered_SEGS": "屏蔽Seg",
+            "remained_SEGS": "剩余Seg"
         }
     },
 
