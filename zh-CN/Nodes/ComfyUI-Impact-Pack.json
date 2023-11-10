@@ -2246,6 +2246,12 @@
             "cond": "条件"
         }
     },
+    "ImpactIsNotEmptySEGS": {
+        "title": "是非空Seg",
+        "inputs": {
+            "cond": "条件"
+        }
+    },
 
 
 
