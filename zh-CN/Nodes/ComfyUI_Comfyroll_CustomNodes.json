@@ -1458,6 +1458,7 @@
         "title": "图像表格面板",
         "inputs": {
             "images": "图像"
+            "image": "图像"
         },
         "widgets": {
             "border_thickness": "边框厚度",
