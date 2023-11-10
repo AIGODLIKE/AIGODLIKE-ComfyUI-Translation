@@ -1457,7 +1457,7 @@
     "CR Image Grid Panel": {
         "title": "图像表格面板",
         "inputs": {
-            "images": "图像"
+            "images": "图像",
             "image": "图像"
         },
         "widgets": {
