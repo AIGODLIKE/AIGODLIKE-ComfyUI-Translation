@@ -218,6 +218,15 @@
             "SEGS_PREPROCESSOR": "Seg预处理"
         }
     },
+    "TilePreprocessor_Provider_for_SEGS //Inspire": {
+        "title": "Tile预处理(Seg)",
+        "widgets": {
+            "pyrUp_iter": "迭代次数"
+        },
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理"
+        }
+    },
 
 
 
@@ -348,6 +357,23 @@
         },
         "outputs": {
             "STRING": "字符串"
+        }
+    },
+    "SeedExplorer //Inspire": {
+        "title": "随机种管理器",
+        "inputs": {
+            "latent": "Latent"
+        },
+        "widgets": {
+            "seed_prompt": "随机种提示词",
+            "enable_additional": "启用拓展",
+            "additional_seed": "拓展随机种",
+            "additional_strength": "拓展强度",
+            "noise_mode": "噪波模式",
+            "initial_batch_seed_mode": "批次随机种模式"
+        },
+        "outputs": {
+            "noise": "噪波"
         }
     },
 
