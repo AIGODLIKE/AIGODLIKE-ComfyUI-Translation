@@ -948,6 +948,37 @@
             "cnet_images": "ControlNet图像"
         }
     },
+    "SEGSDetailerForAnimateDiff": {
+        "title": "Seg细化动态扩散",
+        "inputs": {
+            "image_frames": "图像",
+            "segs": "Seg",
+            "basic_pipe": "基础节点束",
+            "refiner_basic_pipe_opt": "优化基础节点束"
+        },
+        "widgets": {
+            "guide_size": "引导大小",
+            "guide_size_for": "引导目标",
+                "bbox": "BBox",
+                "crop_region": "裁剪区域",
+            "max_size": "最大尺寸",
+            "seed": "随机种",
+                "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "refiner_ratio": "优化比率"
+        },
+        "outputs": {
+            "segs": "Seg"
+        }
+    },
     "SEGSPaste": {
         "title": "Seg粘贴",
         "inputs": {
@@ -1073,6 +1104,28 @@
             "dilation": "膨胀",
             "crop_factor": "裁剪系数",
             "drop_size": "最小尺寸"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "ImpactSimpleDetectorSEGS_for_AD": {
+        "title": "简易Seg检测动态扩散",
+        "inputs": {
+            "bbox_detector": "BBox检测",
+            "image_frames": "图像",
+            "sam_model_opt": "SAM模型",
+            "segm_detector_opt": "Segm检测"
+        },
+        "widgets": {
+            "bbox_threshold": "BBox阈值",
+            "bbox_dilation": "BBox膨胀",
+            "crop_factor": "裁剪系数",
+            "drop_size": "最小尺寸",
+            "sub_threshold": "次要阈值",
+            "sub_dilation": "次要膨胀",
+            "sub_bbox_expansion": "次要BBox扩展",
+            "sam_mask_hint_threshold": "SAM遮罩检测阈值"
         },
         "outputs": {
             "SEGS": "Seg"
