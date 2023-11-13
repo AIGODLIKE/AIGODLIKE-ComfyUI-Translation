@@ -63,6 +63,20 @@
             "IMAGE": "图像"
         }
     },
+    "AnimeFace_SemSegPreprocessor": {
+        "title": "AnimeFace分割预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "remove_background_using_abg": "移除背景",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "ABG_CHARACTER_MASK (MASK)": "人物遮罩"
+        }
+    },
     "AIO_Preprocessor": {
         "title": "Aux集成预处理器",
         "inputs": {
