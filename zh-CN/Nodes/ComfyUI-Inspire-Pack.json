@@ -602,7 +602,7 @@
             "INT": "整数"
         }
     },
-    "LoadImagesListFromDir //Inspire": {
+    "LoadImageListFromDir //Inspire": {
         "title": "加载图像列表(路径)",
         "widgets": {
             "directory": "路径",
