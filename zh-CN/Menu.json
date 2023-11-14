@@ -1,6 +1,7 @@
 {
     "Add Node": "新建节点",
     "Add Group": "新建分组",
+    "Add Stack": "新建Stack堆叠",
     "Save Selected as Template": "存储选中为模板",
     "Edit Group": "编辑组",
     "Group": "组",
@@ -51,7 +52,11 @@
     "Clipspace": "剪贴空间",
     "Clear": "清除",
     "Load Default": "加载默认",
+    "Avatar Preview": "角色预览",
+    "Share Avatar": "共享角色形象",
     "Switch Locale": "切换语言",
+    "Save Full": "完整保存",
+    "Export As Component": "以组件形式导出",
     "Settings": "设置",
     "Require confirmation when clearing workflow": "清理工作流时是否需要确认",
     "Prompt for filename when saving workflow": "保存工作流时是否需要填入文件名",
@@ -64,7 +69,20 @@
     "Logging": "日志",
     "View Logs": "显示日志",
     "Number of nodes suggestions": "节点数建议",
+    "Connectors Width": "连接线宽度",
+    "Render Node shadows": "渲染节点阴影",
+    "Force Box Nodes": "强制矩形节点",
+    "Color Mode": "色彩模式",
+    "Positive / Negative": "正向/负向",
+    "Require confirmation for the component edit mode when loading a .component.json file.":"在加载 .component.json 文件时需要确认组件编辑模式",
     "Grid Size": "网格大小",
+    "plain": "普通",
+    "type": "种类",
+    "Force Snap to Grid": "强制对齐到网格",
+    "Allow group selection resize": "允许调整大小时选择组",
+    "Font size for textareas": "文本区域的字体大小",
+    "[mtb] Enable Debug (py and js)": "[mtb] 启用调试（py 和 js）",
+    "Show 'Share' button in the main menu": "在主菜单中显示'分享'按钮”或“显示主菜单中的'分享'按钮",
     "Ctrl+up/down precision": "Ctrl+up/down 精度",
     "Invert Menu Scrolling": "反转菜单滚动",
     "Color palette": "调色板",
@@ -163,7 +181,12 @@
     "Add Group For Selected Nodes": "建立组",
     "Fit Group To Nodes": "缩放组到节点",
     "Node Templates": "节点预设",
-
+    "Arrange (vertical)": "垂直排列",
+    "Arrange (horizontal)": "水平排列",
+    "Freeze all": "冻结所有",
+    "Unfreeze all": "取消冻结所有",
+    "Pin all Nodes": "固定所有节点",
+    "Unpin all Nodes": "取消固定所有节点",
 
     "Open in MaskEditor": "在遮罩编辑器中打开",
 
@@ -199,8 +222,8 @@
     "SAM Segmentor": "SAM分割",
     "SAMPreprocessor": "SAM预处理器",
 
-    
     "Manager": "管理器",
+    "Share": "分享",
 
     "ComfyUI Manager Menu": "ComfyUI管理器",
     " Use local DB": "使用本地数据",
@@ -254,6 +277,15 @@
     "Filter: update": "过滤：更新",
     "Filter: installed": "过滤：已安装",
     "Filter: not-installed": "过滤：未安装",
+
+    "EXPERIMENTAL": "实验中的",
+    "Snapshot Manager": "快照管理器",
+    "Install via Git URL": "通过 Git URL 安装",
+    "Save snapshot": "保存快照",
+    "Datetime": "时间",
+    "The custom node DB is currently being updated, and updates to custom nodes are being checked for.":"自定义节点数据库正在更新，同时正在检查自定义节点的更新。",
+    "NOTE: Update only checks for extensions that have been fetched.": "注意：更新仅检查已获取的扩展。",
+    "ComfyUI and all extensions have been updated to the latest version.": "ComfyUI 和所有扩展已更新到最新版本。",
 
     "none": "无(最快)",
     "auto": "自动",
@@ -532,7 +564,7 @@
 
 
     "Dagtho": "Dagtho",
-    
+
     "base": "基础",
     "sai-3d-model": "SAI-3D模型",
     "sai-analog film": "SAI-模拟电影",
@@ -641,7 +673,7 @@
     "photo-silhouette": "照片-剪影",
     "photo-tilt-shift": "照片-移轴",
 
-    
+
     "random": "随机",
     "disabled": "关闭",
     "photography": "照片",
@@ -1139,6 +1171,7 @@
         "Manage Custom Words": "自定义语句",
     "🐍 Middle click slot to add": "中键添加",
         "ReroutePrimitive|pysssss": "Primitive连接点",
+        "Reroute (rgthree)": "重新定向（rgthree）",
         "[none]": "无",
     "🐍 Preset Text Replacement Regex": "预设文本正则替换",
     "The regex should return two named capture groups: id (the name of the preset text to use), replace (the matched text to replace)": "应返回两个已命名的捕获组：id（要使用的预设文本名称）、replace（要替换的匹配文本）",
@@ -1351,7 +1384,7 @@
     "STD": "标准差值",
 
     "aux": "aux",
-    
+
     "Just Resize": "仅拉伸",
     "Crop and Resize": "裁剪并拉伸",
     "Resize and Fill": "拉伸并填充",
@@ -1391,7 +1424,7 @@
     "bottomright": "右下",
 
     "advcnet": "advcnet",
-    
+
     "ease-in-out": "渐进渐出",
     "ease-in": "渐进",
     "ease-out": "渐出",
