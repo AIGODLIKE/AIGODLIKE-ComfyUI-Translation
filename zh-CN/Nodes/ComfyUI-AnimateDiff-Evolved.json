@@ -2,18 +2,32 @@
     
     "ADE_AnimateDiffModelSettingsSimple": {
         "title": "动态扩散模型设置(简易)",
+        "inputs": {
+            "mask_motion_scale": "动态缩放遮罩"
+        },
+        "widgets": {
+            "motion_pe_stretch": "动态位置拉伸",
+            "min_motion_scale": "最小动态缩放",
+            "max_motion_scale": "最大动态缩放"
+        },
         "outputs": {
             "MOTION_MODEL_SETTINGS": "动态模型设置"
         }
     },
     "ADE_AnimateDiffModelSettings": {
         "title": "动态扩散模型设置",
+        "inputs": {
+            "mask_motion_scale": "动态缩放遮罩"
+        },
         "outputs": {
             "MOTION_MODEL_SETTINGS": "动态模型设置"
         }
     },
     "ADE_AnimateDiffModelSettingsAdvancedAttnStrengths": {
         "title": "动态扩散模型设置(高级)",
+        "inputs": {
+            "mask_motion_scale": "动态缩放遮罩"
+        },
         "outputs": {
             "MOTION_MODEL_SETTINGS": "动态模型设置"
         }
@@ -21,7 +35,7 @@
     "ADE_AnimateDiffModelSettings_Release": {
         "title": "动态扩散模型设置(发行)",
         "inputs": {
-            "mask_motion_scale": "遮罩"
+            "mask_motion_scale": "动态缩放遮罩"
         },
         "widgets": {
             "min_motion_scale": "最小动态缩放",
@@ -57,7 +71,9 @@
         },
         "widgets": {
             "model_name": "模型名称",
-            "beta_schedule": "调度器"
+            "beta_schedule": "调度器",
+            "motion_scale": "动态缩放",
+            "apply_v2_models_property": "应用v2模型属性"
         },
         "outputs": {
             "MODEL": "模型"
