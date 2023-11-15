@@ -556,6 +556,32 @@
             "cache_info": "缓存信息"
         }
     },
+    "CacheBackendDataList //Inspire": {
+        "title": "后端缓存数据列表",
+        "inputs": {
+            "data": "数据"
+        },
+        "widgets": {
+            "key": "键",
+            "tag": "数据标签"
+        },
+        "outputs": {
+            "data opt": "数据"
+        }
+    },
+    "CacheBackendDataNumberKeyList //Inspire": {
+        "title": "后端缓存数字键列表",
+        "inputs": {
+            "data": "数据"
+        },
+        "widgets": {
+            "key": "键",
+            "tag": "数据标签"
+        },
+        "outputs": {
+            "data opt": "数据"
+        }
+    },
 
 
 
@@ -739,7 +765,7 @@
             "MODEL": "模型"
         }
     },
-    "RregionalIPAdapterColorMask": {
+    "RregionalIPAdapterColorMask //Inspire": {
         "title": "区域IP适配(颜色遮罩)",
         "inputs": {
             "ipadapter_pipe": "IP适配束",
