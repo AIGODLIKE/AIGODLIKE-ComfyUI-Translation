@@ -18,7 +18,11 @@
         },
         "widgets": {
             "weight": "权重",
-            "noise": "噪波增强"
+            "noise": "噪波增强",
+            "weight_type": "权重类型",
+                "original": "初始",
+                "linear": "线性",
+                "channel penalty": "通道惩罚"
         },
         "outputs": {
             "MODEL": "模型"
