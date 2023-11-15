@@ -1525,5 +1525,32 @@
             "image": "图像",
             "show_help": "显示帮助"
         }
+    },
+    "CR Comic Panel Templates": {
+        "title": "漫画面板模板",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "page_width": "页宽",
+            "page_height": "页高",
+            "template": "模板",
+            "reading_direction": "阅读方向",
+                "left to right": "左到右",
+                "right to left": "右到左",
+            "border_thickness": "边框厚度",
+            "outline_thickness": "轮廓线厚度",
+            "outline_color": "轮廓线颜色",
+            "panel_color": "面板颜色",
+            "background_color": "背景色",
+            "custom_panel_layout": "自定面板布局",
+            "outline_color_hex": "轮廓线颜色HEX",
+            "panel_color_HEX": "面板颜色HEX",
+            "bg_color_hex": "背景色HEX"
+        },
+        "outputs": {
+            "image": "图像",
+            "show_help": "显示帮助"
+        }
     }
 }

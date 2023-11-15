@@ -461,5 +461,17 @@
         "outputs": {
             "STRING": "字符串"
         }
+    },
+
+    "CalculateLatentInterpFrameNumber": {
+        "title": "计算Latent帧插值",
+        "widgets": {
+            "current_frame": "当前帧",
+            "max_frames": "最大帧数",
+            "num_latent_inputs": "Latent数量"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
     }
 }

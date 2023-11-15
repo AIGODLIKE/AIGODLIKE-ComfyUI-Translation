@@ -77,6 +77,20 @@
             "ABG_CHARACTER_MASK (MASK)": "人物遮罩"
         }
     },
+    "AnimalPosePreprocessor": {
+        "title": "AnimalPose动物姿态预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "bbox_detector": "BBox检测",
+            "pose_estimator": "姿态预估",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "AIO_Preprocessor": {
         "title": "Aux集成预处理器",
         "inputs": {

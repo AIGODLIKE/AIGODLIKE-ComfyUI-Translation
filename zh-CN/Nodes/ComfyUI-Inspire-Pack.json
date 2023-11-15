@@ -379,6 +379,43 @@
 
 
 
+    "ListCounter //Inspire": {
+        "title": "列表计数",
+        "inputs": {
+            "signal": "值"
+        },
+        "widgets": {
+            "base_value": "基值"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "FromIPAdapterPipe //Inspire": {
+        "title": "从IP适配",
+        "inputs": {
+            "ipadapter_pipe": "IP适配束"
+        },
+        "outputs": {
+            "IPADAPTER": "IP适配",
+            "CLIP_VISION": "CLIP视觉",
+            "MODEL": "模型"
+        }
+    },
+    "ToIPAdapterPipe //Inspire": {
+        "title": "到IP适配",
+        "inputs": {
+            "ipadapter": "IP适配",
+            "clip_vision": "CLIP视觉",
+            "model": "模型"
+        },
+        "outputs": {
+            "IPADAPTER_PIPE": "IP适配束"
+        }
+    },
+
+
+
     "KSamplerProgress //Inspire": {
         "title": "K采样器(过程)",
         "inputs": {
@@ -492,13 +529,13 @@
     "RemoveBackendData //Inspire": {
         "title": "移除后端数据(字符串键)",
         "inputs": {
-            "signal_opt": "信号(可选)"
+            "signal_opt": "值(可选)"
         },
         "widgets": {
             "key": "键"
         },
         "outputs": {
-            "signal": "信号"
+            "signal": "值"
         }
     },
     "RemoveBackendDataNumberKey //Inspire": {
@@ -510,13 +547,39 @@
             "key": "键"
         },
         "outputs": {
-            "signal": "信号"
+            "signal": "值"
         }
     },
     "ShowCachedInfo //Inspire": {
         "title": "显示缓存信息",
         "widgets": {
             "cache_info": "缓存信息"
+        }
+    },
+    "CacheBackendDataList //Inspire": {
+        "title": "后端缓存数据列表",
+        "inputs": {
+            "data": "数据"
+        },
+        "widgets": {
+            "key": "键",
+            "tag": "数据标签"
+        },
+        "outputs": {
+            "data opt": "数据"
+        }
+    },
+    "CacheBackendDataNumberKeyList //Inspire": {
+        "title": "后端缓存数字键列表",
+        "inputs": {
+            "data": "数据"
+        },
+        "widgets": {
+            "key": "键",
+            "tag": "数据标签"
+        },
+        "outputs": {
+            "data opt": "数据"
         }
     },
 
@@ -571,7 +634,7 @@
     "BindImageListPromptList //Inspire": {
         "title": "绑定图像提示词列表",
         "inputs": {
-            "imamges": "图像",
+            "images": "图像",
             "zipped_prompt": "提示词包"
         },
         "widgets": {
@@ -669,7 +732,7 @@
         "title": "区域条件(颜色遮罩)",
         "inputs": {
             "clip": "CLIP",
-            "color_mask": "颜色遮罩"
+            "color_mask": "图像遮罩"
         },
         "widgets": {
             "mask_color": "遮罩颜色",
@@ -679,6 +742,84 @@
         },
         "outputs": {
             "CONDITIONING": "条件",
+            "MASK": "遮罩"
+        }
+    },
+    "RegionalIPAdapterMask //Inspire": {
+        "title": "区域IP适配",
+        "inputs": {
+            "ipadapter_pipe": "IP适配束",
+            "mask": "遮罩",
+            "images": "图像"
+        },
+        "widgets": {
+            "weight": "权重",
+            "noise": "噪波",
+            "weight_interpolation": "权重插值方式",
+                "original": "初始",
+                "linear": "线性",
+                "channel penalty": "通道惩罚"
+        },
+        "outputs": {
+            "IPADAPTER_PIPE": "IP适配束",
+            "MODEL": "模型"
+        }
+    },
+    "RregionalIPAdapterColorMask //Inspire": {
+        "title": "区域IP适配(颜色遮罩)",
+        "inputs": {
+            "ipadapter_pipe": "IP适配束",
+            "color_mask": "图像遮罩",
+            "images": "图像"
+        },
+        "widgets": {
+            "mask_color": "遮罩颜色",
+            "weight": "权重",
+            "noise": "噪波",
+            "weight_interpolation": "权重插值方式",
+                "original": "初始",
+                "linear": "线性",
+                "channel penalty": "通道惩罚"
+        },
+        "outputs": {
+            "IPADAPTER_PIPE": "IP适配束",
+            "MODEL": "模型",
+            "MASK" : "遮罩"
+        }
+    },
+    "RegionalSeedExplorerMask //Inspire": {
+        "title": "区域随机种管理",
+        "inputs": {
+            "mask": "遮罩",
+            "noise": "噪波"
+        },
+        "widgets": {
+            "seed_prompt": "随机种提示词",
+            "enable_additional": "启用拓展",
+            "additional_seed": "拓展随机种",
+            "additional_strength": "拓展强度",
+            "noise_mode": "噪波模式"
+        },
+        "outputs": {
+            "NOISE": "噪波"
+        }
+    },
+    "RegionalSeedExplorerColorMask //Inspire": {
+        "title": "区域随机种管理(颜色遮罩)",
+        "inputs": {
+            "color_mask": "图像遮罩",
+            "noise": "噪波"
+        },
+        "widgets": {
+            "mask_color": "遮罩颜色",
+            "seed_prompt": "随机种提示词",
+            "enable_additional": "启用拓展",
+            "additional_seed": "拓展随机种",
+            "additional_strength": "拓展强度",
+            "noise_mode": "噪波模式"
+        },
+        "outputs": {
+            "NOISE": "噪波",
             "MASK": "遮罩"
         }
     },
