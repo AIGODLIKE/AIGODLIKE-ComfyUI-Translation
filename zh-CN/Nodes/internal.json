@@ -192,6 +192,15 @@
             "SIGMAS": "Sigmas"
         }
     },
+    "FlipSigmas": {
+        "title": "翻转Sigmas",
+        "inputs": {
+            "sigmas": "Sigmas"
+        },
+        "outputs": {
+            "SIGMAS": "Sigmas"
+        }
+    },
 
 
 
@@ -566,7 +575,7 @@
         }
     },
     "RepeatLatentBatch": {
-        "title": "复制批次",
+        "title": "复制Latent批次",
         "inputs": {
             "samples": "Latent"
         },
@@ -916,6 +925,35 @@
         "widgets": {
             "low_threshold": "低阈值",
             "high_threshold": "高阈值"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+
+
+    "ImageCrop": {
+        "title": "图像裁剪",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "x": "X",
+            "y": "Y"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "RepeatImageBatch": {
+        "title": "复制图像批次",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "amount": "次数"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -1300,6 +1338,22 @@
             "scale_depth": "缩放深度"
         }
     },
+    "PatchModelAddDownscale": {
+        "title": "收缩模型Unet",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "block_number": "块编号",
+            "downscale_factor": "收缩系数",
+            "start_percent": "开始时间",
+            "end_percent": "结束时间",
+            "downscale_after_skip": "跳过后收缩"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
 
 
 
@@ -1553,6 +1607,18 @@
                 "eps": "等概率抽样",
                 "v-prediction": "V预测",
                 "zsnr": "规格化信噪比"
+        }
+    },
+    "RescaleCFG": {
+        "title": "缩放CFG",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "multiplier": "系数"
+        },
+        "outputs": {
+            "MODEL": "模型"
         }
     }
 }
