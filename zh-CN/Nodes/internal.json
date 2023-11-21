@@ -679,6 +679,19 @@
             "LATENT": "Latent"
         }
     },
+    "LatentInterpolate": {
+        "title": "Latent插值",
+        "inputs": {
+            "samples1": "Latent1",
+            "samples2": "Latent2"
+        },
+        "widgets": {
+            "ratio": "比率"
+        },
+        "outputs": {
+            "Latent": "Latent"
+        }
+    },
 
 
     "VAEDecode": {
