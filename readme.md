@@ -56,14 +56,17 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Impact Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack)|√|√|√|TODO|TODO|
 |[Impact Subpack](https://github.com/ltdrdata/ComfyUI-Impact-Subpack)|√|√|√|TODO|TODO|
 |[Inspire Pack](https://github.com/ltdrdata/ComfyUI-Inspire-Pack)|√|√|√|TODO|TODO|
+|[LaMa Preprocessor](https://github.com/mlinmg/ComfyUI-LaMA-Preprocessor)|√|TODO|√|TODO|TODO|
 |[Latent2RGB](https://github.com/bvhari/ComfyUI_LatentToRGB)|√|√|√|√|TODO|
 |[LCM](https://github.com/0xbitches/ComfyUI-LCM)|√|TODO|√|TODO|TODO|
 |[Manager](https://github.com/ltdrdata/ComfyUI-Manager)|√|√|√|TODO|TODO|
 |[Masquerade Nodes](https://github.com/BadCafeCode/masquerade-nodes-comfyui)|√|√|√|TODO|TODO|
 |[Noise](https://github.com/BlenderNeko/ComfyUI_Noise)|√|√|√|TODO|TODO|
 |[QR](https://github.com/coreyryanhanson/comfy-qr)|√|√|√|TODO|TODO|
+|[ReActor](https://github.com/Gourieff/comfyui-reactor-node)|√|TODO|√|TODO|TODO|
 |[Restart-Sampling](https://github.com/ssitu/ComfyUI_restart_sampling)|√|√|√|TODO|TODO|
-|[SDXL_prompt_styler](https://github.com/twri/sdxl_prompt_styler.git)|√|√|√|TODO|TODO|
+|[Roop](https://github.com/Navezjt/ComfyUI_roop.git)|√|TODO|√|TODO|TODO|TODO|
+|[SDXL_prompt_styler](https://github.com/twri/sdxl_prompt_styler)|√|√|√|TODO|TODO|
 |[SeargeSDXL](https://github.com/SeargeDP/SeargeSDXL)|√|√|√|TODO|TODO|
 |[StabilityNodes](https://github.com/Stability-AI/stability-ComfyUI-nodes)|√|√|√|TODO|TODO|
 |[TiledKSampler](https://github.com/BlenderNeko/ComfyUI_TiledKSampler)|√|√|√|√|TODO|
