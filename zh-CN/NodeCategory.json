@@ -1,6 +1,7 @@
 {
     "sampling": "采样",
     "loaders": "加载器",
+        "video_models": "视频模型",
     "conditioning": "条件",
         "style_model": "风格模型",
         "gligen": "GLIGEN",

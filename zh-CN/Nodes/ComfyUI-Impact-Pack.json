@@ -2238,7 +2238,9 @@
         "widgets": {
             "seconds": "秒数"
         },
-        "signal_opt": "信号"
+        "outputs": {
+            "signal_opt": "信号"
+        }
     },
     "ImpactControlBridge": {
         "title": "控制桥接",

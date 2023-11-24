@@ -205,6 +205,19 @@
 
 
 
+    "ImageOnlyCheckpointLoader": {
+        "title": "Checkpoint加载器(仅图像)",
+        "widgets": {
+            "ckpt_name": "Checkpoint名称"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP_VISION": "CLIP视觉",
+            "VAE": "VAE"
+        }
+    },
+
+
     "CheckpointLoaderSimple": {
         "title": "Checkpoint加载器(简易)",
         "widgets": {
@@ -357,6 +370,30 @@
             "CONDITIONING": "条件"
         }
     },
+    "SVD_img2vid_Conditioning": {
+        "title": "SVD_图像到视频_条件",
+        "inputs": {
+            "clip_vision": "CLIP视觉",
+            "init_image": "图像",
+            "VAE": "VAE"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "video_frames": "帧数",
+            "motion_bucket_id": "动态bucketID",
+            "fps": "帧率",
+            "augmentation_level": "增强"
+        },
+        "outputs": {
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "latent": "Latent"
+        }
+    },
+
+
+
     "CLIPTextEncode": {
         "title": "CLIP文本编码器",
         "inputs": {
@@ -1367,6 +1404,21 @@
             "MODEL": "模型"
         }
     },
+    "SaveAnimatedWEBP": {
+        "title": "保存WEBP",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀",
+            "fps": "帧率",
+            "lossless": "无损",
+            "quality": "质量",
+            "method": "方法",
+                "fastest": "最快",
+                "slowest": "最慢"
+        }
+    },
 
 
 
@@ -1611,7 +1663,7 @@
     },
 
     "ModelSamplingDiscrete": {
-        "title": "模型离散采样方法",
+        "title": "模型离散采样算法",
         "inputs": {
             "model": "模型"
         },
@@ -1620,6 +1672,19 @@
                 "eps": "等概率抽样",
                 "v-prediction": "V预测",
                 "zsnr": "规格化信噪比"
+        }
+    },
+    "ModelSamplingContinuousEDM": {
+        "title": "模型连续采样算法EDM",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "sampling": "采样",
+                "v_prediction": "V预测",
+                "eps": "等概率抽样",
+            "sigma_max": "最大Sigma",
+            "sigma_min": "最小Sigma"
         }
     },
     "RescaleCFG": {
