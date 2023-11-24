@@ -2187,6 +2187,19 @@
             "signal_opt": "信号"
         }
     },
+    "ImpactQueueTriggerCountdown": {
+        "title": "队列触发器(计数)",
+        "inputs": {
+            "signal": "信号"
+        },
+        "widgets": {
+            "count": "计数"
+        },
+        "outputs": {
+            "signal_opt": "信号",
+            "count": "计数"
+        }
+    },
     "ImpactSetWidgetValue": {
         "title": "设置组件值",
         "inputs": {
@@ -2216,6 +2229,16 @@
         "outputs": {
             "signal_opt": "信号"
         }
+    },
+    "ImpactSleep": {
+        "title": "休眠",
+        "inputs": {
+            "signal": "信号"
+        },
+        "widgets": {
+            "seconds": "秒数"
+        },
+        "signal_opt": "信号"
     },
     "ImpactControlBridge": {
         "title": "控制桥接",

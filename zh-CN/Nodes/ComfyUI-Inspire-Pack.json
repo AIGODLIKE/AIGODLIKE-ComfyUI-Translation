@@ -557,7 +557,7 @@
     "RemoveBackendDataNumberKey //Inspire": {
         "title": "移除后端数据(数字键)",
         "inputs": {
-            "signal_opt": "信号(可选)"
+            "signal_opt": "信号"
         },
         "widgets": {
             "key": "键"
