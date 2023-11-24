@@ -197,7 +197,7 @@
     "everywhere": "全局输入",
     "Video Helper Suite 🎥🅥🅗🅢": "视频助手 🎥🅥🅗🅢",
     "FABRIC": "Fabric节点",
-        
+    "ReActor": "ReActor换脸节点",
 
 
 
@@ -280,4 +280,4 @@
     "SAM_PARAMETERS": "SAM参数",
     "IMAGE_BOUNDS": "边界"
 
-}  
+}
