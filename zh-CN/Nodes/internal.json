@@ -217,8 +217,6 @@
     },
 
 
-
-
     "ImageOnlyCheckpointLoader": {
         "title": "Checkpoint加载器(仅图像)",
         "widgets": {
@@ -230,17 +228,17 @@
             "VAE": "VAE"
         }
     },
-
-
-    "ImageOnlyCheckpointLoader": {
-        "title": "Checkpoint加载器(仅图像)",
+    "LoraLoaderModelOnly": {
+        "title": "LoRA加载器(仅模型)",
+        "inputs": {
+            "model": "模型"
+        },
         "widgets": {
-            "ckpt_name": "Checkpoint名称"
+            "lora_name": "LoRA名称",
+            "strength_model": "模型强度"
         },
         "outputs": {
-            "MODEL": "模型",
-            "CLIP_VISION": "CLIP视觉",
-            "VAE": "VAE"
+            "MODEL": "模型"
         }
     },
 
