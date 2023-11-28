@@ -1,0 +1,210 @@
+{
+    "SplitLongMask": {
+        "title": "分割遮罩列表",
+        "inputs": {
+            "long_mask": "遮罩"
+        },
+        "widgets": {
+            "count": "计数"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "FeatheredMask": {
+        "title": "羽化遮罩",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "start_offset": "偏移",
+            "featering_weight": "权重"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "SmoothMask": {
+        "title": "平滑遮罩",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "smoothness": "平滑"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "AreaToMask": {
+        "title": "区域到遮罩",
+        "inputs": {
+            "RGBA": "RGBA"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "FaceToMask": {
+        "title": "面部到遮罩",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "CombineMasks": {
+        "title": "合并遮罩",
+        "inputs": {
+            "input_image": "图像",
+            "mask_1": "遮罩_1",
+            "mask_2": "遮罩_2",
+            "mask_3": "遮罩_3"
+        },
+        "outputs": {
+            "Combined Mask": "遮罩",
+            "Heatmap Mask": "热度图",
+            "BW Mask": "灰度图"
+        }
+    },
+
+
+
+    "RandomPrompt": {
+        "title": "随机提示词",
+        "widgets": {
+            "max_count": "最大数量",
+            "mutable_prompt": "可变提示词",
+            "immutable_prompt": "不变提示词",
+            "random_sample": "随机采样",
+                "enable": "启用",
+                "disable": "关闭"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+
+
+
+    "TransparentImage": {
+        "title": "透明图像",
+        "inputs": {
+            "images": "图像",
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "invert": "反转",
+                "yes": "是",
+                "no": "否",
+            "save": "保存",
+            "filename_prefix": "文件名前缀"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    },
+    "LoadImagesFromPath": {
+        "title": "加载图像(路径)",
+        "widgets": {
+            "file_path": "文件路径",
+            "white_bg": "白背景",
+                "disable": "关闭",
+                "enable": "启用",
+            "newest_files": "最新文件",
+            "index_variable": "索引",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    },
+    "EnhanceImage": {
+        "title": "增强图像",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "contrast": "对比度"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageCropByAlpha": {
+        "title": "图像Alpha裁剪",
+        "inputs": {
+            "image": "图像",
+            "RGBA": "RGBA"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+
+
+
+    "ScreenShare": {
+        "title": "屏幕分享",
+        "inputs": {
+            "image_base64": "图像_base64"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    },
+    "FloatingVideo": {
+        "title": "屏幕窗口",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机"
+        }
+    },
+
+
+
+    "VAELoaderConsistencyDecoder": {
+        "title": "稳定VAE加载器",
+        "widgets": {
+            "vae_name": "VAE"
+        },
+        "outputs": {
+            "VAE": "VAE"
+        }
+    },
+    "VAEDecoderConsistencyDecoder": {
+        "title": "稳定VAE解码",
+        "inputs": {
+            "samples": "Latent",
+            "vae": "VAe"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    }
+}
