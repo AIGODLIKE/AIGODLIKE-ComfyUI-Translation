@@ -232,6 +232,19 @@
     },
 
 
+    "ImageOnlyCheckpointLoader": {
+        "title": "Checkpoint加载器(仅图像)",
+        "widgets": {
+            "ckpt_name": "Checkpoint名称"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP_VISION": "CLIP视觉",
+            "VAE": "VAE"
+        }
+    },
+
+
     "CheckpointLoaderSimple": {
         "title": "Checkpoint加载器(简易)",
         "widgets": {
