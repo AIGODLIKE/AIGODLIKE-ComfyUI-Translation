@@ -203,6 +203,20 @@
     },
 
 
+    "VideoLinearCFGGuidance": {
+        "title": "线性CFG引导",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "min_cfg": "最小CFG"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+
+
 
 
     "ImageOnlyCheckpointLoader": {
@@ -1417,6 +1431,17 @@
             "method": "方法",
                 "fastest": "最快",
                 "slowest": "最慢"
+        }
+    },
+    "SaveAnimatedPNG": {
+        "title": "保存APNG",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀",
+            "fps": "帧率",
+            "compress_level": "压缩等级"
         }
     },
 
