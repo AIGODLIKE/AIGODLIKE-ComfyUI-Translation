@@ -18,7 +18,7 @@
         },
         "widgets": {
             "start_offset": "偏移",
-            "featering_weight": "权重"
+            "feathering_weight": "权重"
         },
         "outputs": {
             "MASK": "遮罩"
@@ -197,7 +197,7 @@
             "VAE": "VAE"
         }
     },
-    "VAEDecoderConsistencyDecoder": {
+    "VAEDecodeConsistencyDecoder": {
         "title": "稳定VAE解码",
         "inputs": {
             "samples": "Latent",
