@@ -5,57 +5,74 @@
             "control_net_weights": "ControlNet权重",
             "t2i_adapter_weights": "T2I适配权重",
             "latent_keyframe": "Latent关键帧",
-            "prev_timestep_keyframe": "帧间隔"
+            "prev_timestep_keyframe": "帧间隔",
+            "prev_timestep_kf": "帧间隔",
+            "cn_weights": "ControlNet权重",
+            "mask_optional": "遮罩"
         },
         "widgets": {
-            "start_percent": "开始位置"
+            "start_percent": "开始位置",
+            "strength": "强度",
+            "null_latent_kf_stre": "空Latent关键帧强度"
         },
         "outputs": {
-            "TIMESTEP_KEYFRAME": "帧间隔"
+            "TIMESTEP_KEYFRAME": "帧间隔",
+            "TIMESTEP_KF": "帧间隔"
         }
     },
     "LatentKeyframe": {
         "title": "Latent关键帧",
         "inputs": {
-            "prev_latent_keyframe": "Latent关键帧"
+            "prev_latent_keyframe": "Latent关键帧",
+            "prev_latent_kf": "Latent关键帧"
         },
         "widgets": {
             "batch_index": "批次索引",
             "strength": "强度"
         },
         "outputs": {
-            "LATENT_KEYFRAME": "Latent关键帧"
+            "LATENT_KEYFRAME": "Latent关键帧",
+            "LATENT_KF": "Latent关键帧"
         }
     },
     "LatentKeyframeGroup": {
         "title": "Latent关键帧组",
         "inputs": {
             "prev_latent_keyframe": "Latent关键帧",
-            "latent_image_opt": "Latent"
+            "latent_image_opt": "Latent",
+            "prev_latent_kf": "Latent关键帧",
+            "latent_optional": "Latent"
         },
         "widgets": {
-            "index_strength": "索引强度"
+            "index_strength": "索引强度",
+            "print_keyframes": "输出关键帧到控制台"
         },
         "outputs": {
-            "LATENT_KEYFRAME": "Latent关键帧"
+            "LATENT_KEYFRAME": "Latent关键帧",
+            "LATENT_KF": "Latent关键帧"
         }
     },
     "LatentKeyframeBatchedGroup": {
         "title": "Latent关键帧组合",
         "inputs": {
-            "prev_latent_keyframe": "Latent关键帧"
+            "prev_latent_keyframe": "Latent关键帧",
+            "prev_latent_kf": "Latent关键帧"
         },
         "widgets": {
-            "strengths": "强度"
+            "strengths": "强度",
+            "float_strength": "浮点强度",
+            "print_keyframes": "输出关键帧到控制台"
         },
         "outputs": {
-            "LATENT_KEYFRAME": "Latent关键帧"
+            "LATENT_KEYFRAME": "Latent关键帧",
+            "LATENT_KF": "Latent关键帧"
         }
     },
     "LatentKeyframeTiming": {
         "title": "Latent关键帧插值",
         "inputs": {
-            "prev_latent_keyframe": "Latent关键帧"
+            "prev_latent_keyframe": "Latent关键帧",
+            "prev_latent_kf": "Latent关键帧"
         },
         "widgets": {
             "batch_index_from": "批次序号从",
@@ -67,10 +84,12 @@
                 "ease-in": "渐进",
                 "ease-out": "渐出",
                 "linear": "线性",
-            "flip_weights": "反转权重"
+            "flip_weights": "反转权重",
+            "print_keyframes": "输出关键帧到控制台"
         },
         "outputs": {
-            "LATENT_KEYFRAME": "Latent关键帧"
+            "LATENT_KEYFRAME": "Latent关键帧",
+            "LATENT_KF": "Latent关键帧"
         }
     },
 
@@ -107,7 +126,9 @@
             "negative": "负面条件",
             "control_net": "ControlNet",
             "image": "图像",
-            "mask_optional": "遮罩"
+            "mask_optional": "遮罩",
+            "timestep_kf": "帧间隔",
+            "latent_kf_override": ""
         },
         "widgets": {
             "strength": "强度",
@@ -128,7 +149,9 @@
         },
         "outputs": {
             "CONTROL_NET_WEIGHTS": "ControlNet权重",
-            "TIMESTEP_KEYFRAME": "帧间隔"
+            "TIMESTEP_KEYFRAME": "帧间隔",
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
         }
     },
     "SoftControlNetWeights": {
@@ -151,7 +174,9 @@
         },
         "outputs": {
             "CONTROL_NET_WEIGHTS": "ControlNet权重",
-            "TIMESTEP_KEYFRAME": "帧间隔"
+            "TIMESTEP_KEYFRAME": "帧间隔",
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
         }
     },
     "CustomControlNetWeights": {
@@ -174,7 +199,9 @@
         },
         "outputs": {
             "CONTROL_NET_WEIGHTS": "ControlNet权重",
-            "TIMESTEP_KEYFRAME": "帧间隔"
+            "TIMESTEP_KEYFRAME": "帧间隔",
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
         }
     },
     "SoftT2IAdapterWeights": {
@@ -188,7 +215,9 @@
         },
         "outputs": {
             "T2I_ADAPTER_WEIGHTS": "T2I适配权重",
-            "TIMESTEP_KEYFRAME": "帧间隔"
+            "TIMESTEP_KEYFRAME": "帧间隔",
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
         }
     },
     "CustomT2IAdapterWeights": {
@@ -202,7 +231,9 @@
         },
         "outputs": {
             "T2I_ADAPTER_WEIGHTS": "T2I适配权重",
-            "TIMESTEP_KEYFRAME": "帧间隔"
+            "TIMESTEP_KEYFRAME": "帧间隔",
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
         }
     },
     "LoadImagesFromDirectory": {
@@ -216,6 +247,27 @@
             "IMAGE": "图像",
             "MASK": "遮罩",
             "INT": "整数"
+        }
+    },
+    "ScaledSoftMaskedUniversalWeights": {
+        "title": "缩放柔和遮罩权重",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "min_base_multiplier": "最小系数",
+            "max_base_multiplier": "最大系数"
+        },
+        "outputs": {
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
+        }
+    },
+    "ACN_DefaultUniversalWeights": {
+        "title": "默认权重",
+        "outputs": {
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
         }
     }
 }
