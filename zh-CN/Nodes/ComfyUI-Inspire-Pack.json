@@ -26,7 +26,7 @@
                 "Diff": "差值",
                 "Diff+Heatmap": "差值+热度"
         },
-        "ouptuts": {
+        "outputs": {
             "X (vectors)": "X (向量)",
             "Y (effect_compares)": "Y (效果)"
         }
@@ -51,7 +51,7 @@
             "block_vectors": "层权重",
             "bypass": "停用"
         },
-        "ouptuts": {
+        "outputs": {
             "model": "模型",
             "clip": "CLIP",
             "populated_vector": "填充向量"
@@ -849,7 +849,9 @@
             "weight": "权重",
             "weight_interpolation": "权重插值方式"
         },
-        "REGIONAL_IPADAPER": "区域IP适配"
+        "outputs": {
+            "REGIONAL_IPADAPER": "区域IP适配"
+        }
     },
     "RegionalIPAdapterEncodedColorMask //Inspire": {
         "title": "区域IP适配(编码颜色遮罩)",
