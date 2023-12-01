@@ -201,6 +201,7 @@
     "ReActor": "ReActor换脸节点",
     "Mixlab": "Mixlab节点",
         "ConsistencyDecoder": "稳定解码",
+    "segment_anything": "Segment Anything",
 
 
 
