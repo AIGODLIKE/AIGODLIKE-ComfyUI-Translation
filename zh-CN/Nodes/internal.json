@@ -180,6 +180,18 @@
             "SIGMAS": "Sigmas"
         }
     },
+    "SDTurboScheduler": {
+        "title": "SDTurbo调度器",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "steps": "步数"
+        },
+        "outputs": {
+            "SIGMAS": "Sigmas"
+        }
+    },
     "SplitSigmas": {
         "title": "分离Sigmas",
         "inputs": {

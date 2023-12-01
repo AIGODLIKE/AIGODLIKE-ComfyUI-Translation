@@ -26,7 +26,7 @@
                 "Diff": "差值",
                 "Diff+Heatmap": "差值+热度"
         },
-        "ouptuts": {
+        "outputs": {
             "X (vectors)": "X (向量)",
             "Y (effect_compares)": "Y (效果)"
         }
@@ -51,7 +51,7 @@
             "block_vectors": "层权重",
             "bypass": "停用"
         },
-        "ouptuts": {
+        "outputs": {
             "model": "模型",
             "clip": "CLIP",
             "populated_vector": "填充向量"
@@ -715,7 +715,7 @@
         "title": "区域提示词(颜色遮罩)",
         "inputs": {
             "basic_pipe": "基础束",
-            "color_mask": "颜色遮罩"
+            "color_mask": "图像遮罩"
         },
         "widgets": {
             "mask_color": "遮罩颜色",
@@ -781,7 +781,7 @@
             "MODEL": "模型"
         }
     },
-    "RregionalIPAdapterColorMask //Inspire": {
+    "RegionalIPAdapterColorMask //Inspire": {
         "title": "区域IP适配(颜色遮罩)",
         "inputs": {
             "ipadapter_pipe": "IP适配束",
@@ -839,6 +839,47 @@
             "MASK": "遮罩"
         }
     },
+    "RegionalIPAdapterEncodedMask //Inspire": {
+        "title": "区域IP适配(编码遮罩)",
+        "inputs": {
+            "mask": "遮罩",
+            "embeds": "嵌入组"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_interpolation": "权重插值方式"
+        },
+        "outputs": {
+            "REGIONAL_IPADAPER": "区域IP适配"
+        }
+    },
+    "RegionalIPAdapterEncodedColorMask //Inspire": {
+        "title": "区域IP适配(编码颜色遮罩)",
+        "inputs": {
+            "color_mask": "图像遮罩",
+            "embeds": "嵌入组"
+        },
+        "widgets": {
+            "mask_color": "遮罩颜色",
+            "weight": "权重",
+            "weight_interpolation": "权重插值方式"
+        },
+        "outputs": {
+            "REGIONAL_IPADAPTER": "区域IP适配",
+            "MASK": "遮罩"
+        }
+    },
+    "ApplyRegionalIPAdapters //Inspire": {
+        "title": "应用区域IP适配",
+        "inputs": {
+            "ipadapter_pipe": "IP适配束",
+            "regional_ipadapter1": "区域IP适配1"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+
 
     
 
