@@ -68,6 +68,37 @@
             "BW Mask": "灰度图"
         }
     },
+    "CLIPSeg_":{
+        "title": "CLIP语义分割",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "text": "文本",
+            "blur": "模糊",
+            "threshold": "阈值",
+            "dilation_factor": "膨胀"
+        },
+        "outputs": {
+            "Mask": "遮罩",
+            "Heatmap Mask": "热度图",
+            "BW Mask": "灰度图"
+        }
+    },
+    "CombineMasks_": {
+        "title": "合并遮罩",
+        "inputs": {
+            "input_image": "图像",
+            "mask_1": "遮罩_1",
+            "mask_2": "遮罩_2",
+            "mask_3": "遮罩_3"
+        },
+        "outputs": {
+            "Combined Mask": "遮罩",
+            "Heatmap Mask": "热度图",
+            "BW Mask": "灰度图"
+        }
+    },
 
 
 
@@ -205,6 +236,52 @@
         },
         "outputs": {
             "IMAGE": "图像"
+        }
+    },
+
+
+
+    "ChatGPT": {
+        "title": "ChatGPT",
+        "inputs": {
+            "api_key": "API",
+            "api_url": "API_url"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "system_content": "系统提示词",
+            "model": "模型",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "context_size": "上下文大小"
+        },
+        "outputs": {
+            "text": "文本",
+            "message": "信息",
+            "session_history": "会话历史"
+        }
+    },
+    "ShowTextForGPT": {
+        "title": "显示文本",
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "CharacterInText": {
+        "title": "文本内的字符",
+        "widgets": {
+            "text": "文本",
+            "character": "字符"
+        },
+        "outputs": {
+            "INT": "整数"
         }
     }
 }
