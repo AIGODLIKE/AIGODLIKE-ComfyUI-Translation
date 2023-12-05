@@ -69,6 +69,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Roop](https://github.com/Navezjt/ComfyUI_roop.git)|√|TODO|√|TODO|TODO|TODO|
 |[SDXL_prompt_styler](https://github.com/twri/sdxl_prompt_styler)|√|√|√|TODO|TODO|
 |[SeargeSDXL](https://github.com/SeargeDP/SeargeSDXL)|√|√|√|TODO|TODO|
+|[Segment Anything](https://github.com/storyicon/comfyui_segment_anything.git)|√|TODO|√|TODO|TODO|
 |[StabilityNodes](https://github.com/Stability-AI/stability-ComfyUI-nodes)|√|√|√|TODO|TODO|
 |[TiledKSampler](https://github.com/BlenderNeko/ComfyUI_TiledKSampler)|√|√|√|√|TODO|
 |[UltimateSDUpscale](https://github.com/ssitu/ComfyUI_UltimateSDUpscale)|√|√|√|TODO|TODO|
