@@ -456,6 +456,80 @@
             "INT": "整数"
         }
     },
+    "CR Conditioning Mixer": {
+        "title": "条件混合",
+        "inputs": {
+            "conditioning_1": "条件_1",
+            "conditioning_2": "条件_2"
+        },
+        "widgets": {
+            "mix_method": "混合方式",
+                "Combine": "合并",
+                "Average": "平均",
+                "Concatenate": "联结",
+            "average_strength": "平均强度"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "CR Select Model": {
+        "title": "选择模型",
+        "widgets": {
+            "ckpt_name1": "模型名1",
+            "ckpt_name2": "模型名2",
+            "ckpt_name3": "模型名3",
+            "ckpt_name4": "模型名4",
+            "ckpt_name5": "模型名5",
+            "select_model": "选择"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "VAE": "VAE",
+            "ckpt_name": "模型名",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Random Hex Color": {
+        "title": "随机HEX色",
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机"
+        },
+        "outputs": {
+            "hex_color1": "HEX_1",
+            "hex_color2": "HEX_2",
+            "hex_color3": "HEX_3",
+            "hex_color4": "HEX_4",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Random RGB": {
+        "title": "随机RGB色",
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机"
+        },
+        "outputs": {
+            "rgb_1": "RGB_1",
+            "rgb_2": "RGB_2",
+            "rgb_3": "RGB_3",
+            "rgb_4": "RGB_4",
+            "show_help": "显示帮助"
+        }
+    },
+
+
+
     "CR Text List To String": {
         "title": "文本列表到字符串",
         "widgets": {
@@ -738,6 +812,37 @@
             "IMAGE": "图像"
         }
     },
+    "CR Simple Text Watermark": {
+        "title": "文本水印(简易)",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "text": "文本",
+            "align": "对齐到",
+                "center": "中心",
+                "top left": "左上",
+                "top right": "右上",
+                "top center":" 中上",
+                "bottom left": "左下",
+                "bottom right": "右下",
+                "bottom center": "中下",
+            "opacity": "不透明度",
+            "font_name": "字体",
+            "font_color": "字体颜色",
+            "x_margin": "X页边距",
+            "y_margin": "Y页边距",
+            "font_color_hex": "字体颜色HEX"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "show_help": "显示帮助"
+        }
+    },
+
+
+
+
     "CR SD1.5 Aspect Ratio": {
         "title": "SD1.5宽高比",
         "widgets": {
@@ -1317,7 +1422,7 @@
         }
     },
     "CR Simple Meme Template": {
-        "title": "简易meme模板",
+        "title": "meme模板(简易)",
         "inputs": {
             "image": "图像"
         },
@@ -1507,7 +1612,7 @@
         }
     },
     "CR Simple Text Panel": {
-        "title": "简易文本面板",
+        "title": "文本面板(简易)",
         "widgets": {
             "panel_height": "面板高度",
             "panel_width": "面板宽度",
@@ -1551,6 +1656,176 @@
         "outputs": {
             "image": "图像",
             "show_help": "显示帮助"
+        }
+    },
+
+
+
+    "CR Simple Schedule": {
+        "title": "简易调度",
+        "widgets": {
+            "schedule": "调度",
+            "schedule_type": "类型",
+                "Value": "值",
+                "Text": "文本",
+                "Prompt": "提示词",
+                "Prompt Weight": "提示词权重",
+                "Model": "模型",
+                "LoRA": "LoRA",
+                "ControlNet": "ControlNet",
+                "Style": "风格",
+                "Upscale": "放大",
+                "Camera": "相机",
+                "Job": "工作",
+            "schedule_alias": "别名",
+            "schedule_format": "格式"
+        },
+        "outputs": {
+            "SCHEDULE": "调度"
+        }
+    },
+    "CR Central Schedule": {
+        "title": "中心调度",
+        "widgets": {
+            "schedule_1": "调度",
+            "schedule_type_1": "类型",
+            "schedule_alias_1": "别名",
+            "schedule_2": "调度",
+            "schedule_type_2": "类型",
+            "schedule_alias_2": "别名",
+            "schedule_3": "调度",
+            "schedule_type_3": "类型",
+            "schedule_alias_3": "别名",
+            "schedule_format": "格式"
+        },
+        "outputs": {
+            "SCHEDULE": "调度",
+            "show_text": "显示文本"
+        }
+    },
+    "CR Combine Schedules": {
+        "title": "合并调度",
+        "inputs": {
+            "schedule_1": "调度_1",
+            "schedule_2": "调度_2",
+            "schedule_3": "调度_3",
+            "schedule_4": "调度_4"
+        },
+        "outputs": {
+            "SCHEDULE": "调度",
+            "show_text": "显示文本"
+        }
+    },
+    "CR Output Schedule To File": {
+        "title": "输出调度到文件",
+        "inputs": {
+            "schedule": "调度"
+        },
+        "widgets": {
+            "output_file_path": "输出路径",
+            "file_name": "文件名",
+            "file_extension": "后缀名"
+        }
+    },
+    "CR Load Schedule From File": {
+        "title": "加载调度",
+        "widgets": {
+            "input_file_path": "文件路径",
+            "file_name": "文件名",
+            "file_extension": "后缀名"
+        },
+        "outputs": {
+            "SCHEDULE": "调度",
+            "show_text": "显示文本"
+        }
+    },
+    "CR Schedule Input Switch": {
+        "title": "切换调度",
+        "inputs": {
+            "schedule1": "调度_1",
+            "schedule2": "调度_2"
+        },
+        "widgets": {
+            "Input": "输入"
+        },
+        "outputs": {
+            "SCHEDULE": "调度"
+        }
+    },
+
+
+
+    "CR Simple Value Scheduler": {
+        "title": "值调度器(简易)",
+        "widgets": {
+            "schedule": "调度",
+            "current_frame": "当前帧"
+        },
+        "outputs": {
+            "INT": "整数",
+            "FLOAT": "浮点"
+        }
+    },
+    "CR Simple Text Scheduler": {
+        "title": "文本调度器(简易)",
+        "widgets": {
+            "schedule": "调度",
+            "current_frame": "当前帧"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "CR Value Scheduler": {
+        "title": "值调度器",
+        "widgets": {
+            "mode": "模式",
+                "Default Value": "默认值",
+                "Schedule": "调度",
+            "current_frame": "当前帧",
+            "schedule_alias": "别名",
+            "dafault_value": "默认值",
+            "schedule_format": "格式"
+        },
+        "outputs": {
+            "INT": "整数",
+            "FLOAT": "浮点"
+        }
+    },
+    "CR Text Scheduler": {
+        "title": "文本调度器",
+        "widgets": {
+            "mode": "模式",
+                "Default Value": "默认值",
+                "Schedule": "调度",
+            "current_frame": "当前帧",
+            "schedule_alias": "别名",
+            "dafault_value": "默认值",
+            "schedule_format": "格式"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "CR Load Scheduled Models": {
+        "title": "加载调度模型",
+        "inputs": {
+            "model_list": "模型列表",
+            "schedule": "调度"
+        },
+        "widgets": {
+            "mode": "模式",
+                "Load default Value": "默认模型",
+                "Schedule": "调度",
+            "current_frame": "当前帧",
+            "schedule_alias": "别名",
+            "dafault_model": "默认模型",
+            "schedule_format": "格式"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "VAE": "VAE"
         }
     }
 }
