@@ -1365,6 +1365,20 @@
     "ascending": "升序",
     "descending": "降序",
 
+    "Value": "值",
+    "Text": "文本",
+    "Prompt": "提示词",
+    "Prompt Weight": "提示词权重",
+    "Model": "模型",
+    "LoRA": "LoRA",
+    "ControlNet": "ControlNet",
+    "Style": "风格",
+    "Upscale": "放大",
+    "Camera": "相机",
+    "Job": "工作",
+    "Schedule": "调度",
+    "Load Default Model": "默认模型",
+
 
     "DynThr": "DynThr",
 

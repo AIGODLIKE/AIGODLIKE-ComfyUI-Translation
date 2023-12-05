@@ -470,7 +470,8 @@
             "average_strength": "平均强度"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "条件",
+            "show_help": "显示帮助"
         }
     },
     "CR Select Model": {
@@ -1687,15 +1688,15 @@
     "CR Central Schedule": {
         "title": "中心调度",
         "widgets": {
-            "schedule_1": "调度",
-            "schedule_type_1": "类型",
-            "schedule_alias_1": "别名",
-            "schedule_2": "调度",
-            "schedule_type_2": "类型",
-            "schedule_alias_2": "别名",
-            "schedule_3": "调度",
-            "schedule_type_3": "类型",
-            "schedule_alias_3": "别名",
+            "schedule1": "调度",
+            "schedule_type1": "类型",
+            "schedule_alias1": "别名",
+            "schedule2": "调度",
+            "schedule_type2": "类型",
+            "schedule_alias2": "别名",
+            "schedule3": "调度",
+            "schedule_type3": "类型",
+            "schedule_alias3": "别名",
             "schedule_format": "格式"
         },
         "outputs": {
