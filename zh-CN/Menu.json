@@ -1378,6 +1378,10 @@
     "Job": "工作",
     "Schedule": "调度",
     "Load Default Model": "默认模型",
+    "Load default Value": "默认模型",
+    "Load default LoRA": "默认LoRA",
+    "Default Prompt": "默认提示词",
+    "Keyframe List": "关键帧列表",
 
 
     "DynThr": "DynThr",
