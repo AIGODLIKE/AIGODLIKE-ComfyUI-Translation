@@ -1828,5 +1828,250 @@
             "CLIP": "CLIP",
             "VAE": "VAE"
         }
+    },
+    "CR Load Scheduled LoRAs": {
+        "title": "加载调度LoRa",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "lora_list": "LoRA列表",
+            "schedule": "调度"
+        },
+        "widgets": {
+            "mode": "模式",
+                "Off": "关闭",
+                "Load default LoRA": "默认模型",
+                "Schedule": "调度",
+            "current_frame": "当前帧",
+            "schedule_alias": "别名",
+            "dafault_lora": "默认LoRA",
+            "strength_model": "模型强度",
+            "strength_clip": "CLIP强度",
+            "schedule_format": "格式"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "show_help": "显示帮助"
+        }
+    },
+
+    "CR Simple Prompt Scheduler": {
+        "title": "提示词调度器(简易)",
+        "widgets": {
+            "keyframe_list": "关键帧列表",
+            "current_frame": "当前帧",
+            "keyframe_format": "关键帧格式"
+        },
+        "outputs": {
+            "current_prompt": "当前提示词",
+            "next_prompt": "下一提示词",
+            "weight": "权重",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Prompt Scheduler": {
+        "title": "提示词调度器",
+        "inputs": {
+            "schedule": "调度"
+        },
+        "widgets": {
+            "mode": "模式",
+            "current_frame": "当前帧",
+            "default_prompt": "默认提示词",
+            "schedule_format": "格式",
+            "interpolate_prompt": "插入提示词",
+            "schedule_alias": "别名",
+            "keyframe_list": "关键帧列表",
+            "prepend_text": "预置文本",
+            "append_text": "追加文本"
+        },
+        "outputs": {
+            "current_prompt": "当前提示词",
+            "next_prompt": "下一提示词",
+            "weight": "权重",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Simple Prompt List": {
+        "title": "提示词列表(简易)",
+        "inputs": {
+            "simple_prompt_list": "提示词列表(简易)"
+        },
+        "widgets": {
+            "prompt_1": "提示词_1",
+            "prompt_2": "提示词_2",
+            "prompt_3": "提示词_3",
+            "prompt_4": "提示词_4",
+            "prompt_5": "提示词_5"
+        },
+        "outputs": {
+            "SIMPLE_PROMPT_LIST": "提示词列表(简易)",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Prompt List": {
+        "title": "提示词列表",
+        "inputs": {
+            "prompt_list": "提示词列表"
+        },
+        "widgets": {
+            "keyframe_interval": "关键帧间隔",
+            "loops": "循环次数",
+            "prompt_1": "提示词_1",
+            "transition_type1": "过渡类型_1",
+            "transition_speed1": "过渡速度_1",
+            "transition_profile1": "过渡配置_1",
+            "prompt_2": "提示词_2",
+            "transition_type2": "过渡类型_2",
+            "transition_speed2": "过渡速度_2",
+            "transition_profile2": "过渡配置_2",
+            "prompt_3": "提示词_3",
+            "transition_type3": "过渡类型_3",
+            "transition_speed3": "过渡速度_3",
+            "transition_profile3": "过渡配置_3",
+            "prompt_4": "提示词_4",
+            "transition_type4": "过渡类型_4",
+            "transition_speed4": "过渡速度_4",
+            "transition_profile4": "过渡配置_4",
+            "prompt_5": "提示词_5",
+            "transition_type5": "过渡类型_5",
+            "transition_speed5": "过渡速度_5",
+            "transition_profile5": "过渡配置_5"
+        },
+        "outputs": {
+            "PROMPT_LIST": "提示词列表",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Prompt List Keyframes": {
+        "title": "提示词列表关键帧",
+        "inputs": {
+            "prompt_list": "提示词列表"
+        },
+        "widgets": {
+            "keyframe_format": "关键帧格式"
+        },
+        "outputs": {
+            "keyframe_list": "关键帧列表",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Simple Prompt List Keyframes": {
+        "title": "提示词列表关键帧(简易)",
+        "inputs": {
+            "simple_prompt_list": "提示词列表(简易)"
+        },
+        "widgets": {
+            "keyframe_interval": "关键帧间隔",
+            "loops": "循环次数",
+            "transition_type": "过渡类型",
+            "transition_speed": "过渡速度",
+            "transition_profile": "过渡配置",
+            "keyframe_format": "关键帧格式"
+        },
+        "outputs": {
+            "keyframe_list": "关键帧列表",
+            "show_help": "显示帮助"
+        }
+    },  
+    "CR Keyframe List": {
+        "title": "关键帧列表",
+        "widgets": {
+            "keyframe_list": "关键帧列表",
+            "keyframe_format": "关键帧格式"
+        },
+        "outputs": {
+            "keyframe_list": "关键帧列表",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Encode Scheduled Prompts": {
+        "title": "编码调度提示词",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "current_prompt": "当前提示词",
+            "next_prompt": "下一提示词",
+            "weight": "权重"
+        },
+        "outputs": {
+            "CONDITIONING": "条件",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Gradient Float": {
+        "title": "渐变浮点",
+        "widgets": {
+            "start_value": "起始值",
+            "end_value": "最终值",
+            "start_frame": "起始帧",
+            "frame_duration": "帧持续",
+            "current_frame": "当前帧",
+            "gradient_profile": "渐变配置"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Gradient Integer": {
+        "title": "渐变整数",
+        "widgets": {
+            "start_value": "起始值",
+            "end_value": "最终值",
+            "start_frame": "起始帧",
+            "frame_duration": "帧持续",
+            "current_frame": "当前帧",
+            "gradient_profile": "渐变配置"
+        },
+        "outputs": {
+            "INT": "整数",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Increment Float": {
+        "title": "递增浮点",
+        "widgets": {
+            "start_value": "起始值",
+            "step": "步长",
+            "start_frame": "起始帧",
+            "frame_duration": "帧持续",
+            "current_frame": "当前帧"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Increment Integer": {
+        "title": "递增整数",
+        "widgets": {
+            "start_value": "起始值",
+            "step": "步长",
+            "start_frame": "起始帧",
+            "frame_duration": "帧持续",
+            "current_frame": "当前帧"
+        },
+        "outputs": {
+            "INT": "整数",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Interpolate Latents": {
+        "title": "插入Latent",
+        "inputs": {
+            "latent1": "Latent_1",
+            "latent2": "Latent_2"
+        },
+        "widgets": {
+            "weight": "权重",
+            "method": "方法"
+        },
+        "outputs": {
+            "LATENT": "Latent",
+            "show_help": "显示帮助"
+        }
     }
 }
