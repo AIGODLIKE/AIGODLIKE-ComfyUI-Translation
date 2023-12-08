@@ -14,7 +14,8 @@
             "ipadapter": "IP适配",
             "clip_vision": "CLIP视觉",
             "image": "图像",
-            "model": "模型"
+            "model": "模型",
+            "attn_mask": "关注层遮罩"
         },
         "widgets": {
             "weight": "权重",
@@ -22,7 +23,9 @@
             "weight_type": "权重类型",
                 "original": "初始",
                 "linear": "线性",
-                "channel penalty": "通道惩罚"
+                "channel penalty": "通道惩罚",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置"
         },
         "outputs": {
             "MODEL": "模型"
@@ -33,11 +36,14 @@
         "inputs": {
             "ipadapter": "IP适配",
             "embeds": "嵌入组",
-            "model": "模型"
+            "model": "模型",
+            "attn_mask": "关注层遮罩"
         },
         "widgets": {
             "weight": "权重",
-            "noise": "噪波增强"
+            "noise": "噪波增强",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置"
         },
         "outputs": {
             "MODEL": "模型"
@@ -94,6 +100,16 @@
         "title": "读取嵌入组",
         "widgets": {
             "embeds": "嵌入组"
+        },
+        "outputs": {
+            "EMBEDS": "嵌入组"
+        }
+    },
+    "IPAdapterBatchEmbeds": {
+        "title": "组合嵌入组",
+        "inputs": {
+            "embed1": "嵌入组1",
+            "embed2": "嵌入组2"
         },
         "outputs": {
             "EMBEDS": "嵌入组"

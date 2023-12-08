@@ -43,5 +43,14 @@
             "(^prompt|^positive)": "正面提示词",
             "meg": "负面提示词"
         }
+    },
+    "Simple String": {
+        "title": "简易字符串",
+        "widgets": {
+            "string": "字符串"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
     }
 }

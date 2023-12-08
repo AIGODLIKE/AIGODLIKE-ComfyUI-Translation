@@ -583,6 +583,26 @@
             "MASK": "遮罩"
         }
     },
+    "ImpactSegsAndMask": {
+        "title": "Seg遮罩",
+        "inputs": {
+            "segs": "Seg",
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "ImpactSegsAndMaskForEach": {
+        "title": "Seg遮罩(批量)",
+        "inputs": {
+            "segs": "Seg",
+            "masks": "遮罩"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
     "Segs & Mask": {
         "title": "Seg遮罩",
         "inputs": {
@@ -623,6 +643,26 @@
             "right_eyebrow": "右眉毛",
             "right_eye": "右眼",
             "right_pupil": "右瞳孔"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "MaskToSEGS_for_AnimateDiff": {
+        "title": "遮罩到Seg(动态扩散)",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "crop_factor": "裁剪系数",
+            "combined": "是否合并",
+                "False": "否",
+                "True": "是",
+            "bbox_fill": "填充BBox",
+                "disabled": "关闭",
+                "enabled": "开启",
+            "drop_size": "最小尺寸",
+            "contour_fill": "填充轮廓"
         },
         "outputs": {
             "SEGS": "Seg"

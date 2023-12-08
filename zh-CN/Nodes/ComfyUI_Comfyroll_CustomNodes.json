@@ -2073,5 +2073,318 @@
             "LATENT": "Latent",
             "show_help": "显示帮助"
         }
+    },
+
+
+    "CR Model List": {
+        "title": "模型列表",
+        "inputs": {
+            "model_list": "模型列表"
+        },
+        "widgets": {
+            "ckpt_name1": "模型名_1",
+            "alias1": "模型别名_1",
+            "ckpt_name2": "模型名_2",
+            "alias2": "模型别名_2",
+            "ckpt_name3": "模型名_3",
+            "alias3": "模型别名_3",
+            "ckpt_name4": "模型名_4",
+            "alias4": "模型别名_4",
+            "ckpt_name5": "模型名_5",
+            "alias5": "模型别名_5"
+        },
+        "outputs": {
+            "MODEL_LIST": "模型列表",
+            "show_text": "显示文本"
+        }
+    },
+    "CR LoRA List": {
+        "title": "LoRA列表",
+        "inputs": {
+            "lora_list": "LoRA列表"
+        },
+        "widgets": {
+            "lora_name1": "LoRA_1",
+            "alias1": "LoRA别名_1",
+            "model_strength_1": "模型强度_1",
+            "clip_strength_1": "CLIP强度_1",
+            "lora_name2": "LoRA_2",
+            "alias2": "LoRA别名_2",
+            "model_strength_2": "模型强度_2",
+            "clip_strength_2": "CLIP强度_2",
+            "lora_name3": "LoRA_3",
+            "alias3": "LoRA别名_3",
+            "model_strength_3": "模型强度_3",
+            "clip_strength_3": "CLIP强度_3"
+        },
+        "outputs": {
+            "LORA_LIST": "LoRA列表",
+            "show_text": "显示文本"
+        }
+    },
+    "CR Text List": {
+        "title": "文本列表",
+        "inputs": {
+            "text_list": "文本列表"
+        },
+        "widgets": {
+            "text_1": "文本_1",
+            "alias1": "别名_1",
+            "text_2": "文本_2",
+            "alias2": "别名_2",
+            "text_3": "文本_3",
+            "alias3": "别名_3",
+            "text_4": "文本_4",
+            "alias4": "别名_4",
+            "text_5": "文本_5",
+            "alias5": "别名_5"
+        },
+        "outputs": {
+            "MODEL_LIST": "文本列表",
+            "show_text": "显示文本"
+        }
+    },
+    "CR Text List Simple": {
+        "title": "文本列表(简易)",
+        "inputs": {
+            "text_list_simple": "简易文本列表"
+        },
+        "widgets": {
+            "text_1": "文本_1",
+            "text_2": "文本_2",
+            "text_3": "文本_3",
+            "text_4": "文本_4",
+            "text_5": "文本_5"
+        },
+        "outputs": {
+            "TEXT_LIST_SIMPLE": "简易文本列表",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Image List": {
+        "title": "图像列表",
+        "inputs": {
+            "image_1": "图像_1",
+            "image_2": "图像_2",
+            "image_3": "图像_3",
+            "image_4": "图像_4",
+            "image_5": "图像_5",
+            "image_list": "图像列表"
+        },
+        "widgets": {
+            "alias1": "别名_1",
+            "alias2": "别名_2",
+            "alias3": "别名_3",
+            "alias4": "别名_4",
+            "alias5": "别名_5"
+        },
+        "outputs": {
+            "IMAGE_LIST": "图像列表",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Image List Simple": {
+        "title": "图像列表(简易)",
+        "inputs": {
+            "image_1": "图像_1",
+            "image_2": "图像_2",
+            "image_3": "图像_3",
+            "image_4": "图像_4",
+            "image_5": "图像_5",
+            "image_list_simple": "简易图像列表"
+        },
+        "outputs": {
+            "IMAGE_LIST_SIMPLE": "简易图像列表",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Input Text List": {
+        "title": "文本输入列表",
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "TEXT_LIST_SIMPLE": "简易文本列表",
+            "show_help": "显示帮助"
+        }
+    },
+
+
+
+    "CR Cycle Moddel": {
+        "title": "循环模型",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "model_list": "模型列表"
+        },
+        "widgets": {
+            "mode": "模式",
+            "frame_interval": "帧间隔",
+            "loops": "循环次数",
+            "current_frame": "当前帧"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "VAE": "VAE",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Cycle LoRAs": {
+        "title": "循环LoRA",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "lora_list": "LoRA列表"
+        },
+        "widgets": {
+            "mode": "模式",
+            "frame_interval": "帧间隔",
+            "loops": "循环次数",
+            "current_frame": "当前帧"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Cycle Text": {
+        "title": "循环文本",
+        "inputs": {
+            "text_list": "文本列表"
+        },
+        "widgets": {
+            "mode": "模式",
+            "frame_interval": "帧间隔",
+            "loops": "循环次数",
+            "current_frame": "当前帧"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Cycle Text Simple": {
+        "title": "循环文本(简易)",
+        "inputs": {
+            "text_list_simple": "简易文本列表"
+        },
+        "widgets": {
+            "mode": "模式",
+            "frame_interval": "帧间隔",
+            "loops": "循环次数",
+            "current_frame": "当前帧",
+            "text_1": "文本_1",
+            "text_2": "文本_2",
+            "text_3": "文本_3",
+            "text_4": "文本_4",
+            "text_5": "文本_5"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Cycle Images": {
+        "title": "循环图像",
+        "inputs": {
+            "image_list": "图像列表"
+        },
+        "widgets": {
+            "mode": "模式",
+            "frame_interval": "帧间隔",
+            "loops": "循环次数",
+            "current_frame": "当前帧"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Cycle Images Simple": {
+        "title": "循环图像(简易)",
+        "inputs": {
+            "image_list_simple": "简易图像列表"
+        },
+        "widgets": {
+            "mode": "模式",
+            "frame_interval": "帧间隔",
+            "loops": "循环次数",
+            "current_frame": "当前帧",
+            "image_1": "图像_1",
+            "image_2": "图像_2",
+            "image_3": "图像_3",
+            "image_4": "图像_4",
+            "image_5": "图像_5"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "show_help": "显示帮助"
+        }
+    },
+
+
+
+    "CR Debatch Frames": {
+        "title": "分解帧",
+        "inputs": {
+            "frames": "图像"
+        },
+        "outputs": {
+            "debatched_frames": "分解图像"
+        }
+    },
+    "CR Current Frame": {
+        "title": "当前帧",
+        "widgets": {
+            "index": "编号",
+            "print_to_console": "输出到控制台"
+        }
+    },
+    
+
+    "CR Load Animation Frames": {
+        "title": "加载序列帧",
+        "widgets": {
+            "image_sequence_folder": "文件夹",
+            "start_index": "起始编号",
+            "max_frames": "最大帧数"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Load Flow Frames": {
+        "title": "加载流程帧",
+        "widgets": {
+            "input_folder": "文件夹",
+            "sort_by": "排序",
+            "current_frame": "当前帧",
+            "skip_stat_frames": "跳过第一帧",
+            "input_path": "输入路径",
+            "file_pattern": "后缀名"
+        },
+        "outputs": {
+            "current_image": "当前图像",
+            "previous_image": "前一图像",
+            "current_frame": "当前帧",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Output Flow Frames": {
+        "title": "输出流程帧",
+        "inputs": {
+            "current_image": "当前图像",
+            "interpolated_img": "插入图像"
+        },
+        "widgets": {
+            "output_folder": "输出文件夹",
+            "filename_prefix": "文件名前缀",
+            "current_frame": "当前帧",
+            "output_path": "输出路径"
+        }
     }
 }

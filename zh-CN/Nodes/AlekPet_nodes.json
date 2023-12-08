@@ -375,5 +375,16 @@
             "CONDITIONING": "条件",
             "STRING": "字符串"
         }
+    },
+    "ArgosTranslateText": {
+        "title": "翻译文本(Argos翻译)",
+        "widgets": {
+            "from_translate": "从",
+            "to_translate": "到",
+            "text": "文本"
+        },
+        "outputs": {
+            "text": "文本"
+        }
     }
 }
