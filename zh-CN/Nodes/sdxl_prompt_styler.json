@@ -2,8 +2,8 @@
     "SDXLPromptStyler": {
         "title": "SDXL风格化提示词",
         "widgets": {
-            "text_positive": "正面提示词",
-            "text_negative": "负面提示词",
+            "text_positive": "正面条件",
+            "text_negative": "负面条件",
             "style": "风格",
                 "base": "基础",
                 "sai-3d-model": "SAI-3D模型",
@@ -117,16 +117,16 @@
                 "Yes": "是"
         },
         "outputs": {
-            "text_positive": "正面提示词",
-            "text_negative": "负面提示词"
+            "text_positive": "正面条件",
+            "text_negative": "负面条件"
         }
     },
     "SDXLPromptStylerAdvanced": {
         "title": "SDXL风格化提示词(高级)",
         "widgets": {
-            "text_positive_g": "正面提示词Big-G",
-            "text_positive_l": "正面提示词L",
-            "text_negative": "负面提示词",
+            "text_positive_g": "正面条件Big-G",
+            "text_positive_l": "正面条件L",
+            "text_negative": "负面条件",
             "style": "风格",
                 "base": "基础",
                 "sai-3d-model": "SAI-3D模型",
@@ -244,12 +244,12 @@
                 "Yes": "是"
         },
         "outputs": {
-            "text_positive_g": "正面提示词Big-G",
-            "text_positive_l": "正面提示词L",
-            "text_positive": "正面提示词",
-            "text_negative_g": "负面提示词Big-G",
-            "text_negative_l": "负面提示词L",
-            "text_negative": "负面提示词"
+            "text_positive_g": "正面条件Big-G",
+            "text_positive_l": "正面条件L",
+            "text_positive": "正面条件",
+            "text_negative_g": "负面条件Big-G",
+            "text_negative_l": "负面条件L",
+            "text_negative": "负面条件"
         }
     }
 }

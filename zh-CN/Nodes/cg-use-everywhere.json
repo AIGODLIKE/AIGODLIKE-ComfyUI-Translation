@@ -41,7 +41,7 @@
         "title": "全局提示词",
         "inputs": {
             "(^prompt|^positive)": "正面提示词",
-            "meg": "负面提示词"
+            "neg": "负面提示词"
         }
     },
     "Simple String": {

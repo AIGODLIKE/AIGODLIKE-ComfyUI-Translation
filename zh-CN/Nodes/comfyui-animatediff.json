@@ -120,8 +120,8 @@
         "inputs": {
             "motion_module": "运动模块",
             "model": "模型",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "latent_image": "Latent"
         },
         "widgets": {

@@ -223,8 +223,8 @@
         "title": "K采样器(Inspire)",
         "inputs": {
             "model": "模型",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "latent_image": "Latent"
         },
         "widgets": {
@@ -249,8 +249,8 @@
         "title": "K采样器(高级Inspire)",
         "inputs": {
             "model": "模型",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "latent_image": "Latent"
         },
         "widgets": {
@@ -302,16 +302,16 @@
             "zipped_prompt": "提示词包"
         },
         "outputs": {
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "name": "名称"
         }
     },
     "ZipPrompt //Inspire": {
         "title": "打包提示词",
         "widgets": {
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "name": "名称"
         },
         "outputs": {
@@ -322,13 +322,13 @@
         "title": "提取提示词",
         "widgets": {
             "image": "图像",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "info": "信息"
         },
         "outputs": {
-            "positive": "正面提示词",
-            "negative": "负面提示词"
+            "positive": "正面条件",
+            "negative": "负面条件"
         }
     },
     "PromptBuilder //Inspire": {
@@ -436,8 +436,8 @@
         "title": "K采样器(过程)",
         "inputs": {
             "model": "模型",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "latent_image": "Latent"
         },
         "widgets": {
@@ -465,8 +465,8 @@
         "title": "K采样器(高级过程)",
         "inputs": {
             "model": "模型",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "latent_image": "Latent",
             "prev_progress_latent_opt": "前过程Latent"
         },
@@ -654,13 +654,13 @@
             "zipped_prompt": "提示词包"
         },
         "widgets": {
-            "default_positive": "默认正面提示词",
-            "default_negative": "默认负面提示词"
+            "default_positive": "默认正面条件",
+            "default_negative": "默认负面条件"
         },
         "outputs": {
             "image": "图像",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "prompt_label": "提示词标签"
         }
     },

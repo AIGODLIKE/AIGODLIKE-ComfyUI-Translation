@@ -3,8 +3,8 @@
         "title": "K采样器(效率)",
         "inputs": {
             "model": "模型",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "latent_image": "Latent",
             "optional_vae": "VAE",
             "script": "脚本"
@@ -53,8 +53,8 @@
         "title": "K采样器(高级效率)",
         "inputs": {
             "model": "模型",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "latent_image": "Latent",
             "optional_vae": "VAE",
             "script": "脚本"
@@ -162,8 +162,8 @@
             "lora_name": "LoRA",
             "lora_model_strength": "LoRA模型强度",
             "lora_clip_strength": "LoRACLIP强度",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "token_normalization": "Token规格化",
                 "none": "无",
                 "length": "长度",
@@ -198,8 +198,8 @@
             "positive_ascore": "正面美学分数",
             "negative_ascore": "负面美学分数",
             "vae_name": "VAE",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "token_normalization": "Token规格化",
                 "none": "无",
                 "length": "长度",
@@ -472,8 +472,8 @@
         "title": "应用ControlNet堆",
         "inputs": {
             "conditioning": "条件",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "cnet_stack": "ControlNet堆"
         },
         "outputs": {
@@ -490,12 +490,12 @@
         "inputs": {
             "base_model": "基础模型",
             "base_clip": "基础CLIP",
-            "base_positive": "基础正面提示词",
-            "base_negative": "负面提示词",
+            "base_positive": "基础正面条件",
+            "base_negative": "负面条件",
             "refiner_model": "模型",
             "refiner_clip": "CLIP",
-            "refiner_positive": "正面提示词",
-            "refiner_negative": "负面提示词"
+            "refiner_positive": "正面条件",
+            "refiner_negative": "负面条件"
         },
         "outputs": {
             "SDXL_TUPLE": "SDXL元组"
@@ -949,7 +949,7 @@
         }
     },
     "XY Input: Positive Prompt S/R": {
-        "title": "替换正面提示词",
+        "title": "替换正面条件",
         "widgets": {
             "search_txt": "检索",
             "replace_count": "替换数量",
@@ -961,7 +961,7 @@
         }
     },
     "XY Input: Negative Prompt S/R": {
-        "title": "替换负面提示词",
+        "title": "替换负面条件",
         "widgets": {
             "search_txt": "检索",
             "replace_count": "替换数量",
@@ -1468,8 +1468,8 @@
                 "Scheduler": "调度器",
                 "Denoise": "降噪",
                 "VAE": "VAE",
-                "Positive Prompt S/R": "正面提示词替换",
-                "Negative Prompt S/R": "负面提示词替换",
+                "Positive Prompt S/R": "正面条件替换",
+                "Negative Prompt S/R": "负面条件替换",
                 "Checkpoint": "模型",
                 "Clip Skip": "CLIP Skip",
                 "LoRA": "LoRA",

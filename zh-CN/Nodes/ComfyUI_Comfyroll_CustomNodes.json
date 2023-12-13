@@ -246,8 +246,8 @@
     "CR Apply Multi-ControlNet": {
         "title": "应用ControlNet堆",
         "inputs": {
-            "base_positive": "正面提示词",
-            "base_negative": "负面提示词",
+            "base_positive": "正面条件",
+            "base_negative": "负面条件",
             "controlnet_stack": "ControlNet堆"
         },
         "widgets": {
@@ -256,8 +256,8 @@
                 "Off": "关闭"
         },
         "outputs": {
-            "base_pos": "正面提示词",
-            "base_neg": "负面提示词"
+            "base_pos": "正面条件",
+            "base_neg": "负面条件"
         }
     },
 
@@ -975,8 +975,8 @@
         "title": "模块节点束",
         "inputs": {
             "model": "模型",
-            "pos": "正面提示词",
-            "neg": "负面提示词",
+            "pos": "正面条件",
+            "neg": "负面条件",
             "latent": "Latent",
             "vae": "VAE",
             "clip": "CLIP",
@@ -1002,8 +1002,8 @@
         },
         "outputs": {
             "model": "模型",
-            "pos": "正面提示词",
-            "neg": "负面提示词",
+            "pos": "正面条件",
+            "neg": "负面条件",
             "latent": "Latent",
             "vae": "VAE",
             "clip": "CLIP",
@@ -1017,8 +1017,8 @@
         "inputs": {
             "pipe": "节点束",
             "model": "模型",
-            "pos": "正面提示词",
-            "neg": "负面提示词",
+            "pos": "正面条件",
+            "neg": "负面条件",
             "latent": "Latent",
             "vae": "VAE",
             "clip": "CLIP",
@@ -1164,8 +1164,8 @@
             "target_height": "目标高度"
         },
         "outputs": {
-            "base_positive": "正面提示词",
-            "base_negative": "负面提示词"
+            "base_positive": "正面条件",
+            "base_negative": "负面条件"
         }
     },
     

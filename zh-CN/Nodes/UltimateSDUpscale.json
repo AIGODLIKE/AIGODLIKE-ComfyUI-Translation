@@ -4,8 +4,8 @@
         "inputs": {
             "image": "图像",
             "model": "模型",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "vae": "VAE",
             "upscale_model": "放大模型"
         },
@@ -49,8 +49,8 @@
         "inputs": {
             "upscaled_image": "放大图像",
             "model": "模型",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "vae": "VAE"
         },
         "widgets": {
