@@ -2267,9 +2267,14 @@
 
 
     "ImpactConcatConditionings": {
-        "title": ""
-    }
-
+        "title": "条件联结",
+        "inputs": {
+            "conditioning": "条件"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
 
 
 
@@ -2361,6 +2366,22 @@
         },
         "outputs": {
             "signal_opt": "信号"
+        }
+    },
+    "ImpactRemoteBoolean": {
+        "title": "远程布尔",
+        "widgets": {
+            "node_id": "节点ID",
+            "widget_name": "组件名称",
+            "value": "值"
+        }
+    },
+    "ImpactRemoteInt": {
+        "title": "远程整数",
+        "widgets": {
+            "node_id": "节点ID",
+            "widget_name": "组件名称",
+            "value": "值"
         }
     },
     "ImpactControlBridge": {
