@@ -1517,5 +1517,11 @@
     "Pass through": "忽略",
     "Take First n": "选择前N项",
     "Take Last n": "选择后N项",
-    "Cancel current run": "取消当前任务"
+    "Cancel current run": "取消当前任务",
+
+    "rg3": "rg3",
+
+    "🎲 Randomize Each Time": "🎲 每次随机",
+    "🎲 New Fixed Random": "🎲 生成随机并固定",
+    "♻️ (Use Last Queued Seed)": "♻️ (使用上次随机种)"
 }
