@@ -1388,6 +1388,11 @@
     "Default Prompt": "默认提示词",
     "Keyframe List": "关键帧列表",
 
+    "decimal": "十进制",
+    "hexadecimal": "十六进制",
+    "alphabetic": "字母",
+    "alphanumeric": "字母数字",
+
 
     "DynThr": "DynThr",
 

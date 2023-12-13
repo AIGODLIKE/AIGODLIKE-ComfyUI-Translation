@@ -528,6 +528,45 @@
             "show_help": "显示帮助"
         }
     },
+    "CR Random Multiline Values": {
+        "title": "随机多行值",
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "value_type": "值类型",
+                "binary": "二进制",
+                "decimal": "十进制",
+                "hexadecimal": "十六进制",
+                "alphabetic": "字母",
+                "alphanumeric": "字母数字",
+            "rows": "行数",
+            "string_length": "字符串长度"
+        },
+        "outputs": {
+            "multiline_text": "多行文本",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Random RGB Gradient": {
+        "title": "随机RGB渐变",
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "rows": "行数"
+        },
+        "outputs": {
+            "multiline_text": "多行文本",
+            "show_help": "显示帮助"
+        }
+    },
 
 
 
