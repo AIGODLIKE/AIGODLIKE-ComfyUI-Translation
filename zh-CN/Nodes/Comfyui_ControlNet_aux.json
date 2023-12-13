@@ -26,6 +26,20 @@
             "IMAGE": "图像"
         }
     },
+    "DensePosePreprocessor": {
+        "title": "Dense姿态预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "model": "模型",
+            "cmap": "色彩映射",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "Scribble_XDoG_Preprocessor": {
         "title": "ScribbleXDoG涂鸦预处理器",
         "inputs": {
