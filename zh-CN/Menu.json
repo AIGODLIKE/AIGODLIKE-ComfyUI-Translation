@@ -1508,5 +1508,14 @@
     "cg-use": "cg-use",
 
     "Show UE links": "显示全局输入连线",
-    "Hide Ue links": "隐藏全局输入连线"
+    "Hide Ue links": "隐藏全局输入连线",
+
+    "cg-img": "cg-img",
+
+    "Always pause": "总是暂停",
+    "Only pause if batch": "仅批次暂停",
+    "Pass through": "忽略",
+    "Take First n": "选择前N项",
+    "Take Last n": "选择后N项",
+    "Cancel current run": "取消当前任务"
 }

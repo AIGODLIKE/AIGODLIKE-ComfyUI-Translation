@@ -1,0 +1,54 @@
+{
+    "Preview Chooser": {
+        "title": "图像选择器",
+        "inputs": {
+            "images": "图像",
+            "latents": "Latent"
+        },
+        "widgets": {
+            "mode": "模式",
+                "Always pause": "总是暂停",
+                "Only pause if batch": "仅批次暂停",
+                "Pass through": "忽略",
+                "Take First n": "选择前N项",
+                "Take Last n": "选择后N项",
+            "count": "数量",
+            "Cancel current run": "取消当前任务",
+            "Progress selected image": "确认选择",
+            "Progress selected images": "确认选择",
+            "Progress selected image as restart": "重新选择",
+            "Progress with nothing selected": "确认选择",
+            "Progress with nothing selected as restart": "重新选择"
+        },
+        "outputs": {
+            "images": "图像",
+            "latent": "Latent"
+        }
+    },
+    "Preview Chooser Fabric": {
+        "title": "图像选择器(Fabric)",
+        "inputs": {
+            "images": "图像",
+            "latents": "Latent"
+        },
+        "widgets": {
+            "mode": "模式",
+                "Always pause": "总是暂停",
+                "Only pause if batch": "仅批次暂停",
+                "Pass through": "忽略",
+                "Take First n": "选择前N项",
+                "Take Last n": "选择后N项",
+            "count": "数量",
+            "Cancel current run": "取消当前任务",
+            "Progress selected image": "确认选择",
+            "Progress selected images": "确认选择",
+            "Progress selected image as restart": "重新选择",
+            "Progress with nothing selected": "确认选择",
+            "Progress with nothing selected as restart": "重新选择"
+        },
+        "outputs": {
+            "positive": "正面Latent",
+            "negative": "负面Latent"
+        }
+    }
+}
