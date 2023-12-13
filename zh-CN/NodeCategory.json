@@ -45,6 +45,7 @@
         "Detector": "检测",
         "Simple": "简易",
         "__for_test": "测试",
+        "__for_testing": "测试",
         "Pipe": "节点束",
         "Upscale": "放大",
         "Sampler": "采样器",
