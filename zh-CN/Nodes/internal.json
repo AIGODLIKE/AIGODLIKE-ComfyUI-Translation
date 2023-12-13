@@ -16,8 +16,8 @@
         "title": "K采样器",
         "inputs": {
             "model": "模型",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "latent_image": "Latent"
         },
         "widgets": {
@@ -41,8 +41,8 @@
         "title": "K采样器(高级)",
         "inputs": {
             "model": "模型",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "latent_image": "Latent"
         },
         "widgets": {
@@ -70,8 +70,8 @@
         "title": "自定义采样器",
         "inputs": {
             "model": "模型",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "sampler": "采样器",
             "sigmas": "Sigmas",
             "latent_image": "Latent"
@@ -423,8 +423,8 @@
             "augmentation_level": "增强"
         },
         "outputs": {
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "latent": "Latent"
         }
     },
@@ -590,8 +590,8 @@
     "ControlNetApplyAdvanced": {
         "title": "ControlNet应用(高级)",
         "inputs": {
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "control_net": "ControlNet",
             "image": "图像"
         },
@@ -601,8 +601,8 @@
             "end_percent": "结束时间"
         },
         "outputs": {
-            "positive": "正面提示词",
-            "negative": "负面提示词"
+            "positive": "正面条件",
+            "negative": "负面条件"
         }
     },
 

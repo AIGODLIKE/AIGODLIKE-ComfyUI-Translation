@@ -159,6 +159,20 @@
             "MASK": "遮罩"
         }
     },
+    "TextImage": {
+        "title": "文本图像",
+        "widgets": {
+            "text": "文本",
+            "font_path": "字体路径",
+            "font_size": "字体大小",
+            "spacing": "间隔",
+            "text_color": "文本颜色"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    },
     "EnhanceImage": {
         "title": "增强图像",
         "inputs": {
@@ -179,6 +193,26 @@
         },
         "outputs": {
             "IMAGE": "图像"
+        }
+    },
+    "SvgImage": {
+        "title": "SVG图像",
+        "inputs": {
+            "upload": "上传"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "layers": "图层"
+        }
+    },
+    "3DImage": {
+        "title": "3D图像",
+        "inputs": {
+            "upload": "上传"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
         }
     },
 
@@ -214,6 +248,63 @@
                 "increment": "增加",
                 "decrement": "减少",
                 "randomize": "随机"
+        }
+    },
+
+
+
+    "EmptyLayer": {
+        "title": "空图层",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "layers": "图层"
+        }
+    },
+    "NewLayer": {
+        "title": "新图层",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "layers": "图层"
+        },
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "width": "宽度",
+            "height": "高度",
+            "z_index": "编号",
+            "scale_option": "缩放方法"
+        },
+        "outputs": {
+            "layers": "图层"
+        }
+    },
+    "ShowLayer": {
+        "title": "显示图层",
+        "inputs": {
+            "layers": "图层"
+        },
+        "widgets": {
+            "Layer Index": "图层编号",
+            "x": "X",
+            "y": "Y",
+            "width": "宽度",
+            "height": "高度",
+            "z_index": "编号",
+            "scale_option": "缩放方法"
+        }
+    },
+    "MergeLayers": {
+        "title": "合并图层",
+        "inputs": {
+            "layers": "图层",
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
         }
     },
 
@@ -265,6 +356,30 @@
             "session_history": "会话历史"
         }
     },
+    "ChatGPTOpenAI": {
+        "title": "ChatGPT",
+        "inputs": {
+            "api_key": "API_Key",
+            "api_url": "API_url"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "system_content": "系统提示词",
+            "model": "模型",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "context_size": "上下文大小"
+        },
+        "outputs": {
+            "text": "文本",
+            "message": "信息",
+            "session_history": "会话历史"
+        }
+    },
     "ShowTextForGPT": {
         "title": "显示文本",
         "widgets": {
@@ -282,6 +397,27 @@
         },
         "outputs": {
             "INT": "整数"
+        }
+    },
+
+
+
+    "SpeechRecognition": {
+        "title": "语音识别",
+        "widgets": {
+            "START": "开始"
+        },
+        "outputs": {
+            "prompt": "提示词"
+        }
+    },
+    "SpeechSynthesis": {
+        "title": "语音合成",
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "STRING": "字符串"
         }
     }
 }

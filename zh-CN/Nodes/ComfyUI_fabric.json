@@ -47,8 +47,8 @@
         "title": "K采样器(Fabric)",
         "inputs": {
             "model": "模型",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "latent_image": "Latent",
             "clip": "CLIP",
             "pos_latents": "正面Latent",
@@ -78,8 +78,8 @@
         "title": "K采样器(FabricAdv)",
         "inputs": {
             "model": "模型",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "latent_image": "Latent",
             "clip": "CLIP",
             "null_pos": "空正面条件",
@@ -112,8 +112,8 @@
         "title": "K采样器(高级FabricAdv)",
         "inputs": {
             "model": "模型",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "latent_image": "Latent",
             "clip": "CLIP",
             "null_pos": "空正面条件",

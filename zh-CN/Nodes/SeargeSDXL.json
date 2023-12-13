@@ -3,11 +3,11 @@
         "title": "SearSDXL采样器v2",
         "inputs": {
             "base_model": "基础模型",
-            "base_positive": "基础正面提示词",
-            "base_negative": "基础负面提示词",
+            "base_positive": "基础正面条件",
+            "base_negative": "基础负面条件",
             "refiner_model": "优化模型",
-            "refiner_positive": "优化正面提示词",
-            "refiner_negative": "优化负面提示词",
+            "refiner_positive": "优化正面条件",
+            "refiner_negative": "优化负面条件",
             "latent_image": "Latent图像",
             "sampler_name": "采样器",
             "scheduler": "调度器"
@@ -30,11 +30,11 @@
         "title": "SearSDXL图生图采样器v2",
         "inputs": {
             "base_model": "基础模型",
-            "base_positive": "基础正面提示词",
-            "base_negative": "基础负面提示词",
+            "base_positive": "基础正面条件",
+            "base_negative": "基础负面条件",
             "refiner_model": "优化模型",
-            "refiner_positive": "优化正面提示词",
-            "refiner_negative": "优化负面提示词",
+            "refiner_positive": "优化正面条件",
+            "refiner_negative": "优化负面条件",
             "image": "图像",
             "vae": "VAE",
             "sampler_name": "采样器",
@@ -112,10 +112,10 @@
             "refiner_height": "优化高度"
         },
         "outputs": {
-            "base_positive": "基础正面提示词",
-            "base_negative": "基础负面提示词",
-            "refiner_positive": "优化正面提示词",
-            "refiner_negative": "优化负面提示词"
+            "base_positive": "基础正面条件",
+            "base_negative": "基础负面条件",
+            "refiner_positive": "优化正面条件",
+            "refiner_negative": "优化负面条件"
         }
     },
     "SeargeSDXLBasePromptEncoder": {
@@ -136,8 +136,8 @@
             "target_height": "目标高度"
         },
         "outputs": {
-            "base_positive": "基础正面提示词",
-            "base_negative": "基础负面提示词"
+            "base_positive": "基础正面条件",
+            "base_negative": "基础负面条件"
         }
     },
     "SeargeSDXLRefinerPromptEncoder": {
@@ -358,7 +358,7 @@
             "main_prompt": "主提示词",
             "secondary_prompt": "次提示词",
             "style_prompt": "风格提示词",
-            "negative_prompt": "负面提示词",
+            "negative_prompt": "负面条件",
             "negative_style": "负面风格"
         },
         "outputs": {
@@ -498,7 +498,7 @@
             "main_prompt": "主提示词",
             "secondary_prompt": "次提示词",
             "style_prompt": "风格提示词",
-            "negative_prompt": "负面提示词",
+            "negative_prompt": "负面条件",
             "negative_style": "负面风格",
             "image": "图像",
             "mask": "遮罩"
@@ -630,11 +630,11 @@
         "title": "SearSDXL采样器",
         "inputs": {
             "base_model": "基础模型",
-            "base_positive": "基础正面提示词",
-            "base_negative": "基础负面提示词",
+            "base_positive": "基础正面条件",
+            "base_negative": "基础负面条件",
             "refiner_model": "优化模型",
-            "refiner_positive": "优化正面提示词",
-            "refiner_negative": "优化负面提示词",
+            "refiner_positive": "优化正面条件",
+            "refiner_negative": "优化负面条件",
             "latent_image": "Latent图像"
         },
         "widgets": {
@@ -654,11 +654,11 @@
         "title": "SearSDXL图生图采样器",
         "inputs": {
             "base_model": "基础模型",
-            "base_positive": "基础正面提示词",
-            "base_negative": "基础负面提示词",
+            "base_positive": "基础正面条件",
+            "base_negative": "基础负面条件",
             "refiner_model": "优化模型",
-            "refiner_positive": "优化正面提示词",
-            "refiner_negative": "优化负面提示词",
+            "refiner_positive": "优化正面条件",
+            "refiner_negative": "优化负面条件",
             "image": "图像",
             "vae": "VAE",
             "sampler_name": "采样器",

@@ -221,16 +221,16 @@
             "model": "模型",
             "clip": "CLIP",
             "vae": "VAE",
-            "positive": "正面提示词",
-            "negative": "负面提示词"
+            "positive": "正面条件",
+            "negative": "负面条件"
         },
         "outputs": {
             "bus": "总线",
             "model": "模型",
             "clip": "CLIP",
             "vae": "VAE",
-            "positive": "正面提示词",
-            "negative": "负面提示词"
+            "positive": "正面条件",
+            "negative": "负面条件"
         }
     },
     
@@ -2490,8 +2490,8 @@
         "inputs": {
             "model": "模型",
             "seed": "随机种",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "latent_image": "Latent"
         },
         "widgets": {
@@ -2511,8 +2511,8 @@
         "inputs": {
             "model": "模型",
             "seed": "随机种",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "latent_image": "Latent"
         },
         "widgets": {
@@ -2531,8 +2531,8 @@
         "title": "K采样器(Cycle)",
         "inputs": {
             "model": "模型",
-            "positive": "正面提示词",
-            "negative": "负面提示词",
+            "positive": "正面条件",
+            "negative": "负面条件",
             "latent_image": "Latent",
             "vae": "VAE",
             "secondary_model": "第二模型",

@@ -1,0 +1,10 @@
+{
+    "Terminal Log (Manager)": {
+        "title": "终端日志(管理器)",
+        "widgets": {
+            "text": "文本",
+            "mode": "模式",
+            "lines": "行数"
+        }
+    }
+}

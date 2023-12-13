@@ -13,7 +13,7 @@
             "size": "分辨率",
             "num_images": "图像数量",
             "use_fp16": "使用fp16",
-            "positive_prompt": "正面提示词"
+            "positive_prompt": "正面条件"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -34,7 +34,7 @@
             "width": "宽度",
             "num_images": "图像数量",
             "use_fp16": "使用fp16",
-            "positive_prompt": "正面提示词"
+            "positive_prompt": "正面条件"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -56,7 +56,7 @@
             "width": "宽度",
             "num_images": "图像数量",
             "use_fp16": "使用fp16",
-            "positive_prompt": "正面提示词"
+            "positive_prompt": "正面条件"
         },
         "outputs": {
             "IMAGE": "图像"

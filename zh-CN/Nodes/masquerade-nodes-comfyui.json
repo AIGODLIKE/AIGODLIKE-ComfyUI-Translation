@@ -5,8 +5,8 @@
             "image": "图像"
         },
         "widgets": {
-            "prompt": "正面提示词",
-            "negative_prompt": "负面提示词",
+            "prompt": "正面条件",
+            "negative_prompt": "负面条件",
             "precision": "置信度",
             "normalize": "规格化"
         },

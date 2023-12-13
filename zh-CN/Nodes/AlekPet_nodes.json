@@ -376,7 +376,7 @@
             "STRING": "字符串"
         }
     },
-    "ArgosTranslateText": {
+    "ArgosTranslateTextNode": {
         "title": "翻译文本(Argos翻译)",
         "widgets": {
             "from_translate": "从",

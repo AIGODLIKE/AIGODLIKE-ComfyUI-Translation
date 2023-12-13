@@ -173,6 +173,7 @@
     "Node name for S&R": "用于搜索的节点名",
     "Select Nodes": "选择全部节点",
     "Align": "对齐",
+    "Align Selected To": "将选中节点对齐到",
     "Top": "上",
     "Bottom": "下",
     "Left": "左",
@@ -187,6 +188,8 @@
     "Unfreeze all": "取消冻结所有",
     "Pin all Nodes": "固定所有节点",
     "Unpin all Nodes": "取消固定所有节点",
+    "Convert to Group Node": "转换为节点组",
+    "Convert to nodes": "转换为节点",
 
     "Open in MaskEditor": "在遮罩编辑器中打开",
 
@@ -259,6 +262,8 @@
     "Name": "名称",
     "Filename": "文件名",
     "Download": "下载",
+    "When loading the graph, the following node types were not found: ": "读取节点树时未找到以下节点: ",
+    "Nodes that have failed to load will show as red on the graph.": "加载失败的节点会显示为红色",
 
     "Preview method: None (very fast)": "预览方法：无(最快)",
     "Preview method: Auto": "预览方法：自动",
@@ -1383,6 +1388,11 @@
     "Default Prompt": "默认提示词",
     "Keyframe List": "关键帧列表",
 
+    "decimal": "十进制",
+    "hexadecimal": "十六进制",
+    "alphabetic": "字母",
+    "alphanumeric": "字母数字",
+
 
     "DynThr": "DynThr",
 
@@ -1498,5 +1508,14 @@
     "cg-use": "cg-use",
 
     "Show UE links": "显示全局输入连线",
-    "Hide Ue links": "隐藏全局输入连线"
+    "Hide Ue links": "隐藏全局输入连线",
+
+    "cg-img": "cg-img",
+
+    "Always pause": "总是暂停",
+    "Only pause if batch": "仅批次暂停",
+    "Pass through": "忽略",
+    "Take First n": "选择前N项",
+    "Take Last n": "选择后N项",
+    "Cancel current run": "取消当前任务"
 }

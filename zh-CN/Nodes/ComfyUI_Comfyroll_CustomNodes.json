@@ -246,8 +246,8 @@
     "CR Apply Multi-ControlNet": {
         "title": "应用ControlNet堆",
         "inputs": {
-            "base_positive": "正面提示词",
-            "base_negative": "负面提示词",
+            "base_positive": "正面条件",
+            "base_negative": "负面条件",
             "controlnet_stack": "ControlNet堆"
         },
         "widgets": {
@@ -256,8 +256,8 @@
                 "Off": "关闭"
         },
         "outputs": {
-            "base_pos": "正面提示词",
-            "base_neg": "负面提示词"
+            "base_pos": "正面条件",
+            "base_neg": "负面条件"
         }
     },
 
@@ -525,6 +525,45 @@
             "rgb_2": "RGB_2",
             "rgb_3": "RGB_3",
             "rgb_4": "RGB_4",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Random Multiline Values": {
+        "title": "随机多行值",
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "value_type": "值类型",
+                "binary": "二进制",
+                "decimal": "十进制",
+                "hexadecimal": "十六进制",
+                "alphabetic": "字母",
+                "alphanumeric": "字母数字",
+            "rows": "行数",
+            "string_length": "字符串长度"
+        },
+        "outputs": {
+            "multiline_text": "多行文本",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Random RGB Gradient": {
+        "title": "随机RGB渐变",
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "rows": "行数"
+        },
+        "outputs": {
+            "multiline_text": "多行文本",
             "show_help": "显示帮助"
         }
     },
@@ -975,8 +1014,8 @@
         "title": "模块节点束",
         "inputs": {
             "model": "模型",
-            "pos": "正面提示词",
-            "neg": "负面提示词",
+            "pos": "正面条件",
+            "neg": "负面条件",
             "latent": "Latent",
             "vae": "VAE",
             "clip": "CLIP",
@@ -1002,8 +1041,8 @@
         },
         "outputs": {
             "model": "模型",
-            "pos": "正面提示词",
-            "neg": "负面提示词",
+            "pos": "正面条件",
+            "neg": "负面条件",
             "latent": "Latent",
             "vae": "VAE",
             "clip": "CLIP",
@@ -1017,8 +1056,8 @@
         "inputs": {
             "pipe": "节点束",
             "model": "模型",
-            "pos": "正面提示词",
-            "neg": "负面提示词",
+            "pos": "正面条件",
+            "neg": "负面条件",
             "latent": "Latent",
             "vae": "VAE",
             "clip": "CLIP",
@@ -1164,8 +1203,8 @@
             "target_height": "目标高度"
         },
         "outputs": {
-            "base_positive": "正面提示词",
-            "base_negative": "负面提示词"
+            "base_positive": "正面条件",
+            "base_negative": "负面条件"
         }
     },
     

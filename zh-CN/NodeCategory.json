@@ -45,6 +45,7 @@
         "Detector": "检测",
         "Simple": "简易",
         "__for_test": "测试",
+        "__for_testing": "测试",
         "Pipe": "节点束",
         "Upscale": "放大",
         "Sampler": "采样器",
@@ -177,6 +178,7 @@
             "🔧 Conversion": "🔧 转换",
             "🔢 Index": "🔢 编号",
             "🔂 Process": "🔂 处理",
+            "🎲 Random": "🎲 随机",
         "⛏️ Model Merge": "⛏️ 模型融合",
         "🛩️ Pipe": "🛩️ 节点束",
             "✈️ Module": "✈️ 模块",
@@ -211,6 +213,7 @@
     "Mixlab": "Mixlab节点",
         "ConsistencyDecoder": "稳定解码",
     "♾️Mixlab": "♾️Mixlab节点",
+        "layer": "图层",
     "segment_anything": "Segment Anything",
 
 
