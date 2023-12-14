@@ -29,7 +29,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 
 |Custom Node Name|zh-CN|zh-TW|English|Japanese|Korean|
 |:----|:----|:----|:----|:----|:----|
-|[Advanced Encode](https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb)|√|√|√|TODO|
+|[Advanced Encode](https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb)|√|√|√|TODO|TODO|
 |[Advanced ControlNet](https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet)|√|√|√|TODO|TODO|
 |[AGL-ComfyUI-Translation](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION)|√|√|√|√|TODO|
 |[AlekPet Nodes](https://github.com/AlekPet/ComfyUI_Custom_Nodes_AlekPet)|√|√|√|√|TODO|
