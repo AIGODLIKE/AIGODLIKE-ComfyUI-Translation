@@ -1,0 +1,1750 @@
+{
+    "Note": {
+        "title": "메모"
+    },
+    "PrimitiveNode": {
+        "title": "프리미티브",
+        "outputs": {
+            "connect to widget input": "위젯 입력에 연결",
+            "Output": "출력"
+        }
+    },
+    "Reroute": {
+        "title": "경로 재설정"
+    },
+    "KSampler": {
+        "title": "K샘플러",
+        "inputs": {
+            "model": "모델",
+            "positive": "포지티브",
+            "negative": "네거티브",
+            "latent_image": "레이턴트"
+        },
+        "widgets": {
+            "seed": "시드",
+            "control_after_generate": "생성 후 제어",
+                "fixed": "고정",
+                "increment": "증가",
+                "decrement": "감소",
+                "randomize": "랜덤",
+            "steps": "스텝",
+            "cfg": "CFG",
+            "sampler_name": "샘플러",
+            "scheduler": "스케쥴러",
+            "denoise": "디노이즈"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+    "KSamplerAdvanced": {
+        "title": "K샘플러 (고급)",
+        "inputs": {
+            "model": "모델",
+            "positive": "포지티브",
+            "negative": "네거티브",
+            "latent_image": "레이턴트"
+        },
+        "widgets": {
+            "add_noise": "노이즈 추가",
+            "noise_seed": "노이즈 시드",
+            "control_after_generate": "생성 후 제어",
+                "fixed": "고정",
+                "increment": "증가",
+                "decrement": "감소",
+                "randomize": "랜덤",
+            "steps": "스텝",
+            "cfg": "CFG",
+            "sampler_name": "샘플러",
+            "scheduler": "스케쥴러",
+            "denoise": "디노이즈",
+            "start_at_step": "노이즈 제거 시작 스텝",
+            "end_at_step": "노이즈 제거 종료 스텝",
+            "return_with_leftover_noise": "남은 노이즈 반환"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+    "SamplerCustom": {
+        "title": "커스텀 샘플러",
+        "inputs": {
+            "model": "모델",
+            "positive": "포지티브",
+            "negative": "네거티브",
+            "sampler": "샘플러",
+            "sigmas": "시그마",
+            "latent_image": "레이턴트"
+        },
+        "widgets": {
+            "add_noise": "노이즈 추가",
+            "noise_seed": "노이즈 시드",
+            "control_after_generate": "생성 후 제어",
+            "cfg": "CFG"
+        },
+        "outputs": {
+            "output": "출력",
+            "denoised_output": "디노이즈 출력"
+        }
+    },
+    "KarrasScheduler": {
+        "title": "카라스 스케쥴러",
+        "widgets": {
+            "steps": "스텝",
+            "sigma_max": "시그마 최대값",
+            "sigma_min": "시그마 최소값",
+            "rho": "rho"
+        },
+        "outputs": {
+            "SIGMAS": "시그마"
+        }
+    },
+    "ExponentialScheduler": {
+        "title": "엑스포넨셜 스케쥴러",
+        "widgets": {
+            "steps": "스텝",
+            "sigma_max": "시그마 최대값",
+            "sigma_min": "시그마 최소값"
+        },
+        "outputs": {
+            "SIGMAS": "시그마"
+        }
+    },
+    "PolyexponentialScheduler": {
+        "title": "폴리엑스포넨셜 스케쥴러",
+        "widgets": {
+            "steps": "스텝",
+            "sigma_max": "시그마 최대값",
+            "sigma_min": "시그마 최소값",
+            "rho": "rho"
+        },
+        "outputs": {
+            "SIGMAS": "시그마"
+        }
+    },
+    "VPScheduler": {
+        "title": "VP 스케쥴러",
+        "widgets": {
+            "steps": "스텝",
+            "beta_d": "베타_D",
+            "beta_min": "베타_최소값",
+            "eps_s": "eps_s"
+        },
+        "outputs": {
+            "SIGMAS": "시그마"
+        }
+    },
+    "KSamplerSelect": {
+        "title": "K샘플러 선택",
+        "widgets": {
+            "sampler_name": "샘플러"
+        },
+        "outputs": {
+            "SAMPLER": "샘플러"
+        }
+    },
+    "SamplerDPMPP_2M_SDE": {
+        "title": "DPMPP_2M_SDE 샘플러",
+        "widgets": {
+            "solver_type": "해결 타입",
+            "eta": "eta",
+            "s_noise": "s_노이즈",
+            "noise_device": "노이즈 장치"
+        },
+        "outputs": {
+            "SAMPLER": "샘플러"
+        }
+    },
+    "SamplerDPMPP_SDE": {
+        "title": "DPMPP_SDE 샘플러",
+        "widgets": {
+            "eta": "eta",
+            "s_noise": "s_노이즈",
+            "r": "r",
+            "noise_device": "노이즈 장치"
+        },
+        "outputs": {
+            "SAMPLER": "샘플러"
+        }
+    },
+    "BasicScheduler": {
+        "title": "기본 스케쥴러",
+        "inputs": {
+            "model": "모델"
+        },
+        "widgets": {
+            "scheduler": "스케쥴러",
+            "steps": "스텝"
+        },
+        "outputs": {
+            "SIGMAS": "시그마"
+        }
+    },
+    "SDTurboScheduler": {
+        "title": "SD 터보 스케쥴러",
+        "inputs": {
+            "model": "모델"
+        },
+        "widgets": {
+            "steps": "스텝"
+        },
+        "outputs": {
+            "SIGMAS": "시그마"
+        }
+    },
+    "SplitSigmas": {
+        "title": "시그마 분할",
+        "inputs": {
+            "sigmas": "시그마"
+        },
+        "widgets": {
+            "step": "스텝"
+        },
+        "outputs": {
+            "SIGMAS": "시그마"
+        }
+    },
+    "FlipSigmas": {
+        "title": "시그마 뒤집기",
+        "inputs": {
+            "sigmas": "시그마"
+        },
+        "outputs": {
+            "SIGMAS": "시그마"
+        }
+    },
+
+
+    "VideoLinearCFGGuidance": {
+        "title": "비디오 선형 CFG 가이드",
+        "inputs": {
+            "model": "모델"
+        },
+        "widgets": {
+            "min_cfg": "CFG 최소값"
+        },
+        "outputs": {
+            "MODEL": "모델"
+        }
+    },
+
+
+    "ImageOnlyCheckpointLoader": {
+        "title": "체크포인트 불러오기 (이미지 전용)",
+        "widgets": {
+            "ckpt_name": "모델"
+        },
+        "outputs": {
+            "MODEL": "모델",
+            "CLIP_VISION": "클립 비전",
+            "VAE": "VAE"
+        }
+    },
+    "LoraLoaderModelOnly": {
+        "title": "로라 불러오기 (모델 전용)",
+        "inputs": {
+            "model": "모델"
+        },
+        "widgets": {
+            "lora_name": "로라",
+            "strength_model": "가중치"
+        },
+        "outputs": {
+            "MODEL": "모델"
+        }
+    },
+
+
+    "CheckpointLoaderSimple": {
+        "title": "체크포인트 불러오기 (단순)",
+        "widgets": {
+            "ckpt_name": "모델"
+        },
+        "outputs": {
+            "MODEL": "모델",
+            "CLIP": "클립",
+            "VAE": "VAE"
+        }
+    },
+    "VAELoader": {
+        "title": "VAE 불러오기",
+        "widgets": {
+            "vae_name": "VAE"
+        },
+        "outputs": {
+            "vae": "VAE"
+        }
+    },
+    "LoraLoader": {
+        "title": "로라 불러오기",
+        "inputs": {
+            "model": "모델",
+            "clip": "클립"
+        },
+        "widgets": {
+            "lora_name": "로라",
+            "strength_model": "가중치",
+            "strength_clip": "가중치 (클립)"
+        },
+        "outputs": {
+            "MODEL": "모델",
+            "CLIP": "클립"
+        }
+    },
+    "ControlNetLoader": {
+        "title": "컨트롤넷 불러오기",
+        "widgets": {
+            "control_net_name": "컨트롤넷"
+        },
+        "outputs": {
+            "CONTROL_NET": "컨트롤넷"
+        }
+    },
+    "DiffControlNetLoader": {
+        "title": "컨트롤넷 불러오기 (디프)",
+        "inputs": {
+            "MODEL": "모델"
+        },
+        "widgets": {
+            "control_net_name": "컨트롤넷"
+        },
+        "outputs": {
+            "CONTROL_NET": "컨트롤넷"
+        }
+    },
+    "StyleModelLoader": {
+        "title": "스타일 모델 불러오기",
+        "widgets": {
+            "style_model_name": "스타일 모델"
+        },
+        "outputs": {
+            "STYLE_MODEL": "스타일 모델",
+            "style_model": "스타일 모델"
+        }
+    },
+    "CLIPVisionLoader": {
+        "title": "클립 비전 불러오기",
+        "widgets": {
+            "clip_name": "클립 비전"
+        },
+        "outputs": {
+            "CLIP_VISION": "클립 비전"
+        }
+    },
+    "unCLIPCheckpointLoader": {
+        "title": "언 클립 체크포인트 불러오기",
+        "widgets": {
+            "ckpt_name": "모델"
+        },
+        "outputs": {
+            "MODEL": "모델",
+            "CLIP": "클립",
+            "VAE": "VAE",
+            "CLIP_VISION": "클립 비전"
+        }
+    },
+    "GLIGENLoader": {
+        "title": "글리겐 불러오기",
+        "widgets": {
+            "gligen_name": "글리겐"
+        },
+        "outputs": {
+            "GLIGEN": "글리겐"
+        }
+    },
+    "UpscaleModelLoader": {
+        "title": "업스케일 모델 불러오기",
+        "widgets": {
+            "model_name": "모델"
+        },
+        "outputs": {
+            "UPSCALE_MODEL": "업스케일 모델"
+        }
+    },
+    "HypernetworkLoader": {
+        "title": "하이퍼 네트워크 불러오기",
+        "inputs": {
+            "model": "모델"
+        },
+        "widgets": {
+            "hypernetwork_name": "하이퍼 네트워크",
+            "strength": "가중치"
+        },
+        "outputs": {
+            "MODEL": "모델"
+        }
+    },
+
+
+
+
+    "StyleModelApply": {
+        "title": "스타일 모델 적용",
+        "inputs": {
+            "conditioning": "조건 설정",
+            "style_model": "스타일 모델",
+            "clip_vision_output": "클립 비전 출력"
+        },
+        "outputs": {
+            "CONDITIONING": "조건 설정"
+        }
+    },
+    "GLIGENTextBoxApply": {
+        "title": "글리겐 텍스트 박스 적용",
+        "inputs": {
+            "conditioning_to": "조건 설정",
+            "clip": "클립",
+            "gligen_textbox_model": "글리겐"
+        },
+        "widgets": {
+            "text": "텍스트",
+            "width": "너비",
+            "height": "높이",
+            "x": "X",
+            "y": "Y"
+        },
+        "outputs": {
+            "CONDITIONING": "조건 설정"
+        }
+    },
+    "SVD_img2vid_Conditioning": {
+        "title": "SVD_img2vid 조건 설정",
+        "inputs": {
+            "clip_vision": "클립 비전",
+            "init_image": "초기 이미지",
+            "VAE": "VAE"
+        },
+        "widgets": {
+            "width": "너비",
+            "height": "높이",
+            "video_frames": "비디오 프레임",
+            "motion_bucket_id": "모션 버킷 ID",
+            "fps": "FPS",
+            "augmentation_level": "증강 수준"
+        },
+        "outputs": {
+            "positive": "포지티브",
+            "negative": "네거티브",
+            "latent": "레이턴트"
+        }
+    },
+
+
+
+    "CLIPTextEncode": {
+        "title": "클립 텍스트 인코딩",
+        "inputs": {
+            "clip": "클립"
+        },
+        "widgets": {
+            "text": "텍스트"
+        },
+        "outputs": {
+            "CONDITIONING": "조건 설정"
+        }
+    },
+    "CLIPSetLastLayer": {
+        "title": "클립 스킵",
+        "inputs": {
+            "clip": "클립"
+        },
+        "widgets": {
+            "stop_at_clip_layer": "클립 레이어에서 중지"
+        },
+        "outputs": {
+            "CLIP": "클립"
+        }
+    },
+    "Conditioning (Average)": {
+        "title": "조건 설정 (평균)",
+        "inputs": {
+            "conditioning_to": "조건 설정 대상",
+            "conditioning_from": "조건 설정 원본"
+        },
+        "widgets": {
+            "conditioning_to_strength": "조건 설정 강도"
+        },
+        "outputs": {
+            "CONDITIONING": "조건 설정"
+        }
+    },
+    "ConditioningAverage": {
+        "title": "조건 설정 (평균)",
+        "inputs": {
+            "conditioning_to": "조건 설정 대상",
+            "conditioning_from": "조건 설정 원본"
+        },
+        "widgets": {
+            "conditioning_to_strength": "조건 설정 강도"
+        },
+        "outputs": {
+            "CONDITIONING": "조건 설정"
+        }
+    },
+    "ConditioningCombine": {
+        "title": "조건 설정 (결합)",
+        "inputs": {
+            "conditioning_1": "조건 설정1",
+            "conditioning_2": "조건 설정2"
+        },
+        "outputs": {
+            "CONDITIONING": "조건 설정"
+        }
+    },
+    "ConditioningConcat": {
+        "title": "조건 설정 (연결)",
+        "widgets": {
+            "conditioning_to": "조건 설정 대상",
+            "conditioning_from": "조건 설정 원본"
+        },
+        "outputs": {
+            "CONDITIONING": "조건 설정"
+        }
+    },
+    "ConditioningSetArea": {
+        "title": "조건 설정 (영역)",
+        "inputs": {
+            "conditioning": "조건 설정"
+        },
+        "widgets": {
+            "width": "너비",
+            "height": "높이",
+            "x": "X",
+            "y": "Y",
+            "strength": "가중치"
+        },
+        "outputs": {
+            "CONDITIONING": "조건 설정"
+        }
+    },
+    "ConditioningSetAreaPercentage": {
+        "title": "조건 설정 (영역/백분율)",
+        "inputs": {
+            "conditioning": "조건 설정"
+        },
+        "widgets": {
+            "width": "너비",
+            "height": "높이",
+            "x": "X",
+            "y": "Y",
+            "strength": "가중치"
+        },
+        "outputs": {
+            "CONDITIONING": "조건 설정"
+        }
+    },
+    "ConditioningSetMask": {
+        "title": "조건 설정 (마스크)",
+        "inputs": {
+            "conditioning": "조건 설정",
+            "mask": "마스크"
+        },
+        "widgets": {
+            "strength": "가중치",
+            "set_cond_area": "조건 설정 영역 설정",
+                "default": "기본",
+                "mask bounds": "마스크 경계"
+        },
+        "outputs": {
+            "CONDITIONING": "조건 설정"
+        }
+    },
+    "CLIPVisionEncode": {
+        "title": "클립 비전 인코딩",
+        "inputs": {
+            "clip_vision": "클립 비전",
+            "image": "이미지"
+        },
+        "outputs": {
+            "CLIP_VISION_OUTPUT": "클립 비전 출력"
+        }
+    },
+    "unCLIPConditioning": {
+        "title": "언 클립 조건 설정",
+        "inputs": {
+            "conditioning": "조건 설정",
+            "clip_vision_output": "클립 비전 출력"
+        },
+        "widgets": {
+            "strength": "가중치",
+            "noise_augmentation": "노이즈 증강"
+        },
+        "outputs": {
+            "CONDITIONING": "조건 설정"
+        }
+    },
+    "ControlNetApply": {
+        "title": "컨트롤넷 적용",
+        "inputs": {
+            "conditioning": "조건 설정",
+            "control_net": "컨트롤넷",
+            "image": "이미지"
+        },
+        "widgets": {
+            "strength": "가중치"
+        },
+        "outputs": {
+            "CONDITIONING": "조건 설정"
+        }
+    },
+    "ControlNetApplyAdvanced": {
+        "title": "컨트롤넷 적용 (고급)",
+        "inputs": {
+            "positive": "포지티브",
+            "negative": "네거티브",
+            "control_net": "컨트롤넷",
+            "image": "이미지"
+        },
+        "widgets": {
+            "strength": "가중치",
+            "start_percent": "시작 시간",
+            "end_percent": "종료 시간"
+        },
+        "outputs": {
+            "positive": "포지티브",
+            "negative": "네거티브"
+        }
+    },
+
+
+
+
+    "VAEEncodeForInpaint": {
+        "title": "VAE 인코더 (인페인트 전용)",
+        "inputs": {
+            "pixels": "이미지",
+            "vae": "VAE",
+            "mask": "마스크"
+        },
+        "widgets": {
+            "grow_mask_by": "마스크 확장 (비율)"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+    "SetLatentNoiseMask": {
+        "title": "레이턴트 노이즈 마스크 설정",
+        "inputs": {
+            "samples": "레이턴트",
+            "mask": "마스크"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+
+
+    "LatentFromBatch": {
+        "title": "배치에서 레이턴트",
+        "inputs": {
+            "samples": "레이턴트"
+        },
+        "widgets": {
+            "batch_index": "배치 인덱스",
+            "length": "길이"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+    "RepeatLatentBatch": {
+        "title": "레이턴트 배치 반복",
+        "inputs": {
+            "samples": "레이턴트"
+        },
+        "widgets": {
+            "amount": "횟수"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+    "RebatchLatents": {
+        "title": "레이턴트 재배치",
+        "inputs": {
+            "latents": "레이턴트"
+        },
+        "widgets": {
+            "batch_size": "배치 크기"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+
+
+    "LatentRotate": {
+        "title": "레이턴트 회전",
+        "inputs": {
+            "samples": "레이턴트"
+        },
+        "widgets": {
+            "rotation": "회전",
+                "none": "없음",
+                "90 degrees": "90도",
+                "180 degrees": "180도",
+                "270 degrees": "270도"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+    "LatentFlip": {
+        "title": "레이턴트 뒤집기",
+        "inputs": {
+            "samples": "레이턴트"
+        },
+        "widgets": {
+            "flip_method": "뒤집기 방법",
+                "x-axis: vertically": "X축: 세로로",
+                "y-axis: horizontally": "Y축: 가로로"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+    "LatentCrop": {
+        "title": "레이턴트 자르기",
+        "inputs": {
+            "samples": "레이턴트"
+        },
+        "widgets": {
+            "width": "너비",
+            "height": "높이",
+            "x": "X",
+            "y": "Y"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+
+
+    "LatentAdd": {
+        "title": "레이턴트 추가",
+        "inputs": {
+            "samples1": "레이턴트1",
+            "samples2": "레이턴트2"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+    "LatentSubtract": {
+        "title": "레이턴트 빼기",
+        "inputs": {
+            "samples1": "레이턴트1",
+            "samples2": "레이턴트2"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+    "LatentMultiply": {
+        "title": "레이턴트 곱하기",
+        "inputs": {
+            "samples": "레이턴트"
+        },
+        "widgets": {
+            "multiplier": "계수"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+    "LatentInterpolate": {
+        "title": "레이턴트 보간",
+        "inputs": {
+            "samples1": "레이턴트1",
+            "samples2": "레이턴트2"
+        },
+        "widgets": {
+            "ratio": "비율"
+        },
+        "outputs": {
+            "Latent": "레이턴트"
+        }
+    },
+
+
+    "VAEDecode": {
+        "title": "VAE 디코딩",
+        "inputs": {
+            "samples": "레이턴트",
+            "vae": "VAE"
+        },
+        "outputs": {
+            "IMAGE": "이미지"
+        }
+    },
+    "VAEEncode": {
+        "title": "VAE 인코딩",
+        "inputs": {
+            "pixels": "픽셀",
+            "vae": "VAE"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+    "EmptyLatentImage": {
+        "title": "빈 레이턴트 이미지",
+        "widgets": {
+            "width": "너비",
+            "height": "높이",
+            "batch_size": "배치 크기"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+    "LatentUpscale": {
+        "title": "레이턴트 업스케일",
+        "inputs": {
+            "samples": "레이턴트"
+        },
+        "widgets": {
+            "upscale_method": "확대 방법",
+                "nearest-exact": "최근접-방법",
+                "bilinear": "바이리니어",
+                "area": "영역",
+                "bislerp": "구면 선형",
+                "bicubic": "바이큐빅",
+            "width": "너비",
+            "height": "높이",
+            "crop": "자르기",
+                "enabled": "활성화",
+                "disabled": "비활성화"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+    "LatentUpscaleBy": {
+        "title": "레이턴트 업스케일 (비율)",
+        "inputs": {
+            "samples": "레이턴트"
+        },
+        "widgets": {
+            "upscale_method": "확대 방법",
+                "nearest-exact": "최근접-정확",
+                "bilinear": "바이리니어",
+                "area": "영역",
+                "bislerp": "구면 선형",
+                "bicubic": "바이큐빅",
+            "scale_by": "비율"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+    "LatentComposite": {
+        "title": "레이턴트 합성",
+        "inputs": {
+            "samples_to": "목표 레이턴트",
+            "samples_from": "원본 레이턴트"
+        },
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "feather": "페더"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+    "LatentCompositeMasked": {
+        "title": "레이턴트 합성 마스크",
+        "inputs": {
+            "destination": "대상 레이턴트",
+            "source": "원본 레이턴트",
+            "mask": "마스크"
+        },
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "resize_source": "레이턴트 크기 조절"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+
+
+
+
+    "ImageScale": {
+        "title": "이미지 크기",
+        "inputs": {
+            "image": "이미지"
+        },
+        "widgets": {
+            "upscale_method": "확대 방법",
+                "nearest-exact": "최근접-정확",
+                "bilinear": "바이리니어",
+                "area": "영역",
+                "bicubic": "바이큐빅",
+            "width": "너비",
+            "height": "높이",
+            "crop": "자르기",
+                "enabled": "활성화",
+                "disabled": "비활성화"
+        },
+        "outputs": {
+            "IMAGE": "이미지"
+        }
+    },
+    "ImageScaleBy": {
+        "title": "이미지 크기 (비율)",
+        "inputs": {
+            "image": "이미지"
+        },
+        "widgets": {
+            "upscale_method": "확대 방법",
+                "nearest-exact": "최근접-정확",
+                "bilinear": "바이리니어",
+                "area": "영역",
+                "bicubic": "바이큐빅",
+            "scale_by": "비율"
+        },
+        "outputs": {
+            "IMAGE": "이미지"
+        }
+    },
+    "ImageUpscaleWithModel": {
+        "title": "이미지 업스케일 (모델 사용)",
+        "inputs": {
+            "upscale_model": "업스케일 모델",
+            "image": "이미지"
+        },
+        "outputs": {
+            "IMAGE": "이미지"
+        }
+    },
+    "ImageScaleToTotalPixels": {
+        "title": "전체 픽셀로 이미지 크기 조절",
+        "inputs": {
+            "image": "이미지"
+        },
+        "widgets": {
+            "upscale_method": "확대 방법",
+                "nearest-exact": "최근접-정확",
+                "bilinear": "바이너리어",
+                "area": "영역",
+                "bicubic": "바이큐빅",
+            "megapixels": "메가픽셀"
+        },
+        "outputs": {
+            "IMAGE": "이미지"
+        }
+    },
+
+
+    "ImageBlend": {
+        "title": "이미지 혼합",
+        "inputs": {
+            "image1": "이미지1",
+            "image2": "이미지2"
+        },
+        "widgets": {
+            "blend_factor": "혼합 계수",
+            "blend_mode": "혼합 모드",
+                "normal": "보통",
+                "multiply": "곱하기",
+                "screen": "스크린",
+                "overlay": "오버레이",
+                "soft_light": "부드러운 빛"
+        },
+        "outputs": {
+            "IMAGE": "이미지"
+        }
+    },
+    "ImageBlur": {
+        "title": "이미지 흐리게",
+        "inputs": {
+            "image": "이미지"
+        },
+        "widgets": {
+            "blur_radius": "흐림 반경",
+            "sigma": "Sigma"
+        },
+        "outputs": {
+            "IMAGE": "이미지"
+        }
+    },
+    "ImageQuantize": {
+        "title": "이미지 양자화",
+        "inputs": {
+            "image": "이미지"
+        },
+        "widgets": {
+            "colors": "색상 수",
+            "dither": "디더링",
+                "none": "없음",
+                "floyd-steinberg": "플로이드 스타인버그 알고리즘"
+        },
+        "outputs": {
+            "IMAGE": "이미지"
+        }
+    },
+    "ImageSharpen": {
+        "title": "이미지 선명하게",
+        "inputs": {
+            "image": "이미지"
+        },
+        "widgets": {
+            "sharpen_radius": "날카로운 범위",
+            "sigma": "시그마",
+            "alpha": "알파"
+        },
+        "outputs": {
+            "IMAGE": "이미지"
+        }
+    },
+
+
+    "Canny": {
+        "title": "캐니",
+        "inputs": {
+            "image": "이미지"
+        },
+        "widgets": {
+            "low_threshold": "낮은 임계값",
+            "high_threshold": "높은 임계값"
+        },
+        "outputs": {
+            "IMAGE": "이미지"
+        }
+    },
+
+
+    "ImageCrop": {
+        "title": "이미지 자르기",
+        "inputs": {
+            "image": "이미지"
+        },
+        "widgets": {
+            "width": "너비",
+            "height": "높이",
+            "x": "X",
+            "y": "Y"
+        },
+        "outputs": {
+            "IMAGE": "이미지"
+        }
+    },
+    "RepeatImageBatch": {
+        "title": "이미지 반복 배치",
+        "inputs": {
+            "image": "이미지"
+        },
+        "widgets": {
+            "amount": "수량"
+        },
+        "outputs": {
+            "IMAGE": "이미지"
+        }
+    },
+
+
+    "SaveImage": {
+        "title": "이미지 저장",
+        "inputs": {
+            "images": "이미지"
+        },
+        "widgets": {
+            "filename_prefix": "파일 이름 접두사"
+        }
+    },
+    "PreviewImage": {
+        "title": "미리보기 이미지",
+        "inputs": {
+            "images": "이미지"
+        }
+    },
+    "LoadImage": {
+        "title": "이미지 불러오기",
+        "widgets": {
+            "image": "이미지",
+            "choose file to upload": "업로드할 파일 선택"
+        },
+        "outputs": {
+            "IMAGE": "이미지",
+            "MASK": "마스크"
+        }
+    },
+    "ImageInvert": {
+        "title": "이미지 반전",
+        "inputs": {
+            "image": "이미지"
+        },
+        "outputs": {
+            "IMAGE": "이미지"
+        }
+    },
+    "ImageBatch": {
+        "title": "이미지 배치",
+        "inputs": {
+            "image1": "이미지1",
+            "image2": "이미지2"
+        },
+        "outputs": {
+            "IMAGE": "이미지"
+        }
+    },
+    "ImagePadForOutpaint": {
+        "title": "이미지 패드 (아웃페인팅용)",
+        "inputs": {
+            "image": "이미지"
+        },
+        "widgets": {
+            "left": "왼쪽",
+            "top": "위",
+            "right": "오른쪽",
+            "bottom": "아래",
+            "feathering": "페더링"
+        },
+        "outputs": {
+            "IMAGE": "이미지",
+            "MASK": "마스크"
+        }
+    },
+    "EmptyImage": {
+        "title": "빈 이미지",
+        "widgets": {
+            "width": "너비",
+            "height": "높이",
+            "batch_size": "배치 크기",
+            "color": "컬러"
+        },
+        "outputs": {
+            "IMAGE": "이미지"
+        }
+    },
+    "ImageCompositeMasked": {
+        "title": "이미지 합성 (마스크 적용)",
+        "inputs": {
+            "destination": "대상 이미지",
+            "source": "원본 이미지",
+            "mask": "마스크"
+        },
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "resize_source": "원본 이미지 크기 조절"
+        },
+        "outputs": {
+            "IMAGE": "이미지"
+        }
+    },
+
+
+
+
+    "PorterDuffImageComposite": {
+        "title": "포터-더프 이미지 병합",
+        "inputs": {
+            "source": "원본 이미지",
+            "source_alpha": "원본 Alpha",
+            "destination": "대상 이미지",
+            "destination_alpha": "대상 Alpha"
+        },
+        "widgets": {
+            "mode": "모드"
+        },
+        "outputs": {
+            "IMAGE": "이미지",
+            "MASK": "마스크"
+        }
+    },
+    "SplitImageWithAlpha": {
+        "title": "이미지 분할 (알파)",
+        "inputs": {
+            "image": "이미지"
+        },
+        "outputs": {
+            "IMAGE": "이미지",
+            "MASK": "마스크"
+        }
+    },
+    "JoinImageWithAlpha": {
+        "title": "이미지 결합 (알파)",
+        "inputs": {
+            "image": "이미지",
+            "alpha": "투명 마스크"
+        },
+        "outputs": {
+            "IMAGE": "이미지"
+        }
+    },
+    "LoadImageMask": {
+        "title": "이미지 마스크 불러오기",
+        "widgets": {
+            "image": "이미지",
+            "channel": "채널",
+            "choose file to upload": "업로드할 파일 선택"
+        },
+        "outputs": {
+            "MASK": "마스크"
+        }
+    },
+    "MaskToImage": {
+        "title": "마스크를 이미지로 변환",
+        "inputs": {
+            "mask": "마스크"
+        },
+        "outputs": {
+            "IMAGE": "이미지"
+        }
+    },
+    "ImageToMask": {
+        "title": "이미지를 마스크로 변환",
+        "inputs": {
+            "image": "이미지"
+        },
+        "widgets": {
+            "channel": "채널"
+        },
+        "outputs": {
+            "MASK": "마스크",
+                "red": "레드",
+                "green": "그린",
+                "blue": "블루"
+        }
+    },
+    "ImageColorToMask": {
+        "title": "이미지 컬러 마스크",
+        "inputs": {
+            "image": "이미지"
+        },
+        "widgets": {
+            "color": "컬러"
+        },
+        "outputs": {
+            "MASK": "마스크"
+        }
+    },
+    "SolidMask": {
+        "title": "솔리드 마스크 (단색)",
+        "widgets": {
+            "value": "명도",
+            "width": "너비",
+            "height": "높이"
+        },
+        "outputs": {
+            "MASK": "마스크"
+        }
+    },
+    "InvertMask": {
+        "title": "인버트 마스크 (반전)",
+        "inputs": {
+            "mask": "마스크"
+        },
+        "outputs": {
+            "MASK": "마스크"
+        }
+    },
+    "CropMask": {
+        "title": "크롭 마스크 (자르기)",
+        "inputs": {
+            "mask": "마스크"
+        },
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "width": "너비",
+            "height": "높이"
+        },
+        "outputs": {
+            "MASK": "마스크"
+        }
+    },
+    "MaskComposite": {
+        "title": "마스크 합성",
+        "inputs": {
+            "destination": "대상 마스크",
+            "source": "원본 마스크"
+        },
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "operation": "혼합 방법",
+                "multiply": "곱하기",
+                "add": "더하기",
+                "subtract": "빼기",
+                "and": "논리곱",
+                "or": "논리합",
+                "xor": "배타적 논리합"
+        },
+        "outputs": {
+            "MASK": "마스크"
+        }
+    },
+    "FeatherMask": {
+        "title": "페더 마스크 (부드러운 가장자리)",
+        "inputs": {
+            "mask": "마스크"
+        },
+        "widgets": {
+            "left": "왼쪽",
+            "top": "위",
+            "right": "오른쪽",
+            "bottom": "아래"
+        },
+        "outputs": {
+            "MASK": "마스크"
+        }
+    },
+    "GrowMask": {
+        "title": "그로우 마스크 (확장)",
+        "inputs": {
+            "mask": "마스크"
+        },
+        "widgets": {
+            "expand": "확장",
+            "tapered_corners": "둥근 모서리"
+        },
+        "outputs": {
+            "MASK": "마스크"
+        }
+    },
+    
+
+
+
+    "VAEDecodeTiled": {
+        "title": "VAE 디코딩 타일",
+        "inputs": {
+            "samples": "레이턴트",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "tile_size": "分块尺寸"
+        },
+        "outputs": {
+            "IMAGE": "이미지"
+        }
+    },
+    "VAEEncodeTiled": {
+        "title": "VAE 인코딩 타일",
+        "inputs": {
+            "pixels": "이미지",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "tile_size": "타일 크기"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+    "TomePatchModel": {
+        "title": "Tome 패치 모델",
+        "inputs": {
+            "model": "모델"
+        },
+        "widgets": {
+            "ratio": "비율"
+        },
+        "outputs": {
+            "MODEL": "모델"
+        }
+    },
+    "SaveLatent": {
+        "title": "레이턴트 저장",
+        "inputs": {
+            "samples": "레이턴트"
+        },
+        "widgets": {
+            "samples": "레이턴트",
+            "latent": "레이턴트"
+        }
+    },
+    "LoadLatent": {
+        "title": "레이턴트 불러오기",
+        "widgets": {
+            "filename_prefix": "파일 이름 접두사"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+    "LatentBlend": {
+        "title": "레이턴트 혼합",
+        "inputs": {
+            "samples1": "레이턴트1",
+            "samples2": "레이턴트2"
+        },
+        "widgets": {
+            "blend_factor": "혼합 계수"
+        },
+        "outputs": {
+            "LATENT": "레이턴트"
+        }
+    },
+    "FreeU": {
+        "title": "FreeU",
+        "inputs": {
+            "model": "모델"
+        },
+        "widgets": {
+            "b1": "B1",
+            "b2": "B2",
+            "s1": "S1",
+            "s2": "S2"
+        },
+        "outputs": {
+            "MODEL": "모델"
+        }
+    },
+    "FreeU_V2": {
+        "title": "FreeU_V2",
+        "inputs": {
+            "model": "모델"
+        },
+        "widgets": {
+            "b1": "B1",
+            "b2": "B2",
+            "s1": "S1",
+            "s2": "S2"
+        },
+        "outputs": {
+            "MODEL": "모델"
+        }
+    },
+    "HyperTile": {
+        "title": "하이퍼 타일",
+        "inputs":{ 
+            "model": "모델"
+        },
+        "widgets": {
+            "tile_size": "타일 크기",
+            "swap_size": "스왑 크기",
+            "max_depth": "최대 깊이",
+            "scale_depth": "스케일 깊이"
+        }
+    },
+    "PatchModelAddDownscale": {
+        "title": "패치 모델 추가 축소",
+        "inputs": {
+            "model": "모델"
+        },
+        "widgets": {
+            "block_number": "블록 넘버",
+            "downscale_factor": "축소 계수",
+            "start_percent": "시작 시간",
+            "end_percent": "종료 시간",
+            "downscale_after_skip": "건너뛰기 후 축소"
+        },
+        "outputs": {
+            "MODEL": "모델"
+        }
+    },
+    "SaveAnimatedWEBP": {
+        "title": "애니메이션 WEBP 저장",
+        "inputs": {
+            "images": "이미지"
+        },
+        "widgets": {
+            "filename_prefix": "파일 이름 접두사",
+            "fps": "fps",
+            "lossless": "무손실",
+            "quality": "퀄리티",
+            "method": "방법",
+                "fastest": "가장 빠름",
+                "slowest": "가장 느림"
+        }
+    },
+    "SaveAnimatedPNG": {
+        "title": "애니메이션 PNG 저장",
+        "inputs": {
+            "images": "이미지"
+        },
+        "widgets": {
+            "filename_prefix": "파일 이름 접두사",
+            "fps": "fps",
+            "compress_level": "압축 수준"
+        }
+    },
+
+
+
+
+    "DiffusersLoader": {
+        "title": "디퓨저 불러오기",
+        "widgets": {
+            "model_path": "모델 경로"
+        },
+        "outputs": {
+            "MODEL": "모델",
+            "CLIP": "클립",
+            "VAE": "VAE"
+        }
+    },
+    "CLIPLoader": {
+        "title": "클립 불러오기",
+        "widgets": {
+            "clip_name": "클립 이름"
+        },
+        "outputs": {
+            "CLIP": "클립"
+        }
+    },
+    "CheckpointLoader": {
+        "title": "체크포인트 불러오기",
+        "widgets": {
+            "config_name": "설정 이름",
+            "ckpt_name": "체크포인트 이름"
+        },
+        "outputs": {
+            "MODEL": "모델",
+            "CLIP": "클립",
+            "VAE": "VAE"
+        }
+    },
+    "UNETLoader": {
+        "title": "UNET 불러오기",
+        "widgets": {
+            "unet_name": "UNET 이름"
+        },
+        "outputs": {
+            "MODEL": "모델"
+        }
+    },
+    "DualCLIPLoader": {
+        "title": "듀얼 클립 불러오기",
+        "widgets": {
+            "clip_name1": "클립1",
+            "clip_name2": "클립2"
+        },
+        "outputs": {
+            "CLIP": "클립"
+        }
+    },
+
+
+    "ConditioningZeroOut": {
+        "title": "조건 설정 (제로 아웃)",
+        "inputs": {
+            "conditioning": "조건 설정"
+        },
+        "outputs": {
+            "CONDITIONING": "조건 설정"
+        }
+    },
+    "ConditioningSetTimestepRange": {
+        "title": "조건 설정 (타임 스텝 범위 설정)",
+        "inputs": {
+            "conditioning": "조건 설정"
+        },
+        "widgets": {
+            "start": "시작",
+            "end": "끝"
+        },
+        "outputs": {
+            "CONDITIONING": "조건 설정"
+        }
+    },
+    "CLIPTextEncodeSDXL": {
+        "title": "클립 텍스트 인코딩 SDXL",
+        "inputs": {
+            "clip": "클립"
+        },
+        "widgets": {
+            "width": "너비",
+            "height": "높이",
+            "crop_w": "자르기 너비",
+            "crop_h": "자르기 높이",
+            "target_width": "타겟 너비",
+            "target_height": "타겟 높이",
+            "text_g": "텍스트 g",
+            "text_l": "텍스트 l"
+        },
+        "outputs": {
+            "CONDITIONING": "조건 설정"
+        }
+    },
+    "CLIPTextEncodeSDXLRefiner": {
+        "title": "클립 텍스트 인코딩 SDXL 리파이너",
+        "inputs": {
+            "clip": "클립"
+        },
+        "widgets": {
+            "ascore": "ascore",
+            "width": "너비",
+            "height": "높이",
+            "text": "텍스트"
+        },
+        "outputs": {
+            "CONDITIONING": "조건 설정"
+        }
+    },
+
+
+    "ModelMergeSimple": {
+        "title": "모델 병합 (단순)",
+        "inputs": {
+            "model1": "모델1",
+            "model2": "모델2"
+        },
+        "widgets": {
+            "ratio": "비율"
+        },
+        "outputs": {
+            "MODEL": "모델"
+        }
+    },
+    "ModelMergeBlocks": {
+        "title": "모델 병합 (저장)",
+        "inputs": {
+            "model1": "모델1",
+            "model2": "모델2"
+        },
+        "outputs": {
+            "MODEL": "모델"
+        }
+    },
+    "CheckpointSave": {
+        "title": "체크포인트 저장",
+        "inputs": {
+            "model": "모델",
+            "clip": "클립",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "filename_prefix": "파일 이름 접두사"
+        }
+    },
+    "CLIPMergeSimple": {
+        "title": "클립 병합 (단순)",
+        "inputs": {
+            "clip1": "클립1",
+            "clip2": "클립2"
+        },
+        "widgets": {
+            "ratio": "비율"
+        },
+        "outputs": {
+        }
+    },
+    "VAESave": {
+        "title": "VAE 저장",
+        "inputs": {
+            "VAE": "VAE"
+        },
+        "widgets": {
+            "filename_prefix": "파일 이름 접두사"
+        }
+    },
+    "CLIPSave": {
+        "title": "클립 저장",
+        "inputs": {
+            "CLIP": "클립"
+        },
+        "widgets": {
+            "filename_prefix": "파일 이름 접두사"
+        }
+    },
+    "ModelMergeBlockNumber": {
+        "title": "모델 병합 (블록 넘버)",
+        "inputs": {
+            "model1": "모델1",
+            "model2": "모델2"
+        },
+        "outputs": {
+            "MODEL": "모델"
+        }
+    },
+    "ModelMergeSDXL": {
+        "title": "모델 병합 (SDXL)",
+        "inputs": {
+            "model1": "모델1",
+            "model2": "모델2"
+        },
+        "outputs": {
+            "MODEL": "모델"
+        }
+    },
+    "ModelMergeSubtract": {
+        "title": "모델 병합 (뺴기)",
+        "inputs": {
+            "model1": "모델1",
+            "model2": "모델2"
+        },
+        "widgets": {
+            "multiplier": "계수"
+        },
+        "outputs": {
+            "MODEL": "모델"
+        }
+    },
+    "ModelMergeAdd": {
+        "title": "모델 병합 (더하기)",
+        "inputs": {
+            "model1": "모델1",
+            "model2": "모델2"
+        },
+        "outputs": {
+            "MODEL": "모델"
+        }
+    },
+    "ModelMergeSDXLTransformers": {
+        "title": "모델 병합 (SDXL 트랜스포머)",
+        "inputs": {
+            "model1": "모델1",
+            "model2": "모델2"
+        },
+        "outputs": {
+            "MODEL": "모델"
+        }
+    },
+    "ModelMergeSDXLDetailedTransformers": {
+        "title": "모델 병합 (SDXL 디테일 트랜스포머)",
+        "inputs": {
+            "model1": "모델1",
+            "model2": "모델2"
+        },
+        "outputs": {
+            "MODEL": "모델"
+        }
+    },
+
+    "ModelSamplingDiscrete": {
+        "title": "모델 샘플링 (이산)",
+        "inputs": {
+            "model": "모델"
+        },
+        "widgets": {
+            "sampling": "샘플링",
+                "eps": "eps",
+                "v-prediction": "변수 예측",
+                "zsnr": "zsnr"
+        }
+    },
+    "ModelSamplingContinuousEDM": {
+        "title": "모델 샘플링 (연속 EDM)",
+        "inputs": {
+            "model": "모델"
+        },
+        "widgets": {
+            "sampling": "샘플링",
+                "v_prediction": "변수 예측",
+                "eps": "eps",
+            "sigma_max": "시그마 최대값",
+            "sigma_min": "시그마 최소값"
+        }
+    },
+    "RescaleCFG": {
+        "title": "CFG 재조정",
+        "inputs": {
+            "model": "모델"
+        },
+        "widgets": {
+            "multiplier": "계수"
+        },
+        "outputs": {
+            "MODEL": "모델"
+        }
+    }
+}
