@@ -58,7 +58,7 @@
             "interpolation": "插值方式",
             "crop_position": "裁剪位置",
             "sharpening": "锐化",
-            "add_weight": "添加权重"
+            "add_weight": "附加权重"
         },
         "outputs": {
             "IMAGE": "图像"
