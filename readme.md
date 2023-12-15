@@ -29,7 +29,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 
 |Custom Node Name|zh-CN|zh-TW|English|Japanese|Korean|
 |:----|:----|:----|:----|:----|:----|
-|[Advanced Encode](https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb)|√|√|√|TODO|
+|[Advanced Encode](https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb)|√|√|√|TODO|TODO|
 |[Advanced ControlNet](https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet)|√|√|√|TODO|TODO|
 |[AGL-ComfyUI-Translation](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION)|√|√|√|√|TODO|
 |[AlekPet Nodes](https://github.com/AlekPet/ComfyUI_Custom_Nodes_AlekPet)|√|√|√|√|TODO|
@@ -42,6 +42,8 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[ControlNet Preprocessors AUX](https://github.com/Fannovel16/comfyui_controlnet_aux)|√|√|√|√|TODO|
 |[Cutoff](https://github.com/BlenderNeko/ComfyUI_Cutoff)|√|√|√|√|TODO|
 |[Custom-Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts)|√|√|√|TODO|TODO|
+|[cg-use-everywhere](https://github.com/chrisgoringe/cg-use-everywhere.git)|√|TODO|√|TODO|TODO|
+|[cg-image-picker](https://github.com/chrisgoringe/cg-image-picker.git)|√|TODO|√|TODO|TODO|
 |[Davemane42 Nodes](https://github.com/Davemane42/ComfyUI_Dave_CustomNode)|√|√|√|√|TODO|
 |[Dagthomas Nodes](https://github.com/dagthomas/comfyui_dagthomas)|√|√|√|√|TODO|
 |[Dynamic Thresholding](https://github.com/mcmonkeyprojects/sd-dynamic-thresholding)|√|√|√|TODO|TODO|
@@ -67,6 +69,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[ReActor](https://github.com/Gourieff/comfyui-reactor-node)|√|TODO|√|TODO|TODO|
 |[Restart-Sampling](https://github.com/ssitu/ComfyUI_restart_sampling)|√|√|√|TODO|TODO|
 |[Roop](https://github.com/Navezjt/ComfyUI_roop.git)|√|TODO|√|TODO|TODO|TODO|
+|[rgthree](https://github.com/rgthree/rgthree-comfy.git)|√|TODO|√|TODO|TODO|
 |[SDXL_prompt_styler](https://github.com/twri/sdxl_prompt_styler)|√|√|√|TODO|TODO|
 |[SeargeSDXL](https://github.com/SeargeDP/SeargeSDXL)|√|√|√|TODO|TODO|
 |[Segment Anything](https://github.com/storyicon/comfyui_segment_anything.git)|√|TODO|√|TODO|TODO|
