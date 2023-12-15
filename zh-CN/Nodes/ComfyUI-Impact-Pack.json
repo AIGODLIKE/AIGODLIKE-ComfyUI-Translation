@@ -2431,6 +2431,15 @@
             "INT": "整数"
         }
     },
+    "ImpactFloat": {
+        "title": "浮点",
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
     "ImpactValueSender": {
         "title": "发送值",
         "inputs": {

@@ -183,6 +183,53 @@
         "outputs": {
         }
     },
+    "CR Random LoRA Stack": {
+        "title": "随机LoRA堆",
+        "inputs": {
+            "lora_stack": "LoRA堆"
+        },
+        "widgets": {
+            "exclusive_mode": "非重复模式",
+            "stride": "步幅",
+            "force_randomize_after_stride": "强制每次随机",
+            "lora_name_1": "LoRA名称1",
+            "switch_1": "开关1",
+            "chance_1": "概率1",
+            "model_weight_1": "模型强度1",
+            "clip_weight_1": "CLIP强度1",
+            "lora_name_2": "LoRA名称2",
+            "switch_2": "开关2",
+            "chance_2": "概率2",
+            "model_weight_2": "模型强度2",
+            "clip_weight_2": "CLIP强度2",
+            "lora_name_3": "LoRA名称3",
+            "switch_3": "开关3",
+            "chance_3": "概率3",
+            "model_weight_3": "模型强度3",
+            "clip_weight_3": "CLIP强度3"
+        },
+        "outputs": {
+            "LORA_STACK": "LoRa堆"
+        }
+    },
+    "CR Random Weight LoRA": {
+        "title": "随机权重LoRA",
+        "inputs": {
+            "lora_stack": "LoRA堆"
+        },
+        "widgets": {
+            "stride": "步幅",
+            "force_randomize_after_stride": "强制每次随机",
+            "lora_name": "LoRA名称",
+            "switch": "开关",
+            "weight_min": "最小强度",
+            "weight_max": "最大强度",
+            "clip_weight": "CLIP强度"
+        },
+        "outputs": {
+            "LORA_STACK": "LoRa堆"
+        }
+    },
     "CR Apply LoRA Stack": {
         "title": "应用LoRA堆",
         "inputs": {
@@ -759,6 +806,40 @@
         },
         "outputs": {
             "IMAGE": "图像"
+        }
+    },
+    "CR Simple Binary Pattern": {
+        "title": "二值图案(简易)",
+        "widgets": {
+            "binary_pattern": "二值图案",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Binary Pattern": {
+        "title": "二值图案",
+        "widgets": {
+            "binary_pattern": "二值图案",
+            "width": "宽度",
+            "height": "高度",
+            "background_color": "背景色",
+            "color_0": "颜色_0",
+            "color_1": "颜色_1",
+            "outline_thickness": "轮廓线厚度",
+            "outline_color": "轮廓线颜色",
+            "jitter_distance": "抖动距离",
+            "bg_color_hex": "背景色HEX",
+            "color0_hex": "颜色_0HEX",
+            "color1_hex": "颜色_1HEX",
+            "outline_color_hex": "轮廓线颜色HEX"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "show_help": "显示帮助"
         }
     },
     "CR Draw Text": {
@@ -1482,6 +1563,27 @@
             "show_help": "显示帮助"
         }
     },
+    "CR Simple Banner": {
+        "title": "Banner(简易)",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "banner_text": "Banner文本",
+            "font_name": "字体",
+            "max_font_size": "最大字体大小",
+            "font_color": "字体颜色",
+            "outline_color": "轮廓线颜色",
+            "outline_thickness": "轮廓线厚度",
+            "margin_size": "页边距",
+            "font_color_hex": "字体颜色HEX",
+            "outline_color_hex": "轮廓线颜色HEX"
+        },
+        "outputs": {
+            "image": "图像",
+            "show_help": "显示帮助"
+        }
+    },
     "CR VAE Input Switch": {
         "title": "VAE切换",
         "inputs": {
@@ -1649,6 +1751,23 @@
         "outputs": {
             "image": "图像",
             "show_help": "显示帮助"
+        }
+    },
+    "CR Overlay Transparent Image": {
+        "title": "图像覆盖",
+        "inputs": {
+            "back_image": "背景图像",
+            "overlay_image": "覆盖图像"
+        },
+        "widgets": {
+            "transparency": "透明",
+            "offset_x": "偏移_X",
+            "offset_y": "偏移_Y",
+            "rotation_angle": "旋转角度",
+            "overlay_scale_factor": "缩放系数"
+        },
+        "outputs": {
+            "IMAGE": "图像"
         }
     },
     "CR Simple Text Panel": {
@@ -2250,7 +2369,7 @@
 
 
 
-    "CR Cycle Moddel": {
+    "CR Cycle Models": {
         "title": "循环模型",
         "inputs": {
             "model": "模型",

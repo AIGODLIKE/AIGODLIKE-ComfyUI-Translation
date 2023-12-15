@@ -1,5 +1,5 @@
 {
-    "Context Big (rhthree)": {
+    "Context Big (rgthree)": {
         "title": "上下文(大型)",
         "inputs": {
             "base_ctx": "上下文",
@@ -251,7 +251,7 @@
             "CLIP_HEIGHT": "CLIP高度"
         }
     },
-    "SDXL Power Prompt - Positive": {
+    "SDXL Power Prompt - Positive (rgthree)": {
         "title": "SDXL提示词(正面)",
         "inputs": {
             "opt_model": "模型",

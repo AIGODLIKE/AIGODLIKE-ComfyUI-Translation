@@ -407,6 +407,20 @@
             "INT": "整数"
         }
     },
+    "CLIPTextEncodeWithWeight //Inspire": {
+        "title": "CLIP文本编码(权重)",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "text": "文本",
+            "strength": "强度",
+            "add_weight": "附加权重"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
     "FromIPAdapterPipe //Inspire": {
         "title": "从IP适配",
         "inputs": {
@@ -879,9 +893,20 @@
             "MODEL": "模型"
         }
     },
+    "CheckpointLoaderSimpleShared //Inspire": {
+        "title": "Checkpoint加载器(简易共享)",
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "key_opt": "Key"
+        },
+        "outputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE",
+            "cache key": "缓存Key"
+        }
+    },
 
-
-    
 
     "FloatRange //Inspire": {
         "title": "浮点范围",
@@ -894,6 +919,28 @@
         },
         "outputs": {
             "FLOAT": "浮点"
+        }
+    },
+
+
+    "ConcatConditioningsWithMultiplier //Inspire": {
+        "title": "条件联结(系数)",
+        "inputs": {
+            "conditioning1": "条件1",
+            "conditioning2": "条件2",
+            "conditioning3": "条件3",
+            "conditioning4": "条件4",
+            "conditioning5": "条件5"
+        },
+        "widgets": {
+            "multiplier1": "系数1",
+            "multiplier2": "系数2",
+            "multiplier3": "系数3",
+            "multiplier4": "系数4",
+            "multiplier5": "系数5"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
         }
     }
 }
