@@ -1393,6 +1393,12 @@
 
     "VHS": "VHS",
 
+    "baidu": "百度",
+    "alibaba": "阿裡巴巴",
+    "tencent": "騰訊",
+    "volcengine": "火山引擎",
+    "niutrans": "小牛翻譯",
+
     "match A": "匹配A",
     "match B": "匹配B",
     "match smaller": "匹配較小的",
