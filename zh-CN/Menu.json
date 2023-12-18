@@ -1521,6 +1521,12 @@
 
     "rg3": "rg3",
 
+    "baidu": "百度",
+    "alibaba": "阿里巴巴",
+    "tencent": "腾讯",
+    "volcengine": "火山引擎",
+    "niutrans": "小牛翻译",
+
     "🎲 Randomize Each Time": "🎲 每次随机",
     "🎲 New Fixed Random": "🎲 生成随机并固定",
     "♻️ (Use Last Queued Seed)": "♻️ (使用上次随机种)"
