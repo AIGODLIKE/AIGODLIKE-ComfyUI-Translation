@@ -428,6 +428,26 @@
             "latent": "Latent"
         }
     },
+    "StableZero123_Conditioning": {
+        "title": "SZ123_条件",
+        "inputs": {
+            "clip_vision": "CLIP视觉",
+            "init_image": "图像",
+            "VAE": "VAE"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "batch_size": "批次大小",
+            "elevation": "俯仰角",
+            "azimuth": "方位角"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latent": "Latent"
+        }
+    },
 
 
 
