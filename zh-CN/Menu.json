@@ -1521,13 +1521,43 @@
 
     "rg3": "rg3",
 
+    "🎲 Randomize Each Time": "🎲 每次随机",
+    "🎲 New Fixed Random": "🎲 生成随机并固定",
+    "♻️ (Use Last Queued Seed)": "♻️ (使用上次随机种)",
+
+    "zfkun": "zfkun",
+
     "baidu": "百度",
     "alibaba": "阿里巴巴",
     "tencent": "腾讯",
     "volcengine": "火山引擎",
     "niutrans": "小牛翻译",
 
-    "🎲 Randomize Each Time": "🎲 每次随机",
-    "🎲 New Fixed Random": "🎲 生成随机并固定",
-    "♻️ (Use Last Queued Seed)": "♻️ (使用上次随机种)"
+    "ttN": "ttN",
+
+    "Node Dimensions (ttN)": "节点宽高(TTN)",
+    "Default BG Color (ttN)": "默认背景色(TTN)",
+        "No Color": "无色",
+    "Show Execution Order (ttN)": "显示执行顺序(TTN)",
+    "Reload Node (ttN)": "重载节点(TTN)",
+    "Fullscreen (ttN)": "全屏(TTN)",
+    "Set Default Fullscreen Node (ttN)": "设置默认全屏节点(TTN)",
+    "Clear Default Fullscreen Node (ttN)": "清除默认全屏节点(TTN)",
+
+    "by percentage": "按百分比",
+    "to Width/Height": "按宽高",
+    "to longer side - maintain aspect": "按长边(固定宽高比)",
+    "center": "中心",
+    "Hide": "隐藏",
+    "Hide/Save": "隐藏/保存",
+    "True": "是",
+    "False": "否",
+    "Default": "默认",
+    "None": "无",
+    "Weighted sum = (  A*(1-M) + B*M  )": "相加:(A*(1-系数)+B*系数)",
+    "Add difference = (  A + (B-C)*M  )": "差值:(A+(B-C)*系数)",
+    "Follow model interp": "和模型插值相同",
+    "A Only": "仅A",
+    "B Only": "仅B",
+    "C Only": "仅C"
 }
