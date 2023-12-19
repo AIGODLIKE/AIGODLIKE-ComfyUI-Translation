@@ -1394,7 +1394,6 @@
     "alphabetic": "字母",
     "alphanumeric": "字母数字",
 
-
     "DynThr": "DynThr",
 
     "Constant": "常数",
@@ -1513,6 +1512,7 @@
 
     "cg-img": "cg-img",
 
+    "Image Chooser HUD position (-1 for off)": "图像选择器HUD位置(-1为关闭)",
     "Always pause": "总是暂停",
     "Only pause if batch": "仅批次暂停",
     "Pass through": "忽略",
