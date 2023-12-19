@@ -83,6 +83,7 @@
     "Font size for textareas": "文本区域的字体大小",
     "[mtb] Enable Debug (py and js)": "[mtb] 启用调试（py 和 js）",
     "Show 'Share' button in the main menu": "在主菜单中显示'分享'按钮",
+    "Enable DOM element clipping (enabling may reduce performance)": "启用DOM元素裁剪(可能降低性能)",
     "Ctrl+up/down precision": "Ctrl+up/down 精度",
     "Invert Menu Scrolling": "反转菜单滚动",
     "Color palette": "调色板",
