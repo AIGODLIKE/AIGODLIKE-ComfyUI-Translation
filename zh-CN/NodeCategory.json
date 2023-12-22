@@ -52,7 +52,7 @@
         "Upscale": "放大",
         "Sampler": "采样器",
         "Prompt": "提示词",
-        "experimental": "实验",
+        "experimental": "测试中",
         "Regional": "区域",
         "Logic": "逻辑",
             "_for_test": "测试",
@@ -221,6 +221,10 @@
     "rgthree": "RG节点",
     "image_chooser": "图像选择",
     "zfkun 🍕🅩🅕": "zfkun节点 🍕🅩🅕",
+    "KJNodes": "KJ节点",
+        "masking": "遮罩",
+            "generate": "生成",
+        "experiments": "实验",
 
 
     "basic_pipe": "基础节点束",

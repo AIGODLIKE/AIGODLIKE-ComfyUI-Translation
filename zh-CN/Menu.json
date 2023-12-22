@@ -284,7 +284,7 @@
     "Filter: installed": "过滤：已安装",
     "Filter: not-installed": "过滤：未安装",
 
-    "EXPERIMENTAL": "实验中的",
+    "EXPERIMENTAL": "测试中",
     "Snapshot Manager": "快照管理器",
     "Install via Git URL": "通过 Git URL 安装",
     "Save snapshot": "保存快照",
@@ -1562,5 +1562,21 @@
     "Follow model interp": "和模型插值相同",
     "A Only": "仅A",
     "B Only": "仅B",
-    "C Only": "仅C"
+    "C Only": "仅C",
+
+    "KJ": "KJ",
+
+    "ease_in": "渐进",
+    "ease_out": "渐出",
+    "ease_in_out": "渐近渐出",
+    "bounce": "反弹",
+    "elastic": "弹性",
+    "glitchy": "故障",
+    "exponential_ease_out": "指数渐出",
+    "empty": "空",
+    "border": "边界",
+    "reflection": "反射",
+    "up": "上",
+    "down": "下",
+    "mask bounds": "遮罩边界"
 }
