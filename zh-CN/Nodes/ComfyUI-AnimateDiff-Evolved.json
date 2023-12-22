@@ -73,7 +73,7 @@
             "model_name": "模型名称",
             "beta_schedule": "调度器",
             "motion_scale": "动态缩放",
-            "apply_v2_models_property": "应用v2模型属性"
+            "apply_v2_models_properly": "使用v2模型"
         },
         "outputs": {
             "MODEL": "模型"

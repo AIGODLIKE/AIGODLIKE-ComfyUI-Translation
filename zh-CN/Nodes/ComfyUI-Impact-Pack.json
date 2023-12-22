@@ -131,7 +131,7 @@
             "cropped_image": "裁剪图像",
             "cropped_mask": "裁剪遮罩",
             "crop_region": "裁剪区域",
-            "bbox": "BBox",
+            "bbox": "Seg_ELT_bbox",
             "control_net_wrapper": "ControlNet置换",
             "confidence": "置信度",
             "label": "标签"
@@ -144,7 +144,7 @@
             "cropped_image_opt": "裁剪图像",
             "cropped_mask_opt": "裁剪遮罩",
             "crop_region_opt": "裁剪区域",
-            "bbox_opt": "BBox",
+            "bbox_opt": "Seg_ELT_bbox",
             "control_net_wrapper_opt": "ControlNet置换"
         },
         "widgets": {

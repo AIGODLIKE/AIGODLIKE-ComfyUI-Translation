@@ -170,7 +170,9 @@
             "format": "格式",
             "pingpong": "Ping-Pong",
             "save_image": "保存图像",
-            "Sync playback": ""
+            "Sync playback": "同步播放",
+            "save_metadata": "保存元数据",
+            "audio_file": "音频文件"
         }
     },
 
@@ -181,6 +183,7 @@
         "widgets": {
             "video": "视频",
             "choose file to upload": "选择文件上传",
+            "choose video to upload": "选择视频上传",
             "force_rate": "强制帧率",
             "force_size": "强制尺寸",
                 "Disabled": "关闭",
