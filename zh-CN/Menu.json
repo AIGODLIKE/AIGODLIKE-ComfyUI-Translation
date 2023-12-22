@@ -1620,7 +1620,7 @@
 
     "IsZero": "是0",
     "IsNonZero": "非0",
-    "IsPositve": "大于0",
+    "IsPositive": "大于0",
     "IsNegative": "小于0",
     "IsEven": "是偶数",
     "IsOdd": "是奇数",
@@ -1634,7 +1634,9 @@
     "Gt": "大于",
     "Lt": "小于",
     "Geq": "大于等于",
+    "Gte": "大于等于",
     "Leq": "小于等于",
+    "Lte": "小于等于",
 
     "Add": "相加",
     "Sub": "相减",

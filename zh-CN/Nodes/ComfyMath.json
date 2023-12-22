@@ -313,7 +313,7 @@
             "op": "操作"
         },
         "outputs": {
-            "VEC2": "Vec2"
+            "BOOL": "布尔"
         }
     },
     "CM_Vec2ToScalarUnaryOperation": {
@@ -325,7 +325,7 @@
             "op": "操作"
         },
         "outputs": {
-            "VEC2": "Vec2"
+            "FLOAT": "浮点"
         }
     },
     "CM_Vec2BinaryOperation": {
@@ -351,7 +351,7 @@
             "op": "操作"
         },
         "outputs": {
-            "VEC2": "Vec2"
+            "BOOL": "布尔"
         }
     },
     "CM_Vec2ToScalarBinaryOperation": {
@@ -364,7 +364,7 @@
             "op": "操作"
         },
         "outputs": {
-            "VEC2": "Vec2"
+            "FLOAT": "浮点"
         }
     },
     "CM_Vec2ScalarOperation": {
@@ -377,7 +377,7 @@
             "b": "B操作"
         },
         "outputs": {
-            "VEC2": "Vec2"
+            "FLOAT": "浮点"
         }
     },
     "CM_Vec3UnaryOperation": {
@@ -401,7 +401,7 @@
             "op": "操作"
         },
         "outputs": {
-            "VEC3": "Vec3"
+            "BOOL": "布尔"
         }
     },
     "CM_Vec3ToScalarUnaryOperation": {
@@ -413,7 +413,7 @@
             "op": "操作"
         },
         "outputs": {
-            "VEC3": "Vec3"
+            "FLOAT": "浮点"
         }
     },
     "CM_Vec3BinaryOperation": {
@@ -439,7 +439,7 @@
             "op": "操作"
         },
         "outputs": {
-            "VEC3": "Vec3"
+            "BOOL": "布尔"
         }
     },
     "CM_Vec3ToScalarBinaryOperation": {
@@ -452,7 +452,7 @@
             "op": "操作"
         },
         "outputs": {
-            "VEC3": "Vec3"
+            "FLOAT": "浮点"
         }
     },
     "CM_Vec3ScalarOperation": {
@@ -465,7 +465,7 @@
             "b": "B操作"
         },
         "outputs": {
-            "VEC3": "Vec3"
+            "FLOAT": "浮点"
         }
     },
     "CM_Vec4UnaryOperation": {
@@ -489,7 +489,7 @@
             "op": "操作"
         },
         "outputs": {
-            "VEC4": "Vec4"
+            "BOOL": "布尔"
         }
     },
     "CM_Vec4ToScalarUnaryOperation": {
@@ -501,7 +501,7 @@
             "op": "操作"
         },
         "outputs": {
-            "VEC4": "Vec4"
+            "FLOAT": "浮点"
         }
     },
     "CM_Vec4BinaryOperation": {
@@ -527,7 +527,7 @@
             "op": "操作"
         },
         "outputs": {
-            "VEC4": "Vec4"
+            "BOOL": "布尔"
         }
     },
     "CM_Vec4ToScalarBinaryOperation": {
@@ -540,7 +540,7 @@
             "op": "操作"
         },
         "outputs": {
-            "VEC4": "Vec4"
+            "FLOAT": "浮点"
         }
     },
     "CM_Vec4ScalarOperation": {
@@ -553,7 +553,7 @@
             "b": "B操作"
         },
         "outputs": {
-            "VEC4": "Vec4"
+            "FLOAT": "浮点"
         }
     },
     "CM_SDXLResolution": {
