@@ -119,6 +119,17 @@
 
 
 
+    "NoiseImage": {
+        "title": "噪波图像",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "noise_level": "噪波等级"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "TransparentImage": {
         "title": "透明图像",
         "inputs": {
@@ -136,6 +147,18 @@
             "STRING": "字符串",
             "IMAGE": "图像",
             "MASK": "遮罩"
+        }
+    },
+    "ResizeImageMixlab": {
+        "title": "图像重缩放",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "scale_option": "缩放方法",
+                "overall": "全部"
         }
     },
     "LoadImagesFromPath": {
@@ -418,6 +441,54 @@
         },
         "outputs": {
             "STRING": "字符串"
+        }
+    },
+
+
+
+    "Color": {
+        "title": "颜色",
+        "inputs": {
+            "color": "颜色"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Font": {
+        "title": "字体",
+        "widgets": {
+            "font": "字体"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "TextToNumber": {
+        "title": "文本到数字",
+        "widgets": {
+            "text": "文本",
+            "random_number": "随机数",
+            "number": "数字"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "DynamicDelayProcessor": {
+        "title": "动态延迟处理器",
+        "inputs": {
+            "any_input": "任意输入"
+        },
+        "widgets": {
+            "dalay_seconds": "延迟秒数",
+            "delay_by_text": "文本延迟",
+            "words_per_seconds": "每秒词数",
+            "replace_output": "替换输出",
+            "replace_value": "替换值"
+        },
+        "outputs": {
+            "output": "输入"
         }
     }
 }

@@ -201,6 +201,7 @@
     "Adv-ControlNet 🛂🅐🅒🅝": "高级ControlNet",
         "keyframes": "关键帧",
         "weights": "权重",
+        "preprocess": "预处理",
     "FizzNodes": "Fizz节点",
     "FizzNodes 📅🅕🅝": "Fizz节点 📅🅕🅝",
         "WaveNodes": "曲线波",
@@ -234,6 +235,7 @@
         "vec3": "3元数",
         "vec4": "4元数",
         "graphics": "图像",
+    "ttN": "TT节点",
 
 
     "basic_pipe": "基础节点束",

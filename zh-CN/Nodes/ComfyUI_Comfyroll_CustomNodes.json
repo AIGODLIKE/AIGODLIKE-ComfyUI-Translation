@@ -358,6 +358,27 @@
             "FLOAT": "浮点"
         }
     },
+    "CR Aspect Ratio Banners": {
+        "title": "宽高比(Banner)",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "aspect_ratio": "宽高比",
+            "swap_dimensions": "切换宽高",
+            "upscale_factor": "放大系数",
+            "prescale_factor": "预放大系数",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "width": "宽度",
+            "height": "高度",
+            "upscale_factor": "放大系数",
+            "prescale_factor": "预放大系数",
+            "batch_size": "批次大小",
+            "empty_latent": "空Latent",
+            "show_help": "显示帮助"
+        }
+    },
     "CR SDXL Prompt Mixer": {
         "title": "SDXL提示词",
         "widgets": {
@@ -536,6 +557,21 @@
             "CLIP": "CLIP",
             "VAE": "VAE",
             "ckpt_name": "模型名",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Multiline Text": {
+        "title": "多行文本",
+        "widgets": {
+            "text": "文本",
+            "convert_from_csv": "使用CSV",
+            "csv_quote_char": "CSV引用符",
+            "remove_chars": "移除字段",
+            "chars_to_remove": "移除内容",
+            "split_string": "分离字符串"
+        },
+        "outputs": {
+            "multiline_text": "文本",
             "show_help": "显示帮助"
         }
     },
@@ -2280,6 +2316,19 @@
             "show_text": "显示文本"
         }
     },
+    "CR Font File List": {
+        "title": "字体文件列表",
+        "widgets": {
+            "source_folder": "文件夹",
+            "start_index": "起始编号",
+            "max_rows": "最大行数",
+            "folder_path": "路径"
+        },
+        "outputs": {
+            "LIST": "列表",
+            "show_help": "显示帮助"
+        }
+    },
     "CR Text List": {
         "title": "文本列表",
         "inputs": {
@@ -2316,6 +2365,37 @@
         },
         "outputs": {
             "TEXT_LIST_SIMPLE": "简易文本列表",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Load Image List": {
+        "title": "加载图像列表",
+        "widgets": {
+            "input_folder": "文件夹",
+            "start_index": "起始编号",
+            "max_images": "最大数量",
+            "input_path": "输入路径"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "CR Load Image List Plus": {
+        "title": "加载图像列表(高级)",
+        "widgets": {
+            "input_folder": "文件夹",
+            "start_index": "起始编号",
+            "max_images": "最大数量",
+            "input_path": "输入路径"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩",
+            "index": "编号",
+            "filename": "文件名",
+            "width": "宽度",
+            "height": "高度",
+            "list_length": "列表长度",
             "show_help": "显示帮助"
         }
     },

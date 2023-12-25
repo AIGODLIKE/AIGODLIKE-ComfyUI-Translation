@@ -682,7 +682,6 @@
     "photo-silhouette": "照片-剪影",
     "photo-tilt-shift": "照片-移轴",
 
-
     "random": "随机",
     "disabled": "关闭",
     "photography": "照片",
@@ -1394,6 +1393,7 @@
     "alphabetic": "字母",
     "alphanumeric": "字母数字",
 
+
     "DynThr": "DynThr",
 
     "Constant": "常数",
@@ -1414,11 +1414,13 @@
     "AD": "绝对差值",
     "STD": "标准差值",
 
+
     "aux": "aux",
 
     "Just Resize": "仅拉伸",
     "Crop and Resize": "裁剪并拉伸",
     "Resize and Fill": "拉伸并填充",
+
 
     "masque": "masque",
 
@@ -1454,18 +1456,24 @@
     "topright": "右上",
     "bottomright": "右下",
 
+
     "advcnet": "advcnet",
 
     "ease-in-out": "渐进渐出",
     "ease-in": "渐进",
     "ease-out": "渐出",
     "linear": "线性",
+    "uniform": "不变",
+    "starting": "起始",
+    "ending": "结束",
+
 
     "inpir": "inpir",
 
     "increment for each node": "每个节点增加",
     "decrement for each node": "每个节点减少",
     "randomize for each node": "每个节点随机",
+
 
     "ue": "ue",
 
@@ -1476,6 +1484,7 @@
     "Anything Everywhere check loops": "全局输入检测循环",
     "Anything Everywhere animate UE links": "全局输入连线动画",
 
+
     "VHS": "VHS",
 
     "match A": "匹配A",
@@ -1484,6 +1493,7 @@
     "match larger": "匹配更大的",
     "ceter": "中心",
     "Disabled": "关闭",
+
 
     "eff": "eff",
 
@@ -1505,12 +1515,14 @@
     "✏️ Add 𝚇 input...": "添加X输入",
     "✏️ Add 𝚈 input...": "添加Y输入",
 
+
     "cg-use": "cg-use",
 
     "Show UE links": "显示全局输入连线",
     "Hide Ue links": "隐藏全局输入连线",
     "Anything Everywhere highlight connected nodes": "高光显示全局输入已连接节点",
     "Anything Everywhere replace search": "全局输入替换搜索",
+
 
     "cg-img": "cg-img",
 
@@ -1522,17 +1534,13 @@
     "Take Last n": "选择后N项",
     "Cancel current run": "取消当前任务",
 
-    "rg3": "rg3",
 
-    "baidu": "百度",
-    "alibaba": "阿里巴巴",
-    "tencent": "腾讯",
-    "volcengine": "火山引擎",
-    "niutrans": "小牛翻译",
+    "rg3": "rg3",
 
     "🎲 Randomize Each Time": "🎲 每次随机",
     "🎲 New Fixed Random": "🎲 生成随机并固定",
     "♻️ (Use Last Queued Seed)": "♻️ (使用上次随机种)",
+
 
     "zfkun": "zfkun",
 
@@ -1541,6 +1549,7 @@
     "tencent": "腾讯",
     "volcengine": "火山引擎",
     "niutrans": "小牛翻译",
+
 
     "ttN": "ttN",
 
@@ -1570,6 +1579,7 @@
     "B Only": "仅B",
     "C Only": "仅C",
 
+
     "KJ": "KJ",
 
     "ease_in": "渐进",
@@ -1585,6 +1595,7 @@
     "up": "上",
     "down": "下",
     "mask bounds": "遮罩边界",
+
 
     "CMath": "CMath",
 

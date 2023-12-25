@@ -681,7 +681,7 @@
         }
     },
     "RebatchLatents": {
-        "title": "重设批次",
+        "title": "重设Latent批次",
         "inputs": {
             "latents": "Latent"
         },
@@ -1066,6 +1066,44 @@
             "IMAGE": "图像"
         }
     },
+    "RebatchImages": {
+        "title": "重设图像批次",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "SaveAnimatedWEBP": {
+        "title": "保存WEBP",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀",
+            "fps": "帧率",
+            "lossless": "无损",
+            "quality": "质量",
+            "method": "方法",
+                "fastest": "最快",
+                "slowest": "最慢"
+        }
+    },
+    "SaveAnimatedPNG": {
+        "title": "保存APNG",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀",
+            "fps": "帧率",
+            "compress_level": "压缩等级"
+        }
+    },
 
 
     "SaveImage": {
@@ -1156,6 +1194,16 @@
         },
         "outputs": {
             "IMAGE": "图像"
+        }
+    },
+    "SaveImageWithAlpha": {
+        "title": "保存图像(Alpha)",
+        "inputs": {
+            "images": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀"
         }
     },
 
@@ -1446,7 +1494,7 @@
         }
     },
     "PatchModelAddDownscale": {
-        "title": "收缩模型Unet",
+        "title": "收缩模型UNET",
         "inputs": {
             "model": "模型"
         },
@@ -1461,30 +1509,30 @@
             "MODEL": "模型"
         }
     },
-    "SaveAnimatedWEBP": {
-        "title": "保存WEBP",
+    "SelfAttentionGuidance": {
+        "title": "自注意力引导",
         "inputs": {
-            "images": "图像"
+            "model": "模型"
         },
         "widgets": {
-            "filename_prefix": "文件名前缀",
-            "fps": "帧率",
-            "lossless": "无损",
-            "quality": "质量",
-            "method": "方法",
-                "fastest": "最快",
-                "slowest": "最慢"
+            "scale": "缩放",
+            "blur_sigma": "模糊"
+        },
+        "outputs": {
+            "MODEL": "模型"
         }
     },
-    "SaveAnimatedPNG": {
-        "title": "保存APNG",
+    "PerpNeg": {
+        "title": "重塑负提示",
         "inputs": {
-            "images": "图像"
+            "model": "模型",
+            "empty_conditioning": "空条件"
         },
         "widgets": {
-            "filename_prefix": "文件名前缀",
-            "fps": "帧率",
-            "compress_level": "压缩等级"
+            "neg_scale": "负面缩放"
+        },
+        "outputs": {
+            "MODEL": "模型"
         }
     },
 

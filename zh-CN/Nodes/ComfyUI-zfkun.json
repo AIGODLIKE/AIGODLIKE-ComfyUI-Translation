@@ -50,5 +50,28 @@
             "mask": "遮罩",
             "filename": "图像文件名"
         }
+    },
+    "ZFShareScreen": {
+        "title": "分享屏幕",
+        "inputs": {
+            "default_image": "默认图像"
+        },
+        "widgets": {
+            "RGBA": "RGBA",
+            "prompt": "提示词",
+            "weight": "权重",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机"
+        },
+        "outputs": {
+            "image": "图像",
+            "prompt": "提示词",
+            "weight": "权重",
+            "seed": "随机种"
+        }
     }
 }
