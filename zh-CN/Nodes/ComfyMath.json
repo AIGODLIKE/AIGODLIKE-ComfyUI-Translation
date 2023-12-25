@@ -190,7 +190,7 @@
         }
     },
     "CM_IntBinaryCondition": {
-        "title": "整数布尔运算",
+        "title": "整数布尔运算(双值)",
         "widgets": {
             "op": "操作",
             "a": "A",
