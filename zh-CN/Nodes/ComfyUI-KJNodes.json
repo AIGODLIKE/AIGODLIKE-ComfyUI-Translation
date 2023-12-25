@@ -862,5 +862,29 @@
             "negative": "负面条件",
             "latent": "Latent"
         }
+    },
+    "GetImagesFromBatchIndexed": {
+        "title": "从批次获取图像",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "indexes": "序号"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageBatchRepeatInterleaving": {
+        "title": "复制图像批次",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "repeats": "次数"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
     }
 }
