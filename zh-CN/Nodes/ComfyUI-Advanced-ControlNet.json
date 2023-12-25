@@ -269,5 +269,74 @@
             "CN_WEIGHTS": "ControlNet权重",
             "TK_SHORTCUT": "帧间隔"
         }
+    },
+
+
+
+    "ACN_SparseCtrlRGBPreprocessor": {
+        "title": "SparseCtrl预处理器",
+        "inputs": {
+            "image": "图像",
+            "vae": "VAE",
+            "latent_size": "Latent"
+        },
+        "outputs": {
+            "proc_IMAGE": "图像"
+        }
+    },
+    "ACN_SparseCtrlMergedLoaderAdvanced": {
+        "title": "SparseCtrl加载器(融合)",
+        "inputs": {
+            "sparse_method": "Sparse方法",
+            "tk_optional": "帧间隔"
+        },
+        "widgets": {
+            "sparsectrl_name": "SparseCtrl名称",
+            "control_net_name": "ControlNet名称",
+            "use_motion": "使用动态",
+            "motion_strength": "动态强度",
+            "motion_scale": "动态缩放"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "ACN_SparseCtrlLoaderAdvanced": {
+        "title": "SparseCtrl加载器",
+        "inputs": {
+            "sparse_method": "Sparse方法",
+            "tk_optional": "帧间隔"
+        },
+        "widgets": {
+            "sparsectrl_name": "SparseCtrl名称",
+            "use_motion": "使用动态",
+            "motion_strength": "动态强度",
+            "motion_scale": "动态缩放"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "ACN_SparseCtrlIndexMethodNode": {
+        "title": "SparseCtrl索引方法",
+        "widgets": {
+            "indexes": "序号"
+        },
+        "outputs": {
+            "SPARSE_METHOD": "Sparse方法"
+        }
+    },
+    "ACN_SparseCtrlSpreadMethodNode": {
+        "title": "SparseCtrl分散方法",
+        "widgets": {
+            "spread": "分散",
+                "uniform": "不变",
+                "starting": "起始",
+                "ending": "结束",
+                "center": "中点"
+        },
+        "outputs": {
+            "SPARSE_METHOD": "Sparse方法"
+        }
     }
 }
