@@ -201,6 +201,7 @@
     "Adv-ControlNet 🛂🅐🅒🅝": "高级ControlNet",
         "keyframes": "关键帧",
         "weights": "权重",
+        "preprocess": "预处理",
     "FizzNodes": "Fizz节点",
     "FizzNodes 📅🅕🅝": "Fizz节点 📅🅕🅝",
         "WaveNodes": "曲线波",
