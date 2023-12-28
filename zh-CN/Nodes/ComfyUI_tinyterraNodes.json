@@ -604,6 +604,20 @@
             "mask": "遮罩"
         }
     },
+    "ttN imageREMBG": {
+        "title": "TTN移除背景",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "image_output": "图像输出",
+            "save_prefix": "文件名前缀"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
     "ttN hiresfixScale": {
         "title": "TTN高清修复",
         "inputs": {

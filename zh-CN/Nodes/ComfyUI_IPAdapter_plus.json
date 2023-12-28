@@ -114,5 +114,29 @@
         "outputs": {
             "EMBEDS": "嵌入组"
         }
+    },
+
+    "InsightFaceLoader": {
+        "title": "InsightFace加载器",
+        "widgets": {
+            "provider": "设备"
+        },
+        "outputs": {
+            "CLIP_VISION": "CLIP视觉"
+        }
+    },
+    "PrepImageForInsighFace": {
+        "title": "InsightFace预处理",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "crop_position": "裁剪位置",
+            "sharpening": "锐化",
+            "pad_around": "填充四周"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
     }
 }

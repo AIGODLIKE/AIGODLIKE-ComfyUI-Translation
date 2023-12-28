@@ -296,6 +296,16 @@
             "ZIPPED_PROMPT": "提示词包"
         }
     },
+    "LoadSinglePromptsFromFile //Inspire": {
+        "title": "加载单独提示词(文件)",
+        "wdigets": {
+            "prompt": "提示词",
+            "index": "序号"
+        },
+        "outputs": {
+            "ZIPPED_PROMPT": "提示词包"
+        }
+    },
     "UnzipPrompt //Inspire": {
         "title": "解包提示词",
         "inputs": {
@@ -665,7 +675,8 @@
         "title": "绑定图像提示词列表",
         "inputs": {
             "images": "图像",
-            "zipped_prompt": "提示词包"
+            "zipped_prompt": "提示词包",
+            "zipped_prompts": "提示词包"
         },
         "widgets": {
             "default_positive": "默认正面条件",

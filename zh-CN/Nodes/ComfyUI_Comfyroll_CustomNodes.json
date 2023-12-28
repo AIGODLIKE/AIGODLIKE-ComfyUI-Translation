@@ -1681,6 +1681,26 @@
             "show help": "显示帮助"
         }
     },
+    "CR Draw Shape": {
+        "title": "绘制形状",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "shape": "形状",
+            "shape_color": "形状颜色",
+            "back_color": "背景颜色",
+            "x_offset": "X偏移",
+            "y_offset": "Y偏移",
+            "zoom": "缩放",
+            "rotation": "旋转",
+            "shape_color_hex": "形状颜色HEX",
+            "bg_color_hex": "背景色HEX"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "show_help": "显示帮助"
+        }
+    },
     "CR Halftone Filter": {
         "title": "半调滤镜",
         "inputs": {
@@ -1701,6 +1721,25 @@
         },
         "outputs": {
             "image": "图像",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Vignette FIlter": {
+        "title": "暗角滤镜",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "vignette_shape": "暗角形状",
+            "fether_amount": "羽化",
+            "x_offset": "X偏移",
+            "y_offset": "Y偏移",
+            "zoom": "缩放",
+            "reverse": "反转"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩",
             "show_help": "显示帮助"
         }
     },
@@ -1769,6 +1808,25 @@
             "border_color": "边框颜色",
             "outline_color": "轮廓线颜色",
             "outline_thickness": "轮廓线厚度",
+            "border_color_hex": "边框颜色HEX"
+        },
+        "outputs": {
+            "image": "图像",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Feathered Border": {
+        "title": "羽化边框",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "top_thickness": "顶厚度",
+            "bottom_thickness": "底厚度",
+            "left_thickness": "左厚度",
+            "right_thickness": "右厚度",
+            "border_color": "边框颜色",
+            "feather_amount": "羽化",
             "border_color_hex": "边框颜色HEX"
         },
         "outputs": {
@@ -1847,6 +1905,26 @@
             "outline_color_hex": "轮廓线颜色HEX",
             "panel_color_HEX": "面板颜色HEX",
             "bg_color_hex": "背景色HEX"
+        },
+        "outputs": {
+            "image": "图像",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Simple Image Compare": {
+        "title": "图像对比(简易)",
+        "inputs": {
+            "image1": "图像1",
+            "image2": "图像2"
+        },
+        "widgets": {
+            "text1": "文本1",
+            "text2": "文本2",
+            "footer_height": "页尾高度",
+            "font_name": "字体",
+            "font_size": "字体大小",
+            "mode": "模式",
+            "border_thickness": "边框厚度"
         },
         "outputs": {
             "image": "图像",
