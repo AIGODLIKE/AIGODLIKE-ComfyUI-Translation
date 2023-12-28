@@ -455,6 +455,33 @@
             "STRING": "字符串"
         }
     },
+    "FloatSlider": {
+        "title": "浮点滑条",
+        "widgets": {
+            "number": "数字"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "IntNumber": {
+        "title": "整数",
+        "widgets": {
+            "number": "数字"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "TextInput_": {
+        "title": "文本",
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
     "Font": {
         "title": "字体",
         "widgets": {
@@ -489,6 +516,39 @@
         },
         "outputs": {
             "output": "输入"
+        }
+    },
+    "MultiplicationNode": {
+        "title": "乘法",
+        "inputs": {
+            "numberA": "A"
+        },
+        "widgets": {
+            "numberB": "B"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "INT": "整数"
+        }
+    },
+    
+
+    "Appinfo": {
+        "title": "APP制作",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "name": "名称",
+            "input_ids": "输入ID",
+            "output_ids": "输出ID",
+            "description": "描述",
+            "version": "版本",
+            "Save FOr App": "保存为APP",
+            "Download For App": "下载APP"
+        },
+        "outputs": {
+            "IMAGE": "图像"
         }
     }
 }
