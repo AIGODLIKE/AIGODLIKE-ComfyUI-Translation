@@ -179,6 +179,44 @@
             "MASK": "遮罩"
         }
     },
+    "ImpactGaussianBlurMask": {
+        "title": "遮罩高斯模糊",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "kernel_size": "大小",
+            "sigma": "Sigma"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "ImpactDilateMaskInSEGS": {
+        "title": "Seg遮罩膨胀",
+        "inputs": {
+            "segs": "Seg"
+        },
+        "widgets": {
+            "dilation": "膨胀"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "ImpactGaussianBlurMaskInSEGS": {
+        "title": "Seg遮罩高斯模糊",
+        "inputs": {
+            "segs": "Seg"
+        },
+        "widgets": {
+            "kernel_size": "大小",
+            "sigma": "Sigma"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
     "ImpactScaleBy_BBOX_SEG_ELT": {
         "title": "SegELT缩放",
         "inputs": {
