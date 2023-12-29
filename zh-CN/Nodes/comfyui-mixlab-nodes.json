@@ -182,6 +182,16 @@
             "MASK": "遮罩"
         }
     },
+    "LoadImagesFromURL": {
+        "title": "加载图像(URL)",
+        "widgets": {
+            "url:": "URL"
+        },
+        "outputs": {
+            "images": "图像",
+            "masks": "遮罩"
+        }
+    },
     "TextImage": {
         "title": "文本图像",
         "widgets": {
@@ -529,6 +539,42 @@
         "outputs": {
             "FLOAT": "浮点",
             "INT": "整数"
+        }
+    },
+    "GetImageSize_": {
+        "title": "获取图像尺寸",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "width": "宽度",
+            "height": "高度"
+        }
+    },
+    "SwitchByIndex": {
+        "title": "切换",
+        "inputs": {
+            "A": "A",
+            "B": "B"
+        },
+        "widgets": {
+            "index": "索引"
+        },
+        "outputs": {
+            "C": "C"
+        }
+    },
+    "LimitNumber": {
+        "title": "钳制数字",
+        "inputs": {
+            "number": "数字"
+        },
+        "widgets": {
+            "min_value": "最小值",
+            "max_value": "最大值"
+        },
+        "outputs": {
+            "number": "数字"
         }
     },
     
