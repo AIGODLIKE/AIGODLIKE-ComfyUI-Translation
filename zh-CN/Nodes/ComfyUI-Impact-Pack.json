@@ -68,6 +68,43 @@
             "BBOX_DETECTOR": "BBox检测"
         }
     },
+    "SEGSOrderedFilterDetailerHookProvider": {
+        "title": "Seg次序过滤细化约束器",
+        "widgets": {
+            "target": "目标",
+            "order": "顺序",
+            "take_start": "开始序号",
+            "take_count": "数量"
+        },
+        "outputs": {
+            "DETAILER_HOOK": "细化约束"
+        }
+    },
+    "SEGSRangeFilterDetailerHookProvider": {
+        "title": "Seg范围过滤细化约束器",
+        "widgets": {
+            "target": "目标",
+            "mode": "模式",
+            "min_value": "最小值",
+            "max_value": "最大值"
+        },
+        "outputs": {
+            "DETAILER_HOOK": "细化约束"
+        }
+    },
+    "SEGSLabelFilterDetailerHookProvider": {
+        "title": "Seg标签过滤细化约束器",
+        "inputs": {
+            "segs": "Seg"
+        },
+        "widgets": {
+            "preset": "预设",
+            "labels": "标签"
+        },
+        "outputs": {
+            "DETAILER_HOOK": "细化约束"
+        }
+    },
     "EmptySegs": {
         "title": "空Seg",
         "outputs": {
@@ -215,7 +252,7 @@
         },
         "outputs": {
             "SEGS": "Seg"
-        }
+        }   
     },
     "ImpactScaleBy_BBOX_SEG_ELT": {
         "title": "SegELT缩放",
@@ -239,7 +276,7 @@
         }
     },
     "PreviewBridge": {
-        "title": "桥接预览",
+        "title": "桥接预览图像",
         "inputs": {
             "images": "图像"
         },
@@ -248,6 +285,21 @@
         },
         "outputs": {
             "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    },
+    "PreviewBridgeLatent": {
+        "title": "桥接预览Latent",
+        "inputs": {
+            "latent": "Latent",
+            "vae_opt": "VAE"
+        },
+        "widgets": {
+            "image": "图像",
+            "preview_method": "预览方法"
+        },
+        "outputs": {
+            "LATENT": "Latent",
             "MASK": "遮罩"
         }
     },
@@ -2320,6 +2372,18 @@
         "title": "图像信息",
         "inputs": {
             "value": "图像"
+        },
+        "outputs": {
+            "batch": "批次大小",
+            "height": "高度",
+            "width": "宽度",
+            "channel": "通道"
+        }
+    },
+    "ImpactLatentInfo": {
+        "title": "Latent信息",
+        "inputs": {
+            "value": "Latent"
         },
         "outputs": {
             "batch": "批次大小",
