@@ -67,6 +67,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Math](https://github.com/evanspearman/ComfyMath.git)|√|TODO|√|TODO|TODO|
 |[Mixlab Nodes](https://github.com/shadowcz007/comfyui-mixlab-nodes.git)|√|TODO|√|TODO|TODO|
 |[Noise](https://github.com/BlenderNeko/ComfyUI_Noise)|√|√|√|TODO|TODO|
+|[Portrai Master](https://github.com/florestefano1975/comfyui-portrait-master.git)|√|TODO|√|TODO|TODO|
 |[QR](https://github.com/coreyryanhanson/comfy-qr)|√|√|√|TODO|TODO|
 |[ReActor](https://github.com/Gourieff/comfyui-reactor-node)|√|TODO|√|TODO|TODO|
 |[Restart-Sampling](https://github.com/ssitu/ComfyUI_restart_sampling)|√|√|√|TODO|TODO|
