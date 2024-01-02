@@ -441,6 +441,42 @@
             "INT": "整数"
         }
     },
+    "CR Clamp Value": {
+        "title": "钳制",
+        "widgets": {
+            "a": "A",
+            "range_min": "最小值",
+            "range_max": "最大值"
+        },
+        "outputs": {
+            "A": "A",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Set Value On Boolean": {
+        "title": "设置布尔值",
+        "widgets": {
+            "boolean_number": "布尔值",
+            "value_if_true": "如果真",
+            "value_if_false": "如果假"
+        },
+        "outputs": {
+            "INT": "整数",
+            "FLOAT": "浮点"
+        }
+    },
+    "CR Math Operation": {
+        "title": "数学操作",
+        "widgets": {
+            "a": "A",
+            "operation": "操作",
+            "decimal_places": "小数位"
+        },
+        "outputs": {
+            "a": "浮点",
+            "show_help": "显示帮助"
+        }
+    },
 
 
 
@@ -643,6 +679,23 @@
             "show_help": "显示帮助"
         }
     },
+    "CR Random Multiline Colors": {
+        "title": "随机多行颜色",
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "value_type": "值类型",
+            "rows": "行数"
+        },
+        "outputs": {
+            "multiline_text": "多行文本",
+            "show_help": "显示帮助"
+        }
+    },
     "CR Random RGB Gradient": {
         "title": "随机RGB渐变",
         "widgets": {
@@ -653,6 +706,24 @@
                 "decrement": "减少",
                 "randomize": "随机",
             "rows": "行数"
+        },
+        "outputs": {
+            "multiline_text": "多行文本",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Random Panel Codes": {
+        "title": "随机多通道编码",
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "rows": "行数",
+            "string_length": "字符串长度",
+            "values": "值"
         },
         "outputs": {
             "multiline_text": "多行文本",
@@ -1771,7 +1842,7 @@
             "show_help": "显示帮助"
         }
     },
-    "CR Vignette FIlter": {
+    "CR Vignette Filter": {
         "title": "暗角滤镜",
         "inputs": {
             "image": "图像"
@@ -1975,6 +2046,19 @@
         },
         "outputs": {
             "image": "图像",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Thumbnail Preview": {
+        "title": "缩略图预览",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "rescale_factor": "缩放系数",
+            "max_columns": "最大列数"
+        },
+        "outputs": {
             "show_help": "显示帮助"
         }
     },
