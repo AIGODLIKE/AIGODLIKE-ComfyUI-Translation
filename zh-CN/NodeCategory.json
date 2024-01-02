@@ -243,6 +243,8 @@
         "vec4": "4元数",
         "graphics": "图像",
     "ttN": "TT节点",
+        "pipe": "节点束",
+        "legacy": "旧版",
 
 
     "basic_pipe": "基础节点束",
