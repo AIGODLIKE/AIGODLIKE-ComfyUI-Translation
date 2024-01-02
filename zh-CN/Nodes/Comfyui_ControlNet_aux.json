@@ -1,4 +1,18 @@
 {
+    "LineartStandardPreprocessor": {
+        "title": "LineArtStandard艺术线预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "gaussian_sigmas": "高斯Sigmas",
+            "intensity_threshold": "强度阈值",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "Manga2Anime_LineArt_Preprocessor": {
         "title": "MangaAnime漫画艺术线预处理器",
         "inputs": {
@@ -105,6 +119,20 @@
             "IMAGE": "图像"
         }
     },
+    "MeshGraphormer-DepthMapPreprocessor": {
+        "title": "MeshGraphormer深度预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "mask_bbox_padding": "BBox遮罩分块",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "INPAINTING_MASK": "内补遮罩"
+        }
+    },
     "AIO_Preprocessor": {
         "title": "Aux集成预处理器",
         "inputs": {
@@ -119,9 +147,11 @@
                 "PiDiNetPreprocessor": "PidiNet模糊线预处理器",
                 "LineArtPreprocessor": "LineArt艺术线预处理器",
                 "AnimeLineArtPreprocessor": "AnimeLineArt动漫艺术线预处理器",
+                "LineartStandardPreprocessor": "LineArtStandard艺术线预处理器",
                 "Manga2Anime-LineArtPreprocessor": "Manga2Anime-LineArt漫画艺术线预处理器",
                 "CannyEdgePreprocessor": "Canny细致线预处理器",
                 "M-LSDPreprocessor": "M-LSD线段预处理器",
+                "MeshGraphormer-DepthMapPreprocessor": "MeshGraphormer深度预处理器",
                 "MiDaS-DepthMapPreprocessor": "MiDaS深度预处理器",
                 "MiDaS-NormalMapPreprocessor": "MiDaS法向预处理器",
                 "LeReS-DepthMapPreprocessor": "LeReS深度预处理器",
