@@ -1937,7 +1937,7 @@
         }
     },
     "Image Voronoi Noise Filter": {
-        "title": "Voronoi噪声",
+        "title": "Voronoi噪波",
         "widgets": {
             "width": "宽度",
             "height": "高度",
@@ -2430,6 +2430,18 @@
             "samples": "Latent"
         }
     },
+    "Image Bounds to Console": {
+        "title": "输出图像边界到控制台",
+        "inputs": {
+            "image_bounds": "边界"
+        },
+        "widgets": {
+            "label": "标签"
+        },
+        "outputs": {
+            "IMAGE_BOUNDS": "边界"
+        }
+    },
     "Text to Console": {
         "title": "输出文本到控制台",
         "inputs": {
@@ -2898,6 +2910,18 @@
         },
         "outputs": {
             "LIST": "列表"
+        }
+    },
+    "Text List to Text": {
+        "title": "文本列表到文本",
+        "inputs": {
+            "text_list": "文本列表"
+        },
+        "widgets": {
+            "delimiter": "分隔符"
+        },
+        "outputs": {
+            "STRING": "字符串"
         }
     },
     "Text Load Line From File": {
