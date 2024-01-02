@@ -240,5 +240,15 @@
             "MASK": "遮罩",
             "INT": "整数"
         }
+    },
+    "VHS_LoadAudio": {
+        "title": "加载音频",
+        "widgets": {
+            "audio_file": "音频文件",
+            "seek_secods": "起始秒数"
+        },
+        "outputs": {
+            "audio": "音频"
+        }
     }
 }

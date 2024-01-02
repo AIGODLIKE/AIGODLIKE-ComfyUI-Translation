@@ -174,7 +174,8 @@
         },
         "widgets": {
             "scheduler": "调度器",
-            "steps": "步数"
+            "steps": "步数",
+            "denoise": "降噪"
         },
         "outputs": {
             "SIGMAS": "Sigmas"

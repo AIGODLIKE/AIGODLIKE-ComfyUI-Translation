@@ -1583,6 +1583,11 @@
     "Set Default Fullscreen Node (ttN)": "设置默认全屏节点(TTN)",
     "Clear Default Fullscreen Node (ttN)": "清除默认全屏节点(TTN)",
 
+    "Slot Type Color (ttN)": "接口类型颜色(TTN)",
+    "Show Link Border (ttN)": "显示连线边框(TTN)",
+    "Show Link Shadow (ttN)": "显示连线阴影(TTN)",
+    "Link Style (ttN)": "连线类型(TTN)",
+
     "by percentage": "按百分比",
     "to Width/Height": "按宽高",
     "to longer side - maintain aspect": "按长边(固定宽高比)",
@@ -2169,5 +2174,6 @@
     "Help ♾️Mixlab": "帮助 ♾️Mixlab",
     "Add GetNode": "添加 获取节点",
     "Add SetNode": "添加 设置节点",
-    "Nodes Map ♾️Mixlab": "节点地图 ♾️Mixlab"
+    "Nodes Map ♾️Mixlab": "节点地图 ♾️Mixlab",
+    "Workflow App ♾️Mixlab": "工作流App ♾️Mixlab"
 }

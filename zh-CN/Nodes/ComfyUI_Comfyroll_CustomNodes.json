@@ -441,6 +441,42 @@
             "INT": "整数"
         }
     },
+    "CR Clamp Value": {
+        "title": "钳制",
+        "widgets": {
+            "a": "A",
+            "range_min": "最小值",
+            "range_max": "最大值"
+        },
+        "outputs": {
+            "A": "A",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Set Value On Boolean": {
+        "title": "设置布尔值",
+        "widgets": {
+            "boolean_number": "布尔值",
+            "value_if_true": "如果真",
+            "value_if_false": "如果假"
+        },
+        "outputs": {
+            "INT": "整数",
+            "FLOAT": "浮点"
+        }
+    },
+    "CR Math Operation": {
+        "title": "数学操作",
+        "widgets": {
+            "a": "A",
+            "operation": "操作",
+            "decimal_places": "小数位"
+        },
+        "outputs": {
+            "a": "浮点",
+            "show_help": "显示帮助"
+        }
+    },
 
 
 
@@ -575,6 +611,15 @@
             "show_help": "显示帮助"
         }
     },
+    "CR Save Text To File": {
+        "title": "保存文本到文件",
+        "widgets": {
+            "multiline_text": "多行文本",
+            "output_file_path": "输出路径",
+            "file_name": "文件名",
+            "file_extension": "后缀名"
+        }
+    },
     "CR Random Hex Color": {
         "title": "随机HEX色",
         "widgets": {
@@ -634,6 +679,23 @@
             "show_help": "显示帮助"
         }
     },
+    "CR Random Multiline Colors": {
+        "title": "随机多行颜色",
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "value_type": "值类型",
+            "rows": "行数"
+        },
+        "outputs": {
+            "multiline_text": "多行文本",
+            "show_help": "显示帮助"
+        }
+    },
     "CR Random RGB Gradient": {
         "title": "随机RGB渐变",
         "widgets": {
@@ -644,6 +706,24 @@
                 "decrement": "减少",
                 "randomize": "随机",
             "rows": "行数"
+        },
+        "outputs": {
+            "multiline_text": "多行文本",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Random Panel Codes": {
+        "title": "随机多通道编码",
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "rows": "行数",
+            "string_length": "字符串长度",
+            "values": "值"
         },
         "outputs": {
             "multiline_text": "多行文本",
@@ -1701,6 +1781,44 @@
             "show_help": "显示帮助"
         }
     },
+    "CR Draw Pie": {
+        "title": "绘制圆",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "pie_start": "起始角度",
+            "pie_stop": "最终角度",
+            "shape_color": "形状颜色",
+            "back_color": "背景颜色",
+            "x_offset": "X偏移",
+            "y_offset": "Y偏移",
+            "zoom": "缩放",
+            "rotation": "旋转",
+            "shape_color_hex": "形状颜色HEX",
+            "bg_color_hex": "背景色HEX"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Random Shape Pattern": {
+        "title": "随机形状图案",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "num_rows": "行数",
+            "num_cols": "列数",
+            "color1": "颜色1",
+            "color2": "颜色2",
+            "color1_hex": "颜色_1HEX",
+            "color2_hex": "颜色_2HEX"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "show_help": "显示帮助"
+        }
+    },
     "CR Halftone Filter": {
         "title": "半调滤镜",
         "inputs": {
@@ -1724,7 +1842,7 @@
             "show_help": "显示帮助"
         }
     },
-    "CR Vignette FIlter": {
+    "CR Vignette Filter": {
         "title": "暗角滤镜",
         "inputs": {
             "image": "图像"
@@ -1928,6 +2046,19 @@
         },
         "outputs": {
             "image": "图像",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Thumbnail Preview": {
+        "title": "缩略图预览",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "rescale_factor": "缩放系数",
+            "max_columns": "最大列数"
+        },
+        "outputs": {
             "show_help": "显示帮助"
         }
     },
@@ -2474,6 +2605,67 @@
             "width": "宽度",
             "height": "高度",
             "list_length": "列表长度",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Float Range List": {
+        "title": "浮点范围列表",
+        "widgets": {
+            "start": "起始值",
+            "end": "最终值",
+            "step": "步长",
+            "loops": "循环次数",
+            "ping_pong": "Ping-Pong"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Integer Range List": {
+        "title": "整数浮点范围",
+        "widgets": {
+            "start": "起始值",
+            "end": "最终值",
+            "step": "步长",
+            "loops": "循环次数",
+            "ping_pong": "Ping-Pong"
+        },
+        "outputs": {
+            "INT": "整数",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Load Text List": {
+        "title": "加载文本列表",
+        "widgets": {
+            "input_file_path": "文件路径",
+            "file_name": "文件名",
+            "file_extension": "后缀名"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Interwine Lists": {
+        "title": "列表列表",
+        "widgets": {
+            "list1": "列表1",
+            "list2": "列表2"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Binary To List": {
+        "title": "二进制到列表",
+        "widgets": {
+            "bit_string": "字符串"
+        },
+        "outputs": {
+            "STRING": "字符串",
             "show_help": "显示帮助"
         }
     },

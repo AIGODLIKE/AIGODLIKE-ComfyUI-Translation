@@ -116,6 +116,17 @@
             "STRING": "字符串"
         }
     },
+    "PromptSlide": {
+        "title": "提示词滑条",
+        "widgets": {
+            "prompt_keyword": "提示词关键词",
+            "weight": "权重",
+            "Upload Keywords": "上传关键词"
+        },
+        "outputs": {
+            "prompt": "提示词"
+        }
+    },
 
 
 
@@ -180,6 +191,16 @@
         "outputs": {
             "IMAGE": "图像",
             "MASK": "遮罩"
+        }
+    },
+    "LoadImagesFromURL": {
+        "title": "加载图像(URL)",
+        "widgets": {
+            "url:": "URL"
+        },
+        "outputs": {
+            "images": "图像",
+            "masks": "遮罩"
         }
     },
     "TextImage": {
@@ -271,6 +292,16 @@
                 "increment": "增加",
                 "decrement": "减少",
                 "randomize": "随机"
+        }
+    },
+    "LaMaInpainting": {
+        "title": "LaMa内补",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "IMAGE": "图像"
         }
     },
 
@@ -531,9 +562,45 @@
             "INT": "整数"
         }
     },
+    "GetImageSize_": {
+        "title": "获取图像尺寸",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "width": "宽度",
+            "height": "高度"
+        }
+    },
+    "SwitchByIndex": {
+        "title": "切换",
+        "inputs": {
+            "A": "A",
+            "B": "B"
+        },
+        "widgets": {
+            "index": "索引"
+        },
+        "outputs": {
+            "C": "C"
+        }
+    },
+    "LimitNumber": {
+        "title": "钳制数字",
+        "inputs": {
+            "number": "数字"
+        },
+        "widgets": {
+            "min_value": "最小值",
+            "max_value": "最大值"
+        },
+        "outputs": {
+            "number": "数字"
+        }
+    },
     
 
-    "Appinfo": {
+    "AppInfo": {
         "title": "APP制作",
         "inputs": {
             "image": "图像"
@@ -544,7 +611,8 @@
             "output_ids": "输出ID",
             "description": "描述",
             "version": "版本",
-            "Save FOr App": "保存为APP",
+            "Save For App": "保存为APP",
+            "Save & Open": "保存并打开",
             "Download For App": "下载APP"
         },
         "outputs": {

@@ -31,6 +31,30 @@
             "MODEL": "模型"
         }
     },
+    "IPAdapterApplyFaceID": {
+        "title": "IP适配应用(FaceID)",
+        "inputs": {
+            "ipadapter": "IP适配",
+            "clip_vision": "CLIP视觉",
+            "insightface": "InsightFace",
+            "image": "图像",
+            "model": "模型",
+            "attn_mask": "关注层遮罩"
+        },
+        "widgets": {
+            "weight": "权重",
+            "noise": "噪波增强",
+            "weight_type": "权重类型",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "faceid_v2": "FaceID_V2",
+            "weight_v2": "权重_V2",
+            "unfold_batch": "展开批次"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
     "IPAdapterApplyEncoded": {
         "title": "IP适配应用(已编码)",
         "inputs": {
@@ -125,7 +149,7 @@
             "CLIP_VISION": "CLIP视觉"
         }
     },
-    "PrepImageForInsighFace": {
+    "PrepImageForInsightFace": {
         "title": "InsightFace预处理",
         "inputs": {
             "image": "图像"

@@ -1,0 +1,76 @@
+{
+    "DPRandomGenerator": {
+        "title": "动态提示词(随机)",
+        "widgets": {
+            "text": "文本",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "autorefresh": "自动刷新"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "DPCombinatorialGenerator": {
+        "title": "动态提示词(穷举)",
+        "widgets": {
+            "text": "文本",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "autorefresh": "自动刷新"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "DPFeelingLucky": {
+        "title": "动态提示词(手气不错)",
+        "widgets": {
+            "text": "文本",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "autorefresh": "自动刷新"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "DPJinja": {
+        "title": "动态提示词(Jinja)",
+        "widgets": {
+            "text": "文本",
+            "autorefresh": "自动刷新"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "DPMagicPrompt": {
+        "title": "动态提示词(魔法添加)",
+        "widgets": {
+            "text": "文本",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "autorefresh": "自动刷新"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    }
+}

@@ -637,6 +637,30 @@
 
 
 
+    "Set": {
+        "title": "设置节点",
+        "inputs": {
+            "*": "输入"
+        },
+        "widgets": {
+            "Constant": "常量"
+        },
+        "outputs": {
+            "*": "输出"
+        }
+    },
+    "Get": {
+        "title": "获取节点",
+        "inputs": {
+            "*": "输入"
+        },
+        "widgets": {
+            "Constant": "常量"
+        },
+        "outputs": {
+            "*": "输出"
+        }
+    },
     "INTConstant": {
         "title": "整数常量",
         "widgets": {
