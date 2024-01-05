@@ -1,0 +1,53 @@
+{
+    "MotionctrlSample": {
+        "title": "MontionCtrl采样器",
+        "widgets": {
+            "prompt": "提示词",
+            "camera": "镜头轨迹",
+            "traj": "物体轨迹",
+            "frame_length": "帧数",
+            "steps": "步数",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "traj_tool": "轨迹工具",
+            "draw_traj_dot": "显示物体轨迹",
+            "draw_camera_dot": "显示镜头轨迹",
+            "ckpt_name": "模型名称"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "LoadMotionCameraPreset": {
+        "title": "加载镜头轨迹预设",
+        "widgets": {
+            "motion_camera": "镜头轨迹"
+        },
+        "outputs": {
+            "POINTS": "位置点字符串"
+        }
+    },
+    "LoadMotionTrajPreset": {
+        "title": "加载物体轨迹预设",
+        "widgets": {
+            "motion_traj": "物体轨迹",
+            "frame_length": "帧数"
+        }
+    },
+    "ImageSelector": {
+        "title": "图像选择",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "selected_indexes": "选择索引"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    }
+}
