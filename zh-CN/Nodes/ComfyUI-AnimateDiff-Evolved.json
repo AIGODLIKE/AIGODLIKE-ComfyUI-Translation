@@ -48,6 +48,100 @@
 
 
 
+    "ADE_NoiseLayerAdd": {
+        "title": "噪波层(添加)",
+        "inputs": {
+            "prev_noise_layers": "前噪波层",
+            "mask_optional": "遮罩",
+            "seed_override": "随机种"
+        },
+        "widgets": {
+            "batch_offset": "批次偏移",
+            "noise_type": "噪波类型",
+            "seed_gen_override": "随机种生成",
+                "use existing": "使用当前",
+                "comfy": "Comfy",
+                "auto1111": "Auto1111",
+            "seed_offset": "随机种偏移",
+            "noise_weight": "噪波权重"
+        },
+        "outputs": {
+            "NOISE_LAYER": "噪波层"
+        }
+    },
+    "ADE_NoiseLayerAddWeighted": {
+        "title": "噪波层(添加权重)",
+        "inputs": {
+            "prev_noise_layers": "前噪波层",
+            "mask_optional": "遮罩",
+            "seed_override": "随机种"
+        },
+        "widgets": {
+            "batch_offset": "批次偏移",
+            "noise_type": "噪波类型",
+            "seed_gen_override": "随机种生成",
+                "use existing": "使用当前",
+                "comfy": "Comfy",
+                "auto1111": "Auto1111",
+            "seed_offset": "随机种偏移",
+            "noise_weight": "噪波权重",
+            "balance_multiplier": "平衡倍数"
+        },
+        "outputs": {
+            "NOISE_LAYER": "噪波层"
+        }
+    },
+    "ADE_NoiseLayerReplace": {
+        "title": "噪波层(替换)",
+        "inputs": {
+            "prev_noise_layers": "前噪波层",
+            "mask_optional": "遮罩",
+            "seed_override": "随机种"
+        },
+        "widgets": {
+            "batch_offset": "批次偏移",
+            "noise_type": "噪波类型",
+            "seed_gen_override": "随机种生成",
+                "use existing": "使用当前",
+                "comfy": "Comfy",
+                "auto1111": "Auto1111",
+            "seed_offset": "随机种偏移"
+        },
+        "outputs": {
+            "NOISE_LAYER": "噪波层"
+        }
+    },
+
+
+
+    "ADE_IterationOptsDefault": {
+        "title": "迭代设置(默认)",
+        "widgets": {
+            "iterations": "迭代次数"
+        },
+        "outputs": {
+            "ITERATION_OPTS": "迭代设置"
+        }
+    },
+    "ADE_IterationOptsFreeInit": {
+        "title": "迭代设置",
+        "widgets": {
+            "iterations": "迭代次数",
+            "filter": "滤波器",
+            "d_s": "空间停止频率",
+            "d_t": "时间停止频率",
+            "n_butterworth": "Butterworth阶数",
+            "sigma_step": "Sigma步数",
+            "apply_to_1st_iter": "应用至第1次迭代",
+            "init_type": "初始化类型"
+        },
+        "outputs": {
+            "ITERATION_OPTS": "迭代设置"
+        }
+    },
+
+
+
     "ADE_AnimateDiffUniformContextOptions": {
         "title": "动态扩散上下文选项",
         "widgets": {
@@ -61,13 +155,31 @@
             "CONTEXT_OPTIONS": "上下文设置"
         }
     },
+    "ADE_AniamteDiffSamplingSettings": {
+        "title": "动态扩散采样设置",
+        "inputs": {
+            "prev_layers": "噪波层",
+            "iteration_opts": "迭代设置",
+            "seed_override": "随机种"
+        },
+        "widgets": {
+            "batch_offset": "批次偏移",
+            "noise_type": "噪波类型",
+            "seed_gen": "随机种生成",
+            "seed_offset": "随机种偏移"
+        },
+        "outputs": {
+            "settings": "采样设置"
+        }
+    },
     "ADE_AnimateDiffLoaderWithContext": {
         "title": "动态扩散加载器(上下文)",
         "inputs": {
             "model": "模型",
             "context_options": "上下文设置",
             "motion_lora": "动态LoRA",
-            "motion_model_settings": "动态模型设置"
+            "motion_model_settings": "动态模型设置",
+            "sample_settings": "采样设置"
         },
         "widgets": {
             "model_name": "模型名称",

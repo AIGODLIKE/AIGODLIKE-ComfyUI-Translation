@@ -1541,6 +1541,7 @@
 
     "Show UE links": "显示全局输入连线",
     "Hide Ue links": "隐藏全局输入连线",
+    "Convert all UEs to real links": "将全局输入连线转为实际连线",
     "Anything Everywhere highlight connected nodes": "高光显示全局输入已连接节点",
     "Anything Everywhere replace search": "全局输入替换搜索",
 
@@ -2175,5 +2176,16 @@
     "Add GetNode": "添加 获取节点",
     "Add SetNode": "添加 设置节点",
     "Nodes Map ♾️Mixlab": "节点地图 ♾️Mixlab",
-    "Workflow App ♾️Mixlab": "工作流App ♾️Mixlab"
+    "Workflow App ♾️Mixlab": "工作流App ♾️Mixlab",
+
+
+    "crystol": "crystol",
+    
+    "🪛Display CPU monitor [menu]": "显示CPU监视",
+    "🪛Display RAM monitor [menu]": "显示内存监视",
+    "🪛Display GPU monitor [menu]": "显示GPU监视",
+    "🪛Display Video RAM monitor [menu]": "显示VRAM监视",
+    "🪛Display Hard disk monitor [menu]": "显示硬盘监视",
+    "🪛Monitors refresh rate (in seconds) [menu]": "监视器刷新间隔(秒)",
+    "🪛Show progress bar [menu]": "显示生成进度条"
 }
