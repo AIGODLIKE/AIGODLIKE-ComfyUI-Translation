@@ -430,7 +430,7 @@
         }
     },
     "StableZero123_Conditioning": {
-        "title": "SZ123_条件",
+        "title": "SZ123条件",
         "inputs": {
             "clip_vision": "CLIP视觉",
             "init_image": "图像",
@@ -442,6 +442,47 @@
             "batch_size": "批次大小",
             "elevation": "俯仰角",
             "azimuth": "方位角"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latent": "Latent"
+        }
+    },
+    "StableZero123_Conditioning_Batched": {
+        "title": "SZ123条件(批次)",
+        "inputs": {
+            "clip_vision": "CLIP视觉",
+            "init_image": "图像",
+            "VAE": "VAE"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "batch_size": "批次大小",
+            "elevation": "俯仰角",
+            "azimuth": "方位角",
+            "elevation_batch_increment": "俯仰角增量",
+            "azimuth_batch_increment": "方位角增量"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latent": "Latent"
+        }
+    },
+
+
+    "SD_4XUpscale_Conditioning": {
+        "title": "SD4X放大条件",
+        "inputs": {
+            "images": "图像",
+            "positive": "正面条件",
+            "negative": "负面条件"
+        },
+        "widgets": {
+            "scale_ratio": "缩放系数",
+            "noise_augmentation": "噪波增强"
         },
         "outputs": {
             "positive": "正面条件",

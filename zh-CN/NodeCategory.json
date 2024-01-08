@@ -6,6 +6,7 @@
         "style_model": "风格模型",
         "gligen": "GLIGEN",
         "3d_models": "3D模型",
+        "upscale_diffusion": "放大扩散",
         "advanced": "高级",
         "cutoff": "截断",
     "latent": "Latent",
