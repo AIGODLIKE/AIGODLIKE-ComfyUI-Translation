@@ -1,6 +1,6 @@
 {
-    "MotionctrlSample": {
-        "title": "MontionCtrl采样器",
+    "Motionctrl Sample": {
+        "title": "MotionCtrl采样器",
         "widgets": {
             "prompt": "提示词",
             "camera": "镜头轨迹",
@@ -22,7 +22,43 @@
             "IMAGE": "图像"
         }
     },
-    "LoadMotionCameraPreset": {
+    "Motionctrl Sample Simple": {
+        "title": "MotionCtrl采样器(简易)",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE",
+            "ddim_sampler": "DDIM采样器",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "traj_list": "物体轨迹列表",
+            "rt_list": "RT列表",
+            "traj": "物体轨迹",
+            "rt": "RT",
+            "noise_shape": "噪波形状"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "camera": "镜头轨迹",
+            "traj": "物体轨迹",
+            "frame_length": "帧数",
+            "steps": "步数",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "traj_tool": "轨迹工具",
+            "draw_traj_dot": "显示物体轨迹",
+            "draw_camera_dot": "显示镜头轨迹",
+            "ckpt_name": "模型名称"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Load Motion Camera Preset": {
         "title": "加载镜头轨迹预设",
         "widgets": {
             "motion_camera": "镜头轨迹"
@@ -31,14 +67,27 @@
             "POINTS": "位置点字符串"
         }
     },
-    "LoadMotionTrajPreset": {
+    "Load Motion Traj Preset": {
         "title": "加载物体轨迹预设",
         "widgets": {
             "motion_traj": "物体轨迹",
             "frame_length": "帧数"
         }
     },
-    "ImageSelector": {
+    "Load Motionctrl Checkpoint": {
+        "title": "加载MotionCtrl模型",
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "frame_length": "帧数"
+        },
+        "outputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE",
+            "ddim_sampler": "DDIM采样器"
+        }
+    },
+    "Select Image Indices": {
         "title": "图像选择",
         "inputs": {
             "images": "图像"
@@ -48,6 +97,30 @@
         },
         "outputs": {
             "IMAGE": "图像"
+        }
+    },
+    "Motionctrl Cond": {
+        "title": "MotionCtrl条件",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "camera": "镜头轨迹",
+            "traj": "物体轨迹",
+            "infer_mode": "控制模式",
+                "control camera poses": "控制镜头",
+                "control object trajectory": "控制物体",
+                "control both camera and obejct motion": "控制全部"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "traj_list": "物体轨迹列表",
+            "rt_list": "RT列表",
+            "traj": "物体轨迹",
+            "rt": "RT",
+            "noise_shape": "噪波形状"
         }
     }
 }
