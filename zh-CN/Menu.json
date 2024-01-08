@@ -1541,6 +1541,7 @@
 
     "Show UE links": "显示全局输入连线",
     "Hide Ue links": "隐藏全局输入连线",
+    "Convert all UEs to real links": "将全局输入连线转为实际连线",
     "Anything Everywhere highlight connected nodes": "高光显示全局输入已连接节点",
     "Anything Everywhere replace search": "全局输入替换搜索",
 
