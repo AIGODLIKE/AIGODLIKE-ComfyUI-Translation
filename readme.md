@@ -40,6 +40,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[ControlNet LLLite](https://github.com/kohya-ss/ControlNet-LLLite-ComfyUI)|√|√|√|TODO|TODO|
 |[ControlNet Preprocessors](https://github.com/Fannovel16/comfy_controlnet_preprocessors)|√|√|√|√|TODO|
 |[ControlNet Preprocessors AUX](https://github.com/Fannovel16/comfyui_controlnet_aux)|√|√|√|√|TODO|
+|[Crystools](https://github.com/crystian/ComfyUI-Crystools.git)|√|TODO|√|TODO|TODO|
 |[Cutoff](https://github.com/BlenderNeko/ComfyUI_Cutoff)|√|√|√|√|TODO|
 |[Custom-Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts)|√|√|√|TODO|TODO|
 |[cg-use-everywhere](https://github.com/chrisgoringe/cg-use-everywhere.git)|√|TODO|√|TODO|TODO|
@@ -66,6 +67,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Masquerade Nodes](https://github.com/BadCafeCode/masquerade-nodes-comfyui)|√|√|√|TODO|TODO|
 |[Math](https://github.com/evanspearman/ComfyMath.git)|√|TODO|√|TODO|TODO|
 |[Mixlab Nodes](https://github.com/shadowcz007/comfyui-mixlab-nodes.git)|√|TODO|√|TODO|TODO|
+|[MotionCtrl](https://github.com/chaojie/ComfyUI-MotionCtrl)|√|TODO|√|TODO|TODO|
 |[Noise](https://github.com/BlenderNeko/ComfyUI_Noise)|√|√|√|TODO|TODO|
 |[Portrai Master](https://github.com/florestefano1975/comfyui-portrait-master.git)|√|TODO|√|TODO|TODO|
 |[QR](https://github.com/coreyryanhanson/comfy-qr)|√|√|√|TODO|TODO|
