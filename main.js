@@ -56,21 +56,18 @@ export class TUtils {
 			TUtils.syncTranslation(() => { resolve(1); });
 		});
 	}
+	static applyNodeTypeTranslationEx(nodeName) {
+		let nodesT = this.T.Nodes;
+		var nodeType = LiteGraph.registered_node_types[nodeName];
+		let class_type = nodeType.comfyClass ? nodeType.comfyClass : nodeType.type;
+		if (nodesT.hasOwnProperty(class_type)) {
+			nodeType.title = nodesT[class_type]["title"] || nodeType.title;
+		}
+	}
 
 	static applyNodeTypeTranslation(app) {
-		// let nodeCT = this.T.NodeCategory;
-		let nodesT = this.T.Nodes;
 		for (let nodeName in LiteGraph.registered_node_types) {
-			var nodeType = LiteGraph.registered_node_types[nodeName];
-			// for (let key in nodeCT) {
-			// 	if (!nodeType.category.includes(key))
-			// 		continue;
-			// 	nodeType.category = nodeType.category.replace(key, nodeCT[key]);
-			// }
-			let class_type = nodeType.comfyClass ? nodeType.comfyClass : nodeType.type;
-			if (nodesT.hasOwnProperty(class_type)) {
-				nodeType.title = nodesT[class_type]["title"] || nodeType.title;
-			}
+			this.applyNodeTypeTranslationEx(nodeName);
 		}
 	}
 
@@ -246,6 +243,20 @@ export class TUtils {
 		// LiteGraph.LGraphCanvas.prototype.showSearchBox.prototype = f3.prototype;
 	}
 
+	static addRegisterNodeDefCB(app) {
+		const f = app.registerNodeDef;
+		async function af() {
+			return f.apply(this, arguments);
+		}
+		app.registerNodeDef = async function (nodeId, nodeData) {
+			var res = af.apply(this, arguments);
+			res.then(() => {
+				TUtils.applyNodeTypeTranslationEx(nodeId);
+			});
+			return res;
+		};
+	}
+
 	static addSettingsMenuOptions(app) {
 		let id = this.LOCALE_ID;
 		app.ui.settings.addSetting({
@@ -368,6 +379,7 @@ const ext = {
 		TUtils.applyNodeTypeTranslation(app);
 		TUtils.applyContextMenuTranslation(app);
 		TUtils.applyMenuTranslation(app);
+		TUtils.addRegisterNodeDefCB(app);
 		TUtils.addSettingsMenuOptions(app);
 		// 构造设置面板
 		// this.settings = new AGLSettingsDialog();
