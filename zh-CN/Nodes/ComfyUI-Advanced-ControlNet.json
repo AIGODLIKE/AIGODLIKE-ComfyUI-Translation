@@ -128,7 +128,8 @@
             "image": "图像",
             "mask_optional": "遮罩",
             "timestep_kf": "帧间隔",
-            "latent_kf_override": ""
+            "latent_kf_override": "Latent关键帧",
+            "weights_override": "ControlNet权重"
         },
         "widgets": {
             "strength": "强度",
