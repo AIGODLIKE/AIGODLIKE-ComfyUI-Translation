@@ -155,7 +155,7 @@
             "CONTEXT_OPTIONS": "上下文设置"
         }
     },
-    "ADE_AniamteDiffSamplingSettings": {
+    "ADE_AnimateDiffSamplingSettings": {
         "title": "动态扩散采样设置",
         "inputs": {
             "prev_layers": "噪波层",
