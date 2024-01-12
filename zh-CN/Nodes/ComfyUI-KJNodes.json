@@ -389,6 +389,19 @@
             "bbox_height": "BBox高度"
         }
     },
+    "FilterZeroMasksAndCorrespondingImages": {
+        "title": "过滤零遮罩和图像",
+        "inputs": {
+            "masks": "遮罩",
+            "original_images": "图像"
+        },
+        "outputs": {
+            "non_zero_masks_out": "非零遮罩",
+            "non_zero_mask_images_out": "非零图像",
+            "zero_mask_images_out": "零图像",
+            "zero_mask_images_out_indexes": "非零遮罩图像索引"
+        }
+    },
     "BatchUncrop": {
         "title": "Uncrop",
         "inputs": {
@@ -810,7 +823,7 @@
         }
     },
     "ReplaceImagesInBatch": {
-        "title": "替换批次图像",
+        "title": "替换图像批次",
         "inputs": {
             "original_images": "原图像",
             "replacement_images": "替换图像"
@@ -820,6 +833,17 @@
         },
         "outputs": {
             "IMAGE": "图像"
+        }
+    },
+    "InsertImageBatchByIndexes": {
+        "title": "按索引插入图像批次",
+        "inputs": {
+            "images": "图像",
+            "images_to_insert": "插入图像",
+            "insert_indexes": "插入索引"
+        },
+        "outputs": {
+            "images_after_insert": "图像"
         }
     },
     "WidgetToString": {

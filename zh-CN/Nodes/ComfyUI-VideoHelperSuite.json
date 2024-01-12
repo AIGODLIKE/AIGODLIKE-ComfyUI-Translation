@@ -158,6 +158,104 @@
 
 
 
+    "VHS_SplitMasks": {
+        "title": "分割遮罩",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "split_index": "拆分索引"
+        },
+        "outputs": {
+            "MASK_A": "遮罩_A",
+            "A_count": "A组计数",
+            "MASK_B": "遮罩_B",
+            "B_count": "B组计数"
+        }
+    },
+    "VHS_MergeMasks": {
+        "title": "融合遮罩",
+        "inputs": {
+            "mask_A": "遮罩_A",
+            "mask_B": "遮罩_B"
+        },
+        "widgets": {
+            "merge_strategy": "融合策略",
+            "scale_method": "缩放方法",
+            "crop": "裁剪"
+        },
+        "outputs": {
+            "MASK": "遮罩",
+            "count": "计数"
+        }
+    },
+    "VHS_SelectEveryNthMask": {
+        "title": "遮罩模选",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "select_every_nth": "模选"
+        },
+        "outputs": {
+            "MASK": "遮罩",
+            "count": "计数"
+        }
+    },
+    "VHS_GetMaskCount": {
+        "title": "遮罩计数",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "count": "计数"
+        }
+    },
+    "VHS_DuplicateMasks": {
+        "title": "遮罩复制",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "multiply_by": "系数"
+        },
+        "outputs": {
+            "MASK": "遮罩",
+            "count": "计数"
+        }
+    },
+
+
+
+    "VHS_VAEEncodeBatched": {
+        "title": "VAE编码(批次)",
+        "inputs": {
+            "pixels": "图像",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "per_batch": "每批"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "VHS_VAEDecodeBatched": {
+        "title": "VAE解码(批次)",
+        "inputs": {
+            "samples": "Latent",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "per_batch": "每批"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+
+
+
     "VHS_VideoCombine": {
         "title": "合并为视频",
         "inputs": {

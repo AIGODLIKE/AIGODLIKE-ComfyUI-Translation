@@ -1,4 +1,130 @@
 {
+    "ImageBatchSplitter //Inspire": {
+        "title": "图像批次分割",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "split_count": "分割数量"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "image 1": "图像_1",
+            "image 2": "图像_2",
+            "image 3": "图像_3",
+            "image 4": "图像_4",
+            "image 5": "图像_5",
+            "image 6": "图像_6",
+            "image 7": "图像_7",
+            "image 8": "图像_8",
+            "image 9": "图像_9",
+            "image 10": "图像_10",
+            "image 11": "图像_11",
+            "image 12": "图像_12",
+            "image 13": "图像_13",
+            "image 14": "图像_14",
+            "image 15": "图像_15",
+            "image 16": "图像_16",
+            "image 17": "图像_17",
+            "image 18": "图像_18",
+            "image 19": "图像_19",
+            "image 20": "图像_20",
+            "image 21": "图像_21",
+            "image 22": "图像_22",
+            "image 23": "图像_23",
+            "image 24": "图像_24",
+            "image 25": "图像_25",
+            "image 26": "图像_26",
+            "image 27": "图像_27",
+            "image 28": "图像_28",
+            "image 29": "图像_29",
+            "image 30": "图像_30",
+            "image 31": "图像_31",
+            "image 32": "图像_32",
+            "image 33": "图像_33",
+            "image 34": "图像_34",
+            "image 35": "图像_35",
+            "image 36": "图像_36",
+            "image 37": "图像_37",
+            "image 38": "图像_38",
+            "image 39": "图像_39",
+            "image 40": "图像_40",
+            "image 41": "图像_41",
+            "image 42": "图像_42",
+            "image 43": "图像_43",
+            "image 44": "图像_44",
+            "image 45": "图像_45",
+            "image 46": "图像_46",
+            "image 47": "图像_47",
+            "image 48": "图像_48",
+            "image 49": "图像_49",
+            "image 50": "图像_50",
+            "remained": "剩余"
+        }
+    },
+    "LatentBatchSplitter //Inspire": {
+        "title": "Latent批次分割",
+        "inputs": {
+            "latent": "Latent"
+        },
+        "widgets": {
+            "split_count": "分割数量"
+        },
+        "outputs": {
+            "LATENT": "Latent",
+            "latent 1": "Laten_1",
+            "latent 2": "Laten_2",
+            "latent 3": "Laten_3",
+            "latent 4": "Laten_4",
+            "latent 5": "Laten_5",
+            "latent 6": "Laten_6",
+            "latent 7": "Laten_7",
+            "latent 8": "Laten_8",
+            "latent 9": "Laten_9",
+            "latent 10": "Latent_10",
+            "latent 11": "Latent_11",
+            "latent 12": "Latent_12",
+            "latent 13": "Latent_13",
+            "latent 14": "Latent_14",
+            "latent 15": "Latent_15",
+            "latent 16": "Latent_16",
+            "latent 17": "Latent_17",
+            "latent 18": "Latent_18",
+            "latent 19": "Latent_19",
+            "latent 20": "Latent_20",
+            "latent 21": "Latent_21",
+            "latent 22": "Latent_22",
+            "latent 23": "Latent_23",
+            "latent 24": "Latent_24",
+            "latent 25": "Latent_25",
+            "latent 26": "Latent_26",
+            "latent 27": "Latent_27",
+            "latent 28": "Latent_28",
+            "latent 29": "Latent_29",
+            "latent 30": "Latent_30",
+            "latent 31": "Latent_31",
+            "latent 32": "Latent_32",
+            "latent 33": "Latent_33",
+            "latent 34": "Latent_34",
+            "latent 35": "Latent_35",
+            "latent 36": "Latent_36",
+            "latent 37": "Latent_37",
+            "latent 38": "Latent_38",
+            "latent 39": "Latent_39",
+            "latent 40": "Latent_40",
+            "latent 41": "Latent_41",
+            "latent 42": "Latent_42",
+            "latent 43": "Latent_43",
+            "latent 44": "Latent_44",
+            "latent 45": "Latent_45",
+            "latent 46": "Latent_46",
+            "latent 47": "Latent_47",
+            "latent 48": "Latent_48",
+            "latent 49": "Latent_49",
+            "latent 50": "Latent_50",
+            "remained": "剩余"
+        }
+    },
     "XY Input: Lora Block Weight //Inspire": {
         "title": "XY输入：LoRA分层权重",
         "widgets": {
@@ -216,6 +342,12 @@
             "SEGS_PREPROCESSOR": "Seg预处理"
         }
     },
+    "MeshGraphormerDepthMapPreprocessorProvider_for_SEGS //Inspire": {
+        "title": "MeshGraphormer深度预处理器(Seg)",
+        "outputs": {
+            "SEGS_PREPROCESSOR": "Seg预处理"
+        }
+    },
 
 
 
@@ -296,7 +428,7 @@
             "ZIPPED_PROMPT": "提示词包"
         }
     },
-    "LoadSinglePromptsFromFile //Inspire": {
+    "LoadSinglePromptFromFile //Inspire": {
         "title": "加载单独提示词(文件)",
         "wdigets": {
             "prompt": "提示词",
@@ -375,6 +507,31 @@
             "noise": "噪波"
         }
     },
+    "MakeBasicPipe //Inspire": {
+        "title": "制作基础节点树",
+        "inputs": {
+            "vae_opt": "VAE"
+        },
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "positive_wildcard_text": "正面通配文本",
+            "negative_wildcard_text": "负面通配文本",
+            "Add selection to": "添加选择项到正面",
+            "Select to add LoRA": "添加LoRA",
+            "Select to add Wildcard": "添加通配符",
+            "wildcard_mode": "通配符模式",
+            "positive_populated_text": "正面通配填充",
+            "negative_populated_text": "负面通配填充",
+            "token_normalization": "Token规格化",
+            "weight_interpolation": "权重插值方式",
+            "stop_at_clip_layer": "CLIP停止层",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作"
+        },
+        "outputs": {
+            "BASIC_PIPE": "基础节点束"
+        }
+    },
 
 
 
@@ -429,6 +586,20 @@
         },
         "outputs": {
             "CONDITIONING": "条件"
+        }
+    },
+    "RandomGeneratorForList //Inspire": {
+        "title": "随机列表生成器",
+        "inputs": {
+            "signal": "信号"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作"
+        },
+        "outputs": {
+            "signal": "信号",
+            "random_value": "值"
         }
     },
     "FromIPAdapterPipe //Inspire": {
@@ -639,6 +810,13 @@
                 "decrement for each node": "每个节点减少",
                 "randomize for each node": "每个节点随机",
             "last_seed": "上个随机种"
+        }
+    },
+    "GlobalSampler //Inspire": {
+        "title": "全局采样器",
+        "widgets": {
+            "sampler_name": "采样器",
+            "scheduler": "调度器"
         }
     },
     "WildcardEncode //Inspire": {

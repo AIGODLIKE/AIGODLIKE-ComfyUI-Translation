@@ -127,9 +127,52 @@
             "prompt": "提示词"
         }
     },
+    "PromptSimplification": {
+        "title": "提示词简化",
+        "widgets": {
+            "prompt": "提示词",
+            "length": "长度"
+        },
+        "outputs": {
+            "prompts": "提示词"
+        }
+    },
+    "PromptImage": {
+        "title": "提示词图像",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "prompts": "提示词",
+            "save_to_image": "保存到图像"
+        }
+    },
+    "ClipInterrogator": {
+        "title": "CLIP询问机",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "prompt_mode": "提示词模式",
+            "image_analysis": "图像分析"
+        },
+        "outputs": {
+            "prompt": "提示词",
+            "random_samples": "随机样本"
+        }
+    },
 
 
 
+    "MirroredImage": {
+        "title": "镜像图像",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "NoiseImage": {
         "title": "噪波图像",
         "widgets": {
@@ -139,6 +182,19 @@
         },
         "outputs": {
             "IMAGE": "图像"
+        }
+    },
+    "GradientImage": {
+        "title": "渐变图像",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "start_color_hex": "起始颜色HEX",
+            "end_color_hex": "最终颜色HEX"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
         }
     },
     "TransparentImage": {
@@ -257,6 +313,16 @@
         "outputs": {
             "IMAGE": "图像",
             "MASK": "遮罩"
+        }
+    },
+    "ImageColorTransfer": {
+        "title": "图像颜色传递",
+        "inputs": {
+            "source": "原图像",
+            "target": "目标图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
         }
     },
 
