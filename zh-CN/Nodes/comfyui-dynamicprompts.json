@@ -72,5 +72,11 @@
         "outputs": {
             "STRING": "字符串"
         }
+    },
+    "OutputString": {
+        "title": "输出字符串",
+        "widgets": {
+            "text": "文本"
+        }
     }
 }
