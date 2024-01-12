@@ -27,6 +27,22 @@
         }
     },
 
+    "ConstrainImageforVideo|pysssss": {
+        "title": "限制图像为视频",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "max_width": "最大宽度",
+            "max_height": "最大高度",
+            "min_width": "最小宽度",
+            "min_height": "最小高度",
+            "crop_if_required": "裁剪"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "ConstrainImage|pysssss": {
         "title": "限制图像区域",
         "inputs": {
