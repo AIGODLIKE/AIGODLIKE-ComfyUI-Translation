@@ -13,6 +13,7 @@
                 "increment": "增加",
                 "decrement": "减少",
                 "randomize": "随机",
+            "context_overlap": "上下文重合",
             "traj_tool": "轨迹工具",
             "draw_traj_dot": "显示物体轨迹",
             "draw_camera_dot": "显示镜头轨迹",
@@ -49,6 +50,7 @@
                 "increment": "增加",
                 "decrement": "减少",
                 "randomize": "随机",
+            "context_overlap": "上下文重合",
             "traj_tool": "轨迹工具",
             "draw_traj_dot": "显示物体轨迹",
             "draw_camera_dot": "显示镜头轨迹",
@@ -111,7 +113,8 @@
             "infer_mode": "控制模式",
                 "control camera poses": "控制镜头",
                 "control object trajectory": "控制物体",
-                "control both camera and obejct motion": "控制全部"
+                "control both camera and obejct motion": "控制全部",
+            "context_overlap": "上下文重合"
         },
         "outputs": {
             "positive": "正面条件",
@@ -120,7 +123,8 @@
             "rt_list": "RT列表",
             "traj": "物体轨迹",
             "rt": "RT",
-            "noise_shape": "噪波形状"
+            "noise_shape": "噪波形状",
+            "context_overlap": "上下文重合"
         }
     }
 }

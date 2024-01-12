@@ -2187,5 +2187,12 @@
     "🪛Display Video RAM monitor [menu]": "显示VRAM监视",
     "🪛Display Hard disk monitor [menu]": "显示硬盘监视",
     "🪛Monitors refresh rate (in seconds) [menu]": "监视器刷新间隔(秒)",
-    "🪛Show progress bar [menu]": "显示生成进度条"
+    "🪛Show progress bar [menu]": "显示生成进度条",
+
+
+    "MotionCtr": "MotionCtr",
+    
+    "control camera poses": "控制镜头",
+    "control object trajectory": "控制物体",
+    "control both camera and obejct motion": "控制全部"
 }
