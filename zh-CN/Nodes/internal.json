@@ -408,6 +408,21 @@
             "CONDITIONING": "条件"
         }
     },
+    "InpaintModelConditioning": {
+        "title": "内补模型条件",
+        "inputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "vae": "VAE",
+            "pixels": "图像",
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latent": "Latent"
+        }
+    },
     "SVD_img2vid_Conditioning": {
         "title": "SVD_图像到视频_条件",
         "inputs": {
