@@ -124,6 +124,15 @@
             "SEGS": "Seg"
         }
     },
+    "RemoveImageFromSEGS": {
+        "title": "Seg移除图像",
+        "inputs": {
+            "segs": "Seg"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
     "ImpactControlNetApplySEGS": {
         "title": "ControlNet应用Seg",
         "inputs": {
@@ -133,6 +142,15 @@
         },
         "widgets": {
             "strength": "强度"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "ImpactControlNetClearSEGS": {
+        "title": "ControlNet移除Seg",
+        "inputs": {
+            "segs": "Seg"
         },
         "outputs": {
             "SEGS": "Seg"
