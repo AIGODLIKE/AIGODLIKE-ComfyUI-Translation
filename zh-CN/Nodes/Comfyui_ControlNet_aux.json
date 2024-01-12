@@ -282,10 +282,13 @@
             "detect_hand": "检测手部",
             "detect_body": "检测身体",
             "detect_face": "检测面部",
-            "resolution": "分辨率"
+            "resolution": "分辨率",
+            "bbox_detector": "BBox检测",
+            "pose_estimator": "姿态预估"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "图像",
+            "POSE_KEYPOINT": "姿态关键点"
         }
     },
     "AnimalPosePreprocessor": {
@@ -299,7 +302,8 @@
             "resolution": "分辨率"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "图像",
+            "POSE_KEYPOINT": "姿态关键点"
         }
     },
     "MediaPipe-FaceMeshPreprocessor": {
@@ -347,7 +351,8 @@
             "resolution": "分辨率"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "图像",
+            "POSE_KEYPOINT": "姿态关键点"
         }
     },
 
@@ -466,6 +471,35 @@
         },
         "widgets": {
             "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+
+    "SavePoseKpsAsJsonFile": {
+        "title": "保存姿态关键点",
+        "inputs": {
+            "pose_kps": "姿态关键点"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀"
+        }
+    },
+    "FacialPartColoringFromPoseKps": {
+        "title": "姿态关键点面部上色",
+        "inputs": {
+            "pose_kps": "姿态关键点"
+        },
+        "widgets": {
+            "mode": "模式",
+            "skin": "皮肤",
+            "left_eye": "左眼",
+            "right_eye": "右眼",
+            "nose": "鼻子",
+            "upper_lip": "上唇",
+            "inner_mouth": "口腔",
+            "lower_lip": "下唇"
         },
         "outputs": {
             "IMAGE": "图像"
