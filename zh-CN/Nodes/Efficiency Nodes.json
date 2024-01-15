@@ -129,7 +129,7 @@
             "sampler_name": "采样器",
             "scheduler": "调度器",
             "start_at_step": "开始降噪步数",
-            "refine_at_step": "开始优化步数",
+            "refine_at_step": "Refiner开始步数",
             "preview_method": "预览方法",
                 "none": "无(最快)",
                 "auto": "自动",
@@ -191,10 +191,10 @@
             "cnet_stack": "ControlNet堆"
         },
         "widgets": {
-            "base_ckpt_name": "基础模型",
-            "base_clip_skip": "基础CLIP Skip",
-            "refiner_ckpt_name": "优化模型",
-            "refiner_clip_skip": "优化CLIP Skip",
+            "base_ckpt_name": "模型",
+            "base_clip_skip": "CLIP Skip",
+            "refiner_ckpt_name": "模型(Refiner)",
+            "refiner_clip_skip": "CLIP Skip(Refiner)",
             "positive_ascore": "正面美学分数",
             "negative_ascore": "负面美学分数",
             "vae_name": "VAE",
@@ -488,14 +488,14 @@
     "Pack SDXL Tuple": {
         "title": "打包SDXL元组",
         "inputs": {
-            "base_model": "基础模型",
-            "base_clip": "基础CLIP",
-            "base_positive": "基础正面条件",
+            "base_model": "模型",
+            "base_clip": "CLIP",
+            "base_positive": "正面条件",
             "base_negative": "负面条件",
-            "refiner_model": "模型",
-            "refiner_clip": "CLIP",
-            "refiner_positive": "正面条件",
-            "refiner_negative": "负面条件"
+            "refiner_model": "模型(Refiner)",
+            "refiner_clip": "CLIP(Refiner)",
+            "refiner_positive": "正面条件(Refiner)",
+            "refiner_negative": "负面条件(Refiner)"
         },
         "outputs": {
             "SDXL_TUPLE": "SDXL元组"
@@ -507,14 +507,14 @@
             "sdxl_tuple": "SDXL元组"
         },
         "outputs": {
-            "BASE_MODEL": "基础模型",
-            "BASE_CLIP": "基础CLIP",
-            "REFINER_MODEL": "优化模型",
-            "REFINER_CLIP": "优化CLIP",
-            "BASE_CONDITIONING+": "基础正面条件",
-            "BASE_CONDITIONING-": "基础负面条件",
-            "REFINER_CONDITIONING+": "优化正面条件",
-            "REFINER_CONDITIONING-": "优化负面条件"
+            "BASE_MODEL": "模型",
+            "BASE_CLIP": "CLIP",
+            "REFINER_MODEL": "模型(Refiner)",
+            "REFINER_CLIP": "CLIP(Refiner)",
+            "BASE_CONDITIONING+": "正面条件",
+            "BASE_CONDITIONING-": "负面条件",
+            "REFINER_CONDITIONING+": "正面条件(Refiner)",
+            "REFINER_CONDITIONING-": "负面条件(Refiner)"
         }
     },
 
@@ -651,8 +651,8 @@
             "last_start_step": "最终开始步数",
             "first_end_step": "起始结束步数",
             "last_end_step": "最终结束步数",
-            "first_refine_step": "起始优化步数",
-            "last_refine_step": "最终优化步数"
+            "first_refine_step": "Refiner起始步数",
+            "last_refine_step": "Refiner最终步数"
         }
     },
     "XY Input: Start at Step": {
@@ -982,9 +982,9 @@
         }
     },
     "XY Input: Refiner On/Off": {
-        "title": "优化开关",
+        "title": "Refiner开关",
         "widgets": {
-            "refine_at_percent": "开始优化时间"
+            "refine_at_percent": "Refiner开始时间"
         }
     },
     "XY Input: Checkpoint": {

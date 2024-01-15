@@ -1691,7 +1691,7 @@
         }
     },
     "CLIPTextEncodeSDXLRefiner": {
-        "title": "CLIP文本编码SDXL优化",
+        "title": "CLIP文本编码SDXL(Refiner)",
         "inputs": {
             "clip": "CLIP"
         },

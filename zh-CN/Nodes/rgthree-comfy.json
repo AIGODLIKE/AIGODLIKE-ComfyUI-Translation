@@ -16,7 +16,7 @@
         "widgets": {
             "seed": "随机种",
             "steps": "步数",
-            "step_refiner": "优化步数",
+            "step_refiner": "Refiner步数",
             "cfg": "CFG",
             "ckpt_name": "模型名称",
             "sampler": "采样器",
@@ -38,7 +38,7 @@
             "LATENT": "Latent",
             "IMAGE": "图像",
             "STEPS": "步数",
-            "STEP_REFINER": "优化步数",
+            "STEP_REFINER": "Refiner步数",
             "CFG": "CFG"
         }
     },
@@ -110,7 +110,7 @@
             "IMAGE": "图像",
             "STEPS": "步数",
             "SEED": "随机种",
-            "STEP_REFINER": "优化步数",
+            "STEP_REFINER": "Refiner步数",
             "CFG": "CFG",
             "CKPT_NAME": "模型名称",
             "SAMPLER": "采样器",
@@ -227,14 +227,14 @@
         "title": "K采样器设置",
         "widgets": {
             "steps_total": "总步数",
-            "refiner_step": "优化步数",
+            "refiner_step": "Refiner步数",
             "cfg": "CFG",
             "sampler": "采样器",
             "scheduler": "调度器"
         },
         "outputs": {
             "STEPS": "步数",
-            "REFINER_STEP": "优化步数",
+            "REFINER_STEP": "Refiner步数",
             "CFG": "CFG"
         }
     },
@@ -359,7 +359,7 @@
             "IMAGE": "图像",
             "STEPS": "步数",
             "SEED": "随机种",
-            "STEP_REFINER": "优化步数",
+            "STEP_REFINER": "Refiner步数",
             "CFG": "CFG",
             "CKPT_NAME": "模型名称",
             "SAMPLER": "采样器",
