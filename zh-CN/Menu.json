@@ -192,6 +192,12 @@
     "Convert to Group Node": "转换为节点组",
     "Convert to nodes": "转换为节点",
 
+    "Manage Group Nodes": "管理组节点",
+        "Group Nodes": "组节点",
+        "Widgets": "组件",
+        "Visible": "可见",
+        "Delete Group Node": "删除节点",
+
     "Open in MaskEditor": "在遮罩编辑器中打开",
 
     "HEDPreprocessor": "HED模糊线预处理器",
