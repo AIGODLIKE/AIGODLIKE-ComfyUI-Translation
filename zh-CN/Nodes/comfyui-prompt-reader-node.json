@@ -1,0 +1,147 @@
+{
+    "SDPromptReader": {
+        "title": "SD提示词读取",
+        "widgets": {
+            "image": "图像",
+            "upload": "上传",
+            "parameter_index": "参数索引"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩",
+            "POSITIVE": "正面提示词",
+            "NEGATIVE": "负面提示词",
+            "SEED": "随机种",
+            "STEPS": "步数",
+            "CFG": "CFG",
+            "WIDTH": "宽度",
+            "HEIGHT": "高度",
+            "MODEL_NAME": "模型名称",
+            "FILENAME": "文件名",
+            "SETTINGS": "设置"
+        }
+    },
+    "SDPromptSaver": {
+        "title": "SD提示词保存",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "filename": "文件名",
+            "path": "路径",
+            "model_name": "模型名称",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "width": "宽度",
+            "height": "高度",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "extension": "后缀名",
+            "calculate_model_hash": "计算模型哈希",
+            "lossless_webp": "无损WebP",
+            "jpg_webp_quality": "JPG_WebP质量",
+            "date_format": "日期格式",
+            "time_format": "时间格式",
+            "save_metadata_file": "保存元数据",
+            "extra_info": "额外信息"
+        },
+        "outputs": {
+            "FILENAME": "文件名",
+            "FILE_PATH": "文件路径",
+            "METADATA": "元数据"
+        }
+    },
+    "SDParameterGenerator": {
+        "title": "SD参数生成",
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "vae_name": "VAE",
+            "model_version": "模型版本",
+            "config_name": "配置文件",
+            "seed": "随机种",
+            "steps": "步数",
+            "refiner_start": "Refiner开始时机",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "positive_ascore": "正面美学分数",
+            "negative_ascore": "负面美学分数",
+            "aspect_ratio": "宽高比",
+            "width": "宽度",
+            "height": "高度",
+            "batch_size": "批次大小",
+            "Randomize seed each time": "每次随机随机种",
+            "New fixed random seed": "生成随机种",
+            "(Use Last Queued Seed)": "使用上次队列的随机种"
+        },
+        "outputs": {
+            "MODEL_NAME": "模型名称",
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "VAE": "VAE",
+            "SEED": "随机种",
+            "STEPS": "步数",
+            "REFINER_START_STEP": "Refiner开始步数",
+            "CFG": "",
+            "SAMPLER_NAME": "采样器",
+            "SCHEDULER": "调度器",
+            "POSITIVE_ASCORE": "正面美学分数",
+            "NEGATIVE_ASCORE": "负面美学分数",
+            "WIDTH": "宽度",
+            "HEIGHT": "高度",
+            "BATCH_SIZE": "批次大小",
+            "PARAMETERS": "参数组"
+        }
+    },
+    "SDPromptMerger": {
+        "title": "SD提示词融合",
+        "inputs": {
+            "text_g": "文本_G",
+            "text_l": "文本_L"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "SDTypeConverter": {
+        "inputs": {
+            "model_name": "模型名称",
+            "sampler_name": "采样器",
+            "scheduler": "调度器"
+        },
+        "outputs": {
+            "MODEL_NAME_STR": "模型名称字符串",
+            "SAMPLER_NAME_STR": "采样器字符串",
+            "SCHEDULER_STR": "调度器字符串"
+        }
+    },
+    "SDBatchLoader": {
+        "title": "SD批次加载",
+        "widgets": {
+            "path": "路径",
+            "image_load_limit": "图像加载上限",
+            "start_index": "开始索引"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "SDParameterExtractor": {
+        "title": "SD参数解码",
+        "inputs": {
+            "settings": "设置"
+        },
+        "widgets": {
+            "parameter": "参数",
+            "value_type": "值类型",
+            "parameter_index": "参数索引"
+        },
+        "outputs": {
+            "VALUE": "值"
+        }
+    }
+}
