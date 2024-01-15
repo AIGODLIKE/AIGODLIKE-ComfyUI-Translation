@@ -19,7 +19,9 @@ export class TUtils {
 		localStorage[TUtils.LOCALE_ID_LAST] = localStorage.getItem(TUtils.LOCALE_ID) || "en-US";
 		localStorage[TUtils.LOCALE_ID] = locale;
 		// TUtils.syncTranslation();
-		location.reload();
+		setTimeout(()=>{
+			location.reload();
+		}, 500);
 	}
 
 	static syncTranslation(OnFinished = () => { }) {
