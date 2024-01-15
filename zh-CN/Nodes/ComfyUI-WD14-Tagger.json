@@ -8,6 +8,8 @@
             "model": "模型",
             "threshold": "置信度",
             "character_threshold": "角色置信度",
+            "replace_underscore": "替换下划线",
+            "trailing_comma": "尾随逗号",
             "exclude_tags": "排除标签",
             "tags": "标签"
         },
