@@ -1,0 +1,16 @@
+{
+    "ChatGPTPrompt": {
+        "title": "ChatGPT提示词",
+        "widgets": {
+            "model": "模型",
+            "user_prompt": "提示词"
+        },
+        "outputs": {
+            "description": "画面描述",
+            "positive_prompt": "正面提示词",
+            "negative_prompt": "负面提示词",
+            "positive_prompt_translate": "正面提示词(中文)",
+            "negative_prompt_translate": "负面提示词(中文)"
+        }
+    }
+}

@@ -2,12 +2,12 @@
     "SeargeSDXLSampler2": {
         "title": "SearSDXL采样器v2",
         "inputs": {
-            "base_model": "基础模型",
-            "base_positive": "基础正面条件",
-            "base_negative": "基础负面条件",
-            "refiner_model": "优化模型",
-            "refiner_positive": "优化正面条件",
-            "refiner_negative": "优化负面条件",
+            "base_model": "模型",
+            "base_positive": "正面条件",
+            "base_negative": "负面条件",
+            "refiner_model": "模型(Refiner)",
+            "refiner_positive": "正面条件(Refiner)",
+            "refiner_negative": "负面条件(Refiner)",
             "latent_image": "Latent图像",
             "sampler_name": "采样器",
             "scheduler": "调度器"
@@ -18,9 +18,9 @@
             "cfg": "CFG",
             "base_ratio": "基础占比",
             "denoise": "降噪",
-            "refiner_prep_steps": "预优化步数",
+            "refiner_prep_steps": "Refiner预步数",
             "noise_offset": "噪波偏移",
-            "refiner_strength": "优化强度"
+            "refiner_strength": "Refiner强度"
         },
         "outputs": {
             "LATENT": "LATENT"
@@ -29,12 +29,12 @@
     "SeargeSDXLImage2ImageSampler2": {
         "title": "SearSDXL图生图采样器v2",
         "inputs": {
-            "base_model": "基础模型",
-            "base_positive": "基础正面条件",
-            "base_negative": "基础负面条件",
-            "refiner_model": "优化模型",
-            "refiner_positive": "优化正面条件",
-            "refiner_negative": "优化负面条件",
+            "base_model": "模型",
+            "base_positive": "正面条件",
+            "base_negative": "负面条件",
+            "refiner_model": "模型(Refiner)",
+            "refiner_positive": "正面条件(Refiner)",
+            "refiner_negative": "负面条件(Refiner)",
             "image": "图像",
             "vae": "VAE",
             "sampler_name": "采样器",
@@ -49,9 +49,9 @@
             "denoise": "降噪",
             "scaled_width": "宽度缩放到",
             "scaled_height": "高度缩放到",
-            "refiner_prep_steps": "预优化步数",
+            "refiner_prep_steps": "Refiner预步数",
             "noise_offset": "噪波偏移",
-            "refiner_strength": "优化强度",
+            "refiner_strength": "Refiner强度",
             "softness": "柔化"
         },
         "outputs": {
@@ -94,8 +94,8 @@
     "SeargeSDXLPromptEncoder": {
         "title": "SearSDXL文本编写",
         "inputs": {
-            "base_clip": "基础CLIP",
-            "refiner_clip": "优化CLIP"
+            "base_clip": "CLIP",
+            "refiner_clip": "CLIP(Refiner)"
         },
         "widgets": {
             "pos_g": "正面bigG文本",
@@ -108,18 +108,18 @@
             "base_height": "高度",
             "pos_ascore": "正面美学分数",
             "neg_ascore": "负面美学分数",
-            "refiner_width": "优化宽度",
-            "refiner_height": "优化高度"
+            "refiner_width": "宽度(Refiner)",
+            "refiner_height": "高度(Refiner)"
         },
         "outputs": {
-            "base_positive": "基础正面条件",
-            "base_negative": "基础负面条件",
-            "refiner_positive": "优化正面条件",
-            "refiner_negative": "优化负面条件"
+            "base_positive": "正面条件",
+            "base_negative": "负面条件",
+            "refiner_positive": "正面条件(Refiner)",
+            "refiner_negative": "负面条件(Refiner)"
         }
     },
     "SeargeSDXLBasePromptEncoder": {
-        "title": "SearSDXL基础文本编写",
+        "title": "SearSDXL文本编写",
         "inputs": {
             "base_clip": "基础CLIP"
         },
@@ -128,34 +128,34 @@
             "pos_l": "正面L文本",
             "neg_g": "负面bigG文本",
             "neg_l": "负面L文本",
-            "base_w": "基础宽度",
-            "base_h": "基础高度",
+            "base_w": "宽度",
+            "base_h": "高度",
             "crop_w": "裁剪宽度",
             "crop_h": "裁剪高度",
             "target_width": "目标宽度",
             "target_height": "目标高度"
         },
         "outputs": {
-            "base_positive": "基础正面条件",
-            "base_negative": "基础负面条件"
+            "base_positive": "正面条件",
+            "base_negative": "负面条件"
         }
     },
     "SeargeSDXLRefinerPromptEncoder": {
-        "title": "SearSDXL优化文本编写",
+        "title": "SearSDXL文本编写(Refiner)",
         "inputs": {
-            "refiner_clip": "优化CLIP"
+            "refiner_clip": "CLIP(Refiner)"
         },
         "widgets": {
-            "pos_r": "正面优化文本",
-            "neg_r": "负面优化文本",
+            "pos_r": "正面文本(Refiner)",
+            "neg_r": "负面文本(Refiner)",
             "pos_ascore": "正面美学分数",
             "neg_ascore": "负面美学分数",
-            "refiner_width": "优化宽度",
-            "refiner_height": "优化高度"
+            "refiner_width": "宽度(Refiner)",
+            "refiner_height": "高度(Refiner)"
         },
         "outputs": {
-            "pos_r": "正面优化文本",
-            "neg_r": "负面优化文本"
+            "pos_r": "正面文本(Refiner)",
+            "neg_r": "负面文本(Refiner)"
         }
     },
     "SeargePromptText": {
@@ -396,8 +396,8 @@
         },
         "widgets": {
             "base_ratio": "基础占比",
-            "refiner_strength": "优化强度",
-            "refiner_intensity": "优化强度",
+            "refiner_strength": "Refiner强度",
+            "refiner_intensity": "Refiner强度",
             "hard": "强烈",
             "soft": "柔和",
             "precondition_steps": "预处理步数",
@@ -417,8 +417,8 @@
             "model_settings": "模型设置组"
         },
         "widgets": {
-            "base_model": "基础模型",
-            "refiner_model": "优化模型",
+            "base_model": "模型",
+            "refiner_model": "模型(Refiner)",
             "vae_model": "VAE模型",
             "main_upscale_model": "主放大模型",
             "support_upscale_model": "次放大模型",
@@ -434,8 +434,8 @@
             "inputs": "输入组"
         },
         "widgets": {
-            "base_conditioning_scale": "基础条件缩放",
-            "refiner_conditioning_scale": "优化条件缩放",
+            "base_conditioning_scale": "条件缩放",
+            "refiner_conditioning_scale": "条件缩放(Refiner)",
             "style_prompt_power": "风格强度",
             "negative_prompt_power": "负面风格强度",
             "style_template": "风格模板",
@@ -531,7 +531,7 @@
             "parameters": "参数组",
             "denoise": "降噪",
             "base_ratio": "基础占比",
-            "refiner_strength": "优化强度",
+            "refiner_strength": "Refiner强度",
             "precondition_steps": "预处理步数",
             "batch_size": "批次大小",
             "upscale_resolution_factor": "放大系数",
@@ -545,8 +545,8 @@
         },
         "outputs": {
             "model_names": "模型名称组",
-            "base_model": "基础模型",
-            "refiner_model": "优化模型",
+            "base_model": "模型",
+            "refiner_model": "模型(Refiner)",
             "vae_model": "VAE模型",
             "main_upscale_model": "主放大模型",
             "support_upscale_model": "次放大模型",
@@ -560,8 +560,8 @@
         },
         "outputs": {
             "parameters": "参数组",
-            "base_conditioning_scale": "基础条件缩放",
-            "refiner_conditioning_scale": "优化条件缩放",
+            "base_conditioning_scale": "条件缩放",
+            "refiner_conditioning_scale": "条件缩放(Refiner)",
             "style_prompt_power": "风格强度",
             "negative_prompt_power": "负面风格强度"
         }
@@ -629,12 +629,12 @@
     "SeargeSDXLSampler": {
         "title": "SearSDXL采样器",
         "inputs": {
-            "base_model": "基础模型",
-            "base_positive": "基础正面条件",
-            "base_negative": "基础负面条件",
-            "refiner_model": "优化模型",
-            "refiner_positive": "优化正面条件",
-            "refiner_negative": "优化负面条件",
+            "base_model": "模型",
+            "base_positive": "正面条件",
+            "base_negative": "负面条件",
+            "refiner_model": "模型(Refiner)",
+            "refiner_positive": "正面条件(Refiner)",
+            "refiner_negative": "负面条件(Refiner)",
             "latent_image": "Latent图像"
         },
         "widgets": {
@@ -653,12 +653,12 @@
     "SeargeSDXLImage2ImageSampler": {
         "title": "SearSDXL图生图采样器",
         "inputs": {
-            "base_model": "基础模型",
-            "base_positive": "基础正面条件",
-            "base_negative": "基础负面条件",
-            "refiner_model": "优化模型",
-            "refiner_positive": "优化正面条件",
-            "refiner_negative": "优化负面条件",
+            "base_model": "模型",
+            "base_positive": "正面条件",
+            "base_negative": "负面条件",
+            "refiner_model": "模型(Refiner)",
+            "refiner_positive": "正面条件(Refiner)",
+            "refiner_negative": "负面条件(Refiner)",
             "image": "图像",
             "vae": "VAE",
             "sampler_name": "采样器",
@@ -673,9 +673,9 @@
             "denoise": "降噪",
             "scaled_width": "宽度缩放到",
             "scaled_height": "高度缩放到",
-            "refiner_prep_steps": "预优化步数",
+            "refiner_prep_steps": "Refiner预步数",
             "noise_offset": "噪波偏移",
-            "refiner_strength": "优化强度",
+            "refiner_strength": "Refiner强度",
             "softness": "柔化"
         },
         "outputs": {
