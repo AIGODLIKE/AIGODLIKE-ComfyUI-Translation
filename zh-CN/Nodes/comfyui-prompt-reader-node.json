@@ -108,6 +108,7 @@
         }
     },
     "SDTypeConverter": {
+        "title": "SD类型转换",
         "inputs": {
             "model_name": "模型名称",
             "sampler_name": "采样器",
