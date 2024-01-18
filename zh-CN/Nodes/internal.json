@@ -1556,7 +1556,7 @@
             "model": "模型"
         },
         "widgets": {
-            "block_number": "块编号",
+            "block_number": "层编号",
             "downscale_factor": "收缩系数",
             "start_percent": "开始时间",
             "end_percent": "结束时间",
