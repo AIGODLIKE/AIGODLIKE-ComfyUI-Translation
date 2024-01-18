@@ -2200,5 +2200,11 @@
     
     "control camera poses": "控制镜头",
     "control object trajectory": "控制物体",
-    "control both camera and obejct motion": "控制全部"
+    "control both camera and obejct motion": "控制全部",
+
+
+    "TiledDiff": "TiledDiff",
+
+    "MultiDiffusion": "多重采样",
+    "Mixture of Diffusers": "混合扩散器"
 }
