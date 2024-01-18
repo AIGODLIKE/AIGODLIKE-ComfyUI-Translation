@@ -160,7 +160,7 @@
     "nearest-exact": "邻近-精确",
     "bilinear": "双线性插值",
     "area": "区域",
-    "bislerp": "双球面线性",
+    "bislerp": "双球面线性插值",
     "bicubic": "双三次插值",
     "sdn_width": "宽度",
     "sdn_height": "高度",
@@ -2206,5 +2206,30 @@
     "TiledDiff": "TiledDiff",
 
     "MultiDiffusion": "多重采样",
-    "Mixture of Diffusers": "混合扩散器"
+    "Mixture of Diffusers": "混合扩散器",
+
+
+    "PowerNoiseSui": "PowerNoiseSui",
+
+    "color dodge": "颜色减淡",
+    "colorize": "上色",
+    "cosine interp": "余弦线性插值",
+    "cuberp": "三次插值",
+    "exclusion": "排除",
+    "hslerp": "混合球面线性插值",
+    "glow": "辉光",
+    "hard light": "强光",
+    "inject": "注入",
+    "lerp": "线性插值",
+    "linear dodge": "线性减淡",
+    "linear light": "线性光",
+    "overlay": "覆盖",
+    "pin light": "点光",
+    "reflect": "反射",
+    "screen": "屏幕",
+    "slerp": "球迷线性插值",
+    "subtract": "相减",
+    "vivid light": "艳光",
+    "additive": "相加",
+    "subtractive": "相减"
 }

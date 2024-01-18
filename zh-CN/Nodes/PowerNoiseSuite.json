@@ -1,0 +1,280 @@
+{
+    "Blend Latents (PPF Noise)": {
+        "title": "混合Latent",
+        "inputs": {
+            "latent_a": "Latent_A",
+            "latent_b": "Latent_B",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "operation": "操作",
+                "add": "相加",
+                "bislerp": "双球面线性插值",
+                "color dodge": "颜色减淡",
+                "colorize": "上色",
+                "cosine interp": "余弦线性插值",
+                "cuberp": "三次插值",
+                "difference": "差值",
+                "exclusion": "排除",
+                "hslerp": "混合球面线性插值",
+                "glow": "辉光",
+                "hard light": "强光",
+                "inject": "注入",
+                "lerp": "线性插值",
+                "linear dodge": "线性减淡",
+                "linear light": "线性光",
+                "multiply": "相乘",
+                "overlay": "覆盖",
+                "pin light": "点光",
+                "random": "随机",
+                "reflect": "反射",
+                "screen": "屏幕",
+                "slerp": "球迷线性插值",
+                "subtract": "相减",
+                "vivid light": "艳光",
+            "blend_ratio": "混合比率",
+            "blend_strength": "混合强度",
+            "set_noise_mask": "设置噪波遮罩",
+            "normalize": "规格化",
+            "clamp_min": "钳制最小值",
+            "clamp_max": "钳制最大值",
+            "latent2rgb_preview": "Latent2RGB预览"
+        },
+        "outputs": {
+            "latents": "Latent",
+            "previews": "预览"
+        }
+    },
+    "Latent Adjustment (PPF Noise)": {
+        "title": "Latent调整",
+        "inputs": {
+            "latents": "Latent"
+        },
+        "widgets": {
+            "brightness": "明度",
+            "contrast": "对比度",
+            "saturation": "饱和度",
+            "exposure": "曝光",
+            "alpha_sharpen": "alpha锐化",
+            "high_pass_radius": "高通半径",
+            "high_pass_strength": "高通强度",
+            "clamp_min": "钳制最小值",
+            "clamp_max": "钳制最大值",
+            "latent2rgb_preview": "Latent2RGB预览"
+        },
+        "outputs": {
+            "latents": "Latent",
+            "previews": "预览"
+        }
+    },
+    "Latents to CPU (PPF Noise)": {
+        "title": "Latent到CPU",
+        "inputs": {
+            "latents": "Latent"
+        },
+        "outputs": {
+            "latents": "Latent"
+        }
+    },
+
+
+    "Cross-Hatch Power Fractal (PPF Noise)": {
+        "title": "交叉线乘方分形",
+        "inputs": {
+            "optional_vae": "VAE",
+            "ch_settings": "交叉线设置"
+        },
+        "widgets": {
+            "batch_size": "批次大小",
+            "width": "宽度",
+            "height": "高度",
+            "resampling": "重采样方法",
+            "frequency": "频率",
+            "octaves": "八度",
+            "persistence": "持续",
+            "num_colors": "颜色数量",
+            "color_tolerance": "颜色容差",
+            "angle_degrees": "角度",
+            "brightness": "明度",
+            "contrast": "对比度",
+            "blur": "模糊",
+            "clamp_max": "钳制最大值",
+            "clamp_min": "钳制最小值",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "device": "设备"
+        },
+        "outputs": {
+            "latents": "Latent",
+            "previews": "预览"
+        }
+    },
+    "Linear Cross-Hatch Power Fractal (PPF Noise)": {
+        "title": "线性交叉线乘方分形",
+        "inputs": {
+            "optional_vae": "VAE"
+        },
+        "widgets": {
+            "batch_size": "批次大小",
+            "width": "宽度",
+            "height": "高度",
+            "resampling": "重采样方法",
+            "frequency": "频率",
+            "gain": "增幅",
+            "octaves": "八度",
+            "persistence": "持续",
+            "add_noise": "添加噪波",
+            "linear_range": "线性范围",
+            "linear_tolerance": "线性容差",
+            "angle_degrees": "角度",
+            "brightness": "明度",
+            "contrast": "对比度",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "device": "设备"
+        },
+        "outputs": {
+            "latents": "Latent",
+            "previews": "预览"
+        }
+    },
+    "Perlin Power Fractal Latent (PPF Noise)": {
+        "title": "柏林乘方分形Latent",
+        "inputs": {
+            "optional_vae": "VAE",
+            "ppf_settings": "柏林乘方分形设置"
+        },
+        "widgets": {
+            "batch_size": "批次大小",
+            "width": "宽度",
+            "height": "高度",
+            "resampling": "重采样方法",
+            "X": "X",
+            "Y": "Y",
+            "Z": "Z",
+            "evolution": "演变",
+            "frame": "边框",
+            "scale": "缩放",
+            "octaves": "八度",
+            "persistence": "持续",
+            "lacunarity": "间隙",
+            "exponent": "指数",
+            "brightness": "明度",
+            "contrast": "对比度",
+            "clamp_max": "钳制最大值",
+            "clamp_min": "钳制最小值",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "device": "设备"
+        },
+        "outputs": {
+            "latents": "Latent",
+            "previews": "预览"
+        }
+    },
+    "Power-Law Noise (PPF Noise)": {
+        "title": "幂律噪波",
+        "inputs": {
+            "optional_vae": "VAE"
+        },
+        "widgets": {
+            "batch_size": "批次大小",
+            "width": "宽度",
+            "height": "高度",
+            "resampling": "重采样方法",
+            "noise_type": "噪波类型",
+            "scale": "缩放",
+            "alpha_exponent": "alpha指数",
+            "modulator": "密度调解",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "device": "设备"
+        },
+        "outputs": {
+            "latents": "Latent",
+            "previews": "预览"
+        }
+    },
+
+
+    "Cross-Hatch Power Fractal Settings (PPF Noise)": {
+        "title": "交叉线乘方分形设置",
+        "widgets": {
+            "frequency": "频率",
+            "octaves": "八度",
+            "persistence": "持续",
+            "num_colors": "颜色数量",
+            "color_tolerance": "颜色容差",
+            "angle_degrees": "角度",
+            "brightness": "明度",
+            "contrast": "对比度",
+            "blur": "模糊"
+        },
+        "outputs": {
+            "ch_settings": "交叉线设置"
+        }
+    },
+    "Perlin Power Fractal Settings (PPF Noise)": {
+        "title": "柏林乘方分形设置",
+        "widgets": {
+            "X": "X",
+            "Y": "Y",
+            "Z": "Z",
+            "evolution": "演变",
+            "frame": "边框",
+            "scale": "缩放",
+            "octaves": "八度",
+            "persistence": "持续",
+            "lacunarity": "间隙",
+            "exponent": "指数",
+            "brightness": "明度",
+            "contrast": "对比度"
+        },
+        "outputs": {
+            "ppf_settings": "柏林乘方分形设置"
+        }
+    },
+
+
+    "Power KSampler Advanced (PPF Noise)": {
+        "title": "乘方K采样器(高级)",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latent_image": "Latent",
+            "tonal_guide_latent": "色调引导Latent",
+            "ppf_settings": "柏林乘方分形设置",
+            "ch_settings": "交叉线设置"
+        },
+        "widgets": {
+            "add_noise": "添加噪波",
+            "noise_seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "start_at_step": "开始降噪步数",
+            "end_at_step": "结束降噪步数",
+            "enable_denoise": "启用降噪",
+            "return_with_leftover_noise": "返回噪波",
+            "noise_type": "噪波类型",
+            "noise_blending": "噪波混合",
+            "noise_mode": "噪波模式",
+            "scale": "缩放",
+            "modulator": "密度调解",
+            "sigma_tolerance": "Sigma容差",
+            "boost_leading_sigma": "增强Sigma引导",
+            "guide_use_noise": "引导使用噪波"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    }
+}
