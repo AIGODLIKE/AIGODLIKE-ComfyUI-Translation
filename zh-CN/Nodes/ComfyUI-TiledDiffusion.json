@@ -17,7 +17,7 @@
             "MODEL": "模型"
         }
     },
-    "VAEEncodeTIled_TiledDiffusion": {
+    "VAEEncodeTiled_TiledDiffusion": {
         "title": "VAE分块解码(TiledDiff)",
         "inputs": {
             "pixels": "图像",
@@ -32,7 +32,7 @@
             "LATENT": "Latent"
         }
     },
-    "VAEDecodeTIled_TiledDiffusion": {
+    "VAEDecodeTiled_TiledDiffusion": {
         "title": "VAE分块编码(TiledDiff)",
         "inputs": {
             "samples": "Latent",
