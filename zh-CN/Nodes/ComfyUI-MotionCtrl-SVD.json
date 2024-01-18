@@ -19,7 +19,7 @@
             "POINTS": "关键点"
         }
     },
-    "Motionctrl-SVD Sampling Simple": {
+    "Motionctrl-SVD Sample Simple": {
         "title": "Motionctrl-SVD采样器(简易)",
         "inputs": {
             "model": "模型",
