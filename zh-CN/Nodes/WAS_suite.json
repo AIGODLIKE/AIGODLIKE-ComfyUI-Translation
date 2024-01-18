@@ -148,7 +148,7 @@
         }
     },
     "Perlin Power Fractal Latent": {
-        "title": "柏林幂律分形噪波",
+        "title": "柏林乘方分形噪波",
         "inputs": {
             "VAE": "VAE"
         },
@@ -157,8 +157,8 @@
             "height": "高度",
             "scale": "缩放",
             "octaves": "八度",
-            "persistence": "持久",
-            "lacunarity": "间隙度",
+            "persistence": "持续",
+            "lacunarity": "间隔",
             "exponent": "指数",
             "seed": "随机种",
             "control_after_generate": "运行后操作",
@@ -1848,7 +1848,7 @@
 
 
     "Image Power Noise": {
-        "title": "生成幂律噪波",
+        "title": "生成乘方噪波",
         "widgets": {
             "width": "宽度",
             "height": "高度",
@@ -1879,7 +1879,7 @@
             "height": "高度",
             "scale": "缩放",
             "octaves": "八度",
-            "persistence": "持久",
+            "persistence": "持续",
             "seed": "随机种",
             "control_after_generate": "运行后操作",
                 "fixed": "固定",
@@ -1898,8 +1898,8 @@
             "height": "高度",
             "scale": "缩放",
             "octaves": "八度",
-            "persistence": "持久",
-            "lacunarity": "间隙度",
+            "persistence": "持续",
+            "lacunarity": "间隔",
             "exponent": "指数",
             "seed": "随机种",
             "control_after_generate": "运行后操作",
