@@ -2231,5 +2231,10 @@
     "subtract": "相减",
     "vivid light": "艳光",
     "additive": "相加",
-    "subtractive": "相减"
+    "subtractive": "相减",
+    "grey": "灰",
+    "random_mix": "随机混合",
+    "brownian_fractal": "布朗分形",
+    "velvet": "丝绒",
+    "vanilla_comfy": "Comfy原生"
 }
