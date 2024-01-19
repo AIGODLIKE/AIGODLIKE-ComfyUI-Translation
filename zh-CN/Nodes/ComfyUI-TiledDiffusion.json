@@ -1,0 +1,50 @@
+{
+    "TiledDiffusion": {
+        "title": "分块采样",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "method": "方法",
+                "MultiDiffusion": "多重采样",
+                "Mixture of Diffusers": "混合扩散器",
+            "tile_width": "分块宽度",
+            "tile_height": "分块高度",
+            "tile_overlap": "分块重叠",
+            "tile_batch_size": "分块批次大小"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "VAEEncodeTiled_TiledDiffusion": {
+        "title": "VAE分块解码(TiledDiff)",
+        "inputs": {
+            "pixels": "图像",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "tile_size": "分块大小",
+            "fast": "加速",
+            "color_fix": "颜色修复"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "VAEDecodeTiled_TiledDiffusion": {
+        "title": "VAE分块编码(TiledDiff)",
+        "inputs": {
+            "samples": "Latent",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "tile_size": "分块大小",
+            "fast": "加速",
+            "color_fix": "颜色修复"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    }
+}

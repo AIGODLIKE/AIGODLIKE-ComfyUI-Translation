@@ -1,0 +1,40 @@
+{
+    "Load Motionctrl-SVD Checkpoint": {
+        "title": "加载Motion-SVD模型",
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "frame_length": "帧数",
+            "steps": "步数"
+        },
+        "outputs": {
+            "model": "模型"
+        }
+    },
+    "Load Motionctrl-SVD Camera Preset": {
+        "title": "加载Motion-SVD镜头预设",
+        "widgets": {
+            "motion_camera": "相机"
+        },
+        "outputs": {
+            "POINTS": "关键点"
+        }
+    },
+    "Motionctrl-SVD Sample Simple": {
+        "title": "Motionctrl-SVD采样器(简易)",
+        "inputs": {
+            "model": "模型",
+            "image": "图像"
+        },
+        "widgets": {
+            "camera": "镜头",
+            "resize_mode": "缩放模式",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "fps_id": "FPS_ID",
+            "frame_length": "帧数"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    }
+}

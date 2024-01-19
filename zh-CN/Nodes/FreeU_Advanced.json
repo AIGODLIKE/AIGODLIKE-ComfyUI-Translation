@@ -1,0 +1,71 @@
+{
+    "FreeU (Advanced)": {
+        "title": "FreeU模型重加权(高级)",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "target_block": "目标层",
+            "multiscale_mode": "放大模式",
+                "Default": "默认",
+                "Bandpass": "带通",
+                "Low-Pass": "低通",
+                "High-Pass": "高通",
+                "Pass-Through": "穿透",
+                "Gaussian-Blur": "高斯模糊",
+                "Edge-Enhancement": "边缘强化",
+                "Sharpen": "锐化",
+                "Multi-Bandpass": "多重带通",
+                "Multi-Low-Pass": "多重低通",
+                "Multi-High-Pass": "多重高通",
+                "Multi-Pass-Through": "多重穿透",
+                "Multi-Gaussian-Blur": "多重高斯模糊",
+                "Multi-Edge-Enhancement": "多重边缘强化",
+                "Multi-Sharpen": "多重锐化",
+            "multiscale_strength": "放大强度",
+            "b1_slice": "B1操作片段",
+            "b2_slice": "B2操作片段",
+            "b1": "B1",
+            "b2": "B2",
+            "s1": "S1",
+            "s2": "S2",
+            "b1_mode": "B1模式",
+            "b1_blend": "B1混合",
+            "b2_mode": "B2模式",
+            "b2_blend": "B2混合",
+            "threshold": "阈值",
+            "use_override_scales": "使用override scales"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "FreeU_V2 (Advanced)": {
+        "title": "FreeU_V2模型重加权(高级)",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "input_block": "应用input_block",
+            "middle_block": "应用middle_block",
+            "output_block": "应用output_block",
+            "multiscale_mode": "放大模式",
+            "multiscale_strength": "放大强度",
+            "b1_slice": "B1操作片段",
+            "b2_slice": "B2操作片段",
+            "b1": "B1",
+            "b2": "B2",
+            "s1": "S1",
+            "s2": "S2",
+            "b1_mode": "B1模式",
+            "b1_blend": "B1混合",
+            "b2_mode": "B2模式",
+            "b2_blend": "B2混合",
+            "threshold": "阈值",
+            "use_override_scales": "使用override scales"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    }
+}

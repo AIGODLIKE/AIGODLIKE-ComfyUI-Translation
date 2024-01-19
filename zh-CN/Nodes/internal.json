@@ -886,7 +886,7 @@
                 "nearest-exact": "邻近-精确",
                 "bilinear": "双线性插值",
                 "area": "区域",
-                "bislerp": "球面线性",
+                "bislerp": "双球面线性",
                 "bicubic": "双三次插值",
             "width": "宽度",
             "height": "高度",
@@ -908,7 +908,7 @@
                 "nearest-exact": "邻近-精确",
                 "bilinear": "双线性插值",
                 "area": "区域",
-                "bislerp": "球面线性",
+                "bislerp": "双球面线性",
                 "bicubic": "双三次插值",
             "scale_by": "系数"
         },
@@ -1556,7 +1556,7 @@
             "model": "模型"
         },
         "widgets": {
-            "block_number": "块编号",
+            "block_number": "层编号",
             "downscale_factor": "收缩系数",
             "start_percent": "开始时间",
             "end_percent": "结束时间",

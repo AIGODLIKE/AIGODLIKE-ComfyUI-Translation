@@ -160,7 +160,7 @@
     "nearest-exact": "邻近-精确",
     "bilinear": "双线性插值",
     "area": "区域",
-    "bislerp": "球面线性",
+    "bislerp": "双球面线性插值",
     "bicubic": "双三次插值",
     "sdn_width": "宽度",
     "sdn_height": "高度",
@@ -191,6 +191,12 @@
     "Unpin all Nodes": "取消固定所有节点",
     "Convert to Group Node": "转换为节点组",
     "Convert to nodes": "转换为节点",
+
+    "Manage Group Nodes": "管理组节点",
+        "Group Nodes": "组节点",
+        "Widgets": "组件",
+        "Visible": "可见",
+        "Delete Group Node": "删除节点",
 
     "Open in MaskEditor": "在遮罩编辑器中打开",
 
@@ -2194,5 +2200,41 @@
     
     "control camera poses": "控制镜头",
     "control object trajectory": "控制物体",
-    "control both camera and obejct motion": "控制全部"
+    "control both camera and obejct motion": "控制全部",
+
+
+    "TiledDiff": "TiledDiff",
+
+    "MultiDiffusion": "多重采样",
+    "Mixture of Diffusers": "混合扩散器",
+
+
+    "PowerNoiseSui": "PowerNoiseSui",
+
+    "color dodge": "颜色减淡",
+    "colorize": "上色",
+    "cosine interp": "余弦线性插值",
+    "cuberp": "三次插值",
+    "exclusion": "排除",
+    "hslerp": "混合球面线性插值",
+    "glow": "辉光",
+    "hard light": "强光",
+    "inject": "注入",
+    "lerp": "线性插值",
+    "linear dodge": "线性减淡",
+    "linear light": "线性光",
+    "overlay": "覆盖",
+    "pin light": "点光",
+    "reflect": "反射",
+    "screen": "屏幕",
+    "slerp": "球迷线性插值",
+    "subtract": "相减",
+    "vivid light": "艳光",
+    "additive": "相加",
+    "subtractive": "相减",
+    "grey": "灰",
+    "random_mix": "随机混合",
+    "brownian_fractal": "布朗分形",
+    "velvet": "丝绒",
+    "vanilla_comfy": "Comfy原生"
 }
