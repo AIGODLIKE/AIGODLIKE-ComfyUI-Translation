@@ -19,6 +19,9 @@ export class TUtils {
 		localStorage[TUtils.LOCALE_ID_LAST] = localStorage.getItem(TUtils.LOCALE_ID) || "en-US";
 		localStorage[TUtils.LOCALE_ID] = locale;
 		// TUtils.syncTranslation();
+		setTimeout(()=>{
+			location.reload();
+		}, 500);
 	}
 
 	static syncTranslation(OnFinished = () => { }) {
@@ -311,7 +314,6 @@ export class TUtils {
 					return;
 				if (localStorage[id] != undefined && value != localStorage[id]) {
 					TUtils.setLocale(value);
-					location.reload();
 				}
 				localStorage[id] = value;
 			},
@@ -395,8 +397,6 @@ const ext = {
 						localeLast = "en-US";
 					if (locale != localeLast) {
 						app.ui.settings.setSettingValue(TUtils.LOCALE_ID, localeLast);
-						TUtils.setLocale(localeLast);
-						location.reload();
 					}
 				},
 			}));
