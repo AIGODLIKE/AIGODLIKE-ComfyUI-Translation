@@ -1,0 +1,317 @@
+{
+    "Show Metadata [Crystools]": {
+        "title": "显示元数据",
+        "widgets": {
+            "Active": "活动",
+            "Parsed": "解析",
+            "What": "目标",
+                "Prompt": "提示词",
+                "Workflow": "工作流"
+        }
+    },
+    "Show any value to console/display [Crystools]": {
+        "title": "显示任意值到控制台/节点",
+        "inputs": {
+            "any_value": "任意值"
+        },
+        "widgets": {
+            "console": "控制台",
+            "display": "节点显示",
+            "prefix": "前缀"
+        }
+    },
+    "Show any to Json [Crystools]": {
+        "title": "显示任意值到JSON",
+        "inputs": {
+            "any_value": "任意值"
+        },
+        "outputs": {
+            "string": "字符串"
+        }
+    },
+
+
+    "Primitive boolean [Crystools]": {
+        "title": "布尔元节点",
+        "widgets": {
+            "boolean": "布尔"
+        },
+        "outputs": {
+            "boolean": "布尔"
+        }
+    },
+    "Primitive string [Crystools]": {
+        "title": "字符串元节点",
+        "widgets": {
+            "string": "字符串"
+        },
+        "outputs": {
+            "string": "字符串"
+        }
+    },
+    "Primitive string multiline [Crystools]": {
+        "title": "多行字符串元节点",
+        "widgets": {
+            "string": "字符串"
+        },
+        "outputs": {
+            "string": "字符串"
+        }
+    },
+    "Primitive integer [Crystools]": {
+        "title": "整数元节点",
+        "widgets": {
+            "int": "整数"
+        },
+        "outputs": {
+            "int": "整数"
+        }
+    },
+    "Primitive float [Crystools]": {
+        "title": "浮点元节点",
+        "widgets": {
+            "float": "浮点"
+        },
+        "outputs": {
+            "float": "浮点"
+        }
+    },
+
+
+    "List of any [Crystools]": {
+        "title": "任意列表",
+        "inputs": {
+            "any_1": "任意_1",
+            "any_2": "任意_2",
+            "any_3": "任意_3",
+            "any_4": "任意_4",
+            "any_5": "任意_5",
+            "any_6": "任意_6",
+            "any_7": "任意_7",
+            "any_8": "任意_8"
+        },
+        "outputs": {
+            "any_list": "任意列表"
+        }
+    },
+    "List of strings [Crystools]": {
+        "title": "字符串列表",
+        "widgets": {
+            "string_1": "字符串_1",
+            "string_2": "字符串_2",
+            "string_3": "字符串_3",
+            "string_4": "字符串_4",
+            "string_5": "字符串_5",
+            "string_6": "字符串_6",
+            "string_7": "字符串_7",
+            "string_8": "字符串_8",
+            "delimiter": "间隔符"
+        },
+        "outputs": {
+            "concatenate": "字符串合并",
+            "list_string": "字符串列表"
+        }
+    },
+    "Switch any [Crystools]": {
+        "title": "切换任意",
+        "inputs": {
+            "on_true": "真",
+            "on_false": "假"
+        },
+        "widgets": {
+            "boolean": "布尔"
+        },
+        "outputs": {
+            "*": "输出"
+        }
+    },
+    "Switch latent [Crystools]": {
+        "title": "切换Latent",
+        "inputs": {
+            "on_true": "真",
+            "on_false": "假"
+        },
+        "widgets": {
+            "boolean": "布尔"
+        },
+        "outputs": {
+            "latent": "Latent"
+        }
+    },
+    "Switch conditioning [Crystools]": {
+        "title": "条件",
+        "inputs": {
+            "on_true": "真",
+            "on_false": "假"
+        },
+        "widgets": {
+            "boolean": "布尔"
+        },
+        "outputs": {
+            "conditioning": "条件"
+        }
+    },
+    "Switch image [Crystools]": {
+        "title": "图像",
+        "inputs": {
+            "on_true": "真",
+            "on_false": "假"
+        },
+        "widgets": {
+            "boolean": "布尔"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "Switch string [Crystools]": {
+        "title": "字符串",
+        "widgets": {
+            "on_true": "真",
+            "on_false": "假",
+            "boolean": "布尔"
+        },
+        "outputs": {
+            "string": "字符串"
+        }
+    },
+
+
+    "Pipe to/edit any [Crystools]": {
+        "title": "C节点束到/编辑",
+        "inputs": {
+            "CPipeAny": "C节点束",
+            "any_1": "任意_1",
+            "any_2": "任意_2",
+            "any_3": "任意_3",
+            "any_4": "任意_4",
+            "any_5": "任意_5",
+            "any_6": "任意_6"
+        },
+        "outputs": {
+            "CPipeAny": "C节点束"
+        }
+    },
+    "Pipe from any [Crystools]": {
+        "title": "从C节点束",
+        "inputs": {
+            "CPipeAny": "C节点束"
+        },
+        "outputs": {
+            "CPipeAny": "C节点束",
+            "any_1": "任意_1",
+            "any_2": "任意_2",
+            "any_3": "任意_3",
+            "any_4": "任意_4",
+            "any_5": "任意_5",
+            "any_6": "任意_6"
+        }
+    },
+
+
+    "Load image with metadata [Crystools]": {
+        "title": "加载图像元数据",
+        "widgets": {
+            "image": "图像",
+            "upload": "上传"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "prompt": "提示词",
+            "Metadata RAW": "元数据"
+        }
+    },
+    "Get resolution [Crystools]": {
+        "title": "获取分辨率",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "width": "宽度",
+            "height": "高度"
+        }
+    },
+    "Preview from image": {
+        "title": "图像预览",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "Metadata RAW": "元数据"
+        }
+    },
+    "Previw from metadata [Crystools]": {
+        "title": "元数据预览",
+        "inputs": {
+            "metadata_raw": "元数据"
+        },
+        "outputs": {
+            "Metadata RAW": "元数据"
+        }
+    },
+    "Save image with extra metadata [Crystools]": {
+        "title": "保存图像与额外数据",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀",
+            "with_workflow": "保存工作流",
+            "metadata_extra": "额外数据"
+        },
+        "outputs": {
+            "Metadata RAW": "元数据"
+        }
+    },
+
+
+    "Metadata extractor [Crystools]": {
+        "title": "元数据解码",
+        "inputs": {
+            "metadata_raw": "元数据"
+        },
+        "outputs": {
+            "prompt": "提示词",
+            "workflow": "工作流",
+            "file info": "文件信息",
+            "raw to JSON": "JSON",
+            "raw to property": "属性",
+            "raw to csv": "CSV"
+        }
+    },
+    "Metadata comparator [Crystools]": {
+        "title": "元数据对比",
+        "inputs": {
+            "metadata_raw_old": "元数据_旧",
+            "metadata_raw_new": "元数据_新"
+        },
+        "widgets": {
+            "what": "目标"
+        },
+        "outputs": {
+            "diff": "差值"
+        }
+    },
+
+
+    "Json comparator [Crystools]": {
+        "title": "JSON对比",
+        "inputs": {
+            "json_old": "JSON旧",
+            "json_new": "JSON新"
+        },
+        "outputs": {
+            "json_compared": "对比结果"
+        }
+    },
+    "Stats system [Crystools]": {
+        "title": "数据系统",
+        "inputs": {
+            "latent": "Latent"
+        },
+        "outputs": {
+            "latent": "Latent"
+        }
+    }
+}
