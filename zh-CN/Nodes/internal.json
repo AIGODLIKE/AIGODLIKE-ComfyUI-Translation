@@ -1566,6 +1566,17 @@
             "MODEL": "模型"
         }
     },
+    "ImageOnlyCheckpointSave": {
+        "title": "保存Checkpoint(仅图像)",
+        "inputs": {
+            "model": "模型",
+            "clip_vision": "CLIP视觉",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀"
+        }
+    },
     "SelfAttentionGuidance": {
         "title": "自注意力引导",
         "inputs": {
@@ -1731,7 +1742,7 @@
         }
     },
     "CheckpointSave": {
-        "title": "保存模型",
+        "title": "保存Checkpoint",
         "inputs": {
             "model": "模型",
             "clip": "CLIP",

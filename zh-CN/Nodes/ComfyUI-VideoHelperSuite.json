@@ -270,7 +270,11 @@
             "save_image": "保存图像",
             "Sync playback": "同步播放",
             "save_metadata": "保存元数据",
-            "audio_file": "音频文件"
+            "audio_file": "音频文件",
+            "save_output": "保存到输出文件夹"
+        },
+        "outputs": {
+            "Filenames": "文件名"
         }
     },
 
@@ -347,6 +351,15 @@
         },
         "outputs": {
             "audio": "音频"
+        }
+    },
+    "VHS_PruneOutputs": {
+        "title": "调整输出",
+        "inputs": {
+            "filenames": "文件名"
+        },
+        "widgets": {
+            "options": "选项"
         }
     }
 }

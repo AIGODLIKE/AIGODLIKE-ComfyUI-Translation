@@ -31,6 +31,7 @@
             "deprecated": "已弃用",
         "conditioning1": "条件",
         "model_merging": "模型融合",
+    "model_patches": "模型微调",
     "utils": "实用工具",
 
     "Comfy-QR": "QR码",
@@ -266,6 +267,13 @@
     "SD Prompt Reader": "SD提示词读取",
     "Power Noise Suite": "强化噪波",
         "Adjustments": "调整",
+    "AnimateAnyone-Evolved": "AnimateAnyone Evo",
+        "processors": "处理器",
+    "crystools": "crystools",
+        "List": "列表",
+        "Switch": "切换",
+        "Metadata": "元数据",
+    "OneButtonPrompt": "一键提示词",
 
 
     "basic_pipe": "基础节点束",
