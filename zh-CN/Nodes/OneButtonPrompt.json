@@ -1,0 +1,62 @@
+{
+    "OneButtonPrompt": {
+        "title": "一键提示词",
+        "widgets": {
+            "insanitylevel": "随机强度",
+            "artist": "作者",
+            "imagetype": "类型",
+            "imagemodechance": "特殊模式概率",
+            "subject": "主体",
+            "custom_subject": "自定主体",
+            "custom_outfit": "自定服装",
+            "subject_subtype_objects": "次类物体",
+            "subject_subtypes_humanoids": "次类人物",
+            "humanoids_gender": "性别",
+            "subject_subtypes_concepts": "次类概念",
+            "emojis": "Emoji",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作"
+        },
+        "outputs": {
+            "prompt": "提示词",
+            "prompt_g": "提示词_G",
+            "prompt_l": "提示词_L"
+        }
+    },
+    "CreatePromptVariant": {
+        "title": "差异化提示词",
+        "widgets": {
+            "prompt_input": "提示词",
+            "insanitylevel": "随机强度",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作"
+        },
+        "outputs": {
+            "prompt": "提示词"
+        }
+    },
+    "SavePromptToFile": {
+        "title": "保存提示词到文件",
+        "widgets": {
+            "filename_prefix": "文件名前缀",
+            "positive_prompt": "正面提示词",
+            "negative_prompt": "负面提示词",
+            "prompt_g": "提示词_G",
+            "prompt_l": "提示词_L"
+        }
+    },
+    "AutoNegativePrompt": {
+        "title": "自动负面提示词",
+        "widgets": {
+            "positive_prompt": "正面提示词",
+            "negative_prompt": "负面提示词",
+            "enhancenegative": "增强负面",
+            "insanitylevel": "随机强度",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作"
+        },
+        "outputs": {
+            "negative_prompt": "负面提示词"
+        }
+    }
+}

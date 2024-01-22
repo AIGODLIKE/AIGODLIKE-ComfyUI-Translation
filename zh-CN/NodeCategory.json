@@ -273,6 +273,7 @@
         "List": "列表",
         "Switch": "切换",
         "Metadata": "元数据",
+    "OneButtonPrompt": "一键提示词",
 
 
     "basic_pipe": "基础节点束",
