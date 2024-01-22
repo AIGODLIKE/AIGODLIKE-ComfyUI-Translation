@@ -2194,6 +2194,14 @@
     "🪛Display Hard disk monitor [menu]": "显示硬盘监视",
     "🪛Monitors refresh rate (in seconds) [menu]": "监视器刷新间隔(秒)",
     "🪛Show progress bar [menu]": "显示生成进度条",
+    "🪛 [monitor] CPU Usage": "显示CPU占用",
+    "🪛 [monitor] HDD Used": "显示HDD占用",
+    "🪛 [monitor] RAM Used": "显示内存占用",
+    "🪛[menu] Display GPU monitor": "显示GPU占用",
+    "🪛[menu] Display GPU VRAM monitor": "显示GPU显存占用",
+    "🪛[monitor] Partition to show": "选择分区",
+    "🪛[monitor] Refresh rate": "刷新间隔",
+    "🪛[monitor] Show progress bar": "显示进度条",
 
 
     "MotionCtr": "MotionCtr",
