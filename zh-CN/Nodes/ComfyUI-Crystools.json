@@ -9,7 +9,7 @@
                 "Workflow": "工作流"
         }
     },
-    "Show any value to console/display [Crystools]": {
+    "Show any [Crystools]": {
         "title": "显示任意值到控制台/节点",
         "inputs": {
             "any_value": "任意值"
@@ -20,7 +20,7 @@
             "prefix": "前缀"
         }
     },
-    "Show any to Json [Crystools]": {
+    "Show any to JSON [Crystools]": {
         "title": "显示任意值到JSON",
         "inputs": {
             "any_value": "任意值"
@@ -108,7 +108,7 @@
             "delimiter": "间隔符"
         },
         "outputs": {
-            "concatenate": "字符串合并",
+            "concatenated": "字符串合并",
             "list_string": "字符串列表"
         }
     },
@@ -232,7 +232,7 @@
             "height": "高度"
         }
     },
-    "Preview from image": {
+    "Preview from image [Crystools]": {
         "title": "图像预览",
         "inputs": {
             "image": "图像"
@@ -241,7 +241,7 @@
             "Metadata RAW": "元数据"
         }
     },
-    "Previw from metadata [Crystools]": {
+    "Preview from metadata [Crystools]": {
         "title": "元数据预览",
         "inputs": {
             "metadata_raw": "元数据"
