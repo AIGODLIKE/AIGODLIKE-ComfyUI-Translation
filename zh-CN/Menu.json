@@ -61,6 +61,7 @@
     "Require confirmation when clearing workflow": "清理工作流时是否需要确认",
     "Prompt for filename when saving workflow": "保存工作流时是否需要填入文件名",
     "When displaying a preview in the image widget, convert it to a lightweight image, e.g. webp, jpeg, webp;50, etc.": "轻量化图像组件中的预览图象, 如webp, jpeg等",
+    "Widget Value Control Mode": "组件控制模式",
     "Disable sliders.": "禁用滑块",
     "Disable rounding floats (requires page reload).": "禁用浮点舍入(需重载页面)",
     "Decimal places [0 = auto] (requires page reload).": "小数位[0=自动](需重载页面)",
