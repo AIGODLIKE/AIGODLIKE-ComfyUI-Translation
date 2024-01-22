@@ -31,6 +31,7 @@
             "deprecated": "已弃用",
         "conditioning1": "条件",
         "model_merging": "模型融合",
+    "model_patches": "模型微调",
     "utils": "实用工具",
 
     "Comfy-QR": "QR码",
