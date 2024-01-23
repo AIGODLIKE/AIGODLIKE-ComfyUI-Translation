@@ -98,6 +98,7 @@
         "Faces and Poses": "面部与姿态",
         "Faces and Poses Estimators": "面部与姿态",
         "Pose Keypoint Postprocess": "姿态关键点后处理",
+        "Optical Flow": "光流",
         "others": "其他",
         "Normal and Depth Map": "法向与深度",
         "Normal and Depth Estimators": "法向与深度",
