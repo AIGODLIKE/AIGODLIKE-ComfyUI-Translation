@@ -1,7 +1,4 @@
 {
-    "Note": {
-        "title": "메모"
-    },
     "PrimitiveNode": {
         "title": "프리미티브",
         "outputs": {
@@ -967,7 +964,7 @@
         },
         "widgets": {
             "blur_radius": "흐림 반경",
-            "sigma": "Sigma"
+            "sigma": "시그마"
         },
         "outputs": {
             "IMAGE": "이미지"
@@ -1146,9 +1143,9 @@
         "title": "포터-더프 이미지 병합",
         "inputs": {
             "source": "원본 이미지",
-            "source_alpha": "원본 Alpha",
+            "source_alpha": "원본 알파",
             "destination": "대상 이미지",
-            "destination_alpha": "대상 Alpha"
+            "destination_alpha": "대상 알파"
         },
         "widgets": {
             "mode": "모드"
@@ -1320,7 +1317,7 @@
             "vae": "VAE"
         },
         "widgets": {
-            "tile_size": "分块尺寸"
+            "tile_size": "타일 사이즈"
         },
         "outputs": {
             "IMAGE": "이미지"
