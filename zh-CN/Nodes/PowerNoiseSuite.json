@@ -1,4 +1,17 @@
 {
+    "Images as Latents (PPF Noise)": {
+        "title": "图像到Latent",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "resampling": "重采样方法"
+        },
+        "outputs": {
+            "latent": "Latent",
+            "image": "图像"
+        }
+    },
     "Blend Latents (PPF Noise)": {
         "title": "混合Latent",
         "inputs": {
