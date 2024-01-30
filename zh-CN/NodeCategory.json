@@ -22,6 +22,7 @@
         "animation": "动画",
     "mask": "遮罩",
     "_for_testing": "测试",
+        "photomaker": "PhotoMaker",
         "custom_sampling": "自定义采样",
             "schedulers": "调度器",
             "samplers": "采样器",

@@ -610,6 +610,18 @@
             "CONDITIONING": "条件"
         }
     },
+    "ConditioningSetAreaStrength": {
+        "title": "条件采样区域强度",
+        "inputs": {
+            "conditioning": "条件"
+        },
+        "widgets": {
+            "strength": "强度"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
     "ConditioningSetMask": {
         "title": "条件设置遮罩",
         "inputs": {
@@ -841,6 +853,18 @@
         },
         "outputs": {
             "Latent": "Latent"
+        }
+    },
+    "LatentBatchSeedBehavior": {
+        "title": "Latent批次随机种操作",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "widgets": {
+            "seed_behavior": "随机种操作"
+        },
+        "outputs": {
+            "LATENT": "Latent"
         }
     },
 
@@ -1434,8 +1458,26 @@
             "MASK": "遮罩"
         }
     },
-    
 
+
+    
+    "PhotoMakerLoader": {
+        "title": "PhotoMaker加载器",
+        "widgets": {
+            "photomaker_model_name": "PhotoMaker模型"
+        },
+        "outputs": {
+            "PHOTOMAKER": "PhotoMaker"
+        }
+    },
+    "PhotoMakerEncode": {
+        "title": "PhotoMaker编码",
+        "inputs": {
+            "photomaker": "PhotoMaker",
+            "image": "图像",
+            "clip": "CLIP"
+        }
+    },
 
 
     "VAEDecodeTiled": {
