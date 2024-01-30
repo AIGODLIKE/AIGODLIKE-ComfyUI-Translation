@@ -36,7 +36,10 @@
     "Queue Prompt": "添加提示词队列",
     "Extra options": "更多选项",
     "Batch count": "批次数量",
-    "Queue Front": "前台队列",
+    "Auto Queue": "自动执行",
+    "Queue Front": "执行队列",
+    "instant": "状态不变",
+    "change": "状态改变",
     "View Queue": "显示队列",
     "See Queue": "查看队列",
     "View History": "显示历史",
@@ -192,6 +195,7 @@
     "Unpin all Nodes": "取消固定所有节点",
     "Convert to Group Node": "转换为节点组",
     "Convert to nodes": "转换为节点",
+    "Swap width/height": "交换宽高",
 
     "Manage Group Nodes": "管理组节点",
         "Group Nodes": "组节点",
@@ -200,6 +204,7 @@
         "Delete Group Node": "删除节点",
 
     "Open in MaskEditor": "在遮罩编辑器中打开",
+    "Open in SAM Detector": "在SAM检测中打开",
 
     "HEDPreprocessor": "HED模糊线预处理器",
     "ScribblePreprocessor": "Scribble涂鸦预处理器",
@@ -2185,6 +2190,7 @@
     "Add SetNode": "添加 设置节点",
     "Nodes Map ♾️Mixlab": "节点地图 ♾️Mixlab",
     "Workflow App ♾️Mixlab": "工作流App ♾️Mixlab",
+    "Fix node v2 ♾️Mixlab": "修复节点v2 ♾️Mixlab",
 
 
     "crystol": "crystol",

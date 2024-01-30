@@ -395,6 +395,32 @@
         }
     },
 
+    "DepthAnythingPreprocessor": {
+        "title": "DA深度预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Zoe_DepthAnythingPreprocessor": {
+        "title": "Zoe DA深度预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "LeReS-DepthMapPreprocessor": {
         "title": "LeReS深度预处理器",
         "inputs": {
@@ -503,6 +529,30 @@
         },
         "outputs": {
             "IMAGE": "图像"
+        }
+    },
+
+    "Unimatch_OptFlowPreprocessor": {
+        "title": "Unimatch光流预处理器",
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "backward_flow": "后向流",
+            "bidirectional_flow": "双向流"
+        },
+        "outputs": {
+            "OPTICAL_FLOW": "光流",
+            "PREVIEW_IMAGE": "预览图像"
+        }
+    },
+    "MaskOptFlow": {
+        "title": "遮罩光流",
+        "inputs": {
+            "optical_flow": "光流",
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "OPTICAL_FLOW": "光流",
+            "PREVIEW_IMAGE": "预览图像"
         }
     },
 

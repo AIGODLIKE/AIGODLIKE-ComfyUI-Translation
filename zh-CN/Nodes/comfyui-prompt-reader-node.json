@@ -144,5 +144,36 @@
         "outputs": {
             "VALUE": "值"
         }
+    },
+    "SDLoraLoader": {
+        "title": "SDLoRA加载器",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "last_lora": "上个LoRA"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称",
+            "strength_model": "模型强度",
+            "strength_clip": "CLIP强度"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "NEXT_LORA": "下个LoRA"
+        }
+    },
+    "SDLoraSelector": {
+        "title": "SDLoRA选择",
+        "inputs": {
+            "last_lora": "上个LoRA"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称"
+        },
+        "outputs": {
+            "LORA_NAME": "LoRA名称",
+            "NEXT_LORA": "下个LoRA"
+        }
     }
 }

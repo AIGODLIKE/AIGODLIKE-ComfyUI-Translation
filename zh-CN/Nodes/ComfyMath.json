@@ -26,7 +26,7 @@
             "FLOAT": "浮点"
         }
     },
-    "CM_FLoatToInt": {
+    "CM_FloatToInt": {
         "title": "浮点到整数",
         "inputs": {
             "a": "A"

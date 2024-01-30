@@ -3,7 +3,7 @@
         "title": "一键提示词",
         "widgets": {
             "insanitylevel": "随机强度",
-            "artist": "作者",
+            "artist": "艺术风格",
             "imagetype": "类型",
             "imagemodechance": "特殊模式概率",
             "subject": "主体",

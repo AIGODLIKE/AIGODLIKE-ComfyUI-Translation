@@ -22,6 +22,7 @@
         "animation": "动画",
     "mask": "遮罩",
     "_for_testing": "测试",
+        "photomaker": "PhotoMaker",
         "custom_sampling": "自定义采样",
             "schedulers": "调度器",
             "samplers": "采样器",
@@ -98,6 +99,7 @@
         "Faces and Poses": "面部与姿态",
         "Faces and Poses Estimators": "面部与姿态",
         "Pose Keypoint Postprocess": "姿态关键点后处理",
+        "Optical Flow": "光流",
         "others": "其他",
         "Normal and Depth Map": "法向与深度",
         "Normal and Depth Estimators": "法向与深度",
@@ -274,6 +276,7 @@
         "Switch": "切换",
         "Metadata": "元数据",
     "OneButtonPrompt": "一键提示词",
+    "crystools 🪛": "Crys节点 🪛",
 
 
     "basic_pipe": "基础节点束",
