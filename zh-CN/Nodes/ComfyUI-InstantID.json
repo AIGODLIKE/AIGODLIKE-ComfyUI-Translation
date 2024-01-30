@@ -1,0 +1,92 @@
+{
+    "InsightFaceLoader_Zho": {
+        "title": "InsightFace加载器",
+        "widgets": {
+            "provider": "设备"
+        },
+        "outputs": {
+            "INSIGHTFACEMODEL": "InsightFaceModel"
+        }
+    },
+    "IDControlNetLoader": {
+        "title": "IDControlNet加载器",
+        "widgets": {
+            "controlnet_path": "ControlNet路径"
+        },
+        "outputs": {
+            "controlnet": "ControlNet"
+        }
+    },
+    "IDBaseModelLoader_fromhub": {
+        "title": "ID模型加载器(hub)",
+        "inputs": {
+            "controlnet": "ControlNet"
+        },
+        "widgets": {
+            "base_model_path": "模型路径"
+        },
+        "outputs": {
+            "pipe": "Pipe"
+        }
+    },
+    "IDBaseModelLoader_local": {
+        "title": "ID模型加载器(本地)",
+        "inputs": {
+            "controlnet": "ControlNet"
+        },
+        "widgets": {
+            "ckpt_name": "模型名称"
+        },
+        "outputs": {
+            "pipe": "Pipe"
+        }
+    },
+    "Ipadapter_instantidLoader": {
+        "title": "IPAdapter_ID加载器",
+        "inputs": {
+            "pipe": "Pipe"
+        },
+        "widgets": {
+            "Ipadapter_instantid_path": "IPAdapterID路径",
+            "filename": "文件名"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "ID_Prompt_Styler": {
+        "title": "ID提示词风格化",
+        "widgets": {
+            "prompt": "正面提示词",
+            "negative_prompt": "负面提示词",
+            "style_name": "风格"
+        },
+        "outputs": {
+            "positive_prompt": "正面提示词",
+            "negative_prompt": "负面提示词"
+        }
+    },
+    "IDGenerationNode": {
+        "title": "ID生成节点",
+        "inputs": {
+            "face_image": "面部图像",
+            "pipe": "Pipe",
+            "Insightface": "InsightFace",
+            "pose_image_optional": "姿态图像",
+            "positive": "正面提示词",
+            "negative": "负面提示词"
+        },
+        "widgets": {
+            "ip_adapter_scale": "IPAdapter强度",
+            "controlnet_conditioning_scale": "ControlNet强度",
+            "steps": "步数",
+            "guidance_scale": "CFG",
+            "enhance_face_region": "面部区域增强",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    }
+}
