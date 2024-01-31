@@ -533,6 +533,22 @@
             "bboxes_b": "BBox_B"
         }
     },
+    "OffsetMaskByNormalizedAmplitude": {
+        "title": "按归一化幅度偏移遮罩",
+        "inputs": {
+            "normalized_amp": "归一化幅度",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "rotate": "旋转",
+            "angle_multiplier": "角度倍数"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
 
 
 
@@ -685,6 +701,15 @@
     },
     "FloatConstant": {
         "title": "浮点常量",
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "value": "值"
+        }
+    },
+    "StringConstant": {
+        "title": "字符串常量",
         "widgets": {
             "value": "值"
         },
@@ -933,6 +958,32 @@
         },
         "outputs": {
             "IMAGE": "图像"
+        }
+    },
+    "ImageTransformByNormalizedAmplitude": {
+        "title": "按归一化幅度变换图像",
+        "inputs": {
+            "normalized_amp": "归一化幅度",
+            "image": "图像"
+        },
+        "widgets": {
+            "zoom_scale": "缩放",
+            "cumulative": "累加"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "GetLatentsFromBatchIndexed": {
+        "title": "按索引获取Latent",
+        "inputs": {
+            "latents": "Latent"
+        },
+        "widgets": {
+            "indexes": "序号"
+        },
+        "outputs": {
+            "LATENT": "Latent"
         }
     }
 }
