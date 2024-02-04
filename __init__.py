@@ -133,6 +133,9 @@ def register():
         else:
             # 复制时过滤 .git
             shutil.copytree(CUR_PATH.as_posix(), aigodlike_ext_path.as_posix(), ignore=shutil.ignore_patterns(".git"))
+    except WindowsError as e:
+        # some windows system may not support junction
+        shutil.copytree(CUR_PATH.as_posix(), aigodlike_ext_path.as_posix(), ignore=shutil.ignore_patterns(".git"))
     except Exception as e:
         sys.stderr.write(f"[agl/register error]: {e}\n")
         sys.stderr.flush()
