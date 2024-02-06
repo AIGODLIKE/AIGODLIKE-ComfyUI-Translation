@@ -124,42 +124,25 @@ def rmtree(path: Path):
 
 
 def register():
+    import nodes
     aigodlike_ext_path = COMFY_PATH.joinpath("web", "extensions", ADDON_NAME)
-    rmtree(aigodlike_ext_path)
+    if hasattr(nodes, "EXTENSION_WEB_DIRS"):
+        rmtree(aigodlike_ext_path)
+        return
+    # 新版已经不需要复制文件了
     try:
         if os.name == "nt":
-            import _winapi
-            _winapi.CreateJunction(CUR_PATH.as_posix(), aigodlike_ext_path.as_posix())
+            try:
+                import _winapi
+                _winapi.CreateJunction(CUR_PATH.as_posix(), aigodlike_ext_path.as_posix())
+            except WindowsError as e:
+                shutil.copytree(CUR_PATH.as_posix(), aigodlike_ext_path.as_posix(), ignore=shutil.ignore_patterns(".git"))
         else:
             # 复制时过滤 .git
             shutil.copytree(CUR_PATH.as_posix(), aigodlike_ext_path.as_posix(), ignore=shutil.ignore_patterns(".git"))
-    except WindowsError as e:
-        # some windows system may not support junction
-        shutil.copytree(CUR_PATH.as_posix(), aigodlike_ext_path.as_posix(), ignore=shutil.ignore_patterns(".git"))
     except Exception as e:
         sys.stderr.write(f"[agl/register error]: {e}\n")
         sys.stderr.flush()
-    return
-    aigodlike_ext_path.mkdir(parents=True, exist_ok=True)
-    # 复制所有js文件
-    for data in CUR_PATH.glob("*.js"):
-        shutil.copy(data, aigodlike_ext_path)
-    # shutil.copy(CUR_PATH.joinpath("main.js"), aigodlike_ext_path)
-
-    # combine jsons into one
-    # translations_path = CUR_PATH.joinpath("translations.json")
-    # translations = {}
-    # for data in CUR_PATH.glob("*.json"):
-    #     if data.name == "translations.json":
-    #         continue
-    #     try:
-    #         json_data = json.loads(data.read_text(encoding="utf-8"))
-    #     except UnicodeDecodeError:
-    #         json_data = json.loads(data.read_text(encoding="gbk"))
-    #     translations.update(json_data)
-    # translations_path.write_text(json.dumps(translations, indent=4, ensure_ascii=False), encoding="utf-8")
-    # 文件复制 translations.json main.js
-    # shutil.copy(translations_path, aigodlike_ext_path)
 
 
 def unregister():
@@ -179,3 +162,4 @@ def unregister():
 register()
 atexit.register(unregister)
 NODE_CLASS_MAPPINGS = {}
+WEB_DIRECTORY = "./"
