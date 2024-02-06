@@ -534,9 +534,9 @@
         }
     },
     "OffsetMaskByNormalizedAmplitude": {
-        "title": "按归一化幅度偏移遮罩",
+        "title": "按规格化幅度偏移遮罩",
         "inputs": {
-            "normalized_amp": "归一化幅度",
+            "normalized_amp": "规格化幅度",
             "mask": "遮罩"
         },
         "widgets": {
@@ -665,8 +665,21 @@
     },
 
 
+    "CondPassThrough": {
+        "title": "条件传递",
+        "inpus": {
+            "positive": "正面条件",
+            "negative": "负面条件"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件"
+        }
+    },
 
-    "Set": {
+
+
+    "SetNode": {
         "title": "设置节点",
         "inputs": {
             "*": "输入"
@@ -678,7 +691,7 @@
             "*": "输出"
         }
     },
-    "Get": {
+    "GetNode": {
         "title": "获取节点",
         "inputs": {
             "*": "输入"
@@ -961,9 +974,9 @@
         }
     },
     "ImageTransformByNormalizedAmplitude": {
-        "title": "按归一化幅度变换图像",
+        "title": "按规格化幅度变换图像",
         "inputs": {
-            "normalized_amp": "归一化幅度",
+            "normalized_amp": "规格化幅度",
             "image": "图像"
         },
         "widgets": {
@@ -984,6 +997,60 @@
         },
         "outputs": {
             "LATENT": "Latent"
+        }
+    },
+    "ImageUpscaleWithModelBatched": {
+        "title": "图像批次通过模型放大",
+        "inputs": {
+            "upscale_model": "放大模型",
+            "images": "图像"
+        },
+        "widgets": {
+            "per_batch": "每批次"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+
+
+    "GLIGENTextBoxApplyBatch": {
+        "title": "GLIGEN文本框应用(批次)",
+        "inputs": {
+            "conditioning_to": "条件",
+            "clip": "CLIP",
+            "gligen_textbox_model": "GLIGEN模型",
+            "latents": "Latent"
+        },
+        "widgets": {
+            "text": "文本",
+            "width": "宽度",
+            "height": "高度",
+            "coordinates": "坐标",
+            "interpolation": "插值方法"
+        },
+        "outputs": {
+            "CONDITIONING": "条件",
+            "IMAGE": "图像"
+        }
+    },
+    "NormalizedAmplitudeToMask": {
+        "title": "规格化振幅到遮罩",
+        "inputs": {
+            "normalized_amp": "规格化幅度"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "frame_offset": "帧偏移",
+            "location_x": "位置_X",
+            "location_y": "位置_Y",
+            "size": "大小",
+            "shape": "形状",
+            "color": "颜色"
+        },
+        "outputs": {
+            "MASK": "遮罩"
         }
     }
 }
