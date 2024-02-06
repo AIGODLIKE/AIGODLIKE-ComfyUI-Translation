@@ -503,6 +503,35 @@
         }
     },
 
+
+    "ImageLuminanceDetector": {
+        "title": "图像明度",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "gamma_correction": "伽马修正",
+            "resolution": "分辨率" 
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageIntensityDetector": {
+        "title": "图像强度",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "gamma_correction": "伽马修正",
+            "resolution": "分辨率" 
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+
+
     "SavePoseKpsAsJsonFile": {
         "title": "保存姿态关键点",
         "inputs": {
