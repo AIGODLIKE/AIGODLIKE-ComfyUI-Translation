@@ -75,8 +75,8 @@
             "prev_latent_kf": "Latent关键帧"
         },
         "widgets": {
-            "batch_index_from": "批次序号从",
-            "batch_index_to_excl": "批次序号到",
+            "batch_index_from": "批次索引从",
+            "batch_index_to_excl": "批次索引到",
             "strength_from": "强度从",
             "strength_to": "强度到",
             "interpolation": "插值方式",

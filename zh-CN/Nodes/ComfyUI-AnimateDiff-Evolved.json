@@ -1,5 +1,499 @@
 {
-    
+    "ADE_MultivalDynamic": {
+        "title": "多值动态",
+        "inputs": {
+            "mask_optional": "遮罩"
+        },
+        "widgets": {
+            "float_val": "浮点系数"
+        },
+        "outputs": {
+            "MULTIVAL": "多值"
+        }
+    },
+    "ADE_MultivalScaledMask": {
+        "title": "多值缩放遮罩",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "min_float_val": "最小浮点系数",
+            "max_float_val": "最大浮点系数",
+            "scaling": "缩放设置",
+                "absolute": "绝对",
+                "relative": "相对"
+        },
+        "outputs": {
+            "MULTIVAL": "多值"
+        }
+    },
+
+
+    "ADE_StandardStaticViewOptions": {
+        "title": "视图设置(标准静态)",
+        "widgets": {
+            "view_length": "视图长度",
+            "view_overlap": "视图重叠",
+            "fuse_method": "融合方法",
+                "pyramid": "金字塔",
+                "flat": "平面"
+        },
+        "outputs": {
+            "VIEW_OPTS": "视图设置"
+        }
+    },
+    "ADE_StandardUniformViewOptions": {
+        "title": "视图设置(标准统一)",
+        "widgets": {
+            "view_length": "视图长度",
+            "view_overlap": "视图重叠",
+            "view_stride": "视图步长",
+            "fuse_method": "融合方法"
+        },
+        "outputs": {
+            "VIEW_OPTS": "视图设置"
+        }
+    },
+    "ADE_LoopedUniformViewOptions": {
+        "title": "视图设置(循环统一)",
+        "widgets": {
+            "view_length": "视图长度",
+            "view_overlap": "视图重叠",
+            "view_stride": "视图步长",
+            "closed_loop": "闭合循环",
+            "fuse_method": "融合方法",
+            "use_on_equal_length": "仅相同时闭合"
+        },
+        "outputs": {
+            "VIEW_OPTS": "视图设置"
+        }
+    },
+
+
+    "ADE_StandardStaticContextOptions": {
+        "title": "上下文设置(标准静态)",
+        "inputs": {
+            "prev_context": "前上下文",
+            "view_opts": "视图设置"
+        },
+        "widgets": {
+            "context_length": "上下文长度",
+            "context_overlap": "上下文重叠",
+            "fuse_method": "融合方法",
+            "use_on_equal_length": "仅相同时闭合",
+            "start_percent": "开始位置",
+            "guarantee_steps": "最小采样步数"
+        },
+        "outputs": {
+            "CONTEXT_OPTS": "上下文设置"
+        }
+    },
+    "ADE_StandardUniformContextOptions": {
+        "title": "上下文设置(标准统一)",
+        "inputs": {
+            "prev_context": "前上下文",
+            "view_opts": "视图设置"
+        },
+        "widgets": {
+            "context_length": "上下文长度",
+            "context_overlap": "上下文重叠",
+            "context_stride": "上下文步长",
+            "fuse_method": "融合方法",
+            "use_on_equal_length": "仅相同时闭合",
+            "start_percent": "开始位置",
+            "guarantee_steps": "最小采样步数"
+        },
+        "outputs": {
+            "CONTEXT_OPTS": "上下文设置"
+        }
+    },
+    "ADE_LoopedUniformContextOptions": {
+        "title": "上下文设置(循环统一)",
+        "inputs": {
+            "prev_context": "前上下文",
+            "view_opts": "视图设置"
+        },
+        "widgets": {
+            "context_length": "上下文长度",
+            "context_overlap": "上下文重叠",
+            "context_stride": "上下文步长",
+            "closed_loop": "闭合循环",
+            "fuse_method": "融合方法",
+            "use_on_equal_length": "仅相同时闭合",
+            "start_percent": "开始位置",
+            "guarantee_steps": "最小采样步数"
+        },
+        "outputs": {
+            "CONTEXT_OPTS": "上下文设置"
+        }
+    },
+    "ADE_ViewsOnlyContextOptions": {
+        "title": "上下文设置(仅视图)[VRAM警告]",
+        "inputs": {
+            "view_opts_req": "视图设置",
+            "prev_context": "前上下文"
+        },
+        "widgets": {
+            "start_percent": "开始位置",
+            "guarantee_steps": "最小采样步数"
+        },
+        "outputs": {
+            "CONTEXT_OPTS": "上下文设置"
+        }
+    },
+    "ADE_BatchedContextOptions": {
+        "title": "上下文设置(批次)",
+        "inputs": {
+            "prev_context": "前上下文"
+        },
+        "widgets": {
+            "context_length": "上下文长度",
+            "start_percent": "开始位置",
+            "guarantee_steps": "最小采样步数"
+        }
+    },
+
+
+    "ADE_IterationOptsDefault": {
+        "title": "迭代设置(默认)",
+        "widgets": {
+            "iterations": "迭代次数",
+            "iter_batch_offset": "迭代批次偏移",
+            "iter_seed_offset": "迭代随机种偏移"
+        },
+        "outputs": {
+            "ITERATION_OPTS": "迭代设置"
+        }
+    },
+    "ADE_IterationOptsFreeInit": {
+        "title": "迭代设置",
+        "widgets": {
+            "iterations": "迭代次数",
+            "filter": "滤波器",
+            "d_s": "空间停止频率",
+            "d_t": "时间停止频率",
+            "n_butterworth": "Butterworth阶数",
+            "sigma_step": "Sigma步数",
+            "apply_to_1st_iter": "应用至第1次迭代",
+            "init_type": "初始化类型",
+            "iter_batch_offset": "迭代批次偏移",
+            "iter_seed_offset": "迭代随机种偏移"
+        },
+        "outputs": {
+            "ITERATION_OPTS": "迭代设置"
+        }
+    },
+
+
+    "ADE_NoiseLayerAdd": {
+        "title": "噪波层(添加)",
+        "inputs": {
+            "prev_noise_layers": "前噪波层",
+            "mask_optional": "遮罩",
+            "seed_override": "随机种"
+        },
+        "widgets": {
+            "batch_offset": "批次偏移",
+            "noise_type": "噪波类型",
+            "seed_gen_override": "随机种生成",
+                "use existing": "使用当前",
+                "comfy": "Comfy",
+                "auto1111": "Auto1111",
+            "seed_offset": "随机种偏移",
+            "noise_weight": "噪波权重"
+        },
+        "outputs": {
+            "NOISE_LAYERS": "噪波层"
+        }
+    },
+    "ADE_NoiseLayerAddWeighted": {
+        "title": "噪波层(添加权重)",
+        "inputs": {
+            "prev_noise_layers": "前噪波层",
+            "mask_optional": "遮罩",
+            "seed_override": "随机种"
+        },
+        "widgets": {
+            "batch_offset": "批次偏移",
+            "noise_type": "噪波类型",
+            "seed_gen_override": "随机种生成",
+                "use existing": "使用当前",
+                "comfy": "Comfy",
+                "auto1111": "Auto1111",
+            "seed_offset": "随机种偏移",
+            "noise_weight": "噪波权重",
+            "balance_multiplier": "平衡倍数"
+        },
+        "outputs": {
+            "NOISE_LAYERS": "噪波层"
+        }
+    },
+    "ADE_NoiseLayerReplace": {
+        "title": "噪波层(替换)",
+        "inputs": {
+            "prev_noise_layers": "前噪波层",
+            "mask_optional": "遮罩",
+            "seed_override": "随机种"
+        },
+        "widgets": {
+            "batch_offset": "批次偏移",
+            "noise_type": "噪波类型",
+            "seed_gen_override": "随机种生成",
+                "use existing": "使用当前",
+                "comfy": "Comfy",
+                "auto1111": "Auto1111",
+            "seed_offset": "随机种偏移"
+        },
+        "outputs": {
+            "NOISE_LAYERS": "噪波层"
+        }
+    },
+
+
+    "ADE_AdjustPESweetspotStretch": {
+        "title": "调整PE拉伸(sweetspot)",
+        "inputs": {
+            "prev_pe_adjust": "前PE设置"
+        },
+        "widgets": {
+            "sweetspot": "Sweetspot",
+            "new_sweetspot": "新Sweetspot",
+            "print_adjustment": "输出调整量"
+        },
+        "outputs": {
+            "PE_ADJUST": "PE设置"
+        }
+    },
+    "ADE_AdjustPEFullStretch": {
+        "title": "调整PE拉伸",
+        "inputs": {
+            "prev_pe_adjust": "前PE设置"
+        },
+        "widgets": {
+            "pe_stretch": "PE拉伸",
+            "print_adjustment": "输出调整量"
+        },
+        "outputs": {
+            "PE_ADJUST": "PE设置"
+        }
+    },
+    "ADE_AdjustPEManual": {
+        "title": "调整PE(手动)",
+        "inputs": {
+            "prev_pe_adjust": "前PE设置"
+        },
+        "widgets": {
+            "cap_initial_pe_length": "cap_initial_pe_length",
+            "interpolate_pe_to_length": "interpolate_pe_to_length",
+            "initial_pe_idx_offset": "initial_pe_idx_offset",
+            "final_pe_idx_offset": "final_pe_idx_offset",
+            "print_adjustment": "输出调整量"
+        },
+        "outputs": {
+            "PE_ADJUST": "PE设置"
+        }
+    },
+    "ADE_AnimateDiffSettings": {
+        "title": "AnimateDiff设置",
+        "inputs": {
+            "pe_adjust": "PE设置"
+        },
+        "outputs": {
+            "AD_SETTINGS": "AD设置"
+        }
+    },
+
+
+    "ADE_AnimateDiffUnload": {
+        "title": "动态扩散卸载器",
+        "inputs": {
+            "model": "模型"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "ADE_EmptyLatentImageLarge": {
+        "title": "空Latent(大型)",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "CheckpointLoaderSimpleWithNoiseSelect": {
+        "title": "Checkpoint加载器(简易噪波)",
+        "widgets": {
+            "ckpt_name": "ckpt名称",
+            "beta_schedule": "调度器",
+            "use_custom_scale_factor": "使用自定缩放系数",
+            "scale_factor": "缩放系数"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "VAE": "VAE"
+        }
+    },
+
+
+    "ADE_AnimateDiffLoaderGen1": {
+        "title": "AnimateDiff加载器Gen1",
+        "inputs": {
+            "model": "模型",
+            "context_options": "上下文设置",
+            "motion_lora": "动态LoRA",
+            "ad_settings": "AD设置",
+            "ad_keyframes": "AD关键帧",
+            "sample_settings": "采样设置",
+            "scale_multival": "缩放多值",
+            "effect_multival": "效果多值"
+        },
+        "widgets": {
+            "model_name": "模型名称",
+            "beta_schedule": "调度器"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "ADE_AnimateDiffLoaderWithContext": {
+        "title": "动态扩散加载器",
+        "inputs": {
+            "model": "模型",
+            "context_options": "上下文设置",
+            "motion_lora": "动态LoRA",
+            "motion_model_settings": "动态模型设置",
+            "sample_settings": "采样设置",
+            "ad_settings": "AD设置",
+            "ad_keyframes": "AD关键帧"
+        },
+        "widgets": {
+            "model_name": "模型名称",
+            "beta_schedule": "调度器",
+            "motion_scale": "动态缩放",
+            "apply_v2_models_properly": "使用v2模型"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+
+
+    "ADE_UseEvolvedSampling": {
+        "title": "使用高级采样",
+        "inputs": {
+            "model": "模型",
+            "m_models": "动态模型组",
+            "context_options": "上下文设置",
+            "sample_settings": "采样设置"
+        },
+        "widgets": {
+            "beta_schedule": "调度器"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "ADE_ApplyAnimateDiffModelSimple": {
+        "title": "应用动态模型(简易)",
+        "inputs": {
+            "motion_model": "动态模型",
+            "motion_lora": "动态LoRA",
+            "scale_multival": "缩放多值",
+            "effect_multival": "效果多值",
+            "ad_keyframes": "AD关键帧"
+        },
+        "outputs": {
+            "M_MODELS": "动态模型组"
+        }
+    },
+    "ADE_ApplyAnimateDiffModel": {
+        "title": "应用动态模型",
+        "inputs": {
+            "motion_model": "动态模型",
+            "motion_lora": "动态LoRA",
+            "scale_multival": "缩放多值",
+            "effect_multival": "效果多值",
+            "ad_keyframes": "AD关键帧",
+            "prev_m_models": "前动态模型组"
+        },
+        "widgets": {
+            "start_percent": "开始位置",
+            "end_percent": "结束位置"
+        },
+        "outputs": {
+            "M_MODELS": "动态模型组"
+        }
+    },
+    "ADE_LoadAnimateDiffModel": {
+        "title": "加载动态模型",
+        "inputs": {
+            "ad_settings": "AD设置"
+        },
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "MOTION_MODEL": "动态模型"
+        }
+    },
+
+
+    "ADE_AnimateDiffLoRALoader": {
+        "title": "动态LoRA加载器",
+        "inputs": {
+            "prev_motion_lora": "前LoRA"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称",
+            "strength": "强度"
+        },
+        "outputs": {
+            "MOTION_LORA": "动态LoRA"
+        }
+    },
+    "ADE_AnimateDiffSamplingSettings": {
+        "title": "AnimateDiff采样设置",
+        "inputs": {
+            "noise_layers": "噪波层",
+            "iteration_opts": "迭代设置",
+            "seed_override": "随机种"
+        },
+        "widgets": {
+            "batch_offset": "批次偏移",
+            "noise_type": "噪波类型",
+            "seed_gen": "随机种生成",
+            "seed_offset": "随机种偏移",
+            "adapt_denoise_steps": "自适应降噪步数"
+        },
+        "outputs": {
+            "settings": "采样设置"
+        }
+    },
+    "ADE_AnimateDiffKeyframe": {
+        "title": "AnimateDiff关键帧",
+        "inputs": {
+            "prev_ad_keyframes": "前AD关键帧",
+            "scale_multival": "缩放多值",
+            "effect_multival": "效果多值"
+        },
+        "widgets": {
+            "start_percent": "开始位置",
+            "inherit_missing": "缺失值自动继承",
+            "guarantee_steps": "最小采样步数"
+        },
+        "outputs": {
+            "AD_KEYFRAMES": "AD关键帧"
+        }
+    },
+
+
+
+
     "ADE_AnimateDiffModelSettingsSimple": {
         "title": "动态扩散模型设置(简易)",
         "inputs": {
@@ -46,102 +540,6 @@
         }
     },
 
-
-
-    "ADE_NoiseLayerAdd": {
-        "title": "噪波层(添加)",
-        "inputs": {
-            "prev_noise_layers": "前噪波层",
-            "mask_optional": "遮罩",
-            "seed_override": "随机种"
-        },
-        "widgets": {
-            "batch_offset": "批次偏移",
-            "noise_type": "噪波类型",
-            "seed_gen_override": "随机种生成",
-                "use existing": "使用当前",
-                "comfy": "Comfy",
-                "auto1111": "Auto1111",
-            "seed_offset": "随机种偏移",
-            "noise_weight": "噪波权重"
-        },
-        "outputs": {
-            "NOISE_LAYER": "噪波层"
-        }
-    },
-    "ADE_NoiseLayerAddWeighted": {
-        "title": "噪波层(添加权重)",
-        "inputs": {
-            "prev_noise_layers": "前噪波层",
-            "mask_optional": "遮罩",
-            "seed_override": "随机种"
-        },
-        "widgets": {
-            "batch_offset": "批次偏移",
-            "noise_type": "噪波类型",
-            "seed_gen_override": "随机种生成",
-                "use existing": "使用当前",
-                "comfy": "Comfy",
-                "auto1111": "Auto1111",
-            "seed_offset": "随机种偏移",
-            "noise_weight": "噪波权重",
-            "balance_multiplier": "平衡倍数"
-        },
-        "outputs": {
-            "NOISE_LAYER": "噪波层"
-        }
-    },
-    "ADE_NoiseLayerReplace": {
-        "title": "噪波层(替换)",
-        "inputs": {
-            "prev_noise_layers": "前噪波层",
-            "mask_optional": "遮罩",
-            "seed_override": "随机种"
-        },
-        "widgets": {
-            "batch_offset": "批次偏移",
-            "noise_type": "噪波类型",
-            "seed_gen_override": "随机种生成",
-                "use existing": "使用当前",
-                "comfy": "Comfy",
-                "auto1111": "Auto1111",
-            "seed_offset": "随机种偏移"
-        },
-        "outputs": {
-            "NOISE_LAYER": "噪波层"
-        }
-    },
-
-
-
-    "ADE_IterationOptsDefault": {
-        "title": "迭代设置(默认)",
-        "widgets": {
-            "iterations": "迭代次数"
-        },
-        "outputs": {
-            "ITERATION_OPTS": "迭代设置"
-        }
-    },
-    "ADE_IterationOptsFreeInit": {
-        "title": "迭代设置",
-        "widgets": {
-            "iterations": "迭代次数",
-            "filter": "滤波器",
-            "d_s": "空间停止频率",
-            "d_t": "时间停止频率",
-            "n_butterworth": "Butterworth阶数",
-            "sigma_step": "Sigma步数",
-            "apply_to_1st_iter": "应用至第1次迭代",
-            "init_type": "初始化类型"
-        },
-        "outputs": {
-            "ITERATION_OPTS": "迭代设置"
-        }
-    },
-
-
-
     "ADE_AnimateDiffUniformContextOptions": {
         "title": "动态扩散上下文选项",
         "widgets": {
@@ -155,93 +553,6 @@
             "CONTEXT_OPTIONS": "上下文设置"
         }
     },
-    "ADE_AnimateDiffSamplingSettings": {
-        "title": "动态扩散采样设置",
-        "inputs": {
-            "prev_layers": "噪波层",
-            "iteration_opts": "迭代设置",
-            "seed_override": "随机种"
-        },
-        "widgets": {
-            "batch_offset": "批次偏移",
-            "noise_type": "噪波类型",
-            "seed_gen": "随机种生成",
-            "seed_offset": "随机种偏移"
-        },
-        "outputs": {
-            "settings": "采样设置"
-        }
-    },
-    "ADE_AnimateDiffLoaderWithContext": {
-        "title": "动态扩散加载器(上下文)",
-        "inputs": {
-            "model": "模型",
-            "context_options": "上下文设置",
-            "motion_lora": "动态LoRA",
-            "motion_model_settings": "动态模型设置",
-            "sample_settings": "采样设置"
-        },
-        "widgets": {
-            "model_name": "模型名称",
-            "beta_schedule": "调度器",
-            "motion_scale": "动态缩放",
-            "apply_v2_models_properly": "使用v2模型"
-        },
-        "outputs": {
-            "MODEL": "模型"
-        }
-    },
-    "ADE_AnimateDiffLoRALoader": {
-        "title": "动态LoRA加载器",
-        "inputs": {
-            "prev_motion_lora": "前LoRA"
-        },
-        "widgets": {
-            "lora_name": "LoRA名称",
-            "strength": "强度"
-        },
-        "outputs": {
-            "MOTION_LORA": "动态LoRA"
-        }
-    },
-    "ADE_AnimateDiffUnload": {
-        "title": "动态扩散卸载器",
-        "inputs": {
-            "model": "模型"
-        },
-        "outputs": {
-            "MODEL": "模型"
-        }
-    },
-
-
-
-    "ADE_EmptyLatentImageLarge": {
-        "title": "空Latent(大型)",
-        "widgets": {
-            "width": "宽度",
-            "height": "高度",
-            "batch_size": "批次大小"
-        },
-        "outputs": {
-            "LATENT": "Latent"
-        }
-    },
-    
-    "CheckpointLoaderSimpleWithNoiseSelect": {
-        "title": "Checkpoint加载器(简易噪波)",
-        "widgets": {
-            "ckpt_name": "ckpt名称",
-            "beta_schedule": "调度器"
-        },
-        "outputs": {
-            "MODEL": "模型",
-            "CLIP": "CLIP",
-            "VAE": "VAE"
-        }
-    },
-
-
 
     "AnimateDiffLoaderV1": {
         "title": "动态扩散加载器v1",

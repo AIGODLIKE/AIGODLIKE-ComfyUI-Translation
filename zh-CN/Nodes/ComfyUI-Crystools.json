@@ -139,7 +139,7 @@
         }
     },
     "Switch conditioning [Crystools]": {
-        "title": "条件",
+        "title": "切换条件",
         "inputs": {
             "on_true": "真",
             "on_false": "假"
@@ -152,7 +152,7 @@
         }
     },
     "Switch image [Crystools]": {
-        "title": "图像",
+        "title": "切换图像",
         "inputs": {
             "on_true": "真",
             "on_false": "假"
@@ -164,8 +164,19 @@
             "image": "图像"
         }
     },
+    "Switch mask [Crystools]": {
+        "title": "切换遮罩",
+        "widgets": {
+            "on_true": "真",
+            "on_false": "假",
+            "boolean": "布尔"
+        },
+        "outputs": {
+            "mask": "字遮罩"
+        }
+    },
     "Switch string [Crystools]": {
-        "title": "字符串",
+        "title": "切换字符串",
         "widgets": {
             "on_true": "真",
             "on_false": "假",

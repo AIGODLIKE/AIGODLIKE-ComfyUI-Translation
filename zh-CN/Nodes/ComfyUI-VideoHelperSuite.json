@@ -259,7 +259,9 @@
     "VHS_VideoCombine": {
         "title": "合并为视频",
         "inputs": {
-            "images": "图像"
+            "images": "图像",
+            "audio": "音频",
+            "batch_manager": "批次管理"
         },
         "widgets": {
             "frame_rate": "帧率",
@@ -360,6 +362,15 @@
         },
         "widgets": {
             "options": "选项"
+        }
+    },
+    "VHS_BatchManager": {
+        "title": "批次管理",
+        "widgets": {
+            "frames_per_batch": "每批次帧数"
+        },
+        "outputs": {
+            "VHS_BatchManager": "批次管理"
         }
     }
 }
