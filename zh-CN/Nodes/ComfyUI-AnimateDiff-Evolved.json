@@ -387,12 +387,15 @@
         "title": "使用高级采样",
         "inputs": {
             "model": "模型",
-            "m_model": "动态模型组",
+            "m_models": "动态模型组",
             "context_options": "上下文设置",
             "sample_settings": "采样设置"
         },
         "widgets": {
             "beta_schedule": "调度器"
+        },
+        "outputs": {
+            "MODEL": "模型"
         }
     },
     "ADE_ApplyAnimateDiffModelSimple": {
