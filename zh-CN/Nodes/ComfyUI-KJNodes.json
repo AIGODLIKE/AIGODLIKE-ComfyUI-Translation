@@ -1052,5 +1052,16 @@
         "outputs": {
             "MASK": "遮罩"
         }
+    },
+    "ScaleBatchPromptSchedule": {
+        "title": "缩放提示词批次调度",
+        "inputs": {
+            "input_str": "字符串",
+            "old_frame_count": "旧帧数",
+            "new_frame_count": "新帧数"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
     }
 }

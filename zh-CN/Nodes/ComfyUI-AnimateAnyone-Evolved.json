@@ -73,5 +73,82 @@
         "outputs": {
             "latent": "Latent"
         }
+    },
+
+    "[AnimateAnyone] Load Pose Guider": {
+        "title": "加载姿态引导",
+        "widgets": {
+            "pose_guider_model_path": "模型路径"
+        },
+        "outputs": {
+            "pose_guider": "姿态引导"
+        }
+    },
+    "[AnimateAnyone] Load UNet2D ConditionModel": {
+        "title": "加载UNet2D条件模型",
+        "widgets": {
+            "pretrained_base_unet_folder_path": "基础UNet路径",
+            "unet2d_model_path": "UNet2D模型路径"
+        },
+        "outputs": {
+            "unet2d": "UNet2D"
+        }
+    },
+    "[AnimateAnyone] Load UNet3D ConditionModel": {
+        "title": "加载UNet3D条件模型",
+        "widgets": {
+            "pretrained_base_unet_folder_path": "基础UNet路径",
+            "unet3d_model_path": "UNet3D模型路径",
+            "motion_module_path": "MotionModule路径"
+        },
+        "outputs": {
+            "unet3d": "UNet3D"
+        }
+    },
+    "[AnimateAnyone] Pose Guider Encode": {
+        "title": "姿态引导编码",
+        "inputs": {
+            "pose_guider": "姿态引导",
+            "pose_images": "姿态图像"
+        },
+        "outputs": {
+            "pose_latent": "姿态Latent"
+        }
+    },
+    "[AnimateAnyone] Animate Anyone Sampler": {
+        "title": "AnimateAnyone采样器",
+        "inputs": {
+            "reference_unet": "参考UNet",
+            "denoising_unet": "降噪UNet",
+            "ref_image_latent": "参考Latent",
+            "clip_image_embeds": "参考图像",
+            "pose_latent": "姿态Latent"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "steps": "步数",
+            "cfg" :"CFG",
+            "delta": "delta",
+            "context_frames": "上下文帧数",
+            "context_stride": "上下文步长",
+            "context_overlap": "上下文重叠",
+            "context_batch_size": "上下文批次大小",
+            "interpolation_factor": "插值系数",
+            "sampler_scheduler_pairs": "调度器",
+            "beta_start": "beta_start",
+            "beta_end": "bata_end",
+            "beta_schedule": "beta调度",
+            "prediction_type": "预测类型",
+            "timestep_spacing": "时间戳间隔",
+            "stpes_offset": "步数偏移",
+            "clip_sample": "CLIP采样",
+            "rescale_betas_zero_snr": "beta规格化信噪比",
+            "use_lora": "使用LoRA",
+            "lora_name": "LoRA名称"
+        },
+        "outputs": {
+            "latent": "Latent"
+        }
     }
 }

@@ -2383,5 +2383,13 @@
     "lines from poems": "诗词",
     "lines from songs": "歌曲",
     "names from card based games": "卡牌游戏的名称",
-    "episode titles from tv shows": "电视节目的章标题"
+    "episode titles from tv shows": "电视节目的章标题",
+
+
+    "animatedif": "animatedif",
+
+    "eps": "等概率抽样",
+    "v-prediction": "V预测",
+    "lcm": "LCM",
+    "zsnr": "规格化信噪比"
 }

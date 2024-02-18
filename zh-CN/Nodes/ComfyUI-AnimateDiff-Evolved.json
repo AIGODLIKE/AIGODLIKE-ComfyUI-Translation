@@ -461,6 +461,8 @@
         "inputs": {
             "noise_layers": "噪波层",
             "iteration_opts": "迭代设置",
+            "custom_cfg": "自定CFG",
+            "sigma_schedule": "Sigma调度",
             "seed_override": "随机种"
         },
         "widgets": {
@@ -492,6 +494,73 @@
     },
 
 
+    "ADE_SigmaSchedule": {
+        "title": "Sigma调度",
+        "widgets": {
+            "beta_schedule": "调度器"
+        },
+        "outputs": {
+            "SIGMA_SCHEDULE": "Sigma调度"
+        }
+    },
+    "ADE_RawSigmaSchedule": {
+        "title": "Sigma调度(高级)",
+        "widgets": {
+            "raw_beta_schedule": "调度器",
+            "linear_start": "线性开始位置",
+            "linear_end": "线性结束位置",
+            "sampling": "采样",
+                "eps": "等概率抽样",
+                "v-prediction": "V预测",
+                "lcm": "LCM",
+            "lcm_original_timesteps": "LCM原步数",
+            "lcm_zsnr": "LCM规格化信噪比"
+        },
+        "outputs": {
+            "SIGMA_SCHEDULE": "Sigma调度"
+        }
+    },
+    "ADE_SigmaScheduleWeightedAverage": {
+        "title": "Sigma调度平均",
+        "inputs": {
+            "schedule_A": "调度_A",
+            "schedule_B": "调度_B"            
+        },
+        "widgets": {
+            "weight_A": "A权重"
+        },
+        "outputs": {
+            "SIGMA_SCHEDULE": "Sigma调度"
+        }
+    },
+    "ADE_SigmaScheduleWeightedAverageInterp": {
+        "title": "Sigma调度平均(插值)",
+        "inputs": {
+            "schedule_A": "调度_A",
+            "schedule_B": "调度_B"
+        },
+        "widgets": {
+            "weight_A_Start": "权重A开始",
+            "weight_A_End": "权重A结束",
+            "interpolation": "插值方式"
+        },
+        "outputs": {
+            "SIGMA_SCHEDULE": "Sigma调度"
+        }
+    },
+    "ADE_SigmaScheduleSplitAndCombine": {
+        "title": "Sigma调度拆分合并",
+        "inputs": {
+            "schedule_Start": "调度_起始",
+            "schedule_End": "调度_结束"
+        },
+        "widgets": {
+            "idx_split_percent": "拆分位置"
+        },
+        "outputs": {
+            "SIGMA_SCHEDULE": "Sigma调度"
+        }
+    },
 
 
     "ADE_AnimateDiffModelSettingsSimple": {

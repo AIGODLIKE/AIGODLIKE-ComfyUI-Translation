@@ -1480,6 +1480,46 @@
     },
 
 
+    "CLIPTextEncodeControlnet": {
+        "title": "CLIP文本编码ControlNet",
+        "inputs": {
+            "clip": "CLIP",
+            "conditioning": "条件"
+        },
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+
+
+    "StableCascade_EmptyLatentImage": {
+        "title": "StableCascade_空Latent",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "compression": "压缩等级",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "stage_c": "Stage_C",
+            "stage_b": "Stage_B"
+        }
+    },
+    "StableCascade_StageB_Conditioning": {
+        "title": "StableCascade_StageB条件",
+        "inputs": {
+            "conditioning": "条件",
+            "stage_c": "Stage_C"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+
+
     "VAEDecodeTiled": {
         "title": "VAE分块解码",
         "inputs": {
