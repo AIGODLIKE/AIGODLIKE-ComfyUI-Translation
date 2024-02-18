@@ -407,6 +407,64 @@
             "LATENT": "Latent"
         }
     },
+    "KSamplerPipe //Inspire": {
+        "title": "K采样器(Inspire)",
+        "inputs": {
+            "basic_pipe": "基础节点束",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "noise_mode": "噪波模式",
+            "batch_seed_mode": "批次随机种模式",
+            "variation_seed": "随机种变异",
+            "variation_strength": "变异强度"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "KSamplerAdvancedPipe //Inspire": {
+        "title": "K采样器(高级Inspire)",
+        "inputs": {
+            "basic_pipe": "基础节点束",
+            "latent_image": "Latent"
+        },
+        "widgets": {
+            "add_noise": "添加噪波",
+            "noise_seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "start_at_step": "开始降噪步数",
+            "end_at_step": "结束降噪步数",
+            "noise_mode": "噪波模式",
+            "return_with_leftover_noise": "返回噪波",
+            "batch_seed_mode": "批次随机种模式",
+            "variation_seed": "随机种变异",
+            "variation_strength": "变异强度"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
 
 
 
@@ -600,6 +658,24 @@
         "outputs": {
             "signal": "信号",
             "random_value": "值"
+        }
+    },
+    "RemoveControlNet //Inspire": {
+        "title": "移除ControlNet",
+        "inputs": {
+            "conditioning": "条件"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "RemoveControlNetFromRegionalPrompts //Inspire": {
+        "title": "移除ControlNet区域提示词",
+        "inputs": {
+            "regional_prompts": "区域提示词"
+        },
+        "outputs": {
+            "REGIONAL_PROMPTS": "区域提示词"
         }
     },
     "FromIPAdapterPipe //Inspire": {
@@ -1112,6 +1188,23 @@
     },
 
 
+    "HyperTile //Inspire": {
+        "title": "超分块(Inspire)",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "tile_size": "分块尺寸",
+            "swap_size": "分割尺寸",
+            "max_depth": "最大深度",
+            "scale_depth": "缩放深度",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
     "ConcatConditioningsWithMultiplier //Inspire": {
         "title": "条件联结(系数)",
         "inputs": {
