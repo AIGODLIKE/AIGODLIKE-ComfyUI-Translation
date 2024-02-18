@@ -1,0 +1,15 @@
+{
+    "LatentInterposer": {
+        "title": "Latent中介层",
+        "inputs": {
+            "samples": "Latent"
+        },
+        "widgets": {
+            "latent_src": "Latent_从",
+            "latent_dst": "Latent_到"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    }
+}
