@@ -289,6 +289,12 @@
         "Metadata": "元数据",
     "OneButtonPrompt": "一键提示词",
     "crystools 🪛": "Crys节点 🪛",
+    "😺dzNodes": "😺dz节点",
+        "LayerFilter": "图层滤镜",
+        "LayerColor": "图层颜色",
+        "LayerUtility": "图层工具",
+        "LayerStyle": "图层样式",
+        "LayerMask": "图层遮罩",
 
 
     "basic_pipe": "基础节点束",
