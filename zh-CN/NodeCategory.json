@@ -295,6 +295,10 @@
         "LayerUtility": "图层工具",
         "LayerStyle": "图层样式",
         "LayerMask": "图层遮罩",
+    "EasyUse": "EasyUse节点",
+        "Seed": "随机种",
+        "PreSampling": "预采样",
+        "Fix": "修复",
 
 
     "basic_pipe": "基础节点束",

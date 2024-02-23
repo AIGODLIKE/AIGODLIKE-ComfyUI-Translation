@@ -1465,6 +1465,29 @@
             "any": "输入任何"
         }
     },
+    "easy imageSwitch": {
+        "title": "图像切换",
+        "inputs": {
+            "image_a": "图像_A",
+            "image_b": "图像_B"
+        },
+        "widgets": {
+            "boolean": "布尔"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "easy isSDXL": {
+        "title": "判断SDXL",
+        "inputs": {
+            "optional_pipe": "节点束",
+            "optional_clip": "CLIP"
+        },
+        "outputs": {
+            "boolean": "布尔"
+        }
+    },
     "easy xyAny": {
         "widgets": {
             "direction": "方向"
