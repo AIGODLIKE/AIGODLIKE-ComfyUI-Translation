@@ -1147,6 +1147,19 @@
             "IMAGE": "图像"
         }
     },
+    "ImageFromBatch": {
+        "title": "从批次获取图像",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "batch_index": "批次索引",
+            "length": "长度"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "RebatchImages": {
         "title": "重设图像批次",
         "inputs": {
@@ -1516,6 +1529,20 @@
         },
         "outputs": {
             "CONDITIONING": "条件"
+        }
+    },
+    "StableCascade_StageC_VAEEncode": {
+        "title": "StableCascade_StageC_VAE编码",
+        "inputs": {
+            "image": "图像",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "compression": "压缩等级"
+        },
+        "outputs": {
+            "stage_b": "Stage_B",
+            "stage_c": "Stage_C"
         }
     },
 
@@ -1951,6 +1978,18 @@
                 "eps": "等概率抽样",
             "sigma_max": "最大Sigma",
             "sigma_min": "最小Sigma"
+        }
+    },
+    "ModelSamplingStableCascade": {
+        "title": "模型采样算法Cascade",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "shift": "偏移"
+        },
+        "outputs": {
+            "MODEL": "模型"
         }
     },
     "RescaleCFG": {
