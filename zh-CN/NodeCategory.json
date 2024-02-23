@@ -300,7 +300,6 @@
         "PreSampling": "预采样",
         "Fix": "修复",
 
-
     "basic_pipe": "基础节点束",
     "bbox_detector": "BBox检测",
     "boolean": "布尔",

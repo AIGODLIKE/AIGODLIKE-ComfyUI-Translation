@@ -50,6 +50,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Dagthomas Nodes](https://github.com/dagthomas/comfyui_dagthomas)|√|√|√|√|TODO|
 |[Dynamic Thresholding](https://github.com/mcmonkeyprojects/sd-dynamic-thresholding)|√|√|√|TODO|TODO|
 |[Easy Tools](https://github.com/jafshare/ComfyUI-Easy-Tools)|√|TODO|√|TODO|TODO|
+|[Easy Use](https://github.com/yolain/ComfyUI-Easy-Use)|√|TODO|√|TODO|TODO|
 |[Efficiency Nodes](https://github.com/LucianoCirino/efficiency-nodes-comfyui)|√|√|√|√|TODO|
 |[EllangoK Postprocessing](https://github.com/EllangoK/ComfyUI-post-processing-nodes)|√|√|√|TODO|TODO|
 |[ExLlama nodes](https://github.com/Zuellni/ComfyUI-ExLlama-Nodes)|√|√|√|TODO|TODO|
@@ -65,6 +66,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[KJ Nodes](https://github.com/kijai/ComfyUI-KJNodes.git)|√|TODO|√|TODO|TODO|
 |[LaMa Preprocessor](https://github.com/mlinmg/ComfyUI-LaMA-Preprocessor)|√|TODO|√|TODO|TODO|
 |[Latent2RGB](https://github.com/bvhari/ComfyUI_LatentToRGB)|√|√|√|√|TODO|
+|[LayerStyle](https://github.com/chflame163/ComfyUI_LayerStyle)|√|TODO|√|TODO|TODO|
 |[LCM](https://github.com/0xbitches/ComfyUI-LCM)|√|TODO|√|TODO|TODO|
 |[Manager](https://github.com/ltdrdata/ComfyUI-Manager)|√|√|√|TODO|TODO|
 |[Masquerade Nodes](https://github.com/BadCafeCode/masquerade-nodes-comfyui)|√|√|√|TODO|TODO|
@@ -82,6 +84,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Restart-Sampling](https://github.com/ssitu/ComfyUI_restart_sampling)|√|√|√|TODO|TODO|
 |[Roop](https://github.com/Navezjt/ComfyUI_roop.git)|√|TODO|√|TODO|TODO|TODO|
 |[rgthree](https://github.com/rgthree/rgthree-comfy.git)|√|TODO|√|TODO|TODO|
+|[SD-Latent-Interposer](https://github.com/city96/SD-Latent-Interposer)|√|TODO|√|TODO|TODO|
 |[SDXL_prompt_styler](https://github.com/twri/sdxl_prompt_styler)|√|√|√|TODO|TODO|
 |[SeargeSDXL](https://github.com/SeargeDP/SeargeSDXL)|√|√|√|TODO|TODO|
 |[Segment Anything](https://github.com/storyicon/comfyui_segment_anything.git)|√|TODO|√|TODO|TODO|
