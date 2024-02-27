@@ -124,7 +124,7 @@ export class TUtils {
 		node.onInputAdded = function (slot) {
 			if (onInputAdded)
 				var res = onInputAdded.apply(this, arguments);
-			console.log(slot);
+			// console.log(slot);
 			let t = TUtils.T.Nodes[this.comfyClass];
 			if (t["widgets"] && slot.name in t["widgets"]) {
 				slot.label = t["widgets"][slot.name];
