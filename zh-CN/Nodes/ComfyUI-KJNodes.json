@@ -549,6 +549,19 @@
             "mask": "遮罩"
         }
     },
+    "RemapMaskRange": {
+        "title": "重映射遮罩范围",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "min": "最小值",
+            "max": "最大值"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
 
 
 
@@ -1062,6 +1075,15 @@
         },
         "outputs": {
             "STRING": "字符串"
+        }
+    },
+    "EffnetEncode": {
+        "title": "Effnet编码",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "LATENT": "Latent"
         }
     }
 }
