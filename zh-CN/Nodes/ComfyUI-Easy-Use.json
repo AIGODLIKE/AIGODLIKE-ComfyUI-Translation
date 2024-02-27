@@ -1489,8 +1489,17 @@
         }
     },
     "easy xyAny": {
+        "title": "任意XY输入",
+        "inputs": {
+            "X": "X",
+            "Y": "Y"
+        },
         "widgets": {
             "direction": "方向"
+        },
+        "outputs": {
+            "X": "X",
+            "Y": "Y"
         }
     },
     "easy convertAnything": {
@@ -1504,6 +1513,12 @@
     },
     "easy showAnything": {
         "title": "展示任何",
+        "inputs": {
+            "anything": "输入任何"
+        }
+    },
+    "easy cleanGpuUsed": {
+        "title": "清理GPU占用",
         "inputs": {
             "anything": "输入任何"
         }
