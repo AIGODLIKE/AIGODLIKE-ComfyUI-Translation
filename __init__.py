@@ -84,17 +84,32 @@ def compile_translation(locale):
     return json_data
 
 
+@lru_cache
+def compress_json(data, method="gzip"):
+    if method == "gzip":
+        import gzip
+        return gzip.compress(data.encode("utf-8"))
+    else:
+        return data
+
+
 @server.PromptServer.instance.routes.post("/agl/get_translation")
-async def get_translation(request):
+async def get_translation(request: web.Request):
     post = await request.post()
     locale = post.get("locale", "en_US")
+    accept_encoding = request.headers.get("Accept-Encoding", "")
+    print(accept_encoding)
     json_data = "{}"
+    headers = {}
     try:
         json_data = compile_translation(locale)
+        if "gzip" in accept_encoding:
+            json_data = compress_json(json_data, method="gzip")
+            headers["Content-Encoding"] = "gzip"
     except Exception as e:
         sys.stderr.write(f"[agl/get_translation error]: {e}\n")
         sys.stderr.flush()
-    return web.Response(status=200, body=json_data)
+    return web.Response(status=200, body=json_data, content_type="application/json", headers=headers)
 
 
 def rmtree(path: Path):
