@@ -98,7 +98,6 @@ async def get_translation(request: web.Request):
     post = await request.post()
     locale = post.get("locale", "en_US")
     accept_encoding = request.headers.get("Accept-Encoding", "")
-    print(accept_encoding)
     json_data = "{}"
     headers = {}
     try:
