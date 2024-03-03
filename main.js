@@ -18,7 +18,6 @@ export class TUtils {
 	static setLocale(locale) {
 		localStorage[TUtils.LOCALE_ID_LAST] = localStorage.getItem(TUtils.LOCALE_ID) || "en-US";
 		localStorage[TUtils.LOCALE_ID] = locale;
-		// TUtils.syncTranslation();
 		setTimeout(()=>{
 			location.reload();
 		}, 500);
@@ -28,9 +27,8 @@ export class TUtils {
 		var locale = localStorage.getItem(TUtils.LOCALE_ID) || "en-US";
 		var url = "./agl/get_translation";
 		var request = new XMLHttpRequest();
-		request.open("post", url);
+		request.open("post", url, false);
 		request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-		request.send(`locale=${locale}`);
 		request.onload = function () {
 			/* XHR对象获取到返回信息后执行 */
 			if (request.status != 200)
@@ -52,13 +50,9 @@ export class TUtils {
 			}
 			OnFinished();
 		};
+		request.send(`locale=${locale}`);
 	}
 
-	static asyncTranslation() {
-		return new Promise(function (resolve, reject) {
-			TUtils.syncTranslation(() => { resolve(1); });
-		});
-	}
 	static applyNodeTypeTranslationEx(nodeName) {
 		let nodesT = this.T.Nodes;
 		var nodeType = LiteGraph.registered_node_types[nodeName];
