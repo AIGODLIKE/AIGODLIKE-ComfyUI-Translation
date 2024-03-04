@@ -25,6 +25,13 @@ export class TUtils {
 
   static syncTranslation(OnFinished = () => {}) {
     var locale = localStorage.getItem(TUtils.LOCALE_ID) || "en-US";
+    if (localStorage.getItem(TUtils.LOCALE_ID) === null) {
+      // 有可能菜单设置了zh-CN但 loacalStorage为空, 这时不会刷新
+      let slocal = localStorage.getItem(`Comfy.Settings.${TUtils.LOCALE_ID}`);
+      if (slocal) {
+        locale = slocal.replace(/^"(.*)"$/, "$1");
+      }
+    }
     var url = "./agl/get_translation";
     var request = new XMLHttpRequest();
     request.open("post", url, false);
