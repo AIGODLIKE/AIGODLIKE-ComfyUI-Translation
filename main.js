@@ -56,7 +56,32 @@ export class TUtils {
     };
     request.send(`locale=${locale}`);
   }
-
+  static enhandeDrawNodeWidgets() {
+    let theme_name =JSON.parse(localStorage.getItem("Comfy.Settings.Comfy.ColorPalette"));
+    if (!["dark", "light", "solarized", "arc", "nord", "github"].includes(theme_name)) return;
+    let drawNodeWidgets = LGraphCanvas.prototype.drawNodeWidgets;
+    LGraphCanvas.prototype.drawNodeWidgets = function (node, posY, ctx, active_widget) {
+      if (!node.widgets || !node.widgets.length) {
+        return 0;
+      }
+      const widgets = node.widgets.filter((w) => w.type === "slider");
+      widgets.forEach((widget) => {
+        widget._ori_label = widget.label;
+        const fixed = widget.options.precision != null ? widget.options.precision : 3;
+        widget.label = (widget.label || widget.name) + ": " + Number(widget.value).toFixed(fixed).toString();
+      });
+      let result;
+      try {
+        result = drawNodeWidgets.call(this, node, posY, ctx, active_widget);
+      } finally {
+        widgets.forEach((widget) => {
+          widget.label = widget._ori_label;
+          delete widget._ori_label;
+        });
+      }
+      return result;
+    };
+  }
   static applyNodeTypeTranslationEx(nodeName) {
     let nodesT = this.T.Nodes;
     var nodeType = LiteGraph.registered_node_types[nodeName];
@@ -313,6 +338,7 @@ const ext = {
   name: "AIGODLIKE.Translation",
   async init(app) {
     // Any initial setup to run as soon as the page loads
+    TUtils.enhandeDrawNodeWidgets();
     TUtils.syncTranslation();
     return;
 
