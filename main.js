@@ -59,7 +59,7 @@ export class TUtils {
   static enhandeDrawNodeWidgets() {
     let theme = localStorage.getItem("Comfy.Settings.Comfy.ColorPalette") || "";
     theme = theme.replace(/^"(.*)"$/, "$1");
-    if (!["dark", "light", "solarized", "arc", "nord", "github"].includes(theme)) return;
+    if (!["dark", "light", "solarized", "arc", "nord", "github", ""].includes(theme)) return;
     let drawNodeWidgets = LGraphCanvas.prototype.drawNodeWidgets;
     LGraphCanvas.prototype.drawNodeWidgets = function (node, posY, ctx, active_widget) {
       if (!node.widgets || !node.widgets.length) {
