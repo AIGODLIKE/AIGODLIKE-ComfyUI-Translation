@@ -57,8 +57,9 @@ export class TUtils {
     request.send(`locale=${locale}`);
   }
   static enhandeDrawNodeWidgets() {
-    let theme_name =JSON.parse(localStorage.getItem("Comfy.Settings.Comfy.ColorPalette"));
-    if (!["dark", "light", "solarized", "arc", "nord", "github"].includes(theme_name)) return;
+    let theme = localStorage.getItem("Comfy.Settings.Comfy.ColorPalette") || "";
+    theme = theme.replace(/^"(.*)"$/, "$1");
+    if (!["dark", "light", "solarized", "arc", "nord", "github"].includes(theme)) return;
     let drawNodeWidgets = LGraphCanvas.prototype.drawNodeWidgets;
     LGraphCanvas.prototype.drawNodeWidgets = function (node, posY, ctx, active_widget) {
       if (!node.widgets || !node.widgets.length) {
