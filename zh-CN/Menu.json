@@ -2391,5 +2391,12 @@
     "eps": "等概率抽样",
     "v-prediction": "V预测",
     "lcm": "LCM",
-    "zsnr": "规格化信噪比"
+    "zsnr": "规格化信噪比",
+
+
+    "comfy3d": "comfy3d",
+    
+    "big": "大型",
+    "small": "小型",
+    "tiny": "微型"
 }
