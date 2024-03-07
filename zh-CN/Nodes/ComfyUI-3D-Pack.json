@@ -133,9 +133,11 @@
     },
     "[Comfy3D] NeuS": {
         "title": "NeuS",
+        "inputs": {
             "reference_image": "参考图像",
             "reference_mask": "参考遮罩",
-            "reference_normals": "参考法向图像",
+            "reference_normals": "参考法向图像"
+        },
         "widgets": {
             "training_iterations": "训练迭代次数",
             "batch_size": "批次大小",
