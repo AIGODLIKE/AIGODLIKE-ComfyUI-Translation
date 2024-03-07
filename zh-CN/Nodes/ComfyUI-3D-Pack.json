@@ -1,0 +1,408 @@
+{
+    "[Comfy3D] Bake Texture To Mesh": {
+        "title": "烘焙纹理到网格",
+        "inputs": {
+            "reference_images": "参考图像",
+            "reference_masks": "参考遮罩",
+            "reference_orbit_camera_poses": "参考轨道相机姿势",
+            "mesh": "网格"
+        },
+        "widgets": {
+            "reference_orbit_camera_fovy": "参考轨道相机镜头",
+            "mesh_albedo_width": "网格反照率宽度",
+            "mesh_albedo_height": "网格反照率高度",
+            "training_iterations": "训练迭代次数",
+            "batch_size": "批次大小",
+            "texture_learning_rate": "纹理学习率",
+            "train_mesh_geometry": "训练几何网格",
+            "geometry_learning_rate": "几何学习率",
+            "ms_ssim_loss_weight": "MS-SSIM损失权重",
+            "force_cuda_rasterize": "强制光栅化CUDA"
+        },
+        "outputs": {
+            "trained_mesh": "网格",
+            "baked_texture": "纹理"
+        }
+    },
+    "[Comfy3D] Convert 3DGS to Mesh with NeRF and Marching Cubes": {
+        "title": "用NeRF和Marching Cubes将3DGS转换为网格",
+        "inputs": {
+            "gs_ply": "gs_ply"
+        },
+        "widgets": {
+            "gs_config": "高斯设置",
+            "force_cuda_rast": "强制光栅化CUDA"
+        },
+        "outputs": {
+            "mesh": "网格"
+        }
+    },
+    "[Comfy3D] Deep Marching Tetrahedrons": {
+        "title": "深度行进四面体",
+        "inputs": {
+            "reference_points_cloud": "参考点云",
+            "reference_images": "参考图像",
+            "reference_masks": "参考遮罩"
+        },
+        "widgets": {
+            "training_iterations": "训练迭代次数",
+            "points_cloud_fitting_weight": "点云过滤权重",
+            "mesh_smoothing_weight": "网格平滑权重",
+            "chamfer_faces_sample_scale": "倒角面采样缩放",
+            "mesh_scale": "网格缩放",
+            "grid_resolution": "栅格分辨率",
+            "geometry_learning_rate": "几何学习率",
+            "positional_encoding_multires": "多位置编码",
+            "mlp_internal_dims": "mlp_internal_dims",
+            "mlp_hidden_layer_num": "mlp_hidden_layer_num"
+        },
+        "outputs": {
+            "trained_mesh": "网格"
+        }
+    },
+    "[Comfy3D] Gaussian Splatting": {
+        "title": "高斯泼溅",
+        "inputs": {
+            "reference_images": "参考图像",
+            "reference_masks": "参考遮罩",
+            "reference_orbit_camera_poses": "参考轨道相机姿势",
+            "points_cloud_to_initialize_gaussian": "初始化高斯点云",
+            "ply_to_initialize_gaussian": "初始化gs_ply",
+            "mesh_to_initialize_gaussian": "初始化高斯网格"
+        },
+        "widgets": {
+            "reference_orbit_camera_fovy": "参考轨道相机镜头",
+            "training_iterations": "训练迭代次数",
+            "batch_size": "批次大小",
+            "ms_ssim_loss_weight": "MS-SSIM损失权重",
+            "alpha_loss_weight": "alpha损失权重",
+            "offset_loss_weight": "偏移损失权重",
+            "offset_opacity_loss_weight": "偏移不透明度损失权重",
+            "invert_background_probability": "反转背景概率",
+            "feature_learning_rate": "特征学习率",
+            "opacity_learning_rate": "不透明度学习率",
+            "scaling_learning_rate": "缩放学习率",
+            "rotation_learning_rate": "旋转学习率",
+            "position_learning_rate_init": "位置学习率初始",
+            "position_learning_rate_final": "位置学习率最终",
+            "position_learning_rate_delay_mult": "位置学习率延迟",
+            "position_learning_rate_max_steps": "位置学习率最大步数",
+            "initial_gaussians_num": "初始高斯数量",
+            "K_nearest_neighbors": "K邻近数量",
+            "percent_dense": "密度百分比",
+            "density_start_iterations": "密度初始迭代次数",
+            "density_end_iterations": "密度最终迭代次数",
+            "densification_interval": "稠化时间间隔",
+            "opacity_reset_interval": "不透明度重置间隔",
+            "densify_grad_threshold": "密度梯度阈值",
+            "gaussian_sh_degree": "gaussian_sh_degree"
+        },
+        "outputs": {
+            "gs_ply": "gs_ply"
+        }
+    },
+    "[Comfy3D] Large Multiview Gaussian Model": {
+        "title": "大型多视角高斯(LGM)模型",
+        "inputs": {
+            "multiview_images": "多视图",
+            "lgm_model": "LGM模型"
+        },
+        "outputs": {
+            "gs_ply": "gs_ply"
+        }
+    },
+    "[Comfy3D] MVDream Model": {
+        "title": "MVDream模型",
+        "inputs": {
+            "mvdream_pipe": "MVDream节点束",
+            "reference_image": "参考图像",
+            "reference_mask": "参考遮罩"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "prompt_neg": "负面提示词",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "mv_guidance_scale": "MV引导系数",
+            "num_inference_steps": "推理步数",
+            "elevation": "俯仰角"
+        },
+        "outputs": {
+            "multiview_images": "多视图"
+        }
+    },
+    "[Comfy3D] NeuS": {
+        "title": "NeuS",
+            "reference_image": "参考图像",
+            "reference_mask": "参考遮罩",
+            "reference_normals": "参考法向图像",
+        "widgets": {
+            "training_iterations": "训练迭代次数",
+            "batch_size": "批次大小",
+            "learning_rate": "学习率",
+            "learning_rate_alpha": "学习率alpha",
+            "color_loss_weight": "颜色损失权重",
+            "mesh_smoothing_weight": "网格平滑权重",
+            "mask_loss_weight": "遮罩损失权重",
+            "normal_loss_weight": "法向损失权重",
+            "sparse_loss_weight": "稀疏损失权重",
+            "warm_up_end": "预热结束",
+            "anneal_end": "退火结束",
+            "use_white_background": "使用白背景",
+            "geometry_extract_resolution": "几何精确分辨率",
+            "marching_cude_threshold": "行进曲线阈值"
+        },
+        "outputs": {
+            "mesh": "网格"
+        }
+    },
+    "[Comfy3D] Triplane Gaussian Transformers": {
+        "title": "Triplane Gaussian Transformers (TGS)",
+        "inputs": {
+            "reference_image": "参考图像",
+            "reference_mask": "参考遮罩",
+            "tgs_model": "TGS模型"
+        },
+        "widgets": {
+            "cam_dist": "相机距离"
+        },
+        "outputs": {
+            "gs_ply": "gs_ply"
+        }
+    },
+    "[Comfy3D] TripoSR": {
+        "title": "TripoSR (TSR)",
+        "inputs": {
+            "tsr_model": "TSR模型",
+            "reference_image": "参考图像",
+            "reference_mask": "参考遮罩"
+        },
+        "widgets": {
+            "geometry_extract_resolution": "几何精确分辨率",
+            "marching_cude_threshold": "行进曲线阈值"
+        }
+    },
+    "[Comfy3D] Wonder3D MVDiffusion Model": {
+        "title": "Wonder3D MVDiffusion 模型",
+        "inputs": {
+            "mvdiffusion_pipe": "MVDiffusion节点束",
+            "reference_image": "参考图像",
+            "reference_mask": "参考遮罩"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "mv_guidance_scale": "MV引导系数",
+            "num_inference_steps": "推理步数"
+        },
+        "outputs": {
+            "multiview_images": "多视图",
+            "multiview_normals": "法向多视图"
+        }
+    },
+
+
+    "[Comfy3D] Convert 3DGS To Pointcloud": {
+        "title": "3DGS到点云",
+        "inputs": {
+            "gs_ply": "gs_ply"
+        },
+        "outputs": {
+            "points_cloud": "点云"
+        }
+    },
+    "[Comfy3D] Convert Mesh To Pointcloud": {
+        "title": "网格到点云",
+        "inputs": {
+            "mesh": "网格"
+        },
+        "outputs": {
+            "points_cloud": "点云"
+        }
+    },
+    "[Comfy3D] Gaussian Splatting Orbit Renderer": {
+        "title": "高斯泼溅轨道渲染器",
+        "inputs": {
+            "gs_ply": "gs_ply",
+            "render_orbit_camera_poses": "轨道相机姿势"
+        },
+        "widgets": {
+            "render_image_width": "宽度",
+            "render_iamge_height": "高度",
+            "render_orbit_camera_fovy": "轨道相机镜头",
+            "render_background_r": "背景R",
+            "render_background_g": "背景G",
+            "render_background_b": "背景B"
+        },
+        "outputs": {
+            "rendered_gs_images": "图像",
+            "rendered_gs_masks": "遮罩"
+        }
+    },
+    "[Comfy3D] Generate Orbit Camera Poses": {
+        "title": "生成轨道相机姿势",
+        "inputs": {
+            "reference_images": "参考图像"
+        },
+        "widgets": {
+            "generate_pose_commnad": "生成指令"
+        },
+        "outputs": {
+            "orbit_camposes": "轨道相机姿势"
+        }
+    },
+    "[Comfy3D] Stack Orbit Camera Poses": {
+        "title": "堆叠轨道相机姿势",
+        "widgets": {
+            "orbit_radius_start": "轨道半径起始",
+            "orbit_radius_stop": "轨道半径结束",
+            "orbit_radius_step": "轨道半径步长",
+            "elevation_start": "俯仰角起始",
+            "elevation_stop": "俯仰角结束",
+            "elevation_step": "俯仰角步长",
+            "azimuth_start": "方位角起始",
+            "azimuth_stop": "方位角结束",
+            "azimuth_step": "方位角步长",
+            "orbit_center_X_start": "轨道中心X起始",
+            "orbit_center_X_stop": "轨道中心X结束",
+            "orbit_center_X_step": "轨道中心X步长",
+            "orbit_center_Y_start": "轨道中心Y起始",
+            "orbit_center_Y_stop": "轨道中心Y结束",
+            "orbit_center_Y_step": "轨道中心Y步长",
+            "orbit_center_Z_start": "轨道中心Z起始",
+            "orbit_center_Z_stop": "轨道中心Z结束",
+            "orbit_center_Z_step": "轨道中心Z步长"
+        },
+        "outputs": {
+            "orbit_camposes": "轨道相机姿势",
+            "orbit_radius_list": "轨道半径列表",
+            "elevation_list": "俯仰角列表",
+            "azimuth_list": "方位角列表",
+            "orbit_center_X_list": "轨道中心X列表",
+            "orbit_center_Y_list": "轨道中心Y列表",
+            "orbit_center_Z_list": "轨道中心Z列表"
+        }
+    },
+    "[Comfy3D] Switch 3DGS Axis": {
+        "title" :"切换3DGS轴向",
+        "inputs": {
+            "gs_ply": "gs_ply"
+        },
+        "widgets": {
+            "axis_x_to": "轴向X到",
+            "axis_y_to": "轴向Y到",
+            "axis_z_to": "轴向Z到"
+        }
+    },
+    "[Comfy3D] Switch Mesh Axis": {
+        "title": "切换网格轴向",
+        "inputs": {
+            "mesh": "网格"
+        },
+        "widgets": {
+            "axis_x_to": "轴向X到",
+            "axis_y_to": "轴向Y到",
+            "axis_z_to": "轴向Z到"
+        }
+    },
+
+
+    "[Comfy3D] Load 3DGS": {
+        "title": "加载3DGS",
+        "widgets": {
+            "gs_file_path": "gs文件路径"
+        },
+        "outputs": {
+            "gs_ply": "gs_ply"
+        }
+    },
+    "[Comfy3D] Load 3D Mesh": {
+        "title": "加载3D网格",
+        "widgets": {
+            "mesh_file_path": "网格文件路径",
+            "resize": "重缩放",
+            "renormal": "重映射法向",
+            "retex": "重调纹理",
+            "optimizable": "可优化"
+        },
+        "outputs": {
+            "mesh": "网格"
+        }
+    },
+    "[Comfy3D] Load Diffusers Pipeline": {
+        "title": "加载Diffusers管线",
+        "widgets": {
+            "diffusers_pipeline_name": "管线名称"
+        },
+        "outputs": {
+            "pipe": "节点束"
+        }
+    },
+    "[Comfy3D] Load Large Multiview Gaussian Model": {
+        "title": "加载大型多视图高斯(LGM)模型",
+        "widgets": {
+            "model_name": "模型名称",
+            "lgb_config": "lgb设置"
+        },
+        "outputs": {
+            "lgm_model": "LGM模型"
+        }
+    },
+    "[Comfy3D] Load Triplane Gaussian Transformers": {
+        "title": "加载Triplane Gaussian Transformers(TGS)模型",
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "tgs_model": "TGS模型"
+        }
+    },
+    "[Comfy3D] Load TripoSR Model": {
+        "title": "加载TripoSR(TSR)模型",
+        "widgets": {
+            "model_name": "模型名称",
+            "chunk_size": "块大小"
+        },
+        "outputs": {
+            "tsr_model": "TSR模型"
+        }
+    },
+    "[Comfy3D] Save 3DGS": {
+        "title": "保存3DGS",
+        "inputs": {
+            "gs_ply": "gs_ply"
+        },
+        "widgets": {
+            "save_path": "保存路径"
+        },
+        "outputs": {
+            "save_path": "保存路径"
+        }
+    },
+    "[Comfy3D] Save 3D Mesh": {
+        "title": "保存3D网格",
+        "inputs": {
+            "mesh": "网格"
+        },
+        "widgets": {
+            "save_path": "保存路径"
+        },
+        "outputs": {
+            "save_path": "保存路径"
+        }
+    },
+
+
+    "[Comfy3D] Preview 3DGS": {
+        "title": "预览3DGS",
+        "widgets": {
+            "gs_file_path": "gs文件路径"
+        }
+    },
+    "[Comfy3D] Preview 3DMesh": {
+        "title": "预览3D网格",
+        "widgets": {
+            "mesh_file_path": "网格文件路径"
+        }
+    }
+}

@@ -149,6 +149,25 @@
             "IMAGE": "图像"
         }
     },
+    "PixelSort": {
+        "title": "像素重排序",
+        "inputs": {
+            "images": "图像",
+            "mask": "遮罩图像"
+        },
+        "widgets": {
+            "direction": "方向",
+            "span_limit": "限制",
+            "sort_by": "排序方式",
+                "hue": "色相",
+                "saturation": "饱和度",
+                "value": "明度",
+            "order": "顺序"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "Pixelize": {
         "title": "像素化",
         "inputs": {

@@ -138,10 +138,28 @@
         "inputs": {
             "segs": "Seg",
             "control_net": "ControlNet",
-            "segs_preprocessor": "Seg预处理"
+            "segs_preprocessor": "Seg预处理",
+            "control_image": "图像"
         },
         "widgets": {
             "strength": "强度"
+        },
+        "outputs": {
+            "SEGS": "Seg"
+        }
+    },
+    "ImpactControlNetApplyAdvancedSEGS": {
+        "title": "ControlNet应用(高级)Seg",
+        "inputs": {
+            "segs": "Seg",
+            "control_net": "ControlNet",
+            "segs_preprocessor": "Seg预处理",
+            "control_image": "图像"
+        },
+        "widgets": {
+            "strength": "强度",
+            "start_percent": "开始时间",
+            "end_percent": "结束时间"
         },
         "outputs": {
             "SEGS": "Seg"
@@ -1033,6 +1051,35 @@
             "cnet_images": "ControlNet图像"
         }
     },
+    "DetailerForEachPipeForAnimateDiff": {
+        "title": "AnimatedDiff局部细化(节点树)",
+        "inputs": {
+            "image_frames": "图像",
+            "segs": "Seg",
+            "basic_pipe": "基础节点束",
+            "detailer_hook": "细化约束",
+            "refiner_basic_pipe_opt": "优化基础节点束"
+        },
+        "widgets": {
+            "guide_size": "引导大小",
+            "guide_size_for": "引导目标",
+            "max_size": "最大尺寸",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "feather": "羽化",
+            "refiner_ratio": "优化比率"
+        },
+        "outputs": {
+            "image": "图像",
+            "segs": "Seg",
+            "basic_pipe": "基础节点束"
+        }
+    },
     "NoiseInjectionDetailerHookProvider": {
         "title": "插入噪波细化约束器",
         "widgets": {
@@ -1190,6 +1237,15 @@
         "inputs": {
             "segs": "Seg",
             "fallback_image_opt": "备用图像"
+        }
+    },
+    "SEGSPreviewCNet": {
+        "title": "Seg预览(CNet)",
+        "inputs": {
+            "segs": "Seg"
+        },
+        "outputs": {
+            "IMAGE": "图像"
         }
     },
 

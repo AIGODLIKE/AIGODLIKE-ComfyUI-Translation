@@ -95,6 +95,23 @@
             "IMAGE": "图像"
         }
     },
+    "DiffusionEdge_Preprocessor": {
+        "title": "DiffusionEdge扩散边缘预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "environment": "环境",
+                "indoor": "室内",
+                "urban": "城市",
+                "natural": "自然",
+            "patch_batch_size": "patch_batch_size",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "HEDPreprocessor": {
         "title": "HED模糊线预处理器",
         "inputs": {
@@ -233,6 +250,20 @@
             "IMAGE": "图像"
         }
     },
+    "TEEDPreprocessor": {
+        "title": "TEED线条预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "safe_steps": "增稳步数",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+
 
     "ColorPreprocessor": {
         "title": "Color颜色预处理器",
@@ -415,6 +446,20 @@
         },
         "widgets": {
             "ckpt_name": "模型名称",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "DSINE-NormalMapPreprocessor": {
+        "title": "DSINE法向预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "fov": "FOV",
+            "iterations": "迭代次数",
             "resolution": "分辨率"
         },
         "outputs": {

@@ -56,14 +56,14 @@
         "title": "风格提示词选择器",
         "inputs": {
             "positive": "正面提示词（可选）",
-            "negative": "反面提示词（可选）"
+            "negative": "负面提示词（可选）"
         },
         "widgets": {
             "styles": "风格类型"
         },
         "outputs": {
             "positive": "正面提示词",
-            "negative": "反面提示词"
+            "negative": "负面提示词"
         }
     },
     "easy portraitMaster": {
@@ -476,6 +476,26 @@
             "latent_b": "Latent_B"
         }
     },
+    "easy preSamplingLayerDiffusion": {
+        "title": "预采样参数（LayerDiffusion）",
+        "inputs": {
+            "pipe": "节点束"
+        },
+        "widgets": {
+            "method": "方法",
+            "weight": "权重",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "seed_num": "随机种",
+            "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "pipe": "节点束"
+        }
+    },
     "easy preSamplingDynamicCFG": {
         "title": "预采样参数（动态CFG）",
         "widgets": {
@@ -559,6 +579,22 @@
         "outputs": {
             "pipe": "节点束",
             "image": "图像"
+        }
+    },
+    "easy kSamplerLayerDiffusion": {
+        "title": "简易k采样器（LayerDiffusion）",
+        "inputs": {
+            "pipe": "节点束",
+            "model": "模型（可选）"
+        },
+        "widgets":{
+            "image_output": "图像输出"
+        },
+        "outputs": {
+            "pipe": "节点束",
+            "alpha_image": "透明图像",
+            "original_image": "原图像",
+            "alpha": "Alpha"
         }
     },
     "easy kSamplerInpainting": {
@@ -1244,6 +1280,76 @@
             "mask": "遮罩"
         }
     },
+
+
+    "easy fooocusInpaintLoader": {
+        "title": "foocus内补加载器",
+        "widgets": {
+            "head": "head",
+            "patch": "patch"
+        },
+        "outputs": {
+            "patch": "patch"
+        }
+    },
+    "easy instantIDApply": {
+        "title": "应用InstantID",
+        "inputs": {
+            "pipe": "节点束",
+            "image": "图像",
+            "image_kps": "图像_kps",
+            "mask": "遮罩",
+            "control_net": "ControlNet"
+        },
+        "widgets": {
+            "instantid_file": "InstantID",
+            "insightface": "InsightFace",
+            "control_net_name": "ControlNet",
+            "cn_strength": "ControlnNet权重",
+            "cn_soft_weights": "ControlNet柔和权重",
+            "weight": "权重",
+            "start_at": "开始位置",
+            "end_at": "结束位置",
+            "noise": "噪波"
+        },
+        "outputs": {
+            "pipe": "节点束",
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件"
+        }
+    },
+    "easy instantIDApplyADV": {
+        "title": "应用InstantID(高级)",
+        "inputs": {
+            "pipe": "节点束",
+            "image": "图像",
+            "image_kps": "图像_kps",
+            "mask": "遮罩",
+            "control_net": "ControlNet",
+            "positive": "正面条件",
+            "negative": "负面条件"
+        },
+        "widgets": {
+            "instantid_file": "InstantID",
+            "insightface": "InsightFace",
+            "control_net_name": "ControlNet",
+            "cn_strength": "ControlnNet权重",
+            "cn_soft_weights": "ControlNet柔和权重",
+            "weight": "权重",
+            "start_at": "开始位置",
+            "end_at": "结束位置",
+            "noise": "噪波"
+        },
+        "outputs": {
+            "pipe": "节点束",
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件"
+        }
+    },
+
+
     "easy imageInsetCrop": {
         "title": "图像裁切",
         "inputs": {
@@ -1489,8 +1595,17 @@
         }
     },
     "easy xyAny": {
+        "title": "任意XY输入",
+        "inputs": {
+            "X": "X",
+            "Y": "Y"
+        },
         "widgets": {
             "direction": "方向"
+        },
+        "outputs": {
+            "X": "X",
+            "Y": "Y"
         }
     },
     "easy convertAnything": {
@@ -1504,6 +1619,12 @@
     },
     "easy showAnything": {
         "title": "展示任何",
+        "inputs": {
+            "anything": "输入任何"
+        }
+    },
+    "easy cleanGpuUsed": {
+        "title": "清理GPU占用",
         "inputs": {
             "anything": "输入任何"
         }

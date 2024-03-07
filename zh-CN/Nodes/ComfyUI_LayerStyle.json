@@ -26,11 +26,51 @@
             "image": "图像"
         }
     },
+    "LayerFilter: Film": {
+        "title": "胶片颗粒",
+        "inputs": {
+            "image": "图像",
+            "depth_map": "深度图"
+        },
+        "widgets": {
+            "center_x": "中心X",
+            "center_y": "中心Y",
+            "saturation": "饱和度",
+            "vignette_intensity": "暗角强度",
+            "grain_power": "颗粒强度",
+            "grain_scale": "颗粒缩放",
+            "grain_sat": "颗粒饱和度",
+            "grain_shadows": "颗粒引用",
+            "grain_highs": "亮部颗粒强度",
+            "blur_strength": "模糊强度",
+            "blur_focus_spread": "焦点扩散",
+            "focal_depth": "模拟虚焦"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
     "LayerFilter: GaussianBlur": {
         "title": "高斯模糊",
         "inputs": {
             "image": "图像",
             "blur": "模糊"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerFilter: LightLeak": {
+        "title": "漏光",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "light": "光斑",
+            "corner": "位置",
+            "hue": "色相",
+            "saturation": "饱和度",
+            "opacity": "不透明"
         },
         "outputs": {
             "image": "图像"
@@ -44,6 +84,18 @@
         "widgets": {
             "angle": "角度",
             "blur": "模糊"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerFilter: Sharp & Soft": {
+        "title": "锐化/柔化",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "enhance": "增强"
         },
         "outputs": {
             "image": "图像"
@@ -112,13 +164,13 @@
             "color_ref_image": "参考图像"
         },
         "widgets": {
-            "opacity": ""
+            "opacity": "不透明"
         },
         "outputs": {
             "image": "图像"
         }
     },
-    "LayerColor: ColorCorrectBrightnessAndContrast": {
+    "LayerColor: Brightness & Contrast": {
         "title": "亮度/对比度",
         "inputs": {
             "image": "图像"
@@ -132,7 +184,7 @@
             "image": "图像"
         }
     },
-    "LayerColor: ColorCorrectExposure": {
+    "LayerColor: Exposure": {
         "title": "曝光",
         "inputs": {
             "image": "图像"
@@ -144,7 +196,7 @@
             "image": "图像"
         }
     },
-    "LayerColor: ColorCorrectGamma": {
+    "LayerColor: Gamma": {
         "title": "Gamma",
         "inputs": {
             "image": "图像"
@@ -156,7 +208,7 @@
             "image": "图像"
         }
     },
-    "LayerColor: ColorCorrectHSV": {
+    "LayerColor: HSV": {
         "title": "HSV",
         "inputs": {
             "image": "图像"
@@ -170,7 +222,7 @@
             "image": "图像"
         }
     },
-    "LayerColor: ColorCorrectLAB": {
+    "LayerColor: LAB": {
         "title": "LAB",
         "inputs": {
             "image": "图像"
@@ -184,7 +236,7 @@
             "image": "图像"
         }
     },
-    "LayerColor: ColorCorrectLUTapply": {
+    "LayerColor: LUTapply": {
       "title": "LUT应用",
         "inputs": {
             "image": "图像"
@@ -197,7 +249,7 @@
             "image": "图像"
         }
     },
-    "LayerColor: ColorCorrectRGB": {
+    "LayerColor: RGB": {
         "title": "RGB",
         "inputs": {
             "image": "图像"
@@ -211,7 +263,7 @@
             "image": "图像"
         }
     },
-    "LayerColor: ColorCorrectYUV": {
+    "LayerColor: YUV": {
         "title": "RGB",
         "inputs": {
             "image": "图像"
@@ -323,6 +375,32 @@
         },
         "outputs": {
             "image": "图像"
+        }
+    },
+    "LayerUtility: ImageAutoCrop": {
+        "title": "图像自动裁剪",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "background_color": "背景颜色",
+            "aspect_ratio": "宽高比",
+            "proportional_height": "比例高",
+            "proportional_width": "比例宽",
+            "scale_to_longest_side": "按长边缩放",
+            "longest_side": "长边长度",
+            "detect": "检测方法",
+            "border_reserve": "保留边框",
+            "ultra_detail_range": "细化边缘",
+            "matting_method": "遮罩生成方法",
+            "sam_model": "SAM模型",
+            "sam_threshold": "SAM阈值",
+            "sam_prompt": "SAM提示词"
+        },
+        "outputs": {
+            "croped_image": "裁剪图像",
+            "croped_mask": "裁剪遮罩",
+            "box_preview": "裁剪框预览"
         }
     },
     "LayerUtility: ImageBlend": {
@@ -575,7 +653,7 @@
             "mask": "遮罩"
         }
     },
-    "LayerUtility: XYtoPercent": {
+    "LayerUtility: XY to Percent": {
         "title": "XY坐标到百分比坐标",
         "widgets": {
             "background_image": "背景图像",
@@ -665,6 +743,27 @@
             "blur": "模糊",
             "light_color": "发光色",
             "glow_color": "辉光色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerStyle: InnerShadow": {
+        "title": "内阴影",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "distance_x": "X距离",
+            "distance_y": "Y距离",
+            "grow": "扩张",
+            "blur": "模糊",
+            "shadow_color": "阴影色"
         },
         "outputs": {
             "image": "图像"
@@ -835,6 +934,20 @@
     },
     "LayerMask: MaskInvert": {
         "title": "遮罩反转",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blur": "模糊",
+            "angle": "角度"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: MaskMotionBlur": {
+        "title": "遮罩动态模糊",
         "inputs": {
             "mask": "遮罩"
         },

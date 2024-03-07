@@ -299,6 +299,12 @@
         "Seed": "随机种",
         "PreSampling": "预采样",
         "Fix": "修复",
+    "Comfy3D": "Comfy3D",
+        "Algorithm": "算法",
+        "Preprocessor": "预处理",
+        "Import|Export": "导入|导出",
+        "Visualize": "可视化",
+    "layerd_diffusion": "LayerDiffusion",
 
     "basic_pipe": "基础节点束",
     "bbox_detector": "BBox检测",
