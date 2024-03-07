@@ -1,5 +1,5 @@
 {
-    "Bake Texture To Mesh": {
+    "[Comfy3D] Bake Texture To Mesh": {
         "title": "烘焙纹理到网格",
         "inputs": {
             "reference_images": "参考图像",
@@ -24,7 +24,7 @@
             "baked_texture": "纹理"
         }
     },
-    "Convert 3DGS to Mesh with NeRF and Marching Cubes": {
+    "[Comfy3D] Convert 3DGS to Mesh with NeRF and Marching Cubes": {
         "title": "用NeRF和Marching Cubes将3DGS转换为网格",
         "inputs": {
             "gs_ply": "gs_ply"
@@ -37,7 +37,7 @@
             "mesh": "网格"
         }
     },
-    "Deep Marching Tetrahedrons": {
+    "[Comfy3D] Deep Marching Tetrahedrons": {
         "title": "深度行进四面体",
         "inputs": {
             "reference_points_cloud": "参考点云",
@@ -60,7 +60,7 @@
             "trained_mesh": "网格"
         }
     },
-    "Gaussian Splatting": {
+    "[Comfy3D] Gaussian Splatting": {
         "title": "高斯泼溅",
         "inputs": {
             "reference_images": "参考图像",
@@ -102,7 +102,7 @@
         }
     },
     "[Comfy3D] Large Multiview Gaussian Model": {
-        "title": "大型多视角高斯模型",
+        "title": "大型多视角高斯(LGM)模型",
         "inputs": {
             "multiview_images": "多视图",
             "lgm_model": "LGM模型"
@@ -157,7 +157,7 @@
         }
     },
     "[Comfy3D] Triplane Gaussian Transformers": {
-        "title": "Triplane 高斯 Transformers",
+        "title": "Triplane Gaussian Transformers (TGS)",
         "inputs": {
             "reference_image": "参考图像",
             "reference_mask": "参考遮罩",
@@ -171,7 +171,7 @@
         }
     },
     "[Comfy3D] TripoSR": {
-        "title": "TripoSR",
+        "title": "TripoSR (TSR)",
         "inputs": {
             "tsr_model": "TSR模型",
             "reference_image": "参考图像",
@@ -349,7 +349,7 @@
         }
     },
     "[Comfy3D] Load Triplane Gaussian Transformers": {
-        "title": "加载Triplane 高斯 Transformers(TGS)模型",
+        "title": "加载Triplane Gaussian Transformers(TGS)模型",
         "widgets": {
             "model_name": "模型名称"
         },
