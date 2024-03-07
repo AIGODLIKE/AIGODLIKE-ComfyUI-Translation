@@ -1,0 +1,77 @@
+{
+    "LayeredDiffusionApply": {
+        "title": "应用LayerDiffusion",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "method": "方法",
+            "weight": "权重"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "LayeredDiffusionCondApply": {
+        "title": "应用LayerDiffusion条件",
+        "inputs": {
+            "model": "模型",
+            "cond": "正面条件",
+            "uncond": "负面条件",
+            "latent": "Latent"
+        },
+        "widgets": {
+            "layer_type": "图层类型",
+            "weight": "权重"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CONDITIONING": "条件"
+        }
+    },
+    "LayeredDiffusionDiffApply": {
+        "title": "应用LayerDiffusion(Diff)",
+        "inputs": {
+            "model": "模型",
+            "cond": "正面条件",
+            "uncond": "负面条件",
+            "blended_latent": "混合Latent",
+            "latent": "Latent"
+        },
+        "widgets": {
+            "layer_type": "图层类型",
+            "weight": "权重"
+        },
+        "outputs": {
+            "model": "模型",
+            "CONDITIONING": "条件"
+        }
+    },
+    "LayeredDiffusionDecode": {
+        "title": "LayerDiffusion解码",
+        "inputs": {
+            "samples": "Latent",
+            "images": "图像"
+        },
+        "widgets": {
+            "sub_batch_size": "批次大小"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    },
+    "LayeredDiffusionDecodeRGBA": {
+        "title": "LayerDiffusion解码(RGBA)",
+        "inputs": {
+            "samples": "Latent",
+            "images": "图像"
+        },
+        "widgets": {
+            "sub_batch_size": "批次大小"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    }
+}
