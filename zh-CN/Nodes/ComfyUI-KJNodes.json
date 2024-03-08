@@ -1085,5 +1085,34 @@
         "outputs": {
             "LATENT": "Latent"
         }
+    },
+    "ImageNormalize_Neg1_To_1": {
+        "title": "图像规格化-1到1",
+        "inputs": {
+            "images": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Intrinsic_lora_sampling": {
+        "title": "IntrinsicLoRA采样",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE",
+            "image": "图像",
+            "optional_latent": "Latent(可选)"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称",
+            "task": "任务",
+            "text": "文本",
+            "per_batch": "每批次"
+        },
+        "outputs": {
+            "LATENT": "Latent",
+            "IMAGE": "图像"
+        }
     }
 }

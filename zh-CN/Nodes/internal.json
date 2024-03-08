@@ -1103,6 +1103,19 @@
             "IMAGE": "图像"
         }
     },
+    "ImageMorphology": {
+        "title": "图像形态学",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "operation": "操作",
+            "kernel_size": "Kernel_Size"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
 
 
     "Canny": {
@@ -1466,6 +1479,18 @@
         "widgets": {
             "expand": "扩展",
             "tapered_corners": "倒角"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "ThresholdMask": {
+        "title": "遮罩阈值",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "value": "明度"
         },
         "outputs": {
             "MASK": "遮罩"

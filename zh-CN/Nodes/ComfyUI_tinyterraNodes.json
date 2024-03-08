@@ -4,7 +4,7 @@
         "inputs": {
             "model_override": "覆盖模型",
             "clip_override": "覆盖CLIP",
-            "optional_lora_stack": "LoRA堆"
+            "optional_lora_stack": "LoRA堆(可选)"
         },
         "widgets": {
             "ckpt_name": "模型名称",
@@ -51,12 +51,12 @@
         "title": "TTN采样器",
         "inputs": {
             "pipe": "节点束",
-            "optional_model": "模型",
-            "optional_positive": "正面条件",
-            "optional_negative": "负面条件",
-            "optional_latent": "Latent",
-            "optional_vae": "VAE",
-            "optional_clip": "CLIP",
+            "optional_model": "模型(可选)",
+            "optional_positive": "正面条件(可选)",
+            "optional_negative": "负面条件(可选)",
+            "optional_latent": "Latent(可选)",
+            "optional_vae": "VAE(可选)",
+            "optional_clip": "CLIP(可选)",
             "xyPlot": "XY图表"
         },
         "widgets": {
@@ -97,12 +97,12 @@
         "title": "TTN采样器(高级)",
         "inputs": {
             "pipe": "节点束",
-            "optional_model": "模型",
-            "optional_positive": "正面条件",
-            "optional_negative": "负面条件",
-            "optional_latent": "Latent",
-            "optional_vae": "VAE",
-            "optional_clip": "CLIP",
+            "optional_model": "模型(可选)",
+            "optional_positive": "正面条件(可选)",
+            "optional_negative": "负面条件(可选)",
+            "optional_latent": "Latent(可选)",
+            "optional_vae": "VAE(可选)",
+            "optional_clip": "CLIP(可选)",
             "xyPlot": "XY图表"
         },
         "widgets": {
@@ -198,16 +198,16 @@
         "title": "TTN采样器(SDXL)",
         "inputs": {
             "sdxl_pipe": "SDXL节点束",
-            "optional_model": "模型",
-            "optional_positive": "正面条件",
-            "optional_negative": "负面条件",
-            "optional_vae": "VAE",
-            "optional_refiner_model": "模型(Refiner)",
-            "optional_refiner_positive": "正面条件(Refiner)",
-            "optional_refiner_negative": "负面条件(Refiner)",
-            "optional_refiner_vae": "优化VAE",
-            "optional_latent": "Latent",
-            "optional_clip": "CLIP"
+            "optional_model": "模型(可选)",
+            "optional_positive": "正面条件(可选)",
+            "optional_negative": "负面条件(可选)",
+            "optional_vae": "VAE(可选)",
+            "optional_refiner_model": "模型(Refiner)(可选)",
+            "optional_refiner_positive": "正面条件(Refiner)(可选)",
+            "optional_refiner_negative": "负面条件(Refiner)(可选)",
+            "optional_refiner_vae": "优化VAE(可选)",
+            "optional_latent": "Latent(可选)",
+            "optional_clip": "CLIP(可选)"
         },
         "widgets": {
             "upscale_method": "放大方法",
@@ -329,9 +329,9 @@
         "title": "TTN编码联结",
         "inputs": {
             "pipe": "节点束",
-            "optional_positive_from": "正面条件",
-            "optional_negative_from": "负面条件",
-            "optional_clip": "CLIP"
+            "optional_positive_from": "正面条件(可选)",
+            "optional_negative_from": "负面条件(可选)",
+            "optional_clip": "CLIP(可选)"
         },
         "widgets": {
             "toggle": "开关",
@@ -352,10 +352,10 @@
     "ttN pipeLoraStack": {
         "title": "TTNLoRA堆",
         "inputs": {
-            "optional_pipe": "节点束",
+            "optional_pipe": "节点束(可选)",
             "model_override": "覆盖模型",
             "clip_override": "覆盖CLIP",
-            "optional_lora_stack": "LoRA堆"
+            "optional_lora_stack": "LoRA堆(可选)"
         },
         "widgets": {
             "toggle": "开关",
@@ -443,7 +443,7 @@
             "lora_20_clip_strength": "CLIP强度_20"
         },
         "outputs": {
-            "optional_pipe": "节点束",
+            "optional_pipe": "节点束(可选)",
             "lora_stack": "LoRA堆"
         }
     },
@@ -693,7 +693,7 @@
             "clip_A_override": "覆盖CLIP_A",
             "clip_B_override": "覆盖CLIP_B",
             "clip_C_override": "覆盖CLIP_C",
-            "optional_vae": "VAE"
+            "optional_vae": "VAE(可选)"
         },
         "widgets": {
             "ckpt_A_name": "模型名称_A",

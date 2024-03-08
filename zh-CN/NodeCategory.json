@@ -264,6 +264,8 @@
             "generate": "生成",
         "experiments": "实验",
         "misc": "杂项",
+    "AudioScheduler": "音频调度",
+        "Amplitude": "振幅",
     "math": "运算",
         "conversion": "转换",
         "bool": "布尔",
@@ -304,7 +306,7 @@
         "Preprocessor": "预处理",
         "Import|Export": "导入|导出",
         "Visualize": "可视化",
-    "layerd_diffusion": "LayerDiffusion",
+    "layered_diffusion": "LayerDiffusion",
 
     "basic_pipe": "基础节点束",
     "bbox_detector": "BBox检测",

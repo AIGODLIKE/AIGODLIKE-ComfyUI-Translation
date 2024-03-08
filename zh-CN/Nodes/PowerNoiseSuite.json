@@ -94,7 +94,7 @@
     "Cross-Hatch Power Fractal (PPF Noise)": {
         "title": "交叉线乘方分形",
         "inputs": {
-            "optional_vae": "VAE",
+            "optional_vae": "VAE(可选)",
             "ch_settings": "交叉线设置"
         },
         "widgets": {
@@ -125,7 +125,7 @@
     "Linear Cross-Hatch Power Fractal (PPF Noise)": {
         "title": "线性交叉线乘方分形",
         "inputs": {
-            "optional_vae": "VAE"
+            "optional_vae": "VAE(可选)"
         },
         "widgets": {
             "batch_size": "批次大小",
@@ -154,7 +154,7 @@
     "Perlin Power Fractal Latent (PPF Noise)": {
         "title": "柏林乘方分形Latent",
         "inputs": {
-            "optional_vae": "VAE",
+            "optional_vae": "VAE(可选)",
             "ppf_settings": "柏林乘方分形设置"
         },
         "widgets": {
@@ -188,7 +188,7 @@
     "Power-Law Noise (PPF Noise)": {
         "title": "幂律噪波",
         "inputs": {
-            "optional_vae": "VAE"
+            "optional_vae": "VAE(可选)"
         },
         "widgets": {
             "batch_size": "批次大小",
