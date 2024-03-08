@@ -41,5 +41,20 @@
             "save_mode": "保存",
             "face_model_name": "模型名称"
         }
+    },
+    "ReActorRestoreFace": {
+        "title": "ReActor恢复面部",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "facedetection": "检测模型",
+            "model": "模型",
+            "visibility": "可见性",
+            "codeformer_weight": "codeformer_权重"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
     }
 }
