@@ -304,7 +304,7 @@
         "Preprocessor": "预处理",
         "Import|Export": "导入|导出",
         "Visualize": "可视化",
-    "layerd_diffusion": "LayerDiffusion",
+    "layered_diffusion": "LayerDiffusion",
 
     "basic_pipe": "基础节点束",
     "bbox_detector": "BBox检测",
