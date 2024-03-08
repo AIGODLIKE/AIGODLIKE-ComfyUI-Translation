@@ -1,0 +1,33 @@
+{
+    "TripoSRModelLoader": {
+        "title": "TripoSR模型加载器",
+        "widgets": {
+            "model": "模型",
+            "chunk_size": "块大小"
+        },
+        "outputs": {
+            "TRIPOSR_MODEL": "TripoSR模型"
+        }
+    },
+    "TripoSRSampler": {
+        "title": "TripoSR采样器",
+        "inputs": {
+            "model": "模型",
+            "reference_image": "参考图像",
+            "reference_mask": "参考遮罩"
+        },
+        "widgets": {
+            "geometry_resolution": "几何分辨率",
+            "threshold": "行进曲线阈值"
+        },
+        "outputs": {
+            "MESH": "网格"
+        }
+    },
+    "TripoSRViewer": {
+        "title": "TripoSR预览",
+        "inputs": {
+            "mesh": "网格"
+        }
+    }
+}
