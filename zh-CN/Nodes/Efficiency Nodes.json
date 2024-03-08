@@ -6,7 +6,7 @@
             "positive": "正面条件",
             "negative": "负面条件",
             "latent_image": "Latent",
-            "optional_vae": "VAE",
+            "optional_vae": "VAE(可选)",
             "script": "脚本"
         },
         "widgets": {
@@ -56,7 +56,7 @@
             "positive": "正面条件",
             "negative": "负面条件",
             "latent_image": "Latent",
-            "optional_vae": "VAE",
+            "optional_vae": "VAE(可选)",
             "script": "脚本"
         },
         "widgets": {
@@ -110,7 +110,7 @@
         "inputs": {
             "sdxl_tuple": "SDXL元组",
             "latent_image": "Latent",
-            "optional_vae": "VAE",
+            "optional_vae": "VAE(可选)",
             "script": "脚本"
         },
         "widgets": {
@@ -1491,7 +1491,7 @@
         "inputs": {
             "base_image": "基础图像",
             "overlay_image": "覆盖图像",
-            "optional_mask": "遮罩"
+            "optional_mask": "遮罩(可选)"
         },
         "widgets": {
             "overlay_resize": "缩放模式",
