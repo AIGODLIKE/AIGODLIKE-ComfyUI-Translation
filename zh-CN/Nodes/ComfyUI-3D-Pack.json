@@ -182,6 +182,9 @@
         "widgets": {
             "geometry_extract_resolution": "几何精确分辨率",
             "marching_cude_threshold": "行进曲线阈值"
+        },
+        "outputs": {
+            "mesh": "网格"
         }
     },
     "[Comfy3D] Wonder3D MVDiffusion Model": {
