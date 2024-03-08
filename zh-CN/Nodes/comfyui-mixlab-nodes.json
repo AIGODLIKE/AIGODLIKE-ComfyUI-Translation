@@ -45,6 +45,33 @@
             "MASK": "遮罩"
         }
     },
+    "OutlineMask": {
+        "title": "描边遮罩",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "outline_width": "描边宽度",
+            "tapered_corners": "倒角"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "Removebg": {
+        "title": "移除背景",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "masks": "遮罩",
+            "images": "图像",
+            "RGBAs": "RGBAs"
+        }
+    },
     "FaceToMask": {
         "title": "面部到遮罩",
         "inputs": {
@@ -116,6 +143,16 @@
             "STRING": "字符串"
         }
     },
+    "EmbeddingPrompt": {
+        "title": "Embedding提示词",
+        "widgets": {
+            "embedding": "Embedding",
+            "weight": "权重"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
     "PromptSlide": {
         "title": "提示词滑条",
         "widgets": {
@@ -147,6 +184,18 @@
             "save_to_image": "保存到图像"
         }
     },
+    "JoinWithDelimiter": {
+        "title": "加入分隔符",
+        "inputs": {
+            "text_list": "文本列表"
+        },
+        "widgets": {
+            "delimiter": "分隔符"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
     "ClipInterrogator": {
         "title": "CLIP询问机",
         "inputs": {
@@ -159,6 +208,30 @@
         "outputs": {
             "prompt": "提示词",
             "random_samples": "随机样本"
+        }
+    },
+    "PromptGenerate_Mix": {
+        "title": "生成提示词",
+        "widgets": {
+            "text": "文本",
+            "multiple": "多重",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作"
+        },
+        "outputs": {
+            "prompt": "提示词"
+        }
+    },
+    "ChinesePrompt_Mix": {
+        "title": "中文提示词",
+        "widgets": {
+            "text": "文本",
+            "generation": "生成",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作"
+        },
+        "outputs": {
+            "prompt": "提示词"
         }
     },
 
@@ -295,6 +368,15 @@
             "IMAGE": "图像"
         }
     },
+    "SaveImageToLocal": {
+        "title": "保存图像到本地",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "file_path": "文件路径"
+        }
+    },
     "SvgImage": {
         "title": "SVG图像",
         "inputs": {
@@ -400,6 +482,50 @@
         },
         "outputs": {
             "layers": "图层"
+        }
+    },
+    "SplitImage": {
+        "title": "分离图像",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "num": "数量",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作"
+        },
+        "outputs": {
+            "grids": "栅格组",
+            "grid": "栅格",
+            "mask": "遮罩"
+        }
+    },
+    "CenterImage": {
+        "title": "中心图像",
+        "inputs": {
+            "canvas": "画布图像"
+        },
+        "widgets": {
+            "left": "左",
+            "top": "上",
+            "right": "右",
+            "bottom": "下"
+        },
+        "outputs": {
+            "grid": "栅格",
+            "mask": "遮罩"
+        }
+    },
+    "GridOuput": {
+        "title": "栅格输出",
+        "inputs": {
+            "grid": "栅格"
+        },
+        "outputs": {
+            "x": "X",
+            "y": "Y",
+            "width": "宽度",
+            "height": "高度"
         }
     },
     "ShowLayer": {
@@ -517,6 +643,19 @@
         },
         "outputs": {
             "INT": "整数"
+        }
+    },
+    "TextSplitByDelimiter": {
+        "title": "文本按分隔符分离",
+        "widgets": {
+            "text": "文本",
+            "delimiter": "分隔符",
+            "start_index": "起始索引",
+            "skip_every": "跳过每",
+            "max_count": "最大数量"
+        },
+        "outputs": {
+            "STRING": "字符串"
         }
     },
 
@@ -662,6 +801,44 @@
         },
         "outputs": {
             "number": "数字"
+        }
+    },
+    "Seed_": {
+        "title": "随机种",
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作"
+        },
+        "outputs": {
+            "seed": "随机种"
+        }
+    },
+    "CkptNames_": {
+        "title": "Ckpt名称",
+        "widgets": {
+            "ckpt_names": "ckpt名称"
+        },
+        "outputs": {
+            "ckpt_name": "ckpt名称"
+        }
+    },
+    "SamplerNames_": {
+        "title": "采样器名称",
+        "widgets": {
+            "sampler_names": "采样器名称"
+        },
+        "outputs": {
+            "sampler_names": "采样器名称"
+        }
+    },
+    "LoraNames_": {
+        "title": "LoRA名称",
+        "widgets": {
+            "lora_names": "LoRA名称"
+        },
+        "outputs": {
+            "lora_names": "LoRA名称",
+            "prompt": "提示词"
         }
     },
     
