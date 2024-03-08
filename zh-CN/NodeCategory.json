@@ -264,6 +264,8 @@
             "generate": "生成",
         "experiments": "实验",
         "misc": "杂项",
+    "AudioScheduler": "音频调度",
+        "Amplitude": "振幅",
     "math": "运算",
         "conversion": "转换",
         "bool": "布尔",
