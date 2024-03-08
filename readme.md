@@ -29,6 +29,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 
 |Custom Node Name|zh-CN|zh-TW|English|Japanese|Korean|
 |:----|:----|:----|:----|:----|:----|
+|[3D-Pack](https://github.com/MrForExample/ComfyUI-3D-Pack)|√|TODO|√|TODO|TODO|
 |[Advanced Encode](https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb)|√|√|√|TODO|TODO|
 |[Advanced ControlNet](https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet)|√|√|√|TODO|TODO|
 |[AGL-ComfyUI-Translation](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION)|√|√|√|√|TODO|
@@ -66,6 +67,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[KJ Nodes](https://github.com/kijai/ComfyUI-KJNodes.git)|√|TODO|√|TODO|TODO|
 |[LaMa Preprocessor](https://github.com/mlinmg/ComfyUI-LaMA-Preprocessor)|√|TODO|√|TODO|TODO|
 |[Latent2RGB](https://github.com/bvhari/ComfyUI_LatentToRGB)|√|√|√|√|TODO|
+|[LayerDiffuse](https://github.com/huchenlei/ComfyUI-layerdiffuse)|√|TODO|√|TODO|TODO|
 |[LayerStyle](https://github.com/chflame163/ComfyUI_LayerStyle)|√|TODO|√|TODO|TODO|
 |[LCM](https://github.com/0xbitches/ComfyUI-LCM)|√|TODO|√|TODO|TODO|
 |[Manager](https://github.com/ltdrdata/ComfyUI-Manager)|√|√|√|TODO|TODO|
