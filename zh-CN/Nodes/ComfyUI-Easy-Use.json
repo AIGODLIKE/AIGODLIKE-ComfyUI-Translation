@@ -868,7 +868,7 @@
     "easy XYInputs: Checkpoint": {
         "title": "XY输入: 模型",
         "inputs": {
-            "optional_lora_stack": "Lora堆"
+            "optional_lora_stack": "Lora堆(可选)"
         },
         "widgets": {
             "input_mode": "输入模式",
@@ -908,7 +908,7 @@
     "easy XYInputs: Lora": {
         "title": "XY输入: Lora",
         "inputs": {
-            "optional_lora_stack": "Lora堆"
+            "optional_lora_stack": "Lora堆(可选)"
         },
         "widgets": {
             "input_mode": "输入模式",
@@ -1587,8 +1587,8 @@
     "easy isSDXL": {
         "title": "判断SDXL",
         "inputs": {
-            "optional_pipe": "节点束",
-            "optional_clip": "CLIP"
+            "optional_pipe": "节点束(可选)",
+            "optional_clip": "CLIP(可选)"
         },
         "outputs": {
             "boolean": "布尔"
