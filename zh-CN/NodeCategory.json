@@ -307,6 +307,7 @@
         "Import|Export": "导入|导出",
         "Visualize": "可视化",
     "layered_diffusion": "LayerDiffusion",
+    "Flowty TripoSR": "Flowty TripoSR",
 
     "basic_pipe": "基础节点束",
     "bbox_detector": "BBox检测",
