@@ -236,7 +236,7 @@
             "image": "图像"
         }
     },
-    "LayerColor: LUTapply": {
+    "LayerColor: LUT Apply": {
       "title": "LUT应用",
         "inputs": {
             "image": "图像"
@@ -284,6 +284,21 @@
         "widgets": {
             "width": "宽度",
             "height": "高度",
+            "color": "颜色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerUtility: ColorImage V2": {
+        "title": "纯色图像_V2",
+        "inputs": {
+            "size_as": "参考大小"
+        },
+        "widgets": {
+            "size": "大小",
+            "custom_width": "自定义宽度",
+            "custom_height": "自定义高度",
             "color": "颜色"
         },
         "outputs": {
@@ -369,6 +384,23 @@
         "widgets": {
             "width": "宽度",
             "height": "高度",
+            "angle": "角度",
+            "start_color": "起始色",
+            "end_color": "结束色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerUtility: GradientImage V2": {
+        "title": "渐变图像_V2",
+        "inputs": {
+            "size_as": "参考大小"
+        },
+        "widgets": {
+            "size": "大小",
+            "custom_width": "自定义宽度",
+            "custom_height": "自定义高度",
             "angle": "角度",
             "start_color": "起始色",
             "end_color": "结束色"
@@ -474,6 +506,16 @@
             "channel_4": "通道_4"
         }
     },
+    "LayerUtility: ImageCombineAlpha": {
+        "title": "图像合并Alpha",
+        "inputs": {
+            "RGB_image": "RGB图像",
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "RGBA_image": "RGBA图像"
+        }
+    },
     "LayerUtility: ImageMaskScaleAs": {
         "title": "参考缩放",
         "inputs": {
@@ -528,8 +570,30 @@
             "original_size": "原始大小"
         }
     },
+    "LayerUtility: ImageScaleByAspectRatio V2": {
+        "title": "按宽高比缩放_V2",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "aspect_ratio": "宽高比",
+            "proportional_width": "比例宽",
+            "proportional_height": "比例高",
+            "fit": "缩放模式",
+            "method": "采样方法",
+            "round_to_multiple": "倍数取整",
+            "scale_to_side": "缩放到边",
+            "scale_to_length": "缩放到长度"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "original_size": "原始大小"
+        }
+    },
     "LayerUtility: ImageScaleRestore": {
-        "title": "缩放",
+        "title": "缩放恢复",
         "inputs": {
             "image": "图像",
             "mask": "遮罩",
@@ -540,6 +604,25 @@
             "method": "采样方法",
             "scale_to_longest_side": "按长边缩放",
             "longest_side": "长边长度"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "original_size": "原始大小"
+        }
+    },
+    "LayerUtility: ImageScaleRestore V2": {
+        "title": "缩放恢复_V2",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "original_size": "原始大小"
+        },
+        "widgets": {
+            "scale": "缩放",
+            "method": "采样方法",
+            "scale_by": "缩放方法",
+            "scale_by_length": "缩放长度"
         },
         "outputs": {
             "image": "图像",
@@ -565,6 +648,23 @@
             "image": "图像",
             "mask": "遮罩",
             "border_mask": "接缝遮罩"
+        }
+    },
+    "LayerUtility: LaMa": {
+        "title": "LaMa",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "lama_model": "LaMa模型",
+            "device": "设备",
+            "invert_mask": "反转遮罩",
+            "mask_grow": "遮罩扩张",
+            "mask_blur": "遮罩模糊"
+        },
+        "outputs": {
+            "image": "图像"
         }
     },
     "LayerUtility: LayerImageTransform": {
@@ -611,6 +711,21 @@
             "anything": "任意"
         }
     },
+    "LayerUtility: PromptTagger": {
+        "title": "提示词反推",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "api": "API",
+            "token_limit": "Token限制",
+            "exclude_word": "排除词",
+            "replace_with_word": "替换词"
+        },
+        "outputs": {
+            "text": "文本"
+        }
+    },
     "LayerUtility: RestoreCropBox": {
         "title": "裁剪恢复",
         "inputs": {
@@ -621,6 +736,29 @@
         },
         "widgets": {
             "invert_mask": "反转遮罩"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerUtility: SimpleTextImage": {
+        "title": "文本图像(简易)",
+        "inputs": {
+            "size_as": "参考大小"
+        },
+        "widgets": {
+            "text": "文本",
+            "font_file": "字体",
+            "align": "对齐到",
+            "char_per_line": "每行字数",
+            "leading": "行间距",
+            "font_size": "字体大小",
+            "text_color": "文本颜色",
+            "x_offset": "X偏移",
+            "y_offset": "Y偏移",
+            "width": "宽度",
+            "height": "高度"
         },
         "outputs": {
             "image": "图像",
@@ -890,7 +1028,7 @@
         },
         "widgets": {
             "method": "方法",
-            "mask_grow": "扩张",
+            "mask_grow": "遮罩扩张",
             "fix_gap": "填缝",
             "fix_threshold": "修补阈值",
             "detail_range": "细节范围",
@@ -978,6 +1116,29 @@
             "blur": "模糊"
         }
     },
+    "LayerMask: PersonMaskUltra": {
+        "title": "人像遮罩Ultra",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "face": "面部",
+            "hair": "头发",
+            "body": "身体",
+            "clothes": "衣服",
+            "accessories": "饰品",
+            "background": "背景",
+            "confidence": "置信度",
+            "detail_range": "细节范围",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
     "LayerMask: PixelSpread": {
         "title": "像素扩张",
         "inputs": {
@@ -986,7 +1147,7 @@
         },
         "widgets": {
             "invert_mask": "反转遮罩",
-            "mask_grow": "扩张"
+            "mask_grow": "遮罩扩张"
         },
         "outputs": {
             "image": "图像"
