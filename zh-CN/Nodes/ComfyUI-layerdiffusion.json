@@ -6,7 +6,23 @@
         },
         "widgets": {
             "method": "方法",
+            "config": "设置",
             "weight": "权重"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "LayeredDiffusionJointApply": {
+        "title": "应用LayerDiffusion关节",
+        "inputs": {
+            "model": "模型",
+            "fg_cond": "前景条件",
+            "bg_cond": "背景条件",
+            "blended_cond": "混合条件"
+        },
+        "widgets": {
+            "config": "设置"
         },
         "outputs": {
             "MODEL": "模型"
@@ -27,6 +43,21 @@
         "outputs": {
             "MODEL": "模型",
             "CONDITIONING": "条件"
+        }
+    },
+    "LayeredDiffusionCondJointApply": {
+        "title": "应用LayerDiffusion关节条件",
+        "inputs": {
+            "model": "模型",
+            "image": "图像",
+            "cond": "正面条件",
+            "latent": "Latent"
+        },
+        "widgets": {
+            "config": "设置"
+        },
+        "outputs": {
+            "MODEL": "模型"
         }
     },
     "LayeredDiffusionDiffApply": {
@@ -68,6 +99,21 @@
             "images": "图像"
         },
         "widgets": {
+            "sub_batch_size": "批次大小"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "LayeredDiffusionDecodeSplit": {
+        "title": "LayerDiffusion解码(拆分)",
+        "inputs": {
+            "samples": "Latent",
+            "images": "图像"
+        },
+        "widgets": {
+            "frames": "张数",
+            "sd_version": "SD版本",
             "sub_batch_size": "批次大小"
         },
         "outputs": {

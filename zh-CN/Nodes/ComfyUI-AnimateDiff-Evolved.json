@@ -563,6 +563,24 @@
     },
 
 
+    "ADE_CustomCFG": {
+        "title": "自定义CFG",
+        "inputs": {
+            "cfg_multival": "多值CFG"
+        },
+        "outputs": {
+            "CUSTOM_CFG": "自定义CFG"
+        }
+    },
+    "ADE_CustomCFGKeyframe": {
+        "title": "自定义CFG关键帧",
+        "inputs": {
+            "cfg_multival": "多值CFG",
+            "prev_custom_cfg": "前自定义CFG"
+        }
+    },
+
+
     "ADE_AnimateDiffModelSettingsSimple": {
         "title": "动态扩散模型设置(简易)",
         "inputs": {
