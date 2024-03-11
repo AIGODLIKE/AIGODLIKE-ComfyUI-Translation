@@ -433,6 +433,26 @@
             "pipe": "节点束"
         }
     },
+    "easy preSamplingNoiseIn": {
+        "title": "预采样参数（插入噪波）",
+        "inputs": {
+            "pipe": "节点束",
+            "optional_noise_seed": "随机种（可选）"
+        },
+        "widgets": {
+            "factor": "系数",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "seed_num": "随机种",
+            "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "pipe": "节点束"
+        }
+    },
     "easy preSamplingSdTurbo": {
         "title": "预采样参数（SDTurbo）",
         "widgets": {
@@ -491,6 +511,23 @@
             "denoise": "降噪",
             "seed_num": "随机种",
             "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "pipe": "节点束"
+        }
+    },
+    "easy preSamplingLayerDiffusionADDTL": {
+        "title": "预采样参数（LayerDiffusion前景背景）",
+        "inputs": {
+            "pipe": "节点束",
+            "optional_fg_cond": "前景条件（可选）",
+            "optional_bg_cond": "背景条件（可选）",
+            "optional_blended_cond": "混合条件（可选）"
+        },
+        "widgets": {
+            "optional_fg_promt": "前景提示词",
+            "optional_bg_promt": "背景提示词",
+            "optional_blended_promt": "混合提示词"
         },
         "outputs": {
             "pipe": "节点束"
@@ -740,6 +777,19 @@
         },
         "outputs": {
             "basic_pipe": "基础节点束"
+        }
+    },
+    "easy pipeBatchIndex": {
+        "title": "节点束批次索引",
+        "inputs": {
+            "pipe": "节点束"
+        },
+        "widgets": {
+            "batch_index": "批次索引",
+            "length": "长度"
+        },
+        "outputs": {
+            "pipe": "节点束"
         }
     },
     "easy pipeEdit": {
@@ -1448,6 +1498,15 @@
             "IMAGE": "图像"
         }
     },
+    "easy imageSplitList": {
+        "title": "图像拆分",
+        "inputs": {
+            "images": "图像"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
     "easy imagePixelPerfect": {
         "title": "图像完美像素",
         "widgets": {
@@ -1621,6 +1680,12 @@
         "title": "展示任何",
         "inputs": {
             "anything": "输入任何"
+        }
+    },
+    "easy showTensorShape": {
+        "title": "显示Tensor形状",
+        "inputs": {
+            "tensor": "Tensor"
         }
     },
     "easy cleanGpuUsed": {
