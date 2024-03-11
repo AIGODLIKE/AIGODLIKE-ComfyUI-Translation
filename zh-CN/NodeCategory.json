@@ -47,6 +47,7 @@
         "ad settings": "AD设置",
             "pe adjust": "PE设置",
         "sample settings": "采样设置",
+            "sigmas schedule": "Sigmas调度",
         "① Gen1 nodes ①": "Gen1节点",
         "② Gen2 nodes ②": "Gen2节点",
         "motion_settings": "模型设置",
