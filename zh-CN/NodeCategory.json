@@ -308,6 +308,9 @@
         "Import|Export": "导入|导出",
         "Visualize": "可视化",
     "layered_diffusion": "LayerDiffusion",
+    "layered_diffuse": "LayerDiffusion",
+    "layer_diffusion": "LayerDiffusion",
+    "layer_diffuse": "LayerDiffusion",
     "Flowty TripoSR": "Flowty TripoSR",
 
     "basic_pipe": "基础节点束",
