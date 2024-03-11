@@ -507,6 +507,17 @@
     },
 
 
+    "StableCascade_StageB_Conditioning": {
+        "title": "StableCascade_StageB条件",
+        "inputs": {
+            "conditioning": "条件",
+            "stage_c": "Stage_C"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+
 
     "CLIPTextEncode": {
         "title": "CLIP文本编码器",
@@ -865,6 +876,35 @@
         },
         "outputs": {
             "LATENT": "Latent"
+        }
+    },
+
+
+    "StableCascade_EmptyLatentImage": {
+        "title": "StableCascade_空Latent",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "compression": "压缩等级",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "stage_c": "Stage_C",
+            "stage_b": "Stage_B"
+        }
+    },
+    "StableCascade_StageC_VAEEncode": {
+        "title": "StableCascade_StageC_VAE编码",
+        "inputs": {
+            "image": "图像",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "compression": "压缩等级"
+        },
+        "outputs": {
+            "stage_b": "Stage_B",
+            "stage_c": "Stage_C"
         }
     },
 
@@ -1533,39 +1573,14 @@
     },
 
 
-    "StableCascade_EmptyLatentImage": {
-        "title": "StableCascade_空Latent",
-        "widgets": {
-            "width": "宽度",
-            "height": "高度",
-            "compression": "压缩等级",
-            "batch_size": "批次大小"
-        },
-        "outputs": {
-            "stage_c": "Stage_C",
-            "stage_b": "Stage_B"
-        }
-    },
-    "StableCascade_StageB_Conditioning": {
-        "title": "StableCascade_StageB条件",
-        "inputs": {
-            "conditioning": "条件",
-            "stage_c": "Stage_C"
-        },
-        "outputs": {
-            "CONDITIONING": "条件"
-        }
-    },
-    "StableCascade_StageC_VAEEncode": {
-        "title": "StableCascade_StageC_VAE编码",
+    "StableCascade_SuperResolutionControlNet": {
+        "title": "StableCascade_超分Controlnet",
         "inputs": {
             "image": "图像",
             "vae": "VAE"
         },
-        "widgets": {
-            "compression": "压缩等级"
-        },
         "outputs": {
+            "controlnet_input": "ControlNet图像",
             "stage_b": "Stage_B",
             "stage_c": "Stage_C"
         }
@@ -1737,6 +1752,15 @@
             "MODEL": "模型"
         }
     },
+    "Differential Diffusion": {
+        "title": "Differential Diffusion",
+        "inputs": {
+            "model": "模型"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
 
 
 
@@ -1896,6 +1920,30 @@
             "ratio": "比率"
         },
         "outputs": {
+            "CLIP": "CLIP"
+        }
+    },
+    "CLIPMergeSubtract": {
+        "title": "融合CLIP（相减）",
+        "inputs": {
+            "clip1": "CLIP1",
+            "clip2": "CLIP2"
+        },
+        "widgets": {
+            "multiplier": "系数"
+        },
+        "outputs": {
+            "CLIP": "CLIP"
+        }
+    },
+    "CLIPMergeAdd": {
+        "title": "融合CLIP（相加）",
+        "inputs": {
+            "clip1": "CLIP1",
+            "clip2": "CLIP2"
+        },
+        "outputs": {
+            "CLIP": "CLIP"
         }
     },
     "VAESave": {
