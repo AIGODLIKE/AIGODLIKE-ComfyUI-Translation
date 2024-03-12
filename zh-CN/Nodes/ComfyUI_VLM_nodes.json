@@ -321,7 +321,7 @@
             "STRING": "字符串"
         }
     },
-    "UformGen2Qwen": {
+    "UformGen2QwenNode": {
         "title": "Uform Gen2 Qwen",
         "inputs": {
             "image": "图像"
@@ -333,7 +333,7 @@
             "STRING": "字符串"
         }
     },
-    "Kosmos-2": {
+    "Kosmos2model": {
         "title": "Kosmos-2",
         "inputs": {
             "image": "图像"
@@ -345,7 +345,7 @@
             "STRING": "字符串"
         }
     },
-    "MC-LLava": {
+    "MCLLavaModel": {
         "title": "MC-LLava",
         "inputs": {
             "image": "图像"
@@ -360,7 +360,7 @@
             "STRING": "字符串"
         }
     },
-    "Moondream-2": {
+    "Moondream2model": {
         "title": "MoonDream-2",
         "inputs": {
             "image": "图像"
