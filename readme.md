@@ -54,9 +54,11 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Easy Use](https://github.com/yolain/ComfyUI-Easy-Use)|√|TODO|√|TODO|TODO|
 |[Efficiency Nodes](https://github.com/LucianoCirino/efficiency-nodes-comfyui)|√|√|√|√|TODO|
 |[EllangoK Postprocessing](https://github.com/EllangoK/ComfyUI-post-processing-nodes)|√|√|√|TODO|TODO|
+|[Essentials](https://github.com/cubiq/ComfyUI_essentials.git)|√|TODO|√|TODO|TODO|
 |[ExLlama nodes](https://github.com/Zuellni/ComfyUI-ExLlama-Nodes)|√|√|√|TODO|TODO|
 |[experiments](https://github.com/comfyanonymous/ComfyUI_experiments)|√|√|√|TODO|TODO|
 |[Fast Decode](https://github.com/nagolinc/ComfyUI_FastVAEDecorder_SDXL)|√|√|√|√|TODO|
+|[FlowtyTripoSR](https://github.com/flowtyone/ComfyUI-Flowty-TripoSR.git)|√|TODO|√|TODO|TODO|
 |[FreeU Advanced](https://github.com/WASasquatch/FreeU_Advanced)|√|TODO|√|TODO|TODO|
 |[IPAdapter](https://github.com/laksjdjf/IPAdapter-ComfyUI)|√|√|√|TODO|TODO|
 |[IPAdapter_plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus)|√|√|√|TODO|TODO|
@@ -96,6 +98,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[TinyTerra](https://github.com/TinyTerra/ComfyUI_tinyterraNodes.git)|√|TODO|√|TODO|TODO|TODO|
 |[UltimateSDUpscale](https://github.com/ssitu/ComfyUI_UltimateSDUpscale)|√|√|√|TODO|TODO|
 |[Vextra Nodes](https://github.com/diontimmer/ComfyUI-Vextra-Nodes)|√|√|√|TODO|TODO|
+|[VLM Nodes](https://github.com/gokayfem/ComfyUI_VLM_nodes.git)|√|TODO|√|TODO|TODO|
 |[WAS Suite](https://github.com/WASasquatch/was-node-suite-comfyui)|√|√|√|TODO|TODO|
 |[WD14-Tagger](https://github.com/pythongosssss/ComfyUI-WD14-Tagger)|√|√|√|TODO|TODO|
 |[zfkun](https://github.com/zfkun/ComfyUI_zfkun.git)|√|TODO|√|TODO|TODO|
