@@ -1,0 +1,375 @@
+{
+    "MoonDream": {
+        "title": "MoonDream",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "question": "问题"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+
+
+    "SimpleText": {
+        "title": "简易文本",
+        "widgets": {
+            "input_text": "输入文本"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "JsonToText": {
+        "title": "Json到文本",
+        "inputs": {
+            "text": "文本"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "ViewText": {
+        "title": "查看文本",
+        "inputs": {
+            "text": "文本"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    
+
+    "LLava Loader Simple": {
+        "title": "LLava加载器(简易)",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "max_ctx": "最大上下文",
+            "gpu_layers": "GPU层数",
+            "n_threads": "线程数"
+        },
+        "outputs": {
+            "model": "模型"
+        }
+    },
+    "LLavaSamplerSimple": {
+        "title": "LLava采样器(简易)",
+        "inputs": {
+            "image": "图像",
+            "model": "模型",
+            "prompt": "提示词"
+        },
+        "widgets": {
+            "temperature": "温度"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "LLavaClipLoader": {
+        "title": "LLavaCLIP加载器",
+        "widgets": {
+            "clip_name": "CLIP名称"
+        },
+        "outputs": {
+            "clip": "CLIP"
+        }
+    },
+    "LLavaSamplerAdvanced": {
+        "title": "LLava采样器",
+        "inputs": {
+            "image": "图像",
+            "model": "模型",
+            "prompt": "提示词"
+        },
+        "widgets": {
+            "system_msg": "系统提示词",
+            "max_tokens": "最大Token",
+            "temperature": "温度",
+            "top_k": "候选集长度",
+            "top_p": "动态候选集长度",
+            "frequency_penalty": "频率惩罚",
+            "presence_penalty": "存在惩罚",
+            "repeat_penalty": "重复惩罚",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+
+
+    "LLMLoader": {
+        "title": "LLM加载器",
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "max_ctx": "最大上下文",
+            "gpu_layers": "GPU层数",
+            "n_threads": "线程数"
+        },
+        "outputs": {
+            "model": "模型"
+        }
+    },
+    "LLMSampler": {
+        "title": "LLM采样器",
+        "inputs": {
+            "model": "模型",
+            "prompt": "提示词"
+        },
+        "widgets": {
+            "system_msg": "系统提示词",
+            "max_tokens": "最大Token",
+            "temperature": "温度",
+            "top_p": "动态候选集长度",
+            "top_k": "候选集长度",
+            "frequency_penalty": "频率惩罚",
+            "presence_penalty": "存在惩罚",
+            "repeat_penalty": "重复惩罚",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "LLMPromptGenerator": {
+        "title": "LLM提示词生成器",
+        "inputs": {
+            "model": "模型",
+            "prompt": "提示词"
+        },
+        "widgets": {
+            "max_tokens": "最大Token",
+            "temperature": "温度",
+            "top_p": "动态候选集长度",
+            "top_k": "候选集长度",
+            "frequency_penalty": "频率惩罚",
+            "presence_penalty": "存在惩罚",
+            "repeat_penalty": "重复惩罚"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "GetKeywords": {
+        "title": "获取关键词",
+        "inputs": {
+            "model": "模型",
+            "prompt": "提示词"
+        },
+        "widgets": {
+            "temperature": "温度"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "LLavaPromptGenerator": {
+        "title": "LLava提示词生成器",
+        "inputs": {
+            "model": "模型",
+            "prompt": "提示词"
+        },
+        "widgets": {
+            "temperature": "温度"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Suggester": {
+        "title": "提示机",
+        "inputs": {
+            "model": "模型",
+            "prompt": "提示词"
+        },
+        "widgets": {
+            "temperature": "温度",
+            "randomize": "随机"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "PromptGenerateAPI": {
+        "title": "API提示词生成器",
+        "widgets": {
+            "model_name": "模型名称",
+            "chat_type": "类型",
+            "api_key": "API_Key",
+            "description": "描述",
+            "question": "问题"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Creative Art PromptGenerator": {
+        "title": "创意艺术提示词生成器",
+        "inputs": {
+            "model": "模型",
+            "prompt": "提示词"
+        },
+        "widgets": {
+            "temperature": "温度"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    
+
+    "ChatMusician": {
+        "title": "ChatMusician",
+        "inputs": {
+            "model": "模型",
+            "prompt": "提示词"
+        },
+        "widgets": {
+            "max_tokens": "最大Token",
+            "temperature": "温度",
+            "top_k": "候选集长度",
+            "top_p": "动态候选集长度",
+            "frequency_penalty": "频率惩罚",
+            "presence_penalty": "存在惩罚",
+            "repeat_penalty": "重复惩罚",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "sample_rate": "采样率"
+        },
+        "outputs": {
+            "response": "回复",
+            "wave_form": "波形",
+            "sample_rate": "采样率"
+        }
+    },
+    "AudioLDM-2": {
+        "title": "AudioLDM-2",
+        "inputs": {
+            "text": "文本",
+            "negative_prompt": "负面提示词"
+        },
+        "widgets": {
+            "duration": "持续",
+            "guidance_scale": "引导缩放",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "n_candidates": "候选数",
+            "sample_rate": "采样率",
+            "extension": "后缀名"
+        },
+        "outputs": {
+            "wave_form": "波形",
+            "sample_rate": "采样率"
+        }
+    },
+    "SaveAudio": {
+        "title": "保存音频",
+        "inputs": {
+            "waveforms": "波形",
+            "sample_rate": "采样率"
+        },
+        "widgets": {
+            "extension": "后缀名"
+        }
+    },
+    "PlayMusic": {
+        "title": "播放音乐",
+        "inputs": {
+            "wave_form": "波形",
+            "sample_rate": "采样率"
+        },
+        "widgets": {
+            "mode": "模式",
+            "volume": "音量"
+        },
+        "outputs": {
+            "*": "*"
+        }
+    },
+
+
+    "Joytag": {
+        "title": "Joytag",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "tag_number": "tag数量"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+
+    "Internlm": {
+        "title": "Internlm",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "question": "问题"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "UformGen2QwenNode": {
+        "title": "Uform Gen2 Qwen",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "question": "问题"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Kosmos2model": {
+        "title": "Kosmos-2",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "text_input": "文本输入"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "MCLLavaModel": {
+        "title": "MC-LLava",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "top_p": "动态候选集长度",
+            "max_crops": "最大裁剪",
+            "num_tokens": "Token数量"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Moondream2model": {
+        "title": "MoonDream-2",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "text_input": "文本输入"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    }
+}
