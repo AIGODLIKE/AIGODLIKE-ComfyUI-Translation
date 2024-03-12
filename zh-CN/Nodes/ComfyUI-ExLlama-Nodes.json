@@ -44,7 +44,7 @@
             "stop_on_newline": "换行停止",
             "temperature": "温度",
             "max_tokens": "最大Token数量",
-            "top_k": "top_k",
+            "top_k": "候选集长度",
             "top_l": "top_l",
             "typical": "typical",
             "penalty": "重复惩罚",
