@@ -313,6 +313,7 @@
     "layer_diffuse": "LayerDiffusion",
     "Flowty TripoSR": "Flowty TripoSR",
     "essentials": "Essen节点",
+    "VLM Nodes": "VLM节点",
 
     "basic_pipe": "基础节点束",
     "bbox_detector": "BBox检测",
