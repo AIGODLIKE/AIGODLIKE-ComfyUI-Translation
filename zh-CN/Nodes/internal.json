@@ -167,6 +167,36 @@
             "SAMPLER": "采样器"
         }
     },
+    "SamplerEulerAncestral": {
+        "title": "Euler_A采样器",
+        "widgets": {
+            "eta": "eta",
+            "s_noise": "s_noise"
+        },
+        "outputs": {
+            "SAMPLER": "采样器"
+        }
+    },
+    "SamplerLMS": {
+        "title": "LMS采样器",
+        "widgets": {
+            "order": "order"
+        },
+        "outputs": {
+            "SAMPLER": "采样器"
+        }
+    },
+    "SamplerDPMPP_3M_SDE": {
+        "title": "DPMPP_3M_SDE采样器",
+        "widgets": {
+            "eta": "eta",
+            "s_noise": "s_noise",
+            "noise_device": "设备"
+        },
+        "outputs": {
+            "SAMPLER": "采样器"
+        }
+    },
     "BasicScheduler": {
         "title": "基础调度器",
         "inputs": {
@@ -1573,8 +1603,8 @@
     },
 
 
-    "StableCascade_SuperResolutionControlNet": {
-        "title": "StableCascade_超分Controlnet",
+    "StableCascade_SuperResolutionControlnet": {
+        "title": "StableCascade_超分ControlNet",
         "inputs": {
             "image": "图像",
             "vae": "VAE"
