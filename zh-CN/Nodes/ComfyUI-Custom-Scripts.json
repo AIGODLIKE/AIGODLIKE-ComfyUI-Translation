@@ -65,9 +65,9 @@
     "MathExpression|pysssss": {
         "title": "数学表达式",
         "inputs": {
-            "a": "A",
-            "b": "B",
-            "c": "C"
+            "a": "a",
+            "b": "b",
+            "c": "c"
         },
         "widgets": {
             "expression": "表达式"
