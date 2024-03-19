@@ -1,0 +1,32 @@
+{
+    "MoondreamQuery": {
+        "title": "MoonDream问询机",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "question": "问题",
+            "keep_model_loaded": "保持加载模型",
+            "model": "模型",
+            "max_new_tokens": "最大新Token数"
+        },
+        "outputs": {
+            "text": "文本"
+        }
+    },
+    "MoondreamQueryCaptions": {
+        "title": "MoonDream问询机(Captions)",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "question": "问题",
+            "keep_model_loaded": "保持加载模型",
+            "model": "模型",
+            "max_new_tokens": "最大新Token数"
+        },
+        "outputs": {
+            "text": "文本"
+        }
+    }
+}
