@@ -24,6 +24,45 @@
             "baked_texture": "纹理"
         }
     },
+    "[Comfy3D] CRM CCMs MVDiffusion Model": {
+        "title": "CRM CCMs MVDiffusion 模型",
+        "inputs": {
+            "crm_mvdffusion_sampler": "CRM_MVDiffusion采样器",
+            "reference_image": "参考图像",
+            "reference_mask": "参考遮罩",
+            "multiview_images": "多视图"
+        },
+        "widgets": {
+            "prompt": "正面提示词",
+            "prompt_neg": "负面提示词",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "mv_guidance_scale": "MV引导系数",
+            "num_inference_steps": "推理步数"
+        },
+        "outputs": {
+            "multiview_CCMs": "CCMs多视图"
+        }
+    },
+    "[Comfy3D] CRM Images MVDiffusion Model": {
+        "title": "CRM 图像 MVDiffusion 模型",
+        "inputs": {
+            "crm_mvdffusion_sampler": "CRM_MVDiffusion采样器",
+            "reference_image": "参考图像",
+            "reference_mask": "参考遮罩"
+        },
+        "widgets": {
+            "prompt": "正面提示词",
+            "prompt_neg": "负面提示词",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "mv_guidance_scale": "MV引导系数",
+            "num_inference_steps": "推理步数"
+        },
+        "outputs": {
+            "multiview_images": "多视图"
+        }
+    },
     "[Comfy3D] Convert 3DGS to Mesh with NeRF and Marching Cubes": {
         "title": "用NeRF和Marching Cubes将3DGS转换为网格",
         "inputs": {
@@ -32,6 +71,17 @@
         "widgets": {
             "gs_config": "高斯设置",
             "force_cuda_rast": "强制光栅化CUDA"
+        },
+        "outputs": {
+            "mesh": "网格"
+        }
+    },
+    "[Comfy3D] Convolutional Reconstruction Model": {
+        "title": "卷积重构模型",
+        "inputs": {
+            "crm_model": "CRM模型",
+            "multiview_images": "多视图",
+            "multiview_CCMs": "CCMs多视图"
         },
         "outputs": {
             "mesh": "网格"
@@ -332,6 +382,25 @@
         },
         "outputs": {
             "mesh": "网格"
+        }
+    },
+    "[Comfy3D] Load CRM MVDiffusion Model": {
+        "title": "加载CRM MVDiffusion模型",
+        "widgets": {
+            "model_name": "模型名称",
+            "crm_config_path": "CRM配置路径"
+        },
+        "outputs": {
+            "crm_mvdiffusion_sampler": "CRM_MVDiffusion采样器"
+        }
+    },
+    "[Comfy3D] Load Convolutional Reconstruction Model": {
+        "title": "加载卷积重构模型",
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "crm_model": "CRM模型"
         }
     },
     "[Comfy3D] Load Diffusers Pipeline": {
