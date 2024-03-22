@@ -2451,4 +2451,9 @@
     "[DZ] Enable Debug (py and js)": "[DZ] 开启Debug （py 和 js）",
 
 
+    "sidebar": "sidebar",
+
+    "Search...": "搜索...",
+    "PINNED": "置顶",
+    "CUSTOM NODES": "自定义节点"
 }
