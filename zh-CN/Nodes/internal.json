@@ -258,6 +258,18 @@
             "MODEL": "模型"
         }
     },
+    "VideoTriangleCFGGuidance": {
+        "title": "三角CFG引导",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "min_cfg": "最小CFG"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
 
 
     "ImageOnlyCheckpointLoader": {
@@ -509,6 +521,25 @@
             "azimuth": "方位角",
             "elevation_batch_increment": "俯仰角增量",
             "azimuth_batch_increment": "方位角增量"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latent": "Latent"
+        }
+    },
+    "SV3D_Conditioning": {
+        "title": "SV3D_条件",
+        "inputs": {
+            "clip_vision": "CLIP视觉",
+            "init_image": "图像",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "video_frames": "帧数",
+            "elevation": "俯仰角"
         },
         "outputs": {
             "positive": "正面条件",
