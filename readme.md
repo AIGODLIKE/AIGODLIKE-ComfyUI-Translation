@@ -76,6 +76,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Masquerade Nodes](https://github.com/BadCafeCode/masquerade-nodes-comfyui)|√|√|√|TODO|TODO|
 |[Math](https://github.com/evanspearman/ComfyMath.git)|√|TODO|√|TODO|TODO|
 |[Mixlab Nodes](https://github.com/shadowcz007/comfyui-mixlab-nodes.git)|√|TODO|√|TODO|TODO|
+|[MoonDream](https://github.com/kijai/ComfyUI-moondream.git)|√|TODO|√|TODO|TODO|
 |[MotionCtrl](https://github.com/chaojie/ComfyUI-MotionCtrl)|√|TODO|√|TODO|TODO|
 |[MotionCtrl-SVD](https://github.com/chaojie/ComfyUI-MotionCtrl-SVD)|√|TODO|√|TODO|TODO|
 |[Noise](https://github.com/BlenderNeko/ComfyUI_Noise)|√|√|√|TODO|TODO|
