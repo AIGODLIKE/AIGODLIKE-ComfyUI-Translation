@@ -1557,6 +1557,9 @@
     "Convert all UEs to real links": "将全局输入连线转为实际连线",
     "Anything Everywhere highlight connected nodes": "高光显示全局输入已连接节点",
     "Anything Everywhere replace search": "全局输入替换搜索",
+    "Anything Everywhere show links": "全局输入显示连接",
+    "Anything Everywhere turn animation off when running": "全局输入执行时关闭动画",
+    "Anything Everywhere? autocomplete (may require page reload)": "全局输入？ 自动补全（可能需要重载页面）",
 
 
     "cg-img": "cg-img",
