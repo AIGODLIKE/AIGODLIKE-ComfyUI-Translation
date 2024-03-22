@@ -2440,5 +2440,12 @@
     "horizontal door": "横向开门",
     "vertical door": "竖向开门",
     "circle": "圆形",
-    "fade": "消失"
+    "fade": "消失",
+
+
+    "dz": "dz",
+
+    "[DZ] Enable Debug (py and js)": "[DZ] 开启Debug （py 和 js）",
+
+
 }
