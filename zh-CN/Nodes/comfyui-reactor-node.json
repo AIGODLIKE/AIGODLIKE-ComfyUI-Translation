@@ -56,5 +56,16 @@
         "outputs": {
             "IMAGE": "图像"
         }
+    },
+    "ReActorBuildFaceModel": {
+        "title": "ReActor创建面部模型",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "save_mode": "保存",
+            "face_model_name": "模型名称",
+            "compute_method": "计算方法"
+        }
     }
 }
