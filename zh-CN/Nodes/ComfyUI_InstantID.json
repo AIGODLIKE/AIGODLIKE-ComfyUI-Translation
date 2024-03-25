@@ -1,0 +1,120 @@
+{
+    "InstantIDModelLoader": {
+        "title": "InstnatID模型加载器",
+        "inputs": {
+            "instantid_file": "InstantID文件"
+        },
+        "outputs": {
+            "INSTNATID": "InstantID"
+        }
+    },
+    "InstantIDFaceAnalysis": {
+        "title": "InstantID面部分析",
+        "widgets": {
+            "provider": "设备"
+        },
+        "outputs": {
+            "FACEANALYSIS": "面部分析"
+        }
+    },
+    "ApplyInstantID": {
+        "title": "应用InstantID",
+        "inputs": {
+            "instantid": "InstantID",
+            "insightface": "InsightFace",
+            "control_net": "ControlNet",
+            "image": "图像",
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "image_kps": "图像_kps",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "weight": "权重",
+            "start_at": "开始时间",
+            "end_at": "结束时间"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件"
+        }
+    },
+    "ApplyInstantIDAdvanced": {
+        "title": "应用InstantID(高级)",
+        "inputs": {
+            "instantid": "InstantID",
+            "insightface": "InsightFace",
+            "control_net": "ControlNet",
+            "image": "图像",
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "image_kps": "图像_kps",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "ip_weight": "IP权重",
+            "cn_strength": "ControlNet权重",
+            "start_at": "开始时间",
+            "end_at": "结束时间",
+            "noise": "噪波"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件"
+        }
+    },
+    "FaceKeypointsPreprocessor": {
+        "titlte": "面部关键点预处理器",
+        "inputs": {
+            "faceanalysis": "面部分析",
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "InstantIDAttentionPatch": {
+        "title": "InstantID关注组件",
+        "inputs": {
+            "instantid": "InstantID",
+            "insightface": "InsightFace",
+            "image": "图像",
+            "model": "模型",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "weight": "权重",
+            "start_at": "开始时间",
+            "end_at": "结束时间",
+            "noise": "噪波"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "FACE_EMBEDS": "面部嵌入组"
+        }
+    },
+    "ApplyInstantIDControlNet": {
+        "title": "应用InstantID(ControlNet)",
+        "inputs": {
+            "face_embeds": "面部嵌入组",
+            "control_net": "ControlNet",
+            "image_kps": "图像_kps",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "strength": "强度",
+            "start_at": "开始时间",
+            "end_at": "结束时间"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件"
+        }
+    }
+}
