@@ -1,0 +1,14 @@
+{
+    "BiRefNet": {
+        "title": "BiRefNet",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "device": "设备"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+   }
+}
