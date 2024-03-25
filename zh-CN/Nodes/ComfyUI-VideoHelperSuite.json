@@ -372,5 +372,49 @@
         "outputs": {
             "VHS_BatchManager": "批次管理"
         }
+    },
+    "VHS_VideoInfo": {
+        "title": "视频信息",
+        "inputs": {
+            "video_info": "视频信息"
+        },
+        "outputs": {
+            "source_fps": "初始FPS",
+            "source_frame_count": "初始帧数",
+            "source_duration": "初始时长",
+            "source_width": "初始宽度",
+            "source_height": "初始高度",
+            "loaded_fps": "选中FPS",
+            "loaded_frame_count": "选中帧数",
+            "loaded_duration": "选中时长",
+            "loaded_width": "选中宽度",
+            "loaded_height": "选中高度"
+        }
+    },
+    "VHS_VideoInfoSource": {
+        "title": "视频信息(初始)",
+        "inputs": {
+            "video_info": "视频信息"
+        },
+        "outputs": {
+            "fps": "FPS",
+            "frame_count": "帧数",
+            "duration": "时长",
+            "width": "宽度",
+            "height": "高度"
+        }
+    },
+    "VHS_VideoInfoLoaded": {
+        "title": "视频信息(已选中)",
+        "inputs": {
+            "video_info": "视频信息"
+        },
+        "outputs": {
+            "fps": "FPS",
+            "frame_count": "帧数",
+            "duration": "时长",
+            "width": "宽度",
+            "height": "高度"
+        }
     }
 }
