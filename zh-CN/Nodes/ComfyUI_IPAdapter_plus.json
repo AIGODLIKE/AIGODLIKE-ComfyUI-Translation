@@ -1,17 +1,17 @@
 {
     "IPAdapterModelLoader": {
-        "title": "IP适配模型加载器",
+        "title": "IPAdapter模型加载器",
         "widgets": {
-            "ipadapter_file": "IP适配文件"
+            "ipadapter_file": "IPAdapter文件"
         },
         "outputs": {
-            "IPADAPTER": "IP适配"
+            "IPADAPTER": "IPAdapter"
         }
     },
     "IPAdapterApply": {
-        "title": "IP适配应用",
+        "title": "IPAdapter应用",
         "inputs": {
-            "ipadapter": "IP适配",
+            "ipadapter": "IPAdapter",
             "clip_vision": "CLIP视觉",
             "image": "图像",
             "model": "模型",
@@ -32,9 +32,9 @@
         }
     },
     "IPAdapterApplyFaceID": {
-        "title": "IP适配应用(FaceID)",
+        "title": "IPAdapter应用(FaceID)",
         "inputs": {
-            "ipadapter": "IP适配",
+            "ipadapter": "IPAdapter",
             "clip_vision": "CLIP视觉",
             "insightface": "InsightFace",
             "image": "图像",
@@ -56,9 +56,9 @@
         }
     },
     "IPAdapterApplyEncoded": {
-        "title": "IP适配应用(已编码)",
+        "title": "IPAdapter应用(已编码)",
         "inputs": {
-            "ipadapter": "IP适配",
+            "ipadapter": "IPAdapter",
             "embeds": "嵌入组",
             "model": "模型",
             "attn_mask": "关注层遮罩"
@@ -89,7 +89,7 @@
         }
     },
     "IPAdapterEncoder": {
-        "title": "IP适配编码",
+        "title": "IPAdapter编码",
         "inputs": {
             "clip_vision": "CLIP视觉",
             "image": "图像",

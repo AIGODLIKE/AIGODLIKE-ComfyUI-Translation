@@ -679,25 +679,25 @@
         }
     },
     "FromIPAdapterPipe //Inspire": {
-        "title": "从IP适配",
+        "title": "从IPAdapter",
         "inputs": {
-            "ipadapter_pipe": "IP适配束"
+            "ipadapter_pipe": "IPAdapter束"
         },
         "outputs": {
-            "IPADAPTER": "IP适配",
+            "IPADAPTER": "IPAdapter",
             "CLIP_VISION": "CLIP视觉",
             "MODEL": "模型"
         }
     },
     "ToIPAdapterPipe //Inspire": {
-        "title": "到IP适配",
+        "title": "到IPAdapter",
         "inputs": {
-            "ipadapter": "IP适配",
+            "ipadapter": "IPAdapter",
             "clip_vision": "CLIP视觉",
             "model": "模型"
         },
         "outputs": {
-            "IPADAPTER_PIPE": "IP适配束"
+            "IPADAPTER_PIPE": "IPAdapter束"
         }
     },
 
@@ -1041,9 +1041,9 @@
         }
     },
     "RegionalIPAdapterMask //Inspire": {
-        "title": "区域IP适配",
+        "title": "区域IPAdapter",
         "inputs": {
-            "ipadapter_pipe": "IP适配束",
+            "ipadapter_pipe": "IPAdapter束",
             "mask": "遮罩",
             "images": "图像"
         },
@@ -1056,14 +1056,14 @@
                 "channel penalty": "通道惩罚"
         },
         "outputs": {
-            "IPADAPTER_PIPE": "IP适配束",
+            "IPADAPTER_PIPE": "IPAdapter束",
             "MODEL": "模型"
         }
     },
     "RegionalIPAdapterColorMask //Inspire": {
-        "title": "区域IP适配(颜色遮罩)",
+        "title": "区域IPAdapter(颜色遮罩)",
         "inputs": {
-            "ipadapter_pipe": "IP适配束",
+            "ipadapter_pipe": "IPAdapter束",
             "color_mask": "图像遮罩",
             "images": "图像"
         },
@@ -1077,7 +1077,7 @@
                 "channel penalty": "通道惩罚"
         },
         "outputs": {
-            "IPADAPTER_PIPE": "IP适配束",
+            "IPADAPTER_PIPE": "IPAdapter束",
             "MODEL": "模型",
             "MASK" : "遮罩"
         }
@@ -1119,7 +1119,7 @@
         }
     },
     "RegionalIPAdapterEncodedMask //Inspire": {
-        "title": "区域IP适配(编码遮罩)",
+        "title": "区域IPAdapter(编码遮罩)",
         "inputs": {
             "mask": "遮罩",
             "embeds": "嵌入组"
@@ -1129,11 +1129,11 @@
             "weight_interpolation": "权重插值方式"
         },
         "outputs": {
-            "REGIONAL_IPADAPER": "区域IP适配"
+            "REGIONAL_IPADAPER": "区域IPAdapter"
         }
     },
     "RegionalIPAdapterEncodedColorMask //Inspire": {
-        "title": "区域IP适配(编码颜色遮罩)",
+        "title": "区域IPAdapter(编码颜色遮罩)",
         "inputs": {
             "color_mask": "图像遮罩",
             "embeds": "嵌入组"
@@ -1144,15 +1144,15 @@
             "weight_interpolation": "权重插值方式"
         },
         "outputs": {
-            "REGIONAL_IPADAPTER": "区域IP适配",
+            "REGIONAL_IPADAPTER": "区域IPAdapter",
             "MASK": "遮罩"
         }
     },
     "ApplyRegionalIPAdapters //Inspire": {
-        "title": "应用区域IP适配",
+        "title": "应用区域IPAdapter",
         "inputs": {
-            "ipadapter_pipe": "IP适配束",
-            "regional_ipadapter1": "区域IP适配1"
+            "ipadapter_pipe": "IPAdapter束",
+            "regional_ipadapter1": "区域IPAdapter1"
         },
         "outputs": {
             "MODEL": "模型"
