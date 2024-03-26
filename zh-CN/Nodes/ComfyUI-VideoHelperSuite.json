@@ -292,12 +292,13 @@
             "force_size": "强制尺寸",
                 "Disabled": "关闭",
             "frame_load_cap": "帧数读取上限",
-            "skip_first_frames": "跳过第一帧",
+            "skip_first_frames": "跳过前X帧",
             "select_every_nth": "模选"
         },
         "outputs": {
             "IMAGE": "图像",
-            "frame_count": "帧计数"
+            "frame_count": "帧计数",
+            "audio": "音频"
         }
     },
     "VHS_LoadVideoPath": {

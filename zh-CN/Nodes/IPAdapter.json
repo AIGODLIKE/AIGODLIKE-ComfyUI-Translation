@@ -1,6 +1,6 @@
 {
     "IPAdapter": {
-        "title": "IP适配加载器",
+        "title": "IPAdapter加载器",
         "inputs": {
             "model": "模型",
             "image": "图像",

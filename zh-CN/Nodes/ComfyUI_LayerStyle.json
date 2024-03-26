@@ -263,6 +263,28 @@
             "image": "图像"
         }
     },
+    "LayerColor: Color of Shadow & Highlight": {
+        "title": "阴影与高光",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "shadow_brightness": "阴影亮度",
+            "shadow_saturation": "阴影饱和度",
+            "shadow_hue": "阴影色相",
+            "shadow_level_offset": "阴影强度",
+            "shadow_range": "阴影范围",
+            "highlight_brightness": "高光亮度",
+            "highlight_saturation": "高光饱和度",
+            "highlight_hue": "高光色相",
+            "highlight_level_offset": "高光强度",
+            "highlight_range": "高光范围"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
     "LayerColor: YUV": {
         "title": "RGB",
         "inputs": {
@@ -320,6 +342,28 @@
         "inputs": {
             "image": "图像",
             "mask_for_crop": "遮罩"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "detect": "检测方法",
+            "top_reserve": "顶端保留",
+            "bottom_reserve": "底部保留",
+            "left_reserve": "左侧保留",
+            "right_reserve": "右侧保留"
+        },
+        "outputs": {
+            "croped_image": "裁剪图像",
+            "croped_mask": "裁剪遮罩",
+            "crop_box": "裁剪框",
+            "box_preview": "裁剪框预览"
+        }
+    },
+    "LayerUtility: CropByMask V2": {
+        "title": "遮罩裁剪_V2",
+        "inputs": {
+            "image": "图像",
+            "mask_for_crop": "遮罩",
+            "crop_box": "裁剪框"
         },
         "widgets": {
             "invert_mask": "反转遮罩",
@@ -426,13 +470,43 @@
             "ultra_detail_range": "细化边缘",
             "matting_method": "遮罩生成方法",
             "sam_model": "SAM模型",
+            "grounding_dino_model": "GroundingDINO模型",
             "sam_threshold": "SAM阈值",
             "sam_prompt": "SAM提示词"
         },
         "outputs": {
-            "croped_image": "裁剪图像",
-            "croped_mask": "裁剪遮罩",
-            "box_preview": "裁剪框预览"
+            "cropped_image": "裁剪图像",
+            "box_preview": "裁剪框预览",
+            "cropped_mask": "裁剪遮罩"
+        }
+    },
+    "LayerUtility: ImageAutoCrop V2": {
+        "title": "图像自动裁剪",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "fill_background": "填充背景",
+            "background_color": "背景颜色",
+            "aspect_ratio": "宽高比",
+            "proportional_height": "比例高",
+            "proportional_width": "比例宽",
+            "scale_to_longest_side": "按长边缩放",
+            "longest_side": "长边长度",
+            "detect": "检测方法",
+            "border_reserve": "保留边框",
+            "ultra_detail_range": "细化边缘",
+            "matting_method": "遮罩生成方法",
+            "sam_model": "SAM模型",
+            "grounding_dino_model": "GroundingDINO模型",
+            "sam_threshold": "SAM阈值",
+            "sam_prompt": "SAM提示词"
+        },
+        "outputs": {
+            "cropped_image": "裁剪图像",
+            "box_preview": "裁剪框预览",
+            "cropped_mask": "裁剪遮罩"
         }
     },
     "LayerUtility: ImageBlend": {
@@ -546,6 +620,19 @@
         "outputs": {
             "image": "图像",
             "mask": "遮罩"
+        }
+    },
+    "LayerUtility: ImageRemoveAlpha": {
+        "title": "移除Alpha",
+        "inputs": {
+            "RGBA_image": "RGBA图像"
+        },
+        "widgets": {
+            "fill_background": "填充背景",
+            "background_color": "背景颜色"
+        },
+        "outputs": {
+            "RGB_image": "RGB图像"
         }
     },
     "LayerUtility: ImageScaleByAspectRatio": {
@@ -711,6 +798,20 @@
             "anything": "任意"
         }
     },
+    "LayerUtility: PromptEmbellish": {
+        "title": "提示词润色",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "api": "API",
+            "token_limit": "Token限制",
+            "describe": "描述"
+        },
+        "outputs": {
+            "text": "文本"
+        }
+    },
     "LayerUtility: PromptTagger": {
         "title": "提示词反推",
         "inputs": {
@@ -789,6 +890,18 @@
         "outputs": {
             "image": "图像",
             "mask": "遮罩"
+        }
+    },
+    "LayerUtility: TextJoin": {
+        "title": "文本合并",
+        "widgets": {
+            "text_1": "文本_1",
+            "text_2": "文本_2",
+            "text_3": "文本_3",
+            "text_4": "文本_4"
+        },
+        "outputs": {
+            "text": "文本"
         }
     },
     "LayerUtility: XY to Percent": {
@@ -950,6 +1063,24 @@
     },
 
 
+    "LayerMask: BiRefNetUltra": {
+        "title": "BiRefNetUltra",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
     "LayerMask: CreateGradientMask": {
         "title": "生成渐变遮罩",
         "inputs": {
@@ -1032,6 +1163,28 @@
             "fix_gap": "填缝",
             "fix_threshold": "修补阈值",
             "detail_range": "细节范围",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: MaskEdgeUltraDetail V2": {
+        "title": "遮罩细化_V2",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "method": "方法",
+            "mask_grow": "遮罩扩张",
+            "fix_gap": "填缝",
+            "fix_threshold": "修补阈值",
+            "edge_erode": "边缘消融",
+            "edge_dilate": "边缘膨胀",
+            "edte_dilate": "边缘膨胀",
             "black_point": "黑色阈值",
             "white_point": "白色阈值"
         },
@@ -1139,6 +1292,31 @@
             "mask": "遮罩"
         }
     },
+    "LayerMask: PersonMaskUltra V2": {
+        "title": "人像遮罩Ultra_V2",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "face": "面部",
+            "hair": "头发",
+            "body": "身体",
+            "clothes": "衣服",
+            "accessories": "饰品",
+            "background": "背景",
+            "confidence": "置信度",
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
     "LayerMask: PixelSpread": {
         "title": "像素扩张",
         "inputs": {
@@ -1169,6 +1347,24 @@
             "mask": "遮罩"
         }
     },
+    "LayerMask: RmBgUltra V2": {
+        "title": "移除背景_V2",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
     "LayerMask: SegmentAnythingUltra": {
         "title": "SegmentAnythingUltra",
         "inputs": {
@@ -1187,6 +1383,45 @@
         "outputs": {
             "image": "图像",
             "mask": "遮罩"
+        }
+    },
+    "LayerMask: SegmentAnythingUltra V2": {
+        "title": "SegmentAnythingUltra_V2",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "sam_model": "SAM模型",
+            "grounding_dino_model": "GroundingDINO模型",
+            "threshold": "阈值",
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "prompt": "提示词"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: Shadow & Highlight Mask": {
+        "title": "阴影与高光遮罩",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "shadow_level_offset": "阴影强度",
+            "shadow_range": "阴影范围",
+            "highlight_level_offset": "高光强度",
+            "highlight_range": "高光范围"
+        },
+        "outputs": {
+            "shadow_mask": "阴影遮罩",
+            "highlight_mask": "高光遮罩"
         }
     }
 }

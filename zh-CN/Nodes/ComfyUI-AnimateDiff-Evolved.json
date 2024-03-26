@@ -283,20 +283,121 @@
             "prev_pe_adjust": "前PE设置"
         },
         "widgets": {
-            "cap_initial_pe_length": "cap_initial_pe_length",
-            "interpolate_pe_to_length": "interpolate_pe_to_length",
-            "initial_pe_idx_offset": "initial_pe_idx_offset",
-            "final_pe_idx_offset": "final_pe_idx_offset",
+            "cap_initial_pe_length": "初始PE长度上限",
+            "interpolate_pe_to_length": "插入PE到长度",
+            "initial_pe_idx_offset": "初始PE索引偏移",
+            "final_pe_idx_offset": "最终PE索引偏移",
             "print_adjustment": "输出调整量"
         },
         "outputs": {
             "PE_ADJUST": "PE设置"
         }
     },
+
+
+    "ADE_AdjustWeightAllAdd": {
+        "title": "微调权重(全部-相加)",
+        "inputs": {
+            "prev_weight_adjust": "前权重微调"
+        },
+        "widgets": {
+            "all_ADD": "全部_相加",
+            "print_adjustment": "输出调整量"
+        },
+        "outputs": {
+            "WEIGHT_ADJUST": "权重微调"
+        }
+    },
+    "ADE_AdjustWeightAllMult": {
+        "title": "微调权重(全部-相乘)",
+        "inputs": {
+            "prev_weight_adjust": "前权重微调"
+        },
+        "widgets": {
+            "all_MULT": "全部_相乘",
+            "print_adjustment": "输出调整量"
+        },
+        "outputs": {
+            "WEIGHT_ADJUST": "权重微调"
+        }
+    },
+    "ADE_AdjustWeightIndivAdd": {
+        "title": "微调权重(独立-相加)",
+        "inputs": {
+            "prev_weight_adjust": "前权重微调"
+        },
+        "widgets": {
+            "pe_ADD": "PE_相加",
+            "attn_ADD": "关注层_相加",
+            "other_ADD": "其他_相加",
+            "print_adjustment": "输出调整量"
+        },
+        "outputs": {
+            "WEIGHT_ADJUST": "权重微调"
+        }
+    },
+    "ADE_AdjustWeightIndivMult": {
+        "title": "微调权重(独立-相乘)",
+        "inputs": {
+            "prev_weight_adjust": "前权重微调"
+        },
+        "widgets": {
+            "pe_MULT": "PE_相乘",
+            "attn_MULT": "关注层_相乘",
+            "other_MULT": "其他_相乘",
+            "print_adjustment": "输出调整量"
+        },
+        "outputs": {
+            "WEIGHT_ADJUST": "权重微调"
+        }
+    },
+    "ADE_AdjustWeightIndivAttnMult": {
+        "title": "微调权重(独立-关注层-相加)",
+        "inputs": {
+            "prev_weight_adjust": "前权重微调"
+        },
+        "widgets": {
+            "pe_ADD": "PE_相加",
+            "attn_ADD": "关注层_相加",
+            "attn_q_ADD": "关注层_q_相加",
+            "attn_k_ADD": "关注层_k_相加",
+            "attn_v_ADD": "关注层_v_相加",
+            "attn_out_weight_ADD": "attn_out_weight_ADD",
+            "attn_out_bias_ADD": "attn_out_bias_ADD",
+            "other_ADD": "其他_相加",
+            "print_adjustment": "输出调整量"
+        },
+        "outputs": {
+            "WEIGHT_ADJUST": "权重微调"
+        }
+    },
+    "ADE_AdjustWeightIndivAttnAdd": {
+        "title": "微调权重(独立-关注层-相乘)",
+        "inputs": {
+            "prev_weight_adjust": "前权重微调"
+        },
+        "widgets": {
+            "pe_ADD": "PE_相乘",
+            "attn_ADD": "关注层_相乘",
+            "attn_q_ADD": "关注层_q_相乘",
+            "attn_k_ADD": "关注层_k_相乘",
+            "attn_v_ADD": "关注层_v_相乘",
+            "attn_out_weight_ADD": "attn_out_weight_ADD",
+            "attn_out_bias_ADD": "attn_out_bias_ADD",
+            "other_ADD": "其他_相乘",
+            "print_adjustment": "输出调整量"
+        },
+        "outputs": {
+            "WEIGHT_ADJUST": "权重微调"
+        }
+    },
+
+
     "ADE_AnimateDiffSettings": {
         "title": "AnimateDiff设置",
         "inputs": {
-            "pe_adjust": "PE设置"
+            "pe_adjust": "PE设置",
+            "weight_adjust": "微调权重"
         },
         "outputs": {
             "AD_SETTINGS": "AD设置"
@@ -383,6 +484,70 @@
     },
 
 
+    "ADE_InjectI2VIntoAnimateDiffModel": {
+        "title": "插入I2V到AnimateDiff模型",
+        "inputs": {
+            "motion_model": "动态模型",
+            "ad_settings": "AD设置"
+        },
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "MOTION_MODEL": "动态模型"
+        }
+    },
+    "ADE_ApplyAnimateLCMI2VModel": {
+        "title": "应用AnimateLCM-I2V模型",
+        "inputs": {
+            "motion_model": "动态模型",
+            "ref_latent": "参考Latent",
+            "motion_lora": "动态LoRA",
+            "scale_multival": "缩放多值",
+            "effect_multival": "效果多值",
+            "ad_keyframes": "AD关键帧",
+            "prev_m_models": "前动态模型组"
+        },
+        "widgets": {
+            "ref_drift": "ref_drift",
+            "apply_ref_when_disabled": "apply_ref_when_disabled",
+            "start_percent": "开始位置",
+            "end_percent": "结束位置"
+        },
+        "outputs": {
+            "M_MODELS": "动态模型组"
+        }
+    },
+    "ADE_LoadAnimateLCMI2VModel": {
+        "title": "加载AnimateLCM-I2V模型",
+        "inputs": {
+            "ad_settings": "AD设置"
+        },
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "MOTION_MODEL": "动态模型",
+            "encoder_only": "仅encoder"
+        }
+    },
+    "ADE_UpscaleAndVAEEncode": {
+        "title": "放大并VAE编码",
+        "inputs": {
+            "image": "图像",
+            "vae": "VAE",
+            "latent_size": "Latent尺寸"
+        },
+        "widgets": {
+            "scale_method": "放大方法",
+            "crop": "裁剪"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+
+
     "ADE_UseEvolvedSampling": {
         "title": "使用高级采样",
         "inputs": {
@@ -463,7 +628,7 @@
             "iteration_opts": "迭代设置",
             "custom_cfg": "自定CFG",
             "sigma_schedule": "Sigma调度",
-            "seed_override": "随机种"
+            "seed_override": "覆盖随机种"
         },
         "widgets": {
             "batch_offset": "批次偏移",
