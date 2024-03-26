@@ -13,7 +13,10 @@
         "widgets": {
             "start_percent": "开始位置",
             "strength": "强度",
-            "null_latent_kf_stre": "空Latent关键帧强度"
+            "null_latent_kf_stre": "空Latent关键帧强度",
+            "null_latent_kf_strength": "空Latent关键帧强度",
+            "inherit_missing": "缺失值自动继承",
+            "gurantee_usage": "gurantee_usage"
         },
         "outputs": {
             "TIMESTEP_KEYFRAME": "帧间隔",
@@ -44,7 +47,7 @@
             "latent_optional": "Latent"
         },
         "widgets": {
-            "index_strength": "索引强度",
+            "index_strengths": "索引强度",
             "print_keyframes": "输出关键帧到控制台"
         },
         "outputs": {
@@ -56,7 +59,8 @@
         "title": "Latent关键帧组合",
         "inputs": {
             "prev_latent_keyframe": "Latent关键帧",
-            "prev_latent_kf": "Latent关键帧"
+            "prev_latent_kf": "Latent关键帧",
+            "float_strengths": "浮点强度组"
         },
         "widgets": {
             "strengths": "强度",
@@ -128,8 +132,9 @@
             "image": "图像",
             "mask_optional": "遮罩",
             "timestep_kf": "帧间隔",
-            "latent_kf_override": "Latent关键帧",
-            "weights_override": "ControlNet权重"
+            "latent_kf_override": "覆盖Latent关键帧",
+            "weights_override": "覆盖ControlNet权重",
+            "model_optional": "模型(可选)"
         },
         "widgets": {
             "strength": "强度",
@@ -138,7 +143,8 @@
         },
         "outputs": {
             "positive": "正面条件",
-            "negative": "负面条件"
+            "negative": "负面条件",
+            "model": "模型"
         }
     },
     
