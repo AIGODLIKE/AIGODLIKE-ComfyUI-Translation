@@ -368,6 +368,22 @@
             "neg_embed": "负面嵌入组"
         }
     },
+    "IPAdapterCombineEmbeds": {
+        "title": "IPAdapter合并嵌入组",
+        "inputs": {
+            "embed1": "嵌入组1",
+            "embed2": "嵌入组2",
+            "embed3": "嵌入组3",
+            "embed4": "嵌入组4",
+            "embed5": "嵌入组5"
+        },
+        "widgets": {
+            "method": "方法"
+        },
+        "outputs": {
+            "EMBEDS": "嵌入组"
+        }
+    },
     "IPAdapterNoise": {
         "title": "IPAdapter噪波",
         "inputs": {
