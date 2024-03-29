@@ -1474,16 +1474,16 @@
         }
     },
     "easy imageScaleDownBy": {
-      "title": "图像缩小（按比例）",
-      "inputs": {
-       "images": "图像"
-      },
-      "widgets": {
-        "scale_by": "缩小比例"
-      },
-      "outputs": {
-       "IMAGE": "图像"
-      }
+        "title": "图像缩小（按比例）",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "scale_by": "缩小比例"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
     },
     "easy imageScaleDownToSize": {
         "title": "图像缩小（按边）",

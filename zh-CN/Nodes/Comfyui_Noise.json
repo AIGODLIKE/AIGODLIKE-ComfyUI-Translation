@@ -83,9 +83,9 @@
     "BNK_SlerpLatent": {
         "title": "Latent插值",
         "inputs": {
-        "latents1": "Latent1",
-        "latents2": "Latent2",
-        "mask": "遮罩"
+            "latents1": "Latent1",
+            "latents2": "Latent2",
+            "mask": "遮罩"
         },
         "widgets": {
             "factor": "系数"

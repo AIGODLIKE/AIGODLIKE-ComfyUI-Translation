@@ -1,0 +1,37 @@
+{
+    "Automatic CFG": {
+        "title": "自动CFG",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "boost": "加速"
+        },
+        "MODEL": "模型"
+    },
+    "Automatic CFG - Negative": {
+        "title": "自动CFG(负面)",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "boost": "加速",
+            "negative_strength": "负面强度"
+        }
+    },
+    "Automatic CFG - Advanced settings": {
+        "title": "自动CFG(高级)",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "center_mean_post_cfg": "center_mean_post_cfg",
+            "center_mean_to_sigma": "center_mean_to_sigma",
+            "automatic_cfg": "automatic_cfg",
+            "sigma_boost": "sigma_boost",
+            "sigma_boost_percentage": "sigma_boost_percentage",
+            "lerp_uncond": "lerp_uncond",
+            "lerp_uncond_strength": "lerp_uncond_strength"
+        }
+    }
+}

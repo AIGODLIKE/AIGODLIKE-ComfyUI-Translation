@@ -1,0 +1,434 @@
+{
+    "IPAdapterApply": {
+        "title": "IPAdapter应用",
+        "inputs": {
+            "ipadapter": "IPAdapter",
+            "clip_vision": "CLIP视觉",
+            "image": "图像",
+            "model": "模型",
+            "attn_mask": "关注层遮罩"
+        },
+        "widgets": {
+            "weight": "权重",
+            "noise": "噪波增强",
+            "weight_type": "权重类型",
+                "original": "初始",
+                "linear": "线性",
+                "channel penalty": "通道惩罚",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterApplyFaceID": {
+        "title": "IPAdapter应用(FaceID)",
+        "inputs": {
+            "ipadapter": "IPAdapter",
+            "clip_vision": "CLIP视觉",
+            "insightface": "InsightFace",
+            "image": "图像",
+            "model": "模型",
+            "attn_mask": "关注层遮罩"
+        },
+        "widgets": {
+            "weight": "权重",
+            "noise": "噪波增强",
+            "weight_type": "权重类型",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "faceid_v2": "FaceID_V2",
+            "weight_v2": "权重_V2",
+            "unfold_batch": "展开批次"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterApplyEncoded": {
+        "title": "IPAdapter应用(已编码)",
+        "inputs": {
+            "ipadapter": "IPAdapter",
+            "embeds": "嵌入组",
+            "model": "模型",
+            "attn_mask": "关注层遮罩"
+        },
+        "widgets": {
+            "weight": "权重",
+            "noise": "噪波增强",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterBatchEmbeds": {
+        "title": "组合嵌入组",
+        "inputs": {
+            "embed1": "嵌入组1",
+            "embed2": "嵌入组2"
+        },
+        "outputs": {
+            "EMBEDS": "嵌入组"
+        }
+    },
+
+    "InsightFaceLoader": {
+        "title": "InsightFace加载器",
+        "widgets": {
+            "provider": "设备"
+        },
+        "outputs": {
+            "CLIP_VISION": "CLIP视觉"
+        }
+    },
+    "PrepImageForInsightFace": {
+        "title": "InsightFace预处理",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "crop_position": "裁剪位置",
+            "sharpening": "锐化",
+            "pad_around": "填充四周"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+
+
+
+    "IPAdapter": {
+        "title": "应用IPAdapter",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "图像",
+            "attn_mask": "关注层遮罩"
+        },
+        "widgets": {
+            "weight": "权重",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP_VISION_OUTPUT": "CLIP视觉输出"
+        }
+    },
+    "IPAdapterAdvanced": {
+        "title": "应用IPAdapter(高级)",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "正面图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_type": "权重类型",
+            "combine_embeds": "合并嵌入组",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入组缩放"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterBatch": {
+        "title": "应用IPAdapter(批次)",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "正面图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_type": "权重类型",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入组缩放"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterFaceID": {
+        "title": "应用IPAdapterFaceID",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "正面图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉",
+            "insightface": "InsightFace"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_faceidv2": "FaceID_V2权重",
+            "weight_type": "权重类型",
+            "combine_embeds": "合并嵌入组",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入组缩放"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterFaceIDBatch": {
+        "title": "应用IPAdapterFaceID(批次)",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "正面图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉",
+            "insightface": "InsightFace"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_faceidv2": "FaceID_V2权重",
+            "weight_type": "权重类型",
+            "combine_embeds": "合并嵌入组",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入组缩放"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAAdapterFaceIDBatch": {
+        "title": "应用IPAdapterFaceID(批次)",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "正面图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉",
+            "insightface": "InsightFace"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_faceidv2": "FaceID_V2权重",
+            "weight_type": "权重类型",
+            "combine_embeds": "合并嵌入组",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入组缩放"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterTiled": {
+        "title": "应用IPAdapter(分块)",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "正面图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_type": "权重类型",
+            "combine_embeds": "合并嵌入组",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "sharpening": "锐化",
+            "embeds_scaling": "嵌入组缩放"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "tiles": "分块图像",
+            "masks": "遮罩"
+        }
+    },
+    "IPAdapterTiledBatch": {
+        "title": "应用IPAdapter(分块批次)",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image": "正面图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_type": "权重类型",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "sharpening": "锐化",
+            "embeds_scaling": "嵌入组缩放"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "tiles": "分块图像",
+            "masks": "遮罩"
+        }
+    },
+    "IPAdapterEmbeds": {
+        "title": "应用IPAdapter(嵌入组)",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "pos_embed": "正面嵌入组",
+            "neg_embed": "负面嵌入组",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_type": "权重类型",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入组缩放"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterUnifiedLoader": {
+        "title": "IPAdapter统一应用",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter"
+        },
+        "widgets": {
+            "preset": "预设"
+        },
+        "outputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter"
+        }
+    },
+    "IPAdapterUnifiedLoaderFaceID": {
+        "title": "IPAdapterFaceID统一应用",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter"
+        },
+        "widgets": {
+            "preset": "预设",
+            "lora_strength": "LoRA强度",
+            "provider": "设备"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "ipadapter": "IPAdapter"
+        }
+    },
+    "IPAdapterModelLoader": {
+        "title": "IPAdapter加载器",
+        "widgets": {
+            "ipadapter_file": "IPAdapter文件"
+        },
+        "outputs": {
+            "IPADAPTER": "IPAdapter"
+        }
+    },
+    "IPAdapterInsightFaceLoader": {
+        "title": "IPAdapterInsightFace加载器",
+        "widgets": {
+            "provider": "设备"
+        },
+        "outputs": {
+            "INSIGHTFACE": "InsightFace"
+        }
+    },
+    "IPAdapterEncoder": {
+        "title": "IPAdapter编码",
+        "inputs": {
+            "ipadapter": "IPAdapter",
+            "clip_vision": "CLIP视觉",
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "weight": "权重"
+        },
+        "outputs": {
+            "pos_embed": "正面嵌入组",
+            "neg_embed": "负面嵌入组"
+        }
+    },
+    "IPAdapterCombineEmbeds": {
+        "title": "IPAdapter合并嵌入组",
+        "inputs": {
+            "embed1": "嵌入组1",
+            "embed2": "嵌入组2",
+            "embed3": "嵌入组3",
+            "embed4": "嵌入组4",
+            "embed5": "嵌入组5"
+        },
+        "widgets": {
+            "method": "方法"
+        },
+        "outputs": {
+            "EMBEDS": "嵌入组"
+        }
+    },
+    "IPAdapterNoise": {
+        "title": "IPAdapter噪波",
+        "inputs": {
+            "image_optional": "图像(可选)"
+        },
+        "widgets": {
+            "type": "类型",
+            "strength": "强度",
+            "blur": "模糊"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "PrepImageForClipVision": {
+        "title": "CLIP视觉图像处理",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "interpolation": "插值方式",
+            "crop_position": "裁剪位置",
+            "sharpening": "锐化",
+            "add_weight": "附加权重"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "IPAdapterSaveEmbeds": {
+        "title": "保存嵌入组",
+        "inputs": {
+            "embeds": "嵌入组"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀"
+        }
+    },
+    "IPAdapterLoadEmbeds": {
+        "title": "读取嵌入组",
+        "widgets": {
+            "embeds": "嵌入组"
+        },
+        "outputs": {
+            "EMBEDS": "嵌入组"
+        }
+    }
+}
