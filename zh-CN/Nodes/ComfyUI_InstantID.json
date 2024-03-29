@@ -68,7 +68,7 @@
         }
     },
     "FaceKeypointsPreprocessor": {
-        "titlte": "面部关键点预处理器",
+        "title": "面部关键点预处理器",
         "inputs": {
             "faceanalysis": "面部分析",
             "image": "图像"
