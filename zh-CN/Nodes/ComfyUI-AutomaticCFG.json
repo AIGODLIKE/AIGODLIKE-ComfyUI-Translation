@@ -7,7 +7,9 @@
         "widgets": {
             "boost": "加速"
         },
-        "MODEL": "模型"
+        "outputs": {
+            "MODEL": "模型"
+        }
     },
     "Automatic CFG - Negative": {
         "title": "自动CFG(负面)",
@@ -17,6 +19,9 @@
         "widgets": {
             "boost": "加速",
             "negative_strength": "负面强度"
+        },
+        "outputs": {
+            "MODEL": "模型"
         }
     },
     "Automatic CFG - Advanced settings": {
@@ -32,6 +37,9 @@
             "sigma_boost_percentage": "sigma_boost_percentage",
             "lerp_uncond": "lerp_uncond",
             "lerp_uncond_strength": "lerp_uncond_strength"
+        },
+        "outputs": {
+            "MODEL": "模型"
         }
     }
 }
