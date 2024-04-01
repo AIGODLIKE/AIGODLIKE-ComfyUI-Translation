@@ -668,7 +668,7 @@
                 "Manga2Anime_LineArt_Preprocessor": "MangaAnime漫画艺术线预处理器",
                 "DWPreprocessor": "DW姿态预处理器",
                 "Scribble_XDoG_Preprocessor": "ScribbleXDoG涂鸦预处理器",
-                "SAM Segmentor": "SAM分割",
+                "SAM Segmentor": "SAM Segmentor",
                 "SAMPreprocessor": "SAM预处理器",
                 "resolution": "分辨率"
         },
@@ -714,7 +714,7 @@
         }
     },
     "SAM Segmentor": {
-        "title": "SAM分割",
+        "title": "SAM Segmentor",
         "inputs": {
             "image": "图像"
         },
