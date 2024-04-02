@@ -318,6 +318,7 @@
     "essentials": "Essen节点",
     "VLM Nodes": "VLM节点",
     "ComfyUI-Frame_Interpolation": "插帧",
+    "Literals": "常量",
 
     "basic_pipe": "基础节点束",
     "bbox_detector": "BBox检测",
