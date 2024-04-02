@@ -233,7 +233,7 @@
     "Zuellni": "Zue节点",
     "mcmonkey": "mcm节点",
     "Masquerade Nodes": "Masque节点",
-    "Adv-ControlNet 🛂🅐🅒🅝": "高级ControlNet",
+    "Adv-ControlNet 🛂🅐🅒🅝": "高级ControlNet 🛂🅐🅒🅝",
         "keyframes": "关键帧",
         "weights": "权重",
         "preprocess": "预处理",
@@ -318,6 +318,7 @@
     "essentials": "Essen节点",
     "VLM Nodes": "VLM节点",
     "ComfyUI-Frame_Interpolation": "插帧",
+    "Literals": "常量",
 
     "basic_pipe": "基础节点束",
     "bbox_detector": "BBox检测",

@@ -1,0 +1,29 @@
+{
+    "KepStringLiteral": {
+        "title": "字符串",
+        "widgets": {
+            "String": "字符串"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Operation": {
+        "title": "操作",
+        "inputs": {
+            "A - Int": "A - 整数",
+            "A - Float": "A - 浮点",
+            "B - Int": "B - 整数",
+            "B - Float": "B - 浮点"
+        },
+        "widgets": {
+            "A Type": "A类型",
+            "B Type": "B类型",
+            "Operation": "操作"
+        },
+        "outputs": {
+            "INT": "整数",
+            "FLOAT": "浮点"
+        }
+    }
+}
