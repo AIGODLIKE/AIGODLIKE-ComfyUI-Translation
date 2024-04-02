@@ -37,6 +37,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[AnimateAnyone](https://github.com/MrForExample/ComfyUI-AnimateAnyone-Evolved.git)|√|TODO|√|TODO|TODO|
 |[AnimateDiff](https://github.com/ArtVentureX/comfyui-animatediff)|√|√|√|√|TODO|
 |[AnimateDiff-Evolved](https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved.git)|√|√|√|TODO|TODO|
+|[Automatic CFG](https://github.com/Extraltodeus/ComfyUI-AutomaticCFG.git)|√|TODO|√|TODO|TODO|
 |[BiRefNet](https://github.com/viperyl/ComfyUI-BiRefNet.git)|√|TODO|√|TODO|TODO|
 |[CLIP Seg](https://github.com/biegert/ComfyUI-CLIPSeg)|√|√|√|√|TODO|
 |[ComfyRoll](https://github.com/RockOfFire/ComfyUI_Comfyroll_CustomNodes)|√|√|√|TODO|TODO|
@@ -60,6 +61,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[experiments](https://github.com/comfyanonymous/ComfyUI_experiments)|√|√|√|TODO|TODO|
 |[Fast Decode](https://github.com/nagolinc/ComfyUI_FastVAEDecorder_SDXL)|√|√|√|√|TODO|
 |[FlowtyTripoSR](https://github.com/flowtyone/ComfyUI-Flowty-TripoSR.git)|√|TODO|√|TODO|TODO|
+|[Frame Interpolation](https://github.com/Fannovel16/ComfyUI-Frame-Interpolation.git)|√|TODO|√|TODO|TODO|
 |[FreeU Advanced](https://github.com/WASasquatch/FreeU_Advanced)|√|TODO|√|TODO|TODO|
 |[IPAdapter](https://github.com/laksjdjf/IPAdapter-ComfyUI)|√|√|√|TODO|TODO|
 |[IPAdapter_plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus)|√|√|√|TODO|TODO|
@@ -75,6 +77,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[LayerDiffuse](https://github.com/huchenlei/ComfyUI-layerdiffuse)|√|TODO|√|TODO|TODO|
 |[LayerStyle](https://github.com/chflame163/ComfyUI_LayerStyle)|√|TODO|√|TODO|TODO|
 |[LCM](https://github.com/0xbitches/ComfyUI-LCM)|√|TODO|√|TODO|TODO|
+|[Literals](https://github.com/M1kep/ComfyLiterals.git)|√|TODO|√|TODO|TODO|
 |[Manager](https://github.com/ltdrdata/ComfyUI-Manager)|√|√|√|TODO|TODO|
 |[Masquerade Nodes](https://github.com/BadCafeCode/masquerade-nodes-comfyui)|√|√|√|TODO|TODO|
 |[Math](https://github.com/evanspearman/ComfyMath.git)|√|TODO|√|TODO|TODO|
@@ -89,6 +92,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[QR](https://github.com/coreyryanhanson/comfy-qr)|√|√|√|TODO|TODO|
 |[OneButtonPrompt](https://github.com/AIrjen/OneButtonPrompt)|√|TODO|√|TODO|TODO|
 |[ReActor](https://github.com/Gourieff/comfyui-reactor-node)|√|TODO|√|TODO|TODO|
+|[ResAdapter](https://github.com/jiaxiangc/ComfyUI-ResAdapter.git)|√|TODO|√|TODO|TODO|
 |[Restart-Sampling](https://github.com/ssitu/ComfyUI_restart_sampling)|√|√|√|TODO|TODO|
 |[Roop](https://github.com/Navezjt/ComfyUI_roop.git)|√|TODO|√|TODO|TODO|TODO|
 |[rgthree](https://github.com/rgthree/rgthree-comfy.git)|√|TODO|√|TODO|TODO|
