@@ -1,4 +1,5 @@
 {
+	"utils": "utils",
     "sampling": "sampling",
     "loaders": "loaders",
     "video_models": "video_models",
@@ -34,7 +35,6 @@
     "conditioning1": "conditioning1",
     "model_merging": "model_merging",
     "model_patches": "model_patches",
-    "utils": "утилиты",
     "Comfy-QR": "Comfy-QR",
     "ComfyQR": "ComfyQR",
     "Animate Diff": "Animate Diff",
