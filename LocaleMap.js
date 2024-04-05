@@ -675,10 +675,10 @@ export const LOCALES = {
   //   "nativeName": "Русский",
   //   "englishName": "Russian"
   // },
-  // "ru-RU": {
-  //   "nativeName": "Русский",
-  //   "englishName": "Russian"
-  // },
+ "ru-RU": {
+   "nativeName": "Русский",
+   "englishName": "Russian"
+ },
   // "sa-IN": {
   //   "nativeName": "संस्कृतम्",
   //   "englishName": "Sanskrit"
