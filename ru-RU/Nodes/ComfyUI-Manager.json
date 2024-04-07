@@ -1,0 +1,10 @@
+{
+    "Terminal Log //CM": {
+        "title": "Лог терминала (Менеджер)",
+        "widgets": {
+            "text": "text",
+            "mode": "режим",
+            "lines": "строк"
+        }
+    }
+}

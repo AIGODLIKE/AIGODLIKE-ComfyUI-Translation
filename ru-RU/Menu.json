@@ -1,4 +1,6 @@
 {
+	"[save] Show project name on menu": "Показать имя проекта в меню",
+	"This will replace the save button function and propose the name of project as filename!": "Это заменит кнопку",
     "Add Node": "Добавить ноду",
     "Add Group": "Добавить группу",
     "Add Stack": "Создать новый Stack",
@@ -8,7 +10,7 @@
     "Font size": "Размер шрифта",
     "font_size": "размер_шрифта",
 	"utils": "utils",
-    "Note": "Note",
+    "Note": "Заметка",
     "Primitive": "Primitive",
     "Reroute": "Reroute",
     "Ok": "Ok",

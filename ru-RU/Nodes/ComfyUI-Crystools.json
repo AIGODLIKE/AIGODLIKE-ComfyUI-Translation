@@ -1,0 +1,324 @@
+{
+    "Show Metadata [Crystools]": {
+        "title": "Монитор метаданных",
+        "widgets": {
+            "Active": "Монитор активен",
+            "Parsed": "Форматировать код",
+            "What": "Что",
+                "Prompt": "Промпт",
+                "Workflow": "Workflow"
+        }
+    },
+    "Show any [Crystools]": {
+        "title": "Вывод всего в ноду/терминал",
+        "inputs": {
+            "any_value": "что угодно"
+        },
+        "widgets": {
+            "console": "окно терминала",
+            "display": "окно ноды",
+            "prefix": "префикс для окна терминала"
+        }
+    },
+    "Show any to JSON [Crystools]": {
+        "title": "Вывод всего в JSON",
+        "inputs": {
+            "any_value": "что угодно"
+        },
+        "outputs": {
+            "string": "string"
+        }
+    },
+
+    "Primitive boolean [Crystools]": {
+        "title": "Логический примитив",
+        "widgets": {
+            "boolean": "boolean"
+        },
+        "outputs": {
+            "boolean": "boolean"
+        }
+    },
+    "Primitive string [Crystools]": {
+        "title": "Строковый примитив",
+        "widgets": {
+            "string": "string"
+        },
+        "outputs": {
+            "string": "string"
+        }
+    },
+    "Primitive string multiline [Crystools]": {
+        "title": "Многострочный примитив",
+        "widgets": {
+            "string": "string"
+        },
+        "outputs": {
+            "string": "string"
+        }
+    },
+    "Primitive integer [Crystools]": {
+        "title": "Числовой примитив",
+        "widgets": {
+            "int": "integer"
+        },
+        "outputs": {
+            "int": "integer"
+        }
+    },
+    "Primitive float [Crystools]": {
+        "title": "Float-примитив",
+        "widgets": {
+            "float": "float"
+        },
+        "outputs": {
+            "float": "float"
+        }
+    },
+
+
+    "List of any [Crystools]": {
+        "title": "Произвольный список",
+        "inputs": {
+            "any_1": "данные-1",
+            "any_2": "данные-2",
+            "any_3": "данные-3",
+            "any_4": "данные-4",
+            "any_5": "данные-5",
+            "any_6": "данные-6",
+            "any_7": "данные-7",
+            "any_8": "данные-8"
+        },
+        "outputs": {
+            "any_list": "данные"
+        }
+    },
+    "List of strings [Crystools]": {
+        "title": "Список строк",
+        "widgets": {
+            "string_1": "строка_1",
+            "string_2": "строка_1",
+            "string_3": "строка_1",
+            "string_4": "строка_1",
+            "string_5": "строка_1",
+            "string_6": "строка_1",
+            "string_7": "строка_1",
+            "string_8": "строка_1",
+            "delimiter": "разделитель"
+        },
+        "outputs": {
+            "concatenated": "слияние",
+            "list_string": "массив"
+        }
+    },
+    "Switch any [Crystools]": {
+        "title": "Перекалючатель",
+        "inputs": {
+            "on_true": "если true",
+            "on_false": "если false"
+        },
+        "widgets": {
+            "boolean": "boolean"
+        },
+        "outputs": {
+            "*": "*"
+        }
+    },
+    "Switch latent [Crystools]": {
+        "title": "Переключатель латента",
+        "inputs": {
+            "on_true": "Latent если true",
+            "on_false": "Latent если false"
+        },
+        "widgets": {
+            "boolean": "boolean"
+        },
+        "outputs": {
+            "latent": "Latent"
+        }
+    },
+    "Switch conditioning [Crystools]": {
+        "title": "Переключатель condition",
+        "inputs": {
+            "on_true": "condition если true",
+            "on_false": "condition если false"
+        },
+        "widgets": {
+            "boolean": "boolean"
+        },
+        "outputs": {
+            "conditioning": "condition"
+        }
+    },
+    "Switch image [Crystools]": {
+        "title": "Переключатель image",
+        "inputs": {
+            "on_true": "image если true",
+            "on_false": "image если false"
+        },
+        "widgets": {
+            "boolean": "boolean"
+        },
+        "outputs": {
+            "image": "image"
+        }
+    },
+    "Switch mask [Crystools]": {
+        "title": "Переключатель mask",
+        "widgets": {
+            "on_true": "mask если true",
+            "on_false": "mask если false",
+            "boolean": "boolean"
+        },
+        "outputs": {
+            "mask": "mask"
+        }
+    },
+    "Switch string [Crystools]": {
+        "title": "Переключатель string",
+        "widgets": {
+            "on_true": "string если true",
+            "on_false": "string если false",
+            "boolean": "boolean"
+        },
+        "outputs": {
+            "string": "string"
+        }
+    },
+
+    "Pipe to/edit any [Crystools]": {
+        "title": "Все в Жгут",
+        "inputs": {
+            "CPipeAny": "Жгут",
+            "any_1": "жила_1",
+            "any_2": "жила_2",
+            "any_3": "жила_3",
+            "any_4": "жила_4",
+            "any_5": "жила_5",
+            "any_6": "жила_6"
+        },
+        "outputs": {
+            "CPipeAny": "Жгут"
+        }
+    },
+    "Pipe from any [Crystools]": {
+        "title": "Все из Жгута",
+        "inputs": {
+            "CPipeAny": "Жгут"
+        },
+        "outputs": {
+            "CPipeAny": "Жгут",
+            "any_1": "жила_1",
+            "any_2": "жила_2",
+            "any_3": "жила_3",
+            "any_4": "жила_4",
+            "any_5": "жила_5",
+            "any_6": "жила_6"
+        }
+    },
+
+    "Load image with metadata [Crystools]": {
+        "title": "Загрузка image с метаданными",
+        "widgets": {
+            "image": "image",
+            "upload": "загрузить"
+        },
+        "outputs": {
+            "image": "image",
+            "mask": "mask",
+            "prompt": "prompt",
+            "Metadata RAW": "Mетаданные RAW"
+        }
+    },
+    "Get resolution [Crystools]": {
+        "title": "Получение разрешения image",
+        "inputs": {
+            "image": "image"
+        },
+        "outputs": {
+            "width": "ширина",
+            "height": "высота"
+        }
+    },
+    "Preview from image [Crystools]": {
+        "title": "Монитор image с метаданными",
+        "inputs": {
+            "image": "image"
+        },
+        "outputs": {
+            "Metadata RAW": "Метаданные RAW"
+        }
+    },
+    "Preview from metadata [Crystools]": {
+        "title": "Монитор метаданных",
+        "inputs": {
+            "metadata_raw": "Метаданные RAW"
+        },
+        "outputs": {
+            "Metadata RAW": "Метаданные RAW"
+        }
+    },
+    "Save image with extra metadata [Crystools]": {
+        "title": "Сохранение Image с любыми метаданными",
+        "inputs": {
+            "image": "image"
+        },
+        "widgets": {
+            "filename_prefix": "префикс",
+            "with_workflow": "+ workflow",
+            "metadata_extra": "метаданные"
+        },
+        "outputs": {
+            "Metadata RAW": "Метаданные RAW"
+        }
+    },
+
+
+    "Metadata extractor [Crystools]": {
+        "title": "Извлечение метаданных",
+        "inputs": {
+            "metadata_raw": "Метаданные RAW"
+        },
+        "outputs": {
+            "prompt": "promt",
+            "workflow": "workflow",
+            "file info": "инфо о файле",
+            "raw to JSON": "RAW в JSON",
+            "raw to property": "RAW в Свойства",
+            "raw to csv": "RAW в CSV"
+        }
+    },
+    "Metadata comparator [Crystools]": {
+        "title": "Сравнение метаданных",
+        "inputs": {
+            "metadata_raw_old": "old метаданные RAW",
+            "metadata_raw_new": "new метаданные RAW"
+        },
+        "widgets": {
+            "what": "что сравнивать"
+        },
+        "outputs": {
+            "diff": "различия"
+        }
+    },
+
+    "Json comparator [Crystools]": {
+        "title": "Сравнение JSON",
+        "inputs": {
+            "json_old": "old JSON",
+            "json_new": "new JSON"
+        },
+        "outputs": {
+            "json_compared": "результат"
+        }
+    },
+    "Stats system [Crystools]": {
+        "title": "Статистика системы",
+        "inputs": {
+            "latent": "Latent"
+        },
+        "outputs": {
+            "latent": "Latent"
+        }
+    }
+}
