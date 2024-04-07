@@ -1,6 +1,5 @@
 {
-	"[save] Show project name on menu": "Показать имя проекта в меню",
-	"This will replace the save button function and propose the name of project as filename!": "Это заменит кнопку",
+	"Choose a platform to share your workflow": "Показать",
     "Add Node": "Добавить ноду",
     "Add Group": "Добавить группу",
     "Add Stack": "Создать новый Stack",

@@ -2,7 +2,7 @@
 	"utils": "Простые",
     "sampling": "Семплеры",
     "loaders": "Загрузчики",
-    "conditioning": "Кондиции",
+    "conditioning": "Кондишены",
     "latent": "Латенты",
     "image": "Изображения",
     "mask": "Маски",

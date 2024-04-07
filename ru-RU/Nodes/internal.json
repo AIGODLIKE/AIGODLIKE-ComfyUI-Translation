@@ -1,0 +1,566 @@
+{
+  "Note": {
+    "title": "Заметка"
+  },
+  "PrimitiveNode": {
+    "title": "Примитив",
+    "outputs": {
+      "connect to widget input": "подключить ко входу",
+      "Output": "Выход"
+    }
+  },
+  "Reroute": {
+    "title": "Рероутер"
+  },
+  "KSampler": {
+    "title": "KSampler семплер",
+    "inputs": {
+      "model": "model",
+      "positive": "positive",
+      "negative": "negative",
+      "latent_image": "Latent"
+    },
+    "widgets": {
+      "seed": "seed",
+      "control_after_generate": "control after generate",
+      "fixed": "fixed",
+      "increment": "increment",
+      "decrement": "decrement",
+      "randomize": "randomize",
+      "steps": "steps",
+      "cfg": "cfg",
+      "sampler_name": "sampler name",
+      "scheduler": "scheduler",
+      "denoise": "denoise"
+    },
+    "outputs": {
+      "LATENT": "Latent"
+    }
+  },
+  "KSamplerAdvanced": {
+    "title": "KSamplerAdvanced семплер",
+    "inputs": {
+      "model": "model",
+      "positive": "positive",
+      "negative": "negative",
+      "latent_image": "Latent"
+    },
+    "widgets": {
+      "add_noise": "add_noise",
+      "noise_seed": "noise_seed",
+      "control_after_generate": "control after generate",
+      "fixed": "fixed",
+      "increment": "increment",
+      "decrement": "decrement",
+      "randomize": "randomize",
+      "steps": "steps",
+      "cfg": "cfg",
+      "sampler_name": "sampler name",
+      "scheduler": "scheduler",
+      "denoise": "denoise",
+      "start_at_step": "start at step",
+      "end_at_step": "end at step",
+      "return_with_leftover_noise": "return with leftover noise"
+    },
+    "outputs": {
+      "LATENT": "Latent"
+    }
+  },
+  "SamplerCustom": {
+    "title": "Custom семплер",
+    "inputs": {
+      "model": "model",
+      "positive": "positive",
+      "negative": "negative",
+      "sampler": "sampler",
+      "sigmas": "sigmas",
+      "latent_image": "Latent"
+    },
+    "widgets": {
+      "add_noise": "add_noise",
+      "noise_seed": "noise_seed",
+      "control_after_generate": "control after generate",
+      "cfg": "cfg"
+    },
+    "outputs": {
+      "output": "output",
+      "denoised_output": "denoised output"
+    }
+  },
+  "KarrasScheduler": {
+    "title": "Karras планировщик",
+    "widgets": {
+      "steps": "steps",
+      "sigma_max": "sigma max",
+      "sigma_min": "sigma min",
+      "rho": "rho"
+    },
+    "outputs": {
+      "SIGMAS": "Sigmas"
+    }
+  },
+  "ExponentialScheduler": {
+    "title": "Exponential планировщик",
+    "widgets": {
+      "steps": "steps",
+      "sigma_max": "sigma max",
+      "sigma_min": "sigma min"
+    },
+    "outputs": {
+      "SIGMAS": "Sigmas"
+    }
+  },
+  "PolyexponentialScheduler": {
+    "title": "Polyexponential планировщик",
+    "widgets": {
+      "steps": "steps",
+      "sigma_max": "sigma max",
+      "sigma_min": "sigma min",
+      "rho": "rho"
+    },
+    "outputs": {
+      "SIGMAS": "Sigmas"
+    }
+  },
+  "VPScheduler": {
+    "title": "VP планировщик",
+    "widgets": {
+      "steps": "steps",
+      "beta_d": "beta D",
+      "beta_min": "beta min",
+      "eps_s": "eps_s"
+    },
+    "outputs": {
+      "SIGMAS": "Sigmas"
+    }
+  },
+  "KSamplerSelect": {
+    "title": "Выбор семплера",
+    "widgets": {
+      "sampler_name": "sampler name"
+    },
+    "outputs": {
+      "SAMPLER": "SAMPLER"
+    }
+  },
+  "SamplerDPMPP_2M_SDE": {
+    "title": "DPMPP_2M_SDE семплер",
+    "widgets": {
+      "solver_type": "solver type",
+      "eta": "eta",
+      "s_noise": "s noise",
+      "noise_device": "noise device"
+    },
+    "outputs": {
+      "SAMPLER": "SAMPLER"
+    }
+  },
+  "SamplerDPMPP_SDE": {
+    "title": "DPMPP_SDE семплер",
+    "widgets": {
+      "eta": "eta",
+      "s_noise": "s noise",
+      "r": "r",
+      "noise_device": "noise device"
+    },
+    "outputs": {
+      "SAMPLER": "SAMPLER"
+    }
+  },
+  "SamplerEulerAncestral": {
+    "title": "Euler_Ancestral семплер",
+    "widgets": {
+      "eta": "eta",
+      "s_noise": "s noise"
+    },
+    "outputs": {
+      "SAMPLER": "SAMPLER"
+    }
+  },
+  "SamplerLMS": {
+    "title": "LMS семплер",
+    "widgets": {
+      "order": "order"
+    },
+    "outputs": {
+      "SAMPLER": "SAMPLER"
+    }
+  },
+  "SamplerDPMPP_3M_SDE": {
+    "title": "DPMPP_3M_SDE семплер",
+    "widgets": {
+      "eta": "eta",
+      "s_noise": "s noise",
+      "noise_device": "noise device"
+    },
+    "outputs": {
+      "SAMPLER": "SAMPLER"
+    }
+  },
+  "BasicScheduler": {
+    "title": "Базовый планировщик",
+    "inputs": {
+      "model": "model"
+    },
+    "widgets": {
+      "scheduler": "sheduler",
+      "steps": "steps",
+      "denoise": "denoise"
+    },
+    "outputs": {
+      "SIGMAS": "Sigmas"
+    }
+  },
+  "SDTurboScheduler": {
+    "title": "SDTurbo планировщик",
+    "inputs": {
+      "model": "model"
+    },
+    "widgets": {
+      "steps": "steps"
+    },
+    "outputs": {
+      "SIGMAS": "Sigmas"
+    }
+  },
+  "SplitSigmas": {
+    "title": "Разделитель Sigmas",
+    "inputs": {
+      "sigmas": "Sigmas"
+    },
+    "widgets": {
+      "step": "steps"
+    },
+    "outputs": {
+      "SIGMAS": "Sigmas"
+    }
+  },
+  "FlipSigmas": {
+    "title": "Переворот Sigmas",
+    "inputs": {
+      "sigmas": "Sigmas"
+    },
+    "outputs": {
+      "SIGMAS": "Sigmas"
+    }
+  },
+  "VideoLinearCFGGuidance": {
+    "title": "VideoLinearCFGGuidance: линейный",
+    "inputs": {
+      "model": "model"
+    },
+    "widgets": {
+      "min_cfg": "min_cfg"
+    },
+    "outputs": {
+      "MODEL": "MODEL"
+    }
+  },
+  "VideoTriangleCFGGuidance": {
+    "title": "VideoTriangleCFGGuidance: треугольный",
+    "inputs": {
+      "model": "model"
+    },
+    "widgets": {
+      "min_cfg": "min_cfg"
+    },
+    "outputs": {
+      "MODEL": "MODEL"
+    }
+  },
+
+  "ImageOnlyCheckpointLoader": {
+    "title": "ImageOnly Checkpoint загрузчик (img2vid model)",
+    "widgets": {
+      "ckpt_name": "ckpt_name"
+    },
+    "outputs": {
+      "MODEL": "MODEL",
+      "CLIP_VISION": "CLIP VISION",
+      "VAE": "VAE"
+    }
+  },
+  "LoraLoaderModelOnly": {
+    "title": "LoRA загрузчик (только для моделей)",
+    "inputs": {
+      "model": "model"
+    },
+    "widgets": {
+      "lora_name": "LoRA",
+      "strength_model": "strength model"
+    },
+    "outputs": {
+      "MODEL": "MODEL"
+    }
+  },
+  "CheckpointLoaderSimple": {
+    "title": "Checkpoint загрузчик (простой)",
+    "widgets": {
+      "ckpt_name": "ckpt name"
+    },
+    "outputs": {
+      "MODEL": "MODEL",
+      "CLIP": "CLIP",
+      "VAE": "VAE"
+    }
+  },
+  "VAELoader": {
+    "title": "VAE загрузчик",
+    "widgets": {
+      "vae_name": "vae_name"
+    },
+    "outputs": {
+      "vae": "VAE"
+    }
+  },
+  "LoraLoader": {
+    "title": "LoRA загрузчик",
+    "inputs": {
+      "model": "model",
+      "clip": "CLIP"
+    },
+    "widgets": {
+      "lora_name": "lora_name",
+      "strength_model": "strength model",
+      "strength_clip": "strength clip"
+    },
+    "outputs": {
+      "MODEL": "MODEL",
+      "CLIP": "CLIP"
+    }
+  },
+  "ControlNetLoader": {
+    "title": "ControlNet загрузчик",
+    "widgets": {
+      "control_net_name": "control net name"
+    },
+    "outputs": {
+      "CONTROL_NET": "ControlNet"
+    }
+  },
+  "DiffControlNetLoader": {
+    "title": "ControlNet (diff) модель загрузчик",
+    "inputs": {
+      "MODEL": "MODEL"
+    },
+    "widgets": {
+      "control_net_name": "control net name"
+    },
+    "outputs": {
+      "CONTROL_NET": "ControlNet"
+    }
+  },
+  "StyleModelLoader": {
+    "title": "StyleModel загрузчик",
+    "widgets": {
+      "style_model_name": "style model name"
+    },
+    "outputs": {
+      "STYLE_MODEL": "STYLE MODEL",
+      "style_model": "style model"
+    }
+  },
+  "CLIPVisionLoader": {
+    "title": "CLIPVision загрузчик",
+    "widgets": {
+      "clip_name": "clip_name"
+    },
+    "outputs": {
+      "CLIP_VISION": "CLIP VISION"
+    }
+  },
+  "unCLIPCheckpointLoader": {
+    "title": "unCLIPCheckpoint загрузчик",
+    "widgets": {
+      "ckpt_name": "ckpt name"
+    },
+    "outputs": {
+      "MODEL": "MODEL",
+      "CLIP": "CLIP",
+      "VAE": "VAE",
+      "CLIP_VISION": "CLIP VISION"
+    }
+  },
+  "GLIGENLoader": {
+    "title": "GLIGEN загрузчик",
+    "widgets": {
+      "gligen_name": "gligen name"
+    },
+    "outputs": {
+      "GLIGEN": "GLIGEN"
+    }
+  },
+  "UpscaleModelLoader": {
+    "title": "UpscaleModel загрузчик",
+    "widgets": {
+      "model_name": "model name"
+    },
+    "outputs": {
+      "UPSCALE_MODEL": "UPSCALE MODEL"
+    }
+  },
+  "HypernetworkLoader": {
+    "title": "Hypernetwork загрузчик",
+    "inputs": {
+      "model": "model"
+    },
+    "widgets": {
+      "hypernetwork_name": "hypernetwork name",
+      "strength": "strength"
+    },
+    "outputs": {
+      "MODEL": "MODEL"
+    }
+  },
+  "LatentRotate": {
+    "title": "Latent повернуть",
+    "inputs": {
+      "samples": "Latent"
+    },
+    "widgets": {
+      "rotation": "поворот",
+      "none": "нет",
+      "90 degrees": "90 градусов",
+      "180 degrees": "180 градусов",
+      "270 degrees": "270 градусов"
+    },
+    "outputs": {
+      "LATENT": "Latent"
+    }
+  },
+  "LatentFlip": {
+    "title": "Latent перевернуть",
+    "inputs": {
+      "samples": "Latent"
+    },
+    "widgets": {
+      "flip_method": "метод переворота",
+      "x-axis: vertically": "X: по вертикали",
+      "y-axis: horizontally": "Y: по горизонтали"
+    },
+    "outputs": {
+      "LATENT": "Latent"
+    }
+  },
+  "LatentCrop": {
+    "title": "Latent обрезать",
+    "inputs": {
+      "samples": "Latent"
+    },
+    "widgets": {
+      "width": "ширина",
+      "height": "высота",
+      "x": "X",
+      "y": "Y"
+    },
+    "outputs": {
+      "LATENT": "Latent"
+    }
+  },
+  "LatentAdd": {
+    "title": "Latent добавить",
+    "inputs": {
+      "samples1": "Latent1",
+      "samples2": "Latent2"
+    },
+    "outputs": {
+      "LATENT": "Latent"
+    }
+  },
+  "LatentSubtract": {
+    "title": "Latent вычесть",
+    "inputs": {
+      "samples1": "Latent1",
+      "samples2": "Latent2"
+    },
+    "outputs": {
+      "LATENT": "Latent"
+    }
+  },
+  "LatentMultiply": {
+    "title": "Latent умножить",
+    "inputs": {
+      "samples": "Latent"
+    },
+    "widgets": {
+      "multiplier": "множитель"
+    },
+    "outputs": {
+      "LATENT": "Latent"
+    }
+  },
+  "LatentInterpolate": {
+    "title": "Latent интерполировать",
+    "inputs": {
+      "samples1": "Latent1",
+      "samples2": "Latent2"
+    },
+    "widgets": {
+      "ratio": "соотношение"
+    },
+    "outputs": {
+      "Latent": "Latent"
+    }
+  },
+  "SaveImage": {
+    "title": "Сохранить изображение",
+    "inputs": {
+      "images": "images"
+    },
+    "widgets": {
+      "filename_prefix": "префикс имени"
+    }
+  },
+  "PreviewImage": {
+    "title": "Превью изображения",
+    "inputs": {
+      "images": "images"
+    }
+  },
+  "LoadImage": {
+    "title": "Загрузить изображение",
+    "widgets": {
+      "image": "image",
+      "choose file to upload": "загрузить"
+    },
+    "outputs": {
+      "IMAGE": "IMAGE",
+      "MASK": "MASK"
+    }
+  },
+  "LoadImageMask": {
+    "title": "Загрузить маску",
+    "widgets": {
+      "image": "image",
+      "channel": "channel",
+      "choose file to upload": "загрузить"
+    },
+    "outputs": {
+      "MASK": "MASK"
+    }
+  },
+    "CLIPTextEncode": {
+        "title": "CLIP Text Encode (промпт)",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "text": "text"
+        },
+        "outputs": {
+            "CONDITIONING": "CONDITIONING"
+        }
+    },
+  
+    "EmptyLatentImage": {
+        "title": "Latent Image (пустой)",
+        "widgets": {
+            "width": "ширина",
+            "height": "высота",
+            "batch_size": "сколько"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    }  
+}
