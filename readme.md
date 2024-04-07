@@ -10,11 +10,11 @@ I hope ComfyUI can support more languages besides Chinese and English, such as F
 
 ## Language supported
 
-|COMFYUI Translation|zh-CN简体中文|zh-TW繁體中文|English|Japanese日本語|Korean한국어|Your language|
-|:----|:----|:----|:----|:----|:----|:----|
-|Menu|√|√|√|√|√|TODO|
-|NodeCategory|√|√|√|√|√|TODO|
-|Nodes|√|√|√|√|√|TODO|
+|COMFYUI Translation|简体中文|繁體中文|English|日本語|한국어|Русский|Your language|
+|:----|:----|:----|:----|:----|:----|:----|:----|
+|Menu|√|√|√|√|√|√|TODO|
+|NodeCategory|√|√|√|√|√|√|TODO|
+|Nodes|√|√|√|√|√|√|TODO|
 ## Function
 1. Translate all UI of ComfyUI
 ![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/323f3f84-e9c0-421e-9089-470e5a5ac350)
