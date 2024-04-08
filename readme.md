@@ -14,7 +14,7 @@ I hope ComfyUI can support more languages besides Chinese and English, such as F
 |:----|:----|:----|:----|:----|:----|:----|:----|
 |Menu|√|√|√|√|√|√|TODO|
 |NodeCategory|√|√|√|√|√|√|TODO|
-|Nodes|√|√|√|√|√|TODO|TODO|
+|Nodes|√|√|√|√|√|√|TODO|
 ## Function
 1. Translate all UI of ComfyUI
 ![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/323f3f84-e9c0-421e-9089-470e5a5ac350)
@@ -44,7 +44,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[ControlNet LLLite](https://github.com/kohya-ss/ControlNet-LLLite-ComfyUI)|√|√|√|TODO|TODO|TODO|
 |[ControlNet Preprocessors](https://github.com/Fannovel16/comfy_controlnet_preprocessors)|√|√|√|√|TODO|TODO|
 |[ControlNet Preprocessors AUX](https://github.com/Fannovel16/comfyui_controlnet_aux)|√|√|√|√|TODO|TODO|
-|[Crystools](https://github.com/crystian/ComfyUI-Crystools.git)|√|TODO|√|TODO|TODO|TODO|
+|[Crystools](https://github.com/crystian/ComfyUI-Crystools.git)|√|TODO|√|TODO|TODO|√|
 |[Cutoff](https://github.com/BlenderNeko/ComfyUI_Cutoff)|√|√|√|√|TODO|TODO|
 |[Custom-Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts)|√|√|√|TODO|TODO|TODO|
 |[cg-use-everywhere](https://github.com/chrisgoringe/cg-use-everywhere.git)|√|TODO|√|TODO|TODO|TODO|
@@ -78,7 +78,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[LayerStyle](https://github.com/chflame163/ComfyUI_LayerStyle)|√|TODO|√|TODO|TODO|TODO|
 |[LCM](https://github.com/0xbitches/ComfyUI-LCM)|√|TODO|√|TODO|TODO|TODO|
 |[Literals](https://github.com/M1kep/ComfyLiterals.git)|√|TODO|√|TODO|TODO|TODO|
-|[Manager](https://github.com/ltdrdata/ComfyUI-Manager)|√|√|√|TODO|TODO|TODO|
+|[Manager](https://github.com/ltdrdata/ComfyUI-Manager)|√|√|√|TODO|TODO|√|
 |[Masquerade Nodes](https://github.com/BadCafeCode/masquerade-nodes-comfyui)|√|√|√|TODO|TODO|TODO|
 |[Math](https://github.com/evanspearman/ComfyMath.git)|√|TODO|√|TODO|TODO|TODO|
 |[Mixlab Nodes](https://github.com/shadowcz007/comfyui-mixlab-nodes.git)|√|TODO|√|TODO|TODO|TODO|
