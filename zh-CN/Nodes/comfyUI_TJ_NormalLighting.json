@@ -1,0 +1,22 @@
+{
+    "EulerLightingNode": {
+        "title": "法向光源",
+        "inputs": {
+            "diffuse_map": "图像",
+            "normal_map": "法向图像",
+            "specular_map": "高光图像"
+        },
+        "widgets": {
+            "light_yaw": "光源方位角",
+            "light_pitch": "光源俯仰角",
+            "specular_power": "高光指数",
+            "ambient_light": "环境光",
+            "NormalDiffuseStrength": "法向强度",
+            "SpecularHighlightStrength": "高光强度",
+            "TotalGain": "光照强度"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    }
+}

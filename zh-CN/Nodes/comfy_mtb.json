@@ -1,0 +1,853 @@
+{
+    "Animation Builder (mtb)": {
+        "title": "构建动画",
+        "inputs": {
+            "Idle": "待机",
+            "Iteration:": "迭代:"
+        },
+        "widgets": {
+            "total_frames": "总帧数",
+            "scale_float": "缩放系数",
+            "loop_count": "循环次数",
+            "raw_iteration": "初始迭代次数",
+            "raw_loop": "初始循环次数",
+            "Idle": "待机",
+            "Iteration:": "迭代:",
+            "Reset": "重置",
+            "Queue": "执行"
+        },
+        "outputs": {
+            "frame": "帧数",
+            "0-1 (scaled)": "0-1规格化系数",
+            "count": "循环数",
+            "loop_ended": "循环结束"
+        }
+    },
+    "Get Batch From History (mtb)": {
+        "title": "从历史获取批次",
+        "inputs": {
+            "passthrough_image": "历史图像"
+        },
+        "widgets": {
+            "enable": "启用",
+            "count": "计数",
+            "offset": "偏移"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
+    "Batch Float (mtb)": {
+        "title": "浮点批次",
+        "widgets": {
+            "mode": "模式",
+            "count": "计数",
+            "min": "最小值",
+            "max": "最大值",
+            "easing": "渐变"
+        },
+        "outputs": {
+            "FLOATS": "浮点"
+        }
+    },
+    "Batch Transform (mtb)": {
+        "title": "变换批次",
+        "inputs": {
+            "image": "图像",
+            "x": "X",
+            "y": "Y",
+            "zoom": "缩放",
+            "angle": "角度",
+            "shear": "裁剪",
+            "border_handling": "边框操作"
+        },
+        "widgets": {
+            "constant_color": "颜色"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Batch Shape (mtb)": {
+        "title": "形状批次",
+        "widgets": {
+            "count": "计数",
+            "shape": "形状",
+            "image_width": "宽度",
+            "image_height": "高度",
+            "shape_size": "大小",
+            "thickness": "厚度",
+            "shadex": "着色X",
+            "shadey": "着色Y"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Batch Make (mtb)": {
+        "title": "图像批次制作",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "count": "计数"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Batch Float Assemble (mtb)": {
+        "title": "浮点批次集合",
+        "inputs": {
+            "floats_1": "浮点_1"
+        },
+        "widgets": {
+            "reverse": "反转"
+        },
+        "outputs": {
+            "FLOATS": "浮点"
+        }
+    },
+    "Batch Float Fill (mtb)": {
+        "title": "浮点批次填充",
+        "inputs": {
+            "floats": "浮点"
+        },
+        "widgets": {
+            "direction": "方向",
+            "value": "值",
+            "count": "计数"
+        },
+        "outputs": {
+            "FLOATS": "浮点"
+        }
+    },
+    "Batch Merge (mtb)": {
+        "title": "图像批次融合",
+        "inputs": {
+            "batches_1": "图像_1"
+        },
+        "widgets": {
+            "fusion_mode": "模式",
+            "fill": "填充"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Batch Shake (mtb)": {
+        "title": "图像批次抖动",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "position_amount_x": "位置X",
+            "position_amount_y": "位置Y",
+            "rotation_amount": "旋转",
+            "frequency": "频率",
+            "frequency_divider": "频率除数",
+            "octaves": "八度",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "image": "图像",
+            "pos_x": "位置X",
+            "pos_y": "位置Y",
+            "rot": "旋转"
+        }
+    },
+    "Plot Batch Float (mtb)": {
+        "title": "浮点批次图表",
+        "inputs": {
+            "floats_1": "浮点_1"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "point_size": "点大小",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "plot": "图表"
+        }
+    },
+    "Smart Step (mtb)": {
+        "title": "智能步数",
+        "widgets": {
+            "step": "步数",
+            "start_percent": "开始位置",
+            "end_percent": "结束位置"
+        },
+        "outputs": {
+            "step": "步数",
+            "start": "开始",
+            "end": "结束"
+        }
+    },
+    "Styles Loader (mtb)": {
+        "title": "风格加载器",
+        "widgets": {
+            "style_name": "风格名"
+        },
+        "outputs": {
+            "positive": "正面提示词",
+            "negative": "负面提示词"
+        }
+    },
+    "Interpolate Clip Sequential (mtb)": {
+        "title": "CLIP序列插值",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "base_text": "文本",
+            "text_to_replace": "文本替换目标",
+            "interpolation_strength": "插值强度"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "Any To String (mtb)": {
+        "title": "任意到字符串",
+        "inputs": {
+            "input": "输入"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Bbox From Mask (mtb)": {
+        "title": "遮罩提取BBox",
+        "inputs": {
+            "mask": "遮罩",
+            "image": "图像"
+        },
+        "widgets": {
+            "invert": "反转"
+        },
+        "outputs": {
+            "bbox": "BBox",
+            "image (optional)": "图像"
+        }
+    },
+    "Bbox (mtb)": {
+        "title": "BBox",
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "BBOX": "BBox"
+        }
+    },
+    "Crop (mtb)": {
+        "title": "裁剪",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "bbox": "BBox"
+        },
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩",
+            "BBOX": "BBox"
+        }
+    },
+    "Uncrop (mtb)": {
+        "title": "外扩",
+        "inputs": {
+            "image": "图像",
+            "crop_image": "裁剪图像",
+            "bbox": "BBox"
+        },
+        "widgets": {
+            "border_blending": "边框融合"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Curve (mtb)": {
+        "title": "浮点曲线",
+        "outputs": {
+            "FLOAT_CURVE": "浮点曲线"
+        }
+    },
+    "Debug (mtb)": {
+        "title": "Debug",
+        "inputs": {
+            "anything_1": "输入_1"
+        },
+        "widgets": {
+            "output_to_console": "输出到控制台"
+        }
+    },
+    "Save Tensors (mtb)": {
+        "title": "保存Tensor",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "latent": "Latent"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀"
+        }
+    },
+    "Face Swap (mtb)": {
+        "title": "换脸",
+        "inputs": {
+            "image": "图像",
+            "reference": "参考图像",
+            "faceanalysis_model": "面部分析模型",
+            "faceswap_model": "换脸模型"
+        },
+        "widgets": {
+            "faces_index": "面部索引"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Load Face Swap Model (mtb)": {
+        "title": "加载换脸模型",
+        "widgets": {
+            "faceswap_model": "换脸模型"
+        },
+        "outputs": {
+            "FACESWAP_MODEL": "换脸模型"
+        }
+    },
+    "Load Face Analysis Model (mtb)": {
+        "title": "加载面部分析模型",
+        "widgets": {
+            "faceswap_model": "面部分析模型"
+        },
+        "outputs": {
+            "FACE_ANALYSIS_MODEL": "面部分析模型"
+        }
+    },
+    "Filter Z (mtb)": {
+        "title": "深度过滤",
+        "inputs": {
+            "image": "图像",
+            "depth": "深度图"
+        },
+        "widgets": {
+            "to_black": "到黑色",
+            "threshold": "阈值",
+            "invert": "反转"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Qr Code (mtb)": {
+        "title": "QR码",
+        "widgets": {
+            "url": "URL",
+            "width": "宽度",
+            "height": "高度",
+            "error_correct": "容错",
+            "box_size": "定位大小",
+            "border": "边框",
+            "invert": "反转"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Unsplash Image (mtb)": {
+        "title": "Unsplash图像",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "random_seed": "随机种",
+            "keyword": "关键词"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Text To Image (mtb)": {
+        "title": "文本到图像",
+        "widgets": {
+            "text": "文本",
+            "font": "字体",
+            "wrap": "置换",
+            "trim": "修剪",
+            "line_height": "行高",
+            "font_zie": "字号",
+            "width": "宽度",
+            "height": "高度",
+            "h_align": "水平对齐",
+            "v_align": "垂直对齐",
+            "h_offset": "水平偏移",
+            "v_offset": "垂直偏移",
+            "h_coverage": "垂直范围"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "Image Tile Offset (mtb)": {
+        "title": "图像分块偏移",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "tilesX": "分块X",
+            "tilesY": "分块Y"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Mask To Image (mtb)": {
+        "title": "遮罩到图像",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Colored Image (mtb)": {
+        "title": "纯色图像",
+        "inputs": {
+            "foreground_image": "前景图像",
+            "foreground_mask": "前景遮罩"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Concat Images (mtb)": {
+        "title": "图像联结",
+        "inputs": {
+            "image_1": "图像_1"
+        },
+        "widgets": {
+            "reverse": "反转"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Image Compare (mtb)": {
+        "title": "图像对比",
+        "inputs": {
+            "imageA": "图像A",
+            "imageB": "图像B"
+        },
+        "widgets": {
+            "mode": "模式"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Image Premultiply (mtb)": {
+        "title": "图像预乘",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "invert": "反转"
+        },
+        "outputs": {
+            "RGBA": "RGBA图像"
+        }
+    },
+    "Image Resize Factor (mtb)": {
+        "title": "图像缩放系数",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "factor": "系数",
+            "supersample": "超采样",
+            "resampling": "重采样"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    },
+    "Image Remove Background Rembg (mtb)": {
+        "title": "图像移除背景",
+        "widgets": {
+            "alpha_matting": "Alpha抠图",
+            "alpha_matting_foreground_threshold": "Alpha抠图前景阈值",
+            "alpha_matting_background_threshold": "Alpha抠图背景阈值",
+            "alpha_matting_erode_size": "Alpha抠图消融大小",
+            "post_process_mask": "遮罩后处理"
+        },
+        "outputs": {
+            "Image (rgba)": "RGBA图像",
+            "Mask": "遮罩",
+            "Image": "图像"
+        }
+    },
+    "Color Correct (mtb)": {
+        "title": "颜色校正",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "clamp": "钳制",
+            "gamma": "伽马",
+            "contrast": "对比度",
+            "exposure": "曝光",
+            "offset": "偏移",
+            "hue": "色相",
+            "saturation": "饱和度",
+            "value": "明度"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Blur (mtb)": {
+        "title": "模糊",
+        "inputs": {
+            "image": "图像",
+            "sigmasX": "Sigmas X",
+            "sigmasY": "Sigmas Y"
+        },
+        "widgets": {
+            "sigmaX": "Sigma X",
+            "sigmaY": "Sigma Y"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Sharpen (mtb)": {
+        "title": "锐化",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "sharpen_radius": "锐化半径",
+            "sigma_x": "Sigma X",
+            "sigma_y": "Sigma Y",
+            "alpha": "Alpha"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Stack Images (mtb)": {
+        "title": "图像堆叠",
+        "inputs": {
+            "image_1": "图像_1"
+        },
+        "widgets": {
+            "vertical": "竖向"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Pick From Batch (mtb)": {
+        "title": "从批次挑选",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "from_direction": "方向",
+            "count": "计数"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Save Image Grid (mtb)": {
+        "title": "保存图像表格",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀",
+            "save_intermediate": "保存中间值"
+        }
+    },
+    "Load Image From Url (mtb)": {
+        "title": "从URL加载图像",
+        "widgets": {
+            "url": "URL"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Save Gif (mtb)": {
+        "title": "保存GIF",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "fps": "帧率",
+            "resize_by": "缩放系数",
+            "optimize": "优化",
+            "pingpong": "Ping-Pong",
+            "resample_filter": "重采样",
+            "use_ffmpeg": "使用FFmpeg"
+        }
+    },
+    "Export With Ffmpeg (mtb)": {
+        "title": "用FFmpeg导出",
+        "inputs": {
+            "images": "图像",
+            "playlist": "播放列表"
+        },
+        "widgets": {
+            "fps": "帧率",
+            "prefix": "前缀",
+            "format": "格式",
+            "codec": "编码格式"
+        },
+        "outputs": {
+            "VIDEO": "视频"
+        }
+    },
+    "Add To Playlist (mtb)": {
+        "title": "添加到播放列表",
+        "inputs": {
+            "video_1": "视频_1"
+        },
+        "widgets": {
+            "relative_paths": "相对路径",
+            "persistant_playlist": "持续列表",
+            "playlist_name": "列表名称",
+            "index": "索引"
+        }
+    },
+    "Read Playlist (mtb)": {
+        "title": "读取播放列表",
+        "widgets": {
+            "enable": "启用",
+            "persistant_playlist": "持续列表",
+            "playlist_name": "列表名称",
+            "index": "索引"
+        },
+        "outputs": {
+            "PLAYLIST": "播放列表"
+        }
+    },
+    "Load Image Sequence (mtb)": {
+        "title": "加载图像序列",
+        "widgets": {
+            "path": "路径",
+            "current_frame": "当前帧"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "current_frame": "当前帧"
+        }
+    },
+    "Save Image Sequence (mtb)": {
+        "title": "保存图像序列",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀",
+            "current_frame": "当前帧"
+        }
+    },
+    "Latent Lerp (mtb)": {
+        "title": "Latent线性插值",
+        "inputs": {
+            "A": "Latent_A",
+            "B": "Latent_B"
+        },
+        "widgets": {
+            "1": "1"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "Fit Number (mtb)": {
+        "title": "数字映射",
+        "inputs": {
+            "value": "值"
+        },
+        "widgets": {
+            "clamp": "钳制",
+            "source_min": "从最小值",
+            "source_max": "从最大值",
+            "target_min": "到最小值",
+            "target_max": "到最大值",
+            "easing": "渐变"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "Math Expression (mtb)": {
+        "title": "数学表达式",
+        "inputs": {
+            "x": "x"
+        },
+        "widgets": {
+            "exprssion": "表达式"
+        },
+        "outputs": {
+            "result (float)": "浮点",
+            "result (int)": "整数"
+        }
+    },
+    "Float To Number (mtb)": {
+        "title": "浮点到数字",
+        "inputs": {
+            "float": "浮点"
+        },
+        "outputs": {
+            "NUMBER": "数字"
+        }
+    },
+    "Int To Bool (mtb)": {
+        "title": "整数到布尔",
+        "widgets": {
+            "int": "整数"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔"
+        }
+    },
+    "Int To Number (mtb)": {
+        "title": "整数到数字",
+        "inputs": {
+            "int": "整数"
+        },
+        "outputs": {
+            "NUMBER": "数字"
+        }
+    },
+    "String Replace (mtb)": {
+        "title": "字符串替换",
+        "inputs": {
+            "string": "字符串"
+        },
+        "widgets": {
+            "old": "旧",
+            "new": "新"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Deep Bump (mtb)": {
+        "title": "深度置换",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "mode": "模式",
+            "color_to_normals_overlap": "颜色到法向",
+            "normals_to_curvature_blur_radius": "法向到曲率模糊",
+            "normals_to_height_seamless": "法向到高度无缝"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Model Patch Seamless (mtb)": {
+        "title": "模型无缝组件",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "startStep": "开始步数",
+            "stopStep": "停止步数",
+            "tilingX": "分块X",
+            "tilingY": "分块Y"
+        },
+        "outputs": {
+            "Original Model (passthrough)": "原模型",
+            "Patched Model": "模型"
+        }
+    },
+    "Transform Image (mtb)": {
+        "title": "变换图像",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "zoom": "缩放",
+            "angle": "角度",
+            "shear": "裁剪",
+            "border_handling": "边框操作"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Note+ (mtb)": {
+        "title": "注释+"
+    },
+    "To Device (mtb)": {
+        "title": "更改存储设备",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "ignore_errors": "忽视Error",
+            "device": "设备"
+        },
+        "outputs": {
+            "images": "图像",
+            "masks": "遮罩"
+        }
+    },
+    "Apply Text Template (mtb)": {
+        "title": "应用文本模板",
+        "inputs": {
+            "var_1": "变量_1"
+        },
+        "widgets": {
+            "template": "模板"
+        },
+        "outputs": {
+            "string": "字符串"
+        }
+    },
+    "Match Dimensions (mtb)": {
+        "title": "匹配分辨率",
+        "inputs": {
+            "source": "原图像",
+            "reference": "参考图像"
+        },
+        "widgets": {
+            "match": "匹配"
+        },
+        "outputs": {
+            "image": "图像",
+            "new_width": "新宽度",
+            "new_height": "新高度"
+        }
+    }
+}
