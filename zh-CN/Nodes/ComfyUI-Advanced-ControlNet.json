@@ -97,6 +97,43 @@
         }
     },
 
+    "ACN_ReferencePreprocessor": {
+        "title": "参考预处理器",
+        "inputs": {
+            "image": "图像",
+            "vae": "VAE",
+            "latent_size": "Latent"
+        },
+        "outputs": {
+            "proc_IMAGE": "图像"
+        }
+    },
+    "ACN_ReferenceControlNet": {
+        "title": "参考ControlNet",
+        "widgets": {
+            "reference_type": "参考类型",
+            "style_fidelity": "风格精确度",
+            "ref_weight": "参考权重"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "ACN_ReferenceControlNetFinetune": {
+        "title": "参考ControlNet(微调)",
+        "widgets": {
+            "attn_style_fidelity": "attn_style_fidelity",
+            "attn_ref_weight": "attn_ref_weight",
+            "attn_strength": "attn_strength",
+            "adain_style_fidelity": "adain_style_fidelity",
+            "adain_ref_weight": "adain_ref_weight",
+            "adain_strength": "adain_strength"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+
     "ControlNetLoaderAdvanced": {
         "title": "ControlNet加载器(高级)",
         "inputs": {
