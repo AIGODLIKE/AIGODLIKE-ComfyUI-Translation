@@ -1,4 +1,5 @@
 {
+	"Choose a platform to share your workflow": "Показать",
     "Add Node": "Добавить ноду",
     "Add Group": "Добавить группу",
     "Add Stack": "Создать новый Stack",
@@ -8,7 +9,7 @@
     "Font size": "Размер шрифта",
     "font_size": "размер_шрифта",
 	"utils": "utils",
-    "Note": "Note",
+    "Note": "Заметка",
     "Primitive": "Primitive",
     "Reroute": "Reroute",
     "Ok": "Ok",
