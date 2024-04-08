@@ -465,6 +465,20 @@
             "latent": "Latent"
         }
     },
+    "InstructPixToPixConditioning": {
+        "title": "InstructPixToPix条件",
+        "inputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "vae": "VAE",
+            "pixels": "图像"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latent": "Latent"
+        }
+    },
     "SVD_img2vid_Conditioning": {
         "title": "SVD_图像到视频_条件",
         "inputs": {
@@ -1814,7 +1828,7 @@
         }
     },
     "Differential Diffusion": {
-        "title": "Differential Diffusion",
+        "title": "差异扩散",
         "inputs": {
             "model": "模型"
         },
@@ -2136,6 +2150,13 @@
         },
         "outputs": {
             "MODEL": "模型"
+        }
+    },
+
+    "SaveImageWebsocket": {
+        "title": "保存图像到网络接口",
+        "inputs": {
+            "images": "图像"
         }
     }
 }
