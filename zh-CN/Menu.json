@@ -1234,6 +1234,8 @@
     "🐍 Image Feed Direction:": "图像面板顺序",
         "newest first": "正序",
         "oldest first": "倒序",
+    "🐍 Image Feed Deduplication": "🐍 移除重复的图像",
+    "🐍 Model Info - ${type} Nodes/Widgets": "🐍 模型信息 - ${type} 节点/组件",
     "Name:": "名称",
     "Value:": "值",
     "To remove a preset set the name or value to blank": "留空名称或值以移除预设",
@@ -2585,6 +2587,8 @@
 
     "mtb": "mtb",
     
+    "[⚡mtb] Enable Debug (py and js)": "[⚡MTB] 开启Debug (py 和 js)",
+    "[⚡mtb] Enable image feed": "[⚡MTB] 开启图像记录",
     "Color to Normals": "颜色到法向",
     "Normals to Curvature": "法向到曲率",
     "Normals to Height": "法向到高度",
