@@ -1,0 +1,171 @@
+{
+    "LoraLoaderVanilla": {
+        "title": "LoRA加载器",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "override_lora_name": "覆盖LoRA名称"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称",
+            "strength_model": "模型强度",
+            "strength_clip": "CLIP强度",
+            "force_fetch": "强制同步",
+            "append_loraname_if_empty": "没有提示词则添加LoRA名"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "civitai_tags_list": "Cvitai关键词列表",
+            "meta_tags_list": "预览图关键词列表"
+        }
+    },
+    "LoraLoaderStackedVanilla": {
+        "title": "LoRA加载器(堆叠)",
+        "inputs": {
+            "lora_stack": "LoRA堆",
+            "override_lora_name": "覆盖LoRA名称"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称",
+            "lora_weight": "LoRA权重",
+            "force_fetch": "强制同步",
+            "append_loraname_if_empty": "没有提示词则添加LoRA名"
+        },
+        "outputs": {
+            "civitai_tags_list": "Cvitai关键词列表",
+            "meta_tags_list": "预览图关键词列表",
+            "LORA_STACK": "LoRA堆"
+        }
+    },
+    "LoraLoaderAdvanced": {
+        "title": "LoRA加载器(高级)",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "override_lora_name": "覆盖LoRA名称"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称",
+            "strength_clip": "CLIP强度",
+            "strength_model": "模型强度",
+            "force_fetch": "强制同步",
+            "enable_preview": "启用预览",
+            "append_loraname_if_empty": "没有提示词则添加LoRA名"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "civitai_tags_list": "Cvitai关键词列表",
+            "meta_tags_list": "预览图关键词列表"
+        }
+    },
+    "LoraLoaderStackedAdvanced": {
+        "title": "LoRA加载器(高级堆叠)",
+        "inputs": {
+            "lora_stack": "LoRA堆",
+            "override_lora_name": "覆盖LoRA名称"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称",
+            "lora_weight": "LoRA权重",
+            "force_fetch": "强制同步",
+            "enable_preview": "启用预览",
+            "append_loraname_if_empty": "没有提示词则添加LoRA名"
+        },
+        "outputs": {
+            "civitai_tags_list": "Cvitai关键词列表",
+            "meta_tags_list": "预览图关键词列表",
+            "LORA_STACK": "LoRA堆"
+        }
+    },
+    "LoraTagsOnly": {
+        "title": "LoRA关键词",
+        "inputs": {
+            "override_lora_name": "覆盖LoRA名称"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称",
+            "force_fetch": "强制同步",
+            "append_loraname_if_empty": "没有提示词则添加LoRA名"
+        },
+        "outputs": {
+            "civitai_tags_list": "Cvitai关键词列表",
+            "meta_tags_list": "预览图关键词列表"
+        }
+    },
+    "Randomizer": {
+        "title": "LoRA随机",
+        "inputs": {
+            "lora_1": "LoRA堆_1",
+            "lora_2": "LoRA堆_2",
+            "text_1": "文本_1",
+            "text_2": "文本_2"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "text": "文本",
+            "lora stack": "LoRA堆"
+        }
+    },
+    "FusionText": {
+        "title": "融合文本",
+        "inputs": {
+            "text_1": "文本_1",
+            "text_2": "文本_2"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "TextInputBasic": {
+        "title": "文本输入",
+        "inputs": {
+            "prefix": "前缀",
+            "suffix": "后缀"
+        },
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "text": "文本"
+        }
+    },
+    "TagsSelector": {
+        "title": "关键词选择",
+        "inputs": {
+            "tags_list": "关键词列表",
+            "prefix": "前缀",
+            "suffix": "后缀"
+        },
+        "widgets": {
+            "selector": "选择分区",
+            "weight": "权重",
+            "ensure_comma": "生成逗号"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "TagsFormater": {
+        "title": "关键词格式规范化",
+        "inputs": {
+            "tags_list": "关键词列表"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "LoraListNames": {
+        "title": "LoRA名称列表",
+        "widgets": {
+            "lora_name": "LoRA名称"
+        },
+        "outputs": {
+            "lora_name": "LoRA名称"
+        }
+    }
+}

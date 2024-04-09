@@ -330,6 +330,7 @@
         "image processing": "图像处理",
         "image utils": "图像实用工具",
         "decode": "解码",
+    "autotrigger": "LoRA自动触发",
 
     "basic_pipe": "基础节点束",
     "bbox_detector": "BBox检测",
