@@ -10,10 +10,6 @@
             "negative": "负面条件",
             "latent": "Latent",
             "images": "图像",
-            "mask": "遮罩",
-            "control_net": "ControlNet"
-        },
-        "widgets": {
             "seed": "随机种",
             "steps": "步数",
             "step_refiner": "Refiner步数",
@@ -26,7 +22,9 @@
             "text_pos_g": "正面文本G",
             "text_pos_l": "正面文本L",
             "text_neg_g": "负面文本G",
-            "text_neg_l": "负面文本L"
+            "text_neg_l": "负面文本L",
+            "mask": "遮罩",
+            "control_net": "ControlNet"
         },
         "outputs": {
             "CONTEXT": "上下文",
@@ -37,9 +35,21 @@
             "NEGATIVE": "负面条件",
             "LATENT": "Latent",
             "IMAGE": "图像",
+            "SEED": "随机种",
             "STEPS": "步数",
             "STEP_REFINER": "Refiner步数",
-            "CFG": "CFG"
+            "CFG": "CFG",
+            "CKPT_NAME": "模型名称",
+            "SAMPLER": "采样器",
+            "SCHEDULER": "调度器",
+            "CLIP_WIDTH": "CLIP宽度",
+            "CLIP_HEIGHT": "CLIP高度",
+            "TEXT_POS_G": "正面文本G",
+            "TEXT_POS_L": "正面文本L",
+            "TEXT_NEG_G": "负面文本G",
+            "TEXT_NEG_L": "负面文本L",
+            "MASK": "遮罩",
+            "CONTROL_NET": "ControlNet"
         }
     },
     "Context (rgthree)": {
@@ -52,9 +62,7 @@
             "positive": "正面条件",
             "negative": "负面条件",
             "latent": "Latent",
-            "images": "图像"
-        },
-        "widgets": {
+            "images": "图像",
             "seed": "随机种"
         },
         "outputs": {
@@ -372,6 +380,88 @@
             "TEXT_NEG_L": "负面文本L",
             "MASK": "遮罩",
             "CONTROL_NET": "ControlNet"
+        }
+    },
+    "Node Collector (rgthree)": {
+        "title": "节点集合"
+    },
+    "Reroute (rgthree)": {
+        "title": "转接点"
+    },
+    "Fast Muter (rgthree)": {
+        "title": "禁用节点",
+        "outputs": {
+            "OPT_CONNECTION": "可选连接"
+        }
+    },
+    "Fast Bypasser (rgthree)": {
+        "title": "忽略节点",
+        "outputs": {
+            "OPT_CONNECTION": "可选连接"
+        }
+    },
+    "Mute / Bypass Repeater (rgthree)": {
+        "title": "禁用/忽略节点 (中继)",
+        "outputs": {
+            "OPT_CONNECTION": "可选连接"
+        }
+    },
+    "Mute / Bypass Relay (rgthree)": {
+        "title": "禁用/忽略节点 (发送)",
+        "outputs": {
+            "OPT_CONNECTION": "可选连接"
+        }
+    },
+    "Fast Group Bypasser (rgthree)": {
+        "title": "忽略组",
+        "outputs": {
+            "OPT_CONNECTION": "可选连接"
+        }
+    },
+    "Fast Groups Bypasser (rgthree)": {
+        "title": "忽略多组",
+        "outputs": {
+            "OPT_CONNECTION": "可选连接"
+        }
+    },
+    "Fast Actions Button (rgthree)": {
+        "title": "操作键",
+        "widgets": {
+            "Action!": "🎬 启动!"
+        }
+    },
+    "Bookmark (rgthree)": {
+        "title": "🔖书签",
+        "widgets": {
+            "shortcut_key": "快捷键",
+            "zoom": "缩放"
+        }
+    },
+    "Random Unmuter (rgthree)": {
+        "title": "随机启用"
+    },
+    "Fast Groups Muter (rgthree)": {
+        "title": "禁用组",
+        "outputs": {
+            "OPT_CONNECTION": "可选连接"
+        }
+    },
+    "Image Comparer (rgthree)": {
+        "title": "图像对比",
+        "inputs": {
+            "image_a": "图像_A",
+            "image_b": "图像_B"
+        }
+    },
+    "Power Lora Loader (rgthree)": {
+        "title": "强力LoRA加载器",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP"
         }
     }
 }
