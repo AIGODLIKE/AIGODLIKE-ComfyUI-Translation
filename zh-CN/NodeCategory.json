@@ -317,7 +317,7 @@
     "Flowty TripoSR": "Flowty TripoSR",
     "essentials": "Essen节点",
     "VLM Nodes": "VLM节点",
-    "ComfyUI-Frame_Interpolation": "插帧",
+    "ComfyUI-Frame-Interpolation": "插帧",
     "Literals": "常量",
     "mtb": "MTB节点",
         "crop": "裁剪",
