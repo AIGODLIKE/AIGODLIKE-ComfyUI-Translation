@@ -105,10 +105,12 @@ async def get_translation(request: web.Request):
         if "gzip" in accept_encoding:
             json_data = compress_json(json_data, method="gzip")
             headers["Content-Encoding"] = "gzip"
+            # 指定 charset 为 utf-8
+            headers["Content-Type"] = "application/json; charset=utf-8"
     except Exception as e:
         sys.stderr.write(f"[agl/get_translation error]: {e}\n")
         sys.stderr.flush()
-    return web.Response(status=200, body=json_data, content_type="application/json", headers=headers)
+    return web.Response(status=200, body=json_data, headers=headers)
 
 
 def rmtree(path: Path):
