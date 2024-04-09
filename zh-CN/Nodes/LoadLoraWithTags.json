@@ -1,0 +1,25 @@
+{
+    "LoraLoaderTagsQuery": {
+        "title": "",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "opt_prompt": "提示词(可选)"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称",
+            "strength_model": "模型强度",
+            "strength_clip": "CLIP强度",
+            "query_tags": "检测关键词",
+            "tags_out": "输出关键词",
+            "print_tags": "输出关键词到控制台",
+            "bypass": "停用",
+            "force_fetch": "强制同步"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "STRING": "字符串"
+        }
+    }
+}
