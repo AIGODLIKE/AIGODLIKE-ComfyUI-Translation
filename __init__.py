@@ -25,7 +25,7 @@ CUR_PATH = Path(__file__).parent
 
 
 def try_get_json(path: Path):
-    for coding in {"utf-8", "gbk"}:
+    for coding in ["utf-8", "gbk"]:
         try:
             return json.loads(path.read_text(encoding=coding))
         except Exception:
@@ -106,7 +106,7 @@ async def get_translation(request: web.Request):
             json_data = compress_json(json_data, method="gzip")
             headers["Content-Encoding"] = "gzip"
             # 指定 charset 为 utf-8
-            headers["Content-Type"] = "application/json; charset=utf-8"
+            # headers["Content-Type"] = "application/json; charset=utf-8"
     except Exception as e:
         sys.stderr.write(f"[agl/get_translation error]: {e}\n")
         sys.stderr.flush()
