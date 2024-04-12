@@ -1,0 +1,92 @@
+{
+    "ChampLoader": {
+        "title": "Champ加载器",
+        "widgets": {
+            "sd_path": "sd_路径",
+            "vae_path": "vae_路径",
+            "image_encoder_path": "image_encoder_路径",
+            "motion_module_path": "motion_module_路径",
+            "denoising_unet_path": "denoising_unet_路径",
+            "reference_unet_path": "reference_unet_路径",
+            "depth_path": "depth_路径",
+            "dwpose_path": "dwpose_路径",
+            "normal_path": "normal_路径",
+            "semantic_map_path": "semantic_map_路径",
+            "weight_dtype": "模型剪枝"
+        },
+        "outputs": {
+            "champ": "Champ",
+            "cfg": "CFG",
+            "vae": "VAE",
+            "image_enc": "图像编码",
+            "noise_scheduler": "噪波调度"
+        }
+    },
+    "ChampRun": {
+        "title": "Champ执行",
+        "inputs": {
+            "model": "模型",
+            "cfg": "CFG",
+            "vae": "VAE",
+            "image_enc": "图像编码",
+            "noise_scheduler": "噪波调度",
+            "image": "图像",
+            "depth_images": "深度图",
+            "normal_images": "法向图",
+            "semantic_map_images": "Semantic图像",
+            "depose_images": "DWPose图像"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "video_length": "帧数",
+            "num_inference_steps": "步数",
+            "guidance_scale": "引导缩放",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageCombineOneRow": {
+        "title": "图像合并到行",
+        "inputs": {
+            "image1": "图像1",
+            "image2": "图像2",
+            "image3": "图像3",
+            "image4": "图像4",
+            "image5": "图像5",
+            "image6": "图像6",
+            "image7": "图像7",
+            "image8": "图像8",
+            "image9": "图像9",
+            "image10": "图像10",
+            "image11": "图像11",
+            "image12": "图像12"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ImageCombineOneColumn": {
+        "title": "图像合并到列",
+        "inputs": {
+            "image1": "图像1",
+            "image2": "图像2",
+            "image3": "图像3",
+            "image4": "图像4",
+            "image5": "图像5",
+            "image6": "图像6",
+            "image7": "图像7",
+            "image8": "图像8",
+            "image9": "图像9",
+            "image10": "图像10",
+            "image11": "图像11",
+            "image12": "图像12"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    }
+}

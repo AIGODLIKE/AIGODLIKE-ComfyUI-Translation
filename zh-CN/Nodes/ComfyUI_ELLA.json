@@ -1,0 +1,41 @@
+{
+    "LoadElla": {
+        "title": "加载ELLA",
+        "widgets": {
+            "ella_model": "ELLA模型",
+            "t5_model": "T5模型"
+        },
+        "outputs": {
+            "ELLA": "ELLA"
+        }
+    },
+    "ELLATextEncode": {
+        "title": "ELLA文本编码",
+        "inputs": {
+            "ella": "ELLA"
+        },
+        "widgets": {
+            "text": "文本",
+            "sigma": "Sigma"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "GetSigma": {
+        "title": "获取Sigma",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "steps": "步数",
+            "start_at_step": "开始步数",
+            "end_at_step": "结束步数"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    }
+}
