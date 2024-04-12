@@ -49,7 +49,7 @@
             "IMAGE": "图像"
         }
     },
-    "ImageCombineOnRow": {
+    "ImageCombineOneRow": {
         "title": "图像合并到行",
         "inputs": {
             "image1": "图像1",
@@ -69,7 +69,7 @@
             "IMAGE": "图像"
         }
     },
-    "ImageCombineOnColumn": {
+    "ImageCombineOneColumn": {
         "title": "图像合并到列",
         "inputs": {
             "image1": "图像1",
