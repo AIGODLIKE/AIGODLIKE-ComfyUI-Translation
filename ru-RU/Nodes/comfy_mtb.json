@@ -1,0 +1,823 @@
+{
+    "Animation Builder (mtb)": {
+        "title": "Создание анимации (mtb)",
+        "inputs": {
+            "Idle": "Idle",
+            "Iteration:": "Iteration:"
+        },
+        "widgets": {
+            "total_frames": "всего фреймов",
+            "scale_float": "массштаб (float)",
+            "loop_count": "сколько в в цикле",
+            "raw_iteration": "raw_iteration",
+            "raw_loop": "raw петля",
+            "Idle": "Idle",
+            "Iteration:": "Iteration:",
+            "Reset": "Сброс",
+            "Queue": "Очередь"
+        },
+        "outputs": {
+            "frame": "фрейм",
+            "0-1 (scaled)": "0-1 (scaled)",
+            "count": "сколько",
+            "loop_ended": "конец цикла"
+        }
+    },
+    "Get Batch From History (mtb)": {
+        "title": "Получение партии (batch) из истории  (mtb)",
+        "inputs": {
+            "passthrough_image": "изображение из истории"
+        },
+        "widgets": {
+            "enable": "разрешено",
+            "count": "сколько",
+            "offset": "оффсет"
+        },
+        "outputs": {
+            "images": "images"
+        }
+    },
+    "Batch Float (mtb)": {
+        "title": "Партия чисел Float (mtb)",
+        "widgets": {
+            "mode": "режим",
+            "count": "сколько",
+            "min": "миниум",
+            "max": "максимум",
+            "easing": "способ"
+        },
+        "outputs": {
+            "FLOATS": "FLOATS"
+        }
+    },
+    "Batch Transform (mtb)": {
+        "title": "Пакетное изменение (mtb)",
+        "inputs": {
+            "image": "изображение",
+            "x": "X",
+            "y": "Y",
+            "zoom": "зумм",
+            "angle": "угол",
+            "shear": "срез",
+            "border_handling": "пограничная обработка"
+        },
+        "widgets": {
+            "constant_color": "выбрать цвет"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE"
+        }
+    },
+    "Batch Shape (mtb)": {
+        "title": "Генерация градиентов (mtb)",
+        "widgets": {
+            "count": "сколько",
+            "shape": "форма",
+            "image_width": "ширина картинки",
+            "image_height": "высота картинки",
+            "shape_size": "размер фигуры",
+            "thickness": "толщина (плотность)",
+            "color": "цвет",
+            "bg_color": "цвет фона",
+            "shade_color": "цвет на смену",
+            "shadex": "переходов по X",
+            "shadey": "переходов по Y"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE"
+        }
+    },
+    "Batch Make (mtb)": {
+        "title": "Размножить изображение (mtb)",
+        "inputs": {
+            "image": "image"
+        },
+        "widgets": {
+            "count": "сколько"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE"
+        }
+    },
+    "Batch Float Assemble (mtb)": {
+        "title": "Массив из чисел Float (mtb)",
+        "inputs": {
+            "floats_1": "floats_1"
+        },
+        "widgets": {
+            "reverse": "обратный порядок"
+        },
+        "outputs": {
+            "FLOATS": "FLOATS"
+        }
+    },
+    "Batch Float Fill (mtb)": {
+        "title": "Заполнение Float (mtb)",
+        "inputs": {
+            "floats": "floats"
+        },
+        "widgets": {
+            "direction": "направление",
+            "value": "значение",
+            "count": "сколько"
+        },
+        "outputs": {
+            "FLOATS": "FLOATS"
+        }
+    },
+    "Batch Merge (mtb)": {
+        "title": "Слияние изображений (mtb)",
+        "inputs": {
+            "batches_1": "batches_1"
+        },
+        "widgets": {
+            "fusion_mode": "режим слияния",
+            "fill": "пороядок"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE"
+        }
+    },
+    "Batch Shake (mtb)": {
+        "title": "Смещение изображения (mtb)",
+        "inputs": {
+            "images": "images"
+        },
+        "widgets": {
+            "position_amount_x": "по оси X",
+            "position_amount_y": "по оси Y",
+            "rotation_amount": "поворот",
+            "frequency": "частота",
+            "frequency_divider": "делитель частоты",
+            "octaves": "octaves",
+            "seed": "seed",
+            "control_before_generate": "control_before_generate"
+        },
+        "outputs": {
+            "image": "image",
+            "pos_x": "позиция X",
+            "pos_y": "позиция Y",
+            "rot": "поворот"
+        }
+    },
+    "Plot Batch Float (mtb)": {
+        "title": "График из Float (mtb)",
+        "inputs": {
+            "floats_1": "floats_1"
+        },
+        "widgets": {
+            "width": "ширина",
+            "height": "высота",
+            "point_size": "размер точки",
+            "seed": "seed",
+            "control_before_generate": "control_before_generate"
+        },
+        "outputs": {
+            "plot": "график"
+        }
+    },
+    "Smart Step (mtb)": {
+        "title": "Расчет шагов от процента (mtb)",
+        "widgets": {
+            "step": "шагов всего",
+            "start_percent": "% от начала",
+            "end_percent": "% от конца"
+        },
+        "outputs": {
+            "step": "шагов всего",
+            "start": "шаг от начала",
+            "end": "шаг от конца"
+        }
+    },
+    "Styles Loader (mtb)": {
+        "title": "Загрузка стиля (mtb)",
+        "widgets": {
+            "style_name": "стиль"
+        },
+        "outputs": {
+            "positive": "positive",
+            "negative": "negative"
+        }
+    },
+    "Interpolate Clip Sequential (mtb)": {
+        "title": "Интерполяция последовательности CLIP (mtb)",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "base_text": "base_text",
+            "text_to_replace": "text_to_replace",
+            "interpolation_strength": "interpolation_strength"
+        },
+        "outputs": {
+            "CONDITIONING": "CONDITIONING"
+        }
+    },
+    "Any To String (mtb)": {
+        "title": "Любое в строку (mtb)",
+        "inputs": {
+            "input": "input"
+        },
+        "outputs": {
+            "STRING": "STRING"
+        }
+    },
+    "Bbox Mask (mtb)": {
+        "title": "Bbox из маски (mtb)",
+        "inputs": {
+            "mask": "mask",
+            "image": "image"
+        },
+        "widgets": {
+            "invert": "invert"
+        },
+        "outputs": {
+            "bbox": "фрагмент",
+            "image (optional)": "image (optional)"
+        }
+    },
+    "Bbox (mtb)": {
+        "title": "Фрагмент (mtb)",
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "width": "ширина",
+            "height": "Высота"
+        },
+        "outputs": {
+            "BBOX": "BBOX"
+        }
+    },
+    "Crop (mtb)": {
+        "title": "Кадрирование изображения (mtb)",
+        "inputs": {
+            "image": "image",
+            "mask": "mask",
+            "bbox": "bbox"
+        },
+        "widgets": {
+            "x": "смещение по X",
+            "y": "смещение по Y",
+            "width": "ширина",
+            "height": "высота"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE",
+            "MASK": "MASK",
+            "BBOX": "BBOX"
+        }
+    },
+    "Uncrop (mtb)": {
+        "title": "Расширение изображения(mtb)",
+        "inputs": {
+            "image": "image",
+            "crop_image": "crop_image",
+            "bbox": "bbox"
+        },
+        "widgets": {
+            "border_blending": "размытие границы"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE"
+        }
+    },
+    "Curve (mtb)": {
+        "title": "График в Float (mtb)",
+        "outputs": {
+            "FLOAT_CURVE": "FLOAT_CURVE"
+        }
+    },
+    "Debug (mtb)": {
+        "title": "Отладочный вьювер (mtb)",
+        "inputs": {
+            "anything_1": "любое_1"
+        },
+        "widgets": {
+            "output_to_console": "output_to_console"
+        }
+    },
+    "Save Tensors (mtb)": {
+        "title": "Сохранить Tensors (mtb)",
+        "inputs": {
+            "image": "image",
+            "mask": "mask",
+            "latent": "Latent"
+        },
+        "widgets": {
+            "filename_prefix": "префикс файла"
+        }
+    },
+    "Filter Z (mtb)": {
+        "title": "Z фильтр (mtb)",
+        "inputs": {
+            "image": "image",
+            "depth": "depth"
+        },
+        "widgets": {
+            "to_black": "в черный",
+            "threshold": "порог",
+            "invert": "инверсия"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE"
+        }
+    },
+    "Qr Code (mtb)": {
+        "title": "QR-код (mtb)",
+        "widgets": {
+            "url": "URL",
+            "width": "ширина",
+            "height": "высота",
+            "error_correct": "коррекция ошибок",
+            "box_size": "box_size",
+            "border": "толщина рамки",
+            "invert": "invert"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE"
+        }
+    },
+    "Unsplash Image (mtb)": {
+        "title": "Картинка (mtb)",
+        "widgets": {
+            "width": "ширина",
+            "height": "высота",
+            "random_seed": "random_seed",
+            "keyword": "keyword"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE"
+        }
+    },
+    "Text To Image (mtb)": {
+        "title": "Текст в изображение (mtb)",
+        "widgets": {
+            "text": "текст",
+            "font": "шрифт",
+            "wrap": "перенос",
+            "trim": "обрезка",
+            "line_height": "расстояние между строками",
+            "font_zie": "размер шрифта",
+            "width": "ширина изображения",
+            "height": "высота изображения",
+            "h_align": "выравнивание по горизонтали",
+            "v_align": "выравнивание по вертикали",
+            "h_offset": "отступ по горизонтали",
+            "v_offset": "отступ по вертикали",
+            "h_coverage": "ширина текста"
+        },
+        "outputs": {
+            "image": "image"
+        }
+    },
+    "Image Tile Offset (mtb)": {
+        "title": "Расщепление на плитку изображения (mtb)",
+        "inputs": {
+            "image": "image"
+        },
+        "widgets": {
+            "tilesX": "доля от X",
+            "tilesY": "доля от Y"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE"
+        }
+    },
+    "Mask To Image (mtb)": {
+        "title": "Маска в изображение (mtb)",
+        "inputs": {
+            "mask": "mask"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE"
+        }
+    },
+    "Colored Image (mtb)": {
+        "title": "Закраска всего кроме маски (mtb)",
+        "inputs": {
+            "foreground_image": "foreground_image",
+            "foreground_mask": "foreground_mask"
+        },
+        "widgets": {
+            "width": "ширина",
+            "height": "высота"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE"
+        }
+    },
+    "Concat Images (mtb)": {
+        "title": "Объединение изображений (mtb)",
+        "inputs": {
+            "image_1": "image_1"
+        },
+        "widgets": {
+            "reverse": "reverse"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE"
+        }
+    },
+    "Image Compare (mtb)": {
+        "title": "Сравнение изображений (mtb)",
+        "inputs": {
+            "imageA": "imageA",
+            "imageB": "imageB"
+        },
+        "widgets": {
+            "mode": "режим"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE"
+        }
+    },
+    "Image Premultiply (mtb)": {
+        "title": "Фильтр изображения по маске (mtb)",
+        "inputs": {
+            "image": "image",
+            "mask": "mask"
+        },
+        "widgets": {
+            "invert": "invert"
+        },
+        "outputs": {
+            "RGBA": "RGBA"
+        }
+    },
+    "Image Resize Factor (mtb)": {
+        "title": "Коэфициент изменения размера (mtb)",
+        "inputs": {
+            "image": "image",
+            "mask": "mask"
+        },
+        "widgets": {
+            "factor": "factor",
+            "supersample": "supersample",
+            "resampling": "resampling"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE",
+            "MASK": "MASK"
+        }
+    },
+    "Image Remove Background Rembg (mtb)": {
+        "title": "Удаление фона с изображения Rembg (mtb)",
+        "widgets": {
+            "alpha_matting": "alpha_matting",
+            "alpha_matting_foreground_threshold": "alpha_matting_foreground_threshold",
+            "alpha_matting_background_threshold": "alpha_matting_background_threshold",
+            "alpha_matting_erode_size": "alpha_matting_erode_size",
+            "post_process_mask": "post_process_mask"
+        },
+        "outputs": {
+            "Image (rgba)": "Image (rgba)",
+            "Mask": "Mask",
+            "Image": "image"
+        }
+    },
+    "Color Correct (mtb)": {
+        "title": "Коррекция изображения (mtb)",
+        "inputs": {
+            "image": "image"
+        },
+        "widgets": {
+            "clamp": "clamp",
+            "gamma": "гамма",
+            "contrast": "контраст",
+            "exposure": "выдержка",
+            "offset": "смещение",
+            "hue": "оттенок",
+            "saturation": "насыщенность",
+            "value": "value"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE"
+        }
+    },
+    "Blur (mtb)": {
+        "title": "Размытие (mtb)",
+        "inputs": {
+            "image": "image",
+            "sigmasX": "Sigmas по оси X",
+            "sigmasY": "Sigmas по оси Y"
+        },
+        "widgets": {
+            "sigmaX": "Sigma по оси X",
+            "sigmaY": "Sigma по оси Y"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE"
+        }
+    },
+    "Sharpen (mtb)": {
+        "title": "Резкость на краях - Sharpen (mtb)",
+        "inputs": {
+            "image": "image"
+        },
+        "widgets": {
+            "sharpen_radius": "sharpen_radius",
+            "sigma_x": "Sigma по оси X",
+            "sigma_y": "Sigma по оси Y",
+            "alpha": "Alpha"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE"
+        }
+    },
+    "Stack Images (mtb)": {
+        "title": "Соединение изображений (mtb)",
+        "inputs": {
+            "image_1": "image_1"
+        },
+        "widgets": {
+            "vertical": "вертикально"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE"
+        }
+    },
+    "Pick From Batch (mtb)": {
+        "title": "Выбор из партии (mtb)",
+        "inputs": {
+            "image": "image"
+        },
+        "widgets": {
+            "from_direction": "from_direction",
+            "count": "сколько"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE"
+        }
+    },
+    "Save Image Grid (mtb)": {
+        "title": "Сохранить сеть изображений (mtb)",
+        "inputs": {
+            "images": "images"
+        },
+        "widgets": {
+            "filename_prefix": "префикс имени файла",
+            "save_intermediate": "save_intermediate"
+        }
+    },
+    "Load Image From Url (mtb)": {
+        "title": "Загрузка изображения с URL",
+        "widgets": {
+            "url": "URL"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE"
+        }
+    },
+    "Save Gif (mtb)": {
+        "title": "Сохранить GIF (mtb)",
+        "inputs": {
+            "image": "image"
+        },
+        "widgets": {
+            "fps": "fps",
+            "resize_by": "изменить размер",
+            "optimize": "оптимизировать",
+            "pingpong": "Ping-Pong",
+            "resample_filter": "метод ресамплинга",
+            "use_ffmpeg": "используя ffmpeg"
+        }
+    },
+    "Export With Ffmpeg (mtb)": {
+        "title": "Экспорт с FFmpeg",
+        "inputs": {
+            "images": "images",
+            "playlist": "playlist"
+        },
+        "widgets": {
+            "fps": "fps",
+            "prefix": "prefix",
+            "format": "format",
+            "codec": "codec"
+        },
+        "outputs": {
+            "VIDEO": "VIDEO"
+        }
+    },
+    "Add To Playlist (mtb)": {
+        "title": "Добавить в плей-лист (mtb)",
+        "inputs": {
+            "video_1": "видео_1"
+        },
+        "widgets": {
+            "relative_paths": "относительный путь",
+            "persistant_playlist": "постоянный плей-лист",
+            "playlist_name": "имя плей-листа",
+            "index": "индекс"
+        }
+    },
+    "Read Playlist (mtb)": {
+        "title": "Прочитать плей-лист (mbt)",
+        "widgets": {
+            "enable": "разрешить",
+            "persistant_playlist": "постоянный плей-лист",
+            "playlist_name": "имя плей-листа",
+            "index": "индекс"
+        },
+        "outputs": {
+            "PLAYLIST": "PLAYLIST"
+        }
+    },
+    "Load Image Sequence (mtb)": {
+        "title": "Загрузить последовательность изображений (mbt)",
+        "widgets": {
+            "path": "путь",
+            "current_frame": "текущий фрейм"
+        },
+        "outputs": {
+            "image": "image",
+            "mask": "mask",
+            "current_frame": "текущий фрейм"
+        }
+    },
+    "Save Image Sequence (mtb)": {
+        "title": "Сохранить последовательность изображений (mbt)",
+        "inputs": {
+            "images": "images"
+        },
+        "widgets": {
+            "filename_prefix": "префикс имени",
+            "current_frame": "текущий фрейм"
+        }
+    },
+    "Latent Lerp (mtb)": {
+        "title": "Линейная интерполяция латента (mtb)",
+        "inputs": {
+            "A": "Latent_A",
+            "B": "Latent_B"
+        },
+        "widgets": {
+            "1": "1"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "Fit Number (mtb)": {
+        "title": "Цифровое картирование (mtb)",
+        "inputs": {
+            "value": "value"
+        },
+        "widgets": {
+            "clamp": "округление",
+            "source_min": "источник min",
+            "source_max": "источник max",
+            "target_min": "назначение min",
+            "target_max": "назначение max",
+            "easing": "метод"
+        },
+        "outputs": {
+            "FLOAT": "FLOAT"
+        }
+    },
+    "Math Expression (mtb)": {
+        "title": "Математическое выражение",
+        "inputs": {
+            "x": "x"
+        },
+        "widgets": {
+            "exprssion": "выражение"
+        },
+        "outputs": {
+            "result (float)": "результат (float)",
+            "result (int)": "результат (int)"
+        }
+    },
+    "Float To Number (mtb)": {
+        "title": "Float в число",
+        "inputs": {
+            "float": "float"
+        },
+        "outputs": {
+            "NUMBER": "NUMBER"
+        }
+    },
+    "Int To Bool (mtb)": {
+        "title": "Int to Bool (mtb)",
+        "widgets": {
+            "int": "int"
+        },
+        "outputs": {
+            "BOOLEAN": "BOOLEAN"
+        }
+    },
+    "Int To Number (mtb)": {
+        "title": "Int To Number (mtb)",
+        "inputs": {
+            "int": "int"
+        },
+        "outputs": {
+            "NUMBER": "NUMBER"
+        }
+    },
+    "String Replace (mtb)": {
+        "title": "String Replace (mtb)",
+        "inputs": {
+            "string": "строка"
+        },
+        "widgets": {
+            "old": "что",
+            "new": "на что"
+        },
+        "outputs": {
+            "STRING": "STRING"
+        }
+    },
+    "Deep Bump (mtb)": {
+        "title": "Карта нормалей (mtb)",
+        "inputs": {
+            "image": "image"
+        },
+        "widgets": {
+            "mode": "mode",
+            "color_to_normals_overlap": "color_to_normals_overlap",
+            "normals_to_curvature_blur_radius": "normals_to_curvature_blur_radius",
+            "normals_to_height_seamless": "normals_to_height_seamless"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE"
+        }
+    },
+    "Model Patch Seamless (mtb)": {
+        "title": "Model Patch Seamless (mtb)",
+        "inputs": {
+            "model": "model"
+        },
+        "widgets": {
+            "startStep": "startStep",
+            "stopStep": "stopStep",
+            "tilingX": "tilingX",
+            "tilingY": "tilingY"
+        },
+        "outputs": {
+            "Original Model (passthrough)": "Original Model (passthrough)",
+            "Patched Model": "Patched Model"
+        }
+    },
+    "Transform Image (mtb)": {
+        "title": "Трансформация изображения (mtb)",
+        "inputs": {
+            "image": "image"
+        },
+        "widgets": {
+            "x": "сдвиг по X",
+            "y": "сдвиг Y",
+            "zoom": "зумм",
+            "angle": "поворот",
+            "shear": "наклон",
+            "border_handling": "обработка границы"
+        },
+        "outputs": {
+            "IMAGE": "IMAGE"
+        }
+    },
+    "Note Plus (mtb)": {
+        "title": "Заметка HTML+"
+    },
+    "To Device (mtb)": {
+        "title": "На устройство (cpu-gpu) (mtb)",
+        "inputs": {
+            "image": "image",
+            "mask": "mask"
+        },
+        "widgets": {
+            "ignore_errors": "игнорировать ошибки",
+            "device": "устройство"
+        },
+        "outputs": {
+            "с": "images",
+            "masks": "masks"
+        }
+    },
+    "Apply Text Template (mtb)": {
+        "title": "Применить шаблон текста (mtb)",
+        "inputs": {
+            "var_1": "var_1"
+        },
+        "widgets": {
+            "template": "шаблон"
+        },
+        "outputs": {
+            "string": "string"
+        }
+    },
+    "Match Dimensions (mtb)": {
+        "title": "Match Dimensions (mtb)",
+        "inputs": {
+            "source": "source",
+            "reference": "reference"
+        },
+        "widgets": {
+            "match": "source"
+        },
+        "outputs": {
+            "image": "image",
+            "new_width": "новая ширина",
+            "new_height": "новая высота"
+        }
+    }
+}
