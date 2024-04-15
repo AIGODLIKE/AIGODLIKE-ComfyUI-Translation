@@ -562,6 +562,19 @@
             "mask": "遮罩"
         }
     },
+    "BboxVisualize": {
+        "title": "BBox预览",
+        "inputs": {
+            "images": "图像",
+            "bboxes": "BBox"
+        },
+        "widgets": {
+            "line_width": "线宽"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
 
 
 
@@ -741,6 +754,29 @@
         },
         "outputs": {
             "value": "值"
+        }
+    },
+    "StringConstantMultiline": {
+        "title": "字符串常量(文本框)",
+        "widgets": {
+            "string": "字符串",
+            "strip_newlines": "带换行符"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "JoinStrings": {
+        "title": "合并字符串",
+        "inputs": {
+            "string1": "字符串1",
+            "string2": "字符串2"
+        },
+        "widgets": {
+            "delimiter": "分隔符"
+        },
+        "outputs": {
+            "STRING": "字符串"
         }
     },
     "VRAM_Debug": {
@@ -937,6 +973,19 @@
             "IMAGE": "图像"
         }
     },
+    "SuperPrompt": {
+        "title": "超级提示词",
+        "inputs": {
+            "prompt": "提示词"
+        },
+        "widgets": {
+            "instruction_prompt": "提示词提示词",
+            "max_new_tokens": "输出最大Token数"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
     "StableZero123_BatchSchedule": {
         "title": "SZ123_批次调度",
         "inputs": {
@@ -962,6 +1011,59 @@
             "latent": "Latent"
         }
     },
+    "SV3D_BatchSchedule": {
+        "title": "SV3D_批次调度",
+        "inputs": {
+            "clip_vision": "CLIP视觉",
+            "init_image": "图像",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "batch_size": "批次大小",
+            "interpolation": "插值方式",
+            "azimuth_points_string": "方位角",
+            "elevation_points_string": "俯仰角"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latent": "Latent"
+        }
+    },
+    "GLIGENTextBoxApplyBatch": {
+        "title": "GLIGEN文本框应用(批次)",
+        "inputs": {
+            "conditioning_to": "条件",
+            "clip": "CLIP",
+            "gligen_textbox_model": "GLIGEN模型",
+            "latents": "Latent"
+        },
+        "widgets": {
+            "text": "文本",
+            "width": "宽度",
+            "height": "高度",
+            "coordinates": "坐标",
+            "interpolation": "插值方式"
+        },
+        "outputs": {
+            "CONDITIONING": "条件",
+            "IMAGE": "图像"
+        }
+    },
+    "LoadResAdapterNormalization": {
+        "title": "加载规格化ResAdapter",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "resadapter_path": "ResAdapter路径"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
     "GetImagesFromBatchIndexed": {
         "title": "从批次获取图像",
         "inputs": {
@@ -969,6 +1071,19 @@
         },
         "widgets": {
             "indexes": "序号"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "InsertImagesToBatchIndexed": {
+        "title": "插入图像到索引批次",
+        "inputs": {
+            "original_images": "原图像",
+            "images_to_insert": "插入图像"
+        },
+        "widgets": {
+            "indexes": "索引"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -1006,7 +1121,7 @@
             "latents": "Latent"
         },
         "widgets": {
-            "indexes": "序号"
+            "indexes": "索引"
         },
         "outputs": {
             "LATENT": "Latent"
@@ -1025,28 +1140,22 @@
             "IMAGE": "图像"
         }
     },
-
-
-    "GLIGENTextBoxApplyBatch": {
-        "title": "GLIGEN文本框应用(批次)",
+    "RemapImageRange": {
+        "title": "重映射图像范围",
         "inputs": {
-            "conditioning_to": "条件",
-            "clip": "CLIP",
-            "gligen_textbox_model": "GLIGEN模型",
-            "latents": "Latent"
+            "image": "图像"
         },
         "widgets": {
-            "text": "文本",
-            "width": "宽度",
-            "height": "高度",
-            "coordinates": "坐标",
-            "interpolation": "插值方法"
+            "min": "最小值",
+            "max": "最大值",
+            "clamp": "钳制"
         },
         "outputs": {
-            "CONDITIONING": "条件",
             "IMAGE": "图像"
         }
     },
+
+
     "NormalizedAmplitudeToMask": {
         "title": "规格化振幅到遮罩",
         "inputs": {
@@ -1093,6 +1202,31 @@
         },
         "outputs": {
             "IMAGE": "图像"
+        }
+    },
+    "CameraPoseVisualizer": {
+        "title": "相机姿态预览",
+        "widgets": {
+            "pose_file_path": "姿态文件路径",
+            "sample_stride": "采样步长",
+            "frames": "帧数",
+            "use_viewer": "使用预览器"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Sleep": {
+        "title": "待机",
+        "inputs": {
+            "input": "输入"
+        },
+        "widgets": {
+            "minutes": "分钟",
+            "seconds": "秒数"
+        },
+        "outputs": {
+            "*": "*"
         }
     },
     "Intrinsic_lora_sampling": {
