@@ -87,6 +87,20 @@
             "denoised_output": "降噪输出"
         }
     },
+    "SamplerCustomAdvanced": {
+        "title": "自定义采样器(高级)",
+        "inputs": {
+            "noise": "噪波生成",
+            "guider": "引导",
+            "sampler": "采样器",
+            "sigmas": "Sigmas",
+            "latent_image": "Latent"
+        },
+        "outputs": {
+            "output": "输出",
+            "denoised_output": "降噪输出"
+        }
+    },
     "KarrasScheduler": {
         "title": "Karras调度器",
         "widgets": {
@@ -197,6 +211,71 @@
             "SAMPLER": "采样器"
         }
     },
+    "SamplerDPMAdaptative": {
+        "title": "DPMAdaptative采样器",
+        "outputs": {
+            "SAMPLER": "采样器"
+        }
+    },
+
+    "CFGGuider": {
+        "title": "CFG引导",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件"
+        },
+        "widgets": {
+            "cfg": "CFG"
+        },
+        "outputs": {
+            "GUIDER": "引导"
+        }
+    },
+    "DualCFGGuider": {
+        "title": "双CFG引导",
+        "inputs": {
+            "model": "模型",
+            "cond1": "正面条件1",
+            "cond2": "正面条件2",
+            "negative": "负面条件"
+        },
+        "widgets": {
+            "cfg_conds": "CFG正面条件",
+            "cfg_cond2_negative": "CFG_正面条件2_负面条件"
+        },
+        "outputs": {
+            "GUIDER": "引导"
+        }
+    },
+    "BasicGuider": {
+        "title": "基础引导",
+        "inputs": {
+            "model": "模型",
+            "conditioning": "条件"
+        },
+        "outputs": {
+            "GUIDER": "引导"
+        }
+    },
+
+    "RandomNoise": {
+        "title": "随机噪波",
+        "widgets": {
+            "noise_seed": "随机种",
+            "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "NOISE": "噪波生成"
+        }
+    },
+    "DisableNoise": {
+        "title": "禁用噪波",
+        "outputs": {
+            "NOISE": "噪波生成"
+        }
+    },
+
     "BasicScheduler": {
         "title": "基础调度器",
         "inputs": {
@@ -1827,7 +1906,7 @@
             "MODEL": "模型"
         }
     },
-    "Differential Diffusion": {
+    "DifferentialDiffusion": {
         "title": "差异扩散",
         "inputs": {
             "model": "模型"
@@ -1951,6 +2030,36 @@
     },
 
 
+    "ModelMergeSD1": {
+        "title": "模型融合(SD1)",
+        "inputs": {
+            "model1": "模型1",
+            "model2": "模型2"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "ModelMergeSD2": {
+        "title": "模型融合(SD2)",
+        "inputs": {
+            "model1": "模型1",
+            "model2": "模型2"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "ModelMergeSDXL": {
+        "title": "模型融合(SDXL)",
+        "inputs": {
+            "model1": "模型1",
+            "model2": "模型2"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
     "ModelMergeSimple": {
         "title": "融合模型",
         "inputs": {
@@ -2041,16 +2150,6 @@
     },
     "ModelMergeBlockNumber": {
         "title": "融合模型(分层数)",
-        "inputs": {
-            "model1": "模型1",
-            "model2": "模型2"
-        },
-        "outputs": {
-            "MODEL": "模型"
-        }
-    },
-    "ModelMergeSDXL": {
-        "title": "融合SDXL模型",
         "inputs": {
             "model1": "模型1",
             "model2": "模型2"
