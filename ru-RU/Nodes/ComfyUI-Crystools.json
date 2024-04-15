@@ -67,7 +67,7 @@
         }
     },
     "Primitive float [Crystools]": {
-        "title": "Float-примитив",
+        "title": "Float примитив",
         "widgets": {
             "float": "float"
         },

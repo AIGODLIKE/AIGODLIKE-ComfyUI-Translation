@@ -12,6 +12,18 @@
   "Reroute": {
     "title": "Рероутер"
   },
+
+  "VAEDecode": {
+    "title": "VAE декодер",
+    "inputs": {
+        "samples": "Latent",
+        "vae": "VAE"
+    },
+    "outputs": {
+        "IMAGE": "IMAGE"
+    }
+  },
+
   "KSampler": {
     "title": "KSampler семплер",
     "inputs": {
