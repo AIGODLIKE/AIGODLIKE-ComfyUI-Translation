@@ -1255,8 +1255,37 @@
             "sam_pipe": "SAM模型节点束"
         }
     },
+    "easy preMaskDetailerFix": {
+        "title": "预遮罩细节修复",
+        "inputs": {
+            "pipe": "节点束",
+            "mask": "遮罩",
+            "optional_image": "图像（可选）"
+        },
+        "widgets": {
+            "guide_size": "引导大小",
+            "guide_size_for": "引导目标",
+            "max_size": "最大尺寸",
+            "mask_mode": "遮罩模式",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "feather": "羽化",
+            "crop_factor": "裁剪系数",
+            "drop_size": "最小尺寸",
+            "refiner_ratio": "Refiner比率",
+            "batch_size": "批次大小",
+            "cycle": "循环",
+            "inpaint_method": "内补方式",
+            "noise_mask_feather": "噪波遮罩羽化"
+        }
+    }
     "easy preDetailerFix": {
-        "title": "预细节修复处理",
+        "title": "预细节修复",
         "inputs": {
             "pipe": "节点束",
             "image": "图像",
@@ -1342,6 +1371,134 @@
             "patch": "patch"
         }
     },
+    "easy ipadapterApply": {
+        "title": "应用IPAdapter",
+        "inputs": {
+            "model": "模型",
+            "image": "图像",
+            "attn_mask": "关注层遮罩",
+            "optional_ipadapter": "IPAdapter(可选)"
+        },
+        "widgets": {
+            "preset": "预置参数",
+            "weight": "权重",
+            "start_at": "开始位置",
+            "end_at": "结束位置",
+            "cache_mode": "缓存模式",
+            "use_tiled": "分块"
+        },
+        "outputs": {
+            "model": "模型",
+            "tiles": "分块图像",
+            "masks": "遮罩",
+            "ipadapter": "IPAdapter"
+        }
+    },
+    "easy ipadapterApplyADV": {
+        "title": "应用IPAdapter(高级)",
+        "inputs": {
+            "model": "模型",
+            "image": "图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP_Vision",
+            "optional_ipadapter": "IPAdapter(可选)"
+        },
+        "widgets": {
+            "preset": "预置参数",
+            "weight": "权重",
+            "weight_type": "权重类型",
+            "combine_embeds": "合并嵌入组",
+            "start_at": "开始位置",
+            "end_at": "结束位置",
+            "embeds_scaling": "嵌入组缩放",
+            "cache_mode": "缓存模式",
+            "use_tiled": "分块",
+            "use_batch": "分批"
+        },
+        "outputs": {
+            "model": "模型",
+            "tiles": "分块图像",
+            "masks": "遮罩",
+            "ipadapter": "IPAdapter"
+        }
+    },
+    "easy ipadapterApplyEncoder": {
+        "title": "应用IPAdapter(编码)",
+        "inputs": {
+            "model": "模型",
+            "image_1": "图像_1",
+            "image_2": "图像_2",
+            "image_3": "图像_3",
+            "mask_1": "遮罩_1",
+            "mask_2": "遮罩_2",
+            "mask_3": "遮罩_3",
+            "optional_ipadapter": "IPAdapter(可选)",
+            "pos_embeds": "正面嵌入组",
+            "neg_embeds": "负面嵌入组"
+        },
+        "widgets": {
+            "preset": "预置参数",
+            "num_embeds": "嵌入组数量",
+            "weight1": "权重_1",
+            "weight2": "权重_2",
+            "combine_method": "合并方式"
+        },
+        "outputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "pos_embed": "正面嵌入组",
+            "neg_embed": "负面嵌入组"
+        }
+    },
+    "easy ipadapterApplyEmbeds": {
+        "title": "应用IPAdapter(嵌入组)",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "pos_embed": "正面嵌入组",
+            "neg_embed": "负面嵌入组",
+            "attn_mask": "关注层遮罩"
+        },
+        "widgets": {
+            "weight": "权重",
+            "weight_type": "权重类型",
+            "start_at": "开始位置",
+            "end_at": "结束位置",
+            "embeds_scaling": "嵌入组缩放"
+        },
+        "outputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter"
+        }
+    },
+    "easy ipadapterStyleComposition": {
+        "title": "应用IPAdapter(风格合成)",
+        "inputs": {
+            "model": "模型",
+            "image_style": "风格图像",
+            "image_composition": "合成图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP_Vision",
+            "optional_ipadapter": "IPAdapter(可选)"
+        },
+        "widgets": {
+            "preset": "预置参数",
+            "weight_type": "权重类型",
+            "weight_composition": "合成权重",
+            "expand_style": "扩展风格",
+            "combine_embeds": "合并嵌入组",
+            "start_at": "开始位置",
+            "end_at": "结束位置",
+            "embeds_scaling": "嵌入组缩放",
+            "cache_mode": "缓存模式"
+        },
+        "outputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter"
+        }
+    }
     "easy instantIDApply": {
         "title": "应用InstantID",
         "inputs": {
@@ -1498,6 +1655,30 @@
             "IMAGE": "图像"
         }
     },
+    "easy imageRatio": {
+        "title": "图像比率",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "width_ratio_int": "宽度比率整数",
+            "height_ratio_int": "高度比率整数",
+            "width_ratio_float": "宽度比率浮点",
+            "height_ratio_float": "高度比率浮点"
+        }
+    },
+    "easy imageToMask": {
+        "title": "图片到遮罩",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "channel": "通道"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
     "easy imageSplitList": {
         "title": "图像拆分",
         "inputs": {
@@ -1530,6 +1711,29 @@
         "widgets": {
             "filename_prefix": "文件名前缀",
             "only_preview": "仅预览"
+        }
+    },
+    "easy imageRemBG": {
+        "title": "图像背景移除",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "rem_mode": "移除模式",
+            "image_output": "图像输出"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "easy imageChooser": {
+        "title": "图像选择器",
+        "inputs": {
+            "images": "图像"
+        },
+        "outputs": {
+            "image": "图像"
         }
     },
     "easy joinImageBatch": {
