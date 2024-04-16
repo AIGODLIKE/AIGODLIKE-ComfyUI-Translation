@@ -1283,7 +1283,7 @@
             "inpaint_method": "内补方式",
             "noise_mask_feather": "噪波遮罩羽化"
         }
-    }
+    },
     "easy preDetailerFix": {
         "title": "预细节修复",
         "inputs": {
@@ -1498,7 +1498,7 @@
             "model": "模型",
             "ipadapter": "IPAdapter"
         }
-    }
+    },
     "easy instantIDApply": {
         "title": "应用InstantID",
         "inputs": {
