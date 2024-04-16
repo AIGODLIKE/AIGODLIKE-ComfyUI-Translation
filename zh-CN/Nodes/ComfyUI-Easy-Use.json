@@ -1280,7 +1280,7 @@
             "refiner_ratio": "Refiner比率",
             "batch_size": "批次大小",
             "cycle": "循环",
-            "inpaint_method": "内补方式",
+            "inpaint_model": "内补模型",
             "noise_mask_feather": "噪波遮罩羽化"
         }
     },
@@ -1401,7 +1401,7 @@
             "image": "图像",
             "image_negative": "负面图像",
             "attn_mask": "关注层遮罩",
-            "clip_vision": "CLIP_Vision",
+            "clip_vision": "CLIP视觉",
             "optional_ipadapter": "IPAdapter(可选)"
         },
         "widgets": {
@@ -1427,12 +1427,12 @@
         "title": "应用IPAdapter(编码)",
         "inputs": {
             "model": "模型",
-            "image_1": "图像_1",
-            "image_2": "图像_2",
-            "image_3": "图像_3",
-            "mask_1": "遮罩_1",
-            "mask_2": "遮罩_2",
-            "mask_3": "遮罩_3",
+            "image1": "图像_1",
+            "image2": "图像_2",
+            "image3": "图像_3",
+            "mask1": "遮罩_1",
+            "mask2": "遮罩_2",
+            "mask3": "遮罩_3",
             "optional_ipadapter": "IPAdapter(可选)",
             "pos_embeds": "正面嵌入组",
             "neg_embeds": "负面嵌入组"
@@ -1480,7 +1480,7 @@
             "image_composition": "合成图像",
             "image_negative": "负面图像",
             "attn_mask": "关注层遮罩",
-            "clip_vision": "CLIP_Vision",
+            "clip_vision": "CLIP视觉",
             "optional_ipadapter": "IPAdapter(可选)"
         },
         "widgets": {
@@ -1713,7 +1713,7 @@
             "only_preview": "仅预览"
         }
     },
-    "easy imageRemBG": {
+    "easy imageRemBg": {
         "title": "图像背景移除",
         "inputs": {
             "images": "图像"
