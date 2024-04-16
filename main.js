@@ -206,11 +206,11 @@ export class TUtils {
         var matchInput = value.content?.match(reInput);
         if (matchInput) {
           var match = matchInput[1];
-          options.extra.inputs?.find((i) => {
+          options?.extra?.inputs?.find((i) => {
             if (i.name != match) return false;
             match = i.label ? i.label : i.name;
           });
-          options.extra.widgets?.find((i) => {
+          options?.extra?.widgets?.find((i) => {
             if (i.name != match) return false;
             match = i.label ? i.label : i.name;
           });
