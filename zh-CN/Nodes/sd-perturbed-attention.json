@@ -1,0 +1,17 @@
+{
+    "PerturbedAttention": {
+        "title": "PAG注意力引导(高级)",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "scale": "缩放",
+            "adaptive_scale": "自适应缩放",
+            "unet_block": "UNet块",
+            "unet_block_id": "UNet块ID"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    }
+}

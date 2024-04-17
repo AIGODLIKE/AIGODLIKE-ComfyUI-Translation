@@ -676,6 +676,15 @@
             "IMAGE": "图像"
         }
     },
+    "ControlNetPreprocessorSelector": {
+        "title": "预处理器选择器",
+        "widgets": {
+            "preprocessor": "预处理器"
+        },
+        "outputs": {
+            "prprocessor": "预处理器"
+        }
+    },
     "PixelPerfectResolution": {
         "title": "完美像素",
         "inputs": {

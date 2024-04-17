@@ -517,6 +517,15 @@
             "REFINER_CONDITIONING-": "负面条件(Refiner)"
         }
     },
+    "Lora Stack To String Converter": {
+        "title": "LoRA堆转换为字符串",
+        "inputs": {
+            "lora_stack": "LoRA堆"
+        },
+        "outputs": {
+            "LoRA String": "字符串"
+        }
+    },
 
 
 

@@ -305,7 +305,7 @@
         }
     },
     "IPAdapterUnifiedLoader": {
-        "title": "IPAdapter统一应用",
+        "title": "IPAdapter加载器",
         "inputs": {
             "model": "模型",
             "ipadapter": "IPAdapter"
@@ -319,7 +319,7 @@
         }
     },
     "IPAdapterUnifiedLoaderFaceID": {
-        "title": "IPAdapterFaceID统一应用",
+        "title": "IPAdapterFaceID加载器",
         "inputs": {
             "model": "模型",
             "ipadapter": "IPAdapter"
@@ -335,7 +335,7 @@
         }
     },
     "IPAdapterModelLoader": {
-        "title": "IPAdapter加载器",
+        "title": "IPAdapter模型加载器",
         "widgets": {
             "ipadapter_file": "IPAdapter文件"
         },
@@ -344,7 +344,7 @@
         }
     },
     "IPAdapterInsightFaceLoader": {
-        "title": "IPAdapterInsightFace加载器",
+        "title": "IPAdapterInsightFace模型加载器",
         "widgets": {
             "provider": "设备"
         },
