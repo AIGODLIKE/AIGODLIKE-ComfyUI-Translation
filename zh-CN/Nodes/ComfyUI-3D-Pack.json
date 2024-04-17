@@ -27,7 +27,7 @@
     "[Comfy3D] CRM CCMs MVDiffusion Model": {
         "title": "CRM CCMs MVDiffusion 模型",
         "inputs": {
-            "crm_mvdffusion_sampler": "CRM_MVDiffusion采样器",
+            "crm_mvdiffusion_sampler": "CRM_MVDiffusion采样器",
             "reference_image": "参考图像",
             "reference_mask": "参考遮罩",
             "multiview_images": "多视图"
@@ -47,7 +47,7 @@
     "[Comfy3D] CRM Images MVDiffusion Model": {
         "title": "CRM 图像 MVDiffusion 模型",
         "inputs": {
-            "crm_mvdffusion_sampler": "CRM_MVDiffusion采样器",
+            "crm_mvdiffusion_sampler": "CRM_MVDiffusion采样器",
             "reference_image": "参考图像",
             "reference_mask": "参考遮罩"
         },
@@ -110,6 +110,60 @@
             "trained_mesh": "网格"
         }
     },
+    "[Comfy3D] Fitting Mesh With Multiview Images": {
+        "title": "多视图适配网格",
+        "inputs": {
+            "reference_image": "参考图像",
+            "reference_mask": "参考遮罩",
+            "reference_orbit_camera_poses": "参考轨道相机姿势",
+            "mesh": "网格"
+        },
+        "widgets": {
+            "reference_orbit_camera_fovy": "参考轨道相机镜头",
+            "mesh_albedo_height": "网格反照率高度",
+            "mesh_albedo_width": "网格反照率宽度",
+            "training_iterations": "训练迭代次数",
+            "batch_size": "批次大小",
+            "texture_learning_rate": "纹理学习率",
+            "train_mesh_geometry": "训练几何网格",
+            "geometry_learning_rate": "几何学习率",
+            "ms_ssim_loss_weight": "MS-SSIM损失权重",
+            "remesh_after_n_iteration": "每N次迭代重映射网格",
+            "force_cuda_rasterize": "强制光栅化CUDA"
+        },
+        "outputs": {
+            "trained_mesh": "网格",
+            "baked_texture": "纹理"
+        }
+    },
+    "[Comfy3D] FlexiCubes MVS": {
+        "title": "FlexiCube MVS",
+        "inputs": {
+            "reference_depth_maps": "参考深度图像",
+            "reference_normal_maps": "参考法向图像",
+            "reference_masks": "参考遮罩",
+            "reference_orbit_camera_poses": "参考轨道相机姿势"
+        },
+        "widgets": {
+            "reference_orbit_camera_fovy": "参考轨道相机镜头",
+            "training_iterations": "训练迭代次数",
+            "batch_size": "批次大小",
+            "learning_rate": "学习率",
+            "voxel_grids_resolution": "体素栅格分辨率",
+            "depth_min_distance": "深度最小距离",
+            "depth_max_distance": "深度最大距离",
+            "mask_loss_weight": "遮罩损失权重",
+            "depth_loss_weight": "深度损失权重",
+            "normal_loss_weight": "法向损失权重",
+            "sdf_regularizer_weight": "sdf_regularizer_weight",
+            "remove_floaters_weight": "remove_floaters_weight",
+            "cube_stabilizer_weight": "cube_stabilizer_weight",
+            "force_cuda_rast": "强制光栅化CUDA"
+        },
+        "outputs": {
+            "mesh": "网格"
+        }
+    },
     "[Comfy3D] Gaussian Splatting": {
         "title": "高斯泼溅",
         "inputs": {
@@ -149,6 +203,27 @@
         },
         "outputs": {
             "gs_ply": "gs_ply"
+        }
+    },
+    "[Comfy3D] Instant NGP": {
+        "title": "Instant NGP",
+        "inputs": {
+            "reference_image": "参考图像",
+            "reference_mask": "参考遮罩",
+            "reference_orbit_camera_poses": "参考轨道相机姿势"
+        },
+        "widgets": {
+            "reference_orbit_camera_fovy": "参考轨道相机镜头",
+            "training_iterations": "训练迭代次数",
+            "training_resolution": "训练分辨率",
+            "marching_cude_threshold": "行进曲线阈值",
+            "marching_cube_grids_resolution": "行进曲线栅格分辨率",
+            "marching_cube_grids_batch_size": "行进曲线栅格批次大小",
+            "texture_resolution": "纹理分辨率",
+            "force_cuda_rast": "强制光栅化CUDA"
+        },
+        "outputs": {
+            "mesh": "网格"
         }
     },
     "[Comfy3D] Large Multiview Gaussian Model": {
