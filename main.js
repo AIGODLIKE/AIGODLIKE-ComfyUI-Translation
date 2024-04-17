@@ -202,15 +202,16 @@ export class TUtils {
           value.content = t[value.content];
           continue;
         }
+        var extra_info = options.extra || options.parentMenu?.options?.extra; // for capture translation text of input and widget
         // widgets and inputs
         var matchInput = value.content?.match(reInput);
         if (matchInput) {
           var match = matchInput[1];
-          options.extra.inputs?.find((i) => {
+          extra_info?.inputs?.find((i) => {
             if (i.name != match) return false;
             match = i.label ? i.label : i.name;
           });
-          options.extra.widgets?.find((i) => {
+          extra_info?.widgets?.find((i) => {
             if (i.name != match) return false;
             match = i.label ? i.label : i.name;
           });
@@ -220,11 +221,11 @@ export class TUtils {
         var matchWidget = value.content?.match(reWidget);
         if (matchWidget) {
           var match = matchWidget[1];
-          options.extra.inputs?.find((i) => {
+          extra_info?.inputs?.find((i) => {
             if (i.name != match) return false;
             match = i.label ? i.label : i.name;
           });
-          options.extra.widgets?.find((i) => {
+          extra_info?.widgets?.find((i) => {
             if (i.name != match) return false;
             match = i.label ? i.label : i.name;
           });
