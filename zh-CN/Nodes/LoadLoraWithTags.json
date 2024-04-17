@@ -1,6 +1,6 @@
 {
     "LoraLoaderTagsQuery": {
-        "title": "",
+        "title": "Lora加载器(标签队列)",
         "inputs": {
             "model": "模型",
             "clip": "CLIP",
