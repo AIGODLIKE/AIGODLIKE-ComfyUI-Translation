@@ -33,10 +33,12 @@
     "easy wildcards":{
         "title": "通配符提示词",
         "widgets": {
-            "Select to add LoRA": "选择要添加的Lora",
-            "Select to add Wildcard": "选择要添加的通配符",
+            "Select to add LoRA": "选择添加Lora",
+            "Select to add Wildcard": "选择添加通配符",
             "seed_num": "随机种",
-            "control_before_generate": "运行前操作"
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "multiline_mode": "多行模式"
         },
         "outputs": {
             "text": "提示词",
@@ -50,6 +52,48 @@
         },
         "outputs": {
             "prompt_list": "列表"
+        }
+    },
+    "easy promptLine": {
+        "title": "提示词行",
+        "widgets": {
+            "prompt": "提示词",
+            "start_index": "起始索引",
+            "max_rows": "最大行数"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "COMBO": "COMBO"
+        }
+    },
+    "easy promptConcat": {
+        "title": "提示词联结",
+        "inputs": {
+            "prompt1": "提示词1",
+            "prompt2": "提示词2"
+        },
+        "widgets": {
+            "separator": "间隔符"
+        },
+        "outputs": {
+            "prompt": "提示词"
+        }
+    },
+    "easy promptReplace": {
+        "title": "提示词替换",
+        "inputs": {
+            "prompt": "提示词"
+        },
+        "widgets": {
+            "find1": "搜索_1",
+            "replace1": "替换_1",
+            "find2": "搜索_2",
+            "replace2": "替换_2",
+            "find3": "搜索_3",
+            "replace3": "替换_3"
+        },
+        "outputs": {
+            "prompt": "提示词"
         }
     },
     "easy stylesSelector": {
@@ -237,6 +281,29 @@
             "model": "模型"
         }
     },
+    "easy dynamiCrafterLoader": {
+        "title": "简易加载器（DynamiCrafter）",
+        "inputs": {
+            "init_image": "图像",
+            "optional_vae": "VAE(可选)"
+        },
+        "widgets": {
+            "model_name": "模型名称",
+            "clip_skip": "CLIP停止层",
+            "resolution": "分辨率",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "use_interpolate": "使用插值",
+            "fps": "帧率",
+            "frames": "帧数",
+            "scale_latents": "缩放Latent"
+        },
+        "outputs": {
+            "pipe": "节点束",
+            "model": "模型",
+            "vae": "VAE"
+        }
+    },
     "easy svdLoader": {
         "title": "简易加载器（SVD）",
         "inputs": {
@@ -257,6 +324,26 @@
         "outputs": {
             "pipe": "节点束",
             "model": "模型"
+        }
+    },
+    "easy sv3dLoader": {
+        "title": "简易加载器（SV3D）",
+        "inputs": {
+            "init_image": "图像"
+        },
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "vae_name": "VAE",
+            "empty_latent_height": "高度",
+            "empty_latent_width": "宽度",
+            "batch_size": "批次大小",
+            "interp_easing": "插值渐变",
+            "easing_mode": "渐变模式"
+        },
+        "outputs": {
+            "pipe": "节点束",
+            "model": "模型",
+            "interp_log": "插值日志"
         }
     },
     "easy loraStack": {
@@ -453,6 +540,29 @@
             "pipe": "节点束"
         }
     },
+    "easy preSamplingCustom": {
+        "title": "预采样参数（自定义）",
+        "inputs": {
+            "pipe": "节点束",
+            "image_to_latent": "图像转Latent",
+            "latent": "Latent",
+            "optional_sampler": "采样器(可选)",
+            "optional_sigmas": "Sigmas(可选)"
+        },
+        "widgets": {
+            "guider": "引导",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "steps": "步数",
+            "denoise": "降噪",
+            "add_noise": "添加噪波",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "pipe": "节点束"
+        }
+    },
     "easy preSamplingSdTurbo": {
         "title": "预采样参数（SDTurbo）",
         "widgets": {
@@ -531,6 +641,28 @@
         },
         "outputs": {
             "pipe": "节点束"
+        }
+    },
+    "dynamicThresholdingFull": {
+        "title": "动态CFG",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "mimic_scale": "模拟CFG",
+            "threshold_percentile": "阈值百分比",
+            "mimic_mode": "模拟模式",
+            "mimic_scale_min": "模拟CFG最小值",
+            "cfg_mode": "CFG模式",
+            "cfg_scale_min": "CFG最小值",
+            "sched_val": "调度变量",
+            "separate_feature_channels": "分离功能通道",
+            "scaling_startpoint": "缩放起始点",
+            "variability_measure": "变化量测量",
+            "interpolate_phi": "插值phi"
+        },
+        "outputs": {
+            "MODEL": "模型"
         }
     },
     "easy preSamplingDynamicCFG": {
