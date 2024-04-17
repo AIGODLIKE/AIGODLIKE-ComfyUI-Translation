@@ -92,6 +92,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[MTB](https://github.com/melMass/comfy_mtb.git)|√|TODO|√|TODO|TODO|TODO|
 |[Noise](https://github.com/BlenderNeko/ComfyUI_Noise)|√|√|√|TODO|TODO|TODO|
 |[NormalLighting](https://github.com/TJ16th/comfyUI_TJ_NormalLighting.git)|√|TODO|√|TODO|TODO|TODO|
+|[Perturbed-Attention](https://github.com/pamparamm/sd-perturbed-attention.git)|√|TODO|√|TODO|TODO|TODO|
 |[Portrai Master](https://github.com/florestefano1975/comfyui-portrait-master.git)|√|TODO|√|TODO|TODO|TODO|
 |[Power Noise Suite](https://github.com/WASasquatch/PowerNoiseSuite)|√|TODO|√|TODO|TODO|TODO|
 |[Prompt Reader](https://github.com/receyuki/comfyui-prompt-reader-node)|√|TODO|√|TODO|TODO|TODO|
