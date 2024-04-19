@@ -353,7 +353,6 @@
 
 
     "Alek": "Alek",
-
     "af": "南非荷兰语",
     "sq": "阿尔巴尼亚语",
     "am": "阿姆哈拉语",
@@ -617,10 +616,7 @@
     "QcriTranslator [api-key]": "QCRI [API]",
     "QcriTranslator [free or api_key]": "QCRI [免费或API]",
     "YandexTranslator [api-key]": "Yandex [API]",
-
-
     "Dagtho": "Dagtho",
-
     "base": "基础",
     "sai-3d-model": "SAI-3D模型",
     "sai-analog film": "SAI-模拟电影",
@@ -728,7 +724,6 @@
     "photo-neon noir": "照片-黑色霓虹",
     "photo-silhouette": "照片-剪影",
     "photo-tilt-shift": "照片-移轴",
-
     "random": "随机",
     "disabled": "关闭",
     "photography": "照片",
@@ -1181,10 +1176,7 @@
     "in a lab": "实验室",
     "rendered in a 2.5D isometric perspective. Soft gradients add dimension, pastel color scheme": "等距粉彩",
     "in a labrendered in a 2.5D isometric perspective. Soft gradients add dimension, pastel color scheme": "等距粉彩实验室",
-
-
     "CustomScript": "CustomScript",
-
     "Arrange (float left)": "对齐到左侧",
     "Arrange (float right)": "对齐到右侧",
     "Follow execution": "跟随运行",
@@ -1215,39 +1207,39 @@
     "Open Image": "打开图像",
     "Save Image": "保存图像",
     "Send to workflow": "发送到工作流",
-        "[Current workflow]": "当前工作流",
+    "[Current workflow]": "当前工作流",
     "WD14 Tagger": "反推提示词",
     "Save as Preview": "保存为预览图",
     "🐍 Enable submenu in custom nodes": "在自定节点中添加子菜单",
     "🐍 Always snap to grid": "吸附网格",
     "🐍 Text Autocomplete": "文本补全",
-        "Enabled": "开启",
-        "Auto-insert comma": "自动插入逗号",
-        "Manage Custom Words": "自定义语句",
+    "Enabled": "开启",
+    "Auto-insert comma": "自动插入逗号",
+    "Manage Custom Words": "自定义语句",
     "🐍 Middle click slot to add": "中键添加",
-        "ReroutePrimitive|pysssss": "Primitive连接点",
-        "Reroute (rgthree)": "转接点",
-        "[none]": "无",
+    "ReroutePrimitive|pysssss": "Primitive连接点",
+    "Reroute (rgthree)": "转接点",
+    "[none]": "无",
     "🐍 Preset Text Replacement Regex": "预设文本正则替换",
     "The regex should return two named capture groups: id (the name of the preset text to use), replace (the matched text to replace)": "应返回两个已命名的捕获组：id（要使用的预设文本名称）、replace（要替换的匹配文本）",
     "🐍 Use number input on value entry": "在输入值时改为输入数字",
     "🐍 Show Image On Menu": "在菜单显示图像",
     "🐍 Widget Defaults:": "组件默认",
-        "Manage": "管理",
-        "Node Class": "节点名",
-        "Widget Name": "组件名",
-        "Default Value": "默认值",
+    "Manage": "管理",
+    "Node Class": "节点名",
+    "Widget Name": "组件名",
+    "Default Value": "默认值",
     "🐍 Widget & Property Defaults:": "组件默认属性",
-        "e.g. CheckpointLoaderSimple": "例：Checkpoint加载器(简易)",
+    "e.g. CheckpointLoaderSimple": "例：Checkpoint加载器(简易)",
     "🐍 Default Workflow": "默认工作流",
     "🐍 Image Feed Location:": "图像面板位置",
-        "bottom": "下",
-        "top": "上",
-        "left": "左",
-        "right": "右",
+    "bottom": "下",
+    "top": "上",
+    "left": "左",
+    "right": "右",
     "🐍 Image Feed Direction:": "图像面板顺序",
-        "newest first": "正序",
-        "oldest first": "倒序",
+    "newest first": "正序",
+    "oldest first": "倒序",
     "🐍 Image Feed Deduplication": "🐍 移除重复的图像",
     "🐍 Model Info - ${type} Nodes/Widgets": "🐍 模型信息 - ${type} 节点/组件",
     "Name:": "名称",
@@ -1257,10 +1249,7 @@
     "CANCEL": "取消",
     "Add New": "添加",
     "[None]": "空",
-
-
     "CR": "CR",
-
     "On": "开",
     "Off": "关",
     "custom": "自定义",
@@ -1291,7 +1280,6 @@
     "lavendar": "淡紫",
     "olive": "黄绿",
     "Accent": "强调",
-
     "afmhot": "afm热",
     "autumn": "秋季",
     "binary": "二进制",
@@ -1385,7 +1373,6 @@
     "violet": "紫罗兰",
     "coral": "珊瑚",
     "indigo": "靛蓝",
-
     "select_on_execution": "运行",
     "select_on_prompt": "提示词",
     "all": "全部",
@@ -1413,12 +1400,10 @@
     "long_sleeved_dress": "长袖连衣裙",
     "vest_dress": "背心连衣裙",
     "sling_dress": "吊带连衣裙",
-
     "inside": "内部",
     "outside": "外部",
     "ascending": "升序",
     "descending": "降序",
-
     "Value": "值",
     "Text": "文本",
     "Prompt": "提示词",
@@ -1436,15 +1421,11 @@
     "Load default LoRA": "默认LoRA",
     "Default Prompt": "默认提示词",
     "Keyframe List": "关键帧列表",
-
     "decimal": "十进制",
     "hexadecimal": "十六进制",
     "alphabetic": "字母",
     "alphanumeric": "字母数字",
-
-
     "DynThr": "DynThr",
-
     "Constant": "常数",
     "Sawtooth": "锯齿波",
     "Cosine Repeating": "余弦循环",
@@ -1462,17 +1443,11 @@
     "ZERO": "零",
     "AD": "绝对差值",
     "STD": "标准差值",
-
-
     "aux": "aux",
-
     "Just Resize": "仅拉伸",
     "Crop and Resize": "裁剪并拉伸",
     "Resize and Fill": "拉伸并填充",
-
-
     "masque": "masque",
-
     "union (max)": "最大值",
     "intersection (min)": "最小值",
     "difference": "差值",
@@ -1504,10 +1479,7 @@
     "bottomleft": "左下",
     "topright": "右上",
     "bottomright": "右下",
-
-
     "advcnet": "advcnet",
-
     "ease-in-out": "渐进渐出",
     "ease-in": "渐进",
     "ease-out": "渐出",
@@ -1515,27 +1487,18 @@
     "uniform": "不变",
     "starting": "起始",
     "ending": "结束",
-
-
     "inpir": "inpir",
-
     "increment for each node": "每个节点增加",
     "decrement for each node": "每个节点减少",
     "randomize for each node": "每个节点随机",
-
-
     "ue": "ue",
-
     "Toggle UE link visibility": "切换全局输入可视化",
     "Send only within my group(s)": "仅在当前组内生效",
     "Remove group restriction": "移除组内限制",
     "Anything Everywhere show node details": "全局输入显示节点细节",
     "Anything Everywhere check loops": "全局输入检测循环",
     "Anything Everywhere animate UE links": "全局输入连线动画",
-
-
     "VHS": "VHS",
-
     "match A": "匹配A",
     "match B": "匹配B",
     "match smaller": "匹配更小的",
@@ -1543,31 +1506,25 @@
     "ceter": "中心",
     "Disabled": "关闭",
     "🎥🅥🅗🅢 Advanced Previews": "VHS高级预览",
-
-
     "eff": "eff",
-
     "🔄 Swap with...": "替换为",
     "📜 Add script...": "添加脚本",
     "🌱 Seed behavior...": "随机种操作",
-        "🎲 Randomize": "随机",
-        "➕ Increment": "增加",
-        "➖ Decrement": "减少",
+    "🎲 Randomize": "随机",
+    "➕ Increment": "增加",
+    "➖ Decrement": "减少",
     "⛓ Add link...": "添加连接",
-        "KSampler + XY Plot": "K采样器+XY图表",
+    "KSampler + XY Plot": "K采样器+XY图表",
     "🔍 View model info...": "查看模型信息",
-        "ckpt_name": "模型名称",
-        "⚠️ Unknown": "未知",
-        "View raw metadata": "查看元数据",
-        "Notes:": "注释:",
-        "✏️ Edit": "编辑",
+    "ckpt_name": "模型名称",
+    "⚠️ Unknown": "未知",
+    "View raw metadata": "查看元数据",
+    "Notes:": "注释:",
+    "✏️ Edit": "编辑",
     "📐 Set Resolution...": "设置分辨率",
     "✏️ Add 𝚇 input...": "添加X输入",
     "✏️ Add 𝚈 input...": "添加Y输入",
-
-
     "cg-use": "cg-use",
-
     "Show UE links": "显示全局输入连线",
     "Hide Ue links": "隐藏全局输入连线",
     "Convert all UEs to real links": "将全局输入连线转为实际连线",
@@ -1576,10 +1533,7 @@
     "Anything Everywhere show links": "全局输入显示连接",
     "Anything Everywhere turn animation off when running": "全局输入执行时关闭动画",
     "Anything Everywhere? autocomplete (may require page reload)": "全局输入？ 自动补全（可能需要重载页面）",
-
-
     "cg-img": "cg-img",
-
     "Image Chooser HUD position (-1 for off)": "图像选择器HUD位置(-1为关闭)",
     "Always pause": "总是暂停",
     "Only pause if batch": "仅批次暂停",
@@ -1587,40 +1541,29 @@
     "Take First n": "选择前N项",
     "Take Last n": "选择后N项",
     "Cancel current run": "取消当前任务",
-
-
     "rg3": "rg3",
-
     "🎲 Randomize Each Time": "🎲 每次随机",
     "🎲 New Fixed Random": "🎲 生成随机并固定",
     "♻️ (Use Last Queued Seed)": "♻️ (使用上次随机种)",
-
-
     "zfkun": "zfkun",
-
     "baidu": "百度",
     "alibaba": "阿里巴巴",
     "tencent": "腾讯",
     "volcengine": "火山引擎",
     "niutrans": "小牛翻译",
-
-
     "ttN": "ttN",
-
     "Node Dimensions (ttN)": "节点宽高(TTN)",
     "Default BG Color (ttN)": "默认背景色(TTN)",
-        "No Color": "无色",
+    "No Color": "无色",
     "Show Execution Order (ttN)": "显示执行顺序(TTN)",
     "Reload Node (ttN)": "重载节点(TTN)",
     "Fullscreen (ttN)": "全屏(TTN)",
     "Set Default Fullscreen Node (ttN)": "设置默认全屏节点(TTN)",
     "Clear Default Fullscreen Node (ttN)": "清除默认全屏节点(TTN)",
-
     "Slot Type Color (ttN)": "接口类型颜色(TTN)",
     "Show Link Border (ttN)": "显示连线边框(TTN)",
     "Show Link Shadow (ttN)": "显示连线阴影(TTN)",
     "Link Style (ttN)": "连线类型(TTN)",
-
     "by percentage": "按百分比",
     "to Width/Height": "按宽高",
     "to longer side - maintain aspect": "按长边(固定宽高比)",
@@ -1637,10 +1580,7 @@
     "A Only": "仅A",
     "B Only": "仅B",
     "C Only": "仅C",
-
-
     "KJ": "KJ",
-
     "ease_in": "渐进",
     "ease_out": "渐出",
     "ease_in_out": "渐近渐出",
@@ -1657,11 +1597,7 @@
     "🔗💥⛓️ Make Set/Get -nodes defaults (turn off and reload to disable)": "设定设置/获取节点为默认(关闭并重启以禁用)",
     "Middle click default node adding": "使用默认中键添加操作",
     "Automatically set node colors": "自动设置节点颜色",
-
-
-
     "CMath": "CMath",
-
     "Abs": "绝对",
     "Neg": "负",
     "Inc": "+1",
@@ -1697,7 +1633,6 @@
     "Gamma": "伽马",
     "Radians": "到弧度",
     "Degrees": "到角度",
-
     "IsZero": "是0",
     "IsNonZero": "非0",
     "IsPositive": "大于0",
@@ -1717,7 +1652,6 @@
     "Gte": "大于等于",
     "Leq": "小于等于",
     "Lte": "小于等于",
-
     "Add": "相加",
     "Sub": "相减",
     "Mul": "相乘",
@@ -1736,7 +1670,6 @@
     "Max": "最大值",
     "Min": "最小值",
     "FloorDiv": "整除",
-
     "Normalize": "规格化",
     "Norm": "范数",
     "IsNotZero": "非0",
@@ -1745,10 +1678,7 @@
     "Cross": "叉乘",
     "Dot": "点乘",
     "Distance": "距离",
-
-
     "PortrMaste": "PortrMaste",
-    
     "Close-up": "特写",
     "Face": "面部特写",
     "Full body": "全身照",
@@ -1757,10 +1687,8 @@
     "Head and shoulder portrait": "头部肩部",
     "Head portrait": "头部",
     "Portrait": "肖像",
-
     "Man": "男性",
     "Woman": "女性",
-
     "Afghan": "阿富汗人",
     "Albanian": "阿尔巴尼亚人",
     "Algerian": "阿尔及利亚人",
@@ -1952,7 +1880,6 @@
     "Yemeni": "也门人",
     "Zambian": "赞比亚人",
     "Zimbabwean": "津巴布韦人",
-
     "Normal weight": "正常",
     "Beefy": "魁梧",
     "Buxom": "丰盈",
@@ -1988,7 +1915,6 @@
     "Well-built": "身材健美",
     "Well-endowed": "发育良好",
     "Underweight": "体重过轻",
-    
     "The Over-the-Shoulder Look": "过肩回头",
     "Candid Laugh Pose": "自然笑",
     "Adjusting Clothing Pose": "调整服装",
@@ -2077,7 +2003,6 @@
     "Watercolor Makeup Pose": "水彩化妆",
     "Waving Hand Pose": "摆手",
     "Yoga Pose": "瑜伽",
-
     "Brown": "棕色",
     "Blue": "蓝色",
     "Green": "绿色",
@@ -2086,7 +2011,6 @@
     "Amber": "黄褐色",
     "Red": "红色",
     "Violet": "紫罗兰",
-
     "Happy": "开心",
     "Sad": "伤心",
     "Angry": "生气",
@@ -2111,7 +2035,6 @@
     "Serene": "平静",
     "Peaceful": "宁静",
     "Calm": "冷静",
-
     "Oval": "椭圆",
     "Square": "方形",
     "Heart-shaped": "心形",
@@ -2163,14 +2086,12 @@
     "Side-swept pixie": "侧分精灵发",
     "Italian bob": "意大利波波头",
     "Shullet": "长短混合型",
-
     "Black": "黑色",
     "Blonde": "金色",
     "Auburn": "红褐色",
     "Chestnut": "栗色",
     "White": "白色",
     "Salt and pepper": "花白色",
-
     "Stubble Beard": "胡茬",
     "Goatee": "山羊胡",
     "Full Beard": "全胡须",
@@ -2191,7 +2112,6 @@
     "Pencil Mustache": "铅笔胡须",
     "Friendly Mutton Chops": "友善络腮胡",
     "Zappa Mustache": "扎帕髭",
-
     "Natural sunlight": "自然阳光",
     "Soft ambient light": "柔和环境光",
     "Harsh sunlight": "强烈阳光",
@@ -2224,7 +2144,6 @@
     "Rim light": "边缘灯",
     "Lightning": "闪电",
     "Abstract light patterns": "抽象灯光图案",
-
     "from top": "上方",
     "from bottom": "下方",
     "from right": "右侧",
@@ -2235,7 +2154,6 @@
     "from top-left": "左上",
     "from bottom-right": "右下",
     "from bottom-left": "左下",
-
     "Agfa Vista": "胶卷",
     "Astia": "柔和",
     "Aurora Borealis": "极光",
@@ -2301,20 +2219,14 @@
     "Vintage Photography": "复古摄影",
     "Warm Orange Glow": "暖橙光晕",
     "Watercolor Effect": "水彩",
-
-    
     "mixla": "mixla",
-    
     "Help ♾️Mixlab": "帮助 ♾️Mixlab",
     "Add GetNode": "添加 获取节点",
     "Add SetNode": "添加 设置节点",
     "Nodes Map ♾️Mixlab": "节点地图 ♾️Mixlab",
     "Workflow App ♾️Mixlab": "工作流App ♾️Mixlab",
     "Fix node v2 ♾️Mixlab": "修复节点v2 ♾️Mixlab",
-
-
     "crystol": "crystol",
-    
     "🪛Display CPU monitor [menu]": "显示CPU监视",
     "🪛Display RAM monitor [menu]": "显示内存监视",
     "🪛Display GPU monitor [menu]": "显示GPU监视",
@@ -2330,23 +2242,14 @@
     "🪛[monitor] Partition to show": "选择分区",
     "🪛[monitor] Refresh rate": "刷新间隔",
     "🪛[monitor] Show progress bar": "显示进度条",
-
-
     "MotionCtr": "MotionCtr",
-    
     "control camera poses": "控制镜头",
     "control object trajectory": "控制物体",
     "control both camera and obejct motion": "控制全部",
-
-
     "TiledDiff": "TiledDiff",
-
     "MultiDiffusion": "多重采样",
     "Mixture of Diffusers": "混合扩散器",
-
-
     "PowerNoiseSui": "PowerNoiseSui",
-
     "color dodge": "颜色减淡",
     "colorize": "上色",
     "cosine interp": "余弦线性插值",
@@ -2373,13 +2276,8 @@
     "brownian_fractal": "布朗分形",
     "velvet": "丝绒",
     "vanilla_comfy": "Comfy原生",
-
-    
     "krystool": "krystool",
-
     "Workflow": "工作流",
-
-
     "onebutton": "onebutton",
     "all (wild)": "全部(混乱)",
     "popular": "流行",
@@ -2455,7 +2353,6 @@
     "vibrant": "活力",
     "watercolor": "水彩",
     "whimsical": "异想天开",
-    
     "all - force multiple": "全部(强制)",
     "photograph": "照片",
     "octane render": "octane渲染",
@@ -2474,21 +2371,17 @@
     "subject only mode": "仅主体模式",
     "fixed styles mode": "固定风格模式",
     "the tokinator": "the tokinator",
-    
     "object": "物体",
     "animal": "动物",
     "humanoid": "类人",
     "concept": "概念",
-    
     "male": "男性",
     "female": "女性",
-
     "generic objects": "通用物体",
     "vehicles": "载具",
     "food": "食物",
     "buildings": "建筑",
     "flora": "植物群",
-
     "generic humans": "通用人类",
     "generic human relations": "通用人类关系",
     "celebrities e.a.": "知名人物",
@@ -2497,40 +2390,27 @@
     "based on job or title": "职业",
     "based on first name": "姓氏",
     "multiple humans": "多人",
-
     "event": "事件",
     "the X of Y concepts": "Y概念的X",
     "lines from poems": "诗词",
     "lines from songs": "歌曲",
     "names from card based games": "卡牌游戏的名称",
     "episode titles from tv shows": "电视节目的章标题",
-
-
     "animatedif": "animatedif",
-
     "eps": "等概率抽样",
     "v-prediction": "V预测",
     "lcm": "LCM",
     "zsnr": "规格化信噪比",
-
-
     "comfy3d": "comfy3d",
-    
     "big": "大型",
     "small": "小型",
     "tiny": "微型",
-
-
     "LayerDiff": "LayerDiff",
-    
     "Attention Injection": "Attention Injection",
     "Conv Injection": "Conv Injection",
     "Foreground": "前景",
     "Background": "背景",
-
-    
     "essen": "essen",
-
     "top-left": "左上",
     "top-center": "中上",
     "top-right": "右上",
@@ -2561,15 +2441,9 @@
     "vertical door": "竖向开门",
     "circle": "圆形",
     "fade": "消失",
-
-
     "dz": "dz",
-
     "[DZ] Enable Debug (py and js)": "[DZ] 开启Debug （py 和 js）",
-
-
     "sidebar": "sidebar",
-
     "Search...": "搜索...",
     "PINNED": "置顶",
     "CUSTOM NODES": "自定义节点",
@@ -2582,17 +2456,13 @@
     "[Sidebar] Space Bottom": "[侧边栏] 底部留空",
     "[Sidebar] Space Top": "[侧边栏] 顶部留空",
     "[Sidebar] Use Default Search": "[侧边栏] 使用默认搜索",
-
-
     "ipadapter": "ipadapter",
-
     "LIGHT - SD1.5 only (low strength)": "轻型 - 仅SD1.5 (低强度)",
     "STANDARD (medium strength)": "标准 (中强度)",
     "VIT-G (medium strength)": "Vit-G (中强度)",
     "PLUS (high strength)": "PLUS (高强度)",
     "PLUS FACE (portraits)": "PLUS FACE (肖像)",
     "FULL FACE - SD1.5 only (portraits stronger)": "全面部 - 仅SD1.5 (强肖像)",
-
     "concat": "联结",
     "norm average": "规格化平均",
     "max": "最大值",
@@ -2601,7 +2471,6 @@
 
 
     "mtb": "mtb",
-    
     "[⚡mtb] Enable Debug (py and js)": "[⚡MTB] 开启Debug (py 和 js)",
     "[⚡mtb] Enable image feed": "[⚡MTB] 开启图像记录",
     "Color to Normals": "颜色到法向",
@@ -2616,10 +2485,7 @@
     "LARGEST": "最大",
     "height": "高度",
     "width": "宽度",
-
-
     "#rgthree": "#rgthree",
-
     "rgthree-comfy": "RG节点",
     "🛟 Node Help": "🛟 节点说明",
     "Show Label/Title": "显示 标签/标题",
