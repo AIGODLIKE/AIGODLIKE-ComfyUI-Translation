@@ -382,12 +382,6 @@
             "CONTROL_NET": "ControlNet"
         }
     },
-    "Node Collector (rgthree)": {
-        "title": "节点集合"
-    },
-    "Reroute (rgthree)": {
-        "title": "转接点"
-    },
     "Fast Muter (rgthree)": {
         "title": "禁用节点",
         "outputs": {

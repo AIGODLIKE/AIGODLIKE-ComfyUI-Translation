@@ -1725,6 +1725,18 @@
             "CONDITIONING": "条件"
         }
     },
+    "AddNoise": {
+        "title": "添加噪波",
+        "inputs": {
+            "model": "模型",
+            "noise": "噪波生成",
+            "sigmas": "Sigmas",
+            "latent_image": "Latent"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
 
 
     "StableCascade_SuperResolutionControlnet": {
@@ -1910,6 +1922,18 @@
         "title": "差异扩散",
         "inputs": {
             "model": "模型"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "PerturbedAttentionGuidance": {
+        "title": "PAG注意力引导",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "scale": "缩放"
         },
         "outputs": {
             "MODEL": "模型"
