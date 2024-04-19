@@ -161,6 +161,8 @@ export function applyMenuTranslation(T) {
 
     for (const ele of comfySettingDialogAllElements) {
       let targetLangText = T.Menu[ele.innerText];
+      let titleText = T.Menu[ele.title];
+      if(titleText) ele.title = titleText;
       if (!targetLangText) {
         if (ele.nodeName === "INPUT" && ele.type === "button") {
           targetLangText = T.Menu[ele.value];
