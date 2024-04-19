@@ -30,7 +30,7 @@
     "stable_cascade": "StableCascade",
     "advanced1": "расширенные11",
     "loaders1": "загрузчики11",
-    "deprecated": "устаревшие",
+    "deprecated": "Устаревшие",
     "conditioning1": "conditioning1",
     "model_merging": "model_merging",
     "model_specific": "model_specific",
