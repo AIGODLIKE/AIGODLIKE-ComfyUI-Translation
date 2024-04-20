@@ -217,8 +217,8 @@
             "training_iterations": "训练迭代次数",
             "training_resolution": "训练分辨率",
             "marching_cude_threshold": "行进曲线阈值",
-            "marching_cube_grids_resolution": "行进曲线栅格分辨率",
-            "marching_cube_grids_batch_size": "行进曲线栅格批次大小",
+            "marching_cude_grids_resolution": "行进曲线栅格分辨率",
+            "marching_cude_grids_batch_size": "行进曲线栅格批次大小",
             "texture_resolution": "纹理分辨率",
             "force_cuda_rast": "强制光栅化CUDA"
         },
