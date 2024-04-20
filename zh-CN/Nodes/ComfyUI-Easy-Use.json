@@ -159,7 +159,7 @@
     "easy fullLoader": {
         "title": "简易加载器 (完整版)",
         "inputs": {
-            "optional_lora_stack": "Lora堆（可选）",
+            "optional_lora_stack": "LoRA堆（可选）",
             "model_override": "模型（可选）",
             "vae_override": "VAE（可选）",
             "clip_override": "CLIP（可选）"
@@ -169,7 +169,7 @@
             "config_name": "配置名称",
             "vae_name": "VAE名称",
             "clip_skip": "Clip停止层",
-            "lora_name": "Lora名称",
+            "lora_name": "LoRA名称",
             "lora_model_strength": "模型强度",
             "lora_clip_strength": "CLIP强度",
             "resolution": "分辨率",
@@ -192,13 +192,13 @@
     "easy a1111Loader": {
         "title": "简易加载器（A1111）",
         "inputs": {
-            "optional_lora_stack": "Lora堆（可选）"
+            "optional_lora_stack": "LoRA堆（可选）"
         },
         "widgets": {
             "ckpt_name": "模型名称",
             "vae_name": "VAE",
             "clip_skip": "Clip停止层",
-            "lora_name": "Lora模型",
+            "lora_name": "LoRA模型",
             "lora_model_strength": "模型强度",
             "lora_clip_strength": "CLIP强度",
             "resolution": "分辨率",
@@ -217,13 +217,13 @@
     "easy comfyLoader": {
         "title": "简易加载器（Comfy）",
         "inputs": {
-            "optional_lora_stack": "Lora堆（可选）"
+            "optional_lora_stack": "LoRA堆（可选）"
         },
         "widgets": {
             "ckpt_name": "模型名称",
             "vae_name": "VAE",
             "clip_skip": "Clip停止层",
-            "lora_name": "Lora模型",
+            "lora_name": "LoRA模型",
             "lora_model_strength": "模型强度",
             "lora_clip_strength": "CLIP强度",
             "resolution": "分辨率",
@@ -241,9 +241,11 @@
     "easy cascadeLoader": {
         "title": "简易加载器（Cascade）",
         "inputs": {
+            "optional_lora_stack": "LoRA堆（可选）"
         },
         "widgets": {
             "clip_name": "CLIP模型",
+            "lora_name": "LoRA名称",
             "resolution": "分辨率",
             "compression": "压缩等级",
             "empty_latent_width": "宽度",
@@ -312,6 +314,7 @@
         "widgets": {
             "ckpt_name": "模型名称",
             "vae_name": "VAE",
+            "clip_name": "CLIP模型",
             "resolution": "分辨率",
             "empty_latent_width": "宽度",
             "empty_latent_height": "高度",
@@ -349,15 +352,35 @@
     "easy loraStack": {
         "title": "简易Lora堆",
         "inputs": {
-            "optional_lora_stack": "Lora堆（可选）"
+            "optional_lora_stack": "LoRA堆（可选）"
         },
         "widgets": {
             "toggle": "开关",
             "mode": "模式",
-            "num_loras": "Lora数量"
+            "num_loras": "LoRA数量",
+            "lora_1_name": "LoRA_1_名称",
+            "lora_1_strength": "LoRA_1_权重",
+            "lora_2_name": "LoRA_2_名称",
+            "lora_2_strength": "LoRA_2_权重",
+            "lora_3_name": "LoRA_3_名称",
+            "lora_3_strength": "LoRA_3_权重",
+            "lora_4_name": "LoRA_4_名称",
+            "lora_4_strength": "LoRA_4_权重",
+            "lora_5_name": "LoRA_5_名称",
+            "lora_5_strength": "LoRA_5_权重",
+            "lora_6_name": "LoRA_6_名称",
+            "lora_6_strength": "LoRA_6_权重",
+            "lora_7_name": "LoRA_7_名称",
+            "lora_7_strength": "LoRA_7_权重",
+            "lora_8_name": "LoRA_8_名称",
+            "lora_8_strength": "LoRA_8_权重",
+            "lora_9_name": "LoRA_9_名称",
+            "lora_9_strength": "LoRA_9_权重",
+            "lora_10_name": "LoRA_10_名称",
+            "lora_10_strength": "LoRA_10_权重"
         },
         "outputs": {
-            "lora_stack": "Lora堆"
+            "lora_stack": "LoRA堆"
         }
     },
     "easy controlnetLoader": {
@@ -413,7 +436,8 @@
             "end_percent": "结束时间"
         },
         "outputs": {
-            "model": "模型"
+            "model": "模型",
+            "MODEL": "模型"
         }
     },
     "easy latentNoisy": {
@@ -430,6 +454,7 @@
             "start_at_step": "开始步数",
             "end_at_step": "结束步数",
             "source": "生成设备",
+            "seed": "随机种",
             "seed_num": "随机种",
             "control_before_generate": "运行前操作"
         },
@@ -443,6 +468,7 @@
         "title": "Latent遮罩复合 (带条件)",
         "inputs": {
             "pipe": "节点束",
+            "text_combine": "文字拼接",
             "source_latent": "Latent（源）",
             "source_mask": "遮罩（源）",
             "destination_mask": "遮罩（目标）"
@@ -485,6 +511,7 @@
             "sampler_name": "采样器",
             "scheduler": "调度器",
             "denoise": "降噪",
+            "seed": "随机种",
             "seed_num": "随机种",
             "control_before_generate": "运行前操作"
         },
@@ -508,8 +535,10 @@
             "sampler_name": "采样器",
             "scheduler": "调度器",
             "denoise": "降噪",
+            "seed": "随机种",
             "seed_num": "随机种",
-            "control_before_generate": "运行前操作"
+            "control_before_generate": "运行前操作",
+            "return_with_leftover_noise": "返回噪波"
         },
         "inputs": {
             "pipe": "节点束",
@@ -524,6 +553,7 @@
         "title": "预采样参数（插入噪波）",
         "inputs": {
             "pipe": "节点束",
+            "optional_latent": "Latent（可选）",
             "optional_noise_seed": "随机种（可选）"
         },
         "widgets": {
@@ -533,6 +563,7 @@
             "sampler_name": "采样器",
             "scheduler": "调度器",
             "denoise": "降噪",
+            "seed": "随机种",
             "seed_num": "随机种",
             "control_before_generate": "运行前操作"
         },
@@ -571,6 +602,7 @@
             "sampler_name": "采样器",
             "scheduler": "调度器",
             "denoise": "降噪",
+            "seed": "随机种",
             "seed_num": "随机种",
             "control_before_generate": "运行前操作"
         },
@@ -586,11 +618,14 @@
     "easy preSamplingCascade": {
         "title": "预采样参数（Cascade）",
         "widgets": {
+            "encode_vae_name": "编码VAE",
+            "decode_vae_name": "解码VAE",
             "steps": "步数",
             "cfg": "CFG",
             "sampler_name": "采样器",
             "scheduler": "调度器",
             "denoise": "降噪",
+            "seed": "随机种",
             "seed_num": "随机种",
             "control_before_generate": "运行前操作"
         },
@@ -609,7 +644,10 @@
     "easy preSamplingLayerDiffusion": {
         "title": "预采样参数（LayerDiffusion）",
         "inputs": {
-            "pipe": "节点束"
+            "pipe": "节点束",
+            "image": "图像",
+            "blended_image": "混合图像",
+            "mask": "遮罩"
         },
         "widgets": {
             "method": "方法",
@@ -637,7 +675,10 @@
         "widgets": {
             "optional_fg_promt": "前景提示词",
             "optional_bg_promt": "背景提示词",
-            "optional_blended_promt": "混合提示词"
+            "optional_blended_promt": "混合提示词",
+            "foreground_promt": "前景提示词",
+            "background_promt": "背景提示词",
+            "blended_promt": "混合提示词"
         },
         "outputs": {
             "pipe": "节点束"
@@ -890,6 +931,9 @@
     "easy pipeOut": {
         "title": "节点束输出",
         "inputs": {
+            "pipe": "节点束"
+        },
+        "outputs": {
             "pipe": "节点束",
             "model": "模型",
             "positive": "正面条件",
@@ -897,9 +941,6 @@
             "image_to_latent": "图像转Latent",
             "latent": "Latent",
             "image": "图像"
-        },
-        "outputs": {
-            "pipe": "节点束"
         }
     },
      "easy pipeToBasicPipe": {
@@ -930,16 +971,35 @@
             "pipe": "节点束",
             "model": "模型",
             "positive": "正面条件",
+            "pos": "正面条件",
             "negative": "负面条件",
+            "neg": "负面条件",
+            "vae": "VAE",
+            "clip": "CLIP",
             "image_to_latent": "图像转Latent",
             "latent": "Latent",
             "image": "图像"
+        },
+        "widgets": {
+            "clip_skip": "CLIP停止层",
+            "optional_positive": "正面提示词(可选)",
+            "optional_negative": "负面提示词(可选)",
+            "positive_token_normalization": "正面Token规格化",
+            "positive_weight_interpretation": "正面权重插值方式",
+            "negative_token_normalization": "负面Token规格化",
+            "negative_weight_interpretation": "负面权重插值方式",
+            "a1111_prompt_style": "A1111提示词风格",
+            "conditioning_mode": "条件模式"
         },
         "outputs": {
             "pipe": "节点束",
             "model": "模型",
             "positive": "正面条件",
+            "pos": "正面条件",
             "negative": "负面条件",
+            "neg": "负面条件",
+            "vae": "VAE",
+            "clip": "CLIP",
             "image_to_latent": "图像转Latent",
             "latent": "Latent",
             "image": "图像"
@@ -947,14 +1007,15 @@
     },
     "easy XYPlot": {
         "title": "简易XY图表",
+        "inputs": {
+            "pipe": "节点束"
+        },
         "widgets": {
             "grid_spacing": "间隔",
+            "output_individuals": "单独输出",
             "flip_xy": "XY互换",
             "x_axis": "X轴",
             "y_axis": "Y轴"
-        },
-        "inputs": {
-            "pipe": "节点束"
         },
         "outputs": {
             "pipe": "节点束"
@@ -962,12 +1023,13 @@
     },
     "easy XYPlotAdvanced": {
         "title": "简易XY图表 (高级)",
-        "widgets": {
-            "grid_spacing": "间隔",
-            "flip_xy": "XY互换"
-        },
         "inputs": {
             "pipe": "节点束"
+        },
+        "widgets": {
+            "grid_spacing": "间隔",
+            "output_individuals": "单独输出",
+            "flip_xy": "XY互换"
         },
         "outputs": {
             "pipe": "节点束"
@@ -1050,7 +1112,7 @@
     "easy XYInputs: Checkpoint": {
         "title": "XY输入: 模型",
         "inputs": {
-            "optional_lora_stack": "Lora堆(可选)"
+            "optional_lora_stack": "LoRA堆(可选)"
         },
         "widgets": {
             "input_mode": "输入模式",
@@ -1090,23 +1152,23 @@
     "easy XYInputs: Lora": {
         "title": "XY输入: Lora",
         "inputs": {
-            "optional_lora_stack": "Lora堆(可选)"
+            "optional_lora_stack": "LoRA堆(可选)"
         },
         "widgets": {
             "input_mode": "输入模式",
-            "lora_count": "Lora数量",
+            "lora_count": "LoRA数量",
             "model_strength": "模型强度",
             "clip_strength": "CLIP强度",
-            "lora_name_1": "Lora名称1",
-            "lora_name_2": "Lora名称2",
-            "lora_name_3": "Lora名称3",
-            "lora_name_4": "Lora名称4",
-            "lora_name_5": "Lora名称5",
-            "lora_name_6": "Lora名称6",
-            "lora_name_7": "Lora名称7",
-            "lora_name_8": "Lora名称8",
-            "lora_name_9": "Lora名称9",
-            "lora_name_10": "Lora名称10",
+            "lora_name_1": "LoRA名称1",
+            "lora_name_2": "LoRA名称2",
+            "lora_name_3": "LoRA名称3",
+            "lora_name_4": "LoRA名称4",
+            "lora_name_5": "LoRA名称5",
+            "lora_name_6": "LoRA名称6",
+            "lora_name_7": "LoRA名称7",
+            "lora_name_8": "LoRA名称8",
+            "lora_name_9": "LoRA名称9",
+            "lora_name_10": "LoRA名称10",
             "model_str_1": "模型强度1",
             "model_str_2": "模型强度2",
             "model_str_3": "模型强度3",
@@ -1451,6 +1513,7 @@
             "noise_mask": "仅生成遮罩",
             "force_inpaint": "强制重绘",
             "drop_size": "最小尺寸",
+            "wildcard": "通配符",
             "cycle": "循环"
         },
         "outputs": {
@@ -1469,12 +1532,14 @@
             "pipe": "节点束",
             "model": "模型"
         },
-        "outputs": {
-            "pipe": "节点束",
-            "image": "图像"
-        },
         "widgets": {
             "image_output": "图像输出"
+        },
+        "outputs": {
+            "pipe": "节点束",
+            "image": "图像",
+            "cropped_refined": "细化图像",
+            "cropped_enhanced_alpha": "细化部分"
         }
     },
     "easy imageRemoveBG": {
@@ -1617,6 +1682,7 @@
         },
         "widgets": {
             "preset": "预置参数",
+            "weight_style": "风格权重",
             "weight_type": "权重类型",
             "weight_composition": "合成权重",
             "expand_style": "扩展风格",
@@ -1685,6 +1751,27 @@
             "model": "模型",
             "positive": "正面条件",
             "negative": "负面条件"
+        }
+    },
+
+
+    "easy stableDiffusion3API": {
+        "title": "StableDiffusion 3 API",
+        "inputs": {
+            "optional_image": "图像（可选）"
+        },
+        "widgets": {
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "model": "模型",
+            "aspect_ratio": "宽高比",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "denoise": "降噪",
+            "cost_credit": "点数"
+        },
+        "outputs": {
+            "image": "图像"
         }
     },
 
@@ -1912,12 +1999,18 @@
         "title": "字符串",
         "widgets": {
             "value": "值"
+        },
+        "outputs": {
+            "string": "字符串"
         }
     },
     "easy int": {
         "title": "整数",
         "widgets": {
             "value": "值"
+        },
+        "outputs": {
+            "int": "整数"
         }
     },
     "easy rangeInt": {
@@ -1929,12 +2022,19 @@
             "step": "步进",
             "end_mode": "结束模式",
             "num_steps": "步进数量"
+        },
+        "outputs": {
+            "range": "范围",
+            "range_sizes": "范围大小"
         }
     },
     "easy float": {
         "title": "浮点数",
         "widgets": {
             "value": "值"
+        },
+        "outputs": {
+            "float": "浮点"
         }
     },
     "easy rangeFloat": {
@@ -1946,18 +2046,32 @@
             "step": "步进",
             "end_mode": "结束模式",
             "num_steps": "步进数量"
+        },
+        "outputs": {
+            "range": "范围",
+            "range_sizes": "范围大小"
         }
     },
     "easy boolean": {
         "title": "布尔",
         "widgets": {
             "value": "值"
+        },
+        "outputs": {
+            "boolean": "布尔"
         }
     },
     "easy compare": {
         "title": "比较",
+        "inputs": {
+            "a": "A",
+            "b": "B"
+        },
         "widgets": {
             "comparison": "比较方式"
+        },
+        "outputs": {
+            "boolean": "布尔"
         }
     },
     "easy if": {
@@ -2022,6 +2136,21 @@
         "title": "显示Tensor形状",
         "inputs": {
             "tensor": "Tensor"
+        }
+    },
+    "easy clearCacheKey": {
+        "title": "清除缓存键",
+        "inputs": {
+            "anything": "输入任何"
+        },
+        "widgets": {
+            "cache_key": "缓存键"
+        }
+    },
+    "easy clearCacheAll": {
+        "title": "清除全部缓存",
+        "inputs": {
+            "anything": "输入任何"
         }
     },
     "easy cleanGpuUsed": {
