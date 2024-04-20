@@ -517,7 +517,7 @@
             "REFINER_CONDITIONING-": "负面条件(Refiner)"
         }
     },
-    "Lora Stack To String Converter": {
+    "Lora Stack To String converter": {
         "title": "LoRA堆转换为字符串",
         "inputs": {
             "lora_stack": "LoRA堆"
@@ -572,6 +572,9 @@
             "script": "脚本"
         },
         "widgets": {
+            "upscale_type": "缩放类型",
+            "hires_ckpt_name": "修复模型",
+            "latent_upscaler": "Latent缩放方式",
             "latent_upscale_method": "Latent缩放方法",
                 "nearest-exact": "邻近-精确",
                 "bilinear": "双线性插值",
@@ -579,9 +582,11 @@
                 "bislerp": "双球面线性",
                 "bicubic": "双三次插值",
             "upscale_by": "缩放系数",
+            "use_same_seed": "随机种不变",
             "hires_steps": "高清修复步数",
             "denoise": "降噪",
-            "iterations": "迭代次数"
+            "iterations": "迭代次数",
+            "use_controlnet": "使用ControlNet"
         },
         "outputs": {
             "SCRIPT": "脚本"
