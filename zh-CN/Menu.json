@@ -32,6 +32,8 @@
     " to widget": " 为组件",
     "Convert input to 🔘..": "转换为输入",
     "Convert 🔘 to widget..": "转换为组件",
+    "Convert input to widget": "转换为输入",
+    "Convert widget to input": "转换为组件",
     "Clone": "克隆",
     "Remove": "移除",
     "Search": "搜索",
