@@ -1,0 +1,92 @@
+{
+    "CRMPreprocessForPoser": {
+        "title": "CRM Poser 预处理",
+        "inputs": {
+            "reference_image": "图像",
+            "reference_mask": "遮罩"
+        },
+        "widgets": {
+            "foreground_ratio": "前景比率"
+        },
+        "outputs": {
+            "processed": "处理图像"
+        }
+    },
+    "CRMPoserConfig": {
+        "title": "CRM Poser 配置",
+        "inputs": {
+            "processed_image": "处理图像"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "cfg": "CFG",
+            "steps": "步数"
+        },
+        "outputs": {
+            "CRM_POSE_CONFIG": "Poser配置"
+        }
+    },
+    "CRMPoseSampler": {
+        "title": "CRM Poser 采样器",
+        "inputs": {
+            "config": "Poser配置"
+        },
+        "widgets": {
+            "pixel_model": "Pixel模型"
+        },
+        "outputs": {
+            "IMAGE": "Pose图像"
+        }
+    },
+    "CCMSampler": {
+        "title": "CCM 采样器",
+        "inputs": {
+            "config": "Poser配置",
+            "poses": "Pose图像"
+        },
+        "widgets": {
+            "ccm_model": "CCM模型"
+        },
+        "outputs": {
+            "IMAGE": "坐标图像"
+        }
+    },
+    "CRMModelLoader": {
+        "title": "CRM模型加载器",
+        "widgets": {
+            "crm_model": "CRM模型"
+        },
+        "outputs": {
+            "CRM_MODEL": "CRM模型"
+        }
+    },
+    "CRMModeler": {
+        "title": "CRM模型生成",
+        "inputs": {
+            "crm_model": "CRM模型",
+            "poses": "Pose图像",
+            "coordinates": "坐标图像"
+        },
+        "outputs": {
+            "MESH": "网格"
+        }
+    },
+    "CRMModelerCuda": {
+        "title": "CRM模型生成(仅CUDA)",
+        "inputs": {
+            "crm_model": "CRM模型",
+            "poses": "Pose图像",
+            "coordinates": "坐标图像"
+        },
+        "outputs": {
+            "MESH": "网格"
+        }
+    },
+    "CRMViewer": {
+        "title": "CRM网格预览",
+        "inputs": {
+            "mesh": "网格"
+        }
+    }
+}
