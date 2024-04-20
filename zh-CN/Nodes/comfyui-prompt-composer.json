@@ -1,0 +1,118 @@
+{
+    "PromptComposerCustomLists": {
+        "title": "提示词创作（自定义列表）",
+        "intputs": {
+            "text_in_opt": "文本(可选)"
+        },
+        "widgets": {
+            "effect": "效果",
+            "effect_weight": "效果权重",
+            "lens_type": "光线",
+            "lens_weight": "光线权重",
+            "painting_style": "画风",
+            "painting_style_weight": "画风权重",
+            "photo_style": "照片风格",
+            "photo_style_weight": "照片风格权重"
+        },
+        "outputs": {
+            "text_out": "文本"
+        }
+    },
+    "PromptComposerTextSingle": {
+        "title": "提示词创作（单个）",
+        "inputs": {
+            "text_in_opt": "文本(可选)"
+        },
+        "widgets": {
+            "text": "文本",
+            "weight": "权重",
+            "active": "启用"
+        },
+        "outputs": {
+            "text_out": "文本"
+        }
+    },
+    "PromptComposerTextMultiple": {
+        "title": "提示词创作（多个）",
+        "inputs": {
+            "text_in_opt": "文本(可选)"
+        },
+        "widgets": {
+            "text_1": "文本_1",
+            "weight_1": "权重_1",
+            "text_2": "文本_2",
+            "weight_2": "权重_2",
+            "text_3": "文本_3",
+            "weight_3": "权重_3",
+            "text_4": "文本_4",
+            "weight_4": "权重_4",
+            "text_5": "文本_5",
+            "weight_5": "权重_5",
+            "text_6": "文本_6",
+            "weight_6": "权重_6",
+            "text_7": "文本_7",
+            "weight_7": "权重_7",
+            "text_8": "文本_8",
+            "weight_8": "权重_8",
+            "text_9": "文本_9",
+            "weight_9": "权重_9",
+            "text_10": "文本_10",
+            "weight_10": "权重_10",
+            "active": "启用"
+        },
+        "outputs": {
+            "text_out": "文本"
+        }
+    },
+    "PromptComposerGrouping": {
+        "title": "提示词创作（建组）",
+        "inputs": {
+            "text_in": "文本"
+        },
+        "widgets": {
+            "weight": "权重",
+            "active": "启用"
+        },
+        "outputs": {
+            "text_out": "文本"
+        }
+    },
+    "PromptComposerMerge": {
+        "title": "提示词创作（合并）",
+        "inputs": {
+            "text_a": "文本_A",
+            "text_b": "文本_B"
+        },
+        "outputs": {
+            "text_out": "文本"
+        }
+    },
+    "PromptComposerStyler": {
+        "title": "提示词创作（风格化）",
+        "inputs": {
+            "text_in_opt": "文本(可选)"
+        },
+        "widgets": {
+            "style": "风格",
+            "style_weight": "风格权重",
+            "active": "启用"
+        },
+        "outputs": {
+            "text_out": "文本"
+        }
+    },
+    "PromptComposerEffect": {
+        "title": "提示词创作（特效）",
+        "inputs": {
+            "text_in_opt": "文本(可选)"
+        },
+        "widgets": {
+            "effect": "效果",
+            "effect_weight": "效果权重",
+            "active": "启用"
+        },
+        "outputs": {
+            "text_out": "文本"
+        }
+    }
+}
