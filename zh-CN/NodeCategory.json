@@ -338,6 +338,7 @@
     "decode": "解码",
     "autotrigger": "LoRA自动触发",
     "EasyAnimate": "Easy Animate",
+    "facerestore_cf": "面部修复CodeFormer",
     "basic_pipe": "基础节点束",
     "bbox_detector": "BBox检测",
     "boolean": "布尔",
