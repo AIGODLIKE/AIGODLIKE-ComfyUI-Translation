@@ -176,7 +176,7 @@
             "image": "图像"
         },
         "widgets": {
-            "gaussian_sigmas": "高斯Sigmas",
+            "gaussian_sigma": "gaussian_sigma",
             "intensity_threshold": "强度阈值",
             "resolution": "分辨率"
         },
@@ -283,6 +283,8 @@
             "image": "图像"
         },
         "widgets": {
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
             "resolution": "分辨率"
         },
         "outputs": {
@@ -446,6 +448,7 @@
         },
         "widgets": {
             "ckpt_name": "模型名称",
+            "environment": "环境",
             "resolution": "分辨率"
         },
         "outputs": {
@@ -488,6 +491,9 @@
         },
         "widgets": {
             "mask_bbox_padding": "BBox遮罩分块",
+            "mask_type": "遮罩类型",
+            "mask_expand": "遮罩扩展",
+            "rand_seed": "随机种",
             "resolution": "分辨率"
         },
         "outputs": {
@@ -608,6 +614,9 @@
 
     "Unimatch_OptFlowPreprocessor": {
         "title": "Unimatch光流预处理器",
+        "inputs": {
+            "image": "图像"
+        },
         "widgets": {
             "ckpt_name": "模型名称",
             "backward_flow": "后向流",
