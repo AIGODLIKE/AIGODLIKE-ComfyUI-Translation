@@ -1310,6 +1310,19 @@
             "IMAGE": "图像"
         }
     },
+    "Morphology": {
+        "title": "图像形态学",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "operation": "操作",
+            "kernel_size": "Kernel_Size"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
 
 
     "Canny": {
