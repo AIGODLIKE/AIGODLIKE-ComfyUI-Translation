@@ -1,0 +1,49 @@
+{
+    "FaceAnalysisModels": {
+        "title": "面部分析模型",
+        "widgets": {
+            "library": "库",
+            "provider": "设备"
+        },
+        "outputs": {
+            "ANALYSIS_MODELS": "面部分析模型"
+        }
+    },
+    "FaceEmbedDistance": {
+        "title": "面部相似差值",
+        "inputs": {
+            "analysis_models": "面部分析模型",
+            "reference": "参考图像",
+            "image": "图像"
+        },
+        "widgets": {
+            "filter_thresh_eucl": "Euclidean阈值",
+            "filter_thresh_cos": "Consine阈值",
+            "filter_best": "完美匹配过滤",
+            "generate_image_overlay": "生成图像覆盖"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "euclidean": "Euclidean",
+            "cosine": "Cosine"
+        }
+    },
+    "FaceBoundingBox": {
+        "title": "面部BBox",
+        "inputs": {
+            "analysis_models": "面部分析模型",
+            "image": "图像"
+        },
+        "widgets": {
+            "padding": "分区",
+            "index": "索引"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "x": "X",
+            "y": "Y",
+            "width": "宽度",
+            "height": "高度"
+        }
+    }
+}

@@ -99,6 +99,23 @@
             "IMAGE": "图像"
         }
     },
+    "PixelOEPixelize+": {
+        "title": "像素化",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "downscale_mode": "缩小模式",
+            "target_size": "目标尺寸",
+            "patch_size": "patch_size",
+            "thickness": "厚度",
+            "color_matching": "颜色适配",
+            "upscale": "放大"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "ImageCASharpening+": {
         "title": "图像对比度自适应锐化",
         "inputs": {
@@ -204,6 +221,15 @@
             "IMAGE": "图像"
         }
     },
+    "ImageListToBatch+": {
+        "title": "图像列表到批次",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "ImagePosterize+": {
         "title": "图像色调分离",
         "inputs": {
@@ -228,7 +254,7 @@
         }
     },
     "ImageResize+": {
-        "title": "图像重缩放",
+        "title": "图像缩放",
         "inputs": {
             "image": "图像"
         },
@@ -237,7 +263,8 @@
             "height": "高度",
             "interpolation": "插值",
             "keep_proportion": "固定比例",
-            "condition": "条件"
+            "condition": "条件",
+            "multiple_of": "乘数"
         },
         "outputs": {
             "IMAGE": "图像",
@@ -362,6 +389,75 @@
         "widgets": {
             "start": "起始",
             "length": "长度"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
+    "MaskBoundingBox+": {
+        "title": "遮罩BBox",
+        "inputs": {
+            "mask": "遮罩",
+            "image_optional": "图像（可选）"
+        },
+        "widgets": {
+            "padding": "分区",
+            "blur": "模糊"
+        },
+        "outputs": {
+            "MASK": "遮罩",
+            "IMAGE": "图像",
+            "x": "X",
+            "y": "Y",
+            "width": "宽度",
+            "height": "高度"
+        }
+    },
+    "MaskFromSegmentation+": {
+        "title": "语义分割到遮罩",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "segments": "Segments",
+            "remove_isolated_pixels": "移除孤岛像素",
+            "remove_small_masks": "移除过小遮罩",
+            "fill_holes": "填充缺口"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "MaskFromRGBCMYBW+": {
+        "title": "色彩到遮罩",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "threshold_r": "阈值_红",
+            "threshold_g": "阈值_绿",
+            "threshold_b": "阈值_蓝",
+            "remove_isolated_pixels": "移除孤岛像素",
+            "fill_holes": "填充缺口"
+        },
+        "outputs": {
+            "red": "红",
+            "green": "绿",
+            "blue": "蓝",
+            "cyan": "青",
+            "magenta": "品红",
+            "yellow": "黄",
+            "black": "黑",
+            "white": "白"
+        }
+    },
+    "MaskSmooth+": {
+        "title": "遮罩平滑",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "amount": "数量"
         },
         "outputs": {
             "MASK": "遮罩"

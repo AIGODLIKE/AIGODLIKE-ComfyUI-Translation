@@ -1,0 +1,37 @@
+{
+    "FaceRestoreModelLoader": {
+        "title": "面部修复模型加载器",
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "FACERESTORE_MODEL": "面部修复模型"
+        }
+    },
+    "CropFace": {
+        "title": "裁剪面部",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "facedetection": "面部检测"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "FaceRestoreCFWithModel": {
+        "title": "面部修复CodeFormer",
+        "inputs": {
+            "facerestore_model": "面部修复模型",
+            "image": "图像"
+        },
+        "widgets": {
+            "facedetection": "面部检测",
+            "codeformer_fidelity": "CodeFormer精确度"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    }
+}

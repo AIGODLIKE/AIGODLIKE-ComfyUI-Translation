@@ -50,7 +50,7 @@
         }
     },
     "Primitive string multiline [Crystools]": {
-        "title": "多行字符串元节点",
+        "title": "字符串元节点(多行)",
         "widgets": {
             "string": "字符串"
         },

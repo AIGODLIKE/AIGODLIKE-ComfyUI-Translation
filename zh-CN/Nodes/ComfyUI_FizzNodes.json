@@ -148,6 +148,7 @@
         "widgets": {
             "text": "文本",
             "max_frames": "最大帧数",
+            "print_output": "输出至控制台",
             "current_frame": "当前帧",
             "pre_text": "预置文本",
             "app_text": "附加文本",
@@ -302,6 +303,7 @@
             "text_g": "G文本",
             "text_l": "L文本",
             "max_frames": "最大帧数",
+            "print_output": "输出至控制台",
             "pre_text_G": "预置G文本",
             "app_text_G": "附加G文本",
             "pre_text_L": "预置L文本",
@@ -320,6 +322,7 @@
         "widgets": {
             "text": "文本",
             "max_frames": "最大帧数",
+            "print_output": "输出至控制台",
             "pre_text": "预置文本",
             "app_text": "附加文本",
             "pw_a": "提示词权重A(pw_a)",
@@ -384,8 +387,10 @@
         "widgets": {
             "text": "文本",
             "max_frames": "最大帧数",
+            "print_output": "输出至控制台",
             "pre_text": "预置文本",
             "app_text": "附加文本",
+            "start_frame": "起始帧",
             "pw_a": "提示词权重A(pw_a)",
             "pw_b": "提示词权重B(pw_b)",
             "pw_c": "提示词权重C(pw_c)",

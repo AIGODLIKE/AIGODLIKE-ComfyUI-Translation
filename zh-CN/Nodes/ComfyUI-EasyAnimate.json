@@ -1,0 +1,36 @@
+{
+    "EasyAnimateLoader": {
+        "title": "EasyAnimate加载器",
+        "widgets": {
+            "pixart_path": "PixArt路径",
+            "motion_ckpt": "motion模型",
+            "sampler_name": "采样器",
+            "device": "设备",
+            "transformer_ckpt": "Transformer模型",
+            "lora_ckpt": "LoRA模型",
+            "vae_ckpt": "VAE模型",
+            "lora_weight": "LoRA权重"
+        },
+        "outputs": {
+            "EasyAnimateModel": "EasyAnimate模型"
+        }
+    },
+    "EasyAnimateRun": {
+        "title": "EasyAnimate执行",
+        "inputs": {
+            "model": "EasyAnimate模型"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "negative_prompt": "负面提示词",
+            "width": "宽度",
+            "height": "高度",
+            "guidance_scale": "引导缩放",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    }
+}
