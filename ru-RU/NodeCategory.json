@@ -141,6 +141,8 @@
     "Files": "Файлы",
     "FlowControl": "FlowControl",
     "UI": "UI",
+	"Disconnect Links": "Отключить связь",
+	"Inputs": "Входы",
     "Outputs": "Выходы",
     "Generated": "Сгенерировано",
     "Legacy": "Legacy",
