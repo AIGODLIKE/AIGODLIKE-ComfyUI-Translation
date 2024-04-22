@@ -1,4 +1,19 @@
 {
+    "SAG Delayed Activation": {
+        "title": "SAG自注意力引导",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "scale": "缩放",
+            "blur_sigma": "模糊Sigma",
+            "sigma_start": "起始Sigam",
+            "sigma_end": "结束Sigma"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
     "Automatic CFG": {
         "title": "自动CFG",
         "inputs": {
@@ -24,19 +39,57 @@
             "MODEL": "模型"
         }
     },
-    "Automatic CFG - Advanced settings": {
+    "Automatic CFG - Advanced": {
         "title": "自动CFG(高级)",
         "inputs": {
             "model": "模型"
         },
         "widgets": {
-            "center_mean_post_cfg": "center_mean_post_cfg",
-            "center_mean_to_sigma": "center_mean_to_sigma",
+            "model": "模型",
             "automatic_cfg": "automatic_cfg",
-            "sigma_boost": "sigma_boost",
-            "sigma_boost_percentage": "sigma_boost_percentage",
+            "skip_uncond": "skip_uncond",
+            "uncond_sigma_start": "uncond_sigma_start",
+            "uncond_sigma_end": "uncond_sigma_end",
             "lerp_uncond": "lerp_uncond",
-            "lerp_uncond_strength": "lerp_uncond_strength"
+            "lerp_uncond_strength": "lerp_uncond_strength",
+            "lerp_uncond_sigma_start": "lerp_uncond_sigma_start",
+            "lerp_uncond_sigma_end": "lerp_uncond_sigma_end",
+            "subtract_latent_mean": "subtract_latent_mean",
+            "subtract_latent_mean_sigma_start": "subtract_latent_mean_sigma_start",
+            "subtract_latent_mean_sigma_end": "subtract_latent_mean_sigma_end",
+            "latent_intensity_rescale": "latent_intensity_rescale",
+            "latent_intensity_rescale_method": "latent_intensity_rescale_method",
+            "latent_intensity_rescale_cfg": "latent_intensity_rescale_cfg",
+            "latent_intensity_rescale_sigma_start": "latent_intensity_rescale_sigma_start",
+            "latent_intensity_rescale_sigma_end": "latent_intensity_rescale_sigma_end"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "Automatic CFG - Fastest": {
+        "title": "自动CFG(快速)",
+        "inputs": {
+            "model": "模型"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "Automatic CFG - Post rescale only": {
+        "title": "自动CFG(仅后缩放)",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "subtract_latent_mean": "subtract_latent_mean",
+            "subtract_latent_mean_sigma_start": "subtract_latent_mean_sigma_start",
+            "subtract_latent_mean_sigma_end": "subtract_latent_mean_sigma_end",
+            "latent_intensity_rescale": "latent_intensity_rescale",
+            "latent_intensity_rescale_method": "latent_intensity_rescale_method",
+            "latent_intensity_rescale_cfg": "latent_intensity_rescale_cfg",
+            "latent_intensity_rescale_sigma_start": "latent_intensity_rescale_sigma_start",
+            "latent_intensity_rescale_sigma_end": "latent_intensity_rescale_sigma_end"
         },
         "outputs": {
             "MODEL": "模型"

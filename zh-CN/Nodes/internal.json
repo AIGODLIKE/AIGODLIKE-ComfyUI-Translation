@@ -148,6 +148,16 @@
             "SIGMAS": "Sigmas"
         }
     },
+    "AlignYourStepsScheduler": {
+        "title": "AlighYourSteps调度器",
+        "widgets": {
+            "model_type": "模型类型",
+            "steps": "步数"
+        },
+        "outputs": {
+            "SIGMAS": "Sigmas"
+        }
+    },
     "KSamplerSelect": {
         "title": "K采样器选择",
         "widgets": {

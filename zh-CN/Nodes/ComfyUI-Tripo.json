@@ -1,0 +1,32 @@
+{
+    "TripoAPIImageToMeshNode": {
+        "title": "图像到网格",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "apiKey": "APIKey"
+        },
+        "outputs": {
+            "MESH_GLB": "网格_GLB",
+            "TASK_ID": "任务ID"
+        }
+    },
+    "TripoAPITextToMeshNode": {
+        "title": "文本到网格",
+        "widgets": {
+            "apiKey": "APIKey",
+            "prompt": "提示词"
+        },
+        "outputs": {
+            "MESH_GLB": "网格_GLB",
+            "TASK_ID": "任务ID"
+        }
+    },
+    "TripoGLBViewer": {
+        "title": "GLB预览",
+        "inputs": {
+            "mesh": "网格"
+        }
+    }
+}
