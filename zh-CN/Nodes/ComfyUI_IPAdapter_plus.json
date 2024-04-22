@@ -367,7 +367,7 @@
             "ipadapter": "IPAdapter"
         }
     },
-    "IpadapterFromParams": {
+    "IPAdapterFromParams": {
         "title": "应用IPAdapter(参数组)",
         "inputs": {
             "model": "模型",
