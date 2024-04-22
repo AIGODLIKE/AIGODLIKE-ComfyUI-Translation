@@ -1,0 +1,105 @@
+{
+    "INPAINT_LoadFooocusInpaint": {
+        "title": "加载Fooocus局部重绘",
+        "widgets": {
+            "head": "head",
+            "patch": "patch"
+        },
+        "outputs": {
+            "INPAINT_PATCH": "局部重绘组件"
+        }
+    },
+    "INPAINT_ApplyFooocusInpaint": {
+        "title": "应用Fooocus局部重绘",
+        "inputs": {
+            "model": "模型",
+            "patch": "局部重绘组件",
+            "latent": "Latent"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "INPAINT_VAEEncodeInpaintConditioning": {
+        "title": "VAE编码局部重绘条件",
+        "inputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "vae": "VAE",
+            "pixels": "图像",
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latent_inpaint": "局部重绘Latent",
+            "latent_samples": "采样Latent"
+        }
+    },
+    "INPAINT_MaskedFill": {
+        "title": "遮罩填充",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "fill": "填充方式",
+            "falloff": "衰减"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "INPAINT_MaskedBlur": {
+        "title": "遮罩模糊",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "blur": "模糊",
+            "falloff": "衰减"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "INPAINT_LoadInpaintModel": {
+        "title": "加载局部重绘模型",
+        "widgets": {
+            "model_name": "模型名称"
+        },
+        "outputs": {
+            "INPAINT_MODEL": "局部重绘模型"
+        }
+    },
+    "INPAINT_InpaintWithModel": {
+        "title": "使用模型局部重绘",
+        "inputs": {
+            "inpaint_model": "局部重绘模型",
+            "image": "图像",
+            "mask": "遮罩",
+            "optional_upscale_model": "放大模型(可选)"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "INPAINT_DenoiseToCompositingMask": {
+        "title": "降噪到合成遮罩",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "offset": "偏移",
+            "threshold": "阈值"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    }
+}
