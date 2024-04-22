@@ -1,0 +1,67 @@
+{
+    "EllaApply": {
+        "title": "应用ELLA",
+        "inputs": {
+            "model": "模型",
+            "ella": "ELLA",
+            "positive": "正面ELLA嵌入组",
+            "negative": "负面ELLA嵌入组"
+        },
+        "outputs": {
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件"
+        }
+    },
+    "T5TextEncode #ELLA": {
+        "title": "T5文本编码",
+        "inputs": {
+            "text_encoder": "文本编码器"
+        },
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "ELLA_EMBEDS": "ELLA嵌入组"
+        }
+    },
+    "ELLALoader": {
+        "title": "ELLA加载器",
+        "widgets": {
+            "name": "名称"
+        },
+        "outputs": {
+            "ELLA": "ELLA"
+        }
+    },
+    "T5TextEncoderLoader #ELLA": {
+        "title": "T5文本编码加载器",
+        "widgets": {
+            "name": "名称",
+            "max_length": "最大长度",
+            "dtype": "剪枝类型"
+        },
+        "outputs": {
+            "T5_TEXT_ENCODER": "T5文本编码器"
+        }
+    },
+    "EllaCombineEmbeds": {
+        "title": "ELLA合并嵌入组",
+        "inputs": {
+            "embeds": "嵌入组",
+            "embeds_add": "嵌入组_添加"
+        },
+        "outputs": {
+            "ELLA_EMBEDS": "ELLA嵌入组"
+        }
+    },
+    "ConditionToEllaEmbeds": {
+        "title": "条件到ELLA嵌入组",
+        "inputs": {
+            "cond": "条件"
+        },
+        "outputs": {
+            "ELLA_EMBEDS": "ELLA嵌入组"
+        }
+    }
+}
