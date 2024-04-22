@@ -57,7 +57,8 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Easy Tools](https://github.com/jafshare/ComfyUI-Easy-Tools)|√|TODO|√|TODO|TODO|TODO|
 |[Easy Use](https://github.com/yolain/ComfyUI-Easy-Use)|√|TODO|√|TODO|TODO|TODO|
 |[Efficiency Nodes](https://github.com/LucianoCirino/efficiency-nodes-comfyui)|√|√|√|√|TODO|TODO|
-|[ELLA](https://github.com/ExponentialML/ComfyUI_ELLA.git)|√|TODO|√|TODO|TODO|TODO|
+|[ELLA(ExponentialML)](https://github.com/ExponentialML/ComfyUI_ELLA.git)|√|TODO|√|TODO|TODO|TODO|
+|[ELLA(Tencent)](https://github.com/TencentQQGYLab/ComfyUI-ELLA.git)|√|TODO|√|TODO|TODO|TODO|
 |[EllangoK Postprocessing](https://github.com/EllangoK/ComfyUI-post-processing-nodes)|√|√|√|TODO|TODO|TODO|
 |[Essentials](https://github.com/cubiq/ComfyUI_essentials.git)|√|TODO|√|TODO|TODO|TODO|
 |[ExLlama nodes](https://github.com/Zuellni/ComfyUI-ExLlama-Nodes)|√|√|√|TODO|TODO|TODO|
@@ -73,6 +74,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Image Grid](https://github.com/LEv145/images-grid-comfy-plugin)|√|√|√|TODO|TODO|TODO|
 |[Impact Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack)|√|√|√|TODO|TODO|TODO|
 |[Impact Subpack](https://github.com/ltdrdata/ComfyUI-Impact-Subpack)|√|√|√|TODO|TODO|TODO|
+|[Inpaint Nodes](https://github.com/Acly/comfyui-inpaint-nodes.git)|√|TODO|√|TODO|TODO|TODO|
 |[Inspire Pack](https://github.com/ltdrdata/ComfyUI-Inspire-Pack)|√|√|√|TODO|TODO|TODO|
 |[InstantID (cubiq)](https://github.com/cubiq/ComfyUI_InstantID.git)|√|TODO|√|TODO|TODO|TODO|
 |[InstantID (ZHO)](https://github.com/ZHO-ZHO-ZHO/ComfyUI-InstantID.git)|√|TODO|√|TODO|TODO|TODO|
@@ -115,8 +117,10 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[TiledDiffusion](https://github.com/shiimizu/ComfyUI-TiledDiffusion)|√|TODO|√|TODO|TODO|TODO|
 |[TiledKSampler](https://github.com/BlenderNeko/ComfyUI_TiledKSampler)|√|√|√|√|TODO|TODO|
 |[TinyTerra](https://github.com/TinyTerra/ComfyUI_tinyterraNodes.git)|√|TODO|√|TODO|TODO|TODO|TODO|
+|[TripoAPI](https://github.com/VAST-AI-Research/ComfyUI-Tripo.git)|√|TODO|√|TODO|TODO|TODO|
 |[UltimateSDUpscale](https://github.com/ssitu/ComfyUI_UltimateSDUpscale)|√|√|√|TODO|TODO|TODO|
 |[Vextra Nodes](https://github.com/diontimmer/ComfyUI-Vextra-Nodes)|√|√|√|TODO|TODO|TODO|
+|[Video Matting](https://github.com/Fannovel16/ComfyUI-Video-Matting.git)|√|TODO|√|TODO|TODO|TODO|
 |[VLM Nodes](https://github.com/gokayfem/ComfyUI_VLM_nodes.git)|√|TODO|√|TODO|TODO|TODO|
 |[WAS Suite](https://github.com/WASasquatch/was-node-suite-comfyui)|√|√|√|TODO|TODO|TODO|
 |[WD14-Tagger](https://github.com/pythongosssss/ComfyUI-WD14-Tagger)|√|√|√|TODO|TODO|TODO|
