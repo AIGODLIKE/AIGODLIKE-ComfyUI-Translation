@@ -1,0 +1,34 @@
+{
+    "Robust Video Matting": {
+        "title": "稳定视频抠像",
+        "inputs": {
+            "video_frames": "图像"
+        },
+        "widgets": {
+            "backbone": "模型",
+            "fp16": "fp16",
+            "bg_color": "背景颜色",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    },
+    "BRIAAI Matting": {
+        "title": "BRIAAI抠像",
+        "inputs": {
+            "video_frames": "图像"
+        },
+        "widgets": {
+            "version": "版本",
+            "fp16": "fp16",
+            "bg_color": "背景颜色",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    }
+}
