@@ -556,5 +556,34 @@
         "outputs": {
             "MASK": "遮罩"
         }
+    },
+    "ConditioningCombineMultiple+": {
+        "title": "条件合并(多重)",
+        "inputs": {
+            "conditioning_1": "条件_1",
+            "conditioning_2": "条件_2",
+            "conditioning_3": "条件_3",
+            "conditioning_4": "条件_4",
+            "conditioning_5": "条件_5"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "ImageBatchMultiple+": {
+        "title": "图像合并(多重)",
+        "inputs": {
+            "image_1": "图像_1",
+            "image_2": "图像_2",
+            "image_3": "图像_3",
+            "image_4": "图像_4",
+            "image_5": "图像_5"
+        },
+        "widgets": {
+            "method": "方法"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
     }
 }
