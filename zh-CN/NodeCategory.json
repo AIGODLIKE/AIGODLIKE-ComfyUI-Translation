@@ -343,6 +343,8 @@
     "Faceanalysis": "面部分析",
     "Deprecated": "弃用",
     "Video Matting": "视频抠像",
+    "automatic_cfg": "自动CFG",
+    "presets": "预设",
     "basic_pipe": "基础节点束",
     "bbox_detector": "BBox检测",
     "boolean": "布尔",
