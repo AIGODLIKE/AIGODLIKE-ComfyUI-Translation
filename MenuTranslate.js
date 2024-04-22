@@ -14,6 +14,7 @@ class TExe {
   translateAllText(node) {
     let T = this.T;
     if (!T) return;
+    if (!node || !node.querySelectorAll) return;
     const allElements = node.querySelectorAll("*");
 
     for (const ele of allElements) {
@@ -124,6 +125,7 @@ export function applyMenuTranslation(T) {
         break;
       }
       for (const sb of mutation.addedNodes) {
+        if (!sb || !sb.querySelector) continue
         var helper = sb.querySelector(".helper");
         if (!helper) continue;
         var ob = observeFactory(helper, (mutationsList, observer) => {

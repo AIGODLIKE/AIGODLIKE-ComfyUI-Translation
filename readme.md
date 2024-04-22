@@ -53,6 +53,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Davemane42 Nodes](https://github.com/Davemane42/ComfyUI_Dave_CustomNode)|√|√|√|√|TODO|TODO|
 |[Dagthomas Nodes](https://github.com/dagthomas/comfyui_dagthomas)|√|√|√|√|TODO|TODO|
 |[Dynamic Thresholding](https://github.com/mcmonkeyprojects/sd-dynamic-thresholding)|√|√|√|TODO|TODO|TODO|
+|[Easy Animate](https://github.com/chaojie/ComfyUI-EasyAnimate.git)|√|TODO|√|TODO|TODO|TODO|
 |[Easy Tools](https://github.com/jafshare/ComfyUI-Easy-Tools)|√|TODO|√|TODO|TODO|TODO|
 |[Easy Use](https://github.com/yolain/ComfyUI-Easy-Use)|√|TODO|√|TODO|TODO|TODO|
 |[Efficiency Nodes](https://github.com/LucianoCirino/efficiency-nodes-comfyui)|√|√|√|√|TODO|TODO|
@@ -61,8 +62,10 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Essentials](https://github.com/cubiq/ComfyUI_essentials.git)|√|TODO|√|TODO|TODO|TODO|
 |[ExLlama nodes](https://github.com/Zuellni/ComfyUI-ExLlama-Nodes)|√|√|√|TODO|TODO|TODO|
 |[experiments](https://github.com/comfyanonymous/ComfyUI_experiments)|√|√|√|TODO|TODO|TODO|
+|[Face Analysis](https://github.com/cubiq/ComfyUI_FaceAnalysis.git)|√|TODO|√|TODO|TODO|TODO|
 |[Fast Decode](https://github.com/nagolinc/ComfyUI_FastVAEDecorder_SDXL)|√|√|√|√|TODO|TODO|
-|[FlowtyTripoSR](https://github.com/flowtyone/ComfyUI-Flowty-TripoSR.git)|√|TODO|√|TODO|TODO|TODO|
+|[Flowty CRM](https://github.com/flowtyone/ComfyUI-Flowty-CRM.git)|√|TODO|√|TODO|TODO|TODO|
+|[Flowty TripoSR](https://github.com/flowtyone/ComfyUI-Flowty-TripoSR.git)|√|TODO|√|TODO|TODO|TODO|
 |[Frame Interpolation](https://github.com/Fannovel16/ComfyUI-Frame-Interpolation.git)|√|TODO|√|TODO|TODO|TODO|
 |[FreeU Advanced](https://github.com/WASasquatch/FreeU_Advanced)|√|TODO|√|TODO|TODO|TODO|
 |[IPAdapter](https://github.com/laksjdjf/IPAdapter-ComfyUI)|√|√|√|TODO|TODO|TODO|
@@ -95,6 +98,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Perturbed-Attention](https://github.com/pamparamm/sd-perturbed-attention.git)|√|TODO|√|TODO|TODO|TODO|
 |[Portrai Master](https://github.com/florestefano1975/comfyui-portrait-master.git)|√|TODO|√|TODO|TODO|TODO|
 |[Power Noise Suite](https://github.com/WASasquatch/PowerNoiseSuite)|√|TODO|√|TODO|TODO|TODO|
+|[Prompt Composer](https://github.com/florestefano1975/comfyui-prompt-composer.git)|√|TODO|√|TODO|TODO|TODO|
 |[Prompt Reader](https://github.com/receyuki/comfyui-prompt-reader-node)|√|TODO|√|TODO|TODO|TODO|
 |[QR](https://github.com/coreyryanhanson/comfy-qr)|√|√|√|TODO|TODO|TODO|
 |[OneButtonPrompt](https://github.com/AIrjen/OneButtonPrompt)|√|TODO|√|TODO|TODO|TODO|
