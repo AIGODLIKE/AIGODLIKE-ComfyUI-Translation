@@ -1,0 +1,177 @@
+{
+    "SUPIR_model_loader": {
+        "title": "SUPIR模型加载器",
+        "widgets": {
+            "supir_model": "SUPIR模型",
+            "sdxl_model": "SDXL模型",
+            "fp8_unet": "fp8_unet",
+            "diffusion_dtype": "剪枝类型"
+        },
+        "outputs": {
+            "SUPIR_MODEL": "SUPIR模型",
+            "SUPIR_VAE": "SUPIR_VAE"
+        }
+    },
+    "SUPIR_model_loader_v2": {
+        "title": "SUPIR模型加载器_V2",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "supir_model": "SUPIR模型",
+            "fp8_unet": "fp8_unet",
+            "diffusion_dtype": "剪枝类型",
+            "high_vram": "高显存"
+        },
+        "outputs": {
+            "SUPIR_MODEL": "SUPIR模型",
+            "SUPIR_VAE": "SUPIR_VAE"
+        }
+    },
+    "SUPIR_encode": {
+        "title": "SUPIR编码",
+        "inputs": {
+            "SUPIR_VAE": "SUPIR_VAE",
+            "image": "图像"
+        },
+        "widgets": {
+            "use_tiled_vae": "分块VAE",
+            "encoder_tile_size": "编码分块尺寸",
+            "encoder_dtype": "编码剪枝"
+        },
+        "outputs": {
+            "latent": "Latent"
+        }
+    },
+    "SUPIR_decode": {
+        "title": "SUPIR解码",
+        "inputs": {
+            "SUPIR_VAE": "SUPIR_VAE",
+            "latents": "Latent"
+        },
+        "widgets": {
+            "use_tiled_vae": "分块VAE",
+            "decoder_tile_size": "解码分块尺寸"
+        }
+    },
+    "SUPIR_first_stage": {
+        "title": "SUPIR阶段一",
+        "inputs": {
+            "SUPIR_VAE": "SUPIR_VAE",
+            "image": "图像"
+        },
+        "widgets": {
+            "use_tiled_vae": "分块VAE",
+            "encoder_tile_size": "编码分块尺寸",
+            "decoder_tile_size": "解码分块尺寸",
+            "encoder_dtype": "编码剪枝"
+        },
+        "outputs": {
+            "SUPIR_VAE": "SUPIR_VAE",
+            "denoised_image": "图像",
+            "denoised_latents": "Latent"
+        }
+    },
+    "SUPIR_conditioner": {
+        "title": "SUPIR条件",
+        "inputs": {
+            "SUPIR_MODEL": "SUPIR模型",
+            "latents": "Latent",
+            "captions": "captions"
+        },
+        "widgets": {
+            "positive_prompt": "正面提示词",
+            "negative_prompt": "负面提示词"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件"
+        }
+    },
+    "SUPIR_sample": {
+        "title": "SUPIR采样",
+        "inputs": {
+            "SUPIR_model": "SUPIR模型",
+            "latents": "Latent",
+            "positive": "正面条件",
+            "negative": "负面条件"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "steps": "步数",
+            "cfg_scale_start": "起始CFG缩放",
+            "cfg_scale_end": "结束CFG缩放",
+            "EDM_s_churn": "EDM_s_churn",
+            "s_noise": "噪波量",
+            "DPMPP_eta": "DPMPP_eta",
+            "control_scale_start": "起始控制缩放",
+            "control_scale_end": "结束控制缩放",
+            "restore_cfg": "恢复CFG",
+            "keep_model_loaded": "保持模型加载",
+            "sampler": "采样器",
+            "sampler_tile_size": "采样器分块尺寸",
+            "sampler_tile_stride": "采样器分块步长"
+        },
+        "outputs": {
+            "latent": "Latent"
+        }
+    },
+    "SUPIR_tiles": {
+        "title": "SUPIR分块图像",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "tile_size": "分块尺寸",
+            "tile_stride": "分块步长"
+        },
+        "outputs": {
+            "image_tiles": "分块图像",
+            "tile_size": "分块尺寸",
+            "tile_stride": "分块步长"
+        }
+    },
+    "SUPIR_Upscale": {
+        "title": "SUPIR放大",
+        "inputs": {
+            "image": "图像",
+            "captions": "captions"
+        },
+        "widgets": {
+            "supir_model": "SUPIR模型",
+            "sdxl_model": "SDXL模型",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "resize_method": "缩放方法",
+            "scale_by": "缩放系数",
+            "steps": "步数",
+            "restoration_scale": "恢复缩放",
+            "cfg_scale": "CFG缩放",
+            "a_prompt": "正面提示词",
+            "n_prompt": "负面提示词",
+            "s_churn": "s_churn",
+            "s_noise": "噪波量",
+            "control_scale": "控制缩放",
+            "color_fix_type": "颜色修复类型",
+            "keep_model_loaded": "保持模型加载",
+            "use_tiled_vae": "分块VAE",
+            "encoder_tile_size": "编码分块尺寸",
+            "decoder_tile_size": "解码分块尺寸",
+            "diffusion_dtype": "剪枝类型",
+            "encoder_dtype": "编码剪枝",
+            "batch_size": "批次大小",
+            "used_tiled_sampling": "使用分块采样",
+            "sampler_tile_size": "采样器分块尺寸",
+            "sampler_tile_stride": "采样器分块步长",
+            "fp8_unet": "fp8_unet",
+            "fp8_vae": "fp8_vae",
+            "sampler": "采样器"
+        },
+        "outputs": {
+            "upscaled_image": "图像"
+        }
+    }
+}

@@ -670,6 +670,16 @@
             "LATENT": "Latent"
         }
     },
+    "CustomSigmas": {
+        "title": "自定义Sigmas",
+        "widgets": {
+            "sigmas_string": "Sigmas字符串",
+            "interpolate_to_steps": "步数"
+        },
+        "outputs": {
+            "SIGMAS": "Sigmas"
+        }
+    },
 
 
 
@@ -986,6 +996,19 @@
             "STRING": "字符串"
         }
     },
+    "Superprompt": {
+        "title": "超级提示词",
+        "inputs": {
+            "prompt": "提示词"
+        },
+        "widgets": {
+            "instruction_prompt": "提示词提示词",
+            "max_new_tokens": "最大输出Token数"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
     "StableZero123_BatchSchedule": {
         "title": "SZ123_批次调度",
         "inputs": {
@@ -1062,6 +1085,27 @@
         },
         "outputs": {
             "MODEL": "模型"
+        }
+    },
+    "StabilityAPI_SD3": {
+        "title": "StabilityAPI SD3",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "n_prompt": "负面提示词",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "model": "模型",
+            "aspect_ratio": "宽高比",
+            "output_format": "输出格式",
+            "api_key": "API Key",
+            "img2img_strength": "图生图强度",
+            "disable_metadata": "禁用元数据"
+        },
+        "outputs": {
+            "IMAGE": "图像"
         }
     },
     "GetImagesFromBatchIndexed": {
@@ -1247,6 +1291,59 @@
         "outputs": {
             "LATENT": "Latent",
             "IMAGE": "图像"
+        }
+    },
+    "ImageAndMaskPreivew": {
+        "title": "图像与遮罩预览",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "mask_opacity": "遮罩不透明",
+            "mask_color": "遮罩颜色",
+            "pass_through": "穿透"
+        },
+        "outputs": {
+            "composite": "图像"
+        }
+    },
+    "MaskOrImageToWeigh": {
+        "title": "遮罩或图像到权重",
+        "inputs": {
+            "images": "图像",
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "output_type": "输出类型"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "WeightScheduleConvert": {
+        "title": "权重调度转换",
+        "inputs": {
+            "input_values": "输入值"
+        },
+        "widgets": {
+            "output_type": "输出类型"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
+    "FloatToMask": {
+        "title": "浮点到遮罩",
+        "inputs": {
+            "input_values": "输入值"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "MASK": "遮罩"
         }
     }
 }

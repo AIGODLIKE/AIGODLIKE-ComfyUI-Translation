@@ -112,7 +112,8 @@
         "widgets": {
             "weight": "权重",
             "start_at": "开始应用位置",
-            "end_at": "结束应用位置"
+            "end_at": "结束应用位置",
+            "weight_type": "权重类型"
         },
         "outputs": {
             "MODEL": "模型",
@@ -350,6 +351,116 @@
         },
         "outputs": {
             "INSIGHTFACE": "InsightFace"
+        }
+    },
+    "IPAdapterUnifiedLoaderCommunity": {
+        "title": "IPAdapter加载器(社区)",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter"
+        },
+        "widgets": {
+            "preset": "预设"
+        },
+        "outputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter"
+        }
+    },
+    "IPAdapterFromParams": {
+        "title": "应用IPAdapter(参数组)",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "ipadapter_params": "IPAdapter参数组",
+            "image_negative": "负面图像",
+            "clip_vision": "CLIP视觉"
+        },
+        "widgets": {
+            "combine_embeds": "合并嵌入组",
+            "embeds_scaling": "嵌入组缩放"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterRegionalConditioning": {
+        "title": "IPAdapter区域条件",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "positive": "正面条件",
+            "negative": "负面条件"
+        },
+        "widgets": {
+            "image_weight": "图像权重",
+            "prompt_weight": "提示词权重",
+            "weight_type": "权重类型",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置"
+        },
+        "outputs": {
+            "IPADAPTER_PARAMS": "IPAdapter参数组"
+        }
+    },
+    "IPAdapterCombineParams": {
+        "title": "IPAdapter合并参数组",
+        "inputs": {
+            "params_1": "参数组_1",
+            "params_2": "参数组_2",
+            "params_3": "参数组_3",
+            "params_4": "参数组_4",
+            "params_5": "参数组_5"
+        },
+        "outputs": {
+            "IPADAPTER_PARAMS": "IPAdapter参数组"
+        }
+    },
+    "IPAdapterStyleComposition": {
+        "title": "IPAdapter风格合成SDXL",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image_style": "风格图像",
+            "image_composition": "合成图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉"
+        },
+        "widgets": {
+            "weight_style": "风格权重",
+            "weight_composition": "合成权重",
+            "expand_style": "风格扩展",
+            "combine_embeds": "合并嵌入组",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入组缩放"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "IPAdapterStyleCompositionBatch": {
+        "title": "IPAdapter风格合成SDXL(批次)",
+        "inputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter",
+            "image_style": "风格图像",
+            "image_composition": "合成图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉"
+        },
+        "widgets": {
+            "weight_style": "风格权重",
+            "weight_composition": "合成权重",
+            "expand_style": "风格扩展",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置",
+            "embeds_scaling": "嵌入组缩放"
+        },
+        "outputs": {
+            "MODEL": "模型"
         }
     },
     "IPAdapterEncoder": {

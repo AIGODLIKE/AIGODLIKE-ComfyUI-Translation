@@ -1,0 +1,37 @@
+{
+    "LoadMarianMTCheckPoint": {
+        "title": "MarianMT模型加载器",
+        "widgets": {
+            "checkpoint": "模型"
+        },
+        "outputs": {
+            "model": "模型",
+            "tokenizer": "Tokenizer"
+        }
+    },
+    "PromptBaiduFanyiToText": {
+        "title": "翻译提示词文本(百度)",
+        "widgets": {
+            "appid": "AppID",
+            "secretkey": "密钥",
+            "from_lang": "检测语言",
+            "prompt_text": "提示词"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "PromptTranslateToText": {
+        "title": "翻译提示词文本",
+        "inputs": {
+            "model": "模型",
+            "tokenizer": "Tokenizer"
+        },
+        "widgets": {
+            "prompt_text": "提示词"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    }
+}
