@@ -1,0 +1,37 @@
+{
+    "CCSR_Model_Select": {
+        "title": "CCSR模型加载器",
+        "widgets": {
+            "ckpt_name": "模型"
+        },
+        "outputs": {
+            "ccsr_model": "CCSR模型"
+        }
+    },
+    "CCSR_Upscale": {
+        "title": "CCSR放大",
+        "inputs": {
+            "ccsr_model": "CCSR模型",
+            "image": "图像"
+        },
+        "widgets": {
+            "resize_method": "缩放方法",
+            "scale_by": "缩放系数",
+            "steps": "步数",
+            "t_max": "开始采样位置",
+            "t_min": "结束采样位置",
+            "sampling_method": "采样方法",
+            "tile_size": "分块尺寸",
+            "tile_stride": "分块步长",
+            "vae_tile_size_encode": "VAE编码分块尺寸",
+            "vae_tile_size_decode": "VAE解码分块尺寸",
+            "color_fix_type": "颜色修复类型",
+            "keep_model_loaded": "保持模型加载",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "upscaled_image": "图像"
+        }
+    }
+}
