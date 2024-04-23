@@ -347,6 +347,7 @@
     "automatic_cfg": "自动CFG",
     "presets": "预设",
     "Tripoapi": "Tripo API",
+    "kkTranslator": "kk翻译",
     "basic_pipe": "基础节点束",
     "bbox_detector": "BBox检测",
     "boolean": "布尔",
