@@ -39,6 +39,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[AnimateDiff-Evolved](https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved.git)|√|√|√|TODO|TODO|TODO|
 |[Automatic CFG](https://github.com/Extraltodeus/ComfyUI-AutomaticCFG.git)|√|TODO|√|TODO|TODO|TODO|
 |[BiRefNet](https://github.com/viperyl/ComfyUI-BiRefNet.git)|√|TODO|√|TODO|TODO|TODO|
+|[CCSR](https://github.com/kijai/ComfyUI-CCSR.git)|√|TODO|√|TODO|TODO|TODO|
 |[Champ](https://github.com/chaojie/ComfyUI-Champ.git)|√|TODO|√|TODO|TODO|TODO|
 |[CLIP Seg](https://github.com/biegert/ComfyUI-CLIPSeg)|√|√|√|√|TODO|TODO|
 |[ComfyRoll](https://github.com/RockOfFire/ComfyUI_Comfyroll_CustomNodes)|√|√|√|TODO|TODO|TODO|
@@ -79,6 +80,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[InstantID (cubiq)](https://github.com/cubiq/ComfyUI_InstantID.git)|√|TODO|√|TODO|TODO|TODO|
 |[InstantID (ZHO)](https://github.com/ZHO-ZHO-ZHO/ComfyUI-InstantID.git)|√|TODO|√|TODO|TODO|TODO|
 |[KJ Nodes](https://github.com/kijai/ComfyUI-KJNodes.git)|√|TODO|√|TODO|TODO|TODO|
+|[kkTranslator](https://github.com/AIGCTeam/ComfyUI_kkTranslator_nodes.git)|√|TODO|√|TODO|TODO|TODO|
 |[LaMa Preprocessor](https://github.com/mlinmg/ComfyUI-LaMA-Preprocessor)|√|TODO|√|TODO|TODO|TODO|
 |[Latent2RGB](https://github.com/bvhari/ComfyUI_LatentToRGB)|√|√|√|√|TODO|TODO|
 |[LayerDiffuse](https://github.com/huchenlei/ComfyUI-layerdiffuse)|√|TODO|√|TODO|TODO|TODO|
@@ -114,6 +116,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[SeargeSDXL](https://github.com/SeargeDP/SeargeSDXL)|√|√|√|TODO|TODO|TODO|
 |[Segment Anything](https://github.com/storyicon/comfyui_segment_anything.git)|√|TODO|√|TODO|TODO|TODO|
 |[StabilityNodes](https://github.com/Stability-AI/stability-ComfyUI-nodes)|√|√|√|TODO|TODO|TODO|
+|[SUPIR](https://github.com/kijai/ComfyUI-SUPIR.git)|√|TODO|√|TODO|TODO|TODO|
 |[TiledDiffusion](https://github.com/shiimizu/ComfyUI-TiledDiffusion)|√|TODO|√|TODO|TODO|TODO|
 |[TiledKSampler](https://github.com/BlenderNeko/ComfyUI_TiledKSampler)|√|√|√|√|TODO|TODO|
 |[TinyTerra](https://github.com/TinyTerra/ComfyUI_tinyterraNodes.git)|√|TODO|√|TODO|TODO|TODO|TODO|
