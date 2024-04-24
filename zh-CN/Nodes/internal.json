@@ -1916,7 +1916,7 @@
         }
     },
     "SelfAttentionGuidance": {
-        "title": "自注意力引导",
+        "title": "SAG自注意力引导",
         "inputs": {
             "model": "模型"
         },
@@ -1929,7 +1929,7 @@
         }
     },
     "PerpNeg": {
-        "title": "重塑负提示",
+        "title": "PerpNeg重塑负提示",
         "inputs": {
             "model": "模型",
             "empty_conditioning": "空条件"
@@ -1939,6 +1939,22 @@
         },
         "outputs": {
             "MODEL": "模型"
+        }
+    },
+    "PerpNegGuider": {
+        "title": "PerpNeg重塑负提示引导",
+        "inputs": {
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "empty_conditioning": "空条件"
+        },
+        "widgets": {
+            "cfg": "CFG",
+            "neg_scale": "负面缩放"
+        },
+        "outputs": {
+            "GUIDER": "引导"
         }
     },
     "DifferentialDiffusion": {

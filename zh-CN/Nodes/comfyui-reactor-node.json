@@ -11,6 +11,8 @@
             "swap_model": "置换模型",
             "facedetection": "检测模型",
             "face_restore_model": "修复模型",
+            "face_restore_visibility": "面部修复可见性",
+            "codeformer_weight": "CodeFormer_权重",
             "detect_gender_source": "检测源性别",
             "detect_gender_input": "检测目标性别",
             "source_faces_index": "源面部索引",
@@ -20,6 +22,72 @@
         "outputs": {
             "IMAGE": "图像",
             "FACE_MODEL": "面部模型"
+        }
+    },
+    "ReActorFaceSwapOpt": {
+        "title": "ReActor换脸（设置组）",
+        "inputs": {
+            "input_image": "目标图像",
+            "source_image": "源图像",
+            "face_model": "面部模型",
+            "options": "ReActor设置组"
+        },
+        "widgets": {
+            "enabled": "启用",
+            "swap_model": "置换模型",
+            "facedetection": "检测模型",
+            "face_restore_model": "修复模型",
+            "face_restore_visibility": "面部修复可见性",
+            "codeformer_weight": "CodeFormer_权重"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "FACE_MODEL": "面部模型"
+        }
+    },
+    "ReActorMaskHelper": {
+        "title": "ReActor遮罩助手",
+        "inputs": {
+            "image": "图像",
+            "swapped_image": "替换图像",
+            "mask_optional": "遮罩(可选)"
+        },
+        "widgets": {
+            "bbox_model_name": "BBox模型名称",
+            "bbox_threshold": "BBox阈值",
+            "bbox_dilation": "BBox膨胀",
+            "bbox_crop_factor": "BBox裁剪系数",
+            "bbox_drop_size": "BBox最小尺寸",
+            "sam_model_name": "SAM模型名称",
+            "sam_dilation": "SAM膨胀",
+            "sam_threshold": "SAM阈值",
+            "bbox_expansion": "BBox扩展",
+            "mask_hint_threshold": "遮罩检测阈值",
+            "mask_hint_use_negative": "反转遮罩检测",
+            "morphology_operation": "形态学操作",
+            "morphology_distance": "形态学距离",
+            "blur_radius": "模糊半径",
+            "sigma_factor": "Sigma系数"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩",
+            "MASK_PREVIEW": "遮罩预览图"
+        }
+    },
+    "ReActorOptions": {
+        "title": "ReActor设置组",
+        "widgets": {
+            "input_faces_order": "目标面部顺序",
+            "source_faces_order": "源面部顺序",
+            "detect_gender_source": "检测源性别",
+            "detect_gender_input": "检测目标性别",
+            "source_faces_index": "源面部索引",
+            "input_faces_index": "目标面部索引",
+            "console_log_level": "控制台日志数量"
+        },
+        "outputs": {
+            "OPTIONS": "ReActor设置组"
         }
     },
     "ReActorLoadFaceModel": {
@@ -51,7 +119,7 @@
             "facedetection": "检测模型",
             "model": "模型",
             "visibility": "可见性",
-            "codeformer_weight": "codeformer_权重"
+            "codeformer_weight": "CodeFormer_权重"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -66,6 +134,18 @@
             "save_mode": "保存",
             "face_model_name": "模型名称",
             "compute_method": "计算方法"
+        }
+    },
+    "ReActorImageDublicator": {
+        "title": "图像复制",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "count": "次数"
+        },
+        "outputs": {
+            "IMAGES": "图像"
         }
     }
 }

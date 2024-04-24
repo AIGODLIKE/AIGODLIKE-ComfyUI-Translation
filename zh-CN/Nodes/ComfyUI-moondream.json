@@ -6,7 +6,7 @@
         },
         "widgets": {
             "question": "问题",
-            "keep_model_loaded": "保持加载模型",
+            "keep_model_loaded": "保持模型加载",
             "model": "模型",
             "max_new_tokens": "最大新Token数"
         },
@@ -21,7 +21,7 @@
         },
         "widgets": {
             "question": "问题",
-            "keep_model_loaded": "保持加载模型",
+            "keep_model_loaded": "保持模型加载",
             "model": "模型",
             "max_new_tokens": "最大新Token数"
         },

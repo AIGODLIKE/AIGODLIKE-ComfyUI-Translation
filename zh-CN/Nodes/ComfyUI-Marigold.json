@@ -1,0 +1,94 @@
+{
+    "MarigoldDepthEstimation": {
+        "title": "Marigold深度推算",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "denoise_steps": "步数",
+            "n_repeat": "重复次数",
+            "regularizer_strength": "规格化强度",
+            "reduction_method": "限制方法",
+            "max_iter": "最大迭代数",
+            "tol": "容错值",
+            "invert": "反转",
+            "keep_model_loaded": "保持模型加载",
+            "n_repeat_batch_size": "重复次数批次",
+            "use_fp16": "使用fp16",
+            "scheduler": "调度器",
+            "normalize": "规格化",
+            "model": "模型"
+        },
+        "outputs": {
+            "ensembled_image": "图像"
+        },
+        "description": "\n基于扩散的单目深度推算:  \nhttps://github.com/prs-eth/Marigold  \n  \n- 步数：每个深度图的步数，提升该值会用时间换取准确度\n- 重复次数：每个深度图的迭代次数\n- 重复次数批次：每个批次中的重复次数值,  \n如果你有足够的VRAM可以将该值设为与重复次数相同以提升速度  \n- 模型：Marigold 或它的 LCM 版本 marigold-lcm-v1-0  \nLCM模型需要约 4 步数并使用LCM调度器  \n- 调度器：不同的调度算法会得出不同结果  \n- 反转：marigold默认以黑色为近景， \n使用ControlNet或其他工具时需要反转  \n- 规格化强度，限制方法，最大迭代数，容错值 是   \n用于整体流程的设置，通常情况下不要更改 \n- 使用fp16：设置为真时使用 fp16，设置为否时使用 fp32  \nfp16 需求VRAM更少但可能会降低图像质量 \n"
+    },
+    "MarigoldDepthEstimationVideo": {
+        "title": "Marigold深度推算视频",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "denoise_steps": "步数",
+            "n_repeat": "重复次数",
+            "regularizer_strength": "规格化强度",
+            "reduction_method": "限制方法",
+            "max_iter": "最大迭代数",
+            "tol": "容错值",
+            "invert": "反转",
+            "keep_model_loaded": "保持模型加载",
+            "n_repeat_batch_size": "重复次数批次",
+            "use_fp16": "使用fp16",
+            "scheduler": "调度器",
+            "normalize": "规格化",
+            "model": "模型"
+        },
+        "outputs": {
+            "ensembled_image": "图像"
+        },
+        "description": "\n基于扩散的单目深度推算:  \nhttps://github.com/prs-eth/Marigold  \n\n这个节点是用于维持序列帧一致性包含光流的实验性节点。  \n\n- 步数：每个深度图的步数，提升该值会用时间换取准确度\n- 重复次数：每个深度图的迭代次数\n- 重复次数批次：每个批次中的重复次数值,  \n如果你有足够的VRAM可以将该值设为与重复次数相同以提升速度  \n-  模型：Marigold 或它的 LCM 版本 marigold-lcm-v1-0  \nLCM模型需要约 4 步数并使用LCM调度器  \n- 调度器：不同的调度算法会得出不同结果  \n- 反转：marigold默认以黑色为近景， \n使用ControlNet或其他工具时需要反转  \n- 规格化强度，限制方法，最大迭代数，容错值 是   \n用于整体流程的设置，通常情况下不要更改  \n"
+    },
+    "ColorizeDepthmap": {
+        "title": "深度图上色",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "colorize_method": "上色方法"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "SaveImageOpenEXR": {
+        "title": "保存图像为EXR",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀"
+        },
+        "outputs": {
+            "file_url": "文件URL"
+        }
+    },
+    "RemapDepth": {
+        "title": "重映射深度",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "min": "最小值",
+            "max": "最大值",
+            "clamp": "钳制"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    }
+}

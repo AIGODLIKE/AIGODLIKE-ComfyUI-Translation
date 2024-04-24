@@ -1,0 +1,64 @@
+{
+    "DynamiCrafterModelLoader": {
+        "title": "DynamiCrafter模型加载器",
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "dtype": "剪枝类型",
+            "fp8_unet": "fp8_unet"
+        },
+        "outputs": {
+            "DynCraft_model": "DynamiCrafter模型"
+        }
+    },
+    "DynamiCrafterBatchInterpolation": {
+        "title": "DynamiCrafter批次插值",
+        "inputs": {
+            "model": "DynamiCrafter模型",
+            "images": "图像"
+        },
+        "widgets": {
+            "steps": "步数",
+            "cfg": "CFG",
+            "eta": "eta",
+            "frames": "帧数",
+            "prompt": "提示词",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "fs": "fs",
+            "keep_model_loaded": "保持模型加载",
+            "vae_dtype": "VAE剪枝",
+            "cut_near_keyframes": "移除关键帧附近帧"
+        },
+        "outputs": {
+            "images": "图像",
+            "last_image": "末尾图像"
+        }
+    },
+    "DynamiCrafterI2V": {
+        "title": "DynamiCrafter图生视频",
+        "inputs": {
+            "model": "DynamiCrafter模型",
+            "image": "图像",
+            "image2": "图像2",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "steps": "步数",
+            "cfg": "CFG",
+            "eta": "eta",
+            "frames": "帧数",
+            "prompt": "提示词",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "fs": "fs",
+            "keep_model_loaded": "保持模型加载",
+            "vae_dtype": "VAE剪枝",
+            "frame_window_size": "帧窗口尺寸",
+            "frame_window_stride": "帧窗口步长"
+        },
+        "outputs": {
+            "images": "图像",
+            "last_image": "末尾图像"
+        }
+    }
+}

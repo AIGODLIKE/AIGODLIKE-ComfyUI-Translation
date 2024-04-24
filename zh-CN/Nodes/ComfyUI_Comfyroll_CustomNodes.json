@@ -465,6 +465,53 @@
             "FLOAT": "浮点"
         }
     },
+    "CR Set Value On Binary": {
+        "title": "切换值",
+        "inputs": {
+            "binary": "整数"
+        },
+        "widgets": {
+            "value_if_1": "值为1时",
+            "value_if_0": "值为0时"
+        },
+        "outputs": {
+            "INT": "整数",
+            "FLOAT": "浮点",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Set Value on String": {
+        "title": "切换字符串",
+        "inputs": {
+            "text": "文本"
+        },
+        "widgets": {
+            "text_string": "检测字符串",
+            "value_if_false": "检测为假时",
+            "value_if_true": "检测为真时"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "BOOLEAN": "布尔",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Set Switch From String": {
+        "title": "切换值（字符串）",
+        "inputs": {
+            "text": "文本"
+        },
+        "widgets": {
+            "switch_1": "开关1",
+            "switch_2": "开关2",
+            "switch_3": "开关3",
+            "switch_4": "开关4"
+        },
+        "outputs": {
+            "switch": "切换",
+            "show_help": "显示帮助"
+        }
+    },
     "CR Math Operation": {
         "title": "数学操作",
         "widgets": {
@@ -517,6 +564,16 @@
             "STRING": "字符串"
         }
     },
+    "CR String To Boolean": {
+        "title": "字符串到布尔",
+        "inputs": {
+            "text": "文本"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔",
+            "show_help": "显示帮助"
+        }
+    },
     "CR Float To String": {
         "title": "浮点到字符串",
         "widgets": {
@@ -548,6 +605,65 @@
             "string_2": "字符串_2",
             "string_3": "字符串_3",
             "string_4": "字符串_4"
+        }
+    },
+    "CR Text Concatenate": {
+        "title": "文本联结",
+        "inputs": {
+            "text1": "文本1",
+            "text2": "文本2"
+        },
+        "widgets": {
+            "separator": "分隔符"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Text Replace": {
+        "title": "文本替换",
+        "inputs": {
+            "text": "文本"
+        },
+        "widgets": {
+            "find1": "搜索1",
+            "replace1": "替换1",
+            "find2": "搜索2",
+            "replace2": "替换2",
+            "find3": "搜索3",
+            "replace3": "替换3"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Text Operation": {
+        "title": "文本操作",
+        "inputs": {
+            "text": "文本"
+        },
+        "widgets": {
+            "operation": "操作"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Text Blacklist": {
+        "title": "文本屏蔽",
+        "inputs": {
+            "text": "文本"
+        },
+        "widgets": {
+            "blacklist_words": "黑名单词汇",
+            "replacement_text": "替换文本"
+        },
+        "outputs": {
+            "STRING": "字符串",
+            "show_help": "显示帮助"
         }
     },
     "CR Value": {
@@ -593,6 +709,16 @@
             "CLIP": "CLIP",
             "VAE": "VAE",
             "ckpt_name": "模型名",
+            "show_help": "显示帮助"
+        }
+    },
+    "CR Text": {
+        "title": "文本",
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "text": "文本",
             "show_help": "显示帮助"
         }
     },

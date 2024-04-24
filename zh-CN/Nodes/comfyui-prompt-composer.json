@@ -8,11 +8,12 @@
             "effect": "效果",
             "effect_weight": "效果权重",
             "lens_type": "光线",
-            "lens_weight": "光线权重",
+            "lens_type_weight": "光线权重",
             "painting_style": "画风",
             "painting_style_weight": "画风权重",
             "photo_style": "照片风格",
-            "photo_style_weight": "照片风格权重"
+            "photo_style_weight": "照片风格权重",
+            "active": "启用"
         },
         "outputs": {
             "text_out": "文本"
@@ -32,7 +33,7 @@
             "text_out": "文本"
         }
     },
-    "PromptComposerTextMultiple": {
+    "promptComposerTextMultiple": {
         "title": "提示词创作（多个）",
         "inputs": {
             "text_in_opt": "文本(可选)"
