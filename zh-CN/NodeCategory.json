@@ -348,6 +348,8 @@
     "presets": "预设",
     "Tripoapi": "Tripo API",
     "kkTranslator": "kk翻译",
+    "Native_DynamiCrafter": "DynamiCrafter_Native",
+    "Processing": "处理",
     "basic_pipe": "基础节点束",
     "bbox_detector": "BBox检测",
     "boolean": "布尔",

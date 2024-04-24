@@ -1,0 +1,33 @@
+{
+    "DynamiCrafterLoader": {
+        "title": "DynamiCrafter加载器",
+        "widgets": {
+            "model_path": "模型路径"
+        },
+        "outputs": {
+            "model": "模型",
+            "image_proj_model": "图像推理模型"
+        }
+    },
+    "DynamiCrafterProcessor": {
+        "title": "DynamiCrafter处理器",
+        "inputs": {
+            "model": "模型",
+            "clip_vision": "CLIP视觉",
+            "vae": "VAE",
+            "image_proj_model": "图像推理模型",
+            "images": "图像"
+        },
+        "widgets": {
+            "use_interpolate": "插值模式",
+            "fps": "帧率",
+            "frames": "帧数",
+            "scale_latents": "缩放Latent"
+        },
+        "outputs": {
+            "model": "模型",
+            "empty_latent": "空Latent",
+            "latent_img": "Latent"
+        }
+    }
+}
