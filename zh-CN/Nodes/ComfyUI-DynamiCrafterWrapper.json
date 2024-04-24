@@ -10,7 +10,7 @@
             "DynCraft_model": "DynamiCrafter模型"
         }
     },
-    "DynamCrafterBatchInterpolation": {
+    "DynamiCrafterBatchInterpolation": {
         "title": "DynamiCrafter批次插值",
         "inputs": {
             "model": "DynamiCrafter模型",
