@@ -11,6 +11,19 @@ class TExe {
     return this.excludeClass.some((cls) => node.classList?.contains(cls));
   }
 
+  translateKjPopDesc(node) {
+    let T = this.T;
+    if (!T) return false;
+    if (!node || !node.querySelectorAll) return false;
+    if (!node?.classList?.contains("kj-documentation-popup")) return false;
+    const allElements = node.querySelectorAll("*");
+
+    for (const ele of allElements) {
+      this.replaceText(ele);
+    }
+    return true;
+  }
+
   translateAllText(node) {
     let T = this.T;
     if (!T) return;
@@ -101,6 +114,7 @@ export function applyMenuTranslation(T) {
   observeFactory(document.querySelector("body.litegraph"), (mutationsList, observer) => {
     for (let mutation of mutationsList) {
       for (const node of mutation.addedNodes) {
+        // if (texe.translateKjPopDesc(node)) continue;
         texe.translateAllText(node);
         if (node.classList.contains("comfy-modal")) {
           observeFactory(node, (mutationsList, observer) => {

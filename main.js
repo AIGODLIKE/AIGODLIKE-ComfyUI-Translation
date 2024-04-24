@@ -151,6 +151,12 @@ export class TUtils {
     };
   }
 
+  static applyNodeDescTranslation(nodeType, nodeData, app) {
+    let nodesT = this.T.Nodes;
+    var t = nodesT[nodeType.comfyClass];
+    nodeData.description = t?.["description"] || nodeData.description;
+  }
+
   static applyMenuTranslation(app) {
     // 搜索菜单 常驻菜单
     applyMenuTranslation(TUtils.T);
@@ -424,6 +430,7 @@ const ext = {
     // console.log("[logging]", "provide custom widgets");
   },
   async beforeRegisterNodeDef(nodeType, nodeData, app) {
+    TUtils.applyNodeDescTranslation(nodeType, nodeData, app);
     // Run custom logic before a node definition is registered with the graph
     // console.log("[logging]", "before register node: ", nodeType.comfyClass);
     // This fires for every node definition so only log once
