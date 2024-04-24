@@ -60,6 +60,23 @@
             "image": "图像"
         }
     },
+    "LayerFilter: HDREffects": {
+        "title": "HDR特效",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "hdr_intensity": "HDR强度",
+            "shadow_intensity": "阴影强度",
+            "highlight_intensity": "高光强度",
+            "gamma_intensidi": "伽马强度",
+            "contrast": "对比度",
+            "enhance_color": "增强颜色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
     "LayerFilter: LightLeak": {
         "title": "漏光",
         "inputs": {
@@ -165,6 +182,20 @@
         },
         "widgets": {
             "opacity": "不透明"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerColor: AutoBrightness": {
+        "title": "自动亮度",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "strength": "强度",
+            "saturation": "饱和度"
         },
         "outputs": {
             "image": "图像"
@@ -337,6 +368,18 @@
             "value": "值"
         }
     },
+    "LayerUtility: CropBoxResolve": {
+        "title": "裁剪框分析",
+        "inputs": {
+            "crop_box": "裁剪框"
+        },
+        "outputs": {
+            "x": "X",
+            "y": "Y",
+            "width": "宽度",
+            "height": "高度"
+        }
+    },
     "LayerUtility: CropByMask": {
         "title": "遮罩裁剪",
         "inputs": {
@@ -409,6 +452,25 @@
         },
         "outputs": {
             "RGB color in HEX": "HEX字符串",
+            "HSV color in list": "HSV色值列表"
+        }
+    },
+    "LayerUtility: GetColorToneV2": {
+        "title": "获取色调_V2",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "mode": "模式",
+            "color_of": "目标颜色",
+            "remove_bkgd_method": "移除背景方法",
+            "invert_mask": "反转遮罩",
+            "mask_grow": "遮罩扩张"
+        },
+        "outputs": {
+            "image": "图像",
+            "color_in_hex": "HEX字符串",
             "HSV color in list": "HSV色值列表"
         }
     },
@@ -633,6 +695,20 @@
         },
         "outputs": {
             "RGB_image": "RGB图像"
+        }
+    },
+    "LayerUtility: ImageRewardFilter": {
+        "title": "图像美学过滤",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "output_num": "输出数量"
+        },
+        "outputs": {
+            "images": "图像",
+            "obsolete_images": "过滤图像"
         }
     },
     "LayerUtility: ImageScaleByAspectRatio": {
