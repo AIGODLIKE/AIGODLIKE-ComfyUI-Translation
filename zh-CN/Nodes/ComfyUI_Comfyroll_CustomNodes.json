@@ -1628,8 +1628,7 @@
             "y_step": "Y步数",
             "y_annotation_prepend": "Y预置注释",
             "index": "编号",
-            "gradient_profile": "渐变",
-                "Lerp": ""
+            "gradient_profile": "渐变"
         },
         "outputs": {
             "X": "X",

@@ -86,7 +86,7 @@
             "SEED": "随机种",
             "STEPS": "步数",
             "REFINER_START_STEP": "Refiner开始步数",
-            "CFG": "",
+            "CFG": "CFG",
             "SAMPLER_NAME": "采样器",
             "SCHEDULER": "调度器",
             "POSITIVE_ASCORE": "正面美学分数",
