@@ -304,6 +304,21 @@
             "filename_prefix": "文件名前缀"
         }
     },
+    "Vae Decode (mtb)": {
+        "title": "VAE解码",
+        "inputs": {
+            "samples": "Latent",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "seamless_model": "无缝模型",
+            "use_tiling_decoder": "分块解码",
+            "tile_size": "分块尺寸"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "Face Swap (mtb)": {
         "title": "换脸",
         "inputs": {
@@ -805,7 +820,7 @@
             "IMAGE": "图像"
         }
     },
-    "Note+ (mtb)": {
+    "Note Plus (mtb)": {
         "title": "注释+"
     },
     "To Device (mtb)": {
@@ -848,6 +863,35 @@
             "image": "图像",
             "new_width": "新宽度",
             "new_height": "新高度"
+        }
+    },
+    "Auto Pan Equilateral (mtb)": {
+        "title": "等边图像平移视频",
+        "inputs": {
+            "equilateral_image": "等边图像",
+            "floats_fovX": "FOV_X",
+            "floats_fovY": "FOV_Y",
+            "floats_elevation": "方位角"
+        },
+        "widgets": {
+            "fovX": "FOV_X",
+            "fovY": "FOV_Y",
+            "elevation": "方位角",
+            "frame_count": "帧数",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "Floats To Float (mtb)": {
+        "title": "浮点批次到浮点",
+        "inputs": {
+            "floats": "浮点"
+        },
+        "outputs": {
+            "float": "浮点"
         }
     }
 }

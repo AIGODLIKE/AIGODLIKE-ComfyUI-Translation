@@ -1293,7 +1293,7 @@
             "IMAGE": "图像"
         }
     },
-    "ImageAndMaskPreivew": {
+    "ImageAndMaskPreview": {
         "title": "图像与遮罩预览",
         "inputs": {
             "image": "图像",
@@ -1306,7 +1306,22 @@
         },
         "outputs": {
             "composite": "图像"
-        }
+        },
+        "description": "\n预览图像或遮罩，同时输入图像和遮罩时会合并遮罩到图像上。\n当 穿透 开启时将禁用合成，用于通过合并为视频节点的预览。"
+    },
+    "MaskOrImageToWeight": {
+        "title": "遮罩或图像到权重",
+        "inputs": {
+            "images": "图像",
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "output_type": "输出类型"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        },
+        "description": "\n获取遮罩或图像批次的平均值，并按 输出类型 输出结果。"
     },
     "MaskOrImageToWeigh": {
         "title": "遮罩或图像到权重",

@@ -78,5 +78,11 @@
         "widgets": {
             "text": "文本"
         }
+    },
+    "DPOutput": {
+        "title": "输出字符串",
+        "widgets": {
+            "text": "文本"
+        }
     }
 }

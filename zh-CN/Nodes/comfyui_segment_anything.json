@@ -44,5 +44,14 @@
         "outputs": {
             "MASK": "遮罩"
         }
+    },
+    "IsMaskEmpty": {
+        "title": "遮罩是否存在",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "boolean_number": "布尔值"
+        }
     }
 }
