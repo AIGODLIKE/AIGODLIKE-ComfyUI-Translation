@@ -1,0 +1,48 @@
+{
+    "String": {
+        "title": "字符串",
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+    "Bool": {
+        "title": "布尔",
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔"
+        }
+    },
+    "Int": {
+        "title": "整数",
+        "widgets": {
+            "value": "值"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "Compare": {
+        "title": "比较",
+        "inputs": {
+            "a": "A",
+            "b": "B"
+        },
+        "widgets": {
+            "comparison": "比较方法"
+        },
+        "outputs": {
+            "B": "布尔"
+        }
+    },
+    "DebugPrint": {
+        "title": "Debug到控制台",
+        "inputs": {
+            "ANY": "输入"
+        }
+    }
+}
