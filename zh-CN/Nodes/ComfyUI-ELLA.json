@@ -63,5 +63,15 @@
         "outputs": {
             "ELLA_EMBEDS": "ELLA嵌入组"
         }
+    },
+    "ConcatConditionEllaEmbeds": {
+        "title": "条件联结ELLA嵌入组",
+        "inputs": {
+            "cond": "条件",
+            "embeds": "嵌入组"
+        },
+        "outputs": {
+            "ELLA_EMBEDS": "ELLA嵌入组"
+        }
     }
 }
