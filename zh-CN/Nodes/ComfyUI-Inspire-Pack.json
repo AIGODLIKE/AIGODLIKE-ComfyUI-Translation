@@ -194,6 +194,30 @@
             "block_info": "层信息"
         }
     },
+    "IPAdapterModelHelper //Inspire": {
+        "title": "IPAdapter模型助手",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "preset": "预设",
+            "lora_strength_model": "LoRA模型权重",
+            "lora_strength_clip": "LoRACLIP权重",
+            "insightface_provider": "InsightFace设备",
+            "cache_mode": "缓存模式"
+        },
+        "outputs": {
+            "IPADAPTER_PIPE": "IPAdapter束",
+            "IPADAPTER": "IPAdapter",
+            "CLIP_VISION": "CLIP视觉",
+            "INSIGHTFACE": "InsightFace",
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "insightface_cache_key": "InsightFace缓存键",
+            "clip_vision_cache_key": "CLIP视觉缓存键"
+        }
+    },
 
 
 
@@ -615,6 +639,19 @@
         },
         "outputs": {
             "IMAGE": "图像"
+        }
+    },
+    "ChangeLatnetBatchSize //Inspire": {
+        "title": "修改Latent批次大小",
+        "inputs": {
+            "latent": "Latent"
+        },
+        "widgets": {
+            "batch_size": "批次大小",
+            "mode": "模式"
+        },
+        "outputs": {
+            "LATENT": "Latent"
         }
     },
 
@@ -1169,6 +1206,26 @@
             "clip": "CLIP",
             "vae": "VAE",
             "cache key": "缓存Key"
+        }
+    },
+    "StableCascade_CheckpointLoader //Inspire": {
+        "title": "StableCascade模型加载器",
+        "widgets": {
+            "stage_b": "Stage_B",
+            "key_opt_b": "Key_B",
+            "stage_c": "Stage_C",
+            "key_opt_c": "Key_C",
+            "cache_mode": "缓存模式"
+        },
+        "outputs": {
+            "b_model": "B_模型",
+            "b_vae": "B_VAE",
+            "c_model": "C_模型",
+            "c_vae": "C_VAE",
+            "c_clip_vision": "C_CLIP视觉",
+            "clip": "CLIP",
+            "key_b": "Key_B",
+            "key_c": "Key_C"
         }
     },
 
