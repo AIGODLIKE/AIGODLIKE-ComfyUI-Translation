@@ -1,5 +1,5 @@
 {
-    "SAG Delayed Activation": {
+    "SAG Delayed activation": {
         "title": "SAG自注意力引导",
         "inputs": {
             "model": "模型"
