@@ -524,6 +524,19 @@
             "IMAGE": "图像"
         }
     },
+    "IPAdapterWeights": {
+        "title": "IPAdapter权重计算",
+        "widgets": {
+            "weights": "权重",
+            "timing": "时间",
+            "frames": "帧数",
+            "start_frame": "起始帧",
+            "end_frame": "结束帧"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        }
+    },
     "IPAdapterSaveEmbeds": {
         "title": "保存嵌入组",
         "inputs": {
