@@ -1,5 +1,5 @@
 {
-    "BrushNet Model Loader": {
+    "brushnet_model_loader": {
         "title": "BrushNet模型加载器",
         "inputs": {
             "model": "模型",
