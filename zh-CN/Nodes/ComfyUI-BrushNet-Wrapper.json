@@ -1,0 +1,116 @@
+{
+    "brushnet_model_loader": {
+        "title": "BrushNet模型加载器",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE",
+            "ip_adapter": "IPAdapter"
+        },
+        "widgets": {
+            "brushnet_model": "BrushNet模型"
+        },
+        "outputs": {
+            "brushnet": "BrushNet"
+        }
+    },
+    "brushnet_ella_loader": {
+        "title": "BrushNet_ELLA加载器",
+        "inputs": {
+            "brushnet": "BrushNet"
+        },
+        "outputs": {
+            "brushnet": "BrushNet"
+        }
+    },
+    "brushnet_ipadapter_matteo": {
+        "title": "BrushNet_IPAdapter_Matteo",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "ipadapter": "IPAdapter",
+            "clip_vision": "CLIP视觉",
+            "weight": "权重"
+        },
+        "outputs": {
+            "ip_adapter": "IPAdapter"
+        }
+    },
+    "brushnet_sampler": {
+        "title": "BrushNet采样器",
+        "inputs": {
+            "brushnet": "BrushNet",
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "steps": "步数",
+            "cfg": "CFG",
+            "cfg_brushnet": "BrushNet_CFG",
+            "control_guidance_start": "引导起始位置",
+            "control_guidance_end": "引导结束位置",
+            "guess_mode": "猜测模式",
+            "clip_skip": "CLIP_Skip",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "scheduler": "调度器",
+            "prompt": "提示词",
+            "n_prompt": "负面提示词"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
+    "brushnet_sampler_ella": {
+        "title": "BrushNet采样器（ELLA）",
+        "inputs": {
+            "brushnet": "BrushNet",
+            "ella_embeds": "ELLA嵌入组",
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "steps": "步数",
+            "cfg": "CFG",
+            "cfg_brushnet": "BrushNet_CFG",
+            "control_guidance_start": "引导起始位置",
+            "control_guidance_end": "引导结束位置",
+            "guess_mode": "猜测模式",
+            "clip_skip": "CLIP_Skip",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "scheduler": "调度器"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
+    "powerpaint_brushnet_sampler": {
+        "title": "BrushNet采样器（PowerPaint）",
+        "inputs": {
+            "brushnet": "BrushNet",
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "steps": "步数",
+            "cfg": "CFG",
+            "cfg_brushnet": "BrushNet_CFG",
+            "control_guidance_start": "引导起始位置",
+            "control_guidance_end": "引导结束位置",
+            "guess_mode": "猜测模式",
+            "clip_skip": "CLIP_Skip",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "scheduler": "调度器",
+            "prompt": "提示词",
+            "n_prompt": "负面提示词",
+            "task": "任务",
+            "fitting_degree": "适配角度"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    }
+}
