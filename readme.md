@@ -39,6 +39,8 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[AnimateDiff-Evolved](https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved.git)|√|√|√|TODO|TODO|TODO|
 |[Automatic CFG](https://github.com/Extraltodeus/ComfyUI-AutomaticCFG.git)|√|TODO|√|TODO|TODO|TODO|
 |[BiRefNet](https://github.com/viperyl/ComfyUI-BiRefNet.git)|√|TODO|√|TODO|TODO|TODO|
+|[BrushNet (kijai)](https://github.com/kijai/ComfyUI-BrushNet-Wrapper.git)|√|TODO|√|TODO|TODO|TODO|
+|[BrushNet (nullquant)](https://github.com/nullquant/ComfyUI-BrushNet.git)|√|TODO|√|TODO|TODO|TODO|
 |[CCSR](https://github.com/kijai/ComfyUI-CCSR.git)|√|TODO|√|TODO|TODO|TODO|
 |[Champ](https://github.com/chaojie/ComfyUI-Champ.git)|√|TODO|√|TODO|TODO|TODO|
 |[CLIP Seg](https://github.com/biegert/ComfyUI-CLIPSeg)|√|√|√|√|TODO|TODO|
