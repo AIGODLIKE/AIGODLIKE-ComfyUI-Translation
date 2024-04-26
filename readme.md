@@ -53,6 +53,8 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[cg-image-picker](https://github.com/chrisgoringe/cg-image-picker.git)|√|TODO|√|TODO|TODO|TODO|
 |[Davemane42 Nodes](https://github.com/Davemane42/ComfyUI_Dave_CustomNode)|√|√|√|√|TODO|TODO|
 |[Dagthomas Nodes](https://github.com/dagthomas/comfyui_dagthomas)|√|√|√|√|TODO|TODO|
+|[DynamiCrafter (kijai)](https://github.com/kijai/ComfyUI-DynamiCrafterWrapper.git)|√|TODO|√|TODO|TODO|TODO|
+|[DynamiCrafter (ExponentialML)](https://github.com/ExponentialML/ComfyUI_Native_DynamiCrafter.git)|√|TODO|√|TODO|TODO|TODO|
 |[Dynamic Thresholding](https://github.com/mcmonkeyprojects/sd-dynamic-thresholding)|√|√|√|TODO|TODO|TODO|
 |[Easy Animate](https://github.com/chaojie/ComfyUI-EasyAnimate.git)|√|TODO|√|TODO|TODO|TODO|
 |[Easy Tools](https://github.com/jafshare/ComfyUI-Easy-Tools)|√|TODO|√|TODO|TODO|TODO|
@@ -88,8 +90,11 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[LCM](https://github.com/0xbitches/ComfyUI-LCM)|√|TODO|√|TODO|TODO|TODO|
 |[Literals](https://github.com/M1kep/ComfyLiterals.git)|√|TODO|√|TODO|TODO|TODO|
 |[LoadLoraWithTags](https://github.com/Extraltodeus/LoadLoraWithTags.git)|√|TODO|√|TODO|TODO|TODO|
+|[Logic](https://github.com/theUpsider/ComfyUI-Logic.git)|√|TODO|√|TODO|TODO|TODO|
 |[LoraAutoTrigger](https://github.com/idrirap/ComfyUI-Lora-Auto-Trigger-Words.git)|√|TODO|√|TODO|TODO|TODO|
+|[MagicClothing](https://github.com/frankchieng/ComfyUI_MagicClothing.git)|√|TODO|√|TODO|TODO|TODO|
 |[Manager](https://github.com/ltdrdata/ComfyUI-Manager)|√|√|√|TODO|TODO|√|
+|[Marigold](https://github.com/kijai/ComfyUI-Marigold.git)|√|TODO|√|TODO|TODO|TODO|
 |[Masquerade Nodes](https://github.com/BadCafeCode/masquerade-nodes-comfyui)|√|√|√|TODO|TODO|TODO|
 |[Math](https://github.com/evanspearman/ComfyMath.git)|√|TODO|√|TODO|TODO|TODO|
 |[Mixlab Nodes](https://github.com/shadowcz007/comfyui-mixlab-nodes.git)|√|TODO|√|TODO|TODO|TODO|
