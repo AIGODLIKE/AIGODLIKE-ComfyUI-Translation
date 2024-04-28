@@ -1,0 +1,30 @@
+{
+    "ApplyVisualStyle": {
+        "title": "应用视觉风格",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "reference_latent": "参考Latent",
+            "reference_cond": "参考条件",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "init_image": "参考图像(可选)"
+        },
+        "widgets": {
+            "enabled": "启用",
+            "denoise": "降噪",
+            "input_blocks": "输入层",
+            "skip_input_layers": "跳过输入层",
+            "middle_blocks": "中间层",
+            "skip_middle_layers": "跳过中间层",
+            "output_blocks": "输出层",
+            "skip_output_layers": "跳过输出层"
+        },
+        "outputs": {
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latents": "Latent"
+        }
+    }
+}

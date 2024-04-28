@@ -47,7 +47,7 @@
             "easing": "渐变"
         },
         "outputs": {
-            "FLOATS": "浮点"
+            "floats": "浮点批次"
         }
     },
     "Batch Transform (mtb)": {
@@ -105,13 +105,13 @@
             "reverse": "反转"
         },
         "outputs": {
-            "FLOATS": "浮点"
+            "floats": "浮点批次"
         }
     },
     "Batch Float Fill (mtb)": {
         "title": "浮点批次填充",
         "inputs": {
-            "floats": "浮点"
+            "floats": "浮点批次"
         },
         "widgets": {
             "direction": "方向",
@@ -119,8 +119,18 @@
             "count": "计数"
         },
         "outputs": {
-            "FLOATS": "浮点"
+            "floats": "浮点批次"
         }
+    },
+    "Batch Float Normalize (mtb)": {
+        "title": "浮点批次规格化",
+        "inputs": {
+            "floats": "浮点批次"
+        },
+        "outputs": {
+            "normalized_floats": "规格化浮点批次"
+        },
+        "description": "规格化浮点批次中的每一个值"
     },
     "Batch Merge (mtb)": {
         "title": "图像批次融合",
@@ -160,7 +170,7 @@
     "Plot Batch Float (mtb)": {
         "title": "浮点批次图表",
         "inputs": {
-            "floats_1": "浮点_1"
+            "floats_1": "浮点批次_1"
         },
         "widgets": {
             "width": "宽度",
@@ -172,6 +182,21 @@
         "outputs": {
             "plot": "图表"
         }
+    },
+    "Batch Time Wrap (mtb)": {
+        "title": "时间批次置换",
+        "inputs": {
+            "frames": "图像",
+            "curve": "浮点批次曲线"
+        },
+        "widgets": {
+            "target_count": "目标计数"
+        },
+        "outputs": {
+            "image": "图像",
+            "interpolated_floats": "浮点批次"
+        },
+        "description": "使用时间曲线（浮点批次）重映射批次"
     },
     "Smart Step (mtb)": {
         "title": "智能步数",
@@ -319,6 +344,37 @@
             "IMAGE": "图像"
         }
     },
+    "Restore Face (mtb)": {
+        "title": "恢复面部",
+        "inputs": {
+            "image": "图像",
+            "model": "模型"
+        },
+        "widgets": {
+            "aligned": "对齐",
+            "only_center_face": "仅中心面部",
+            "weight": "权重",
+            "save_tmp_steps": "保存中间步"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        },
+        "description": "使用GFPGan修复面部"
+    },
+    "Load Face Enhance Model (mtb)": {
+        "title": "加载面部增强模型",
+        "inputs": {
+            "bg_upsampler": "背景放大模型"
+        },
+        "widgets": {
+            "model_name": "模型名称",
+            "upscale": "放大系数"
+        },
+        "outputs": {
+            "model": "模型"
+        },
+        "description": "加载GFPGan或RestoreFormer模型用于面部增强"
+    },
     "Face Swap (mtb)": {
         "title": "换脸",
         "inputs": {
@@ -365,7 +421,8 @@
         },
         "outputs": {
             "IMAGE": "图像"
-        }
+        },
+        "description": "按深度图过滤图像"
     },
     "Qr Code (mtb)": {
         "title": "QR码",
@@ -823,6 +880,16 @@
     "Note Plus (mtb)": {
         "title": "注释+"
     },
+    "Constant (mtb)": {
+        "title": "常量",
+        "widgets": {
+            "Type": "类型",
+            "Value": "值"
+        },
+        "outputs": {
+            "output": "输出"
+        }
+    },
     "To Device (mtb)": {
         "title": "更改存储设备",
         "inputs": {
@@ -888,7 +955,7 @@
     "Floats To Float (mtb)": {
         "title": "浮点批次到浮点",
         "inputs": {
-            "floats": "浮点"
+            "floats": "浮点批次"
         },
         "outputs": {
             "float": "浮点"
