@@ -2529,5 +2529,9 @@
     "Convert To Context Big": "转换为 上下文(大型)",
     "Settings (rgthree-comfy)": "设置 (RG节点)",
     "Convert all Reroutes": "转换全部转接点",
-    "Star on Github": "在Github上点个星"
+    "Star on Github": "在Github上点个星",
+    "#IF_AI": "#IF_AI",
+    "create": "新建",
+    "overwrite": "覆盖",
+    "append": "追加"
 }
