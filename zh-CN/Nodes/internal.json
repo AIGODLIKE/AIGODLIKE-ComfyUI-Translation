@@ -227,6 +227,17 @@
             "SAMPLER": "采样器"
         }
     },
+    "SamplerLCMUpscale": {
+        "title": "LCM缩放采样器",
+        "widgets": {
+            "scale_ratio": "缩放系数",
+            "scale_steps": "缩放步数",
+            "upscale_method": "缩放方法"
+        },
+        "outputs": {
+            "SAMPLER": "采样器"
+        }
+    },
 
     "CFGGuider": {
         "title": "CFG引导",
@@ -322,6 +333,19 @@
         },
         "outputs": {
             "SIGMAS": "Sigmas"
+        }
+    },
+    "SplitSigmasDenoise": {
+        "title": "分离Sigmas降噪",
+        "inputs": {
+            "sigmas": "Sigmas"
+        },
+        "widgets": {
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "high_sigmas": "高Sigmas",
+            "low_sigmas": "低Sigmas"
         }
     },
     "FlipSigmas": {
