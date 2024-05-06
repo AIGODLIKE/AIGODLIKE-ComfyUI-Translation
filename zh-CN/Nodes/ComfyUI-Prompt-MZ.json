@@ -1,0 +1,155 @@
+{
+    "MZ_LLamaCPPOptions": {
+        "title": "[MinusZone] - LLamaCPP配置",
+        "widgets": {
+            "n_ctx": "上下文大小",
+            "n_batch": "批次大小",
+            "n_threads": "线程数",
+            "n_threads_batch": "批次线程数",
+            "split_mode": "分离模式",
+            "main_gpu": "主GPU",
+            "n_gpu_layers": "GPU层数",
+            "max_tokens": "最大Token",
+            "temperature": "温度",
+            "top_p": "动态候选集长度",
+            "min_p": "最小置信度",
+            "typical_p": "局部典型采样平衡",
+            "stop": "stop",
+            "frequency_penalty": "频率惩罚",
+            "presence_penalty": "存在惩罚",
+            "repeat_penalty": "重复惩罚",
+            "top_k": "候选集长度",
+            "tfs_z": "TFS采样",
+            "mirostat_mode": "Mirostat模式",
+            "mirostat_tau": "Mirostat目标熵",
+            "mirostat_eta": "Mirostat学习率"
+        },
+        "outputs": {
+            "llama_cpp_options": "LLamaCPP配置"
+        }
+    },
+    "MZ_CustomizeInstruct": {
+        "title": "[MinusZone] - 自定义指令",
+        "widgets": {
+            "system": "系统提示词",
+            "instruct": "指示",
+            "start_str": "起始字符串",
+            "end_str": "结束字符串"
+        },
+        "outputs": {
+            "customize_instruct": "自定义指令"
+        }
+    },
+    "MZ_LLama3CLIPTextEncode": {
+        "title": "[MinusZone] - LLama3 CLIP文本编码",
+        "inputs": {
+            "clip": "CLIP",
+            "llama_cpp_options": "LLamaCPP配置",
+            "customize_instruct": "自定义指令"
+        },
+        "widgets": {
+            "llama_cpp_model": "LLama模型",
+            "download_source": "下载源",
+            "prompt_version": "提示词版本",
+            "style_presets": "风格预设",
+            "text": "文本",
+            "keep_device": "模型常驻显存",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "text": "文本",
+            "conditioning": "条件"
+        }
+    },
+    "MZ_Phi3CLIPTextEncode": {
+        "title": "[MinusZone] - Phi3 CLIP文本编码",
+        "inputs": {
+            "clip": "CLIP",
+            "llama_cpp_options": "LLamaCPP配置",
+            "customize_instruct": "自定义指令"
+        },
+        "widgets": {
+            "llama_cpp_model": "LLama模型",
+            "download_source": "下载源",
+            "prompt_version": "提示词版本",
+            "style_presets": "风格预设",
+            "text": "文本",
+            "keep_device": "模型常驻显存",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "text": "文本",
+            "conditioning": "条件"
+        }
+    },
+    "MZ_BaseLLamaCPPCLIPTextEncode": {
+        "title": "[MinusZone] - BaseLLamaCPP CLIP文本编码",
+        "inputs": {
+            "clip": "CLIP",
+            "llama_cpp_options": "LLamaCPP配置",
+            "customize_instruct": "自定义指令"
+        },
+        "widgets": {
+            "llama_cpp_model": "LLama模型",
+            "download_source": "下载源",
+            "prompt_version": "提示词版本",
+            "style_presets": "风格预设",
+            "text": "文本",
+            "keep_device": "模型常驻显存",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "text": "文本",
+            "conditioning": "条件"
+        }
+    },
+    "MZ_LLavaImageInterrogator": {
+        "title": "[MinusZone] - LLava 图像反推",
+        "inputs": {
+            "image": "图像",
+            "clip": "CLIP",
+            "llama_cpp_options": "LLamaCPP配置",
+            "customize_instruct": "自定义指令"
+        },
+        "widgets": {
+            "llama_cpp_model": "LLama模型",
+            "mmproj_model": "mmproj模型",
+            "download_source": "下载源",
+            "resolution": "分辨率",
+            "sd_format": "SD版本",
+            "keep_device": "模型常驻显存",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "text": "文本",
+            "conditioning": "条件"
+        }
+    },
+    "MZ_BaseLLavaImageInterrogator": {
+        "title": "[MinusZone] - BaseLLava 图像反推",
+        "inputs": {
+            "image": "图像",
+            "clip": "CLIP",
+            "llama_cpp_options": "LLamaCPP配置",
+            "customize_instruct": "自定义指令"
+        },
+        "widgets": {
+            "llama_cpp_model": "LLama模型",
+            "mmproj_model": "mmproj模型",
+            "download_source": "下载源",
+            "resolution": "分辨率",
+            "sd_format": "SD版本",
+            "keep_device": "模型常驻显存",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "text": "文本",
+            "conditioning": "条件"
+        }
+    }
+}
