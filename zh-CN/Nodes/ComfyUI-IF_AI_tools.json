@@ -68,6 +68,8 @@
             "style_prompt": "风格提示词",
             "neg_prompt": "负面提示词",
             "temperature": "温度",
+            "top_k": "候选集长度",
+            "top_p": "动态候选集长度",
             "max_tokens": "最大Token",
             "seed": "随机种",
             "control_before_generate": "运行前操作",
