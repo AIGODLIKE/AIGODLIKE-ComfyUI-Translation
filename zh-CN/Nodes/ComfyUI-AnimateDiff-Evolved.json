@@ -393,6 +393,297 @@
     },
 
 
+    "ADE_SetLoraHookKeyframe": {
+        "title": "设置LoRA约束关键帧",
+        "inputs": {
+            "lora_hook": "LoRA约束",
+            "hook_kf": "约束关键帧"
+        },
+        "outputs": {
+            "LORA_HOOK": "LoRA约束"
+        }
+    },
+    "ADE_AttachLoraHookToCLIP": {
+        "title": "LoRA约束到CLIP",
+        "inputs": {
+            "clip": "CLIP",
+            "lora_hook": "LoRA约束"
+        },
+        "outputs": {
+            "hook_CLIP": "约束CLIP"
+        }
+    },
+    "ADE_TimestepsConditioning": {
+        "title": "时间戳条件",
+        "widgets": {
+            "start_percent": "开始位置",
+            "end_percent": "结束位置"
+        },
+        "outputs": {
+            "TIMESTEP_COND": "时间戳条件"
+        }
+    },
+    "ADE_PairedConditioningSetUnmaskedAndCombine": {
+        "title": "条件对设置非遮罩并合并",
+        "inputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "positive_DEFAULT": "正面条件_默认",
+            "negative_DEFAULT": "负面条件_默认",
+            "opt_lora_hook": "LoRA约束(可选)"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件"
+        }
+    },
+    "ADE_PairedConditioningSetMask": {
+        "title": "条件对设置遮罩",
+        "inputs": {
+            "positive_ADD": "正面条件_ADD",
+            "negative_ADD": "负面条件_ADD",
+            "opt_mask": "遮罩(可选)",
+            "opt_lora_hook": "LoRA约束(可选)",
+            "opt_timesteps": "时间戳(可选)"
+        },
+        "widgets": {
+            "strength": "强度",
+            "set_cond_area": "设置条件区域"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件"
+        }
+    },
+    "ADE_PairedConditioningSetMaskAndCombine": {
+        "title": "条件对设置遮罩合并",
+        "inputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "positive_ADD": "正面条件_ADD",
+            "negative_ADD": "负面条件_ADD",
+            "opt_mask": "遮罩(可选)",
+            "opt_lora_hook": "LoRA约束(可选)",
+            "opt_timesteps": "时间戳(可选)"
+        },
+        "widgets": {
+            "strength": "强度",
+            "set_cond_area": "设置条件区域"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件"
+        }
+    },
+
+
+    "ADE_CombineLoraHooks": {
+        "title": "合并LoRA约束_2",
+        "inputs": {
+            "lora_hook_A": "LoRA约束_A",
+            "lora_hook_B": "LoRA约束_B"
+        },
+        "outputs": {
+            "LORA_HOOK": "LoRA约束"
+        }
+    },
+    "ADE_CombineLoraHooksFour": {
+        "title": "合并LoRA约束_4",
+        "inputs": {
+            "lora_hook_A": "LoRA约束_A",
+            "lora_hook_B": "LoRA约束_B",
+            "lora_hook_C": "LoRA约束_C",
+            "lora_hook_D": "LoRA约束_D"
+        },
+        "outputs": {
+            "LORA_HOOK": "LoRA约束"
+        }
+    },
+    "ADE_CombineLoraHooksEight": {
+        "title": "合并LoRA约束_8",
+        "inputs": {
+            "lora_hook_A": "LoRA约束_A",
+            "lora_hook_B": "LoRA约束_B",
+            "lora_hook_C": "LoRA约束_C",
+            "lora_hook_D": "LoRA约束_D",
+            "lora_hook_E": "LoRA约束_E",
+            "lora_hook_F": "LoRA约束_F",
+            "lora_hook_G": "LoRA约束_G",
+            "lora_hook_H": "LoRA约束_H"
+        },
+        "outputs": {
+            "LORA_HOOK": "LoRA约束"
+        }
+    },
+
+
+    "ADE_RegisterLoraHook": {
+        "title": "注册LoRA约束",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称",
+            "strength_model": "模型强度",
+            "strength_clip": "CLIP强度"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "LORA_HOOK": "LoRA约束"
+        }
+    },
+    "ADE_RegisterLoraHookModelOnly": {
+        "title": "注册LoRA约束（仅模型）",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "lora_name": "LoRA名称",
+            "strength_model": "模型强度"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "LORA_HOOK": "LoRA约束"
+        }
+    },
+    "ADE_RegisterModelAsLoraHook": {
+        "title": "注册模型为LoRA约束",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "strength_model": "模型强度",
+            "strength_clip": "CLIP强度"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "LORA_HOOK": "LoRA约束"
+        }
+    },
+    "ADE_RegisterModelAsLoraHookModelOnly": {
+        "title": "注册模型为LoRA约束（仅模型）",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "strength_model": "模型强度"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "LORA_HOOK": "LoRA约束"
+        }
+    },
+
+
+    "ADE_LoraHookKeyframe": {
+        "title": "LoRA约束关键帧",
+        "inputs": {
+            "prev_hook_kf": "前约束关键帧"
+        },
+        "widgets": {
+            "strength_model": "模型强度",
+            "start_percent": "开始位置",
+            "guarantee_steps": "最小采样步数"
+        },
+        "outputs": {
+            "HOOK_KF": "约束关键帧"
+        }
+    },
+    "ADE_LoraHookKeyframeInterpolation": {
+        "title": "LoRA约束关键帧（插帧）",
+        "inputs": {
+            "prev_hook_kf": "前约束关键帧"
+        },
+        "widgets": {
+            "start_percent": "开始位置",
+            "end_percent": "结束位置",
+            "strength_start": "起始强度",
+            "strength_end": "结束强度",
+            "interpolation": "插值方式",
+            "intervals": "迭代次数",
+            "print_keyframes": "输出关键帧到控制台"
+        },
+        "outputs": {
+            "HOOK_KF": "约束关键帧"
+        }
+    },
+    "ADE_LoraHookKeyframeFromStrengthList": {
+        "title": "LoRA约束关键帧（强度数列）",
+        "inputs": {
+            "prev_hook_kf": "前约束关键帧",
+            "strengths_float": "强度浮点"
+        },
+        "widgets": {
+            "start_percent": "开始位置",
+            "end_percent": "结束位置",
+            "print_keyframes": "输出关键帧到控制台"
+        },
+        "HOOK_KF": "约束关键帧"
+    },
+
+
+    "ADE_AttachLoraHookToConditioning": {
+        "title": "连结LoRA约束到条件",
+        "inputs": {
+            "conditioning": "条件",
+            "lora_hook": "LoRA约束"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "ADE_ConditioningSetMask": {
+        "title": "条件设置遮罩",
+        "inputs": {
+            "cond_ADD": "条件_ADD",
+            "opt_mask": "遮罩(可选)",
+            "opt_lora_hook": "LoRA约束(可选)",
+            "opt_timesteps": "时间戳(可选)"
+        },
+        "widgets": {
+            "strength": "强度",
+            "set_cond_area": "设置条件区域"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "ADE_ConditioningSetMaskAndCombine": {
+        "title": "条件设置遮罩",
+        "inputs": {
+            "cond": "条件",
+            "cond_ADD": "条件_ADD",
+            "opt_mask": "遮罩(可选)",
+            "opt_lora_hook": "LoRA约束(可选)",
+            "opt_timesteps": "时间戳(可选)"
+        },
+        "widgets": {
+            "strength": "强度",
+            "set_cond_area": "设置条件区域"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "ADE_ConditioningSetUnmaskedAndCombine": {
+        "title": "条件设置非遮罩并合并",
+        "inputs": {
+            "cond": "条件",
+            "cond_DEFAULT": "条件_默认",
+            "opt_lora_hook": "LoRA约束(可选)"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+
+
     "ADE_AnimateDiffSettings": {
         "title": "AnimateDiff设置",
         "inputs": {
@@ -497,6 +788,167 @@
             "MOTION_MODEL": "动态模型"
         }
     },
+    
+
+    "ADE_ApplyAnimateDiffModelWithCameraCtrl": {
+        "title": "应用镜头控制到AnimateDiff模型",
+        "inputs": {
+            "motion_model": "动态模型",
+            "cameractrl_poses": "镜头控制姿态",
+            "motion_lora": "动态LoRA",
+            "scale_multival": "缩放多值",
+            "effect_multival": "效果多值",
+            "cameractrl_multival": "镜头控制多值",
+            "ad_keyframes": "AD关键帧",
+            "prev_m_models": "前动态模型组"
+        },
+        "widgets": {
+            "start_percent": "开始位置",
+            "end_percent": "结束位置"
+        },
+        "outputs": {
+            "M_MODELS": "动态模型组"
+        }
+    },
+    "ADE_LoadAnimateDiffModelWithCameraCtrl": {
+        "title": "加载镜头控制与AnimateDiff模型",
+        "inputs": {
+            "ad_settings": "AD设置"
+        },
+        "widgets": {
+            "model_name": "模型名称",
+            "camera_ctrl": "镜头控制"
+        },
+        "outputs": {
+            "MOTION_MODEL": "动态模型"
+        }
+    },
+    "ADE_CameraCtrlAnimateDiffKeyframe": {
+        "title": "镜头控制AnimateDiff关键帧",
+        "inputs": {
+            "prev_ad_keyframes": "前AD关键帧",
+            "scale_multival": "缩放多值",
+            "effect_multival": "效果多值",
+            "cameractrl_multival": "镜头控制多值"
+        },
+        "widgets": {
+            "start_percent": "开始位置",
+            "inherit_missing": "缺失值自动继承",
+            "guarantee_steps": "最小采样步数"
+        },
+        "outputs": {
+            "AD_KEYFRAMES": "AD关键帧"
+        }
+    },
+
+
+    "ADE_LoadCameraPoses": {
+        "title": "加载镜头姿态",
+        "widgets": {
+            "pose_filename": "姿态文件名"
+        },
+        "outputs": {
+            "CAMERACTRL_POSES": "镜头控制姿态"
+        }
+    },
+    "ADE_CameraPoseBasic": {
+        "title": "镜头姿态",
+        "inputs": {
+            "prev_poses": "前姿态"
+        },
+        "widgets": {
+            "motion_type": "动态类型",
+            "speed": "速度",
+            "frame_length": "帧长度"
+        },
+        "outputs": {
+            "CAMERACTRL_POSES": "镜头控制姿态"
+        }
+    },
+    "ADE_CameraPoseCombo": {
+        "title": "镜头姿态连锁",
+        "inputs": {
+            "prev_poses": "前姿态"
+        },
+        "widgets": {
+            "motion_type1": "动态类型_1",
+            "motion_type2": "动态类型_2",
+            "motion_type3": "动态类型_3",
+            "motion_type4": "动态类型_4",
+            "motion_type5": "动态类型_5",
+            "motion_type6": "动态类型_6",
+            "speed": "速度",
+            "frame_length": "帧长度"
+        },
+        "outputs": {
+            "CAMERACTRL_POSES": "镜头控制姿态"
+        }
+    },
+    "ADE_CameraPoseAdvanced": {
+        "title": "镜头姿态（高级）",
+        "inputs": {
+            "prev_poses": "前姿态"
+        },
+        "widgets": {
+            "motion_type1": "动态类型_1",
+            "motion_type2": "动态类型_2",
+            "motion_type3": "动态类型_3",
+            "motion_type4": "动态类型_4",
+            "motion_type5": "动态类型_5",
+            "motion_type6": "动态类型_6",
+            "strength1": "强度_1",
+            "strength2": "强度_2",
+            "strength3": "强度_3",
+            "strength4": "强度_4",
+            "strength5": "强度_5",
+            "strength6": "强度_6",
+            "speed": "速度",
+            "frame_length": "帧长度"
+        },
+        "outputs": {
+            "CAMERACTRL_POSES": "镜头控制姿态"
+        }
+    },
+    "ADE_CameraManualPoseAppend": {
+        "title": "镜头姿态相加",
+        "inputs": {
+            "poses_first": "姿态_先",
+            "poses_last": "姿态_后"
+        },
+        "outputs": {
+            "CAMERACTRL_POSES": "镜头控制姿态"
+        }
+    },
+    "ADE_ReplaceCameraParameters": {
+        "title": "替换镜头参数",
+        "inputs": {
+            "poses": "姿态"
+        },
+        "widgets": {
+            "fx": "fx",
+            "fy": "fy",
+            "cx": "cx",
+            "cy": "cy"
+        },
+        "outputs": {
+            "CAMERACTRL_POSES": "镜头控制姿态"
+        }
+    },
+    "ADE_ReplaceOriginalPoseAspectRatio": {
+        "title": "替换初始姿态宽高比",
+        "inputs": {
+            "poses": "姿态"
+        },
+        "widgets": {
+            "orig_pose_width": "初始姿态宽度",
+            "orig_pose_height": "初始姿态高度"
+        },
+        "outputs": {
+            "CAMERACTRL_POSES": "镜头控制姿态"
+        }
+    },
+
+
     "ADE_ApplyAnimateLCMI2VModel": {
         "title": "应用AnimateLCM-I2V模型",
         "inputs": {
