@@ -1759,6 +1759,68 @@
     },
 
 
+    "UNetSelfAttentionMultiply": {
+        "title": "UNet自注意力乘数",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "q": "q",
+            "k": "k",
+            "v": "v",
+            "out": "out"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "UNetCrossAttentionMultiply": {
+        "title": "UNet交叉注意力乘数",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "q": "q",
+            "k": "k",
+            "v": "v",
+            "out": "out"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "UNetTemporalAttentionMultiply": {
+        "title": "UNetTemporal注意力乘数",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "q": "q",
+            "k": "k",
+            "v": "v",
+            "out": "out"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "CLIPAttentionMultiply": {
+        "title": "CLIP注意力乘数",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "q": "q",
+            "k": "k",
+            "v": "v",
+            "out": "out"
+        },
+        "outputs": {
+            "CLIP": "CLIP"
+        }
+    },
+
+
     "CLIPTextEncodeControlnet": {
         "title": "CLIP文本编码ControlNet",
         "inputs": {

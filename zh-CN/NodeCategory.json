@@ -28,6 +28,7 @@
     "samplers": "采样器",
     "Sigmas": "Sigmas",
     "stable_cascade": "StableCascade",
+    "attention_experiments": "注意力测试",
     "advanced1": "高级",
     "loaders1": "加载器",
     "deprecated": "已弃用",
