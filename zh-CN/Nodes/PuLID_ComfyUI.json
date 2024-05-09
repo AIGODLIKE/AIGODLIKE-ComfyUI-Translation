@@ -1,0 +1,45 @@
+{
+    "PulidModelLoader": {
+        "title": "PuLID模型加载器",
+        "widgets": {
+            "pulid_file": "PuLID文件"
+        },
+        "outputs": {
+            "PULID": "PuLID"
+        }
+    },
+    "PulidInsightFaceLoader": {
+        "title": "PuLIDInsightFace加载器",
+        "widgets": {
+            "provider": "设备"
+        },
+        "outputs": {
+            "FACEANALYSIS": "面部分析模型"
+        }
+    },
+    "PulidEvaClipLoader": {
+        "title": "PuLIDEVAClip加载器",
+        "outputs": {
+            "EVA_CLIP": "EVA_CLIP"
+        }
+    },
+    "ApplyPulid": {
+        "title": "应用PuLID",
+        "inputs": {
+            "model": "模型",
+            "pulid": "PuLID",
+            "eva_clip": "EVA_CLIP",
+            "face_analysis": "面部分析模型",
+            "image": "图像"
+        },
+        "widgets": {
+            "method": "方法",
+            "weight": "权重",
+            "start_at": "开始应用位置",
+            "end_at": "结束应用位置"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    }
+}

@@ -2639,5 +2639,9 @@
     "#IF_AI": "#IF_AI",
     "create": "新建",
     "overwrite": "覆盖",
-    "append": "追加"
+    "append": "追加",
+    "#Pulid": "#Pulid",
+    "fidelity": "精确",
+    "style": "风格",
+    "neutral": "平衡"
 }
