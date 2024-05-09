@@ -113,6 +113,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Prompt Composer](https://github.com/florestefano1975/comfyui-prompt-composer.git)|√|TODO|√|TODO|TODO|TODO|
 |[Prompt MZ](https://github.com/MinusZoneAI/ComfyUI-Prompt-MZ.git)|√|TODO|√|TODO|TODO|TODO|
 |[Prompt Reader](https://github.com/receyuki/comfyui-prompt-reader-node)|√|TODO|√|TODO|TODO|TODO|
+|[PuLID (cubiq)](https://github.com/cubiq/PuLID_ComfyUI.git)|√|TODO|√|TODO|TODO|TODO|
 |[QR](https://github.com/coreyryanhanson/comfy-qr)|√|√|√|TODO|TODO|TODO|
 |[OneButtonPrompt](https://github.com/AIrjen/OneButtonPrompt)|√|TODO|√|TODO|TODO|TODO|
 |[ReActor](https://github.com/Gourieff/comfyui-reactor-node)|√|TODO|√|TODO|TODO|TODO|
