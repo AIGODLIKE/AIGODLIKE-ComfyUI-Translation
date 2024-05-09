@@ -215,6 +215,32 @@
             "image": "图像"
         }
     },
+    "LayerColor: ColorBalance": {
+        "title": "色彩平衡",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "cyan_red": "青-红",
+            "megenta_green": "品红-绿",
+            "yellow_blue": "黄-蓝"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerColor: ColorTemperature": {
+        "title": "色温",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "temperature": "温度"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
     "LayerColor: Exposure": {
         "title": "曝光",
         "inputs": {
@@ -262,6 +288,23 @@
             "L": "L",
             "A": "A",
             "B": "B"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerColor: Levels": {
+        "title": "色阶",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "channel": "通道",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "gray_point": "灰色阈值",
+            "output_black_point": "输出黑色阈值",
+            "output_white_point": "输出白色阈值"
         },
         "outputs": {
             "image": "图像"
@@ -1137,6 +1180,148 @@
             "image": "图像"
         }
     },
+    "LayerStyle: ColorOverlay V2": {
+        "title": "颜色覆盖 V2",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "color": "颜色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerStyle: DropShadow V2": {
+        "title": "生成阴影 V2",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "distance_x": "X距离",
+            "distance_y": "Y距离",
+            "grow": "扩张",
+            "blur": "模糊",
+            "shadow_color": "阴影色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerStyle: GradientOverlay V2": {
+        "title": "渐变覆盖 V2",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "start_color": "起始色",
+            "start_alpha": "起始透明",
+            "end_color": "结束色",
+            "end_alpha": "结束透明",
+            "angle": "角度"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerStyle: InnerGlow V2": {
+        "title": "内发光 V2",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "brightness": "亮度",
+            "glow_range": "范围",
+            "blur": "模糊",
+            "light_color": "发光色",
+            "glow_color": "辉光色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerStyle: InnerShadow V2": {
+        "title": "内阴影 V2",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "distance_x": "X距离",
+            "distance_y": "Y距离",
+            "grow": "扩张",
+            "blur": "模糊",
+            "shadow_color": "阴影色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerStyle: OuterGlow V2": {
+        "title": "外发光 V2",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "brightness": "亮度",
+            "glow_range": "范围",
+            "blur": "模糊",
+            "light_color": "发光色",
+            "glow_color": "辉光色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerStyle: Stroke V2": {
+        "title": "描边 V2",
+        "inputs": {
+            "background_image": "背景图像",
+            "layer_image": "图像层",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_mode": "混合模式",
+            "opacity": "不透明",
+            "stroke_grow": "扩张",
+            "stroke_width": "宽度",
+            "blur": "模糊",
+            "stroke_color": "描边色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
 
 
     "LayerMask: BiRefNetUltra": {
@@ -1154,6 +1339,24 @@
         },
         "outputs": {
             "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: BlendIf Mask": {
+        "title": "混合颜色带",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "invert_mask": "反转遮罩",
+            "blend_if": "颜色带",
+            "black_point": "黑色阈值",
+            "black_range": "黑色范围",
+            "white_point": "白色阈值",
+            "white_range": "白色范围"
+        },
+        "outputs": {
             "mask": "遮罩"
         }
     },
@@ -1498,6 +1701,21 @@
         "outputs": {
             "shadow_mask": "阴影遮罩",
             "highlight_mask": "高光遮罩"
+        }
+    },
+    "LayerMask: YoloV8Detect": {
+        "title": "YoloV8检测",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "yolo_model": "Yolo模型",
+            "mask_merge": "融合遮罩"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "yolo_plot_image": "Yolo预览图像",
+            "yolo_masks": "Yolo遮罩"
         }
     }
 }

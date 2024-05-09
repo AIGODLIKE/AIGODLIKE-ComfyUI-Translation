@@ -261,7 +261,8 @@
         "inputs": {
             "images": "图像",
             "audio": "音频",
-            "batch_manager": "批次管理"
+            "batch_manager": "批次管理",
+            "meta_batch": "批次管理"
         },
         "widgets": {
             "frame_rate": "帧率",
@@ -284,6 +285,9 @@
     
     "VHS_LoadVideo": {
         "title": "加载视频",
+        "inputs": {
+            "meta_batch": "批次管理"
+        },
         "widgets": {
             "video": "视频",
             "choose file to upload": "选择文件上传",
@@ -298,23 +302,29 @@
         "outputs": {
             "IMAGE": "图像",
             "frame_count": "帧计数",
-            "audio": "音频"
+            "audio": "音频",
+            "video_info": "视频信息"
         }
     },
     "VHS_LoadVideoPath": {
-        "title": "加载路径视频",
+        "title": "加载视频（路径）",
+        "inputs": {
+            "meta_batch": "批次管理"
+        },
         "widgets": {
             "video": "视频",
             "force_rate": "强制帧率",
             "force_size": "强制尺寸",
                 "Disabled": "关闭",
             "frame_load_cap": "帧数读取上限",
-            "skip_first_frames": "跳过第一帧",
+            "skip_first_frames": "跳过前X帧",
             "select_every_nth": "模选"
         },
         "outputs": {
             "IMAGE": "图像",
-            "frame_count": "帧计数"
+            "frame_count": "帧计数",
+            "audio": "音频",
+            "video_info": "视频信息"
         }
     },
     "VHS_LoadImages": {
@@ -323,7 +333,7 @@
             "directory": "路径",
             "choose folder to upload": "选择文件夹上传",
             "image_load_cap": "图像读取上限",
-            "skip_first_images": "跳过第一张图",
+            "skip_first_images": "跳过前X张",
             "select_every_nth": "模选"
         },
         "outputs": {
@@ -333,11 +343,11 @@
         }
     },
     "VHS_LoadImagesPath": {
-        "title": "加载路径图像",
+        "title": "加载图像（路径）",
         "widgets": {
             "directory": "路径",
             "image_load_cap": "图像读取上限",
-            "skip_first_imagess": "跳过第一张图",
+            "skip_first_imagess": "跳过前X张",
             "select_every_nth": "模选"
         },
         "outputs": {
@@ -346,8 +356,20 @@
             "INT": "整数"
         }
     },
-    "VHS_LoadAudio": {
+    "VHS_LoadAudioUpload": {
         "title": "加载音频",
+        "widgets": {
+            "audio": "音频",
+            "start_time": "起始时间",
+            "duration": "时长",
+            "choose audio to upload": "选择音频上传"
+        },
+        "outputs": {
+            "audio": "音频"
+        }
+    },
+    "VHS_LoadAudio": {
+        "title": "加载音频（路径）",
         "widgets": {
             "audio_file": "音频文件",
             "seek_secods": "起始秒数"
@@ -371,7 +393,8 @@
             "frames_per_batch": "每批次帧数"
         },
         "outputs": {
-            "VHS_BatchManager": "批次管理"
+            "VHS_BatchManager": "批次管理",
+            "meta_batch": "批次管理"
         }
     },
     "VHS_VideoInfo": {
@@ -380,16 +403,16 @@
             "video_info": "视频信息"
         },
         "outputs": {
-            "source_fps": "初始FPS",
-            "source_frame_count": "初始帧数",
-            "source_duration": "初始时长",
-            "source_width": "初始宽度",
-            "source_height": "初始高度",
-            "loaded_fps": "选中FPS",
-            "loaded_frame_count": "选中帧数",
-            "loaded_duration": "选中时长",
-            "loaded_width": "选中宽度",
-            "loaded_height": "选中高度"
+            "source_fps🟨": "初始FPS🟨",
+            "source_frame_count🟨": "初始帧数🟨",
+            "source_duration🟨": "初始时长🟨",
+            "source_width🟨": "初始宽度🟨",
+            "source_height🟨": "初始高度🟨",
+            "loaded_fps🟦": "选中FPS🟦",
+            "loaded_frame_count🟦": "选中帧数🟦",
+            "loaded_duration🟦": "选中时长🟦",
+            "loaded_width🟦": "选中宽度🟦",
+            "loaded_height🟦": "选中高度🟦"
         }
     },
     "VHS_VideoInfoSource": {
@@ -398,11 +421,11 @@
             "video_info": "视频信息"
         },
         "outputs": {
-            "fps": "FPS",
-            "frame_count": "帧数",
-            "duration": "时长",
-            "width": "宽度",
-            "height": "高度"
+            "fps🟦": "FPS🟦",
+            "frame_count🟦": "帧数🟦",
+            "duration🟦": "时长🟦",
+            "width🟦": "宽度🟦",
+            "height🟦": "高度🟦"
         }
     },
     "VHS_VideoInfoLoaded": {
@@ -411,11 +434,11 @@
             "video_info": "视频信息"
         },
         "outputs": {
-            "fps": "FPS",
-            "frame_count": "帧数",
-            "duration": "时长",
-            "width": "宽度",
-            "height": "高度"
+            "fps🟨": "FPS🟨",
+            "frame_count🟨": "帧数🟨",
+            "duration🟨": "时长🟨",
+            "width🟨": "宽度🟨",
+            "height🟨": "高度🟨"
         }
     }
 }

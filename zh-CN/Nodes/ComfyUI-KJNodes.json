@@ -1360,5 +1360,23 @@
         "outputs": {
             "MASK": "遮罩"
         }
+    },
+    "ImagePadForOutpaintMasked": {
+        "title": "外补画板（遮罩）",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "left": "左",
+            "top": "上",
+            "right": "右",
+            "bottom": "下",
+            "feathering": "羽化"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
     }
 }
