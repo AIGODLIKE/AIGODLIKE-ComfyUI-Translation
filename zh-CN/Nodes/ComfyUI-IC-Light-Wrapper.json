@@ -1,0 +1,50 @@
+{
+    "diffusers_model_loader": {
+        "title": "读取扩散模型",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP",
+            "vae": "VAE"
+        },
+        "outputs": {
+            "diffusers_model": "扩散模型"
+        }
+    },
+    "LoadICLightUnetDiffusers": {
+        "title": "加载ICLightUnet",
+        "inputs": {
+            "diffusersmodel": "扩散模型"
+        },
+        "widgets": {
+            "model_path": "模型路径"
+        },
+        "outputs": {
+            "DIFFUSERSMODEL": "扩散模型"
+        }
+    },
+    "iclight_diffusers_sampler": {
+        "title": "ICLight采样器",
+        "inputs": {
+            "diffusers_model": "扩散模型",
+            "latent": "Latent",
+            "bg_latent": "背景Latent"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "steps": "步数",
+            "guidance_scale": "引导缩放",
+            "denoise_strength": "降噪",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "scheduler": "调度器",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "hidiffusion": "HiDiffusion",
+            "fixed_seed": "固定随机种"
+        },
+        "outputs": {
+            "samples": "Latent"
+        }
+    }
+}
