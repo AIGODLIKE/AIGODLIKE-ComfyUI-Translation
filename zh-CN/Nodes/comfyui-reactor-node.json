@@ -110,6 +110,24 @@
             "face_model_name": "模型名称"
         }
     },
+    "ReActorMakeFaceModelBatch": {
+        "title": "ReActor组合面部模型批次",
+        "inputs": {
+            "face_model1": "面部模型_1",
+            "face_model2": "面部模型_2",
+            "face_model3": "面部模型_3",
+            "face_model4": "面部模型_4",
+            "face_model5": "面部模型_5",
+            "face_model6": "面部模型_6",
+            "face_model7": "面部模型_7",
+            "face_model8": "面部模型_8",
+            "face_model9": "面部模型_9",
+            "face_model10": "面部模型_10"
+        },
+        "outputs": {
+            "FACE_MODELS": "面部模型"
+        }
+    },
     "ReActorRestoreFace": {
         "title": "ReActor恢复面部",
         "inputs": {
@@ -146,6 +164,15 @@
         },
         "outputs": {
             "IMAGES": "图像"
+        }
+    },
+    "ImageRGBA2RGB": {
+        "title" :"图像RGBA到RGB",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
         }
     }
 }
