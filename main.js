@@ -190,12 +190,14 @@ export class TUtils {
     };
     const f2 = LiteGraph.ContextMenu;
     LiteGraph.ContextMenu = function (values, options) {
+      // 右键上下文菜单先从此处翻译, 随后会经过 applyMenuTranslation走通用翻译
       if (options.hasOwnProperty("title") && options.title in TUtils.T.Nodes) {
         options.title = TUtils.T.Nodes[options.title]["title"] || options.title;
       }
       // Convert {w.name} to input
       // Convert {w.name} to widget
       var t = TUtils.T.Menu;
+      var tN = TUtils.T.Nodes;
       var reInput = /Convert (.*) to input/;
       var reWidget = /Convert (.*) to widget/;
       var cvt = t["Convert "] || "Convert ";
@@ -203,6 +205,12 @@ export class TUtils {
       var twgt = t[" to widget"] || " to widget";
       for (let value of values) {
         if (value == null || !value.hasOwnProperty("content")) continue;
+        // 子菜单先走 节点标题菜单
+        if (value.value in tN)
+        {
+          value.content = tN[value.value]["title"] || value.content;
+          continue;
+        }
         // inputs
         if (value.content in t) {
           value.content = t[value.content];
