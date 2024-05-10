@@ -484,6 +484,25 @@
             "conditioning": "条件"
         }
     },
+    "easy injectNoiseToLatent": {
+        "title": "插入噪波到Latent",
+        "inputs": {
+            "pipe_to_noise": "噪波节点束",
+            "image_to_latent": "图像转Latent",
+            "latent": "Latent",
+            "noise": "噪波",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "strength": "强度",
+            "normalize": "规格化",
+            "average": "平均",
+            "mix_randn_amount": "混合随机数"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
     "easy seed": {
         "title": "随机种",
         "widgets": {
@@ -1697,6 +1716,49 @@
             "ipadapter": "IPAdapter"
         }
     },
+    "easy ipadapterApplyRegional": {
+        "title": "应用IPAdapter(区域)",
+        "inputs": {
+            "model": "模型",
+            "image": "图像",
+            "mask": "遮罩",
+            "optional_ipadapter_params": "IPAdapter参数组(可选)"
+        },
+        "widgets": {
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "image_weight": "图像权重",
+            "prompt_weight": "提示词权重",
+            "weight_type": "权重类型",
+            "start_at": "开始位置",
+            "end_at": "结束位置"
+        },
+        "outputs": {
+            "pipe": "节点束",
+            "ipadapter_params": "IPAdapter参数组",
+            "positive": "正面条件",
+            "negative": "负面条件"
+        }
+    },
+    "easy ipadapterApplyFromParams": {
+        "title": "应用IPAdapter(参数组)",
+        "inputs": {
+            "model": "模型",
+            "ipadapter_params": "IPAdapter参数组",
+            "optional_ipadapter": "IPAdapter",
+            "image_negative": "负面图像"
+        },
+        "widgets": {
+            "preset": "预置参数",
+            "combine_embeds": "合并嵌入组",
+            "embeds_scaling": "嵌入组缩放",
+            "cache_mode": "缓存模式"
+        },
+        "outputs": {
+            "model": "模型",
+            "ipadapter": "IPAdapter"
+        }
+    },
     "easy instantIDApply": {
         "title": "应用InstantID",
         "inputs": {
@@ -1753,6 +1815,33 @@
             "negative": "负面条件"
         }
     },
+    "easy styleAlignedBatchAlign": {
+        "title": "风格对齐",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "share_norm": "share_norm",
+            "share_attn": "share_attn",
+            "scale": "scale"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "easy icLightApply": {
+        "title": "应用ICLight",
+        "inputs": {
+            "model": "模型",
+            "latent": "Latent"
+        },
+        "widgets": {
+            "mode": "模式"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
 
 
     "easy stableDiffusion3API": {
@@ -1790,6 +1879,15 @@
         },
         "outputs": {
             "IMAGE": "图像"
+        }
+    },
+    "easy imageCount": {
+        "title": "图像计数",
+        "inputs": {
+            "images": "图像"
+        },
+        "outputs": {
+            "count": "整数"
         }
     },
     "easy imageSize": {
@@ -1898,6 +1996,20 @@
             "MASK": "遮罩"
         }
     },
+    "easy imageConcat": {
+        "title": "图像联结",
+        "inputs": {
+            "image1": "图像_1",
+            "image2": "图像_2"
+        },
+        "widgets": {
+            "direction": "方向",
+            "match_image_size": "匹配图像尺寸"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "easy imageSplitList": {
         "title": "图像拆分",
         "inputs": {
@@ -1905,6 +2017,65 @@
         },
         "outputs": {
             "images": "图像"
+        }
+    },
+    "easy imageSplitGrid": {
+        "title": "图像拆分网格",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "row": "行",
+            "column": "列"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
+    "easy imagesSplitImage": {
+        "title": "图像拆分图像",
+        "inputs": {
+            "images": "图像"
+        },
+        "outputs": {
+            "image1": "图像_1",
+            "image2": "图像_2",
+            "image3": "图像_3",
+            "image4": "图像_4",
+            "image5": "图像_5"
+        }
+    },
+    "easy imagecropFromMask": {
+        "title": "图像遮罩裁剪",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "image_crop_multi": "图像裁剪乘数",
+            "mask_crop_multi": "遮罩裁剪乘数",
+            "bbox_smooth_alpha": "BBox平滑Alpha"
+        },
+        "outputs": {
+            "crop_image": "图像",
+            "crop_mask": "遮罩",
+            "bbox": "BBox"
+        }
+    },
+    "easy imageUncropFromBBOX": {
+        "title": "图像BBoxUncrop",
+        "inputs": {
+            "original_image": "原图像",
+            "crop_image": "裁剪图像",
+            "bbox": "BBox",
+            "optional_mask": "遮罩(可选)"
+        },
+        "widgets": {
+            "border_blending": "边框融合",
+            "use_square_mask": "方形遮罩"
+        },
+        "outputs": {
+            "image": "图像"
         }
     },
     "easy imagePixelPerfect": {
@@ -1955,6 +2126,42 @@
             "image": "图像"
         }
     },
+    "easy imageColorMatch": {
+        "title": "图像颜色匹配",
+        "inputs": {
+            "image_ref": "参考图像",
+            "image_target": "目标图像"
+        },
+        "widgets": {
+            "method": "方法",
+            "image_output": "图像输出"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "easy imageInterrogator": {
+        "title": "图像反推",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "mode": "模式",
+            "use_lowvram": "低显存"
+        },
+        "outputs": {
+            "prompt": "提示词"
+        }
+    },
+    "easy imageToBase64": {
+        "title": "图像到Bae64",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
     "easy joinImageBatch": {
         "title": "合并图像批次",
         "inputs": {
@@ -1965,6 +2172,12 @@
         },
         "outputs": {
             "image": "图像"
+        }
+    },
+    "easy removeLocalImage": {
+        "title": "移除本地图像",
+        "widgets": {
+            "file_name": "文件名"
         }
     },
     "easy poseEditor": {
@@ -1978,6 +2191,34 @@
             "IMAGE": "图像"
         }
     },
+
+    "easy loadImageBase64": {
+        "title": "加载图像（Base64）",
+        "widgets": {
+            "base64_data": "Bae64数据",
+            "image_output": "图像输出"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    },
+
+    "easy applyFooocusInpaint": {
+        "title": "应用Fooocus局部重绘",
+        "inputs": {
+            "model": "模型",
+            "latent": "Latent"
+        },
+        "widgets": {
+            "head": "head",
+            "patch": "patch"
+        },
+        "outputs": {
+            "model": "模型"
+        }
+    },
+
     "easy showSpentTime": {
         "title": "显示推理时间",
         "inputs": {
@@ -2091,6 +2332,19 @@
         },
         "outputs": {
             "IMAGE": "图像"
+        }
+    },
+    "easy textSwitch": {
+        "title": "文本切换",
+        "inputs": {
+            "text1": "文本_1",
+            "text2": "文本_2"
+        },
+        "widgets": {
+            "input": "输入"
+        },
+        "outputs": {
+            "STRING": "字符串"
         }
     },
     "easy isSDXL": {

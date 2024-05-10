@@ -250,6 +250,19 @@
             "IMAGE": "图像"
         }
     },
+    "Scribble_PiDiNet_Preprocessor": {
+        "title": "ScribblePiDiNet涂鸦预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "safe": "增稳",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "TEEDPreprocessor": {
         "title": "TEED线条预处理器",
         "inputs": {
@@ -427,6 +440,34 @@
             "IMAGE": "图像"
         }
     },
+    "TTPlanet_TileGF_Preprocessor": {
+        "title": "TTPlanet_TileGF平铺预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "scale_factor": "缩放系数",
+            "blur_strehgth": "模糊强度",
+            "radius": "半径",
+            "eps": "eps"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "TTPlanet_TileSimple_Preprocessor": {
+        "title": "TTPlanet_TileSimple平铺预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "scale_factor": "缩放系数",
+            "blur_strength": "模糊强度"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
 
     "DepthAnythingPreprocessor": {
         "title": "DA深度预处理器",
@@ -490,6 +531,28 @@
             "image": "图像"
         },
         "widgets": {
+            "mask_bbox_padding": "BBox遮罩分块",
+            "mask_type": "遮罩类型",
+            "mask_expand": "遮罩扩展",
+            "rand_seed": "随机种",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "INPAINTING_MASK": "内补遮罩"
+        }
+    },
+    "MeshGraphormer+ImpactDetector-DepthMapPreprocessor": {
+        "title": "MeshGraphormer手部修复+Impact检测深度预处理器",
+        "inputs": {
+            "image": "图像",
+            "bbox_detector": "BBox检测"
+        },
+        "widgets": {
+            "bbox_threshold": "BBox阈值",
+            "bbox_dilation": "BBox膨胀",
+            "bbox_crop_factor": "BBox裁剪系数",
+            "drop_size": "最小尺寸",
             "mask_bbox_padding": "BBox遮罩分块",
             "mask_type": "遮罩类型",
             "mask_expand": "遮罩扩展",
