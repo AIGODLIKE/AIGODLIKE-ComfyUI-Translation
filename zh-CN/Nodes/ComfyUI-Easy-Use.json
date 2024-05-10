@@ -1745,7 +1745,7 @@
         "inputs": {
             "model": "模型",
             "ipadapter_params": "IPAdapter参数组",
-            "ipadapter": "IPAdapter",
+            "optional_ipadapter": "IPAdapter",
             "image_negative": "负面图像"
         },
         "widgets": {
@@ -2032,7 +2032,7 @@
             "images": "图像"
         }
     },
-    "easy imageSplitImage": {
+    "easy imagesSplitImage": {
         "title": "图像拆分图像",
         "inputs": {
             "images": "图像"
@@ -2045,7 +2045,7 @@
             "image5": "图像_5"
         }
     },
-    "easu imagecropFromMask": {
+    "easy imagecropFromMask": {
         "title": "图像遮罩裁剪",
         "inputs": {
             "image": "图像",

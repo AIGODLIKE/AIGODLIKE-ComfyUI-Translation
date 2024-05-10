@@ -462,7 +462,7 @@
         },
         "widgets": {
             "scale_factor": "缩放系数",
-            "blur_strehgth": "模糊强度"
+            "blur_strength": "模糊强度"
         },
         "outputs": {
             "IMAGE": "图像"
