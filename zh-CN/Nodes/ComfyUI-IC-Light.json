@@ -1,0 +1,64 @@
+{
+    "LoadAndApplyICLightUnet": {
+        "title": "加载ICLight模型",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "model_path": "模型"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        },
+        "description": "\n  \n有点难受但有效的读取IC-Light模型的方法。\nhttps://huggingface.co/lllyasviel/ic-light/tree/main  \n \n和ICLight条件节点一起使用。"
+    },
+    "ICLightConditioning": {
+        "title": "应用ICLight条件",
+        "inputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "vae": "VAE",
+            "foreground": "前景Latent",
+            "opt_background": "背景Latent(可选)"
+        },
+        "widgets": {
+            "multiplier": "乘数"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "empty_latent": "空Latent"
+        },
+        "description": "\n  \n用于IC-Light模型的条件节点。如果要使用“背景Latent”，需要切换IC-Light模型到“fbc”版本。"
+    },
+    "LightSource": {
+        "title": "简易光源",
+        "widgets": {
+            "light_position": "光源位置",
+            "multiplier": "明度",
+            "start_color": "起始色",
+            "end_color": "结束色",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        },
+        "description": "\n生成一个可以用于简易光源的渐变灰度图像。可以用RGB或HEX指定颜色。"
+    },
+    "CalculateNormalsFromImages": {
+        "title": "计算法向",
+        "inputs": {
+            "images": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "sigma": "sigma",
+            "center_input_range": "center_input_range"
+        },
+        "outputs": {
+            "normal": "法向图像"
+        },
+        "description": "\n从不同角度的图像计算法向。\n需要包含4个图像的图像批次：左、右、下、上"
+    }
+}
