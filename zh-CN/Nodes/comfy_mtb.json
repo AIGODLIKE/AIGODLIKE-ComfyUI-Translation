@@ -198,6 +198,25 @@
         },
         "description": "使用时间曲线（浮点批次）重映射批次"
     },
+    "Batch Float Fit (mtb)": {
+        "title": "浮点映射",
+        "inputs": {
+            "values": "值"
+        },
+        "widgets": {
+            "clamp": "钳制",
+            "auto_compute_source": "自动计算源",
+            "source_min": "从最小值",
+            "source_max": "从最大值",
+            "target_min": "到最小值",
+            "target_max": "到最大值",
+            "easing": "渐变"
+        },
+        "outputs": {
+            "FLOATS": "浮点批次"
+        },
+        "description": "使用源范围和目标范围拟合浮点列表"
+    },
     "Smart Step (mtb)": {
         "title": "智能步数",
         "widgets": {
@@ -307,6 +326,19 @@
         "title": "浮点曲线",
         "outputs": {
             "FLOAT_CURVE": "浮点曲线"
+        }
+    },
+    "Curve To Float (mtb)": {
+        "title": "曲线到浮点",
+        "inputs": {
+            "curve": "曲线"
+        },
+        "widgets": {
+            "steps": "步数"
+        },
+        "outputs": {
+            "FLOATS": "浮点批次",
+            "FLOAT": "浮点"
         }
     },
     "Debug (mtb)": {
@@ -880,6 +912,19 @@
     "Note Plus (mtb)": {
         "title": "注释+"
     },
+    "Batch Float Math (mtb)": {
+        "title": "浮点批次运算",
+        "inputs": {
+            "floats_1": "浮点批次"
+        },
+        "widgets": {
+            "reverse": "反转",
+            "operation": "操作"
+        },
+        "outputs": {
+            "FLOATS": "浮点批次"
+        }
+    },
     "Constant (mtb)": {
         "title": "常量",
         "widgets": {
@@ -959,6 +1004,25 @@
         },
         "outputs": {
             "float": "浮点"
+        }
+    },
+    "Float To Floats (mtb)": {
+        "title": "浮点到浮点批次",
+        "inputs": {
+            "float": "浮点"
+        },
+        "outputs": {
+            "floats": "浮点批次"
+        }
+    },
+    "Floats To Ints (mtb)": {
+        "title": "浮点批次到整数批次",
+        "inputs": {
+            "floats": "浮点批次"
+        },
+        "outputs": {
+            "INTS": "整数批次",
+            "INT": "整数"
         }
     }
 }

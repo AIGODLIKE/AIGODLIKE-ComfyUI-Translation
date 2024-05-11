@@ -524,17 +524,67 @@
             "IMAGE": "图像"
         }
     },
+    "IPAdapterCombineWeights": {
+        "title": "IPAdapter权重合并",
+        "widgets": {
+            "weights_1": "权重_1",
+            "weights_2": "权重_2"
+        },
+        "outputs": {
+            "weights": "权重",
+            "count": "计数"
+        }
+    },
     "IPAdapterWeights": {
         "title": "IPAdapter权重计算",
+        "inputs": {
+            "image": "图像"
+        },
         "widgets": {
             "weights": "权重",
             "timing": "时间",
             "frames": "帧数",
             "start_frame": "起始帧",
-            "end_frame": "结束帧"
+            "end_frame": "结束帧",
+            "adding_starting_frames": "添加起始帧",
+            "adding_ending_frames": "添加结束帧",
+            "method": "方法"
         },
         "outputs": {
-            "FLOAT": "浮点"
+            "FLOAT": "浮点",
+            "weights": "权重",
+            "weights_invert": "反转权重",
+            "total_frames": "帧数",
+            "image_1": "图像_1",
+            "image_2": "图像_2",
+            "weights_strategy": "权重策略"
+        }
+    },
+    "IPAdapterWeightsFromStrategy": {
+        "title": "IPAdapter权重策略",
+        "inputs": {
+            "weights_strategy": "权重策略",
+            "image": "图像"
+        },
+        "outputs": {
+            "weights": "权重",
+            "weights_invert": "反转权重",
+            "total_frames": "帧数",
+            "image_1": "图像_1",
+            "image_2": "图像_2",
+            "weights_strategy": "权重策略"
+        }
+    },
+    "IPAdapterPromptScheduleFromWeightsStrategy": {
+        "title": "IPAdapter权重策略调度提示词",
+        "inputs": {
+            "weights_strategy": "权重策略"
+        },
+        "widgets": {
+            "prompt": "提示词"
+        },
+        "outputs": {
+            "prompt_schedule": "调度提示词"
         }
     },
     "IPAdapterSaveEmbeds": {
