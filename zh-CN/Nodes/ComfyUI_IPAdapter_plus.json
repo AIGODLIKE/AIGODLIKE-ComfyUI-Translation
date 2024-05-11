@@ -524,7 +524,7 @@
             "IMAGE": "图像"
         }
     },
-    "IPAAdapterCombineWeights": {
+    "IPAdapterCombineWeights": {
         "title": "IPAdapter权重合并",
         "widgets": {
             "weights_1": "权重_1",
@@ -546,8 +546,8 @@
             "frames": "帧数",
             "start_frame": "起始帧",
             "end_frame": "结束帧",
-            "adding_starting_frame": "添加起始帧",
-            "adding_ending_frame": "添加结束帧",
+            "adding_starting_frames": "添加起始帧",
+            "adding_ending_frames": "添加结束帧",
             "method": "方法"
         },
         "outputs": {
