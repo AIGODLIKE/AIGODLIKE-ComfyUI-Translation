@@ -592,6 +592,39 @@
             "image": "图像"
         }
     },
+    "PlotCoordinates": {
+        "title": "坐标图",
+        "inputs": {
+            "coordinates": "坐标",
+            "size_multiplier": "尺寸乘数"
+        },
+        "widgets": {
+            "text": "文本",
+            "width": "宽度",
+            "height": "高度",
+            "bbox_width": "BBox宽度",
+            "bbox_height": "BBox高度"
+        },
+        "outputs": {
+            "images": "图像",
+            "width": "宽度",
+            "height": "高度",
+            "bbox_height": "BBox高度",
+            "bbox_width": "BBox宽度"
+        },
+        "description": "\n使用 Matplotlib 制作坐标图表序列。"
+    },
+    "InterpolateCoords": {
+        "title": "坐标插值",
+        "inputs": {
+            "coordinates": "坐标",
+            "interpolation_curve": "插值曲线"
+        },
+        "outputs": {
+            "coordinates": "坐标"
+        },
+        "description": "\n依据曲线插入坐标"
+    },
     "SoundReactive": {
         "title": "音频反馈",
         "widgets": {
@@ -830,6 +863,31 @@
             "IMAGE": "图像"
         }
     },
+    "JoinStringMulti": {
+        "title": "合并字符串（多重）",
+        "inputs": {
+            "string_1": "字符串_1",
+            "string_2": "字符串_2",
+            "string_3": "字符串_3",
+            "string_4": "字符串_4",
+            "string_5": "字符串_5",
+            "string_6": "字符串_6",
+            "string_7": "字符串_7",
+            "string_8": "字符串_8",
+            "string_9": "字符串_9",
+            "string_10": "字符串_10"
+        },
+        "widgets": {
+            "inputcount": "输入数量",
+            "delimiter": "分隔符",
+            "return_list": "输出为列表",
+            "Update inputs": "更新输入"
+        },
+        "outputs": {
+            "string": "字符串"
+        },
+        "description": "\n合并多个字符串为字符串批次或字符串列表。可以通过“输入数量”设置输入接口数量，点击更新刷新接口。"
+    },
     "EmptyLatentImagePresets": {
         "title": "空Latent预设",
         "widgets": {
@@ -855,6 +913,54 @@
         "outputs": {
             "IMAGE": "图像"
         }
+    },
+    "ImageAddMulti": {
+        "title": "图像混合（多重）",
+        "inputs": {
+            "image_1": "图像_1",
+            "image_2": "图像_2",
+            "image_3": "图像_3",
+            "image_4": "图像_4",
+            "image_5": "图像_5",
+            "image_6": "图像_6",
+            "image_7": "图像_7",
+            "image_8": "图像_8",
+            "image_9": "图像_9",
+            "image_10": "图像_10"
+        },
+        "widgets": {
+            "inputcount": "输入数量",
+            "blending": "混合方式",
+            "Update inputs": "更新输入"
+        },
+        "outputs": {
+            "images": "图像"
+        },
+        "description": "\n混合多个图像。可以通过“输入数量”设置输入接口数量，点击更新刷新接口。"
+    },
+    "ImageBatchMulti": {
+        "title": "图像组合批次（多重）",
+        "inputs": {
+            "image_1": "图像_1",
+            "image_2": "图像_2",
+            "image_3": "图像_3",
+            "image_4": "图像_4",
+            "image_5": "图像_5",
+            "image_6": "图像_6",
+            "image_7": "图像_7",
+            "image_8": "图像_8",
+            "image_9": "图像_9",
+            "image_10": "图像_10"
+        },
+        "widgets": {
+            "inputcount": "输入数量",
+            "blending": "混合方式",
+            "Update inputs": "更新输入"
+        },
+        "outputs": {
+            "images": "图像"
+        },
+        "description": "\n合并多个图像为图像批次。可以通过“输入数量”设置输入接口数量，点击更新刷新接口。"
     },
     "ReverseImageBatch": {
         "title": "反转图像批次",
@@ -1087,6 +1193,40 @@
             "MODEL": "模型"
         }
     },
+    "GLIGENTextBoxApplyBatchCoords": {
+        "title": "GLIGEN文本框应用(批次坐标)",
+        "inputs": {
+            "conditioning_to": "条件",
+            "latents": "Latent",
+            "clip": "CLIP",
+            "gligen_textbox_model": "GLIGEN模型",
+            "coordinates": "坐标",
+            "size_multiplier": "尺寸乘数"
+        },
+        "widgets": {
+            "text": "文本",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "conditioning": "条件",
+            "coord_preview": "坐标预览"
+        },
+        "description": "\n这个节点允许在批次中调度 GLIGEN 文本框的位置，和 AnimateDiff-Evolved 一起使用。建议和 曲线编辑器 节点一起使用。\n\n GLIGEN模型可以在 管理器 的 “安装模型” 中下载。或直接在：https://huggingface.co/comfyanonymous/GLIGEN_pruned_safetensors/tree/main 下载。 \n \n 输入： \n- **Latent** 输入用于计算批次大小 \n- **CLIP** 是文本编码器，与其他CLIP输入相同 \n- **GLIGEN模型** 连接到 GLIGEN加载器 节点 \n- **坐标** 接收坐标点json字符串，和 曲线编辑器 节点兼容。 \n- **文本** 文本框位置的提示词 \n- **宽度** 和 **高度** 设置 GLIGEN文本框 的尺寸 \n \n输出：\n- **条件** 连接到 CLIP文本编码 和 采样器 中间 \n- **坐标预览** 用于预览坐标和BBox \n\n"
+    },
+    "LoadICLightUnet": {
+        "title": "加载ICLightUnet",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "model_path": "模型路径"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        },
+        "description": "\n加载ICLightUnet：加载一个 ICLightUnet 模型。（实验性）开发中 \n 另一种不好用但可以用的方法是在 https://huggingface.co/Kijai/iclight-comfy/blob/main/iclight_fc_converted.safetensors 下载模型，然后和 InstructPixToPix条件 节点一起使用。"
+    },
     "StabilityAPI_SD3": {
         "title": "StabilityAPI SD3",
         "inputs": {
@@ -1131,6 +1271,42 @@
         },
         "outputs": {
             "IMAGE": "图像"
+        }
+    },
+    "SplitImageChannels": {
+        "title": "分离图像通道",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "red": "红色",
+            "green": "绿色",
+            "blue": "蓝色",
+            "mask": "遮罩"
+        },
+        "description": "\n分离图像为单通道图像，alpha通道分离为遮罩。"
+    },
+    "MergeImageChannels": {
+        "title": "合并图像通道",
+        "inputs": {
+            "red": "红色",
+            "green": "绿色",
+            "blue": "蓝色",
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "image": "图像"
+        },
+        "description": "\n合并通道为图像"
+    },
+    "PreviewAnimation": {
+        "title": "预览动画",
+        "inputs": {
+            "images": "图像",
+            "masks": "遮罩"
+        },
+        "widgets": {
+            "fps": "帧率"
         }
     },
     "ImageBatchRepeatInterleaving": {
@@ -1219,6 +1395,16 @@
             "MASK": "遮罩"
         }
     },
+    "NormalizedAmplitudeToFloatList": {
+        "title": "规格化振幅到浮点列表",
+        "inputs": {
+            "normalized_amp": "规格化幅度"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        },
+        "description": "\n连接“音频调度”的桥接节点：https://github.com/a1lazydog/ComfyUI-AudioScheduler \n，从规格化振幅建立一个浮点列表。"
+    },
     "ScaleBatchPromptSchedule": {
         "title": "缩放提示词批次调度",
         "inputs": {
@@ -1247,6 +1433,38 @@
         "outputs": {
             "IMAGE": "图像"
         }
+    },
+    "ImagePass": {
+        "title": "图像桥接",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        },
+        "description": "\n传递图像到下一个节点"
+    },
+    "ImageResizeKJ": {
+        "title": "图像缩放（KJ）",
+        "inputs": {
+            "image": "图像",
+            "get_image_size": "参考图像大小",
+            "width_input": "宽度",
+            "height_input": "高度"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "upscale_method": "缩放方法",
+            "keep_proportions": "固定宽高比",
+            "divisible_by": "因数"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "description": "\n按指定宽高缩放图像。尺寸可由输入指定，最终输出优先级按以下规则排列：\n- 参考图像尺寸 \n- 宽度-输入 和 高度-输入 \n- 宽度 和 高度 \n \n固定宽高比会按最高尺寸固定宽高比。"
     },
     "CameraPoseVisualizer": {
         "title": "相机姿态预览",
@@ -1378,5 +1596,100 @@
             "IMAGE": "图像",
             "MASK": "遮罩"
         }
+    },
+    "DownloadAndLoadCLIPSeg": {
+        "title": "加载CLIPSeg",
+        "widgets": {
+            "model": "模型"
+        },
+        "outputs": {
+            "clipseg_model": "CLIPSeg模型"
+        },
+        "description": "\n使用 huggingface_hub 下载 CLIPSeg 模型到 Comfy/models/clip_seg"
+    },
+    "GetMaskSizeAndCount": {
+        "title": "获取遮罩尺寸数量",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "width": "宽度",
+            "height": "高度",
+            "count": "数量"
+        },
+        "description": "\n输出遮罩的宽度、高度、批次大小"
+    },
+    "GetImageSizeAndCount": {
+        "title": "获取图像尺寸数量",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "image": "图像",
+            "width": "宽度",
+            "height": "高度",
+            "count": "数量"
+        },
+        "description": "\n输出图像的宽度、高度、批次大小"
+    },
+    "ModelPassThrough": {
+        "title": "模型桥接",
+        "inputs": {
+            "model": "模型"
+        },
+        "outputs": {
+            "model": "模型"
+        },
+        "description": "\n将模型传递到下一个节点"
+    },
+    "FloatToSigmas": {
+        "title": "浮点到Sigmas",
+        "inputs": {
+            "float_list": "浮点列表"
+        },
+        "outputs": {
+            "SIGMAS": "Sigmas"
+        },
+        "description": "\n从浮点列表创建sigmas tensor"
+    },
+    "WeightScheduleExtend": {
+        "title": "权重调度扩展",
+        "inputs": {
+            "input_values_1": "输入值_1",
+            "input_values_2": "输入值_2"
+        },
+        "widgets": {
+            "output_type": "输出类型"
+        },
+        "outputs": {
+            "FLOAT": "浮点"
+        },
+        "description": "\n扩展不同的值列表/系列，并根据需要进行转换"
+    },
+    "SplineEditor": {
+        "title": "曲线编辑器",
+        "widgets": {
+            "points_store": "点位置",
+            "mask_width": "遮罩宽度",
+            "mask_height": "遮罩高度",
+            "points_to_sample": "采样精度",
+            "sampling_method": "采样方法",
+            "interpolation": "插值方式",
+            "tension": "tension",
+            "repeat_output": "重复输出",
+            "float_output_type": "浮点输出类型",
+            "min_value": "最小值",
+            "max_value": "最大值",
+            "New spline": "新曲线"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "coord_str": "坐标",
+            "float": "浮点",
+            "count": "数量",
+            "normalized_str": "规格化字符串"
+        },
+        "description": "\n# 开发中 \n不要在工作流中经常使用这个节点，可能会遇到大量bug并且不稳定！！ \n \n##用于创建各类值调度的图形化编辑器 \n\n**Shift+左键单击** 添加新控制点，**Ctrl+左键单击** 创建中间控制点，**右键单击** 移除控制点。\n不能删除端点。\n\n 右键背景会调出菜单：一些视觉设置，不影响输出效果：\n - 控制柄可见性 \n - 显示采样点 \n\n**采样精度** 设置采样点数量，从样条线本身返回采样点，和实际控制点无关，由插值类型决定。\n采样方法：\n - 时间：沿时间轴采样，用于调度 \n - 路径：沿曲线路径采样，用于坐标 \n\n 输出：\n - 遮罩批次 \n 适用于任何接收遮罩的节点 \n - 浮点列表 \n 适用于 IPAdapter权重组 \n - pandas series \n 适用于 适用于接收 Fizz批次调度 节点 的节点 \n - torch tensor \n 适用于不明节点"
     }
 }
