@@ -74,6 +74,8 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Flowty TripoSR](https://github.com/flowtyone/ComfyUI-Flowty-TripoSR.git)|√|TODO|√|TODO|TODO|TODO|
 |[Frame Interpolation](https://github.com/Fannovel16/ComfyUI-Frame-Interpolation.git)|√|TODO|√|TODO|TODO|TODO|
 |[FreeU Advanced](https://github.com/WASasquatch/FreeU_Advanced)|√|TODO|√|TODO|TODO|TODO|
+|[IC-Light (kijai)](https://github.com/kijai/ComfyUI-IC-Light.git)|√|TODO|√|TODO|TODO|TODO|
+|[IC-Light-Wrapper (kijai)](https://github.com/kijai/ComfyUI-IC-Light-Wrapper.git)|√|TODO|√|TODO|TODO|TODO|
 |[IF AI tools](https://github.com/if-ai/ComfyUI-IF_AI_tools.git)|√|TODO|√|TODO|TODO|TODO|
 |[IPAdapter](https://github.com/laksjdjf/IPAdapter-ComfyUI)|√|√|√|TODO|TODO|TODO|
 |[IPAdapter_plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus)|√|√|√|TODO|TODO|TODO|
