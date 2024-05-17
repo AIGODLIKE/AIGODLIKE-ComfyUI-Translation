@@ -8,6 +8,6 @@ license = "LICENSE"
 Repository = "https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION"
 
 [tool.comfy]
-PublisherId = ""
+PublisherId = "AIGODLIKE"
 DisplayName = "AIGODLIKE-ComfyUI-Translation"
 Icon = ""
