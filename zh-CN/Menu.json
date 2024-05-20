@@ -77,6 +77,7 @@
     "Settings": "设置",
     "Require confirmation when clearing workflow": "清理工作流时是否需要确认",
     "Prompt for filename when saving workflow": "保存工作流时是否需要填入文件名",
+    "Save and restore canvas position and zoom level in workflows": "将画布位置和缩放保存到工作流数据中",
     "When displaying a preview in the image widget, convert it to a lightweight image, e.g. webp, jpeg, webp;50, etc.": "轻量化图像组件中的预览图象, 如webp, jpeg等",
     "Widget Value Control Mode": "组件控制模式",
     "Controls when widget values are updated (randomize/increment/decrement), either before the prompt is queued or after.": "控制组件值更新(随机/增加/减少)的时机，在提示词队列执行前或执行后",
