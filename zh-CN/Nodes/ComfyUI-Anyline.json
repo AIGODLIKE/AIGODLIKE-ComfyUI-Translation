@@ -1,0 +1,11 @@
+{
+    "AnyLinePreprocessor": {
+        "title": "AnyLine预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    }
+}
