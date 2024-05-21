@@ -60,5 +60,48 @@
             "normal": "法向图像"
         },
         "description": "\n从不同角度的图像计算法向。\n需要包含4个图像的图像批次：左、右、下、上"
+    },
+    "LoadHDRImage": {
+        "title": "加载HDR图像",
+        "widgets": {
+            "image": "图像",
+            "exposure": "曝光"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        },
+        "description": "\n从input文件夹加载.hdr图像。\n输出LDR图像批次。"
+    },
+    "BackgroundScaler": {
+        "title": "背景灰度",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "scale": "缩放",
+            "invert": "反转"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        },
+        "description": "\n将遮罩区域调整为灰度图像"
+    },
+    "DetailTransfer": {
+        "title": "细节迁移",
+        "inputs": {
+            "target": "目标图像",
+            "source": "参考图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "mode": "模式",
+            "blur_sigma": "模糊Sigma",
+            "blend_factor": "混合系数"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
     }
 }
