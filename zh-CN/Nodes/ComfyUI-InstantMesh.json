@@ -1,0 +1,31 @@
+{
+    "InstantMeshLoader": {
+        "title": "InstantMesh加载器",
+        "widgets": {
+            "config_name": "配置文件"
+        },
+        "outputs": {
+            "model": "InstantMesh模型",
+            "config": "配置"
+        }
+    },
+    "InstantMeshRun": {
+        "title": "InstantMesh执行",
+        "inputs": {
+            "model": "InstantMesh模型",
+            "config": "配置"
+        },
+        "widgets": {
+            "diffusion_steps": "采样步数",
+            "view": "视图数量",
+            "export_texmap": "导出贴图",
+            "save_video": "保存视频",
+            "remove_bg": "移除背景"
+        },
+        "outputs": {
+            "images": "图像",
+            "mesh_path": "网格文件路径",
+            "video_path": "视频路径"
+        }
+    }
+}
