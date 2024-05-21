@@ -77,6 +77,7 @@
     "Settings": "设置",
     "Require confirmation when clearing workflow": "清理工作流时是否需要确认",
     "Prompt for filename when saving workflow": "保存工作流时是否需要填入文件名",
+    "Save and restore canvas position and zoom level in workflows": "将画布位置和缩放保存到工作流数据中",
     "When displaying a preview in the image widget, convert it to a lightweight image, e.g. webp, jpeg, webp;50, etc.": "轻量化图像组件中的预览图象, 如webp, jpeg等",
     "Widget Value Control Mode": "组件控制模式",
     "Controls when widget values are updated (randomize/increment/decrement), either before the prompt is queued or after.": "控制组件值更新(随机/增加/减少)的时机，在提示词队列执行前或执行后",
@@ -2669,5 +2670,19 @@
     "#Pulid": "#Pulid",
     "fidelity": "精确",
     "style": "风格",
-    "neutral": "平衡"
+    "neutral": "平衡",
+
+    "#kjnodes": "#kjnodes",
+    "🦛 KJNodes: Make Set/Get -nodes defaults (turn off and reload to disable)": "🦛 KJ节点：将“设置/获取节点”设为默认设置（关闭并重新加载以禁用）",
+    "🦛 KJNodes: Middle click default node adding": "🦛 KJ节点：中键默认添加节点",
+    "🦛 KJNodes: Automatically set node colors": "🦛 KJ节点：自动设置节点颜色",
+    "🦛 KJNodes: Help popups": "🦛 KJ节点：启用帮助菜单",
+    "🦛 KJNodes: Disable automatic Set_ and Get_ prefix": "🦛 KJ节点：禁用“设置/获取节点”的前缀",
+    "🦛 KJNodes: 🟢 Stoplight browser status icon 🔴": "🦛 KJ节点：🟢 使用红绿灯显示浏览器状态 🔴",
+    "Getters": "前往获取节点",
+    "Go to setter": "前往设置节点",
+    "Show connections": "显示连接项",
+    "Hide connections": "隐藏连接项",
+    "Highlight": "高亮显示",
+    "Hide all connections": "隐藏全部连接项"
 }

@@ -1,4 +1,13 @@
 {
+    "VFI FloatToInt": {
+        "title": "浮点到整数",
+        "widgets": {
+            "float": "浮点"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
     "GMFSS Fortuna VFI": {
         "title": "GMFSS Fortuna VFI",
         "inputs": {
@@ -174,7 +183,7 @@
     },
 
 
-    "Make INterpolation State List": {
+    "Make Interpolation State List": {
         "title": "制作插值规则",
         "widgets": {
             "frame_indices": "帧索引",
