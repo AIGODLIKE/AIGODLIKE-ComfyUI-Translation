@@ -64,6 +64,23 @@
         }
     },
 
+    "AnyLineArtPreprocessor_aux": {
+        "title": "AnyLine预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "merge_with_lineart": "融合LineArt",
+            "resolution": "分辨率",
+            "lineart_lower_bound": "LineArt低阈值",
+            "lineart_upper_bound": "LineArt高阈值",
+            "object_min_size": "物体最小尺寸",
+            "object_connectivity": "物体连通"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
     "BinaryPreprocessor": {
         "title": "Binary二值化预处理器",
         "inputs": {
@@ -564,6 +581,36 @@
             "INPAINTING_MASK": "内补遮罩"
         }
     },
+    "Metric3D-DepthMapPreprocessor": {
+        "title": "Metric3D深度预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "backbone": "框架",
+            "fx": "fx",
+            "fy": "fy",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "Metric3D-NormalMapPreprocessor": {
+        "title": "Metric3D法向预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "backbone": "框架",
+            "fx": "fx",
+            "fy": "fy",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "MiDaS-NormalMapPreprocessor": {
         "title": "MiDaS法向预处理器",
         "inputs": {
@@ -672,6 +719,27 @@
         },
         "outputs": {
             "IMAGE": "图像"
+        }
+    },
+    "UpperBodyTrackingFromPoseKps": {
+        "title": "上半身追踪姿态关键点",
+        "inputs": {
+            "pose_kps": "姿态关键点"
+        },
+        "widgets": {
+            "id_include": "包括ID",
+            "Head_width_height": "头宽高",
+            "Neck_width_height": "脖宽高",
+            "Shoulder_width_height": "肩宽高",
+            "Torso_width_height": "腰宽高",
+            "RArm_width_height": "右臂宽高",
+            "RForearm_width_height": "右小臂宽高",
+            "LArm_width_height": "左臂宽高",
+            "LForearm_width_height": "左小臂宽高"
+        },
+        "outputs": {
+            "tracking": "tracking",
+            "prompt": "提示词"
         }
     },
 

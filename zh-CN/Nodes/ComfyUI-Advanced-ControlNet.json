@@ -23,6 +23,49 @@
             "TIMESTEP_KF": "帧间隔"
         }
     },
+    "ACN_TimestepKeyframeInterpolation": {
+        "title": "帧间隔关键帧插值",
+        "inputs": {
+            "prev_timestep_kf": "帧间隔",
+            "cn_weights": "ControlNet权重",
+            "latent_keyframe": "Latent关键帧",
+            "mask_optional": "遮罩(可选)"
+        },
+        "widgets": {
+            "start_percent": "开始位置",
+            "end_percent": "结束位置",
+            "strength_start": "起始强度",
+            "strength_end": "结束强度",
+            "interpolation": "插值方式",
+            "intervals": "迭代次数",
+            "null_latent_kf_strength": "空Latent关键帧强度",
+            "inherit_missing": "缺失值自动继承",
+            "print_keyframes": "输出关键帧到控制台"
+        },
+        "outputs": {
+            "TIMESTEP_KF": "帧间隔"
+        }
+    },
+    "ACN_TimestepKeyframeFromStrengthList": {
+        "title": "帧间隔从强度列表到关键帧",
+        "inputs": {
+            "prev_timestep_kf": "帧间隔",
+            "cn_weights": "ControlNet权重",
+            "latent_keyframe": "Latent关键帧",
+            "mask_optional": "遮罩(可选)",
+            "float_strengths": "浮点强度组"
+        },
+        "widgets": {
+            "start_percent": "开始位置",
+            "end_percent": "结束位置",
+            "null_latent_kf_strength": "空Latent关键帧强度",
+            "inherit_missing": "缺失值自动继承",
+            "print_keyframes": "输出关键帧到控制台"
+        },
+        "outputs": {
+            "TIMESTEP_KF": "帧间隔"
+        }
+    },
     "LatentKeyframe": {
         "title": "Latent关键帧",
         "inputs": {
