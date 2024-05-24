@@ -37,6 +37,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[AnimateAnyone](https://github.com/MrForExample/ComfyUI-AnimateAnyone-Evolved.git)|√|TODO|√|TODO|TODO|TODO|
 |[AnimateDiff](https://github.com/ArtVentureX/comfyui-animatediff)|√|√|√|√|TODO|TODO|
 |[AnimateDiff-Evolved](https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved.git)|√|√|√|TODO|TODO|TODO|
+|[AnyLine](https://github.com/TheMistoAI/ComfyUI-Anyline.git)|√|TODO|√|TODO|TODO|TODO|
 |[Automatic CFG](https://github.com/Extraltodeus/ComfyUI-AutomaticCFG.git)|√|TODO|√|TODO|TODO|TODO|
 |[BiRefNet](https://github.com/viperyl/ComfyUI-BiRefNet.git)|√|TODO|√|TODO|TODO|TODO|
 |[BrushNet (kijai)](https://github.com/kijai/ComfyUI-BrushNet-Wrapper.git)|√|TODO|√|TODO|TODO|TODO|
@@ -77,6 +78,8 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[IC-Light (kijai)](https://github.com/kijai/ComfyUI-IC-Light.git)|√|TODO|√|TODO|TODO|TODO|
 |[IC-Light-Wrapper (kijai)](https://github.com/kijai/ComfyUI-IC-Light-Wrapper.git)|√|TODO|√|TODO|TODO|TODO|
 |[IF AI tools](https://github.com/if-ai/ComfyUI-IF_AI_tools.git)|√|TODO|√|TODO|TODO|TODO|
+|[Image Resize](https://github.com/palant/image-resize-comfyui.git)|√|TODO|√|TODO|TODO|TODO|
+|[Instant Mesh](https://github.com/jtydhr88/ComfyUI-InstantMesh.git)|√|TODO|√|TODO|TODO|TODO|
 |[IPAdapter](https://github.com/laksjdjf/IPAdapter-ComfyUI)|√|√|√|TODO|TODO|TODO|
 |[IPAdapter_plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus)|√|√|√|TODO|TODO|TODO|
 |[Image Grid](https://github.com/LEv145/images-grid-comfy-plugin)|√|√|√|TODO|TODO|TODO|
