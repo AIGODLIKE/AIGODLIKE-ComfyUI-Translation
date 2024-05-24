@@ -522,6 +522,24 @@
             "last_seed": "上次随机种"
         }
     },
+
+    "easy humanSegmentation": {
+        "title": "人体Segmentation",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "method": "方法",
+            "confidence": "置信度",
+            "crop_multi": "裁剪乘数"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "bbox": "BBox"
+        }
+    },
+
     "easy preSampling": {
         "title": "预采样参数（基础）",
         "widgets": {
@@ -2234,6 +2252,24 @@
             "ckpt_name": "模型名称",
             "vae_name": "VAE名称",
             "lora_name": "LORA名称"
+        }
+    },
+    "easy ckptNames": {
+        "title": "ckpt名称列表",
+        "widgets": {
+            "ckpt_name": "模型名称"
+        },
+        "outputs": {
+            "ckpt_name": "模型名称"
+        }
+    },
+    "easy controlnetNames": {
+        "title": "ControlNet名称列表",
+        "widgets": {
+            "controlnet_name": "ControlNet名称"
+        },
+        "outputs": {
+            "controlnet_name": "ControlNet名称"
         }
     },
     "easy string": {
