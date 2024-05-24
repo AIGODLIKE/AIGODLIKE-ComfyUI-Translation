@@ -296,6 +296,50 @@
             "mask_inverted": "反转遮罩"
         }
     },
+    "CreateShapeMaskOnPath": {
+        "title": "创建形状遮罩",
+        "inputs": {
+            "coordinates": "坐标",
+            "size_multiplier": "尺寸乘数"
+        },
+        "widgets": {
+            "shape": "形状",
+            "frame_height": "高度",
+            "frame_width": "宽度",
+            "shape_height": "形状高度",
+            "shape_width": "形状宽度",
+            "shape_color": "形状颜色",
+            "bg_color": "背景颜色",
+            "blur_radius": "模糊半径",
+            "intensity": "强度"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "mask_inverted": "反转遮罩"
+        },
+        "description": "\n生成指定形状的遮罩或遮罩批次，位置参数为中心位置。"
+    },
+    "CreateTextOnPath": {
+        "title": "创建文本",
+        "inputs": {
+            "coordinates": "坐标",
+            "size_multiplier": "尺寸乘数"
+        },
+        "widgets": {
+            "text": "文本",
+            "frame_height": "高度",
+            "frame_width": "宽度",
+            "font": "字体",
+            "font_size": "字体大小",
+            "alignment": "对齐到",
+            "text_color": "文本颜色"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "mask_inverted": "反转遮罩"
+        }
+    },
     
 
 
@@ -319,6 +363,29 @@
             "mask": "遮罩",
             "mask_inverted": "反转遮罩"
         }
+    },
+    "MaskBatchMulti": {
+        "title": "遮罩组合批次（多重）",
+        "inputs": {
+            "mask_1": "遮罩_1",
+            "mask_2": "遮罩_2",
+            "mask_3": "遮罩_3",
+            "mask_4": "遮罩_4",
+            "mask_5": "遮罩_5",
+            "mask_6": "遮罩_6",
+            "mask_7": "遮罩_7",
+            "mask_8": "遮罩_8",
+            "mask_9": "遮罩_9",
+            "mask_10": "遮罩_10"
+        },
+        "widgets": {
+            "inputcount": "输入数量",
+            "Update inputs": "更新输入"
+        },
+        "outputs": {
+            "masks": "遮罩"
+        },
+        "description": "\n合并多个遮罩为遮罩批次。可以通过“输入数量”设置输入接口数量，点击更新刷新接口。"
     },
     "ColorToMask": {
         "title": "图像颜色到遮罩",
@@ -1049,6 +1116,60 @@
             "images_after_insert": "图像"
         }
     },
+    "CreateShapeImageOnPath": {
+        "title": "创建形状图像",
+        "inputs": {
+            "coordinates": "坐标",
+            "size_multiplier": "尺寸乘数"
+        },
+        "widgets": {
+            "shape": "形状",
+            "frame_height": "高度",
+            "frame_width": "宽度",
+            "shape_height": "形状高度",
+            "shape_width": "形状宽度",
+            "shape_color": "形状颜色",
+            "bg_color": "背景颜色",
+            "blur_radius": "模糊半径",
+            "intensity": "强度"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "description": "\n生成指定形状的图像或图像批次，位置参数为中心位置。"
+    },
+    "CreateGradientFromCoords": {
+        "title": "从坐标创建渐变图像",
+        "inputs": {
+            "coordinates": "坐标"
+        },
+        "widgets": {
+            "frame_height": "高度",
+            "frame_width": "宽度",
+            "start_color": "起始色",
+            "end_color": "结束色",
+            "multiplier": "倍数"
+        },
+        "outputs": {
+            "image": "图像"
+        },
+        "description": "\n在坐标位置创建渐变图像。"
+    },
+    "GradientToFloat": {
+        "title": "渐变到浮点",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "steps": "步数"
+        },
+        "outputs": {
+            "float_x": "浮点_X",
+            "float_y": "浮点_Y"
+        },
+        "description": "\n计算图像浮点列表"
+    },
     "WidgetToString": {
         "title": "组件到字符串",
         "widgets": {
@@ -1271,6 +1392,26 @@
         },
         "outputs": {
             "IMAGE": "图像"
+        }
+    },
+    "LoadAndResizeImage": {
+        "title": "加载并缩放图像",
+        "widgets": {
+            "image": "图像",
+            "resize": "缩放",
+            "width": "宽度",
+            "height": "高度",
+            "repeat": "复制",
+            "keep_proportions": "固定宽高比",
+            "divisible_by": "因数",
+            "mask_channel": "遮罩通道",
+            "upload": "上传"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "width": "宽度",
+            "height": "高度"
         }
     },
     "SplitImageChannels": {
@@ -1591,6 +1732,23 @@
             "right": "右",
             "bottom": "下",
             "feathering": "羽化"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    },
+    "ImagePadForOutpaintTargetSize": {
+        "title": "外补画板（尺寸）",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "target_width": "目标宽度",
+            "target_height": "目标高度",
+            "feathering": "羽化",
+            "upscale_method": "缩放方法"
         },
         "outputs": {
             "IMAGE": "图像",

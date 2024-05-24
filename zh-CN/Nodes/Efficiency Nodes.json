@@ -526,6 +526,15 @@
             "LoRA String": "字符串"
         }
     },
+    "LoRA Stack To String converter": {
+        "title": "LoRA堆转换为字符串",
+        "inputs": {
+            "lora_stack": "LoRA堆"
+        },
+        "outputs": {
+            "LoRA String": "字符串"
+        }
+    },
 
 
 
