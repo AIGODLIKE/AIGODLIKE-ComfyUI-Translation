@@ -73,5 +73,57 @@
         "outputs": {
             "ELLA_EMBEDS": "ELLA嵌入组"
         }
+    },
+    "CombineClipEllaEmbeds": {
+        "title": "合并CLIPELLA嵌入组",
+        "inputs": {
+            "cond": "条件",
+            "embeds": "嵌入组"
+        },
+        "outputs": {
+            "ELLA_EMBEDS": "ELLA嵌入组"
+        }
+    },
+    "SetEllaTimesteps": {
+        "title": "设置ELLA间隔",
+        "inputs": {
+            "model": "模型",
+            "ella": "ELLA",
+            "sigmas": "Sigmas"
+        },
+        "widgets": {
+            "scheduler": "调度器",
+            "steps": "步数",
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "ELLA": "ELLA"
+        }
+    },
+    "EllaEncode": {
+        "title": "ELLA编码",
+        "inputs": {
+            "ella": "ELLA",
+            "embeds": "嵌入组"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "EllaTextEncode": {
+        "title": "ELLA文本编码",
+        "inputs": {
+            "ella": "ELLA",
+            "text_encoder": "文本编码器",
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "text": "文本",
+            "text_clip": "CLIP文本"
+        },
+        "outputs": {
+            "CONDITIONING": "条件",
+            "CLIP CONDITIONING": "CLIP条件"
+        }
     }
 }
