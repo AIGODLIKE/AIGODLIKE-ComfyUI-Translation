@@ -1,0 +1,23 @@
+{
+    "ImageResize": {
+        "title": "图像缩放",
+        "inputs": {
+            "pixels": "图像",
+            "mask_optional": "遮罩(可选)"
+        },
+        "widgets": {
+            "action": "操作",
+            "smaller_side": "短边",
+            "larger_side": "长边",
+            "scale_factor": "缩放系数",
+            "resize_mode": "缩放模式",
+            "side_ratio": "宽高比",
+            "crop_pad_position": "裁剪区位置",
+            "pad_feathring": "区域羽化"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    }
+}
