@@ -1597,6 +1597,23 @@
             "MASK": "遮罩"
         }
     },
+    "ImagePadForOutpaintTargetSize": {
+        "title": "外补画板（尺寸）",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "target_width": "目标宽度",
+            "target_height": "目标高度",
+            "feathering": "羽化",
+            "upscale_method": "缩放方法"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    },
     "DownloadAndLoadCLIPSeg": {
         "title": "加载CLIPSeg",
         "widgets": {
