@@ -463,6 +463,17 @@
             "MASK": "遮罩"
         }
     },
+    "MaskFromList+": {
+        "title": "列表到遮罩",
+        "widgets": {
+            "values": "值",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
+    },
     "MaskFromColor+": {
         "title": "颜色到遮罩",
         "inputs": {
@@ -584,6 +595,29 @@
         },
         "outputs": {
             "IMAGE": "图像"
+        }
+    },
+    "LoadCLIPSegModels+": {
+        "title": "加载CLIP_Seg模型",
+        "outputs": {
+            "CLIP_SEG": "CLIP_Seg"
+        }
+    },
+    "ApplyCLIPSeg+": {
+        "title": "应用CLIP_Seg",
+        "inputs": {
+            "image": "图像",
+            "clip_seg": "CLIP_Seg"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "threshold": "阈值",
+            "smooth": "平滑",
+            "dilate": "膨胀",
+            "blur": "模糊"
+        },
+        "outputs": {
+            "MASK": "遮罩"
         }
     }
 }
