@@ -20,6 +20,81 @@
             "BRPL": "BrushNet节点束"
         }
     },
+    "BrushNet": {
+        "title": "BrushNet",
+        "inputs": {
+            "model": "模型",
+            "vae": "VAE",
+            "image": "图像",
+            "mask": "遮罩",
+            "brushnet": "BrushNet",
+            "positive": "正面条件",
+            "negative": "负面条件"
+        },
+        "widgets": {
+            "scale": "缩放",
+            "start_at": "开始引导步数",
+            "end_at": "结束引导步数"
+        },
+        "outputs": {
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latent": "Latent"
+        }
+    },
+    "CutForInpaint": {
+        "title": "局部重绘裁剪处理",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "origin": "origin"
+        }
+    },
+    "PowerPaintCLIPLoader": {
+        "title": "PowerPaintCLIP加载器",
+        "widgets": {
+            "base": "CLIP",
+            "powerpaint": "PowerPaint"
+        },
+        "outputs": {
+            "clip": "CLIP"
+        }
+    },
+    "PowerPaint": {
+        "title": "PowerPaint",
+        "inputs": {
+            "model": "模型",
+            "vae": "VAE",
+            "image": "图像",
+            "mask": "遮罩",
+            "powerpaint": "PowerPaint",
+            "clip": "CLIP",
+            "positive": "正面条件",
+            "negative": "负面条件"
+        },
+        "widgets": {
+            "fitting": "fitting",
+            "function": "模式",
+            "scale": "缩放",
+            "start_at": "开始引导步数",
+            "end_at": "结束引导步数"
+        },
+        "outputs": {
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latent": "Latent"
+        }
+    },
     "BrushNetInpaint": {
         "title": "BrushNet局部重绘",
         "inputs": {
