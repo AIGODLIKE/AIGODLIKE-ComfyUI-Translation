@@ -27,7 +27,7 @@
         }
     },
     "Automatic CFG - Negative": {
-        "title": "自动CFG(负面)",
+        "title": "自动CFG（负面）",
         "inputs": {
             "model": "模型"
         },
@@ -39,8 +39,39 @@
             "MODEL": "模型"
         }
     },
+    "Automatic CFG - Preset Loader": {
+        "title": "自动CFG（预设组）",
+        "inputs": {
+            "model" :"模型",
+            "join_global_parameters": "加入全局参数"
+        },
+        "widgets": {
+            "preset": "预设"
+        },
+        "outputs": {
+            "Model": "模型",
+            "Preset name": "预设名称",
+            "Parameters as string": "参数字符串"
+        }
+    },
+    "Automatic CFG - Excellent attention": {
+        "title": "自动CFG（完美注意力）",
+        "inputs": {
+            "model": "模型",
+            "attn_mod_for_positive_operation": "正面注意力修改",
+            "attn_mod_for_negative_operation": "负面注意力修改"
+        },
+        "widgets": {
+            "save_as_preset": "保存为预设",
+            "preset_name": "预设名称"
+        },
+        "outputs": {
+            "Model": "模型",
+            "Parameters as string": "参数字符串"
+        }
+    },
     "Automatic CFG - Advanced": {
-        "title": "自动CFG(高级)",
+        "title": "自动CFG（高级）",
         "inputs": {
             "model": "模型"
         },
@@ -67,8 +98,101 @@
             "MODEL": "模型"
         }
     },
+
+    "Temperature settings SDXL": {
+        "title": "温度设置（SDXL）",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "Temperature": "温度",
+            "Attention": "注意力"
+        },
+        "outputs": {
+            "Model": "模型"
+        }
+    },
+    "Temperature settings SD 1.5": {
+        "title": "温度设置（SD1.5）",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "Temperature": "温度",
+            "Attention": "注意力"
+        },
+        "outputs": {
+            "Model": "模型"
+        }
+    },
+    "Temperature settings CLIP": {
+        "title": "CLIP温度",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "Temperature": "温度"
+        },
+        "outputs": {
+            "CLIP": "CLIP"
+        }
+    },
+    "Temperature separate settings CLIP SDXL": {
+        "title": "CLIP温度（SDXL）",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "Temperature": "温度",
+            "CLIP_Model": "CLIP"
+        },
+        "outputs": {
+            "CLIP": "CLIP"
+        }
+    },
+
+    "Automatic CFG - Custom attentions": {
+        "title": "自动CFG（自定义注意力）",
+        "inputs": {
+            "model": "模型",
+            "attn_mod_for_negative_operation": "负面注意力修改",
+            "attn_mod_for_positive_operation": "正面注意力修改"
+        },
+        "widgets": {
+            "save_as_preset": "保存为预设",
+            "preset_name": "预设名称"
+        },
+        "outputs": {
+            "Model": "模型"
+        }
+    },
+    "Automatic CFG - Attention modifiers": {
+        "title": "自动CFG（注意力修改）",
+        "inputs": {
+            "join_parameters": "加入参数"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "Attention modifier": "注意力修改",
+            "Parameters as string": "参数字符串"
+        }
+    },
+    "Automatic CFG - Attention modifiers tester": {
+        "title": "自动CFG（注意力修改实验）",
+        "inputs": {
+            "join_parameters": "加入参数"
+        },
+        "outputs": {
+            "Attention modifier": "注意力修改",
+            "Parameters as string": "参数字符串"
+        }
+    },
+
     "Automatic CFG - Fastest": {
-        "title": "自动CFG(快速)",
+        "title": "自动CFG（快速）",
         "inputs": {
             "model": "模型"
         },
@@ -77,7 +201,7 @@
         }
     },
     "Automatic CFG - Post rescale only": {
-        "title": "自动CFG(仅后缩放)",
+        "title": "自动CFG（仅后缩放）",
         "inputs": {
             "model": "模型"
         },
