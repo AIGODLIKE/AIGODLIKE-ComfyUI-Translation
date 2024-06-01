@@ -1,8 +1,25 @@
 {
     "DynamiCrafterModelLoader": {
         "title": "DynamiCrafter模型加载器",
+        "inputs": {
+            "opt_openclippath": "CLIP路径(可选)"
+        },
         "widgets": {
             "ckpt_name": "模型名称",
+            "dtype": "剪枝类型",
+            "fp8_unet": "fp8_unet"
+        },
+        "outputs": {
+            "DynCraft_model": "DynamiCrafter模型"
+        }
+    },
+    "DownloadAndLoadDynamiCrafterModel": {
+        "title": "下载DynamiCrafter模型",
+        "inputs": {
+            "opt_openclippath": "CLIP路径(可选)"
+        },
+        "widgets": {
+            "model": "模型",
             "dtype": "剪枝类型",
             "fp8_unet": "fp8_unet"
         },
@@ -59,6 +76,43 @@
         "outputs": {
             "images": "图像",
             "last_image": "末尾图像"
+        }
+    },
+    "OpenCLIPVisionSelect": {
+        "title": "选择CLIPVision",
+        "inputs": {
+            "clip_name": "CLIP"
+        },
+        "outputs": {
+            "OPENCLIPVISIONPATH": "CLIPVision路径"
+        }
+    },
+    "ToonCrafterI2V": {
+        "title": "ToonCrafter图生视频",
+        "inputs": {
+            "model": "DynamiCrafter模型",
+            "image": "图像1",
+            "image2": "图像2",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "steps": "步数",
+            "cfg": "CFG",
+            "eta": "eta",
+            "frames": "帧数",
+            "prompt": "提示词",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "fs": "fs",
+            "keep_model_loaded": "保持模型加载",
+            "vae_dtype": "VAE剪枝",
+            "frame_window_size": "帧窗口尺寸",
+            "frame_window_stride": "帧窗口步长",
+            "num_videos": "视频数量",
+            "prune_first_las": "prune_first_las"
+        },
+        "outputs": {
+            "images": "图像"
         }
     }
 }

@@ -1,0 +1,22 @@
+{
+    "Image2Video": {
+        "title": "图像到视频",
+        "inputs": {
+            "image": "图像1",
+            "image2": "图像2"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "eta": "eta",
+            "cfg_scale": "CFG",
+            "steps": "步数",
+            "frame_count": "帧数",
+            "fps": "帧率"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    }
+}
