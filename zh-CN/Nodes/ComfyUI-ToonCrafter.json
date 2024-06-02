@@ -1,5 +1,5 @@
 {
-    "ToonCrafter": {
+    "ToonCrafterNode": {
         "title": "图像到视频",
         "inputs": {
             "image": "图像1",
