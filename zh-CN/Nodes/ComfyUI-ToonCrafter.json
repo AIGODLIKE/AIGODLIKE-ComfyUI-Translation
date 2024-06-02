@@ -6,6 +6,7 @@
             "image2": "图像2"
         },
         "widgets": {
+            "ckpt_name": "ckpt名称",
             "prompt": "提示词",
             "seed": "随机种",
             "control_after_generate": "运行后操作",
