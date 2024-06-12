@@ -135,6 +135,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[TiledDiffusion](https://github.com/shiimizu/ComfyUI-TiledDiffusion)|√|TODO|√|TODO|TODO|TODO|
 |[TiledKSampler](https://github.com/BlenderNeko/ComfyUI_TiledKSampler)|√|√|√|√|TODO|TODO|
 |[TinyTerra](https://github.com/TinyTerra/ComfyUI_tinyterraNodes.git)|√|TODO|√|TODO|TODO|TODO|TODO|
+|[ToonCrafter](https://github.com/AIGODLIKE/ComfyUI-ToonCrafter.git)|√|TODO|√|TODO|TODO|TODO|TODO|
 |[TripoAPI](https://github.com/VAST-AI-Research/ComfyUI-Tripo.git)|√|TODO|√|TODO|TODO|TODO|
 |[UltimateSDUpscale](https://github.com/ssitu/ComfyUI_UltimateSDUpscale)|√|√|√|TODO|TODO|TODO|
 |[Vextra Nodes](https://github.com/diontimmer/ComfyUI-Vextra-Nodes)|√|√|√|TODO|TODO|TODO|
