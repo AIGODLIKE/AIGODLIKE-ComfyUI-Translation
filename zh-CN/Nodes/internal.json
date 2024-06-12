@@ -1069,7 +1069,7 @@
 
 
     "StableCascade_EmptyLatentImage": {
-        "title": "StableCascade_空Latent",
+        "title": "空Latent_Cascade",
         "widgets": {
             "width": "宽度",
             "height": "高度",
@@ -1082,7 +1082,7 @@
         }
     },
     "StableCascade_StageC_VAEEncode": {
-        "title": "StableCascade_StageC_VAE编码",
+        "title": "VAE编码_Cascade_StageC",
         "inputs": {
             "image": "图像",
             "vae": "VAE"
@@ -1093,6 +1093,19 @@
         "outputs": {
             "stage_b": "Stage_B",
             "stage_c": "Stage_C"
+        }
+    },
+
+
+    "EmptySD3LatentImage": {
+        "title": "空Latent_SD3",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "LATENT": "Latent"
         }
     },
 
@@ -2119,6 +2132,17 @@
             "CLIP": "CLIP"
         }
     },
+    "TripleCLIPLoader": {
+        "title": "三CLIP加载器",
+        "widgets": {
+            "clip_name1": "CLIP1",
+            "clip_name2": "CLIP2",
+            "clip_name3": "CLIP3"
+        },
+        "outputs": {
+            "CLIP": "CLIP"
+        }
+    },
 
 
     "ConditioningZeroOut": {
@@ -2172,6 +2196,21 @@
             "width": "宽度",
             "height": "高度",
             "text": "文本"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "CLIPTextEncodeSD3": {
+        "title": "CLIP文本编码SD3",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "clip_l": "CLIP_L",
+            "clip_g": "CLIP_G",
+            "t5xxl": "T5XXL",
+            "empty_padding": "空填充"
         },
         "outputs": {
             "CONDITIONING": "条件"
@@ -2378,6 +2417,18 @@
     },
     "ModelSamplingStableCascade": {
         "title": "模型采样算法Cascade",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "shift": "偏移"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "ModelSamplingSD3": {
+        "title": "模型采样算法SD3",
         "inputs": {
             "model": "模型"
         },
