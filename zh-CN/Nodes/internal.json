@@ -1834,6 +1834,52 @@
     },
 
 
+    "EmptyLatentAudio": {
+        "title": "空Latent_Audio",
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "VAEEncodeAudio": {
+        "title": "VAE编码_Audio",
+        "inputs": {
+            "audio": "音频",
+            "vae": "VAE"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "VAEDecodeAudio": {
+        "title": "VAE解码_Audio",
+        "inputs": {
+            "samples": "Latent",
+            "vae": "VAE"
+        },
+        "outputs": {
+            "AUDIO": "音频"
+        }
+    },
+    "SaveAudio": {
+        "title": "保存音频",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀"
+        }
+    },
+    "LoadAudio": {
+        "title": "加载音频",
+        "widgets": {
+            "audio": "音频"
+        },
+        "outputs": {
+            "AUDIO": "音频"
+        }
+    },
+
+
     "CLIPTextEncodeControlnet": {
         "title": "CLIP文本编码ControlNet",
         "inputs": {
@@ -2411,6 +2457,17 @@
             "sampling": "采样",
                 "v_prediction": "V预测",
                 "eps": "等概率抽样",
+            "sigma_max": "最大Sigma",
+            "sigma_min": "最小Sigma"
+        }
+    },
+    "ModelSamplingContinuousV": {
+        "title": "模型连续采样算法V",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "sampling": "采样",
             "sigma_max": "最大Sigma",
             "sigma_min": "最小Sigma"
         }

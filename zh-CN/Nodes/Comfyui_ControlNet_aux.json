@@ -487,7 +487,20 @@
     },
 
     "DepthAnythingPreprocessor": {
-        "title": "DA深度预处理器",
+        "title": "DepthAnything深度预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "DepthAnythingV2Preprocessor": {
+        "title": "DepthAnythingV2深度预处理器",
         "inputs": {
             "image": "图像"
         },
@@ -500,7 +513,7 @@
         }
     },
     "Zoe_DepthAnythingPreprocessor": {
-        "title": "Zoe DA深度预处理器",
+        "title": "Zoe DepthAnything深度预处理器",
         "inputs": {
             "image": "图像"
         },

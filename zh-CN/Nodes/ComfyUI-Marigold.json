@@ -1,4 +1,55 @@
 {
+    "MarigoldModelLoader": {
+        "title": "Marigold模型加载器",
+        "widgets": {
+            "model": "模型"
+        },
+        "outputs": {
+            "marigold_model": "Marigold模型"
+        },
+        "description": "\n基于扩散的单目深度推算: \nhttps://github.com/prs-eth/Marigold  \n  \n使用 Diffusers 0.28.0 Marigold 管线。模型会自动下载到 ComfyUI/Models/diffusers 文件夹内"
+    },
+    "MarigoldDepthEstimation_v2": {
+        "title": "Marigold_v2深度推算",
+        "inputs": {
+            "marigold_model": "模型",
+            "image": "图像"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "denoise_steps": "步数",
+            "n_repeat": "重复次数",
+            "ensemble_size": "整体尺寸",
+            "processing_resolution": "处理分辨率",
+            "scheduler": "调度器",
+            "use_taesd_vae": "使用TAESD_VAE"
+        },
+        "outputs": {
+            "image": "图像"
+        },
+        "description": "\n基于扩散的单目深度推算: \nhttps://github.com/prs-eth/Marigold  \n  \n使用 Diffusers 0.28.0 Marigold 管线。"
+    },
+    "MarigoldDepthEstimation_v2_Video": {
+        "title": "Marigold_v2深度推算视频",
+        "inputs": {
+            "marigold_model": "Marigold模型",
+            "image": "图像"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "denoise_steps": "步数",
+            "processing_resolution": "处理分辨率",
+            "scheduler": "调度器",
+            "blend_factor": "混合系数",
+            "use_taesd_vae": "使用TAESD_VAE"
+        },
+        "outputs": {
+            "image": "图像"
+        },
+        "description": "\n基于扩散的单目深度推算: \nhttps://github.com/prs-eth/Marigold  \n  \n使用 Diffusers 0.28.0 Marigold 管线。\n这个节点使用上一帧作为初始Latent，用以平滑视频。"
+    },
     "MarigoldDepthEstimation": {
         "title": "Marigold深度推算",
         "inputs": {
