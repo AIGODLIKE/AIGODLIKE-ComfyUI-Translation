@@ -1,0 +1,40 @@
+{
+    "sdBxb_textInput": {
+        "title": "文本输入"
+    },
+    "sdBxb": {
+        "title": "SD变现宝",
+        "inputs": {
+            "app_img1(optional)": "作品主图1（连接“加载图像”节点，可选）",
+            "app_img2(optional)": "作品主图2（连接“加载图像”节点，可选）",
+            "app_img3(optional)": "作品主图3（连接“加载图像”节点，可选）",
+            "custom_img1(optional)": "用户自定义图片1（连接“加载图像”节点，可选）",
+            "custom_img2(optional)": "用户自定义图片2（连接“加载图像”节点，可选）",
+            "custom_img3(optional)": "用户自定义图片3（连接“加载图像”节点，可选）",
+            "custom_video1(optional)": "用户自定义视频1（连接“VHS_LoadVideo”节点，可选）",
+            "custom_video2(optional)": "用户自定义视频2（连接“VHS_LoadVideo”节点，可选）",
+            "custom_video3(optional)": "用户自定义视频3（连接“VHS_LoadVideo”节点，可选）",
+            "custom_text1(optional)": "用户自定义文本1（连接“文本输入”节点，可选）",
+            "custom_text2(optional)": "用户自定义文本2（连接“文本输入”节点，可选）",
+            "custom_text3(optional)": "用户自定义文本3（连接“文本输入”节点，可选）"
+        },
+        "widgets": {
+            "app_title": "作品标题",
+            "app_desc": "作品功能介绍",
+            "app_fee": "作品服务单价（分）",
+            "free_times": "免费次数",
+            "custom_img1_desc": "自定义图片1上传说明",
+            "custom_img2_desc": "自定义图片2上传说明",
+            "custom_img3_desc": "自定义图片3上传说明",
+            "custom_video1_desc": "自定义视频1上传说明",
+            "custom_video2_desc": "自定义视频2上传说明",
+            "custom_video3_desc": "自定义视频3上传说明",
+            "custom_text1_desc": "自定义文本1输入说明",
+            "custom_text2_desc": "自定义文本2输入说明",
+            "custom_text3_desc": "自定义文本3输入说明",
+            "custom_text1(optional)": "用户自定义文本1（连接“文本输入”节点，可选）",
+            "custom_text2(optional)": "用户自定义文本2（连接“文本输入”节点，可选）",
+            "custom_text3(optional)": "用户自定义文本3（连接“文本输入”节点，可选）"
+        }
+    }
+}
