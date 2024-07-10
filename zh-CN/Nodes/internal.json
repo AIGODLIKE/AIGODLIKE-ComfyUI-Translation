@@ -149,7 +149,7 @@
         }
     },
     "AlignYourStepsScheduler": {
-        "title": "AlighYourSteps调度器",
+        "title": "AlignYourSteps调度器",
         "widgets": {
             "model_type": "模型类型",
             "steps": "步数"
