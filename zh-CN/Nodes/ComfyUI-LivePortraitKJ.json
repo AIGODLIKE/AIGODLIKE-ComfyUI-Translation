@@ -1,0 +1,37 @@
+{
+    "DownloadAndLoadLivePortraitModels": {
+        "title": "下载并加载LivePortrait模型",
+        "widgets": {
+            "precision": "精度"
+        },
+        "outputs": {
+            "live_portrait_pipe": "LivePortrait管线"
+        }
+    },
+    "LivePortraitProcess": {
+        "title": "LivePortrait处理",
+        "inputs": {
+            "pipeline": "LivePortrait管线",
+            "source_image": "原图像",
+            "driving_images": "驱动图像"
+        },
+        "widgets": {
+            "dsize": "面部裁剪大小",
+            "scale": "面部缩放",
+            "vx_ratio": "面部纵向偏移",
+            "vy_ratio": "面部横向偏移",
+            "lip_zero": "嘴唇初始闭合",
+            "eye_retargeting": "眼部重定向",
+            "eyes_retargeting_multiplier": "眼部重定向乘数",
+            "lip_retargeting": "嘴唇重定向",
+            "lip_retargeting_multiplier": "嘴唇重定向乘数",
+            "stitching": "运动修复",
+            "relative": "相对运动",
+            "onnx_device": "onnx设备"
+        },
+        "outputs": {
+            "cropped_images": "裁剪图像",
+            "full_images": "图像"
+        }
+    }
+}
