@@ -149,7 +149,7 @@
         }
     },
     "AlignYourStepsScheduler": {
-        "title": "AlighYourSteps调度器",
+        "title": "AlignYourSteps调度器",
         "widgets": {
             "model_type": "模型类型",
             "steps": "步数"
@@ -206,6 +206,16 @@
     },
     "SamplerEulerAncestral": {
         "title": "Euler_A采样器",
+        "widgets": {
+            "eta": "eta",
+            "s_noise": "s_noise"
+        },
+        "outputs": {
+            "SAMPLER": "采样器"
+        }
+    },
+    "SamplerEulerAncestralCFG++": {
+        "title": "Euler_A_CFG++采样器",
         "widgets": {
             "eta": "eta",
             "s_noise": "s_noise"
@@ -2164,7 +2174,7 @@
         }
     },
     "SamplerEulerCFGpp": {
-        "title": "EulerCFG++采样器",
+        "title": "Euler_CFG++采样器",
         "widgets": {
             "version": "版本"
         },
