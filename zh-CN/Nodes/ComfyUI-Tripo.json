@@ -28,5 +28,45 @@
         "inputs": {
             "mesh": "网格"
         }
+    },
+    "TripoAPIDraft": {
+        "title": "TripoAPI生成模型",
+        "inputs": {
+            "apikey": "APIKey",
+            "image": "图像"
+        },
+        "widgets": {
+            "mode": "模式",
+            "prompt": "提示词"
+        },
+        "outputs": {
+            "MESH": "网格",
+            "MODEL_TASK_ID": "模型任务ID",
+            "API_KEY": "APIKey"
+        }
+    },
+    "TripoAnimateRigNode": {
+        "title": "Tripo绑骨模型",
+        "inputs": {
+            "original_model_task_id": "模型任务ID",
+            "apikey": "APIKey"
+        },
+        "outputs": {
+            "MESH": "网格",
+            "RIG_TASK_ID": "绑骨任务ID"
+        }
+    },
+    "TripoAnimateRetargetNode": {
+        "title": "Tripo重定向模型",
+        "inputs": {
+            "original_model_task_id": "模型任务ID",
+            "apikey": "APIKey"
+        },
+        "widgets": {
+            "animation": "动画"
+        },
+        "outputs": {
+            "MESH": "网格"
+        }
     }
 }
