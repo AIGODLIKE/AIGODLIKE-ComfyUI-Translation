@@ -8,6 +8,7 @@
         },
         "widgets": {
             "ckpt_name": "模型",
+            "vram_opt_strategy": "VRAM策略",
             "prompt": "提示词",
             "seed": "随机种",
             "control_after_generate": "运行后操作",
@@ -16,6 +17,30 @@
             "steps": "步数",
             "frame_count": "帧数",
             "fps": "帧率"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ToonCrafterWithSketch": {
+        "title": "ToonCrafter线条引导节点",
+        "inputs": {
+            "image": "图像1",
+            "image2": "图像2",
+            "frame_guides": "引导图像"
+        },
+        "widgets": {
+            "ckpt_name": "模型",
+            "vram_opt_strategy": "VRAM策略",
+            "prompt": "提示词",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "eta": "eta",
+            "cfg_scale": "CFG",
+            "steps": "步数",
+            "frame_count": "帧数",
+            "fps": "帧率",
+            "control_scale": "引导强度"
         },
         "outputs": {
             "IMAGE": "图像"
