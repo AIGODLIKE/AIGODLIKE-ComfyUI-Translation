@@ -175,13 +175,51 @@
 
 
     "LayerColor: ColorAdapter": {
-        "title": "调色",
+        "title": "颜色适配",
         "inputs": {
             "image": "图像",
             "color_ref_image": "参考图像"
         },
         "widgets": {
             "opacity": "不透明"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerColor: AutoAdjust": {
+        "title": "自动调色",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "strength": "强度",
+            "brightness": "亮度",
+            "contrast": "对比度",
+            "saturation": "饱和度",
+            "red": "红色",
+            "green": "绿色",
+            "blue": "蓝色"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerColor: AutoAdjustV2": {
+        "title": "自动调色 V2",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "strength": "强度",
+            "brightness": "亮度",
+            "contrast": "对比度",
+            "saturation": "饱和度",
+            "red": "红色",
+            "green": "绿色",
+            "blue": "蓝色",
+            "mode": "模式"
         },
         "outputs": {
             "image": "图像"
