@@ -1,0 +1,44 @@
+{
+    "UltraPixelLoad": {
+        "title": "UltraPixel加载器",
+        "widgets": {
+            "ultrapixel": "UltraPixel",
+            "stage_a": "Stage_A",
+            "stage_b": "Stage_B",
+            "stage_c": "Stage_C",
+            "effnet": "effnet",
+            "previewer": "previewer",
+            "controlnet": "ControlNet",
+            "ultrapixel_directory": "UltraPixel路径",
+            "stablecascade_directory": "StableCascade路径"
+        },
+        "outputs": {
+            "model": "UltraPixel"
+        }
+    },
+    "UltraPixelProcess": {
+        "title": "UltraPixel处理",
+        "inputs": {
+            "model": "UltraPixel",
+            "controlnet_image": "图像"
+        },
+        "widgets": {
+            "height": "高度",
+            "width": "宽度",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "dtype": "剪枝类型",
+            "stage_a_tiled": "Stage_A分块",
+            "stage_b_steps": "Stage_B步数",
+            "stage_b_cfg": "Stage_B_CFG",
+            "stage_c_steps": "Stage_C步数",
+            "stage_C_cfg": "Stage_C_CFG",
+            "controlnet_weight": "ControlNet权重",
+            "prompt": "提示词"
+        },
+        "outputs": {
+            "image": "图像",
+            "edge_preview": "ControlNet预览"
+        }
+    }
+}
