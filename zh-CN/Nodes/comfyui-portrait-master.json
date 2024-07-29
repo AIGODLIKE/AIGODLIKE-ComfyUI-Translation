@@ -1,4 +1,118 @@
 {
+    "PortraitMasterBaseCharacter": {
+        "title": "人像大师：基础",
+        "inputs": {
+            "text_in": "文本输入",
+            "seed": "随机种"
+        },
+        "widgets": {
+            "shot": "镜头类型",
+            "shot_weight": "镜头权重",
+            "gender": "性别",
+            "androgynous": "双性",
+            "age": "年龄",
+            "nationality_1": "人种",
+            "nationality_2": "人种",
+            "nationality_mix": "人种混合",
+            "body_type": "体型",
+            "body_type_weight": "体型权重",
+            "eyes_color": "眼睛颜色",
+            "eye_shape": "眼睛形状",
+            "eyes_shape": "眼睛形状",
+            "lips_color": "嘴唇颜色",
+            "lips_shape": "嘴唇形状",
+            "facial_expression": "表情",
+            "facial_expression_weight": "表情权重",
+            "face_shape": "脸型",
+            "face_shape_weight": "脸型权重",
+            "facial_asymmetry": "颜面不对称",
+            "hair_style": "发型",
+            "hair_color": "头发颜色",
+            "hair_length": "头发长度",
+            "disheveled": "乱发",
+            "beard": "胡子",
+            "beard_color": "胡子颜色",
+            "active": "启用"
+        },
+        "outputs": {
+            "text_out": "文本"
+        }
+    },
+    "PortraitMasterSkinDetails": {
+        "title": "人像大师：皮肤",
+        "inputs": {
+            "text_in": "文本输入",
+            "seed": "随机种"
+        },
+        "widgets": {
+            "natural_skin": "自然皮肤",
+            "bare_face": "素颜",
+            "washed_face": "湿脸",
+            "dried_face": "干脸",
+            "skin_details": "皮肤细节",
+            "skin_pores": "毛孔",
+            "dimples": "酒窝",
+            "wrinkles": "皱纹",
+            "freckles": "雀斑",
+            "moles": "痣",
+            "skin_imperfections": "瑕疵",
+            "skin_acne": "粉刺",
+            "tanned_skin": "晒黑",
+            "eyes_details": "眼部细节",
+            "iris_details": "瞳孔细节",
+            "circular_iris": "圆形虹膜",
+            "circular_pupil": "圆形瞳孔",
+            "active": "启用"
+        },
+        "outputs": {
+            "text_out": "文本"
+        }
+    },
+    "PortraitMasterStylePose": {
+        "title": "人像大师：风格与姿势",
+        "inputs": {
+            "text_in": "文本输入",
+            "seed": "随机种"
+        },
+        "widgets": {
+            "model_pose": "姿势",
+            "clothes": "服装",
+            "makeup": "化妆",
+            "light_type": "灯光类型",
+            "light_direction": "灯光方向",
+            "light_weight": "灯光权重",
+            "style_1": "风格_1",
+            "style_1_weight": "风格权重_1",
+            "style_2": "风格_2",
+            "style_2_weight": "风格权重_2",
+            "photorealism_improvement": "提升真实度",
+            "active": "启用"
+        },
+        "outputs": {
+            "text_out": "文本"
+        }
+    },
+    "PortraitMasterMakeup": {
+        "title": "人像大师：妆容",
+        "inputs": {
+            "text_in": "文本输入",
+            "seed": "随机种"
+        },
+        "widgets": {
+            "makeup_type": "妆容类型",
+            "makeup_color": "妆容颜色",
+            "eyeshadow": "眼影",
+            "eyeliner": "眼线",
+            "mascara": "烟熏",
+            "blush": "腮红",
+            "lipstick": "口红",
+            "lip_gloss": "唇彩",
+            "active": "启用"
+        },
+        "outputs": {
+            "text_out": "文本"
+        }
+    },
     "PortraitMaster": {
         "title": "人像大师",
         "widgets": {
