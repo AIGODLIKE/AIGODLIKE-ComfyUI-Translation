@@ -1,4 +1,40 @@
 {
+    "ACN_ControlNet++LoaderSingle": {
+        "title": "ControlNet++加载器（单独）",
+        "widgets": {
+            "name": "名称",
+            "control_type": "控制类型"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "ACN_ControlNet++LoaderAdvanced": {
+        "title": "ControlNet++加载器（高级）",
+        "inputs": {
+            "plus_input": "ControlNet++输入组"
+        },
+        "widgets": {
+            "name": "名称"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet",
+            "IMAGE": "图像"
+        }
+    },
+    "ACN_ControlNet++InputNode": {
+        "title": "ControlNet++输入",
+        "inputs": {
+            "image": "图像",
+            "prev_plus_input": "前输入组"
+        },
+        "widgets": {
+            "control_type": "控制类型"
+        },
+        "outputs": {
+            "PLUS_INPUT": "ControlNet++输入组"
+        }
+    },
     "TimestepKeyframe": {
         "title": "帧间隔",
         "inputs": {
@@ -386,6 +422,15 @@
         },
         "outputs": {
             "CONTROL_NET": "ControlNet"
+        }
+    },
+    "ACN_SparseCtrlWeightExtras": {
+        "title": "SparseCtrl附加权重",
+        "inputs": {
+            "cn_weights": "ControlNet权重"
+        },
+        "outputs": {
+            "cn_extras": "ControlNet附加组"
         }
     },
     "ACN_SparseCtrlLoaderAdvanced": {
