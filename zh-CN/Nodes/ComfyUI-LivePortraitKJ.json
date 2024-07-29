@@ -12,26 +12,117 @@
         "title": "LivePortrait处理",
         "inputs": {
             "pipeline": "LivePortrait管线",
+            "crop_info": "裁剪信息",
             "source_image": "原图像",
-            "driving_images": "驱动图像"
+            "driving_images": "驱动图像",
+            "opt_retargeting_info": "重定向信息(可选)"
+        },
+        "widgets": {
+            "lip_zero_threhold": "初始闭合阈值",
+            "stitching": "运动修复",
+            "delta_multiplier": "delta乘数",
+            "mismatch_method": "mismatch_method",
+            "relative_motion_mode": "相对运动模式",
+            "driving_smooth_observation_variance": "平滑移动"
+        },
+        "outputs": {
+            "cropped_image": "裁剪图像",
+            "output": "LivePOrtrait输出"
+        }
+    },
+    "LivePortraitLoadCropper": {
+        "title": "加载InsightFace裁剪",
+        "widgets": {
+            "onnx_device": "onnx设备",
+            "keep_model_loaded": "保持模型加载",
+            "detection_threshold": "检测阈值"
+        },
+        "outputs": {
+            "cropper": "裁剪框架"
+        }
+    },
+    "LivePortraitLoadMediaPipeCropper": {
+        "title": "加载MediaPipe裁剪",
+        "widgets": {
+            "landmarkrunner_onnx_device": "LandmarkrunnerONNX设备",
+            "keep_model_loaded": "保持模型加载"
+        },
+        "outputs": {
+            "cropper": "裁剪框架"
+        }
+    },
+    "LivePortraitLoadFaceAlignmentCropper": {
+        "title": "加载FaceAlignment裁剪",
+        "widgets": {
+            "face_detector": "面部检测",
+            "landmarkrunner_device": "Landmarkrunner设备",
+            "face_detector_device": "面部检测设备",
+            "face_detector_dtype": "面部检测剪枝",
+            "keep_model_loaded": "保持模型加载"
+        },
+        "outputs": {
+            "cropper": "裁剪框架"
+        }
+    },
+    "LivePortraitCropper": {
+        "title": "LivePortrait裁剪",
+        "inputs": {
+            "pipeline": "LivePortrait管线",
+            "cropper": "裁剪框架",
+            "source_image": "原图像"
         },
         "widgets": {
             "dsize": "面部裁剪大小",
             "scale": "面部缩放",
             "vx_ratio": "面部纵向偏移",
             "vy_ratio": "面部横向偏移",
-            "lip_zero": "嘴唇初始闭合",
-            "eye_retargeting": "眼部重定向",
-            "eyes_retargeting_multiplier": "眼部重定向乘数",
-            "lip_retargeting": "嘴唇重定向",
-            "lip_retargeting_multiplier": "嘴唇重定向乘数",
-            "stitching": "运动修复",
-            "relative": "相对运动",
-            "onnx_device": "onnx设备"
+            "face_index": "面部索引",
+            "face_index_order": "面部索引排序",
+            "rotate": "旋转"
         },
         "outputs": {
             "cropped_images": "裁剪图像",
-            "full_images": "图像"
+            "crop_info": "裁剪信息"
+        }
+    },
+    "LivePortraitRetargeting": {
+        "title": "LivePortrait重定向",
+        "inputs": {
+            "driving_crop_info": "裁剪信息"
+        },
+        "widgets": {
+            "eye_retargeting": "眼部重定向",
+            "eyes_retargeting_multiplier": "眼部重定向乘数",
+            "lip_retargeting": "嘴唇重定向",
+            "lip_retargeting_multiplier": "嘴唇重定向乘数"
+        },
+        "outputs": {
+            "retargeting_info": "重定向信息"
+        }
+    },
+    "LivePortraitComposite": {
+        "title": "LivePortrait合成",
+        "inputs": {
+            "source_image": "原图像",
+            "cropped_image": "裁剪图像",
+            "liveportrait_out": "LivePOrtrait输出",
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "full_images": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "KeypointsToImage": {
+        "title": "关键点到图像",
+        "inputs": {
+            "crop_info": "裁剪信息"
+        },
+        "widgets": {
+            "draw_lines": "draw_lines"
+        },
+        "outputs": {
+            "keypoints_image": "关键点图像"
         }
     }
 }
