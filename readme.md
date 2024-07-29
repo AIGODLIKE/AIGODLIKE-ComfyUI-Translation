@@ -98,6 +98,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[LayerStyle](https://github.com/chflame163/ComfyUI_LayerStyle)|√|TODO|√|TODO|TODO|TODO|
 |[LCM](https://github.com/0xbitches/ComfyUI-LCM)|√|TODO|√|TODO|TODO|TODO|
 |[Literals](https://github.com/M1kep/ComfyLiterals.git)|√|TODO|√|TODO|TODO|TODO|
+|[LivePortrait(KJ)](https://github.com/kijai/ComfyUI-LivePortraitKJ.git)|√|TODO|√|TODO|TODO|TODO|
 |[LoadLoraWithTags](https://github.com/Extraltodeus/LoadLoraWithTags.git)|√|TODO|√|TODO|TODO|TODO|
 |[Logic](https://github.com/theUpsider/ComfyUI-Logic.git)|√|TODO|√|TODO|TODO|TODO|
 |[LoraAutoTrigger](https://github.com/idrirap/ComfyUI-Lora-Auto-Trigger-Words.git)|√|TODO|√|TODO|TODO|TODO|
