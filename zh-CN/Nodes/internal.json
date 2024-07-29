@@ -2357,6 +2357,15 @@
             "CONDITIONING": "条件"
         }
     },
+    "CLIPTextEncodeHunyuanDiT": {
+        "title": "CLIP文本编码Hunyuan",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
 
 
     "ModelMergeSD1": {
@@ -2381,6 +2390,16 @@
     },
     "ModelMergeSDXL": {
         "title": "模型融合(SDXL)",
+        "inputs": {
+            "model1": "模型1",
+            "model2": "模型2"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "ModelMergeSD3_2B": {
+        "title": "模型融合(SD3_2B)",
         "inputs": {
             "model1": "模型1",
             "model2": "模型2"
@@ -2581,6 +2600,18 @@
     },
     "ModelSamplingSD3": {
         "title": "模型采样算法SD3",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "shift": "偏移"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "ModelSamplingAuraFlow": {
+        "title": "模型采样算法AuraFlow",
         "inputs": {
             "model": "模型"
         },
