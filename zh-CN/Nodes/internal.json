@@ -420,6 +420,18 @@
             "MODEL": "模型"
         }
     },
+    "FluxGuidance": {
+        "title": "Flux引导",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "guidance": "引导"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
 
 
     "ImageOnlyCheckpointLoader": {
@@ -2366,6 +2378,20 @@
             "CONDITIONING": "条件"
         }
     },
+    "CLIPTextEncodeFlux": {
+        "title": "CLIP文本编码Flux",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "clip_l": "CLIP_L",
+            "t5xxl": "T5XXL",
+            "guidance": "引导"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
 
 
     "ModelMergeSD1": {
@@ -2549,6 +2575,16 @@
             "MODEL": "模型"
         }
     },
+    "ModelMergeFlux1": {
+        "title": "融合Flux1模型",
+        "inputs": {
+            "model1": "模型1",
+            "model2": "模型2"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
 
     "ModelSamplingDiscrete": {
         "title": "模型离散采样算法",
@@ -2622,6 +2658,23 @@
             "MODEL": "模型"
         }
     },
+    "ModelSamplingFlux": {
+        "title": "模型采样算法Flux",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "max_shift": "最大偏移",
+            "base_shift": "基础偏移",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+
+
     "RescaleCFG": {
         "title": "缩放CFG",
         "inputs": {
