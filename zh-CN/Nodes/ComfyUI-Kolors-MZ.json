@@ -1,0 +1,115 @@
+{
+    "MZ_ChatGLM3Loader": {
+        "title": "ChatGLM3加载器",
+        "widgets": {
+            "chatglm3_checkpoint": "ChatGLM3模型"
+        },
+        "outputs": {
+            "chatglm3_model": "ChatGLM3"
+        }
+    },
+    "MZ_ChatGLM3_V2": {
+        "title": "ChatGLM3编码_V2",
+        "inputs": {
+            "chatglm3_model": "ChatGLM3"
+        },
+        "widgets": {
+            "text": "文本"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "MZ_ChatGLM3_Advance_V2": {
+        "title": "ChatGLM3编码_V2高级",
+        "inputs": {
+            "chatglm3_model": "ChatGLM3"
+        },
+        "widgets": {
+            "text": "文本",
+            "width": "宽度",
+            "height": "高度",
+            "crop_w": "裁剪宽度",
+            "crop_h": "裁剪高度",
+            "target_width": "目标宽度",
+            "target_height": "目标高度"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "MZ_ChatGLM3Embeds2Conditioning": {
+        "title": "ChatGLM3嵌入组到条件",
+        "inputs": {
+            "kolors_embeds": "Kolors嵌入组"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "crop_w": "裁剪宽度",
+            "crop_h": "裁剪高度",
+            "target_width": "目标宽度",
+            "target_height": "目标高度"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件"
+        }
+    },
+    "MZ_KolorsCheckpointLoaderSimple": {
+        "title": "Kolors模型加载器（简易）",
+        "widgets": {
+            "ckpt_name": "模型名称"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "VAE": "VAE"
+        }
+    },
+    "MZ_KolorsControlNetLoader": {
+        "title": "KolorsControlNet加载器",
+        "widgets": {
+            "control_net_name": "ControlNet名称"
+        },
+        "outputs": {
+            "ControlNet": "ControlNet"
+        }
+    },
+    "MZ_KolorsUNETLoaderV2": {
+        "title": "KolorsUNET加载器_V2",
+        "widgets": {
+            "unet_name": "UNET名称"
+        },
+        "outputs": {
+            "model": "模型"
+        }
+    },
+    "MZ_KolorsControlNetPatch": {
+        "title": "KolorsControlNet转换",
+        "inputs": {
+            "control_net": "ControlNet",
+            "model": "模型"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    },
+    "MZ_ApplySDXLSamplingSettings": {
+        "title": "应用SDXL采样设置",
+        "inputs": {
+            "model": "模型"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "MZ_ApplyCUDAGenerator": {
+        "title": "应用CUDA生成器",
+        "inputs": {
+            "model": "模型"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    }
+}

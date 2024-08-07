@@ -1,0 +1,65 @@
+{
+    "DownloadAndLoadKolorsModel": {
+        "title": "下载并加载Kolors模型",
+        "widgets": {
+            "model": "模型",
+            "precision": "精度"
+        },
+        "outputs": {
+            "kolors_model": "Kolors模型"
+        }
+    },
+    "DownloadAndLoadChatGLM3": {
+        "title": "下载并加载ChatGLM3",
+        "widgets": {
+            "precision": "精度"
+        },
+        "outputs": {
+            "chatglm3_model": "ChatGLM3"
+        }
+    },
+    "KolorsSampler": {
+        "title": "Kolors采样器",
+        "inputs": {
+            "kolors_model": "Kolors模型",
+            "kolors_embeds": "Kolors嵌入组",
+            "latent": "Latent"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "steps": "步数",
+            "cfg": "CFG",
+            "scheduler": "调度器",
+            "denoise_strength": "降噪"
+        },
+        "outputs": {
+            "latent": "Latent"
+        }
+    },
+    "KolorsTextEncode": {
+        "title": "Kolors文本编码",
+        "inputs": {
+            "chatglm3_model": "ChatGLM3"
+        },
+        "widgets": {
+            "prompt": "正面提示词",
+            "negative_prompt": "负面提示词",
+            "num_images_per_prompt": "图像数量"
+        },
+        "outputs": {
+            "kolors_embeds": "Kolors嵌入组"
+        }
+    },
+    "LoadChatGLM3": {
+        "Title": "加载ChatGLM3",
+        "widgets": {
+            "chatglm3_checkpoint": "ChatGLM3模型"
+        },
+        "outputs": {
+            "chatglm3_model": "ChatGLM3"
+        }
+    }
+}

@@ -1,0 +1,92 @@
+{
+    "AdvancedLivePortrait": {
+        "title": "高级LivePortrait",
+        "inputs": {
+            "src_image": "图像",
+            "motion_link": "动态数据",
+            "driving_images": "参考图像"
+        },
+        "widgets": {
+            "retargeting_eyes": "眼部重定向",
+            "retargeting_mouth": "嘴部重定向",
+            "crop_factor": "应用区域系数",
+            "trun_on": "启用",
+            "command": "命令"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "ExpressionEditor": {
+        "title": "表情编辑器",
+        "inputs": {
+            "src_image": "图像",
+            "sample_image": "参考图像"
+        },
+        "widgets": {
+            "rotate_pitch": "头部俯仰",
+            "rotate_yaw": "头部旋转",
+            "rotate_roll": "头部倾斜",
+            "blink": "闭眼睁眼",
+            "eyebrow": "皱眉挑眉",
+            "wink": "眨眼",
+            "pupil_x": "瞳孔左右",
+            "pupil_y": "瞳孔上下",
+            "aaa": "发声aa",
+            "eee": "发声yi",
+            "woo": "发声ou",
+            "smile": "微笑",
+            "src_ratio": "原表情强度",
+            "sample_ratio": "参考表情强度",
+            "crop_factor": "应用区域系数"
+        },
+        "outputs": {
+            "image": "图像",
+            "motion_link": "动态数据",
+            "save_exp": "表情数据"
+        }
+    },
+    "LoadExpData": {
+        "title": "加载表情数据",
+        "widgets": {
+            "file_name": "文件名",
+            "ratio": "系数"
+        },
+        "outputs": {
+            "exp": "表情数据"
+        }
+    },
+    "SaveExpData": {
+        "title": "保存表情数据",
+        "inputs": {
+            "save_exp": "表情数据"
+        },
+        "widgets": {
+            "file_name": "文件名"
+        },
+        "outputs": {
+            "file_name": "文件名"
+        }
+    },
+    "ExpData": {
+        "title": "表情数据",
+        "inputs": {
+            "add_exp": "表情数据"
+        },
+        "outputs": {
+            "exp": "表情数据"
+        }
+    },
+    "PrintExpData:": {
+        "title": "输出表情数据",
+        "inputs": {
+            "exp": "表情数据"
+        },
+        "widgets": {
+            "cut_noise": "cut_noise"
+        },
+        "outputs": {
+            "exp": "表情数据"
+        }
+    }
+}
