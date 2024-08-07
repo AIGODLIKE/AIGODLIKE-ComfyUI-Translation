@@ -1,0 +1,334 @@
+{
+    "array_step": {
+        "title": "数组-步长",
+        "inputs": {
+            "start": "起始值",
+            "step": "步数",
+            "increment": "增量"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "array": "数组"
+        }
+    },
+
+    "array_end_increment": {
+        "title": "数组-最终值-增量",
+        "inputs": {
+            "start": "起始值",
+            "end": "最终值",
+            "increment": "增量"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "array": "数组"
+        }
+    },
+
+    "array_end_step": {
+        "title": "数组-最终值-步长",
+        "inputs": {
+            "start": "起始值",
+            "step": "步数",
+            "end": "最终值"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "array": "数组"
+        }
+    },
+
+    "array_step_increment": {
+        "title": "数组-范围",
+        "inputs": {
+            "start": "起始值",
+            "step": "步数",
+            "increment": "增量"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "array": "数组"
+        }
+    },
+
+    "string_to_array": {
+        "title": "字符串转数组",
+        "inputs": {
+            "string_input": "输入字符串",
+            "arrangement": "清理字符"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "array": "数组"
+        }
+    },
+
+
+    "array_t": {
+        "title": "转置数组",
+        "inputs": {
+            "array_input": "输入数组"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "array_output": "输出数组"
+        }
+    },
+
+    "array_number_to_angle": {
+        "title": "数组-数字转角度",
+        "inputs": {
+            "array_input": "输入数组",
+            "half_angle": "半角"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "array_angle": "输出数组(角度)"
+        }
+    },
+
+    "array_append": {
+        "title": "数组-拼接",
+        "inputs": {
+            "array_input": "输入数组",
+            "append_input": "拼接的数组"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "array_append": "拼接后的数组",
+            "array_input_surplus": "输入数组剩余",
+            "array_append_surplus": "拼接数组剩余"
+        }
+    },
+
+    "array_is_null": {
+        "title": "数组-是否为空",
+        "inputs": {
+            "array_input": "输入数组"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "IsNull": "是否为空"
+        }
+    },
+
+    "array_attribute": {
+        "title": "数组-属性",
+        "inputs": {
+            "array_input": "输入数组"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "length": "数组长度",
+            "size":"数组大小",
+            "dimension":"数组维度"
+        }
+    },
+
+    "array_convert": {
+        "title": "数组-类型转换",
+        "inputs": {
+            "array_input": "输入数组"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "array_int": "数组(整数)",
+            "array_abs": "数组(绝对值)",
+            "array_string": "数组(字符串)"
+        }
+    },
+
+    "array_select_element":{
+        "title": "数组-元素选择",
+        "inputs": {
+            "array_input": "输入数组",
+            "index": "索引"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "element_array": "选择的元素"
+        }
+    },
+
+
+    "load_mesh":{
+        "title": "加载网格",
+        "inputs": {
+            "mesh_file_path": "文件路径"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "reload": "重载"
+        }
+    },
+
+    "mesh_data":{
+        "title": "网格数据",
+        "inputs": {
+            "mesh_input": "输入网格"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "vertex+face": "顶点+面",
+            "Normal(vn+fn)": "法线(vn+fn)",
+            "UVs(vt+ft)": "UVs(vt+ft)",
+            "vertex_color[N3]": "顶点颜色[N3]",
+            "Texture_Diffuse": "贴图-漫反射",
+            "Texture_reflection": "贴图-反射",
+            "mesh_device": "设备"
+        }
+    },
+
+    "mesh_data_Statistics":{
+        "title": "网格数据-统计",
+        "inputs": {
+            "mesh_input": "输入网格"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "Output_Group": "输出组",
+            "v_num": "顶点数",
+            "f_num": "面数",
+            "Normal_true": "有法线",
+            "UVs_true": "有UVs",
+            "vertex_color_true": "有顶点色",
+            "Texture_Diffuse_true": "有漫反射贴图",
+            "Texture_reflection_true": "有反射贴图",
+            "mesh_device_true": "有设备信息"
+        }
+    },
+
+    "mesh_clean_data":{
+        "title": "删除网格数据",
+        "inputs": {
+            "mesh": "输入网格",
+            "normal": "法线",
+            "uv": "贴图坐标",
+            "vertex_color": "顶点色",
+            "texture_diffuse": "漫反射贴图",
+            "texture_reflection": "反射贴图"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "mesh_clean_data": "网格"
+        }
+    },
+
+    "mesh_Optimization":{
+        "title": "网格优化",
+        "inputs": {
+            "mesh": "输入网格",
+            "Optimization_to": "优化到百分比",
+            "algorithm": "算法",
+            "remesh": "重置网格",
+            "optimalplacement": "平滑"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "Mesh_Out": "网格",
+            "Face_Before": "优化前面数",
+            "Face_After": "优化后面数"
+        }
+    },
+
+    "mesh_Cleanup":{
+        "title": "网格清理",
+        "inputs": {
+            "mesh": "输入网格",
+            "Cleanup_block_nf": "清理小于此百分比的",
+            "Cleanup_block_sc": "清理小于此大小的",
+            "Merge_vertex_threshold":"合并顶点阈值",
+            "repair_face": "修复非流形面"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "mesh_edit_Cleanup": "网格"
+        }
+    },
+
+    "mesh_subdivide":{
+        "title": "网格细分",
+        "inputs": {
+            "mesh": "输入网格",
+            "repair_face":"修复非流形面",
+            "re_mesh": "重置网格",
+            "remesh_size": "重置大小",
+            "remesh_iters": "重置迭代次数",
+            "Merge_vertex_threshold":"合并顶点阈值"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "Mesh": "网格"
+        }
+    },
+
+
+    "UnwrapUV_xatlas":{
+        "title": "展开UV-xatlas",
+        "inputs": {
+            "mesh": "输入网格",
+            "UV_options": "UV设置"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "mesh": "网格",
+            "vmapping": "UV贴图"
+        }
+    },
+    
+    "UV_options":{
+        "title": "UV设置",
+        "inputs": {
+            "fix_winding": "打包孤岛",
+            "max_boundary_length": "边界长度限制",
+            "max_chart_area": "最大面积限制",  
+            "max_cost": "最大限制",
+            "max_iterations": "最大迭代次数",
+            "normal_deviation_weight": "法线偏差权重",
+            "normal_seam_weight": "法线缝合权重",
+            "roundness_weight": "圆度权重",
+            "straightness_weight": "直线度权重",
+            "texture_seam_weight": "贴图缝合权重"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "UV_options": "UV设置"
+        }
+    },
+
+    "Auto_Normal":{
+        "title": "自动法线",
+        "inputs": {
+            "mesh": "网格"
+        },
+        "widgets": {
+        },
+        "outputs": {
+            "mesh": "网格"
+        }
+    }
+}
+
+
+
