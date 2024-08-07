@@ -29,6 +29,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 
 |Custom Node Name|简中|繁中|English|日本語|한국어|Русский|
 |:----|:----|:----|:----|:----|:----|:----|
+|[3D-MeshTool](https://github.com/807502278/ComfyUI-3D-MeshTool.git)|√|TODO|√|TODO|TODO|TODO|
 |[3D-Pack](https://github.com/MrForExample/ComfyUI-3D-Pack)|√|TODO|√|TODO|TODO|TODO|
 |[Advanced Encode](https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb)|√|√|√|TODO|TODO|TODO|
 |[Advanced ControlNet](https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet)|√|√|√|TODO|TODO|TODO|
@@ -64,8 +65,8 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Easy Tools](https://github.com/jafshare/ComfyUI-Easy-Tools)|√|TODO|√|TODO|TODO|TODO|
 |[Easy Use](https://github.com/yolain/ComfyUI-Easy-Use)|√|TODO|√|TODO|TODO|TODO|
 |[Efficiency Nodes](https://github.com/LucianoCirino/efficiency-nodes-comfyui)|√|√|√|√|TODO|TODO|
-|[ELLA(ExponentialML)](https://github.com/ExponentialML/ComfyUI_ELLA.git)|√|TODO|√|TODO|TODO|TODO|
-|[ELLA(Tencent)](https://github.com/TencentQQGYLab/ComfyUI-ELLA.git)|√|TODO|√|TODO|TODO|TODO|
+|[ELLA (ExponentialML)](https://github.com/ExponentialML/ComfyUI_ELLA.git)|√|TODO|√|TODO|TODO|TODO|
+|[ELLA (Tencent)](https://github.com/TencentQQGYLab/ComfyUI-ELLA.git)|√|TODO|√|TODO|TODO|TODO|
 |[EllangoK Postprocessing](https://github.com/EllangoK/ComfyUI-post-processing-nodes)|√|√|√|TODO|TODO|TODO|
 |[Essentials](https://github.com/cubiq/ComfyUI_essentials.git)|√|TODO|√|TODO|TODO|TODO|
 |[ExLlama nodes](https://github.com/Zuellni/ComfyUI-ExLlama-Nodes)|√|√|√|TODO|TODO|TODO|
@@ -92,6 +93,8 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[InstantID (ZHO)](https://github.com/ZHO-ZHO-ZHO/ComfyUI-InstantID.git)|√|TODO|√|TODO|TODO|TODO|
 |[KJ Nodes](https://github.com/kijai/ComfyUI-KJNodes.git)|√|TODO|√|TODO|TODO|TODO|
 |[kkTranslator](https://github.com/AIGCTeam/ComfyUI_kkTranslator_nodes.git)|√|TODO|√|TODO|TODO|TODO|
+|[Kolors (kijai)](https://github.com/kijai/ComfyUI-KwaiKolorsWrapper.git)|√|TODO|√|TODO|TODO|TODO|
+|[Kolors (MinusZone)](https://github.com/MinusZoneAI/ComfyUI-Kolors-MZ.git)|√|TODO|√|TODO|TODO|TODO|
 |[LaMa Preprocessor](https://github.com/mlinmg/ComfyUI-LaMA-Preprocessor)|√|TODO|√|TODO|TODO|TODO|
 |[Latent2RGB](https://github.com/bvhari/ComfyUI_LatentToRGB)|√|√|√|√|TODO|TODO|
 |[LayerDiffuse](https://github.com/huchenlei/ComfyUI-layerdiffuse)|√|TODO|√|TODO|TODO|TODO|
@@ -99,6 +102,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[LCM](https://github.com/0xbitches/ComfyUI-LCM)|√|TODO|√|TODO|TODO|TODO|
 |[Literals](https://github.com/M1kep/ComfyLiterals.git)|√|TODO|√|TODO|TODO|TODO|
 |[LivePortrait(KJ)](https://github.com/kijai/ComfyUI-LivePortraitKJ.git)|√|TODO|√|TODO|TODO|TODO|
+|[LivePortrait-Advanced](https://github.com/PowerHouseMan/ComfyUI-AdvancedLivePortrait.git)|√|TODO|√|TODO|TODO|TODO|
 |[LoadLoraWithTags](https://github.com/Extraltodeus/LoadLoraWithTags.git)|√|TODO|√|TODO|TODO|TODO|
 |[Logic](https://github.com/theUpsider/ComfyUI-Logic.git)|√|TODO|√|TODO|TODO|TODO|
 |[LoraAutoTrigger](https://github.com/idrirap/ComfyUI-Lora-Auto-Trigger-Words.git)|√|TODO|√|TODO|TODO|TODO|
