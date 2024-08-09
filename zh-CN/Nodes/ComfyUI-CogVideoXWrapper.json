@@ -1,0 +1,70 @@
+{
+    "DownloadAndLoadCogVideoModel": {
+        "title": "下载并加载CogVideo模型",
+        "widgets": {
+            "precision": "精度"
+        },
+        "outputs": {
+            "cogvideo_pipe": "CogVideo"
+        }
+    },
+    "CogVideoImageEncode": {
+        "title": "CogVideo图像编码",
+        "inputs": {
+            "pipeline": "CogVideo",
+            "image": "图像"
+        },
+        "outputs": {
+            "samples": "Latent"
+        }
+    },
+    "CogVideoDecode": {
+        "title": "CogVideo解码",
+        "inputs": {
+            "pipeline": "CogVideo",
+            "samples": "Latent"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    },
+    "CogVideoTextEncode": {
+        "title": "CogVideo文本编码",
+        "inputs": {
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "prompt": "提示词"
+        },
+        "outputs": {
+            "conditioning": "条件"
+        }
+    },
+    "CogVideoSampler": {
+        "title": "CogVideo采样器",
+        "inputs": {
+            "pipeline": "CogVideo",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "samples": "Latent"
+        },
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "num_frames": "帧数",
+            "fps": "帧率",
+            "steps": "步数",
+            "cfg": "CFG",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+            "scheduler": "调度器",
+            "t_tile_length": "分块长度",
+            "t_tile_overlap": "分块重叠",
+            "denoise_strength": "降噪"
+        },
+        "outputs": {
+            "cogvideo_pipe": "CogVideo",
+            "samples": "Latent"
+        }
+    }
+}
