@@ -47,6 +47,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[CCSR](https://github.com/kijai/ComfyUI-CCSR.git)|√|TODO|√|TODO|TODO|TODO|
 |[Champ](https://github.com/chaojie/ComfyUI-Champ.git)|√|TODO|√|TODO|TODO|TODO|
 |[CLIP Seg](https://github.com/biegert/ComfyUI-CLIPSeg)|√|√|√|√|TODO|TODO|
+|[CogVideo](https://github.com/kijai/ComfyUI-CogVideoXWrapper.git)|√|TODO|√|TODO|TODO|TODO|
 |[ComfyRoll](https://github.com/RockOfFire/ComfyUI_Comfyroll_CustomNodes)|√|√|√|TODO|TODO|TODO|
 |[ControlNet LLLite](https://github.com/kohya-ss/ControlNet-LLLite-ComfyUI)|√|√|√|TODO|TODO|TODO|
 |[ControlNet Preprocessors](https://github.com/Fannovel16/comfy_controlnet_preprocessors)|√|√|√|√|TODO|TODO|
@@ -60,8 +61,9 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Dagthomas Nodes](https://github.com/dagthomas/comfyui_dagthomas)|√|√|√|√|TODO|TODO|
 |[DynamiCrafter (kijai)](https://github.com/kijai/ComfyUI-DynamiCrafterWrapper.git)|√|TODO|√|TODO|TODO|TODO|
 |[DynamiCrafter (ExponentialML)](https://github.com/ExponentialML/ComfyUI_Native_DynamiCrafter.git)|√|TODO|√|TODO|TODO|TODO|
-|[Dynamic Thresholding](https://github.com/mcmonkeyprojects/sd-dynamic-thresholding)|√|√|√|TODO|TODO|TODO|
-|[Easy Animate](https://github.com/chaojie/ComfyUI-EasyAnimate.git)|√|TODO|√|TODO|TODO|TODO|
+|[DynamicThresholding](https://github.com/mcmonkeyprojects/sd-dynamic-thresholding)|√|√|√|TODO|TODO|TODO|
+|[EasyAnimate (chaojie)](https://github.com/chaojie/ComfyUI-EasyAnimate.git)|√|TODO|√|TODO|TODO|TODO|
+|[EasyAnimate (kijai)](https://github.com/kijai/ComfyUI-EasyAnimateWrapper.git)|√|TODO|√|TODO|TODO|TODO|
 |[Easy Tools](https://github.com/jafshare/ComfyUI-Easy-Tools)|√|TODO|√|TODO|TODO|TODO|
 |[Easy Use](https://github.com/yolain/ComfyUI-Easy-Use)|√|TODO|√|TODO|TODO|TODO|
 |[Efficiency Nodes](https://github.com/LucianoCirino/efficiency-nodes-comfyui)|√|√|√|√|TODO|TODO|
