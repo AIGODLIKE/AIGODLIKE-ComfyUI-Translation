@@ -423,13 +423,13 @@
     "FluxGuidance": {
         "title": "Flux引导",
         "inputs": {
-            "model": "模型"
+            "conditioning": "条件"
         },
         "widgets": {
             "guidance": "引导"
         },
         "outputs": {
-            "MODEL": "模型"
+            "CONDITIONING": "条件"
         }
     },
 
