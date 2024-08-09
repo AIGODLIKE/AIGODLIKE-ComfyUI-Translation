@@ -758,7 +758,7 @@
         }
     },
     "ControlNetApplySD3": {
-        "title": "ControlNet应用_SD3",
+        "title": "ControlNet应用_SD3/HunYuan",
         "inputs": {
             "positive": "正面条件",
             "negative": "负面条件",
@@ -2269,7 +2269,8 @@
     "UNETLoader": {
         "title": "UNET加载器",
         "widgets": {
-            "unet_name": "UNET名称"
+            "unet_name": "UNET名称",
+            "weight_dtype": "剪枝类型"
         },
         "outputs": {
             "MODEL": "模型"
