@@ -1,0 +1,27 @@
+{
+    "Joy_caption_load": {
+        "title": "加载JoyCaption",
+        "widgets": {
+            "model": "模型"
+        },
+        "outputs": {
+            "JoyPipeline": "JoyCaption"
+        }
+    },
+    "Joy_caption": {
+        "title": "JoyCaption",
+        "inputs": {
+            "joy_pipeline": "JoyCaption",
+            "image": "图像"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "max_new_tokens": "最大输出Token",
+            "temperature": "温度",
+            "cache": "保留缓存"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    }
+}
