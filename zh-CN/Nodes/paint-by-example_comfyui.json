@@ -34,6 +34,8 @@
                 "decrement": "减少",
                 "randomize": "随机",
             "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
             "negative": "负面条件",
             "resize": "拉伸",
                 "false": "否",
