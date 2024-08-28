@@ -1,0 +1,13 @@
+{
+    "CheckpointLoaderNF4": {
+        "title": "Checkpoint加载器（NF4）",
+        "widgets": {
+            "ckpt_name": "Checkpoint名称"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "VAE": "VAE"
+        }
+    }
+}
