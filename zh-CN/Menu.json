@@ -2895,5 +2895,9 @@
     "Show connections": "显示连接项",
     "Hide connections": "隐藏连接项",
     "Highlight": "高亮显示",
-    "Hide all connections": "隐藏全部连接项"
+    "Hide all connections": "隐藏全部连接项",
+
+    "#executionInversion": "#ExecutionInversion",
+    "Save Component": "保存组件",
+    "Load Component": "加载组件"
 }

@@ -1,0 +1,363 @@
+{
+    "InversionDemoAdvancedPromptNode": {
+        "title": "高级提示词",
+        "inputs": {
+            "model": "模型",
+            "clip": "CLIP"
+        },
+        "widgets": {
+            "prompt": "提示词"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CLIP": "CLIP",
+            "CONDITIONING": "条件"
+        }
+    },
+    "InversionDemoLazyMixImages": {
+        "title": "混合图像",
+        "inputs": {
+            "image1": "图像_1",
+            "image2": "图像_2",
+            "mask": "遮罩"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+
+    "ComponentInput": {
+        "title": "组件输入",
+        "inputs": {
+            "default_value": "默认值"
+        },
+        "widgets": {
+            "name": "名称",
+            "data_type": "数据类型",
+            "extra_args": "额外参数",
+            "explicit_input_order": "接口序号",
+            "optional": "可选"
+        }
+    },
+    "ComponentOutput": {
+        "title" :"组件输出",
+        "inputs": {
+            "value": "值"
+        },
+        "widgets": {
+            "index": "索引",
+            "data_type": "数据类型",
+            "name": "名称"
+        }
+    },
+    "ComponentMetadata": {
+        "title": "组件元数据",
+        "widgets": {
+            "name": "名称",
+            "always_output": "输出数据"
+        }
+    },
+
+    "WhileLoopOpen": {
+        "title": "条件循环区-起始",
+        "inputs": {
+            "initial_value0": "初始值_0",
+            "initial_value1": "初始值_1",
+            "initial_value2": "初始值_2",
+            "initial_value3": "初始值_3",
+            "initial_value4": "初始值_4"
+        },
+        "widgets": {
+            "condition": "条件"
+        },
+        "outputs": {
+            "FLOW_CONTROL": "循环控制",
+            "value0": "值_0",
+            "value1": "值_1",
+            "value2": "值_2",
+            "value3": "值_3",
+            "value4": "值_4"
+        }
+    },
+    "WhileLoopClose": {
+        "title": "条件循环区-结束",
+        "inputs": {
+            "flow_control": "循环控制",
+            "initial_value0": "初始值_0",
+            "initial_value1": "初始值_1",
+            "initial_value2": "初始值_2",
+            "initial_value3": "初始值_3",
+            "initial_value4": "初始值_4",
+            "condition": "条件"
+        },
+        "outputs": {
+            "value0": "值_0",
+            "value1": "值_1",
+            "value2": "值_2",
+            "value3": "值_3",
+            "value4": "值_4"
+        }
+    },
+    "ForLoopOpen": {
+        "title": "循环区-起始",
+        "inputs": {
+            "initial_value1": "初始值_1",
+            "initial_value2": "初始值_2",
+            "initial_value3": "初始值_3",
+            "initial_value4": "初始值_4"
+        },
+        "widgets": {
+            "remaining": "次数"
+        },
+        "outputs": {
+            "flow_control": "循环控制",
+            "remaining": "次数",
+            "value0": "值_0",
+            "value1": "值_1",
+            "value2": "值_2",
+            "value3": "值_3",
+            "value4": "值_4"
+        }
+    },
+    "ForLoopClose": {
+        "title": "循环区-结束",
+        "inputs": {
+            "flow_control": "循环控制",
+            "initial_value1": "初始值_1",
+            "initial_value2": "初始值_2",
+            "initial_value3": "初始值_3",
+            "initial_value4": "初始值_4"
+        },
+        "outputs": {
+            "value1": "值_1",
+            "value2": "值_2",
+            "value3": "值_3",
+            "value4": "值_4"
+        }
+    },
+    "ExecutionBlocker": {
+        "title": "执行拦截器",
+        "inputs": {
+            "input": "输入"
+        },
+        "widgets": {
+            "block": "拦截",
+            "verbose": "输出日志"
+        },
+        "outputs": {
+            "output": "输出"
+        }
+    },
+
+    "AccumulateNode": {
+        "title": "累积",
+        "inputs": {
+            "to_add": "累加",
+            "accumulation": "累积"
+        },
+        "outputs": {
+            "ACCUMULATION": "累积"
+        }
+    },
+    "AccumulationHeadNode": {
+        "title": "累积头",
+        "inputs": {
+            "accumulation": "累积"
+        },
+        "outputs": {
+            "ACCUMULATION": "累积"
+        }
+    },
+    "AccumulationTailNode": {
+        "title": "累积尾",
+        "inputs": {
+            "accumulation": "累积"
+        },
+        "outputs": {
+            "ACCUMULATION": "累积"
+        }
+    },
+    "AccumulationToListNode": {
+        "title": "累积到列表",
+        "inputs": {
+            "accumulation": "累积"
+        }
+    },
+    "ListToAccumulationNode": {
+        "title": "列表到累积",
+        "inputs": {
+            "list": "列表"
+        },
+        "outputs": {
+            "ACCUMULATION": "累积"
+        }
+    },
+    "AccumulationGetLengthNode": {
+        "title": "累积长度",
+        "inputs": {
+            "accumulation": "累积"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "AccumulationGetItemNode": {
+        "title": "累积获取项",
+        "inputs": {
+            "accumulation": "累积"
+        },
+        "widgets": {
+            "index": "索引"
+        }
+    },
+    "AccumulationSetItemNode": {
+        "title": "累积设置项",
+        "inputs": {
+            "accumulation": "累积",
+            "value": "值"
+        },
+        "widgets": {
+            "index": "索引"
+        },
+        "outputs": {
+            "ACCUMULATION": "累积"
+        }
+    },
+    "MakeListNode": {
+        "title": "创建列表",
+        "inputs": {
+            "value1": "值_1",
+            "value2": "值_2",
+            "value3": "值_3",
+            "value4": "值_4",
+            "value5": "值_5",
+            "value6": "值_6",
+            "value7": "值_7",
+            "value8": "值_8",
+            "value9": "值_9"
+        }
+    },
+
+    "InversionDemoLazySwitch": {
+        "title": "切换",
+        "inputs": {
+            "on_false": "否",
+            "on_true": "是"
+        },
+        "widgets": {
+            "switch": "切换"
+        }
+    },
+    "InversionDemoLazyIndexSwitch": {
+        "title": "序号切换",
+        "inputs": {
+            "value0": "值_0",
+            "value1": "值_1",
+            "value2": "值_2",
+            "value3": "值_3",
+            "value4": "值_4",
+            "value5": "值_5",
+            "value6": "值_6",
+            "value7": "值_7",
+            "value8": "值_8",
+            "value9": "值_9"
+        },
+        "widgets": {
+            "index": "索引"
+        }
+    },
+    "InversionDemoLazyConditional": {
+        "title": "条件对",
+        "inputs": {
+            "value1": "值_1",
+            "value2": "值_2",
+            "value3": "值_3",
+            "value4": "值_4",
+            "value5": "值_5",
+            "value6": "值_6",
+            "value7": "值_7",
+            "value8": "值_8",
+            "value9": "值_9",
+            "value10": "值_10",
+            "else": "else",
+            "condition1": "条件_1",
+            "condition2": "条件_2",
+            "condition3": "条件_3",
+            "condition4": "条件_4",
+            "condition5": "条件_5",
+            "condition6": "条件_6",
+            "condition7": "条件_7",
+            "condition8": "条件_8",
+            "condition9": "条件_9",
+            "condition10": "条件_10"
+        }
+    },
+    "IntMathOperation": {
+        "title": "整数运算",
+        "widgets": {
+            "a": "a",
+            "b": "b",
+            "operation": "运算"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "IntConditions": {
+        "title": "整数比较",
+        "widgets": {
+            "a": "a",
+            "b": "b",
+            "operation": "运算"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔"
+        }
+    },
+    "FloatConditions": {
+        "title": "浮点比较",
+        "widgets": {
+            "a": "a",
+            "b": "b",
+            "operation": "运算"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔"
+        }
+    },
+    "StringConditions": {
+        "title": "字符串比较",
+        "widgets": {
+            "a": "a",
+            "b": "b",
+            "operation": "运算",
+            "case_sensitive": "区分大小写"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔"
+        }
+    },
+    "ToBoolNode": {
+        "title": "到布尔",
+        "inputs": {
+            "value": "值"
+        },
+        "widgets": {
+            "invert": "反转"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔"
+        }
+    },
+    "BoolOperationNode": {
+        "title": "布尔运算",
+        "widgets": {
+            "a": "a",
+            "b": "b",
+            "operation": "运算"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔"
+        }
+    }
+}
