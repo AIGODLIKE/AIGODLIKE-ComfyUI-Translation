@@ -1,0 +1,84 @@
+{
+    "PaintbyExampleSimple": {
+        "title": "Paint by Example（简易）",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "example": "范例"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "PaintbyExampleAdvanced": {
+        "title": "Paint by Example（高级）",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "example": "范例"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "negative": "负面条件",
+            "resize": "拉伸",
+                "false": "否",
+                "true": "是",
+            "width": "宽度",
+            "height": "高度",
+            "resize_mode": "缩放模式",
+                "bicubic": "双三次插值",
+                "bilinear": "双线性插值",
+                "lanczos": "lanczos插值",
+                "nearest": "邻近",
+                "nearest-exact": "邻近-精确"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "PaintbyExampleGen": {
+        "title": "Paint by Generated Example",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "latent_image": "Latent",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器"
+        },
+        "outputs": {
+            "image": "图像",
+            "example": "范例"
+        }
+    }
+}
