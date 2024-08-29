@@ -116,7 +116,7 @@ export function applyMenuTranslation(T) {
       for (const node of mutation.addedNodes) {
         // if (texe.translateKjPopDesc(node)) continue;
         texe.translateAllText(node);
-        if (node.classList.contains("comfy-modal")) {
+        if (node.classList?.contains("comfy-modal")) {
           observeFactory(node, (mutationsList, observer) => {
             for (let mutation of mutationsList) {
               texe.translateAllText(mutation.target);
