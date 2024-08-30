@@ -1,5 +1,8 @@
 class TExe {
   static T = null;
+  MT(txt) {
+    return this.T?.Menu?.[txt] || this.T?.Menu?.[txt?.trim()];
+  }
 
   constructor() {
     this.excludeClass = ["lite-search-item-type"];
@@ -31,12 +34,14 @@ class TExe {
     const allElements = node.querySelectorAll("*");
 
     for (const ele of allElements) {
-      let targetLangText = T.Menu[ele.innerText];
+      let targetLangText = this.MT(ele.innerText);
       if (!targetLangText) {
         if (ele.nodeName === "INPUT" && ele.type === "button") {
-          targetLangText = T.Menu[ele.value];
+          targetLangText = this.MT(ele.value);
           if (!targetLangText) continue;
           ele.value = targetLangText;
+        }else if (ele.childNodes?.length > 1) {
+          this.replaceText(ele);
         }
         continue;
       }
@@ -51,7 +56,7 @@ class TExe {
     if (target?.childNodes.length > 1) {
       for (const childNode of target.childNodes) {
         this.replaceText(childNode);
-        const targetLangText = childNode?.nodeType === Node.ELEMENT_NODE ? T.Menu[childNode.innerText] : T.Menu[childNode.nodeValue];
+        const targetLangText = childNode?.nodeType === Node.ELEMENT_NODE ? this.MT(childNode.innerText) : this.MT(childNode.nodeValue);
         if (!targetLangText) continue;
         if (childNode?.nodeType === Node.TEXT_NODE) {
           childNode.nodeValue = targetLangText;
@@ -65,7 +70,7 @@ class TExe {
         this.replaceText(target.firstChild);
       }
       if (target?.firstChild?.nodeType === Node.TEXT_NODE) {
-        const targetLangText = T.Menu[target.firstChild.nodeValue];
+        const targetLangText = this.MT(target.firstChild.nodeValue);
         if (!targetLangText) return;
         target.innerText = targetLangText;
       }
@@ -92,7 +97,7 @@ export function applyMenuTranslation(T) {
       observer.disconnect();
       for (let mutation of mutationsList) {
         if (mutation.type === "childList") {
-          const translatedValue = T.Menu[mutation.target.textContent];
+          const translatedValue = texe.MT(mutation.target.textContent);
           if (!translatedValue) continue;
           mutation.target.innerText = translatedValue;
         }
@@ -116,7 +121,7 @@ export function applyMenuTranslation(T) {
       for (const node of mutation.addedNodes) {
         // if (texe.translateKjPopDesc(node)) continue;
         texe.translateAllText(node);
-        if (node.classList.contains("comfy-modal")) {
+        if (node.classList?.contains("comfy-modal")) {
           observeFactory(node, (mutationsList, observer) => {
             for (let mutation of mutationsList) {
               texe.translateAllText(mutation.target);
@@ -176,12 +181,12 @@ export function applyMenuTranslation(T) {
     const comfySettingDialogAllElements = comfySettingDialog.querySelectorAll("*");
 
     for (const ele of comfySettingDialogAllElements) {
-      let targetLangText = T.Menu[ele.innerText];
-      let titleText = T.Menu[ele.title];
+      let targetLangText = texe.MT(ele.innerText);
+      let titleText = texe.MT(ele.title);
       if(titleText) ele.title = titleText;
       if (!targetLangText) {
         if (ele.nodeName === "INPUT" && ele.type === "button") {
-          targetLangText = T.Menu[ele.value];
+          targetLangText = texe.MT(ele.value);
           if (!targetLangText) continue;
           ele.value = targetLangText;
         }

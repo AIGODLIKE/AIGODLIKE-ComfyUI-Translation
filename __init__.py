@@ -46,21 +46,27 @@ def get_nodes_translation(locale):
 
 
 def get_category_translation(locale):
+    cats = {}
+    for cat_json in CUR_PATH.joinpath(locale, "Categories").glob("*.json"):
+        cats.update(try_get_json(cat_json))
     path = CUR_PATH.joinpath(locale, "NodeCategory.json")
     if not path.exists():
         path = CUR_PATH.joinpath("en_US", "NodeCategory.json")
-    if not path.exists():
-        return {}
-    return try_get_json(path)
+    if path.exists():
+        cats.update(try_get_json(path))
+    return cats
 
 
 def get_menu_translation(locale):
+    menus = {}
+    for menu_json in CUR_PATH.joinpath(locale, "Menus").glob("*.json"):
+        menus.update(try_get_json(menu_json))
     path = CUR_PATH.joinpath(locale, "Menu.json")
     if not path.exists():
         path = CUR_PATH.joinpath("en_US", "Menu.json")
-    if not path.exists():
-        return {}
-    return try_get_json(path)
+    if path.exists():
+        menus.update(try_get_json(path))
+    return menus
 
 
 @lru_cache
