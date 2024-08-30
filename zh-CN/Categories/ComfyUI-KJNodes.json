@@ -1,0 +1,20 @@
+{
+    "KJNodes": "KJ节点",
+
+    "constants": "常量",
+    "masking": "遮罩",
+    "generate": "生成",
+    "experiments": "实验",
+    "misc": "杂项",
+    "AudioScheduler": "音频调度",
+    "Amplitude": "振幅",
+    "math": "运算",
+    "conversion": "转换",
+    "bool": "布尔",
+    "int": "整数",
+    "float": "浮点",
+    "vec2": "2元数",
+    "vec3": "3元数",
+    "vec4": "4元数",
+    "graphics": "图像"
+}

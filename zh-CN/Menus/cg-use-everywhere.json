@@ -1,0 +1,26 @@
+{
+    "AE": "全局输入",
+    "animate": "动画",
+    "Anything Everywhere animate UE links": "连线动画",
+    "autoprompt": "提示词",
+    "Anything Everywhere? autocomplete (may require page reload)": "全局输入自动补全（可能需要重载页面）",
+    "checkloops": "检测循环",
+    "Anything Everywhere check loops": "检测循环",
+    "details": "细节",
+    "Anything Everywhere show node details": "显示节点细节",
+    "highlight": "高亮",
+    "Anything Everywhere highlight connected nodes": "高亮已连接节点",
+    "replacesearch": "搜索替换",
+    "Anything Everywhere replace search": "启用搜索替换",
+    "showlinks": "显示连线",
+    "Anything Everywhere show links": "全局输入显示连接",
+    "stop": "停用",
+    "Anything Everywhere turn animation off when running": "执行工作流时关闭动画",
+
+    "Toggle UE link visibility": "切换全局输入可视化",
+    "Send only within my group(s)": "仅在当前组内生效",
+    "Remove group restriction": "移除组内限制",
+    "Show UE links": "显示全局输入连线",
+    "Hide Ue links": "隐藏全局输入连线",
+    "Convert all UEs to real links": "将全局输入连线转为实际连线"
+}

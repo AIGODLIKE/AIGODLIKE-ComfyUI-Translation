@@ -1,0 +1,30 @@
+{
+    "InspirePack": "Inspire节点",
+
+    "LoraBlockWeight": "LoRA分层权重",
+    "SEGS": "SEGS",
+        "ControlNet": "ControlNet",
+    "Detecotr": "检测器",
+    "a1111_compat": "A1111适配",
+    "__for_testing": "测试",
+    "Prompt": "提示词",
+    "Util": "实用工具",
+    "image": "图像",
+    "Regional": "区域",
+    "analysis": "解析",
+    "Backend": "后端",
+    "conditioning": "条件",
+    "models": "条件",
+
+    "prompt": "提示词",
+    "util": "实用工具",
+    "Inspire": "Inspire节点2",
+    "Batch": "批处理",
+    "postprocessing1": "后处理",
+    "Blends": "混合",
+    "Effects": "效果",
+    "Filters": "滤镜",
+    "Masks": "遮罩",
+    "Seg": "Seg",
+    "Color Adjustments": "颜色"
+}

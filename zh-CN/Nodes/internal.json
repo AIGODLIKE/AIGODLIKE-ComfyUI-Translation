@@ -16,26 +16,35 @@
         "title": "K采样器",
         "inputs": {
             "model": "模型",
+            "The model used for denoising the input latent.": "用于降噪 Latent 的模型。",
             "positive": "正面条件",
+            "The conditioning describing the attributes you want to include in the image.": "描述包含在图像中的内容的条件。",
             "negative": "负面条件",
-            "latent_image": "Latent"
+            "The conditioning describing the attributes you want to exclude from the image.": "描述不包含在图像中的内容的条件。",
+            "latent_image": "Latent",
+            "The latent image to denoise.": "即将降噪的 Latent。"
         },
         "widgets": {
             "seed": "随机种",
+            "The random seed used for creating the noise.": "生成噪波的随机种。",
             "control_after_generate": "运行后操作",
-                "fixed": "固定",
-                "increment": "增加",
-                "decrement": "减少",
-                "randomize": "随机",
+            "control_before_generate": "运行前操作",
             "steps": "步数",
+            "The number of steps used in the denoising process.": "降噪的步数。",
             "cfg": "CFG",
+            "The Classifier-Free Guidance scale balances creativity and adherence to the prompt. Higher values result in images more closely matching the prompt however too high values will negatively impact quality.": "Classifier-Free Guidance 用于平衡随机性和提示词服从性。提高该值会使结果更加符合提示词，但过高会导致图像质量下降。",
             "sampler_name": "采样器",
+            "The algorithm used when sampling, this can affect the quality, speed, and style of the generated output.": "采样算法，会影响结果质量、生成速度、风格样式。",
             "scheduler": "调度器",
-            "denoise": "降噪"
+            "The scheduler controls how noise is gradually removed to form the image.": "控制逐渐移除噪波的方法。",
+            "denoise": "降噪",
+            "The amount of denoising applied, lower values will maintain the structure of the initial image allowing for image to image sampling.": "降噪的数值，降低该值会保留原图的大部分内容从而实现图生图。"
         },
         "outputs": {
-            "LATENT": "Latent"
-        }
+            "LATENT": "Latent",
+            "The denoised latent.": "降噪后的Latent。"
+        },
+        "description": "使用输入的模型、正面条件、负面条件去除Latent的噪波。"
     },
     "KSamplerAdvanced": {
         "title": "K采样器(高级)",
@@ -463,13 +472,18 @@
     "CheckpointLoaderSimple": {
         "title": "Checkpoint加载器(简易)",
         "widgets": {
-            "ckpt_name": "Checkpoint名称"
+            "ckpt_name": "Checkpoint名称",
+            "The name of the checkpoint (model) to load.": "加载的 Checkpoint 模型的名称。"
         },
         "outputs": {
             "MODEL": "模型",
+            "The model used for denoising latents.": "用于去除噪波的模型。",
             "CLIP": "CLIP",
-            "VAE": "VAE"
-        }
+            "The CLIP model used for encoding text prompts.": "用于编码文本提示词的 CLIP 模型。",
+            "VAE": "VAE",
+            "The VAE model used for encoding and decoding images to and from latent space.": "用于从编码解码 Latent 和图像的 VAE 模型。"
+        },
+        "description": "加载扩散模型checkpoint，用于去除Latent噪波。"
     },
     "VAELoader": {
         "title": "VAE加载器",
@@ -484,17 +498,25 @@
         "title": "LoRA加载器",
         "inputs": {
             "model": "模型",
-            "clip": "CLIP"
+            "The diffusion model the LoRA will be applied to.": "即将应用 LoRA 的扩散模型",
+            "clip": "CLIP",
+            "The CLIP model the LoRA will be applied to.": "即将应用 LoRA 的 CLIP 模型"
         },
         "widgets": {
             "lora_name": "LoRA名称",
+            "The name of the LoRA": "LoRA 的名称",
             "strength_model": "模型强度",
-            "strength_clip": "CLIP强度"
+            "How strongly to modify the diffusion model. This value can be negative.": "控制引用在扩散模型上的强度。该值可以为负数。",
+            "strength_clip": "CLIP强度",
+            "How strongly to modify the CLIP model. This value can be negative.": "控制应用在 CLIP 模型上的强度。该值可以为负数。"
         },
         "outputs": {
             "MODEL": "模型",
-            "CLIP": "CLIP"
-        }
+            "The modified diffusion model.": "调整过的扩散模型。",
+            "CLIP": "CLIP",
+            "The modified CLIP model.": "调整过的 CLIP 模型"
+        },
+        "description": "用于微调扩散模型和 CLIP 模型，改变 Latent 降噪的效果，实现控制风格等功能。多个 LoRA 可以直接连接到一起。"
     },
     "ControlNetLoader": {
         "title": "ControlNet加载器",
@@ -824,14 +846,18 @@
     "CLIPTextEncode": {
         "title": "CLIP文本编码器",
         "inputs": {
-            "clip": "CLIP"
+            "clip": "CLIP",
+            "The CLIP model used for encoding the text.": "用于编码文本的 CLIP 模型"
         },
         "widgets": {
-            "text": "文本"
+            "text": "文本",
+            "The text to be encoded.": "即将编码的文本。"
         },
         "outputs": {
-            "CONDITIONING": "条件"
-        }
+            "CONDITIONING": "条件",
+            "A conditioning containing the embedded text used to guide the diffusion model.": "一个包含编码文本的条件，用于引导扩散模型"
+        },
+        "description": "用 CLIP 模型将文本编码成嵌入组（embedding），用于引导扩散模型生成图像。"
     },
     "CLIPSetLastLayer": {
         "title": "CLIP设置停止层",
@@ -1196,10 +1222,13 @@
         "title": "VAE解码",
         "inputs": {
             "samples": "Latent",
-            "vae": "VAE"
+            "The latent to be decoded.": "即将解码的 Latent 。",
+            "vae": "VAE",
+            "The VAE model used for decoding the latent.": "用于解码的 VAE 模型。"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "图像",
+            "The decoded image.": "解码后的图像"
         }
     },
     "VAEEncode": {
@@ -1216,12 +1245,17 @@
         "title": "空Latent",
         "widgets": {
             "width": "宽度",
+            "The width of the latent images in pixels.": "Latent 图像的像素宽度。",
             "height": "高度",
-            "batch_size": "批次大小"
+            "The height of the latent images in pixels.": "Latent 图像的像素高度",
+            "batch_size": "批次大小",
+            "The number of latent images in the batch.": "单个批次中 Latent 的数量。"
         },
         "outputs": {
-            "LATENT": "Latent"
-        }
+            "LATENT": "Latent",
+            "The empty latent image batch.": "空 Latent 批次"
+        },
+        "description": "创建一个空 Latent 批次，用于采样降噪。"
     },
     "LatentUpscale": {
         "title": "Latent缩放",
@@ -1294,8 +1328,6 @@
             "LATENT": "Latent"
         }
     },
-
-
 
 
     "ImageScale": {
@@ -1552,11 +1584,14 @@
     "SaveImage": {
         "title": "保存图像",
         "inputs": {
-            "images": "图像"
+            "images": "图像",
+            "The images to save.": "即将保存的图像。"
         },
         "widgets": {
-            "filename_prefix": "文件名前缀"
-        }
+            "filename_prefix": "文件名前缀",
+            "The prefix for the file to save. This may include formatting information such as %date:yyyy-MM-dd% or %Empty Latent Image.width% to include values from nodes.": "保存文件的文件名的前缀。可使用格式信息如 %date:yyyy-MM-dd% 或 %Empty Latent Image.width%，以包含来自工作流内的信息。"
+        },
+        "description": "保存输入的图像到 ComfyUI 输出文件夹内。"
     },
     "PreviewImage": {
         "title": "预览图像",

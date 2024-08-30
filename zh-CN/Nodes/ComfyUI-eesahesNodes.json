@@ -1,0 +1,12 @@
+{
+    "InstantX Flux Union ControlNet Loader": {
+        "title": "InstantX Flux Union ControlNet 加载器",
+        "widgets": {
+            "control_net_name": "ControlNet",
+            "type": "类型"
+        },
+        "outputs": {
+            "CONTROL_NET": "ControlNet"
+        }
+    }
+}

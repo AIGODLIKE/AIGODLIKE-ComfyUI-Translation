@@ -1,0 +1,9 @@
+{
+    "Image Chooser HUD position (-1 for off)": "图像选择器HUD位置(-1为关闭)",
+    "Always pause": "总是暂停",
+    "Only pause if batch": "仅批次暂停",
+    "Pass through": "忽略",
+    "Take First n": "选择前N项",
+    "Take Last n": "选择后N项",
+    "Cancel current run": "取消当前任务"
+}
