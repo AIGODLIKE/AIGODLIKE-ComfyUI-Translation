@@ -1,0 +1,15 @@
+{
+    "mtb": "MTB节点",
+
+    "crop": "裁剪",
+    "curve": "曲线",
+    "debug": "Debug",
+    "textures": "材质",
+    "facetools": "面部工具",
+    "filters": "过滤",
+    "converters": "转换器",
+    "image processing": "图像处理",
+    "image utils": "图像实用工具",
+    "decode": "解码",
+    "autotrigger": "LoRA自动触发"
+}

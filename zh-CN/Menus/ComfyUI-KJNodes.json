@@ -1,0 +1,43 @@
+{ 
+    "browserStatus": "浏览器状态",
+    "KJNodes: 🟢 Stoplight browser status icon 🔴": "🟢红绿灯浏览器状态🔴",
+
+    "Disable Middle Click Default": "禁用中间默认操作",
+    "KJNodes: Middle click default node adding": "中间默认添加节点",
+
+    "disablePrefix": "禁用前缀",
+    "KJNodes: Disable automatic Set_ and Get_ prefix": "禁用自动 Set_ 和 Get_ 前缀",
+
+    "helpPopup": "帮助菜单",
+    "KJNodes: Help popups": "启用帮助菜单",
+
+    "nodeAutoColor": "节点上色",
+    "KJNodes: Automatically set node colors": "自动设置节点颜色",
+
+    "Set Get Menu": "设置与获取菜单",
+    "KJNodes: Make Set/Get -nodes defaults (turn off and reload to disable)": "启用 Set/Get 节点（关闭并重载以禁用）",
+
+
+    "ease_in": "渐进",
+    "ease_out": "渐出",
+    "ease_in_out": "渐近渐出",
+    "bounce": "反弹",
+    "elastic": "弹性",
+    "glitchy": "故障",
+    "exponential_ease_out": "指数渐出",
+    "empty": "空",
+    "border": "边界",
+    "reflection": "反射",
+    "up": "上",
+    "down": "下",
+    "mask bounds": "遮罩边界",
+    "🔗💥⛓️ Make Set/Get -nodes defaults (turn off and reload to disable)": "设定设置/获取节点为默认(关闭并重启以禁用)",
+    "Middle click default node adding": "使用默认中键添加操作",
+    "Automatically set node colors": "自动设置节点颜色",
+    "Getters": "前往获取节点",
+    "Go to setter": "前往设置节点",
+    "Show connections": "显示连接项",
+    "Hide connections": "隐藏连接项",
+    "Highlight": "高亮显示",
+    "Hide all connections": "隐藏全部连接项"
+}

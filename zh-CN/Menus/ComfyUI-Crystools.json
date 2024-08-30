@@ -1,0 +1,27 @@
+{
+    "Crystools": "Cyrstools工具组",
+    "inputRate": "输入间隔",
+    "🪛[monitor] Refresh rate": "🪛【监控】刷新间隔",
+    "showStatus": "状态",
+    "🪛[monitor] Show progress bar": "🪛【监控】显示进度条",
+    "switchCPU": "CPU",
+    "🪛 [monitor] CPU Usage": "🪛【监控】显示CPU占用",
+    "switchHDD": "HDD",
+    "🪛 [monitor] HDD Used": "🪛【监控】显示HDD占用",
+    "switchRAM": "内存",
+    "🪛 [monitor] RAM Used": "🪛【监控】显示内存占用",
+    "whichHDD": "选择HDD",
+    "🪛[monitor] Partition to show": "🪛【监控】选择分区",
+
+    "🪛Display CPU monitor [menu]": "显示CPU监视",
+    "🪛Display RAM monitor [menu]": "显示内存监视",
+    "🪛Display GPU monitor [menu]": "显示GPU监视",
+    "🪛Display Video RAM monitor [menu]": "显示VRAM监视",
+    "🪛Display Hard disk monitor [menu]": "显示硬盘监视",
+    "🪛Monitors refresh rate (in seconds) [menu]": "监视器刷新间隔(秒)",
+    "🪛Show progress bar [menu]": "显示生成进度条",
+    "See partition to show (HDD)": "显示HDD占用区",
+    "🪛[menu] Display GPU monitor\r\n[${index}] ${name}": "显示GPU占用\r\n[${index}] ${name}",
+    "🪛[menu] Display GPU VRAM monitor\r\n[${index}] ${name}": "显示GPU显存占用\r\n[${index}] ${name}",
+    "This is the time (in seconds) between each update of the monitors, 0 means no refresh": "每次占用监控刷新的间隔时间(秒)，0表示不刷新"
+}

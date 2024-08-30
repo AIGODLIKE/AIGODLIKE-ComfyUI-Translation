@@ -1,0 +1,14 @@
+{
+    "Search...": "搜索...",
+    "PINNED": "置顶",
+    "CUSTOM NODES": "自定义节点",
+    "[Sidebar] Better ComfyUI Settings Style": "[侧边栏] 更好的ComfyUI设置样式",
+    "[Sidebar] Blur Intesity": "[侧边栏] 模糊强度",
+    "[Sidebar] Font Size": "[侧边栏] 字体大小",
+    "[Sidebar] Node Radius Border": "[侧边栏] 节点边框圆角",
+    "[Sidebar] Node Size": "[侧边栏] 节点大小",
+    "[Sidebar] Opacity": "[侧边栏] 不透明度",
+    "[Sidebar] Space Bottom": "[侧边栏] 底部留空",
+    "[Sidebar] Space Top": "[侧边栏] 顶部留空",
+    "[Sidebar] Use Default Search": "[侧边栏] 使用默认搜索"
+}

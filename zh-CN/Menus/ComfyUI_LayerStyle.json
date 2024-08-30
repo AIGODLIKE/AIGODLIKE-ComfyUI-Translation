@@ -1,0 +1,6 @@
+{
+    "DZ": "LayerStyle",
+    "Debug": "Debug",
+    "[DZ] Enable Debug (py and js)": "[DZ] 开启Debug （py 和 js）",
+    "This will enable debug messages in the console and in the python console respectively": "在控制台中显示Debug信息"
+}

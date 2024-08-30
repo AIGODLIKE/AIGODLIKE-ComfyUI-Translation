@@ -61,6 +61,7 @@
         "title": "Flux应用IPAdapter",
         "inputs": {
             "model": "模型",
+            "This is the model will be applied": "这个模型blabal",
             "ip_adapter_flux": "IPAdapter_Flux",
             "image": "图像"
         },

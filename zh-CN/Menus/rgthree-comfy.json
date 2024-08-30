@@ -1,0 +1,8 @@
+{
+    "config": "设置",
+    "Open rgthree-comfy config": "打开 rgthree-comfy 设置",
+
+    "🎲 Randomize Each Time": "🎲 每次随机",
+    "🎲 New Fixed Random": "🎲 生成随机并固定",
+    "♻️ (Use Last Queued Seed)": "♻️ 使用上次随机种"
+}

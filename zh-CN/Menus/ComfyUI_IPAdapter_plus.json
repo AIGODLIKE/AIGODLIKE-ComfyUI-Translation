@@ -1,0 +1,12 @@
+{
+    "LIGHT - SD1.5 only (low strength)": "轻型 - 仅SD1.5 (低强度)",
+    "STANDARD (medium strength)": "标准 (中强度)",
+    "VIT-G (medium strength)": "Vit-G (中强度)",
+    "PLUS (high strength)": "PLUS (高强度)",
+    "PLUS FACE (portraits)": "PLUS FACE (肖像)",
+    "FULL FACE - SD1.5 only (portraits stronger)": "全面部 - 仅SD1.5 (强肖像)",
+    "concat": "联结",
+    "norm average": "规格化平均",
+    "max": "最大值",
+    "min": "最小值"
+}
