@@ -155,6 +155,27 @@ export class TUtils {
     let nodesT = this.T.Nodes;
     var t = nodesT[nodeType.comfyClass];
     nodeData.description = t?.["description"] || nodeData.description;
+
+    var nodeT = nodesT[nodeType.comfyClass] || {};
+    // 输入和widget提示
+    var nodeInputT = nodeT["inputs"] || {};
+    var nodeWidgetT = nodeT["widgets"] || {};
+    for (let itype in nodeData.input) {
+      for (let socketname in nodeData.input[itype]) {
+        let inp = nodeData.input[itype][socketname];
+        if (inp[1] === undefined || !inp[1].tooltip) continue;
+        var tooltip = inp[1].tooltip;
+        var tooltipT = nodeInputT[tooltip] || nodeWidgetT[tooltip] || tooltip;
+        inp[1].tooltip = tooltipT;
+      }
+    }
+    // 输出提示
+    var nodeOutputT = nodeT["outputs"] || {};
+    for (var i = 0; i < (nodeData.output_tooltips || []).length; i++) {
+      var tooltip = nodeData.output_tooltips[i];
+      var tooltipT = nodeOutputT[tooltip] || tooltip;
+      nodeData.output_tooltips[i] = tooltipT;
+    }
   }
 
   static applyMenuTranslation(app) {
