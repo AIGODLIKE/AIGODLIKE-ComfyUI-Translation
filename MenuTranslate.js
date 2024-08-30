@@ -1,7 +1,7 @@
 class TExe {
   static T = null;
   MT(txt) {
-    return this.T?.Menu?.[txt] || this.T?.Menu?.[txt.trim()];
+    return this.T?.Menu?.[txt] || this.T?.Menu?.[txt?.trim()];
   }
 
   constructor() {
