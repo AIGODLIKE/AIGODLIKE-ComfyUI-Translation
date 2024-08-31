@@ -1,9 +1,0 @@
-{
-    "seed_O": {
-        "title": "種子(O)",
-        "inputs": {
-            "seed": "種子",
-            "control_after_generate": "執行後"
-        }
-    }
-}
