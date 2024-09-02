@@ -92,6 +92,19 @@ export class TUtils {
     }
   }
 
+  /**
+   * Translate node def's display name in place.
+   * @param {ComfyNodeDef} nodeDef
+   * Ref: https://github.com/Comfy-Org/ComfyUI_frontend/blob/adcef7d2f4124f03bd1a6a86d6c781bdc5bdf3a6/src/types/apiTypes.ts#L360
+   */
+  static applyNodeDisplayNameTranslation(nodeDef) {
+    const nodesT = TUtils.T.Nodes;
+    const class_type = nodeDef.name;
+    if (nodesT.hasOwnProperty(class_type)) {
+      nodeDef.display_name = nodesT[class_type]["title"] || nodeDef.display_name;
+    }
+  }
+
   static applyNodeTypeTranslation(app) {
     for (let nodeName in LiteGraph.registered_node_types) {
       this.applyNodeTypeTranslationEx(nodeName);
@@ -465,6 +478,9 @@ const ext = {
     // This fires for every node definition so only log once
     // applyNodeTranslationDef(nodeType, nodeData);
     // delete ext.beforeRegisterNodeDef;
+  },
+  beforeRegisterVueAppNodeDefs(nodeDefs) {
+    nodeDefs.forEach(TUtils.applyNodeDisplayNameTranslation);
   },
   async registerCustomNodes(app) {
     // Register any custom node implementations here allowing for more flexability than a custom node def
