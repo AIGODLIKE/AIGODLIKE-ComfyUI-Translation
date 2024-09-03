@@ -319,7 +319,44 @@ export class TUtils {
       return res;
     };
   }
-
+  static addPanelButtons(app) {
+    app.ui.menuContainer.appendChild(
+      $el("button.agl-swlocale-btn", {
+        id: "swlocale-button",
+        textContent: TUtils.T.Menu["Switch Locale"] || "Switch Locale",
+        onclick: () => {
+          var localeLast = localStorage.getItem(TUtils.LOCALE_ID_LAST) || "en-US";
+          var locale = localStorage.getItem(TUtils.LOCALE_ID) || "en-US";
+          if (locale != "en-US" && localeLast != "en-US") localeLast = "en-US";
+          if (locale != localeLast) {
+            app.ui.settings.setSettingValue(TUtils.LOCALE_ID, localeLast);
+          }
+        },
+      })
+    );
+    if(window.__COMFYUI_FRONTEND_VERSION__ > "1.2")
+    {
+      var ComfyButtonGroup = window.comfyAPI.buttonGroup.ComfyButtonGroup;
+      var ComfyButton = window.comfyAPI.button.ComfyButton;
+      var btn = new ComfyButton({
+        icon: "translate",
+        action: () => {
+          var localeLast = localStorage.getItem(TUtils.LOCALE_ID_LAST) || "en-US";
+          var locale = localStorage.getItem(TUtils.LOCALE_ID) || "en-US";
+          if (locale != "en-US" && localeLast != "en-US") localeLast = "en-US";
+          if (locale != localeLast) {
+            app.ui.settings.setSettingValue(TUtils.LOCALE_ID, localeLast);
+          }
+        },
+        tooltip: TUtils.T.Menu["Switch Locale"] || "Switch Locale",
+        content: "",
+        classList: "swlocale-button"
+      });
+      btn.iconElement.style.width = "1.2rem";
+      var group = new ComfyButtonGroup(btn.element);
+      app.menu?.settingsGroup.element.before(group.element);
+    }
+  }
   static addSettingsMenuOptions(app) {
     let id = this.LOCALE_ID;
     app.ui.settings.addSetting({
@@ -445,20 +482,7 @@ const ext = {
     // 构造设置面板
     // this.settings = new AGLSettingsDialog();
     // 添加按钮
-    app.ui.menuContainer.appendChild(
-      $el("button.agl-swlocale-btn", {
-        id: "swlocale-button",
-        textContent: TUtils.T.Menu["Switch Locale"] || "Switch Locale",
-        onclick: () => {
-          var localeLast = localStorage.getItem(TUtils.LOCALE_ID_LAST) || "en-US";
-          var locale = localStorage.getItem(TUtils.LOCALE_ID) || "en-US";
-          if (locale != "en-US" && localeLast != "en-US") localeLast = "en-US";
-          if (locale != localeLast) {
-            app.ui.settings.setSettingValue(TUtils.LOCALE_ID, localeLast);
-          }
-        },
-      })
-    );
+    TUtils.addPanelButtons(app);
   },
   async addCustomNodeDefs(defs, app) {
     // Add custom node definitions
