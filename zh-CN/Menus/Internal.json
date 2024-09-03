@@ -24,6 +24,10 @@
     "Show canvas info (fps, etc.)": "显示画面信息（帧率等）",
 
 
+    "Group": "组/框",
+    "Double click group title to edit": "双击框标题以编辑",
+
+
     "Group Selected Nodes": "节点框",
     "Group selected nodes padding": "默认外边距",
 
@@ -52,9 +56,10 @@
     "Node Search Box": "搜索框",
     "Number of nodes suggestions": "节点数建议",
     "Only for litegraph searchbox/context menu": "仅在 litegraph UI 可用",
+    "Show node id name in search results": "显示节点ID名称",
     "Show node category in search results": "显示节点分类",
     "Only applies to the default implementation": "仅适用于默认搜索框架",
-    "Node preview": "节点预览",
+    "Node preview": "预览节点",
     "Trigger on link release": "节点连线唤出搜索框",
     "hold shift": "按住 Shift",
     "NOT hold shift": "没有按住 Shift",
@@ -80,7 +85,7 @@
 
 
     "Node Input Conversion Submenus": "节点转换子菜单",
-    "In the node context menu, place the entries that convert between input/widget in sub-menus": "将全部 接口/组件 选项放到子菜单中",
+    "In the node context menu, place the entries that convert between input/widget in sub-menus": "将全部 转换为输入/组件 选项放到子菜单中",
     "In the node context menu, place the entries that convert between input/widget in sub-menus.": "将全部 转换为输入/组件 选项放到子菜单中。",
 
 
@@ -89,10 +94,18 @@
     "normal": "正常",
     "Sidebar location": "位置",
 
+    
+    "Tree Explorer": "节点库",
+    "Tree explorer item padding": "行边距",
+
 
     "Validation": "校验",
     "Validate workflows": "校验工作流",
     "Require to confirmation when clearing workflow": "清理工作流时需要确认",
+
+    
+    "Window": "窗口",
+    "Show confirmation when closing window": "关闭窗口需要确认",
 
 
     "Workflow": "工作流",
@@ -104,16 +117,18 @@
     "Require confirmation when clearing workflow": "清理工作流需要确认",
 
 
-    "SideBar": "SideBAr",
+    "SideBar": "SideBar",
     
     "Queue": "执行队列",
     "QUEUE": "队列",
     "No Tasks Found": "无任务",
     "There are no tasks in the queue.": "队列中没有任务。",
+    "Fit Image Preview": "缩放图像预览",
     "Show Flat List": "显示列表",
     "Do you want to delete all tasks?": "删除全部任务？",
     "Node Library": "节点库",
     "NODE LIBRARY": "节点库",
+    "New Fodler": "新建收藏文件夹",
     "Sort Order": "排序",
     "Search Nodes...": "搜索...",
     "Toggle Theme": "切换主题",
@@ -153,7 +168,6 @@
     "Add Stack": "新建Stack堆叠",
     "Save Selected as Template": "存储选中为模板",
     "Edit Group": "编辑框",
-    "Group": "组/框",
     "Font size": "字体大小",
     "font_size": "字体大小",
     "Note": "注释",
