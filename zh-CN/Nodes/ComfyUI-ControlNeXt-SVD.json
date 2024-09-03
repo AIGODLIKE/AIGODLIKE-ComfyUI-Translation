@@ -1,0 +1,92 @@
+{
+    "DownloadAndLoadControlNeXt": {
+        "title": "下载并加载 ControlNeXt",
+        "widgets": {
+            "precision": "精度"
+        },
+        "outputs": {
+            "controlnext_pipeline": "ControlNeXt"
+        }
+    },
+    "ControlNextGetPoses": {
+        "title": "ControlNeXt 获取姿态",
+        "inputs": {
+            "ref_image": "参考图像",
+            "pose_images": "姿态图像"
+        },
+        "widgets": {
+            "include_body": "身体",
+            "include_hand": "手部",
+            "include_face": "面部"
+        },
+        "outputs": {
+            "poses_with_ref": "姿态与参考图像",
+            "pose_images": "姿态图像"
+        }
+    },
+    "ControlNextDiffusersScheduler": {
+        "title": "ControlNeXt 扩散调度器",
+        "widgets": {
+            "scheduler": "调度器",
+            "sigma_min": "sigma_min",
+            "sigma_max": "sigma_max"
+        },
+        "outputs": {
+            "scheduler": "调度器"
+        }
+    },
+    "ControlNextSVDApply": {
+        "title": "ControlNeXt 应用 SVD",
+        "inputs": {
+            "model": "模型",
+            "pose_images": "姿态图像"
+        },
+        "widgets": {
+            "strength": "强度",
+            "blocks": "blocks",
+            "input_block_patch_after_skip": "input_block_patch_after_skip"
+        },
+        "outputs": {
+            "model": "模型"
+        }
+    },
+    "ControlNextSampler": {
+        "title": "ControlNeXt 采样器",
+        "inputs": {
+            "controlnext_pipeline": "ControlNeXt",
+            "ref_image": "参考图像",
+            "pose_images": "姿态图像",
+            "optional_scheduler": "调度器(可选)"
+        },
+        "widgets": {
+            "steps": "步数",
+            "motion_bucket_id": "动态bucketID",
+            "cfg_min": "最小CFG",
+            "cfg_max": "最大CFG",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作",
+            "fps": "帧率",
+            "controlnext_cond_scale": "ControlNeXt条件系数",
+            "noise_aug_strength": "噪波增强",
+            "context_size": "上下位长度",
+            "context_overlap": "上下文重叠",
+            "keep_model_loaded": "保持模型加载"
+        },
+        "outputs": {
+            "samples": "Latent"
+        }
+    },
+    "ControlNextDecode": {
+        "title": "ControlNeXt 解码",
+        "inputs": {
+            "controlnext_pipeline": "ControlNeXt",
+            "samples": "Latent"
+        },
+        "widgets": {
+            "decode_chunk_size": "decode_chunk_size"
+        },
+        "outputs": {
+            "images": "图像"
+        }
+    }
+}
