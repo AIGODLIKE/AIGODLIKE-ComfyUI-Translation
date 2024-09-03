@@ -350,7 +350,7 @@ export class TUtils {
         },
         tooltip: TUtils.T.Menu["Switch Locale"] || "Switch Locale",
         content: "",
-        classList: "swlocale-button"
+        classList: "swlocale-button comfyui-button primary"
       });
       btn.iconElement.style.width = "1.2rem";
       var group = new ComfyButtonGroup(btn.element);
