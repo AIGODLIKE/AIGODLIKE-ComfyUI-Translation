@@ -1,3 +1,4 @@
+# NOTE: The new ComfyUI has generated some additional work, please wait.（Currently, the translation coverage rate is 72%）
 # AIGODLIKE-ComfyUI-Translation
 A plugin for multilingual translation of [ComfyUI](https://github.com/comfyanonymous/ComfyUI)，This plugin implements translation of resident menu bar/search bar/right-click context menu/node, etc
 ## ComfyUI users in other languages, I need your help
@@ -41,6 +42,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[AnyLine](https://github.com/TheMistoAI/ComfyUI-Anyline.git)|√|TODO|√|TODO|TODO|TODO|
 |[Automatic CFG](https://github.com/Extraltodeus/ComfyUI-AutomaticCFG.git)|√|TODO|√|TODO|TODO|TODO|
 |[BiRefNet](https://github.com/viperyl/ComfyUI-BiRefNet.git)|√|TODO|√|TODO|TODO|TODO|
+|[BitsandBytes NF4](https://github.com/comfyanonymous/ComfyUI_bitsandbytes_NF4.git)|√|TODO|√|TODO|TODO|TODO|
 |[BrushNet (kijai)](https://github.com/kijai/ComfyUI-BrushNet-Wrapper.git)|√|TODO|√|TODO|TODO|TODO|
 |[BrushNet (nullquant)](https://github.com/nullquant/ComfyUI-BrushNet.git)|√|TODO|√|TODO|TODO|TODO|
 |[Bxb](https://github.com/zhulu111/ComfyUI_Bxb.git)|√|TODO|√|TODO|TODO|TODO|
@@ -59,6 +61,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[cg-image-picker](https://github.com/chrisgoringe/cg-image-picker.git)|√|TODO|√|TODO|TODO|TODO|
 |[Davemane42 Nodes](https://github.com/Davemane42/ComfyUI_Dave_CustomNode)|√|√|√|√|TODO|TODO|
 |[Dagthomas Nodes](https://github.com/dagthomas/comfyui_dagthomas)|√|√|√|√|TODO|TODO|
+|[Derfuu Nodes](https://github.com/Derfuu/Derfuu_ComfyUI_ModdedNodes.git)|√|TODO|√|TODO|TODO|TODO|
 |[DynamiCrafter (kijai)](https://github.com/kijai/ComfyUI-DynamiCrafterWrapper.git)|√|TODO|√|TODO|TODO|TODO|
 |[DynamiCrafter (ExponentialML)](https://github.com/ExponentialML/ComfyUI_Native_DynamiCrafter.git)|√|TODO|√|TODO|TODO|TODO|
 |[DynamicThresholding](https://github.com/mcmonkeyprojects/sd-dynamic-thresholding)|√|√|√|TODO|TODO|TODO|
@@ -66,11 +69,13 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[EasyAnimate (kijai)](https://github.com/kijai/ComfyUI-EasyAnimateWrapper.git)|√|TODO|√|TODO|TODO|TODO|
 |[Easy Tools](https://github.com/jafshare/ComfyUI-Easy-Tools)|√|TODO|√|TODO|TODO|TODO|
 |[Easy Use](https://github.com/yolain/ComfyUI-Easy-Use)|√|TODO|√|TODO|TODO|TODO|
+|[Eesahes Nodes](https://github.com/EeroHeikkinen/ComfyUI-eesahesNodes.git)|√|TODO|√|TODO|TODO|TODO|
 |[Efficiency Nodes](https://github.com/LucianoCirino/efficiency-nodes-comfyui)|√|√|√|√|TODO|TODO|
 |[ELLA (ExponentialML)](https://github.com/ExponentialML/ComfyUI_ELLA.git)|√|TODO|√|TODO|TODO|TODO|
 |[ELLA (Tencent)](https://github.com/TencentQQGYLab/ComfyUI-ELLA.git)|√|TODO|√|TODO|TODO|TODO|
 |[EllangoK Postprocessing](https://github.com/EllangoK/ComfyUI-post-processing-nodes)|√|√|√|TODO|TODO|TODO|
 |[Essentials](https://github.com/cubiq/ComfyUI_essentials.git)|√|TODO|√|TODO|TODO|TODO|
+|[Execution-Inversion](https://github.com/BadCafeCode/execution-inversion-demo-comfyui.git)|√|TODO|√|TODO|TODO|TODO|
 |[ExLlama nodes](https://github.com/Zuellni/ComfyUI-ExLlama-Nodes)|√|√|√|TODO|TODO|TODO|
 |[experiments](https://github.com/comfyanonymous/ComfyUI_experiments)|√|√|√|TODO|TODO|TODO|
 |[Face Analysis](https://github.com/cubiq/ComfyUI_FaceAnalysis.git)|√|TODO|√|TODO|TODO|TODO|
@@ -93,6 +98,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Inspire Pack](https://github.com/ltdrdata/ComfyUI-Inspire-Pack)|√|√|√|TODO|TODO|TODO|
 |[InstantID (cubiq)](https://github.com/cubiq/ComfyUI_InstantID.git)|√|TODO|√|TODO|TODO|TODO|
 |[InstantID (ZHO)](https://github.com/ZHO-ZHO-ZHO/ComfyUI-InstantID.git)|√|TODO|√|TODO|TODO|TODO|
+|[Joy Caption](https://github.com/StartHua/Comfyui_CXH_joy_caption.git)|√|TODO|√|TODO|TODO|TODO|
 |[KJ Nodes](https://github.com/kijai/ComfyUI-KJNodes.git)|√|TODO|√|TODO|TODO|TODO|
 |[kkTranslator](https://github.com/AIGCTeam/ComfyUI_kkTranslator_nodes.git)|√|TODO|√|TODO|TODO|TODO|
 |[Kolors (kijai)](https://github.com/kijai/ComfyUI-KwaiKolorsWrapper.git)|√|TODO|√|TODO|TODO|TODO|
@@ -118,8 +124,10 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[MotionCtrl](https://github.com/chaojie/ComfyUI-MotionCtrl)|√|TODO|√|TODO|TODO|TODO|
 |[MotionCtrl-SVD](https://github.com/chaojie/ComfyUI-MotionCtrl-SVD)|√|TODO|√|TODO|TODO|TODO|
 |[MTB](https://github.com/melMass/comfy_mtb.git)|√|TODO|√|TODO|TODO|TODO|
+|[N-Sidebar](https://github.com/Nuked88/ComfyUI-N-Sidebar.git)|√|TODO|√|TODO|TODO|TODO|
 |[Noise](https://github.com/BlenderNeko/ComfyUI_Noise)|√|√|√|TODO|TODO|TODO|
 |[NormalLighting](https://github.com/TJ16th/comfyUI_TJ_NormalLighting.git)|√|TODO|√|TODO|TODO|TODO|
+|[Paint By Example](https://github.com/Kangkang625/ComfyUI-paint-by-example.git)|√|TODO|√|TODO|TODO|TODO|
 |[Perturbed-Attention](https://github.com/pamparamm/sd-perturbed-attention.git)|√|TODO|√|TODO|TODO|TODO|
 |[Portrai Master](https://github.com/florestefano1975/comfyui-portrait-master.git)|√|TODO|√|TODO|TODO|TODO|
 |[Power Noise Suite](https://github.com/WASasquatch/PowerNoiseSuite)|√|TODO|√|TODO|TODO|TODO|
@@ -165,7 +173,11 @@ git clone https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION.git
 ```
 ![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/44de967d-2611-4f07-a795-9b28169d51f5)
 ## How to use
-Launch ComfyUI and open the menu. Click on the language option to switch languages.
+For new UI:
+![1481d583968e3b626e366d2ad2faf62c](https://github.com/user-attachments/assets/9fcfcca7-7666-419d-adfa-2a2eccbd921e)
+
+
+For legacy UI:
 ![image](https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/74d184ac-e7ef-4059-bd5e-dfb6fd4a64ac)
 
 ## How to add other languages（translator）
