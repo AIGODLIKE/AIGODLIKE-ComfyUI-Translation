@@ -28,6 +28,15 @@
     "Double click group title to edit": "双击框标题以编辑",
 
 
+    "Link Release": "连接",
+    "Action on link release (Shift)": "连线松开行为（Shift）",
+    "context menu": "添加菜单",
+    "search box": "搜索框",
+    "no action": "无",
+    "Action on link release (No modifier)": "连线松开行为（正常）",
+    
+
+
     "Group Selected Nodes": "节点框",
     "Group selected nodes padding": "默认外边距",
 
