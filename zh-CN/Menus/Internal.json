@@ -125,6 +125,8 @@
     "Prompt for filename when saving workflow": "保存工作流需要填入文件名",
     "Require confirmation when clearing workflow": "清理工作流需要确认",
 
+    "Other": "其他",
+
 
     "SideBar": "SideBar",
     
@@ -170,11 +172,19 @@
     "Instant": "实时",
     "On change": "变动",
 
+    "searchBox": "searchBox",
+
+    "Add node filter condition": "添加节点筛选条件",
+    "Input Type": "输入类型",
+    "Output Type": "输出类型",
+    "Category": "分类",
+    "Source": "来源",
+    "Add": "加",
 
 
 
     "Add Node": "新建节点",
-    "Add Group": "新建分组",
+    "Add Group": "新建框",
     "Add Stack": "新建Stack堆叠",
     "Save Selected as Template": "存储选中为模板",
     "Edit Group": "编辑框",
@@ -286,7 +296,6 @@
     "Clear Queue": "清除队列",
     "Export logs...": "导出日志",
     "View exported logs...": "显示导出日志",
-    "Source": "源",
     "Type": "类型",
     "Timestamp": "时间戳",
     "Message": "消息",

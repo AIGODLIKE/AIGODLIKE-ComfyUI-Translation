@@ -2101,6 +2101,16 @@
             "LATENT": "Latent"
         }
     },
+    "LoraSave": {
+        "title": "保存 LoRA",
+        "inputs": {
+            "model_diff": "模型"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀",
+            "rank": "rank"
+        }
+    },
     "LatentBlend": {
         "title": "Latent混合",
         "inputs": {
