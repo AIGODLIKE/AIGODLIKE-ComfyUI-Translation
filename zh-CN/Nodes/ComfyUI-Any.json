@@ -1,0 +1,61 @@
+{
+    "AnyText_Loader": {
+        "title": "AnyText 加载器",
+        "widgets": {
+            "font": "字体",
+            "ckpt_name": "模型名称",
+            "clip": "CLIP",
+            "translator": "翻译服务"
+        },
+        "outputs": {
+            "AnyText_Loader": "AnyText"
+        }
+    },
+    "AnyText_translator": {
+        "title": "AnyText 翻译",
+        "widgets": {
+            "model": "模型",
+            "prompt": "提示词",
+            "Batch_prompt": "批次提示词",
+            "t5_Target_Language": "T5目标语言",
+            "if_Batch": "批次翻译",
+            "Batch_Newline": "批次换行",
+            "device": "设备"
+        },
+        "outputs": {
+            "text": "文本"
+        }
+    },
+    "AnyText": {
+        "title": "AnyText",
+        "inputs": {
+            "AnyText_Loader": "AnyText",
+            "ori_image": "初始图像",
+            "pos_image": "文本位置图像"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "a_prompt": "正面提示词",
+            "n_prompt": "负面提示词",
+            "mode": "模式",
+            "sort_radio": "排列方法", 
+            "revise_pos": "修正位置",
+            "img_count": "图像数量",
+            "ddim_steps": "ddim 步数",
+            "seed": "随机种",
+            "nonEdit_random_gen_width": "自动遮罩随机宽度",
+            "nonEdit_random_gen_height": "自动遮罩随机高度",
+            "Random_Gen": "自动遮罩",
+            "strength": "强度",
+            "cfg_scale": "CFG",
+            "eta": "eta",
+            "device": "设备",
+            "fp16": "fp16",
+            "cpu_offload": "cpu卸载",
+            "all_to_device": "统一设备"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    }
+}
