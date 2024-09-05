@@ -1,0 +1,107 @@
+{
+    "OmostLLMLoaderNode": {
+        "title": "Omost 加载器",
+        "widgets": {
+            "llm_name": "语言模型名称"
+        },
+        "outputs": {
+            "OMOST_LLM": "Omost"
+        }
+    },
+    "OmostLLMHTTPServerNode": {
+        "title": "Omost HTTP 服务",
+        "widgets": {
+            "address": "地址",
+            "api_type": "API类型"
+        },
+        "outputs": {
+            "OMOST_LLM": "Omost"
+        }
+    },
+    "OmostLLMChatNode": {
+        "title": "Omost 对话",
+        "inputs": {
+            "llm": "Omost",
+            "conversation": "对话记录"
+        },
+        "widgets": {
+            "text": "文本",
+            "max_new_token": "最大输出Token",
+            "top_p": "动态候选集长度",
+            "temperature": "温度",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "OMOST_CONVERSATION": "对话记录",
+            "OMOST_CANVAS_CONDITIONING": "背景条件"
+        }
+    },
+    "OmostGreedyBagsTextEmbeddingNode": {
+        "title": "Omost Greedy Bags Text Embedding",
+        "inputs": {
+            "canvas_conds": "背景条件",
+            "clip": "CLIP"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "OmostLayoutCondNode": {
+        "title": "Omost 条件区域（区域）",
+        "inputs": {
+            "canvas_conds": "背景条件",
+            "clip": "CLIP",
+            "positive": "正面条件"
+        },
+        "widgets": {
+            "global_strength": "全局强度",
+            "region_strength": "区域强度",
+            "overlap_method": "覆盖方式"
+        },
+        "outputs": {
+            "CONDITIONING": "条件",
+            "MASK": "遮罩"
+        }
+    },
+    "OmostDenseDiffusionLayoutNode": {
+        "title": "Omost 条件区域（DenseDiffusion）",
+        "inputs": {
+            "model": "模型",
+            "canvas_conds": "背景条件",
+            "clip": "CLIP"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "CONDITIONING": "条件"
+        }
+    },
+    "OmostLoadCanvasConditioningNode": {
+        "title": "Omost 加载背景条件",
+        "widgets": {
+            "json_str": "json字符串"
+        },
+        "outputs": {
+            "OMOST_CANVAS_CONDITIONING": "背景条件"
+        }
+    },
+    "OmostLoadCanvasPythonCodeNode": {
+        "title": "Omost 加载背景 Python 代码",
+        "widgets": {
+            "python_str": "Python字符串"
+        },
+        "outputs": {
+            "OMOST_CANVAS_CONDITIONING": "背景条件"
+        }
+    },
+    "OmostRenderCanvasConditioningNode": {
+        "title": "Omost 渲染背景条件",
+        "inputs": {
+            "canvas_conds": "背景条件"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "quick-connections": "快速连接",
+    "Quick connections enable": "启用",
+    "Connect with dot": "扩大选择范围",
+    "Disable to connect with text too, a bigger area to release the mouse button": "禁用后仅在鼠标移动到节点名上后才可快速连接",
+    
+    "circuit-board-lines": "快速连接连线渲染",
+    "Circuit Board lines": "连线显示",
+    "Circuit board": "电路板模式",
+    "On top": "置顶"
+}
