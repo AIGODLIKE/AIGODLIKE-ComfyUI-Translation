@@ -1,7 +1,7 @@
 class TExe {
   static T = null;
   MT(txt) {
-    return this.T?.Menu?.[txt] || this.T?.Menu?.[txt?.trim()];
+    return this.T?.Menu?.[txt] || this.T?.Menu?.[txt?.trim?.()];
   }
 
   constructor() {
@@ -34,46 +34,52 @@ class TExe {
     const allElements = node.querySelectorAll("*");
 
     for (const ele of allElements) {
-      let targetLangText = this.MT(ele.innerText);
-      if (!targetLangText) {
-        if (ele.nodeName === "INPUT" && ele.type === "button") {
-          targetLangText = this.MT(ele.value);
-          if (!targetLangText) continue;
-          ele.value = targetLangText;
-        }else if (ele.childNodes?.length > 1) {
-          this.replaceText(ele);
-        }
-        continue;
-      }
+      // let targetLangText = this.MT(ele.innerText) || this.MT(ele.value) || this.MT(ele.title);
+      // if (!targetLangText) {
+      //   if (ele.nodeName === "INPUT" && ele.type === "button") {
+      //     targetLangText = this.MT(ele.value);
+      //     if (!targetLangText) continue;
+      //     ele.value = targetLangText;
+      //   }else if (ele.childNodes?.length > 1) {
+      //     this.replaceText(ele);
+      //   }
+      //   continue;
+      // }
       this.replaceText(ele);
     }
   }
 
   replaceText(target) {
-    let T = this.T;
-    if (!T) return;
+    if (!target) return;
+    if (!this.T) return;
     if (this.tSkip(target)) return;
-    if (target?.childNodes.length > 1) {
-      for (const childNode of target.childNodes) {
-        this.replaceText(childNode);
-        const targetLangText = childNode?.nodeType === Node.ELEMENT_NODE ? this.MT(childNode.innerText) : this.MT(childNode.nodeValue);
-        if (!targetLangText) continue;
-        if (childNode?.nodeType === Node.TEXT_NODE) {
-          childNode.nodeValue = targetLangText;
-        }
-        if (childNode?.nodeType === Node.ELEMENT_NODE) {
-          childNode.innerText = targetLangText;
-        }
+    for (const childNode of target.childNodes || [])
+      this.replaceText(childNode);
+    this.replaceText(target.firstChild);
+    // 翻译target
+    if (target.nodeType === Node.TEXT_NODE) {
+      if (target.nodeValue)
+        target.nodeValue = this.MT(target.nodeValue) || target.nodeValue;
+    }
+    else if (target.nodeType === Node.ELEMENT_NODE) {
+      if (target.title)
+        target.title = this.MT(target.title) || target.title;
+
+      if (target.nodeName === "INPUT" && target.type === "button") {
+        target.value = this.MT(target.value) || target.value;
       }
-    } else {
-      if (target?.firstChild) {
-        this.replaceText(target.firstChild);
+
+      if (target.innerText && this.MT(target.innerText))
+      {
+        target.innerText = this.MT(target.innerText);
       }
-      if (target?.firstChild?.nodeType === Node.TEXT_NODE) {
-        const targetLangText = this.MT(target.firstChild.nodeValue);
-        if (!targetLangText) return;
-        target.innerText = targetLangText;
+      
+      if (target.textContent && this.MT(target.textContent))
+      {
+        target.textContent = this.MT(target.textContent);
       }
+    }else if(target.nodeType === Node.COMMENT_NODE){
+      // pass
     }
   }
 }
@@ -88,7 +94,7 @@ export function applyMenuTranslation(T) {
         texe.translateAllText(mutation.target);
       }
     });
-
+  texe.translateAllText(window.comfyAPI?.app?.app?.menu?.element);
   const viewHistoryButton = document.getElementById("comfy-view-history-button");
   const viewQueueButton = document.getElementById("comfy-view-queue-button");
 
