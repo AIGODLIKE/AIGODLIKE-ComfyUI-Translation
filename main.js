@@ -97,11 +97,31 @@ export class TUtils {
    * @param {ComfyNodeDef} nodeDef
    * Ref: https://github.com/Comfy-Org/ComfyUI_frontend/blob/adcef7d2f4124f03bd1a6a86d6c781bdc5bdf3a6/src/types/apiTypes.ts#L360
    */
-  static applyNodeDisplayNameTranslation(nodeDef) {
+  static applyVueNodeDisplayNameTranslation(nodeDef) {
     const nodesT = TUtils.T.Nodes;
     const class_type = nodeDef.name;
     if (nodesT.hasOwnProperty(class_type)) {
       nodeDef.display_name = nodesT[class_type]["title"] || nodeDef.display_name;
+    }
+  }
+
+  static applyVueNodeTranslation(nodeDef) {
+    const catsT = TUtils.T.NodeCategory;
+    const nodesT = TUtils.T.Nodes;
+    const nodeT = TUtils.T.Nodes[nodeDef.name];
+    // category
+    if (!nodeDef.category) return;
+    const catArr = nodeDef.category.split("/");
+    nodeDef.category = catArr.map((cat) => catsT?.[cat] || cat).join("/");
+    if (!nodeT) return;
+    return;
+    for (let itype in nodeDef.input) {
+      if (itype === "hidden") continue;
+      for (let socketname in nodeDef.input[itype]) {
+        let inp = nodeDef.input[itype][socketname];
+        if (inp[1] === undefined) continue;
+        inp.name = nodeT["inputs"]?.[socketname] || nodeT["widgets"]?.[socketname] || undefined;
+      }
     }
   }
 
@@ -427,51 +447,6 @@ const ext = {
     // Any initial setup to run as soon as the page loads
     TUtils.enhandeDrawNodeWidgets();
     TUtils.syncTranslation();
-    return;
-
-    var f = app.graphToPrompt;
-    app.graphToPrompt = async function () {
-      var res = await f.apply(this, arguments);
-      if (res.hasOwnProperty("workflow")) {
-        for (let node of res.workflow.nodes) {
-          if (node.inputs == undefined) continue;
-          if (!(node.type in TRANSLATIONS && TRANSLATIONS[node.type].hasOwnProperty("inputs"))) continue;
-          for (let input of node.inputs) {
-            var t_inputs = TRANSLATIONS[node.type]["inputs"];
-            for (let name in t_inputs) {
-              if (input.name == t_inputs[name]) {
-                input.name = name;
-              }
-            }
-          }
-        }
-      }
-      if (res.hasOwnProperty("output")) {
-        for (let oname in res.output) {
-          let o = res.output[oname];
-          if (o.inputs == undefined) continue;
-          if (!(o.class_type in TRANSLATIONS && TRANSLATIONS[o.class_type].hasOwnProperty("widgets"))) continue;
-
-          var t_inputs = TRANSLATIONS[o.class_type]["widgets"];
-          var rm_keys = [];
-          for (let iname in o.inputs) {
-            for (let name in t_inputs) {
-              if (iname == name)
-                // 没有翻译的不管
-                continue;
-              if (iname == t_inputs[name]) {
-                o.inputs[name] = o.inputs[iname];
-                rm_keys.push(iname);
-              }
-            }
-          }
-          for (let rm_key of rm_keys) {
-            delete o.inputs[rm_key];
-          }
-        }
-      }
-      return res;
-    };
   },
   async setup(app) {
     TUtils.applyNodeTypeTranslation(app);
@@ -504,7 +479,8 @@ const ext = {
     // delete ext.beforeRegisterNodeDef;
   },
   beforeRegisterVueAppNodeDefs(nodeDefs) {
-    nodeDefs.forEach(TUtils.applyNodeDisplayNameTranslation);
+    nodeDefs.forEach(TUtils.applyVueNodeDisplayNameTranslation);
+    nodeDefs.forEach(TUtils.applyVueNodeTranslation);
   },
   async registerCustomNodes(app) {
     // Register any custom node implementations here allowing for more flexability than a custom node def
