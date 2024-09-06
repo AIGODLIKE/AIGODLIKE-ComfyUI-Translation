@@ -40,6 +40,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[AnimateDiff](https://github.com/ArtVentureX/comfyui-animatediff)|√|√|√|√|TODO|TODO|
 |[AnimateDiff-Evolved](https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved.git)|√|√|√|TODO|TODO|TODO|
 |[AnyLine](https://github.com/TheMistoAI/ComfyUI-Anyline.git)|√|TODO|√|TODO|TODO|TODO|
+|[AnyText](https://github.com/zmwv823/ComfyUI-AnyText.git)|√|TODO|√|TODO|TODO|TODO|
 |[Automatic CFG](https://github.com/Extraltodeus/ComfyUI-AutomaticCFG.git)|√|TODO|√|TODO|TODO|TODO|
 |[BiRefNet](https://github.com/viperyl/ComfyUI-BiRefNet.git)|√|TODO|√|TODO|TODO|TODO|
 |[BitsandBytes NF4](https://github.com/comfyanonymous/ComfyUI_bitsandbytes_NF4.git)|√|TODO|√|TODO|TODO|TODO|
@@ -54,6 +55,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[ControlNet LLLite](https://github.com/kohya-ss/ControlNet-LLLite-ComfyUI)|√|√|√|TODO|TODO|TODO|
 |[ControlNet Preprocessors](https://github.com/Fannovel16/comfy_controlnet_preprocessors)|√|√|√|√|TODO|TODO|
 |[ControlNet Preprocessors AUX](https://github.com/Fannovel16/comfyui_controlnet_aux)|√|√|√|√|TODO|TODO|
+|[ControlNeXt SVD](https://github.com/kijai/ComfyUI-ControlNeXt-SVD.git)|√|TODO|√|TODO|TODO|TODO|
 |[Crystools](https://github.com/crystian/ComfyUI-Crystools.git)|√|TODO|√|TODO|TODO|√|
 |[Cutoff](https://github.com/BlenderNeko/ComfyUI_Cutoff)|√|√|√|√|TODO|TODO|
 |[Custom-Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts)|√|√|√|TODO|TODO|TODO|
@@ -136,6 +138,8 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Prompt Reader](https://github.com/receyuki/comfyui-prompt-reader-node)|√|TODO|√|TODO|TODO|TODO|
 |[PuLID (cubiq)](https://github.com/cubiq/PuLID_ComfyUI.git)|√|TODO|√|TODO|TODO|TODO|
 |[QR](https://github.com/coreyryanhanson/comfy-qr)|√|√|√|TODO|TODO|TODO|
+|[Quick Connections](https://github.com/niknah/quick-connections.git)|√|TODO|√|TODO|TODO|TODO|
+|[Omost](https://github.com/huchenlei/ComfyUI_omost.git)|√|TODO|√|TODO|TODO|TODO|
 |[OneButtonPrompt](https://github.com/AIrjen/OneButtonPrompt)|√|TODO|√|TODO|TODO|TODO|
 |[ReActor](https://github.com/Gourieff/comfyui-reactor-node)|√|TODO|√|TODO|TODO|TODO|
 |[ResAdapter](https://github.com/jiaxiangc/ComfyUI-ResAdapter.git)|√|TODO|√|TODO|TODO|TODO|
