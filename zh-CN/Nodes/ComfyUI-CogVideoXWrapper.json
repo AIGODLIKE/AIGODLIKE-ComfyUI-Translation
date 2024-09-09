@@ -2,7 +2,11 @@
     "DownloadAndLoadCogVideoModel": {
         "title": "下载并加载CogVideo模型",
         "widgets": {
-            "precision": "精度"
+            "model": "模型",
+            "precision": "精度",
+            "fp8_transformer": "fp8_transformer",
+            "compile": "编译",
+            "enable_sequential_cpu_offload": "序列CPU卸载"
         },
         "outputs": {
             "cogvideo_pipe": "CogVideo"
@@ -13,6 +17,10 @@
         "inputs": {
             "pipeline": "CogVideo",
             "image": "图像"
+        },
+        "widgets": {
+            "chunk_size": "chunk_size",
+            "enable_vae_slicing": "VAE切分"
         },
         "outputs": {
             "samples": "Latent"
