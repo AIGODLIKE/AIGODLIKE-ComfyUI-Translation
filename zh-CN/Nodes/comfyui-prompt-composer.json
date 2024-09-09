@@ -7,12 +7,16 @@
         "widgets": {
             "effect": "效果",
             "effect_weight": "效果权重",
+            "effect (weight)": "效果权重",
             "lens_type": "光线",
             "lens_type_weight": "光线权重",
+            "lens_type (weight)": "光线权重",
             "painting_style": "画风",
             "painting_style_weight": "画风权重",
+            "painting_style (weight)": "画风权重",
             "photo_style": "照片风格",
             "photo_style_weight": "照片风格权重",
+            "photo_style (weight)": "照片风格权重",
             "active": "启用"
         },
         "outputs": {
@@ -110,6 +114,22 @@
         "widgets": {
             "effect": "效果",
             "effect_weight": "效果权重",
+            "active": "启用"
+        },
+        "outputs": {
+            "text_out": "文本"
+        }
+    },
+    "PromptComposerListFoldersClothing": {
+        "title": "提示词创作（服装列表）",
+        "inputs": {
+            "text_in_opt": "文本(可选)"
+        },
+        "widgets": {
+            "Complex": "复杂",
+            "Complex (weight)": "复杂权重",
+            "Generic": "通用",
+            "Generic (weight)": "通用权重",
             "active": "启用"
         },
         "outputs": {
