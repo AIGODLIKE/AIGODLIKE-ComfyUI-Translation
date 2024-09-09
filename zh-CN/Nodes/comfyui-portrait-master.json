@@ -10,6 +10,8 @@
             "shot_weight": "镜头权重",
             "gender": "性别",
             "androgynous": "双性",
+            "ugly": "丑陋",
+            "ordinary_face": "平凡",
             "age": "年龄",
             "nationality_1": "人种",
             "nationality_2": "人种",
@@ -101,6 +103,7 @@
         "widgets": {
             "makeup_type": "妆容类型",
             "makeup_color": "妆容颜色",
+            "makeup_style": "妆容风格",
             "eyeshadow": "眼影",
             "eyeliner": "眼线",
             "mascara": "烟熏",
