@@ -3,6 +3,7 @@
         "title": "高级LivePortrait",
         "inputs": {
             "src_image": "图像",
+            "src_images": "图像",
             "motion_link": "动态数据",
             "driving_images": "参考图像"
         },
@@ -10,18 +11,23 @@
             "retargeting_eyes": "眼部重定向",
             "retargeting_mouth": "嘴部重定向",
             "crop_factor": "应用区域系数",
-            "trun_on": "启用",
-            "command": "命令"
+            "turn_on": "启用",
+            "command": "命令",
+            "tracking_src_vid": "追踪视频",
+            "animate_without_vid": "无视频动画"
         },
         "outputs": {
-            "image": "图像"
+            "image": "图像",
+            "images": "图像"
         }
     },
     "ExpressionEditor": {
         "title": "表情编辑器",
         "inputs": {
             "src_image": "图像",
-            "sample_image": "参考图像"
+            "sample_image": "参考图像",
+            "motion_link": "动态数据",
+            "add_exp": "表情数据"
         },
         "widgets": {
             "rotate_pitch": "头部俯仰",
@@ -38,6 +44,7 @@
             "smile": "微笑",
             "src_ratio": "原表情强度",
             "sample_ratio": "参考表情强度",
+            "sample_parts": "参考部位",
             "crop_factor": "应用区域系数"
         },
         "outputs": {
