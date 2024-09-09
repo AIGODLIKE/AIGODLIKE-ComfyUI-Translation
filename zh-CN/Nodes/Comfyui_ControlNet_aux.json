@@ -1,6 +1,4 @@
 {
-
-
     "AnimeFace_SemSegPreprocessor": {
         "title": "AnimeFace分割预处理器",
         "inputs": {
@@ -938,6 +936,30 @@
                 "Just Resize": "仅拉伸",
                 "Crop and Resize": "裁剪并拉伸",
                 "Resize and Fill": "拉伸并填充"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ExecuteAllControlNetPreprocessors": {
+        "title": "执行全部预处理器",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "resolution": "分辨率"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ControlNetAuxSimpleAddText": {
+        "title": "简易添加文本",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "text": "文本"
         },
         "outputs": {
             "IMAGE": "图像"
