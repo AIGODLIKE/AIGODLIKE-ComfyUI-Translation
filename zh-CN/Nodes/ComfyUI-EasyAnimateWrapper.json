@@ -1,6 +1,6 @@
 {
     "DownloadAndLoadEasyAnimateModel": {
-        "title": "下载并加载EasyAnimate模型",
+        "title": "下载并加载 EasyAnimate 模型",
         "widgets": {
             "model": "模型",
             "precision": "精度",
@@ -23,13 +23,15 @@
         }
     },
     "EasyAnimateSampler": {
-        "title": "EasyAnimate采样器",
+        "title": "EasyAnimate 采样器",
         "inputs": {
             "easyanimate_pipeline": "EasyAnimate",
             "positive": "正面条件",
             "negative": "负面条件",
+            "image_embeds": "图像嵌入组",
             "image_start": "起始图像",
-            "image_end": "结束图像"
+            "image_end": "结束图像",
+            "full_input_video": "视频图像"
         },
         "widgets": {
             "width": "宽度",
@@ -40,6 +42,7 @@
             "seed": "随机种",
             "control_after_generate": "运行后操作",
             "scheduler": "调度器",
+            "denoise_strength": "降噪",
             "keep_model_loaded": "保持模型加载"
         },
         "outputs": {
@@ -47,13 +50,37 @@
         }
     },
     "EasyAnimateDecode": {
-        "title": "EasyAnimate解码",
+        "title": "EasyAnimate 解码",
         "inputs": {
             "easyanimate_pipeline": "EasyAnimate",
             "latents": "EasyAnimateLatent"
         },
         "outputs": {
             "images": "图像"
+        }
+    },
+    "EasyAnimateResize": {
+        "title": "EasyAnimate 缩放",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "base_resolution": "基础分辨率"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "EasyAnimateImageEncoder": {
+        "title": "EasyAnimate 图像编码",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "strength": "强度"
+        },
+        "outputs": {
+            "image_embeded": "图像嵌入组"
         }
     }
 }

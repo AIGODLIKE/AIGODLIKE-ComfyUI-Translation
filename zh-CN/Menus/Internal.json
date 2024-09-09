@@ -43,6 +43,7 @@
     "Logging": "日志",
     "View Logs": "显示日志",
     "Comfy.Logging.Enabled": "启用",
+    "Enable logging": "启用",
 
 
     "Menu": "菜单",
@@ -165,11 +166,11 @@
     "Refresh widgets in nodes to find new models or files": "刷新节点",
     "Open Clipspace window": "打开剪贴板",
     "Reset the canvas view": "重置画面视图",
-    "Clear current workflow": "清空当前工作流",
+    "Clears current workflow": "清空当前工作流",
     "Cancel current generation": "取消当前任务",
     "Auto Queue:": "自动执行",
     "Instant": "实时",
-    "On change": "变动",
+    "On Change": "变动",
 
     "searchBox": "searchBox",
 

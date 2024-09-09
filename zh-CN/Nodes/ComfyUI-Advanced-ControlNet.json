@@ -52,7 +52,8 @@
             "null_latent_kf_stre": "空Latent关键帧强度",
             "null_latent_kf_strength": "空Latent关键帧强度",
             "inherit_missing": "缺失值自动继承",
-            "gurantee_usage": "gurantee_usage"
+            "gurantee_usage": "gurantee_usage",
+            "guarantee_steps": "最小采样步数"
         },
         "outputs": {
             "TIMESTEP_KEYFRAME": "帧间隔",
@@ -375,11 +376,13 @@
     "ScaledSoftMaskedUniversalWeights": {
         "title": "缩放柔和遮罩权重",
         "inputs": {
-            "mask": "遮罩"
+            "mask": "遮罩",
+            "cn_extras": "ControlNet附加组"
         },
         "widgets": {
             "min_base_multiplier": "最小系数",
-            "max_base_multiplier": "最大系数"
+            "max_base_multiplier": "最大系数",
+            "uncond_multiplier": "uncond_乘数"
         },
         "outputs": {
             "CN_WEIGHTS": "ControlNet权重",
@@ -388,6 +391,9 @@
     },
     "ACN_DefaultUniversalWeights": {
         "title": "默认权重",
+        "inputs": {
+            "cn_extras": "ControlNet附加组"
+        },
         "outputs": {
             "CN_WEIGHTS": "ControlNet权重",
             "TK_SHORTCUT": "帧间隔"
@@ -469,6 +475,81 @@
         },
         "outputs": {
             "SPARSE_METHOD": "Sparse方法"
+        }
+    },
+
+
+    "ACN_SoftControlNetWeightsSD15": {
+        "title": "柔和 ControlNet 权重（SD15）",
+        "inputs": {
+            "cn_extras": "ControlNet附加组"
+        },
+        "outputs": {
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
+        }
+    },
+    "ACN_CustomControlNetWeightsSD15": {
+        "title": "自定义 ControlNet 权重（SD15）",
+        "inputs": {
+            "cn_extras": "ControlNet附加组"
+        },
+        "outputs": {
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
+        }
+    },
+    "ACN_CustomControlNetWeightsFlux": {
+        "title": "自定义 ControlNet 权重（Flux）",
+        "inputs": {
+            "cn_extras": "ControlNet附加组"
+        },
+        "outputs": {
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
+        }
+    },
+    "ACN_SoftT2IAdapterWeights": {
+        "title": "柔和 T2IAdapter 权重",
+        "inputs": {
+            "cn_extras": "ControlNet附加组"
+        },
+        "widgets": {
+            "uncond_multiplier": "uncond_乘数"
+        },
+        "outputs": {
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
+        }
+    },
+    "ACN_CustomT2IAdapterWeights": {
+        "title": "自定义 T2IAdapter 权重",
+        "inputs": {
+            "cn_extras": "ControlNet附加组"
+        },
+        "widgets": {
+            "uncond_multiplier": "uncond_乘数"
+        },
+        "outputs": {
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
+        }
+    },
+
+    "ACN_ScaledSoftControlNetWeights": {
+        "title": "缩放柔和 ControlNet 权重",
+        "inputs": {
+            "cn_extras": "ControlNet附加组"
+        },
+        "widgets": {
+            "base_multiplier": "系数",
+            "uncond_multiplier": "uncond_乘数"
+        },
+        "outputs": {
+            "CONTROL_NET_WEIGHTS": "ControlNet权重",
+            "TIMESTEP_KEYFRAME": "帧间隔",
+            "CN_WEIGHTS": "ControlNet权重",
+            "TK_SHORTCUT": "帧间隔"
         }
     }
 }

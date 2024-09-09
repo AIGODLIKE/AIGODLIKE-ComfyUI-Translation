@@ -6,7 +6,7 @@
         "visualize": "可视化",
         "view opts": "视图设置",
         "context extras": "上下文附加",
-            "contextref": "上下文参考",
+            "contextref": "contextref",
             "naivereuse": "NaiveReuse",
     "iteration opts": "迭代设置",
     "conditioning": "条件",

@@ -1605,6 +1605,30 @@
             "patch": "patch"
         }
     },
+
+    "easy loraStackApply": {
+        "title": "应用 LoRA 堆",
+        "inputs": {
+            "lora_stack": "LoRA堆可选",
+            "model": "模型",
+            "optional_clip": "CLIP(可选)"
+        },
+        "outputs": {
+            "model": "模型",
+            "clip": "CLIP"
+        }
+    },
+    "easy controlnetStackApply": {
+        "title": "应用 ControlNet 堆",
+        "inputs": {
+            "controlnet_stack": "ControlNet堆",
+            "pipe": "pipe"
+        },
+        "outputs": {
+            "pipe": "pipe"
+        }
+    },
+
     "easy ipadapterApply": {
         "title": "应用IPAdapter",
         "inputs": {
@@ -1648,6 +1672,37 @@
             "embeds_scaling": "嵌入组缩放",
             "cache_mode": "缓存模式",
             "use_tiled": "分块",
+            "use_batch": "分批"
+        },
+        "outputs": {
+            "model": "模型",
+            "tiles": "分块图像",
+            "masks": "遮罩",
+            "ipadapter": "IPAdapter"
+        }
+    },
+    "easy ipadapterApplyFaceIDKolors": {
+        "title": "应用IPAdapter(FaceIDKolors)",
+        "inputs": {
+            "model": "模型",
+            "image": "图像",
+            "image_negative": "负面图像",
+            "attn_mask": "关注层遮罩",
+            "clip_vision": "CLIP视觉",
+            "optional_ipadapter": "IPAdapter(可选)"
+        },
+        "widgets": {
+            "preset": "预置参数",
+            "provider": "设备",
+            "weight": "权重",
+            "weight_faceidv2": "FaceIDV2权重",
+            "weight_kolors": "Kolors权重",
+            "weight_type": "权重类型",
+            "combine_embeds": "合并嵌入组",
+            "start_at": "开始位置",
+            "end_at": "结束位置",
+            "embeds_scaling": "嵌入组缩放",
+            "cache_mode": "缓存模式",
             "use_batch": "分批"
         },
         "outputs": {
@@ -1833,6 +1888,49 @@
             "negative": "负面条件"
         }
     },
+    "easy pulIDApply": {
+        "title": "应用PuLID",
+        "inputs": {
+            "model": "模型",
+            "image": "图像",
+            "attn_mask": "关注层遮罩"
+        },
+        "widgets": {
+            "pulid_file": "PuLID",
+            "insightface": "InsightFace",
+            "method": "方法",
+            "weight": "权重",
+            "start_at": "开始位置",
+            "end_at": "结束位置"
+        },
+        "outputs": {
+            "model": "模型"
+        }
+    },
+    "easy pulIDApplyADV": {
+        "title": "应用PuLID(高级)",
+        "inputs": {
+            "model": "模型",
+            "image": "图像",
+            "attn_mask": "关注层遮罩"
+        },
+        "widgets": {
+            "pulid_file": "PuLID",
+            "insightface": "InsightFace",
+            "method": "方法",
+            "weight": "权重",
+            "projection": "预测",
+            "fidelity": "精确度",
+            "noise": "噪波",
+            "start_at": "开始位置",
+            "end_at": "结束位置"
+        },
+        "outputs": {
+            "model": "模型"
+        }
+    },
+
+
     "easy styleAlignedBatchAlign": {
         "title": "风格对齐",
         "inputs": {
@@ -2028,6 +2126,24 @@
             "IMAGE": "图像"
         }
     },
+    "easy imageListToImageBatch": {
+        "title": "图像列表到图像批次",
+        "inputs": {
+            "images": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "easy imageBatchToimageList": {
+        "title": "图像批次到图像列表",
+        "inputs": {
+            "image": "图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "easy imageSplitList": {
         "title": "图像拆分",
         "inputs": {
@@ -2065,6 +2181,23 @@
     },
     "easy imagecropFromMask": {
         "title": "图像遮罩裁剪",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "image_crop_multi": "图像裁剪乘数",
+            "mask_crop_multi": "遮罩裁剪乘数",
+            "bbox_smooth_alpha": "BBox平滑Alpha"
+        },
+        "outputs": {
+            "crop_image": "图像",
+            "crop_mask": "遮罩",
+            "bbox": "BBox"
+        }
+    },
+    "easy imageCropFromMask": {
+        "title": "遮罩裁剪图像",
         "inputs": {
             "image": "图像",
             "mask": "遮罩"
@@ -2158,6 +2291,23 @@
             "image": "图像"
         }
     },
+    "easy imageDetailTransfer": {
+        "title": "图像细节迁移",
+        "inputs": {
+            "target": "目标图像",
+            "source": "源图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "mode": "模式",
+            "blur_sigma": "模糊",
+            "blend_factor": "混合",
+            "image_output": "图像输出"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
     "easy imageInterrogator": {
         "title": "图像反推",
         "inputs": {
@@ -2234,6 +2384,62 @@
         },
         "outputs": {
             "model": "模型"
+        }
+    },
+    "easy applyBrushNet": {
+        "title": "应用BrushNet",
+        "inputs": {
+            "pipe": "节点束",
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "brushnet": "BrushNet",
+            "dtype": "剪枝类型",
+            "scale": "缩放",
+            "start_at": "开始位置",
+            "end_at": "结束位置"
+        },
+        "outputs": {
+            "pipe": "节点束"
+        }
+    },
+    "easy applyPowerPaint": {
+        "title": "引用PowerPaint",
+        "inputs": {
+            "pipe": "节点束",
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "powerpaint_model": "PowerPaint模型",
+            "powerpaint_clip": "PowerPaintCLIP",
+            "dtype": "剪枝类型",
+            "fitting": "适应",
+            "function": "模式",
+            "scale": "缩放",
+            "start_at": "开始位置",
+            "end_at": "结束位置",
+            "save_memory": "save_memory"
+        },
+        "outputs": {
+            "pipe": "节点束"
+        }
+    },
+    "easy applyInpaint": {
+        "title": "应用Inpaint",
+        "inputs": {
+            "pipe": "节点束",
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "inpaint_mode": "模式",
+            "encode": "编码",
+            "grow_mask_by": "遮罩扩展"
+        },
+        "outputs": {
+            "pipe": "节点束"
         }
     },
 

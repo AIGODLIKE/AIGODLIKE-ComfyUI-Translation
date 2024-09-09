@@ -1,6 +1,15 @@
 {
+    "DownloadAndLoadCCSRModel": {
+        "title": "下载并加载 CCSR 模型",
+        "widgets": {
+            "model": "模型"
+        },
+        "outputs": {
+            "ccsr_model": "CCSR模型"
+        }
+    },
     "CCSR_Model_Select": {
-        "title": "CCSR模型加载器",
+        "title": "CCSR 模型加载器",
         "widgets": {
             "ckpt_name": "模型"
         },
@@ -9,7 +18,7 @@
         }
     },
     "CCSR_Upscale": {
-        "title": "CCSR放大",
+        "title": "CCSR 放大",
         "inputs": {
             "ccsr_model": "CCSR模型",
             "image": "图像"

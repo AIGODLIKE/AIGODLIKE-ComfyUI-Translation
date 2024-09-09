@@ -1,4 +1,6 @@
 {
+    "random 🎲": "随机 🎲",
+
     "Close-up": "特写",
     "Face": "面部特写",
     "Full body": "全身照",
@@ -511,6 +513,9 @@
     "Chestnut": "栗色",
     "White": "白色",
     "Salt and pepper": "花白色",
+
+    "Medium": "中等",
+
     "Anime Makeup": "动漫妆",
     "Artistic Makeup": "艺术妆",
     "Avant-garde Makeup": "前卫妆",
@@ -532,6 +537,7 @@
     "Sunset Eye Makeup": "日落眼妆",
     "Vintage Makeup": "复古妆",
     "Watercolor Makeup": "水彩妆",
+
     "Stubble Beard": "胡茬",
     "Goatee": "山羊胡",
     "Full Beard": "全胡须",
@@ -552,6 +558,7 @@
     "Pencil Mustache": "铅笔胡须",
     "Friendly Mutton Chops": "友善络腮胡",
     "Zappa Mustache": "扎帕髭",
+
     "Natural sunlight": "自然阳光",
     "Soft ambient light": "柔和环境光",
     "Harsh sunlight": "强烈阳光",
