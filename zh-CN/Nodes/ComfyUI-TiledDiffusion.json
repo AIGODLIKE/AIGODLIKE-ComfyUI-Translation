@@ -46,5 +46,20 @@
         "outputs": {
             "IMAGE": "图像"
         }
+    },
+
+    "SpotDiffusionParams_TiledDiffusion": {
+        "title": "SpotDiffusion 参数",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "shift_method": "偏移方法",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
     }
 }
