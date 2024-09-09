@@ -66,7 +66,8 @@
     "array-number-to-angle": {
         "title": "数组-数字转角度",
         "inputs": {
-            "array_input": "数组"
+            "array_input": "数组",
+            "array": "数组"
         },
         "widgets": {
             "half_angle": "半角"
@@ -138,7 +139,7 @@
             "reload": "重载"
         },
         "outputs": {
-            "reload": "重载"
+            "mesh": "网格"
         }
     },
     "Mesh_Data":{
@@ -190,8 +191,30 @@
             "mesh": "网格"
         }
     },
+    "ply_load": {
+        "title": "记载 PLY",
+        "widgets": {
+            "path": "路径"
+        },
+        "outputs": {
+            "gs_ply": "gs_ply"
+        }
+    },
+    "ply_save": {
+        "title": "保存 PLY",
+        "inputs": {
+            "gs_ply": "gs_ply"
+        },
+        "widgets": {
+            "save_path": "保存路径"
+        },
+        "outputs": {
+            "gs_ply": "gs_ply",
+            "save_path": "保存路径"
+        }
+    },
 
-    "array-to_camposes": {
+    "array-to-camposes": {
         "title": "数组转镜头姿态",
         "inputs": {
             "array_input": "数组"
@@ -282,6 +305,25 @@
         },
         "outputs": {
             "UV_options": "UV设置"
+        }
+    },
+    "ply_normalize": {
+        "title": "规格化 PLY",
+        "inputs": {
+            "gs_ply": "gs_ply"
+        },
+        "widgets": {
+            "xyz_normalize": "规格化 XYZ",
+            "RGB_normalize": "规格化 RGB",
+            "opacity_transfer": "传递不透明",
+            "auto_PointSize": "自动点大小",
+            "PointSize_scale": "缩放点大小",
+            "R": "R",
+            "G": "G",
+            "B": "B"
+        },
+        "outputs": {
+            "gs_ply": "gs_ply"
         }
     },
 
