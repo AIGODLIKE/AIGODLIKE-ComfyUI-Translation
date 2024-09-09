@@ -94,7 +94,10 @@ export function applyMenuTranslation(T) {
         texe.translateAllText(mutation.target);
       }
     });
-  texe.translateAllText(window.comfyAPI?.app?.app?.menu?.element);
+  // texe.translateAllText(window.comfyAPI?.app?.app?.menu?.element);
+  observeFactory(document.querySelector(".comfyui-menu"), handleComfyNewUIMenu, true);
+  for (let node of document.querySelectorAll(".comfyui-popup"))
+    observeFactory(node, handleComfyNewUIMenu, true);
   const viewHistoryButton = document.getElementById("comfy-view-history-button");
   const viewQueueButton = document.getElementById("comfy-view-queue-button");
 
@@ -209,9 +212,16 @@ export function applyMenuTranslation(T) {
       }
     }
   }
-}
 
-export function observeFactory(observeTarget, fn) {
+  function handleComfyNewUIMenu(mutationsList)
+  {
+    for (let mutation of mutationsList) {
+      texe.translateAllText(mutation.target);
+    }
+  }
+}
+export function observeFactory(observeTarget, fn, subtree=false) {
+  if (!observeTarget) return;
   const observer = new MutationObserver(function (mutationsList, observer) {
     fn(mutationsList, observer);
   });
@@ -219,6 +229,7 @@ export function observeFactory(observeTarget, fn) {
   observer.observe(observeTarget, {
     childList: true,
     attributes: true,
+    subtree: subtree,
   });
   return observer;
 }
