@@ -1,11 +1,31 @@
 {
     "ADE_MultivalDynamic": {
-        "title": "多值动态",
+        "title": "多值",
         "inputs": {
-            "mask_optional": "遮罩"
+            "mask_optional": "遮罩(可选)"
         },
         "widgets": {
             "float_val": "浮点系数"
+        },
+        "outputs": {
+            "MULTIVAL": "多值"
+        }
+    },
+    "ADE_MultivalDynamicFloatInput": {
+        "title": "多值（浮点列表）",
+        "inputs": {
+            "mask_optional": "遮罩(可选)",
+            "float_val": "浮点"
+        },
+        "outputs": {
+            "MULTIVAL": "多值"
+        }
+    },
+    "ADE_MultivalDynamicFloats": {
+        "title": "多值（浮点组）",
+        "inputs": {
+            "floats": "浮点组",
+            "mask_optional": "遮罩(可选)"
         },
         "outputs": {
             "MULTIVAL": "多值"
@@ -25,6 +45,15 @@
         },
         "outputs": {
             "MULTIVAL": "多值"
+        }
+    },
+    "ADE_MultivalConvertToMask": {
+        "title": "多值转换为遮罩",
+        "inputs": {
+            "multival": "多值"
+        },
+        "outputs": {
+            "MASK": "遮罩"
         }
     },
 
@@ -66,6 +95,60 @@
         },
         "outputs": {
             "VIEW_OPTS": "视图设置"
+        }
+    },
+
+
+    "ADE_VisualizeContextOptionsK": {
+        "title": "可视化上下文设置 K",
+        "inputs": {
+            "model": "模型",
+            "context_opts": "上下文设置"
+        },
+        "widgets": {
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "visual_width": "视图宽度",
+            "latents_length": "Latent长度",
+            "steps": "步数",
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ADE_VisualizeContextOptionsKAdv": {
+        "title": "可视化上下文设置 K.Adv",
+        "inputs": {
+            "model": "模型",
+            "context_opts": "上下文设置"
+        },
+        "widgets": {
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "visual_width": "视图宽度",
+            "latents_length": "Latent长度",
+            "steps": "步数",
+            "start_step": "开始步数",
+            "end_step": "结束步数"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "ADE_VisualizeContextOptionsSCustom": {
+        "title": "可视化上下文设置 S.Cus",
+        "inputs": {
+            "model": "模型",
+            "context_opts": "上下文设置",
+            "sigmas": "Sigmas"
+        },
+        "widgets": {
+            "visual_width": "视图宽度",
+            "latents_length": "Latent长度"
+        },
+        "outputs": {
+            "IMAGE": "图像"
         }
     },
 
@@ -423,6 +506,219 @@
             "TIMESTEP_COND": "时间戳条件"
         }
     },
+
+
+    "ADE_ContextExtras_ContextRef_ModeFirst": {
+        "title": "ContextRef 模式 初始",
+        "outputs": {
+            "CONTEXTREF_MODE": "ContextRef 模式"
+        }
+    },
+    "ADE_ContextExtras_ContextRef_ModeSliding": {
+        "title": "ContextRef 模式 偏移",
+        "widgets": {
+            "sliding_width": "偏移宽度"
+        },
+        "outputs": {
+            "CONTEXTREF_MODE": "ContextRef 模式"
+        }
+    },
+    "ADE_ContextExtras_ContextRefMode_Indexes": {
+        "title": "ContextRef 模式 索引",
+        "widgets": {
+            "switch_on_idxs": "切换到索引",
+            "always_include_0": "包括0"
+        },
+        "outputs": {
+            "CONTEXTREF_MODE": "ContextRef 模式"
+        }
+    },
+    "ADE_ContextExtras_ContextRef_TuneAttn": {
+        "title": "ContextRef 微调 注意力",
+        "widgets": {
+            "attn_style_fidelity": "风格精确度",
+            "attn_ref_weight": "Ref权重",
+            "attn_strength": "强度"
+        },
+        "outputs": {
+            "CONTEXTREF_TUNE": "ContextRef 微调"
+        }
+    },
+    "ADE_ContextExtras_ContextRef_TuneAttnAdain": {
+        "title": "ContextRef 微调 注意力+Adain",
+        "widgets": {
+            "attn_style_fidelity": "风格精确度",
+            "attn_ref_weight": "Ref权重",
+            "attn_strength": "强度",
+            "adain_style_fidelity": "Adain 风格精确度",
+            "adain_ref_weight": "Adain Ref权重",
+            "adain_strength": "Adain 强度"
+        },
+        "outputs": {
+            "CONTEXTREF_TUNE": "ContextRef 微调"
+        }
+    },
+    "ADE_ContextExtras_ContextRef_Keyframe": {
+        "title": "ContextRef 关键帧",
+        "inputs": {
+            "prev_kf": "前关键帧",
+            "mult_multival": "多值",
+            "mode_replace": "覆盖模式",
+            "tune_replace":" 覆盖微调"
+        },
+        "widgets": {
+            "mult": "乘数",
+            "start_percent": "开始位置",
+            "guarantee_steps": "最小采样步数",
+            "inherit_missing": "缺失值自动继承"
+        },
+        "outputs": {
+            "CONTEXTREF_KF": "ContextRef 关键帧"
+        }
+    },
+    "ADE_ContextExtras_ContextRef_KeyframeInterpolation": {
+        "title": "ContextRef 关键帧插值",
+        "inputs": {
+            "prev_kf": "前关键帧",
+            "mult_multival": "多值",
+            "mode_replace": "覆盖模式",
+            "tune_replace": " 覆盖微调"
+        },
+        "widgets": {
+            "start_percent": "开始位置",
+            "end_percent": "结束位置",
+            "mult_start": "开始乘数",
+            "mult_end": "结束乘数",
+            "interpolation": "插值方式",
+            "intervals": "迭代次数",
+            "inherit_missing": "缺失值自动继承",
+            "print_keyframes": "输出关键帧到控制台"
+        },
+        "outputs": {
+            "CONTEXTREF_KF": "ContextRef 关键帧"
+        }
+    },
+    "ADE_ContextExtras_ContextRef_KeyframeFromList": {
+        "title": "ContextRef 列表到关键帧",
+        "inputs": {
+            "prev_kf": "前关键帧",
+            "mult_multival": "多值",
+            "mode_replace": "覆盖模式",
+            "tune_replace": " 覆盖微调",
+            "mults_float": "浮点"
+        },
+        "widgets": {
+            "start_percent": "开始位置",
+            "end_percent": "结束位置",
+            "inherit_missing": "缺失值自动继承",
+            "print_keyframes": "输出关键帧到控制台"
+        },
+        "outputs": {
+            "CONTEXTREF_KF": "ContextRef 关键帧"
+        }
+    },
+    "ADE_ContextExtras_NaiveReuse_Keyframe": {
+        "title": "NaiveReuse 关键帧",
+        "inputs": {
+            "prev_kf": "前关键帧",
+            "mult_multival": "多值"
+        },
+        "widgets": {
+            "mult": "乘数",
+            "start_percent": "开始位置",
+            "guarantee_steps": "最小采样步数",
+            "inherit_missing": "缺失值自动继承"
+        },
+        "outputs": {
+            "NAIVEREUSE_KF": "NaiveReuse 关键帧"
+        }
+    },
+    "ADE_ContextExtras_NaiveReuse_KeyframeInterpolation": {
+        "title": "NaiveReuse ",
+        "inputs": {
+            "prev_kf": "前关键帧",
+            "mult_multival": "多值"
+        },
+        "widgets": {
+            "start_percent": "开始位置",
+            "end_percent": "结束位置",
+            "mult_start": "开始乘数",
+            "mult_end": "结束乘数",
+            "interpolation": "插值方式",
+            "intervals": "迭代次数",
+            "inherit_missing": "缺失值自动继承",
+            "print_keyframes": "输出关键帧到控制台"
+        },
+        "outputs": {
+            "NAIVEREUSE_KF": "NaiveReuse 关键帧"
+        }
+    },
+    "ADE_ContextExtras_NaiveReuse_KeyframeFromList": {
+        "title": "NaiveReuse 列表到关键帧",
+        "inputs": {
+            "prev_kf": "前关键帧",
+            "mult_multival": "多值",
+            "mode_replace": "覆盖模式",
+            "tune_replace": " 覆盖微调",
+            "mults_float": "浮点"
+        },
+        "widgets": {
+            "start_percent": "开始位置",
+            "end_percent": "结束位置",
+            "inherit_missing": "缺失值自动继承",
+            "print_keyframes": "输出关键帧到控制台"
+        },
+        "outputs": {
+            "NAIVEREUSE_KF": "NaiveReuse 关键帧"
+        }
+    },
+
+
+    "ADE_ContextExtras_Set": {
+        "title": "上下文附加设置",
+        "inputs": {
+            "context_options": "上下文设置",
+            "context_extras": "上下文附加"
+        },
+        "outputs": {
+            "CONTEXT_OPTS": "上下文设置"
+        }
+    },
+    "ADE_ContextExtras_ContextRef": {
+        "title": "上下文附加 ContextRef",
+        "inputs": {
+            "prev_extras": "前附加组",
+            "strength_multival": "强度多值",
+            "contextref_mode": "ContextRef 模式",
+            "contextref_tune": "ContextRef 微调",
+            "contextref_kf": "ContextRef 关键帧"
+        },
+        "widgets": {
+            "start_percent": "开始位置",
+            "end_percent": "结束位置"
+        },
+        "outputs": {
+            "CONTEXT_EXTRAS": "上下文附加"
+        }
+    },
+    "ADE_ContextExtras_NaiveReuse": {
+        "title": "上下文附加 NaiveReuse",
+        "inputs": {
+            "prev_extras": "前附加组",
+            "strength_multival": "强度多值",
+            "naivereuse_kf": "NaiveReuse 关键帧"
+        },
+        "widgets": {
+            "start_percent": "开始位置",
+            "end_percent": "结束位置",
+            "weighted_mean": "权重平均"
+        },
+        "outputs": {
+            "CONTEXT_EXTRAS": "上下文附加"
+        }
+    },
+
+
     "ADE_PairedConditioningSetUnmaskedAndCombine": {
         "title": "条件对设置非遮罩并合并",
         "inputs": {
@@ -682,6 +978,16 @@
             "CONDITIONING": "条件"
         }
     },
+    "ADE_ConditioningCombine": {
+        "title": "条件合并",
+        "inputs": {
+            "cond_A": "条件_A",
+            "cond_B": "条件_B"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
 
 
     "ADE_AnimateDiffSettings": {
@@ -717,7 +1023,7 @@
         }
     },
     "CheckpointLoaderSimpleWithNoiseSelect": {
-        "title": "Checkpoint加载器(简易噪波)",
+        "title": "Checkpoint加载器（简易噪波）",
         "widgets": {
             "ckpt_name": "ckpt名称",
             "beta_schedule": "调度器",
@@ -728,6 +1034,26 @@
             "MODEL": "模型",
             "CLIP": "CLIP",
             "VAE": "VAE"
+        }
+    },
+    "ADE_PerturbedAttentionGuidanceMultival": {
+        "title": "PAG注意力引导（多值）",
+        "inputs": {
+            "model": "模型",
+            "scale_multival": "缩放多值"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "ADE_RescaleCFGMultival": {
+        "title": "缩放CFG（多值）",
+        "inputs": {
+            "model": "模型",
+            "scale_multival": "缩放多值"
+        },
+        "outputs": {
+            "MODEL": "模型"
         }
     },
 
@@ -846,6 +1172,15 @@
         "title": "加载镜头姿态",
         "widgets": {
             "pose_filename": "姿态文件名"
+        },
+        "outputs": {
+            "CAMERACTRL_POSES": "镜头控制姿态"
+        }
+    },
+    "ADE_LoadCameraPosesFromPath": {
+        "title": "加载镜头姿态（路径）",
+        "widgets": {
+            "file_path": "文件路径"
         },
         "outputs": {
             "CAMERACTRL_POSES": "镜头控制姿态"
@@ -1178,22 +1513,273 @@
             "SIGMA_SCHEDULE": "Sigma调度"
         }
     },
-
-
-    "ADE_CustomCFG": {
-        "title": "自定义CFG",
+    "ADE_SigmaScheduleToSigmas": {
+        "title": "Sigma调度到Sigmas",
         "inputs": {
-            "cfg_multival": "多值CFG"
+            "sigma_schedule": "Sigma调度"
+        },
+        "widgets": {
+            "scheduler": "调度器",
+            "steps": "步数",
+            "denoise": "降噪"
+        },
+        "outputs": {
+            "SIGMAS": "Sigmas"
+        }
+    },
+
+
+    "ADE_PromptScheduling": {
+        "title": "提示词调度",
+        "inputs": {
+            "clip": "CLIP",
+            "values_replace": "值替换",
+            "prepend_text": "预置文本",
+            "append_text": "追加文本"
+        },
+        "widgets": {
+            "prompts": "提示词",
+            "print_shcedule": "输出调度到控制台",
+            "max_length": "最大长度",
+            "tensor_interp": "Tensor插值"
+        },
+        "outputs": {
+            "CONDITIONING": "条件"
+        }
+    },
+    "ADE_PromptSchedulingLatents": {
+        "title": "提示词调度Latent",
+        "inputs": {
+            "clip": "CLIP",
+            "latent": "Latent",
+            "values_replace": "值替换",
+            "prepend_text": "预置文本",
+            "append_text": "追加文本"
+        },
+        "widgets": {
+            "prompts": "提示词",
+            "print_shcedule": "输出调度到控制台",
+            "max_length": "最大长度"
+        },
+        "outputs": {
+            "CONDITIONING": "条件",
+            "LATENT": "Latent"
+        }
+    },
+    "ADE_ValueScheduling": {
+        "title": "值调度",
+        "widgets": {
+            "values": "值",
+            "print_shcedule": "输出调度到控制台",
+            "max_length": "最大长度"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "FLOATS": "浮点组",
+            "INT": "整数",
+            "INTS": "整数组"
+        }
+    },
+    "ADE_ValueSchedulingLatents": {
+        "title": "值调度Latent",
+        "inputs": {
+            "latent": "Latent"
+        },
+        "widgets": {
+            "values": "值",
+            "print_shcedule": "输出调度到控制台"
+        },
+        "outputs": {
+            "FLOAT": "浮点",
+            "FLOATS": "浮点组",
+            "INT": "整数",
+            "INTS": "整数组"
+        }
+    },
+    "ADE_ValuesReplace": {
+        "title": "值替换",
+        "inputs": {
+            "floats": "浮点组",
+            "prev_replace": "前替换"
+        },
+        "widgets": {
+            "value_key": "键值对"
+        },
+        "outputs": {
+            "VALUES_REPLACE": "值替换"
+        }
+    },
+    "ADE_FloatToFloats": {
+        "title": "浮点到浮点组",
+        "inputs": {
+            "FLOAT": "浮点"
+        },
+        "outputs": {
+            "FLOATS": "浮点组"
+        }
+    },
+
+
+    "ADE_CFGExtrasPAGSimple": {
+        "title": "CFG附加组（PAG简易）",
+        "inputs": {
+            "prev_extras": "前附加组"
+        },
+        "widgets": {
+            "scale": "缩放"
+        },
+        "outputs": {
+            "CFG_EXTRAS": "CFG附加组"
+        }
+    },
+    "ADE_CFGExtrasPAG": {
+        "title": "CFG附加组（PAG）",
+        "inputs": {
+            "scale_multival": "缩放多值",
+            "prev_extras": "前附加组"
+        },
+        "outputs": {
+            "CFG_EXTRAS": "CFG附加组"
+        }
+    },
+    "ADE_CFGExtrasRescaleCFGSimple": {
+        "title": "CFG附加组（缩放CFG简易）",
+        "inputs": {
+            "prev_extras": "前附加组"
+        },
+        "widgets": {
+            "scale": "缩放"
+        },
+        "outputs": {
+            "CFG_EXTRAS": "CFG附加组"
+        }
+    },
+    "ADE_CFGExtrasRescaleCFG": {
+        "title": "CFG附加组（缩放CFG）",
+        "inputs": {
+            "scale_multival": "缩放多值",
+            "prev_extras": "前附加组"
+        },
+        "outputs": {
+            "CFG_EXTRAS": "CFG附加组"
+        }
+    },
+
+    "ADE_CustomCFGSimple": {
+        "title": "自定义CFG（简易）",
+        "inputs": {
+            "cfg_extras": "CFG附加组"
+        },
+        "widgets": {
+            "cfg": "CFG"
         },
         "outputs": {
             "CUSTOM_CFG": "自定义CFG"
         }
     },
+    "ADE_CustomCFG": {
+        "title": "自定义CFG",
+        "inputs": {
+            "cfg_multival": "多值CFG",
+            "cfg_extras": "CFG附加组"
+        },
+        "outputs": {
+            "CUSTOM_CFG": "自定义CFG"
+        }
+    },
+    "ADE_CustomCFGKeyframeSimple": {
+        "title": "自定义CFG关键帧（简易）",
+        "inputs": {
+            "prev_custom_cfg": "前自定义CFG",
+            "cfg_extras": "CFG附加组"
+        },
+        "widgets": {
+            "cfg": "CFG",
+            "start_percent": "开始位置",
+            "guarantee_steps": "最小采样步数"
+        },
+        "CUSTOM_CFG": "自定义CFG"
+    },
     "ADE_CustomCFGKeyframe": {
         "title": "自定义CFG关键帧",
         "inputs": {
             "cfg_multival": "多值CFG",
-            "prev_custom_cfg": "前自定义CFG"
+            "prev_custom_cfg": "前自定义CFG",
+            "cfg_extras": "CFG附加组"
+        },
+        "widgets": {
+            "start_percent": "开始位置",
+            "guarantee_steps": "最小采样步数"
+        },
+        "outputs": {
+            "CUSTOM_CFG": "自定义CFG"
+        }
+    },
+    "ADE_CustomCFGKeyframeInterpolation": {
+        "title": "自定义CFG关键帧插值",
+        "inputs": {
+            "prev_custom_cfg": "前自定义CFG",
+            "cfg_extras": "CFG附加组"
+        },
+        "widgets": {
+            "start_percent": "开始位置",
+            "end_percent": "结束位置",
+            "cfg_start": "开始CFG",
+            "cdg_end": "结束CFG",
+            "interpolation": "插值方式",
+            "intervals": "迭代次数",
+            "print_keyframes": "输出关键帧到控制台"
+        },
+        "outputs": {
+            "CUSTOM_CFG": "自定义CFG"
+        }
+    },
+    "ADE_CustomCFGKeyframeFromList": {
+        "Title": "自定义CFG关键帧（列表）",
+        "inputs": {
+            "prev_custom_cfg": "前自定义CFG",
+            "cfg_extras": "CFG附加组",
+            "cfgs_float": "浮点"
+        },
+        "widgets": {
+            "start_percent": "开始位置",
+            "end_percent": "结束位置",
+            "print_keyframes": "输出关键帧到控制台"
+        },
+        "outputs": {
+            "CUSTOM_CFG": "自定义CFG"
+        }
+    },
+
+
+    "ADE_NoisedImageInjection": {
+        "title": "噪波图像插入",
+        "inputs": {
+            "image": "图像",
+            "vae": "VAE",
+            "mask_opt": "遮罩(可选)",
+            "image_inject_opts": "图像插入设置",
+            "strength_multival": "强度多值",
+            "prev_image_inject": "前图像插入"
+        },
+        "widgets": {
+            "inver_mask": "反转遮罩",
+            "resize_image": "缩放图像",
+            "start_percent": "开始位置",
+            "guarantee_steps": "最小采样步数"
+        },
+        "outputs": {
+            "IMAGE_INJECT": "图像插入"
+        }
+    },
+    "ADE_NoisedImageInjectOptions": {
+        "title": "噪波图像插入设置",
+        "widgets": {
+            "composite_x": "合成_X",
+            "composite_y": "合成_Y"
+        },
+        "outputs": {
+            "IMG_INJECT_OPTS": "图像插入设置"
         }
     },
 
