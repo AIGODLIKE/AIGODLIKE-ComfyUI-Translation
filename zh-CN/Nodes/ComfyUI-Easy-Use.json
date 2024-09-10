@@ -238,6 +238,27 @@
             "model": "模型"
         }
     },
+    "easy hunyuanDiTLoader": {
+        "title": "简易加载器（HunYuan）",
+        "inputs": {
+            "optional_lora_stack": "LoRA堆(可选)",
+            "optional_controlnet_stack": "ControlNet堆(可选)"
+        },
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "vae_name": "VAE",
+            "lora_name": "LoRA模型",
+            "resolution": "分辨率",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "pipe": "节点束",
+            "model": "模型",
+            "vae": "VAE"
+        }
+    },
     "easy cascadeLoader": {
         "title": "简易加载器（Cascade）",
         "inputs": {
@@ -259,6 +280,76 @@
             "pipe": "节点束",
             "model_c": "模型_C",
             "latent_c": "Latent_C"
+        }
+    },
+    "easy kolorsLoader": {
+        "title": "简易加载器（Kolors）",
+        "inputs": {
+            "optional_lora_stack": "LoRA堆(可选)",
+            "optional_controlnet_stack": "ControlNet堆(可选)"
+        },
+        "widgets": {
+            "unet_name": "UNET名称",
+            "vae_name": "VAE",
+            "chatglm3_name": "ChatGLM3名称",
+            "lora_name": "LoRA模型",
+            "resolution": "分辨率",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "batch_size": "批次大小",
+            "auto_clean_gpu": "自动清理GPU"
+        },
+        "outputs": {
+            "pipe": "节点束",
+            "model": "模型",
+            "vae": "VAE"
+        }
+    },
+    "easy fluxLoader": {
+        "title": "简易加载器（Flux）",
+        "inputs": {
+            "model_override": "模型(可选)",
+            "clip_override": "CLIP(可选)",
+            "vae_override": "VAE(可选）",
+            "optional_lora_stack": "LoRA堆(可选)",
+            "optional_controlnet_stack": "ControlNet堆(可选)"
+        },
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "vae_name": "VAE",
+            "lora_name": "LoRA模型",
+            "resolution": "分辨率",
+            "positive": "正面提示词",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "pipe": "节点束",
+            "model": "模型",
+            "vae": "VAE"
+        }
+    },
+    "easy pixArtLoader": {
+        "title": "简易加载器（PixArt）",
+        "inputs": {
+            "optional_lora_stack": "LoRA堆(可选)"
+        },
+        "widgets": {
+            "ckpt_name": "模型名称",
+            "model_name": "模型名称",
+            "vae_name": "VAE",
+            "t5_type": "T5类型",
+            "clip_name": "CLIP模型",
+            "padding": "分块",
+            "lora_name": "LoRA模型",
+            "ratio": "ratio",
+            "positive": "正面提示词",
+            "negative": "负面提示词",
+            "batch_size": "批次大小"
+        },
+        "outputs": {
+            "pipe": "节点束",
+            "model": "模型",
+            "vae": "VAE"
         }
     },
     "easy zero123Loader": {
@@ -383,6 +474,80 @@
             "lora_stack": "LoRA堆"
         }
     },
+    "easy controlnetStack": {
+        "title": "简易 ControlNet 堆",
+        "inputs": {
+            "optional_controlnet_stack": "ControlNet堆(可选)",
+            "image_1": "图像_1",
+            "image_2": "图像_2",
+            "image_3": "图像_3",
+            "image_4": "图像_4",
+            "image_5": "图像_5",
+            "image_6": "图像_6",
+            "image_7": "图像_7",
+            "image_8": "图像_8",
+            "image_9": "图像_9",
+            "image_10": "图像_10"
+        },
+        "widgets": {
+            "toggle": "开关",
+            "mode": "模式",
+            "num_controlnet": "ControlNet数量",
+            "controlnet_1": "ControlNet_1_名称",
+            "controlnet_1_strength": "ControlNet_1_权重",
+            "start_percent_1": "开始位置_1",
+            "end_percent_1": "结束位置_1",
+            "scale_soft_weight_1": "ControlNet_1_柔和缩放",
+            "controlnet_2": "ControlNet_2_名称",
+            "controlnet_2_strength": "ControlNet_2_权重",
+            "start_percent_2": "开始位置_2",
+            "end_percent_2": "结束位置_2",
+            "scale_soft_weight_2": "ControlNet_2_柔和缩放",
+            "controlnet_3": "ControlNet_3_名称",
+            "controlnet_3_strength": "ControlNet_3_权重",
+            "start_percent_3": "开始位置_3",
+            "end_percent_3": "结束位置_3",
+            "scale_soft_weight_3": "ControlNet_3_柔和缩放",
+            "controlnet_4": "ControlNet_4_名称",
+            "controlnet_4_strength": "ControlNet_4_权重",
+            "start_percent_4": "开始位置_4",
+            "end_percent_4": "结束位置_4",
+            "scale_soft_weight_4": "ControlNet_4_柔和缩放",
+            "controlnet_5": "ControlNet_5_名称",
+            "controlnet_5_strength": "ControlNet_5_权重",
+            "start_percent_5": "开始位置_5",
+            "end_percent_5": "结束位置_5",
+            "scale_soft_weight_5": "ControlNet_5_柔和缩放",
+            "controlnet_6": "ControlNet_6_名称",
+            "controlnet_6_strength": "ControlNet_6_权重",
+            "start_percent_6": "开始位置_6",
+            "end_percent_6": "结束位置_6",
+            "scale_soft_weight_6": "ControlNet_6_柔和缩放",
+            "controlnet_7": "ControlNet_7_名称",
+            "controlnet_7_strength": "ControlNet_7_权重",
+            "start_percent_7": "开始位置_7",
+            "end_percent_7": "结束位置_7",
+            "scale_soft_weight_7": "ControlNet_7_柔和缩放",
+            "controlnet_8": "ControlNet_8_名称",
+            "controlnet_8_strength": "ControlNet_8_权重",
+            "start_percent_8": "开始位置_8",
+            "end_percent_8": "结束位置_8",
+            "scale_soft_weight_8": "ControlNet_8_柔和缩放",
+            "controlnet_9": "ControlNet_9_名称",
+            "controlnet_9_strength": "ControlNet_9_权重",
+            "start_percent_9": "开始位置_9",
+            "end_percent_9": "结束位置_9",
+            "scale_soft_weight_9": "ControlNet_9_柔和缩放",
+            "controlnet_10": "ControlNet_10_名称",
+            "controlnet_10_strength": "ControlNet_10_权重",
+            "start_percent_10": "开始位置_10",
+            "end_percent_10": "结束位置_10",
+            "scale_soft_weight_10": "ControlNet_10_柔和缩放"
+        },
+        "outputs": {
+            "controlnet_stack": "ControlNet堆"
+        }
+    },
     "easy controlnetLoader": {
         "title": "简易Controlnet",
         "inputs": {
@@ -422,6 +587,27 @@
             "negative": "负面条件"
         }
     },
+    "easy controlnetLoader++": {
+        "title": "简易ControlNet++",
+        "inputs": {
+            "pipe": "节点束",
+            "image": "图像",
+            "control_net": "ControlNet"
+        },
+        "widgets": {
+            "control_net_name": "ControlNet",
+            "strength": "强度",
+            "start_percent": "开始时间",
+            "end_percent": "结束时间",
+            "scale_soft_weights": "缩放柔和权重",
+            "union_type": "Union类型"
+        },
+        "outputs": {
+            "pipe": "节点束",
+            "positive": "正面条件",
+            "negative": "负面条件"
+        }
+    },
     "easy LLLiteLoader": {
         "title": "简易LLLite",
         "inputs": {
@@ -440,6 +626,120 @@
             "MODEL": "模型"
         }
     },
+
+
+    "easy forLoopStart": {
+        "title": "For循环-起始",
+        "inputs": {
+            "initial_value1": "初始值1"
+        },
+        "widgets": {
+            "total": "总量"
+        },
+        "outputs": {
+            "flow": "流",
+            "index": "索引",
+            "value1": "值1"
+        }
+    },
+    "easy forLoopEnd": {
+        "title": "For循环-结束",
+        "inputs": {
+            "flow": "流",
+            "initial_value1": "初始值1"
+        },
+        "outputs": {
+            "value1": "值1"
+        }
+    },
+    "easy anythingIndexSwitch": {
+        "title": "编号切换",
+        "inputs": {
+            "value0": "值0",
+            "value1": "值1"
+        },
+        "widgets": {
+            "index": "编号"
+        },
+        "outputs": {
+            "value": "值"
+        }
+    },
+    "easy imageIndexSwitch": {
+        "title": "图像编号切换",
+        "inputs": {
+            "image0": "图像0",
+            "image1": "图像1"
+        },
+        "widgets": {
+            "index": "编号"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "easy textIndexSwitch": {
+        "title": "文本编号切换",
+        "inputs": {
+            "text0": "文本0",
+            "text1": "文本1"
+        },
+        "widgets": {
+            "index": "编号"
+        },
+        "outputs": {
+            "text": "文本"
+        }
+    },
+    "easy conditioningIndexSwitch": {
+        "title": "条件编号切换",
+        "inputs": {
+            "cond0": "条件0",
+            "cond1": "条件1"
+        },
+        "widgets": {
+            "index": "编号"
+        },
+        "outputs": {
+            "conditioning": "条件"
+        }
+    },
+    "easy mathString": {
+        "title": "字符串比较",
+        "widgets": {
+            "a": "a",
+            "b": "b",
+            "operation": "操作",
+            "case_sensitive": "区分大小写"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔"
+        }
+    },
+    "easy mathInt": {
+        "title": "整数运算",
+        "widgets": {
+            "a": "a",
+            "b": "b",
+            "operation": "操作"
+        },
+        "outputs": {
+            "INT": "整数"
+        }
+    },
+    "easy mathFloat": {
+        "title": "浮点比较",
+        "widgets": {
+            "a": "a",
+            "b": "b",
+            "operation": "操作"
+        },
+        "outputs": {
+            "BOOLEAN": "布尔"
+        }
+    },
+
+
     "easy latentNoisy": {
         "title": "噪波Latent（Sigma乘积）",
         "inputs": {
@@ -2135,7 +2435,7 @@
             "IMAGE": "图像"
         }
     },
-    "easy imageBatchToimageList": {
+    "easy imageBatchToImageList": {
         "title": "图像批次到图像列表",
         "inputs": {
             "image": "图像"
@@ -2405,7 +2705,7 @@
         }
     },
     "easy applyPowerPaint": {
-        "title": "引用PowerPaint",
+        "title": "应用PowerPaint",
         "inputs": {
             "pipe": "节点束",
             "image": "图像",
@@ -2458,6 +2758,16 @@
             "ckpt_name": "模型名称",
             "vae_name": "VAE名称",
             "lora_name": "LORA名称"
+        }
+    },
+    "easy sliderControl": {
+        "title": "滑条面板",
+        "widgets": {
+            "mode": "模式",
+            "model_type": "模型类型"
+        },
+        "outputs": {
+            "layer_weights": "层权重"
         }
     },
     "easy ckptNames": {
@@ -2535,6 +2845,72 @@
             "range_sizes": "范围大小"
         }
     },
+
+
+    "easy whileLoopStart": {
+        "title": "While循环-起始",
+        "inputs": {
+            "initial_value0": "初始值0",
+            "initial_value1": "初始值1",
+            "initial_value2": "初始值2",
+            "initial_value3": "初始值3",
+            "initial_value4": "初始值4",
+            "initial_value5": "初始值5",
+            "initial_value6": "初始值6",
+            "initial_value7": "初始值7",
+            "initial_value8": "初始值8",
+            "initial_value9": "初始值9"
+        },
+        "widgets": {
+            "condition": "条件"
+        },
+        "outputs": {
+            "flow": "流",
+            "value0": "值0",
+            "value1": "值1",
+            "value2": "值2",
+            "value3": "值3",
+            "value4": "值4",
+            "value5": "值5",
+            "value6": "值6",
+            "value7": "值7",
+            "value8": "值8",
+            "value9": "值9"
+        }
+    },
+    "easy whileLoopEnd": {
+        "title": "While循环-结束",
+        "inputs": {
+            "flow": "流",
+            "initial_value0": "初始值0",
+            "initial_value1": "初始值1",
+            "initial_value2": "初始值2",
+            "initial_value3": "初始值3",
+            "initial_value4": "初始值4",
+            "initial_value5": "初始值5",
+            "initial_value6": "初始值6",
+            "initial_value7": "初始值7",
+            "initial_value8": "初始值8",
+            "initial_value9": "初始值9"
+        },
+        "widgets": {
+            "condition": "条件"
+        },
+        "outputs": {
+            "value0": "值0",
+            "value1": "值1",
+            "value2": "值2",
+            "value3": "值3",
+            "value4": "值4",
+            "value5": "值5",
+            "value6": "值6",
+            "value7": "值7",
+            "value8": "值8",
+            "value9": "值9"
+        }
+    },
+
+
     "easy boolean": {
         "title": "布尔",
         "widgets": {
