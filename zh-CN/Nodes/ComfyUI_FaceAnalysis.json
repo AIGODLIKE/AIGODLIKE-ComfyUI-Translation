@@ -19,13 +19,16 @@
         "widgets": {
             "filter_thresh_eucl": "Euclidean阈值",
             "filter_thresh_cos": "Consine阈值",
+            "similarity_metric": "相似度算法",
+            "filter_thresh": "过滤阈值",
             "filter_best": "完美匹配过滤",
             "generate_image_overlay": "生成图像覆盖"
         },
         "outputs": {
             "IMAGE": "图像",
             "euclidean": "Euclidean",
-            "cosine": "Cosine"
+            "cosine": "Cosine",
+            "distance": "距离"
         }
     },
     "FaceBoundingBox": {
@@ -36,6 +39,7 @@
         },
         "widgets": {
             "padding": "分区",
+            "padding_percent": "分区百分比",
             "index": "索引"
         },
         "outputs": {
@@ -44,6 +48,57 @@
             "y": "Y",
             "width": "宽度",
             "height": "高度"
+        }
+    },
+    "FaceAlign": {
+        "title": "面部对齐",
+        "inputs": {
+            "analysis_models": "面部分析模型",
+            "image_from": "从图像",
+            "image_to": "到图像"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "FaceSegmentation": {
+        "title": "面部分割",
+        "inputs": {
+            "analysis_models": "面部分析模型",
+            "image": "图像"
+        },
+        "widgets": {
+            "area": "区域",
+            "grow": "扩展",
+            "grow_tapered": "扩展倒角",
+            "blur": "模糊"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "image": "图像",
+            "seg_mask": "分割遮罩",
+            "seg_image": "分割图像",
+            "x": "x",
+            "y": "y",
+            "width": "宽度",
+            "height": "高度"
+        }
+    },
+    "FaceWarp": {
+        "title": "面部替换",
+        "inputs": {
+            "analysis_models": "面部分析模型",
+            "image_from": "从图像",
+            "image_to": "到图像"
+        },
+        "widgets": {
+            "keypoints": "关键点",
+            "grow": "扩展",
+            "blur": "模糊"
+        },
+        "outputs": {
+            "IMAGE": "图像",
+            "MASK": "遮罩"
         }
     }
 }
