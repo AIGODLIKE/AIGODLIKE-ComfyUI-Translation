@@ -38,7 +38,56 @@
             "seam_fix_width": "接缝修复宽度",
             "seam_fix_mask_blur": "接缝修复模糊",
             "seam_fix_padding": "接缝修复分区",
-            "force_uniform_tiles": "强制统一分块"
+            "force_uniform_tiles": "强制统一分块",
+            "tiled_decode": "分块解码"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
+    "UltimateSDUpscaleCustomSample": {
+        "title": "SD放大（自定义采样）",
+        "inputs": {
+            "image": "图像",
+            "model": "模型",
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "vae": "VAE",
+            "upscale_model": "放大模型",
+            "custom_sampler": "采样器",
+            "custom_sigmas": "Sigmas"
+        },
+        "widgets": {
+            "upscale_by": "放大系数",
+            "seed": "随机种",
+            "control_after_generate": "运行后操作",
+                "fixed": "固定",
+                "increment": "增加",
+                "decrement": "减少",
+                "randomize": "随机",
+            "steps": "步数",
+            "cfg": "CFG",
+            "sampler_name": "采样器",
+            "scheduler": "调度器",
+            "denoise": "降噪",
+            "mode_type": "模式类型",
+                "Linear": "线性",
+                "Chess": "棋盘格",
+                "None": "无",
+            "tile_width": "分块宽度",
+            "tile_height": "分块高度",
+            "mask_blur": "模糊",
+            "tile_padding": "分块分区",
+            "seam_fix_mode": "接缝修复模式",
+                "Band Pass": "仅接触",
+                "Half Tile": "偏移半块",
+                "Half Tile + Intersections": "偏移半块+径向交叉",
+            "seam_fix_denoise": "接缝修复降噪",
+            "seam_fix_width": "接缝修复宽度",
+            "seam_fix_mask_blur": "接缝修复模糊",
+            "seam_fix_padding": "接缝修复分区",
+            "force_uniform_tiles": "强制统一分块",
+            "tiled_decode": "分块解码"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -81,7 +130,8 @@
             "seam_fix_width": "接缝修复宽度",
             "seam_fix_mask_blur": "接缝修复模糊",
             "seam_fix_padding": "接缝修复分区",
-            "force_uniform_tiles": "强制统一分块"
+            "force_uniform_tiles": "强制统一分块",
+            "tiled_decode": "分块解码"
         },
         "outputs": {
             "IMAGE": "图像"
