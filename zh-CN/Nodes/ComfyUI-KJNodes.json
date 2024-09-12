@@ -317,7 +317,7 @@
             "mask": "遮罩",
             "mask_inverted": "反转遮罩"
         },
-        "description": "\n生成指定形状的遮罩或遮罩批次，位置参数为中心位置。"
+        "description": "生成指定形状的遮罩或遮罩批次，位置参数为中心位置。"
     },
     "CreateTextOnPath": {
         "title": "创建文本",
@@ -385,7 +385,7 @@
         "outputs": {
             "masks": "遮罩"
         },
-        "description": "\n合并多个遮罩为遮罩批次。可以通过“输入数量”设置输入接口数量，点击更新刷新接口。"
+        "description": "合并多个遮罩为遮罩批次。可以通过“输入数量”设置输入接口数量，点击更新刷新接口。"
     },
     "ColorToMask": {
         "title": "图像颜色到遮罩",
@@ -414,7 +414,8 @@
         },
         "outputs": {
             "image": "图像"
-        }
+        },
+        "description": "color-matcher（图像调色）可以在转换图像之间的色彩样式，用于照片、绘画、序列帧的自动调色以及光场定格修正。\n\n基于 Reinhard 等算法，Pitie 等人提出的 Monge-Kantorovich Linearization (MKL) 算法以及我们结合经典直方图匹配对 Multi-Variate Gaussian Distribution (MVGD)算法的分析解决方案。如下所示，我们的 HM-MVGD-HM 符合方法优于现有方法。\n\nhttps://github.com/hahnec/color-matcher/"
     },
     "BatchCropFromMask": {
         "title": "遮罩裁剪",
@@ -614,7 +615,8 @@
         },
         "outputs": {
             "mask": "遮罩"
-        }
+        },
+        "description": "用于桥接 AudioScheduler 插件的节点：\n\nhttps://github.com/a1lazydog/ComfyUI-AudioScheduler\n\n基于规格化振幅偏移遮罩。"
     },
     "RemapMaskRange": {
         "title": "重映射遮罩范围",
@@ -657,7 +659,8 @@
         },
         "outputs": {
             "image": "图像"
-        }
+        },
+        "description": "按屏幕坐标捕捉区域。\n\n用于实时采样。"
     },
     "PlotCoordinates": {
         "title": "坐标图",
@@ -679,7 +682,7 @@
             "bbox_height": "BBox高度",
             "bbox_width": "BBox宽度"
         },
-        "description": "\n使用 Matplotlib 制作坐标图表序列。"
+        "description": "使用 Matplotlib 制作坐标图表序列。"
     },
     "InterpolateCoords": {
         "title": "坐标插值",
@@ -690,7 +693,32 @@
         "outputs": {
             "coordinates": "坐标"
         },
-        "description": "\n依据曲线插入坐标"
+        "description": "依据曲线插入坐标"
+    },
+    "PointsEditor": {
+        "title": "点编辑器",
+        "inputs": {
+            "bg_image": "背景图"
+        },
+        "widgets": {
+            "points_store": "点位置",
+            "bbox_store": "BBox位置",
+            "bbox_format": "BBox格式",
+            "width": "宽度",
+            "height": "高度",
+            "normalize": "规格化",
+            "New canvs": "新画布",
+            "Load Image": "加载图像",
+            "Clear Image": "清除图像"
+        },
+        "outputs": {
+            "positive_coords": "正面坐标",
+            "negative_coords": "负面坐标",
+            "bbox": "BBox",
+            "bbox_mask": "BBox遮罩",
+            "cropped_image": "裁剪图像"
+        },
+        "description": "# 开发中  \n尽量不要在工作流中使用这个节点，可能会遇到大量bug并且不稳定！！  \n\n## 创建坐标的图形编辑器\n\n**Shift + 左键** 添加正面（绿色）的坐标点。\n\n**Shift + 右键** 添加负面（红色）的坐标点。\n\n**Ctrl + 左键** 绘制方框。\n\n**右键坐标点** 删除该点，不能删除点数组的起点/终点。\n\n要添加图像，选择节点并粘贴或拖入图像。\n\n或从 背景图 接口输入，使用输入图像的第一帧。\n\n**图像会保存到节点和工作流中**\n右键菜单可以清除图像。\n"
     },
     "SoundReactive": {
         "title": "音频反馈",
@@ -707,7 +735,8 @@
         "outputs": {
             "sound_level": "音量图",
             "sound_level_int": "音量整数"
-        }
+        },
+        "description": "反馈输入音频的音量。\n\n使用浏览器音频输入。\n\n用于实时采样。"
     },
 
 
@@ -953,7 +982,7 @@
         "outputs": {
             "string": "字符串"
         },
-        "description": "\n合并多个字符串为字符串批次或字符串列表。可以通过“输入数量”设置输入接口数量，点击更新刷新接口。"
+        "description": "合并多个字符串为字符串批次或字符串列表。可以通过“输入数量”设置输入接口数量，点击更新刷新接口。"
     },
     "EmptyLatentImagePresets": {
         "title": "空Latent预设",
@@ -971,15 +1000,18 @@
     "GetImageRangeFromBatch": {
         "title": "获取图像范围",
         "inputs": {
-            "images": "图像"
+            "images": "图像",
+            "masks": "遮罩"
         },
         "widgets": {
             "start_index": "起始编号",
             "num_frames": "帧数"
         },
         "outputs": {
-            "IMAGE": "图像"
-        }
+            "IMAGE": "图像",
+            "MASK": "遮罩"
+        },
+        "description": "根据输入图像批次以及参数，创建新图像批次。"
     },
     "ImageAddMulti": {
         "title": "图像混合（多重）",
@@ -1003,7 +1035,7 @@
         "outputs": {
             "images": "图像"
         },
-        "description": "\n混合多个图像。可以通过“输入数量”设置输入接口数量，点击更新刷新接口。"
+        "description": "混合多个图像。可以通过“输入数量”设置输入接口数量，点击更新刷新接口。"
     },
     "ImageBatchMulti": {
         "title": "图像组合批次（多重）",
@@ -1027,7 +1059,7 @@
         "outputs": {
             "images": "图像"
         },
-        "description": "\n合并多个图像为图像批次。可以通过“输入数量”设置输入接口数量，点击更新刷新接口。"
+        "description": "合并多个图像为图像批次。可以通过“输入数量”设置输入接口数量，点击更新刷新接口。"
     },
     "ReverseImageBatch": {
         "title": "反转图像批次",
@@ -1048,7 +1080,8 @@
         },
         "outputs": {
             "IMAGE": "图像"
-        }
+        },
+        "description": "将 4 个输入图像合并为 2x2 表格。"
     },
     "ImageGridComposite3x3": {
         "title": "图像栅格合并3x3",
@@ -1065,7 +1098,21 @@
         },
         "outputs": {
             "IMAGE": "图像"
-        }
+        },
+        "description": "将 9 个输入图像合并为 3x3 表格。"
+    },
+    "ImageGridToBatch": {
+        "title": "图像表格到批次",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "columns": "列数"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        },
+        "description": "将图表转换为单个图像批次。"
     },
     "ImageConcanate": {
         "title": "图像联结",
@@ -1078,7 +1125,40 @@
         },
         "outputs": {
             "IMAGE": "图像"
-        }
+        },
+        "description": "按方向合并两个图像。"
+    },
+    "ImageConcatFromBatch": {
+        "title": "图像联结（批次）",
+        "inputs": {
+            "images": "图像"
+        },
+        "widgets": {
+            "num_columns": "列数",
+            "match_image_size": "匹配尺寸",
+            "max_resolution": "最大分辨率"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        },
+        "description": "从图像批次中获取图像，然后按照列数排列为单个图像。"
+    },
+    "ImageConcatMulti": {
+        "title": "图像联结（多个）",
+        "inputs": {
+            "image_1": "图像_1",
+            "image_2": "图像_2"
+        },
+        "widgets": {
+            "inputcount": "输入数量",
+            "direction": "方向",
+            "match_image_size": "匹配尺寸",
+            "Update inputs": "更新输入"
+        },
+        "outputs": {
+            "images": "图像"
+        },
+        "description": "按方向合并多个图像。单击更新以更新输入数量。"
     },
     "ImageBatchTestPattern": {
         "title": "图像批次图案",
@@ -1137,7 +1217,7 @@
             "image": "图像",
             "mask": "遮罩"
         },
-        "description": "\n生成指定形状的图像或图像批次，位置参数为中心位置。"
+        "description": "生成指定形状的图像或图像批次，位置参数为中心位置。"
     },
     "CreateGradientFromCoords": {
         "title": "从坐标创建渐变图像",
@@ -1154,7 +1234,7 @@
         "outputs": {
             "image": "图像"
         },
-        "description": "\n在坐标位置创建渐变图像。"
+        "description": "在坐标位置创建渐变图像。"
     },
     "GradientToFloat": {
         "title": "渐变到浮点",
@@ -1168,7 +1248,7 @@
             "float_x": "浮点_X",
             "float_y": "浮点_Y"
         },
-        "description": "\n计算图像浮点列表"
+        "description": "计算图像浮点列表"
     },
     "WidgetToString": {
         "title": "组件到字符串",
@@ -1280,7 +1360,8 @@
             "positive": "正面条件",
             "negative": "负面条件",
             "latent": "Latent"
-        }
+        },
+        "description": "使用插值调度安排 SV3D 的方位角和俯仰角数值。\n\n注意 SV3D 是视频模型，所以调度值必须递进。\n\nhttps://huggingface.co/stabilityai/sv3d"
     },
     "GLIGENTextBoxApplyBatch": {
         "title": "GLIGEN文本框应用(批次)",
@@ -1288,7 +1369,9 @@
             "conditioning_to": "条件",
             "clip": "CLIP",
             "gligen_textbox_model": "GLIGEN模型",
-            "latents": "Latent"
+            "latents": "Latent",
+            "coordinates": "坐标",
+            "size_multiplier": "尺寸乘数"
         },
         "widgets": {
             "text": "文本",
@@ -1333,7 +1416,72 @@
             "conditioning": "条件",
             "coord_preview": "坐标预览"
         },
-        "description": "\n这个节点允许在批次中调度 GLIGEN 文本框的位置，和 AnimateDiff-Evolved 一起使用。建议和 曲线编辑器 节点一起使用。\n\n GLIGEN模型可以在 管理器 的 “安装模型” 中下载。或直接在：https://huggingface.co/comfyanonymous/GLIGEN_pruned_safetensors/tree/main 下载。 \n \n 输入： \n- **Latent** 输入用于计算批次大小 \n- **CLIP** 是文本编码器，与其他CLIP输入相同 \n- **GLIGEN模型** 连接到 GLIGEN加载器 节点 \n- **坐标** 接收坐标点json字符串，和 曲线编辑器 节点兼容。 \n- **文本** 文本框位置的提示词 \n- **宽度** 和 **高度** 设置 GLIGEN文本框 的尺寸 \n \n输出：\n- **条件** 连接到 CLIP文本编码 和 采样器 中间 \n- **坐标预览** 用于预览坐标和BBox \n\n"
+        "description": "这个节点允许在批次中调度 GLIGEN 文本框的位置，和 AnimateDiff-Evolved 一起使用。建议和 曲线编辑器 节点一起使用。\n\n GLIGEN模型可以在 管理器 的 “安装模型” 中下载。或直接在：https://huggingface.co/comfyanonymous/GLIGEN_pruned_safetensors/tree/main 下载。 \n \n 输入： \n- **Latent** 输入用于计算批次大小 \n- **CLIP** 是文本编码器，与其他CLIP输入相同 \n- **GLIGEN模型** 连接到 GLIGEN加载器 节点 \n- **坐标** 接收坐标点json字符串，和 曲线编辑器 节点兼容。 \n- **文本** 文本框位置的提示词 \n- **宽度** 和 **高度** 设置 GLIGEN文本框 的尺寸 \n \n输出：\n- **条件** 连接到 CLIP文本编码 和 采样器 中间 \n- **坐标预览** 用于预览坐标和BBox \n\n"
+    },
+    "CheckpointPerturbWeights": {
+        "title": "Checkpoint参数扰动",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "joint_blocks": "joint_blocks",
+            "final_layer": "final_layer",
+            "rest_of_the_blocks": "rest_of_the_blocks",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "Screencap_mss": {
+        "title": "屏幕捕捉MSS",
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "width": "宽度",
+            "height": "高度",
+            "num_frames": "帧数",
+            "delay": "延迟"
+        },
+        "outputs": {
+            "images": "图像"
+        },
+        "description": "按屏幕坐标捕捉区域。\n\n用于实时采样。"
+    },
+    "WebcamCaptureCV2": {
+        "title": "相机捕捉CV2",
+        "widgets": {
+            "x": "X",
+            "y": "Y",
+            "width": "宽度",
+            "height": "高度",
+            "cam_index": "相机序号",
+            "release": "release"
+        },
+        "outputs": {
+            "image": "图像"
+        },
+        "description": "使用 CV2 调用网页相机捕捉屏幕。\n\n用于实时采样。"
+    },
+    "FluxBlockLoraLoader": {
+        "title": "Flux Block LoRA 加载器",
+        "inputs": {
+            "model": "模型",
+            "blocks": "block",
+            "opt_lora_path": "LoRA路径(可选)"
+        },
+        "widgets": {
+            "strength_model": "模型强度",
+            "lora_name": "LoRA名称"
+        },
+        "outputs": {
+            "model": "模型",
+            "rank": "rank"
+        }
+    },
+    "FluxBlockLoraSelect": {
+        "title": "Flux Block LoRA 选择"
     },
     "LoadICLightUnet": {
         "title": "加载ICLightUnet",
@@ -1346,7 +1494,7 @@
         "outputs": {
             "MODEL": "模型"
         },
-        "description": "\n加载ICLightUnet：加载一个 ICLightUnet 模型。（实验性）开发中 \n 另一种不好用但可以用的方法是在 https://huggingface.co/Kijai/iclight-comfy/blob/main/iclight_fc_converted.safetensors 下载模型，然后和 InstructPixToPix条件 节点一起使用。"
+        "description": "加载ICLightUnet：加载一个 ICLightUnet 模型。（实验性）开发中 \n 另一种不好用但可以用的方法是在 https://huggingface.co/Kijai/iclight-comfy/blob/main/iclight_fc_converted.safetensors 下载模型，然后和 InstructPixToPix条件 节点一起使用。"
     },
     "StabilityAPI_SD3": {
         "title": "StabilityAPI SD3",
@@ -1367,7 +1515,8 @@
         },
         "outputs": {
             "IMAGE": "图像"
-        }
+        },
+        "description": "# 调用 Stability API\n\n尽量使用同一个key调用API，无论账号有多少个key。\n\n在 https://platform.stability.ai/account/keys 获取key，推荐创建包含key的 config.json 文件然后放到插件目录下。\n\n# 警告：\n\n即使开启了 disable_metadata（禁用元数据），如果工作流程中包含与此节点不同的保存节点，API 密钥也可能被保存到元数据中。\n\nSD3 每次生成需要 6.5 点数\n\nSD3-Turbo 每次生成需要 4 点数\n\n如果不连接图像输入，则使用 文生图 模式"
     },
     "GetImagesFromBatchIndexed": {
         "title": "从批次获取图像",
@@ -1379,7 +1528,8 @@
         },
         "outputs": {
             "IMAGE": "图像"
-        }
+        },
+        "description": "按索引编号选择图像。"
     },
     "InsertImagesToBatchIndexed": {
         "title": "插入图像到索引批次",
@@ -1425,7 +1575,7 @@
             "blue": "蓝色",
             "mask": "遮罩"
         },
-        "description": "\n分离图像为单通道图像，alpha通道分离为遮罩。"
+        "description": "分离图像为单通道图像，alpha通道分离为遮罩。"
     },
     "MergeImageChannels": {
         "title": "合并图像通道",
@@ -1438,7 +1588,7 @@
         "outputs": {
             "image": "图像"
         },
-        "description": "\n合并通道为图像"
+        "description": "合并通道为图像"
     },
     "PreviewAnimation": {
         "title": "预览动画",
@@ -1460,7 +1610,8 @@
         },
         "outputs": {
             "IMAGE": "图像"
-        }
+        },
+        "description": "按指定次数复制批次中的图像。\n\n例如包含 5 个图像的批次：0,1,2,3,4\n\n重复 2 次后变为：0,0,1,1,2,2,3,3,4,4"
     },
     "ImageTransformByNormalizedAmplitude": {
         "title": "按规格化幅度变换图像",
@@ -1474,7 +1625,8 @@
         },
         "outputs": {
             "IMAGE": "图像"
-        }
+        },
+        "description": "用于桥接 AudioScheduler 插件的节点：\n\nhttps://github.com/a1lazydog/ComfyUI-AudioScheduler\n\n基于规格化振幅变换图像。"
     },
     "GetLatentsFromBatchIndexed": {
         "title": "按索引获取Latent",
@@ -1534,7 +1686,8 @@
         },
         "outputs": {
             "MASK": "遮罩"
-        }
+        },
+        "description": "用于桥接 AudioScheduler 插件的节点：\n\nhttps://github.com/a1lazydog/ComfyUI-AudioScheduler\n\n基于规格化振幅创建遮罩。"
     },
     "NormalizedAmplitudeToFloatList": {
         "title": "规格化振幅到浮点列表",
@@ -1544,7 +1697,7 @@
         "outputs": {
             "FLOAT": "浮点"
         },
-        "description": "\n连接“音频调度”的桥接节点：https://github.com/a1lazydog/ComfyUI-AudioScheduler \n，从规格化振幅建立一个浮点列表。"
+        "description": "用于桥接 AudioScheduler 插件的节点：\n\nhttps://github.com/a1lazydog/ComfyUI-AudioScheduler\n\n基于规格化振幅创建浮点列表。"
     },
     "ScaleBatchPromptSchedule": {
         "title": "缩放提示词批次调度",
@@ -1573,7 +1726,8 @@
         },
         "outputs": {
             "IMAGE": "图像"
-        }
+        },
+        "description": "规格化图像到 [-1,1]"
     },
     "ImagePass": {
         "title": "图像桥接",
@@ -1583,13 +1737,13 @@
         "outputs": {
             "IMAGE": "图像"
         },
-        "description": "\n传递图像到下一个节点"
+        "description": "传递图像到下一个节点"
     },
     "ImageResizeKJ": {
         "title": "图像缩放（KJ）",
         "inputs": {
             "image": "图像",
-            "get_image_size": "参考图像大小",
+            "get_image_size": "参考图像",
             "width_input": "宽度",
             "height_input": "高度"
         },
@@ -1598,14 +1752,16 @@
             "height": "高度",
             "upscale_method": "缩放方法",
             "keep_proportions": "固定宽高比",
-            "divisible_by": "因数"
+            "keep_proportion": "固定宽高比",
+            "divisible_by": "因数",
+            "crop": "裁剪"
         },
         "outputs": {
             "IMAGE": "图像",
             "width": "宽度",
             "height": "高度"
         },
-        "description": "\n按指定宽高缩放图像。尺寸可由输入指定，最终输出优先级按以下规则排列：\n- 参考图像尺寸 \n- 宽度-输入 和 高度-输入 \n- 宽度 和 高度 \n \n固定宽高比会按最高尺寸固定宽高比。"
+        "description": "按指定宽高缩放图像。尺寸可由输入指定，最终输出优先级按以下规则排列：\n- 参考图像尺寸 \n- 宽度-输入 和 高度-输入 \n- 宽度 和 高度 \n \n固定宽高比会按最高尺寸固定宽高比。"
     },
     "CameraPoseVisualizer": {
         "title": "相机姿态预览",
@@ -1666,7 +1822,7 @@
         "outputs": {
             "composite": "图像"
         },
-        "description": "\n预览图像或遮罩，同时输入图像和遮罩时会合并遮罩到图像上。\n当 穿透 开启时将禁用合成，用于通过合并为视频节点的预览。"
+        "description": "预览图像或遮罩，同时输入图像和遮罩时会合并遮罩到图像上。\n当 穿透 开启时将禁用合成，用于通过合并为视频节点的预览。"
     },
     "MaskOrImageToWeight": {
         "title": "遮罩或图像到权重",
@@ -1680,7 +1836,7 @@
         "outputs": {
             "FLOAT": "浮点"
         },
-        "description": "\n获取遮罩或图像批次的平均值，并按 输出类型 输出结果。"
+        "description": "获取遮罩或图像批次的平均值，并按 输出类型 输出结果。"
     },
     "MaskOrImageToWeigh": {
         "title": "遮罩或图像到权重",
@@ -1763,7 +1919,7 @@
         "outputs": {
             "clipseg_model": "CLIPSeg模型"
         },
-        "description": "\n使用 huggingface_hub 下载 CLIPSeg 模型到 Comfy/models/clip_seg"
+        "description": "使用 huggingface_hub 下载 CLIPSeg 模型到 Comfy/models/clip_seg"
     },
     "GetMaskSizeAndCount": {
         "title": "获取遮罩尺寸数量",
@@ -1776,7 +1932,7 @@
             "height": "高度",
             "count": "数量"
         },
-        "description": "\n输出遮罩的宽度、高度、批次大小"
+        "description": "输出遮罩的宽度、高度、批次大小"
     },
     "GetImageSizeAndCount": {
         "title": "获取图像尺寸数量",
@@ -1789,7 +1945,7 @@
             "height": "高度",
             "count": "数量"
         },
-        "description": "\n输出图像的宽度、高度、批次大小"
+        "description": "输出图像的宽度、高度、批次大小"
     },
     "ModelPassThrough": {
         "title": "模型桥接",
@@ -1799,7 +1955,7 @@
         "outputs": {
             "model": "模型"
         },
-        "description": "\n将模型传递到下一个节点"
+        "description": "将模型传递到下一个节点"
     },
     "FloatToSigmas": {
         "title": "浮点到Sigmas",
@@ -1809,7 +1965,7 @@
         "outputs": {
             "SIGMAS": "Sigmas"
         },
-        "description": "\n从浮点列表创建sigmas tensor"
+        "description": "从浮点列表创建sigmas tensor"
     },
     "WeightScheduleExtend": {
         "title": "权重调度扩展",
@@ -1823,7 +1979,7 @@
         "outputs": {
             "FLOAT": "浮点"
         },
-        "description": "\n扩展不同的值列表/系列，并根据需要进行转换"
+        "description": "扩展不同的值列表/系列，并根据需要进行转换"
     },
     "SplineEditor": {
         "title": "曲线编辑器",
@@ -1848,6 +2004,36 @@
             "count": "数量",
             "normalized_str": "规格化字符串"
         },
-        "description": "\n# 开发中 \n不要在工作流中经常使用这个节点，可能会遇到大量bug并且不稳定！！ \n \n##用于创建各类值调度的图形化编辑器 \n\n**Shift+左键单击** 添加新控制点，**Ctrl+左键单击** 创建中间控制点，**右键单击** 移除控制点。\n不能删除端点。\n\n 右键背景会调出菜单：一些视觉设置，不影响输出效果：\n - 控制柄可见性 \n - 显示采样点 \n\n**采样精度** 设置采样点数量，从样条线本身返回采样点，和实际控制点无关，由插值类型决定。\n采样方法：\n - 时间：沿时间轴采样，用于调度 \n - 路径：沿曲线路径采样，用于坐标 \n\n 输出：\n - 遮罩批次 \n 适用于任何接收遮罩的节点 \n - 浮点列表 \n 适用于 IPAdapter权重组 \n - pandas series \n 适用于 适用于接收 Fizz批次调度 节点 的节点 \n - torch tensor \n 适用于不明节点"
+        "description": "# 开发中 \n尽量不要在工作流中使用这个节点，可能会遇到大量bug并且不稳定！！ \n \n##用于创建各类值调度的图形化编辑器 \n\n**Shift+左键单击** 添加新控制点，**Ctrl+左键单击** 创建中间控制点，**右键单击** 移除控制点。\n不能删除端点。\n\n 右键背景会调出菜单：一些视觉设置，不影响输出效果：\n - 控制柄可见性 \n - 显示采样点 \n\n**采样精度** 设置采样点数量，从样条线本身返回采样点，和实际控制点无关，由插值类型决定。\n采样方法：\n - 时间：沿时间轴采样，用于调度 \n - 路径：沿曲线路径采样，用于坐标 \n\n 输出：\n - 遮罩批次 \n 适用于任何接收遮罩的节点 \n - 浮点列表 \n 适用于 IPAdapter权重组 \n - pandas series \n 适用于 适用于接收 Fizz批次调度 节点 的节点 \n - torch tensor \n 适用于不明节点"
+    },
+
+    "DifferentialDiffusionAdvanced": {
+        "title": "差异扩散（高级）",
+        "inputs": {
+            "model": "模型",
+            "samples": "Latent",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "multiplier": "乘数"
+        },
+        "outputs": {
+            "MODEL": "模型",
+            "LATENT": "Latent"
+        }
+    },
+    "LoadImagesFromFolderKJ": {
+        "title": "加载图像（文件夹）",
+        "widgets": {
+            "folder": "文件夹",
+            "image_load_cap": "加载上限",
+            "start_index": "起始编号"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "count": "数量",
+            "image_path": "图像路径"
+        }
     }
 }

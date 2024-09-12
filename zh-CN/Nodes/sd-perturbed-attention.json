@@ -1,6 +1,6 @@
 {
     "PerturbedAttention": {
-        "title": "PAG注意力引导(高级)",
+        "title": "PAG注意力引导（高级）",
         "inputs": {
             "model": "模型"
         },
@@ -9,6 +9,26 @@
             "adaptive_scale": "自适应缩放",
             "unet_block": "UNet块",
             "unet_block_id": "UNet块ID"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "SmoothedEnergyGuidanceAdvanced": {
+        "title": "SEG引导（高级）",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "scale": "缩放",
+            "blur_sigma": "模糊Sigma",
+            "unet_block": "UNet块",
+            "unet_block_id": "UNet块ID",
+            "sigma_start": "Sigma初始",
+            "sigma_end": "Sigma结束",
+            "rescale": "重缩放",
+            "rescale_mode": "重缩放模式",
+            "unet_block_list": "UNet块列表"
         },
         "outputs": {
             "MODEL": "模型"

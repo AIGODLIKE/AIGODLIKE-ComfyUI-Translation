@@ -7,7 +7,7 @@
         "outputs": {
             "marigold_model": "Marigold模型"
         },
-        "description": "\n基于扩散的单目深度推算: \nhttps://github.com/prs-eth/Marigold  \n  \n使用 Diffusers 0.28.0 Marigold 管线。模型会自动下载到 ComfyUI/Models/diffusers 文件夹内"
+        "description": "\n基于扩散的单目深度推算: https://github.com/prs-eth/Marigold  \n\n 使用 Diffusers 0.28.0 Marigold 框架。模型会自动下载到 ComfyUI/Models/diffusers 文件夹内"
     },
     "MarigoldDepthEstimation_v2": {
         "title": "Marigold_v2深度推算",
@@ -28,9 +28,9 @@
         "outputs": {
             "image": "图像"
         },
-        "description": "\n基于扩散的单目深度推算: \nhttps://github.com/prs-eth/Marigold  \n  \n使用 Diffusers 0.28.0 Marigold 管线。"
+        "description": "\n基于扩散的单目深度推算: https://github.com/prs-eth/Marigold  \n\n 使用 Diffusers 0.28.0 Marigold 框架。"
     },
-    "MarigoldDepthEstimation_v2_Video": {
+    "MarigoldDepthEstimation_v2_video": {
         "title": "Marigold_v2深度推算视频",
         "inputs": {
             "marigold_model": "Marigold模型",
@@ -48,7 +48,7 @@
         "outputs": {
             "image": "图像"
         },
-        "description": "\n基于扩散的单目深度推算: \nhttps://github.com/prs-eth/Marigold  \n  \n使用 Diffusers 0.28.0 Marigold 管线。\n这个节点使用上一帧作为初始Latent，用以平滑视频。"
+        "description": "\n基于扩散的单目深度推算: https://github.com/prs-eth/Marigold  \n\n使用 Diffusers 0.28.0 Marigold 框架。\n\n这个节点使用上一帧作为初始Latent，用以平滑视频。"
     },
     "MarigoldDepthEstimation": {
         "title": "Marigold深度推算",

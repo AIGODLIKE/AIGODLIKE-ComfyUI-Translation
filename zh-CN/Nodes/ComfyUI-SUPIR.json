@@ -30,6 +30,25 @@
             "SUPIR_VAE": "SUPIR_VAE"
         }
     },
+    "SUPIR_model_loader_v2_clip": {
+        "title": "SUPIR模型加载器_V2（）",
+        "inputs": {
+            "model": "模型",
+            "clip_l": "CLIP_L",
+            "clip_g": "CLIP_G",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "supir_model": "SUPIR模型",
+            "fp8_unet": "fp8_unet",
+            "diffusion_dtype": "剪枝类型",
+            "high_vram": "高显存"
+        },
+        "outputs": {
+            "SUPIR_MODEL": "SUPIR模型",
+            "SUPIR_VAE": "SUPIR_VAE"
+        }
+    },
     "SUPIR_encode": {
         "title": "SUPIR编码",
         "inputs": {

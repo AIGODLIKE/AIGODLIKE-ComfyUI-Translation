@@ -1,0 +1,16 @@
+{
+    "BiRefNet_Hugo": {
+        "title": "🔥BiRefNet",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "background_color_name": "背景色",
+            "device": "设备"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    }
+}

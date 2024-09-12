@@ -95,6 +95,15 @@
             "latent": "Latent"
         }
     },
+    "RAUNet": {
+        "title": "RAUNet",
+        "inputs": {
+            "model": "模型"
+        },
+        "outputs": {
+            "model": "模型"
+        }
+    },
     "BrushNetInpaint": {
         "title": "BrushNet局部重绘",
         "inputs": {

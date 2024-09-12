@@ -227,6 +227,12 @@
             "SAMPLER": "采样器"
         }
     },
+    "SamplerDPMPP_2S_Ancestral": {
+        "title": "DPMPP_2S_Ancestral采样器",
+        "outputs": {
+            "SAMPLER": "采样器"
+        }
+    },
     "SamplerEulerAncestral": {
         "title": "Euler_A采样器",
         "widgets": {
@@ -465,7 +471,8 @@
         },
         "outputs": {
             "MODEL": "模型"
-        }
+        },
+        "description": "用于微调扩散模型和 CLIP 模型，改变 Latent 降噪的效果，实现控制风格等功能。多个 LoRA 可以直接连接到一起。"
     },
 
 
@@ -1229,7 +1236,8 @@
         "outputs": {
             "IMAGE": "图像",
             "The decoded image.": "解码后的图像"
-        }
+        },
+        "description": "将 Latent 图像解码为像素空间的图像。"
     },
     "VAEEncode": {
         "title": "VAE编码",
@@ -1674,6 +1682,17 @@
             "IMAGE": "图像"
         }
     },
+    "WebcamCapture": {
+        "title": "网页镜头捕捉",
+        "widgets": {
+            "width": "宽度",
+            "height": "高度",
+            "capture_on_queue": "执行时捕捉"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        }
+    },
     "SaveImageWithAlpha": {
         "title": "保存图像(Alpha)",
         "inputs": {
@@ -2089,7 +2108,8 @@
         },
         "widgets": {
             "samples": "Latent",
-            "latent": "Latent"
+            "latent": "Latent",
+            "filename_prefix": "文件名前缀"
         }
     },
     "LoadLatent": {
@@ -2293,7 +2313,8 @@
     "CLIPLoader": {
         "title": "CLIP加载器",
         "widgets": {
-            "clip_name": "CLIP名称"
+            "clip_name": "CLIP名称",
+            "type": "类型"
         },
         "outputs": {
             "CLIP": "CLIP"
@@ -2554,6 +2575,15 @@
         "title": "保存VAE",
         "inputs": {
             "VAE": "VAE"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀"
+        }
+    },
+    "ModelSave": {
+        "title": "保存模型",
+        "inputs": {
+            "model": "模型"
         },
         "widgets": {
             "filename_prefix": "文件名前缀"

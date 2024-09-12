@@ -101,5 +101,18 @@
         "outputs": {
             "MASK": "遮罩"
         }
+    },
+    "INPAINT_ExpandMask": {
+        "title": "扩展遮罩",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "grow": "生长",
+            "blur": "模糊"
+        },
+        "outputs": {
+            "MASK": "遮罩"
+        }
     }
 }
