@@ -39,6 +39,15 @@
             "MODEL": "模型"
         }
     },
+    "Automatic CFG - Warp Drive": {
+        "title": "自动CFG（Warp Drive）",
+        "inputs": {
+            "model": "模型"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
     "Automatic CFG - Preset Loader": {
         "title": "自动CFG（预设组）",
         "inputs": {
