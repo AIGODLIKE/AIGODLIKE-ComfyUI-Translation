@@ -37,6 +37,47 @@
             "images": "图像"
         }
     },
+
+
+    "Audio Sequence (mtb)": {
+        "title": "音频序列",
+        "inputs": {
+            "audio_1": "音频_1"
+        },
+        "widgets": {
+            "silence_duration": "静音时长"
+        },
+        "outputs": {
+            "sequenced_audio": "音频序列"
+        },
+        "description": "按序排列所有输入的音频\n\n- 在每段之间添加静音时长，用于抑制片段重复以及控制时长。\n- 根据最高采样率重新采样所有音频，\n- 如果其中一个输入为立体声，则将所有音频转换为立体声。"
+    },
+    "Audio Stack (mtb)": {
+        "title": "音频堆栈",
+        "inputs": {
+            "audio_1": "音频_1"
+        },
+        "outputs": {
+            "stacked_audio": "音频堆栈"
+        },
+        "description": "堆叠/重叠所有输入的音频\n\n- 音频长度取决于最长的输入项。\n\n- 重采样为输入中的最高采样率。\n\n- 如果其中一个输入为立体声，则将所有音频转换为立体声。"
+    },
+    "Audio Cut (mtb)": {
+        "title": "音频裁剪",
+        "inputs": {
+            "audio": "音频"
+        },
+        "widgets": {
+            "length": "长度",
+            "offset": "偏移"
+        },
+        "outputs": {
+            "cut_audio": "裁剪音频"
+        },
+        "description": "裁剪音频，单位为毫秒ms。"
+    },
+
+
     "Batch Float (mtb)": {
         "title": "浮点批次",
         "widgets": {
@@ -263,6 +304,36 @@
             "STRING": "字符串"
         }
     },
+
+    "Extract Coordinates From Image (mtb)": {
+        "title": "从图像解析坐标",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "threshold": "阈值",
+            "max_points": "坐标点上限"
+        },
+        "outputs": {
+            "BATCH_COORDNATES": "坐标批次",
+            "IMAGE": "图像"
+        },
+        "description": "从图像批次中按照阈值解析出 2D 坐标点。"
+    },
+    "Coordinates To String (mtb)": {
+        "title": "坐标批次到字符串",
+        "inputs": {
+            "coordinates": "坐标批次"
+        },
+        "widgets": {
+            "frame": "帧数"
+        },
+        "outputs": {
+            "STRING": "字符串"
+        }
+    },
+
     "Bbox From Mask (mtb)": {
         "title": "遮罩提取BBox",
         "inputs": {
@@ -321,6 +392,19 @@
         "outputs": {
             "IMAGE": "图像"
         }
+    },
+    "Split Bbox (mtb)": {
+        "title": "解析BBox",
+        "inputs": {
+            "bbox": "BBox"
+        },
+        "outputs": {
+            "x": "X",
+            "y": "Y",
+            "width": "宽度",
+            "height": "高度"
+        },
+        "description": "解析bbox"
     },
     "Curve (mtb)": {
         "title": "浮点曲线",
@@ -626,7 +710,30 @@
         },
         "outputs": {
             "IMAGE": "图像"
-        }
+        },
+        "description": "各类颜色校正方案"
+    },
+    "Color Correct GPU (mtb)": {
+        "title": "颜色校正GPU",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "force_gpu": "强制GPU",
+            "clamp": "钳制",
+            "gamma": "伽马",
+            "contrast": "对比度",
+            "exposure": "曝光",
+            "offset": "偏移",
+            "hue": "色相",
+            "saturation": "饱和度",
+            "value": "明度"
+        },
+        "outputs": {
+            "IMAGE": "图像"
+        },
+        "description": "各类颜色校正方案（使用torch）"
     },
     "Blur (mtb)": {
         "title": "模糊",
