@@ -227,6 +227,12 @@
             "SAMPLER": "采样器"
         }
     },
+    "SamplerDPMPP_2S_Ancestral": {
+        "title": "DPMPP_2S_Ancestral采样器",
+        "outputs": {
+            "SAMPLER": "采样器"
+        }
+    },
     "SamplerEulerAncestral": {
         "title": "Euler_A采样器",
         "widgets": {
