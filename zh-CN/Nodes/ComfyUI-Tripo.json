@@ -45,6 +45,17 @@
             "API_KEY": "APIKey"
         }
     },
+    "TripoRefineModel": {
+        "title": "TripoAPI优化模型",
+        "inputs": {
+            "apikey": "APIKey",
+            "model_task_id": "模型任务ID"
+        },
+        "outputs": {
+            "MESH": "网格",
+            "MODEL_TASK_ID": "模型任务ID"
+        }
+    },
     "TripoAnimateRigNode": {
         "title": "Tripo绑骨模型",
         "inputs": {
