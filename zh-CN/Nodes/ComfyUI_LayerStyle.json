@@ -1,4 +1,18 @@
 {
+    "LayerFilter: Add Grain": {
+        "title": "噪点",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "grain_power": "颗粒强度",
+            "grain_scale": "颗粒缩放",
+            "grain_sat": "颗粒饱和度"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
     "LayerFilter: ChannelShake": {
         "title": "通道错位",
         "inputs": {
@@ -40,8 +54,33 @@
             "grain_power": "颗粒强度",
             "grain_scale": "颗粒缩放",
             "grain_sat": "颗粒饱和度",
-            "grain_shadows": "颗粒引用",
+            "grain_shadows": "颗粒阴影",
             "grain_highs": "亮部颗粒强度",
+            "blur_strength": "模糊强度",
+            "blur_focus_spread": "焦点扩散",
+            "focal_depth": "模拟虚焦"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "LayerFilter: FilmV2": {
+        "title": "胶片颗粒 V2",
+        "inputs": {
+            "image": "图像",
+            "depth_map": "深度图"
+        },
+        "widgets": {
+            "center_x": "中心X",
+            "center_y": "中心Y",
+            "saturation": "饱和度",
+            "vignette_intensity": "暗角强度",
+            "grain_method": "颗粒算法",
+            "grain_power": "颗粒强度",
+            "grain_scale": "颗粒缩放",
+            "grain_sat": "颗粒饱和度",
+            "filmgrainer_shadows": "颗粒阴影",
+            "filmgrainer_highs": "颗粒高光",
             "blur_strength": "模糊强度",
             "blur_focus_spread": "焦点扩散",
             "focal_depth": "模拟虚焦"
@@ -1114,6 +1153,24 @@
             "image": "图像"
         }
     },
+    "LayerStyle: Gradient Map": {
+        "title": "渐变映射",
+        "inputs": {
+            "image": "图像",
+            "layer_mask": "遮罩层"
+        },
+        "widgets": {
+            "start_color": "起始色",
+            "mid_color": "中间色",
+            "end_color": "结束色",
+            "mid_point": "中间点",
+            "opacity": "不透明"
+        },
+        "outputs": {
+            "image": "图像",
+            "gradient": "渐变"
+        }
+    },
     "LayerStyle: GradientOverlay": {
         "title": "渐变覆盖",
         "inputs": {
@@ -1363,7 +1420,7 @@
 
 
     "LayerMask: BiRefNetUltra": {
-        "title": "BiRefNetUltra",
+        "title": "BiRefNet Ultra",
         "inputs": {
             "image": "图像"
         },
@@ -1373,7 +1430,30 @@
             "detail_dilate": "细节膨胀",
             "black_point": "黑色阈值",
             "white_point": "白色阈值",
-            "process_detail": "处理细节"
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: BiRefNetUltraV2": {
+        "title": "BiRefNet Ultra V2",
+        "inputs": {
+            "image": "图像",
+            "birefnet_model": "BiRefNet模型"
+        },
+        "widgets": {
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
         },
         "outputs": {
             "image": "图像",
@@ -1415,6 +1495,66 @@
             "mask": "遮罩"
         }
     },
+    "LayerMask: EVFSAMUltra": {
+        "title": "EVSAM Ultra",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "model": "模型",
+            "precision": "精度",
+            "load_in_bit": "加载位精度",
+            "prompt": "提示词",
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        }
+    },
+    "LayerMask: Florence2Ultra": {
+        "title": "Florence2 Ultra",
+        "inputs": {
+            "florence2_model": "Florence2模型",
+            "image": "图像"
+        },
+        "widgets": {
+            "task": "任务",
+            "text_input": "文本",
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: ImageToMask": {
+        "title": "图像到遮罩",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "channel": "通道",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "gray_point": "灰色阈值",
+            "invert_output_mask": "反转遮罩输出"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
     "LayerMask: MaskBoxDetect": {
         "title": "检测遮罩区域",
         "inputs": {
@@ -1434,6 +1574,24 @@
             "height": "高度",
             "x": "X",
             "y": "Y"
+        }
+    },
+    "LayerMask: MaskByColor": {
+        "title": "颜色到遮罩",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "color": "颜色",
+            "color_in_HEX": "HEX颜色",
+            "threshold": "阈值",
+            "fix_gap": "填缝",
+            "fix_threshold": "修补阈值",
+            "invert_mask": "反转遮罩"
+        },
+        "outputs": {
+            "mask": "遮罩"
         }
     },
     "LayerMask: MaskByDifferent": {
@@ -1489,7 +1647,7 @@
         }
     },
     "LayerMask: MaskEdgeUltraDetail V2": {
-        "title": "遮罩细化_V2",
+        "title": "遮罩细化 V2",
         "inputs": {
             "image": "图像",
             "mask": "遮罩"
@@ -1521,6 +1679,19 @@
             "gradient_scale": "缩放",
             "gradient_offset": "偏移",
             "opacity": "不透明"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: MaskGrain": {
+        "title": "遮罩颗粒",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "grain": "颗粒",
+            "invert_mask": "反转遮罩"
         },
         "outputs": {
             "mask": "遮罩"
@@ -1586,8 +1757,105 @@
             "blur": "模糊"
         }
     },
+    "LayerMask: MediapipeFacialSegment": {
+        "title": "Mediapipe面部分割",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "left_eye": "左眼",
+            "left_eyebrow": "左眉",
+            "right_eye": "右眼",
+            "right_eyebrow": "右眉",
+            "lips": "嘴唇",
+            "tooth": "牙齿"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: BBoxJoin": {
+        "title": "合并BBox",
+        "inputs": {
+            "bboxes_1": "BBoxes_1",
+            "bboxes_2": "BBoxes_2",
+            "bboxes_3": "BBoxes_3",
+            "bboxes_4": "BBoxes_4"
+        },
+        "outputs": {
+            "bboxes": "BBoxes"
+        }
+    },
+    "LayerMask: ObjectDetectorFL2": {
+        "title": "物体检测（Florence2）",
+        "inputs": {
+            "image": "图像",
+            "florence2_model": "Florence2模型"
+        },
+        "widgets": {
+            "prompt": "提示词",
+            "sort_method": "排序方法",
+            "bbox_select": "选择BBox",
+            "select_index": "选择编号"
+        },
+        "outputs": {
+            "bboxes": "BBoxes",
+            "preview": "预览图像"
+        }
+    },
+    "LayerMask: ObjectDetectorMask": {
+        "title": "物体检测（遮罩）",
+        "inputs": {
+            "object_mask": "物体遮罩"
+        },
+        "widgets": {
+            "sort_method": "排序方法",
+            "bbox_select": "选择BBox",
+            "select_index": "选择编号"
+        },
+        "outputs": {
+            "bboxes": "BBoxes",
+            "preview": "预览图像"
+        }
+    },
+    "LayerMask: ObjectDetectorYOLO8": {
+        "title": "物体检测（Yolov8）",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "yolo_model": "Yolo模型",
+            "sort_method": "排序方法",
+            "bbox_select": "选择BBox",
+            "select_index": "选择编号"
+        },
+        "outputs": {
+            "bboxes": "BBoxes",
+            "preview": "预览图像"
+        }
+    },
+    "LayerMask: ObjectDetectorYOLOWorld": {
+        "title": "物体检测（YoloWorld）",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "yolo_world_model": "YoloWorld模型",
+            "confidence_threshold": "置信度",
+            "nms_iou_threshold": "非极大值抑制阈值",
+            "prompt": "提示词",
+            "sort_method": "排序方法",
+            "bbox_select": "选择BBox",
+            "select_index": "选择编号"
+        },
+        "outputs": {
+            "bboxes": "BBoxes",
+            "preview": "预览图像"
+        }
+    },
     "LayerMask: PersonMaskUltra": {
-        "title": "人像遮罩Ultra",
+        "title": "人像遮罩 Ultra",
         "inputs": {
             "images": "图像"
         },
@@ -1610,7 +1878,7 @@
         }
     },
     "LayerMask: PersonMaskUltra V2": {
-        "title": "人像遮罩Ultra_V2",
+        "title": "人像遮罩 Ultra V2",
         "inputs": {
             "images": "图像"
         },
@@ -1665,7 +1933,7 @@
         }
     },
     "LayerMask: RmBgUltra V2": {
-        "title": "移除背景_V2",
+        "title": "移除背景 V2",
         "inputs": {
             "image": "图像"
         },
@@ -1682,8 +1950,202 @@
             "mask": "遮罩"
         }
     },
+    "LayerMask: SAM2Ultra": {
+        "title": "SAM2 Ultra",
+        "inputs": {
+            "image": "图像",
+            "bboxes": "BBoxes"
+        },
+        "widgets": {
+            "sam2_model": "SAM2模型",
+            "precision": "精度",
+            "bbox_select": "选择BBox",
+            "select_index": "选择编号",
+            "cache_model": "缓存模型",
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: SAM2VideoUltra": {
+        "title": "SAM2视频 Ultra",
+        "inputs": {
+            "image": "图像",
+            "bboxes": "BBoxes",
+            "first_frame_mask": "首帧遮罩",
+            "pre_masK": "关注层遮罩"
+        },
+        "widgets": {
+            "sam2_model": "SAM2模型",
+            "precision": "精度",
+            "bbox_select": "选择BBox",
+            "select_index": "选择编号",
+            "cache_model": "缓存模型",
+            "individual_objects": "独立物体",
+            "mask_preview_color": "遮罩预览颜色",
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "preview": "预览图像"
+        }
+    },
+    "LayerMask: SegformerUltraV2": {
+        "title": "Segformer Ultra V2",
+        "inputs": {
+            "image": "图像",
+            "segformer_pipeline": "Segformer框架"
+        },
+        "widgets": {
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: SegformerB2ClothesUltra": {
+        "title": "Segformer B2服装 Ultra",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "face": "脸",
+            "hair": "头发",
+            "hat": "帽子",
+            "sunglass": "墨镜",
+            "left_arm": "左臂",
+            "right_arm": "右臂",
+            "left_leg": "左腿",
+            "right_leg": "右腿",
+            "upper_clothes": "上衣",
+            "skirt": "短裙",
+            "pants": "裤子",
+            "dress": "连衣裙",
+            "belt": "腰带",
+            "shoe": "鞋子",
+            "bag": "背包",
+            "scarf": "围巾",
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
+        }
+    },
+    "LayerMask: SegformerClothesPipelineLoader": {
+        "title": "Segformer 服装框架加载器",
+        "widgets": {
+            "model": "模型",
+            "face": "脸",
+            "hair": "头发",
+            "hat": "帽子",
+            "sunglass": "墨镜",
+            "left_arm": "左臂",
+            "right_arm": "右臂",
+            "left_leg": "左腿",
+            "right_leg": "右腿",
+            "left_shoe": "左鞋",
+            "right_shoe": "右鞋",
+            "upper_clothes": "上衣",
+            "skirt": "短裙",
+            "pants": "裤子",
+            "dress": "连衣裙",
+            "belt": "腰带",
+            "bag": "背包",
+            "scarf": "围巾"
+        },
+        "outputs": {
+            "segformer_pipeline": "Segformer框架"
+        }
+    },
+    "LayerMask: SegformerFashionPipelineLoader": {
+        "title": "Segformer 服饰框架加载器",
+        "widgets": {
+            "model": "模型",
+            "shirt":"衬衫、罩衫",
+            "top":"上衣、t恤",
+            "sweater":"毛衣",
+            "cardigan":"开襟毛衫",
+            "jacket":"夹克",
+            "vest":"背心",
+            "pants":"裤子",
+            "shorts":"短裤",
+            "skirt":"裙子",
+            "coat":"外套",
+            "dress":"连衣裙",
+            "jumpsuit":"连身裤",
+            "cape":"斗篷",
+            "glasses":"眼镜",
+            "hat":"帽子",
+            "hairaccessory":"头带",
+            "tie":"领带",
+            "glove":"手套",
+            "watch":"手表",
+            "belt":"皮带",
+            "legwarmer":"腿套",
+            "tights":"裤袜",
+            "sock":"袜子",
+            "shoe":"鞋子",
+            "bagwallet":"手包",
+            "scarf":"围巾",
+            "umbrella":"雨伞",
+            "hood":"兜帽",
+            "collar":"衣领",
+            "lapel":"翻领",
+            "epaulette":"肩章",
+            "sleeve":"袖子",
+            "pocket":"口袋",
+            "neckline":"领口",
+            "buckle":"带扣",
+            "zipper":"拉链",
+            "applique":"贴花",
+            "bead":"珠子",
+            "bow":"蝴蝶结",
+            "flower":"花",
+            "fringe":"刘海",
+            "ribbon":"丝带",
+            "rivet":"铆钉",
+            "ruffle":"褶饰",
+            "sequin":"亮片",
+            "tassel":"流苏"
+        },
+        "outputs": {
+            "segformer_pipeline": "Segformer框架"
+        }
+    },
     "LayerMask: SegmentAnythingUltra": {
-        "title": "SegmentAnythingUltra",
+        "title": "SegmentAnything Ultra",
         "inputs": {
             "image": "图像"
         },
@@ -1703,7 +2165,7 @@
         }
     },
     "LayerMask: SegmentAnythingUltra V2": {
-        "title": "SegmentAnythingUltra_V2",
+        "title": "SegmentAnything Ultra V2",
         "inputs": {
             "image": "图像"
         },
@@ -1717,7 +2179,9 @@
             "black_point": "黑色阈值",
             "white_point": "白色阈值",
             "process_detail": "处理细节",
-            "prompt": "提示词"
+            "prompt": "提示词",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
         },
         "outputs": {
             "image": "图像",
@@ -1739,6 +2203,27 @@
         "outputs": {
             "shadow_mask": "阴影遮罩",
             "highlight_mask": "高光遮罩"
+        }
+    },
+    "LayerMask: TransparentBackgroundUltra": {
+        "title": "透明背景 Ultra",
+        "inputs": {
+            "image": "图像"
+        },
+        "widgets": {
+            "model": "模型",
+            "detail_method": "细节处理方法",
+            "detail_erode": "细节消融",
+            "detail_dilate": "细节膨胀",
+            "black_point": "黑色阈值",
+            "white_point": "白色阈值",
+            "process_detail": "处理细节",
+            "device": "设备",
+            "max_megapixels": "Vitmatte最大尺寸"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩"
         }
     },
     "LayerMask: YoloV8Detect": {
