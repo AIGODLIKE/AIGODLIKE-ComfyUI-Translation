@@ -189,5 +189,18 @@
         "outputs": {
             "text": "文本"
         }
+    },
+    "SystemNotification|pysssss": {
+        "title": "系统通知",
+        "inputs": {
+            "any": "输入"
+        },
+        "widgets": {
+            "message": "消息",
+            "mode": "模式"
+        },
+        "outputs": {
+            "*": "输出"
+        }
     }
 }
