@@ -4,7 +4,8 @@
         "inputs": {
             "input_image": "目标图像",
             "source_image": "源图像",
-            "face_model": "面部模型"
+            "face_model": "面部模型",
+            "face_boost": "面部增强"
         },
         "widgets": {
             "enabled": "启用",
@@ -30,7 +31,8 @@
             "input_image": "目标图像",
             "source_image": "源图像",
             "face_model": "面部模型",
-            "options": "ReActor设置组"
+            "options": "ReActor设置组",
+            "face_boost": "面部增强"
         },
         "widgets": {
             "enabled": "启用",
@@ -43,6 +45,20 @@
         "outputs": {
             "IMAGE": "图像",
             "FACE_MODEL": "面部模型"
+        }
+    },
+    "ReActorFaceBoost": {
+        "title": "ReActor面部增强",
+        "widgets": {
+            "enabled": "启用",
+            "boost_model": "增强模型",
+            "interpolation": "插值方式",
+            "visibility": "可见性",
+            "codeformer_weight": "CodeFormer_权重",
+            "restore_with_main_after": "restore_with_main_after"
+        },
+        "outputs": {
+            "FACE_BOOST": "面部增强"
         }
     },
     "ReActorMaskHelper": {
@@ -72,7 +88,8 @@
         "outputs": {
             "IMAGE": "图像",
             "MASK": "遮罩",
-            "MASK_PREVIEW": "遮罩预览图"
+            "MASK_PREVIEW": "遮罩预览图",
+            "SWPAEED_FACE": "置换面部"
         }
     },
     "ReActorOptions": {
@@ -107,7 +124,8 @@
         },
         "widgets": {
             "save_mode": "保存",
-            "face_model_name": "模型名称"
+            "face_model_name": "模型名称",
+            "select_face_index": "面部编号"
         }
     },
     "ReActorMakeFaceModelBatch": {

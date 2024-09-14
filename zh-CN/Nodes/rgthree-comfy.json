@@ -413,13 +413,13 @@
         }
     },
     "Fast Group Bypasser (rgthree)": {
-        "title": "忽略组",
+        "title": "忽略框",
         "outputs": {
             "OPT_CONNECTION": "可选连接"
         }
     },
     "Fast Groups Bypasser (rgthree)": {
-        "title": "忽略多组",
+        "title": "忽略多框",
         "outputs": {
             "OPT_CONNECTION": "可选连接"
         }
@@ -441,10 +441,13 @@
         "title": "随机启用"
     },
     "Fast Groups Muter (rgthree)": {
-        "title": "禁用组",
+        "title": "禁用框",
         "outputs": {
             "OPT_CONNECTION": "可选连接"
         }
+    },
+    "Label (rgthree)": {
+        "title": "标签"
     },
     "Image Comparer (rgthree)": {
         "title": "图像对比",

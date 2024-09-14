@@ -120,6 +120,15 @@
             "SCHEDULER_STR": "调度器字符串"
         }
     },
+    "SDAnyConverter": {
+        "title": "SD任意转换",
+        "inputs": {
+            "any_type_input": "任意"
+        },
+        "outputs": {
+            "ANY_TYPE_OUTPUT": "任意"
+        }
+    },
     "SDBatchLoader": {
         "title": "SD批次加载",
         "widgets": {
