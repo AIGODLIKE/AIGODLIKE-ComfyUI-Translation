@@ -817,6 +817,26 @@
             "CONTROL_NET": "ControlNet"
         }
     },
+    "ControlNetInpaintingAliMamaApply": {
+        "title": "ControlNet应用_阿里妈妈局部重绘",
+        "inputs": {
+            "positive": "正面条件",
+            "negative": "负面条件",
+            "control_net": "ControlNet",
+            "vae": "VAE",
+            "image": "图像",
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "strength": "强度",
+            "start_percent": "开始时间",
+            "end_percent": "结束时间"
+        },
+        "outputs": {
+            "positive": "正面条件",
+            "negative": "负面条件"
+        }
+    },
 
 
     "SD_4XUpscale_Conditioning": {
@@ -2129,6 +2149,15 @@
         "widgets": {
             "filename_prefix": "文件名前缀",
             "rank": "rank"
+        }
+    },
+    "TorchCompileModel": {
+        "title": "Torch编译模型",
+        "inputs": {
+            "model": "模型"
+        },
+        "outputs": {
+            "MODEL": "模型"
         }
     },
     "LatentBlend": {

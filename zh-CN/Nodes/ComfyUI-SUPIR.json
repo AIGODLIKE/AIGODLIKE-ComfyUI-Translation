@@ -55,25 +55,6 @@
         },
         "description": "加载 SUPIR 模型和 SDXL 模型然后融合。\n\n剪枝类型应保持 自动 选项，除非加载模型时出现错误。\n\nfp8_unet：使用 torch.float8_e4m3fn 调用 UNet，会降低显存要求但略微影响质量。\n\n高显存：使用 Accelerate 加载模型到 GPU，轻微提示加载速度。"
     },
-    "SUPIR_model_loader_v2_clip": {
-        "title": "SUPIR模型加载器_V2（）",
-        "inputs": {
-            "model": "模型",
-            "clip_l": "CLIP_L",
-            "clip_g": "CLIP_G",
-            "vae": "VAE"
-        },
-        "widgets": {
-            "supir_model": "SUPIR模型",
-            "fp8_unet": "fp8_unet",
-            "diffusion_dtype": "剪枝类型",
-            "high_vram": "高显存"
-        },
-        "outputs": {
-            "SUPIR_MODEL": "SUPIR模型",
-            "SUPIR_VAE": "SUPIR_VAE"
-        }
-    },
     "SUPIR_encode": {
         "title": "SUPIR编码",
         "inputs": {

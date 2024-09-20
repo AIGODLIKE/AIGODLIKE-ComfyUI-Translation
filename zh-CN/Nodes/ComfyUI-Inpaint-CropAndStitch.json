@@ -1,0 +1,90 @@
+{
+    "InpaintCrop": {
+        "title": "局部重绘（裁剪）",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "optional_context_mask": "上下文遮罩(可选)"
+        },
+        "widgets": {
+            "context_expand_pixels": "上下文像素扩展",
+            "context_expand_factor": "上下文系数扩展",
+            "fill_mask_holes": "填充遮罩缺口",
+            "blur_mask_pixels": "遮罩模糊",
+            "invert_mask": "遮罩反转",
+            "blend_pixels": "混合图像",
+            "rescale_algorithm": "缩放算法",
+            "mode": "模式",
+            "min_width": "最小宽度",
+            "min_height": "最小高度",
+            "max_width": "最大宽度",
+            "max_height": "最大高度",
+            "force_width": "强制宽度",
+            "force_height": "强制高度",
+            "rescale_factor": "缩放系数",
+            "padding": "分区"
+        },
+        "outputs": {
+            "stitch": "接缝",
+            "cropeed_image": "图像",
+            "cropeed_mask": "遮罩"
+        }
+    },
+    "InpaintStitch": {
+        "title": "局部重绘（接缝）",
+        "inputs": {
+            "stitch": "接缝",
+            "inpainted_image": "图像"
+        },
+        "widgets": {
+            "rescale_algorithm": "缩放算法"
+        },
+        "outputs": {
+            "image": "图像"
+        }
+    },
+    "InpaintExtendOutpaint": {
+        "title": "局部重绘（外扩）",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "optional_context_mask": "上下文遮罩(可选)"
+        },
+        "widgets": {
+            "mode": "模式",
+            "expand_up_factor": "上系数",
+            "expand_down_factor": "下系数",
+            "expand_left_factor": "左系数",
+            "expand_right_factor": "右系数",
+            "expand_up_piexels": "上像素",
+            "expand_down_piexels": "下像素",
+            "expand_left_piexels": "左像素",
+            "expand_right_piexels": "右像素"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "context_mask": "上下文遮罩"
+        }
+    },
+    "InpaintResize": {
+        "title": "局部重绘（缩放）",
+        "inputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "optional_context_mask": "上下文遮罩(可选)"
+        },
+        "widgets": {
+            "rescale_algorithm": "缩放算法",
+            "mode": "模式",
+            "min_width": "最小宽度",
+            "min_height": "最小高度",
+            "rescale_factor": "缩放系数"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "context_mask": "上下文遮罩"
+        }
+    }
+}

@@ -70,6 +70,7 @@
             "task": "任务",
             "fill_mask": "填充遮罩",
             "keep_model_loaded": "保持模型加载",
+            "max_new_tokens": "最大输出Token",
             "num_beams": "num_beams",
             "do_sample": "采样",
             "output_mask_select": "选中输出遮罩"

@@ -1,0 +1,105 @@
+{
+    "DownloadAndLoadSAM2Model": {
+        "title": "下载并加载 SAM2 模型",
+        "widgets": {
+            "model": "模型",
+            "segmentor": "分割框架",
+            "device": "设备",
+            "precision": "精度"
+        },
+        "outputs": {
+            "sam2_model": "SAM2"
+        }
+    },
+    "Sam2Segmentation": {
+        "title": "SAM2 分割",
+        "inputs": {
+            "sam2_model": "SAM2",
+            "image": "图像",
+            "bboxes": "BBox",
+            "mask": "遮罩",
+            "coordinates_positive": "正面坐标",
+            "coordinates_negative": "负面坐标"
+        },
+        "widgets": {
+            "keep_model_loaded": "保持模型加载",
+            "individual_objects": "孤岛物体"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    },
+    "Florence2toCoordinates": {
+        "title": "Florence2 数据坐标",
+        "inputs": {
+            "data": "数据"
+        },
+        "widgets": {
+            "index": "编号",
+            "batch": "批次"
+        },
+        "outputs": {
+            "center_coordinates": "中心坐标",
+            "bboxes": "BBox"
+        }
+    },
+    "Sam2AutoSegmentation": {
+        "title": "SAM2 自动分割",
+        "inputs": {
+            "sam2_model": "SAM2",
+            "image": "图像"
+        },
+        "widgets": {
+            "points_per_side": "边点数",
+            "points_per_batch": "批次点数",
+            "pred_iou_thresh": "遮罩质量阈值",
+            "stability_score_thresh": "稳定性阈值",
+            "stability_score_offfset": "稳定性偏移",
+            "mask_threshold": "遮罩阈值",
+            "crop_n_layers": "裁剪迭代层数",
+            "box_nms_thres": "box_nms_thres",
+            "crop_nms_thres": "crop_nms_thres",
+            "crop_overlap_ratio": "crop_overlap_ratio",
+            "crop_n_points_downscale_factor": "crop_n_points_downscale_factor",
+            "min_mask_region_area": "最小遮罩区域",
+            "use_m2m": "启用m2m",
+            "keep_model_loaded": "保持模型加载"
+        },
+        "outputs": {
+            "mask": "遮罩",
+            "segmented_image": "图像",
+            "bbox": "BBox"
+        }
+    },
+    "Sam2VideoSegmentationAddPoints": {
+        "title": "SAM2 视频分割（加点）",
+        "inputs": {
+            "sam2_model": "SAM2",
+            "image": "图像",
+            "prev_inference_state": "前采样状态",
+            "coordinates_negative": "负面坐标",
+            "coordinates_positive": "正面坐标"
+        },
+        "widgets": {
+            "frame_index": "帧编号",
+            "object_index": "物体编号"
+        },
+        "outputs": {
+            "sam2_model": "SAM2",
+            "inference_state": "采样状态"
+        }
+    },
+    "Sam2VideoSegmentation": {
+        "title": "SAM2 视频分割",
+        "inputs": {
+            "sam2_model": "SAM2",
+            "inference_state": "采样状态"
+        },
+        "widgets": {
+            "keep_model_loaded": "保持模型加载"
+        },
+        "outputs": {
+            "mask": "遮罩"
+        }
+    }
+}
