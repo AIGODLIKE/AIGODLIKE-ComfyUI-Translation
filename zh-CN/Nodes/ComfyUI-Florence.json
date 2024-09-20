@@ -1,0 +1,64 @@
+{
+    "DownloadAndLoadFlorence2Model": {
+        "title": "下载并加载 Florence2 模型",
+        "inputs": {
+            "lora": "LoRA"
+        },
+        "widgets": {
+            "model": "模型",
+            "precision": "精度",
+            "attention": "注意力"
+        },
+        "outputs": {
+            "florence2_model": "Florence2"
+        }
+    },
+    "DownloadAndLoadFlorence2Lora": {
+        "Title": "下载并加载 Florence2 LoRA",
+        "widgets": {
+            "model": "模型"
+        },
+        "outputs": {
+            "lora": "LoRA"
+        }
+    },
+    "Florence2ModelLoader": {
+        "title": "Florence2 模型加载器",
+        "inputs": {
+            "lora": "LoRA"
+        },
+        "widgets": {
+            "model": "模型",
+            "precision": "精度",
+            "attention": "注意力"
+        },
+        "outputs": {
+            "florence2_model": "Florence2"
+        }
+    },
+    "Florence2Run": {
+        "title": "Florence2 执行",
+        "inputs": {
+            "image": "图像",
+            "florence2_model": "Florence2"
+        },
+        "widgets": {
+            "text_input": "文本",
+            "task": "任务",
+            "fill_mask": "填充遮罩",
+            "keep_model_loaded": "保持模型加载",
+            "max_new_tokens": "最大输出Token",
+            "num_beams": "num_beams",
+            "do_sample": "采样",
+            "output_mask_select": "选中输出遮罩",
+            "seed": "随机种",
+            "control_before_generate": "运行前操作"
+        },
+        "outputs": {
+            "image": "图像",
+            "mask": "遮罩",
+            "caption": "caption",
+            "data": "json数据"
+        }
+    }
+}
