@@ -145,6 +145,19 @@
             "SIGMAS": "Sigmas"
         }
     },
+    "LaplaceScheduler": {
+        "title": "Laplace调度器",
+        "widgets": {
+            "steps": "步数",
+            "sigma_max": "最大Sigma",
+            "sigma_min": "最小Sigma",
+            "mu": "mu",
+            "beta": "beta"
+        },
+        "outputs": {
+            "SIGMAS": "Sigmas"
+        }
+    },
     "VPScheduler": {
         "title": "VP调度器",
         "widgets": {
@@ -755,7 +768,7 @@
 
 
     "ControlNetApply": {
-        "title": "ControlNet应用",
+        "title": "ControlNet应用（旧版）",
         "inputs": {
             "conditioning": "条件",
             "control_net": "ControlNet",
@@ -769,7 +782,7 @@
         }
     },
     "ControlNetApplyAdvanced": {
-        "title": "ControlNet应用(高级)",
+        "title": "ControlNet应用（旧版高级）",
         "inputs": {
             "positive": "正面条件",
             "negative": "负面条件",
@@ -787,7 +800,7 @@
         }
     },
     "ControlNetApplySD3": {
-        "title": "ControlNet应用_SD3/HunYuan",
+        "title": "ControlNet应用",
         "inputs": {
             "positive": "正面条件",
             "negative": "负面条件",
