@@ -2005,6 +2005,10 @@
 
     "EmptyLatentAudio": {
         "title": "空Latent_Audio",
+        "widgets": {
+            "seconds": "秒数",
+            "batch_size": "批次大小"
+        },
         "outputs": {
             "LATENT": "Latent"
         }
