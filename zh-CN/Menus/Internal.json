@@ -128,6 +128,23 @@
     "Other": "其他",
 
 
+    "About": "关于",
+    "System Info": "系统信息",
+    "OS": "系统",
+    "Python Version": "Python 版本",
+    "Embedded Python": "Embedded Python",
+    "Pytorch Version": "Pytorch 版本",
+    "Arguments": "启动项",
+    
+    "Devices": "设备",
+    "Name": "名称",
+    "Type": "类型",
+    "VRAM Total": "总数 VRAM",
+    "VRAM Free": "可用 VRAM",
+    "Torch VRAM Total": "总数 Torch VRAM",
+    "Torch VRAM Free": "可用 Torch VRAM",
+
+
     "SideBar": "SideBar",
     
     "Queue": "执行队列",
@@ -296,7 +313,6 @@
     "Clear Queue": "清除队列",
     "Export logs...": "导出日志",
     "View exported logs...": "显示导出日志",
-    "Type": "类型",
     "Timestamp": "时间戳",
     "Message": "消息",
     "default": "默认",

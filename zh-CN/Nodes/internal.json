@@ -2007,7 +2007,8 @@
         "title": "空Latent_Audio",
         "widgets": {
             "seconds": "秒数",
-            "batch_size": "批次大小"
+            "batch_size": "批次大小",
+            "The number of latent images in the batch.": "单个批次中 Latent 的数量。"
         },
         "outputs": {
             "LATENT": "Latent"
