@@ -142,19 +142,37 @@
             "mesh": "网格"
         }
     },
-    "Mesh_Data":{
-        "title": "网格数据",
+    "Mesh_Data_Get":{
+        "title": "获取网格体数据",
         "inputs": {
             "mesh": "网格"
         },
         "outputs": {
-            "vertex+face": "顶点+面",
-            "Normal(vn+fn)": "法线(vn+fn)",
-            "UVs(vt+ft)": "UVs(vt+ft)",
-            "vertex_color[N3]": "顶点颜色[N3]",
+            "mesh": "网格",
+            "vertex" : "顶点",
+            "face": "面",
+            "Normal_vnfn": "法线-vnfn",
+            "UVs_vtft": "UV坐标-vtft",
+            "vertex_color": "顶点颜色",
+            "Texture_Diffuse": "贴图-漫反射",
+            "Texture_reflection": "贴图-反射"
+        }
+    },
+    "Mesh_Data_Set":{
+        "title": "修改网格体数据",
+        "inputs": {
+            "mesh": "网格",
+            "vertex" : "顶点",
+            "face": "面",
+            "Normal_vnfn": "法线-vnfn",
+            "UVs_vtft": "UV坐标-vtft",
+            "vertex_color": "顶点颜色",
             "Texture_Diffuse": "贴图-漫反射",
             "Texture_reflection": "贴图-反射",
-            "mesh_device": "设备"
+            "device": "设备"
+        },
+        "outputs": {
+            "mesh": "网格"
         }
     },
     "Mesh_Data_Statistics":{
@@ -192,7 +210,7 @@
         }
     },
     "ply_load": {
-        "title": "记载 PLY",
+        "title": "加载 PLY",
         "widgets": {
             "path": "路径"
         },

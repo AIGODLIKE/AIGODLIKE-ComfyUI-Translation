@@ -47,6 +47,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[AnyText](https://github.com/zmwv823/ComfyUI-AnyText.git)|√|TODO|√|TODO|TODO|TODO|
 |[Automatic CFG](https://github.com/Extraltodeus/ComfyUI-AutomaticCFG.git)|√|TODO|√|TODO|TODO|TODO|
 |[BiRefNet](https://github.com/viperyl/ComfyUI-BiRefNet.git)|√|TODO|√|TODO|TODO|TODO|
+|[BiRefNet Hugo](https://github.com/MoonHugo/ComfyUI-BiRefNet-Hugo.git)|√|TODO|√|TODO|TODO|TODO|
 |[BitsandBytes NF4](https://github.com/comfyanonymous/ComfyUI_bitsandbytes_NF4.git)|√|TODO|√|TODO|TODO|TODO|
 |[BrushNet (kijai)](https://github.com/kijai/ComfyUI-BrushNet-Wrapper.git)|√|TODO|√|TODO|TODO|TODO|
 |[BrushNet (nullquant)](https://github.com/nullquant/ComfyUI-BrushNet.git)|√|TODO|√|TODO|TODO|TODO|
@@ -86,6 +87,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[experiments](https://github.com/comfyanonymous/ComfyUI_experiments)|√|√|√|TODO|TODO|TODO|
 |[Face Analysis](https://github.com/cubiq/ComfyUI_FaceAnalysis.git)|√|TODO|√|TODO|TODO|TODO|
 |[Fast Decode](https://github.com/nagolinc/ComfyUI_FastVAEDecorder_SDXL)|√|√|√|√|TODO|TODO|
+|[Florence2](https://github.com/kijai/ComfyUI-Florence2.git)|√|TODO|√|TODO|TODO|TODO|
 |[Flowty CRM](https://github.com/flowtyone/ComfyUI-Flowty-CRM.git)|√|TODO|√|TODO|TODO|TODO|
 |[Flowty TripoSR](https://github.com/flowtyone/ComfyUI-Flowty-TripoSR.git)|√|TODO|√|TODO|TODO|TODO|
 |[Frame Interpolation](https://github.com/Fannovel16/ComfyUI-Frame-Interpolation.git)|√|TODO|√|TODO|TODO|TODO|
@@ -100,6 +102,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[Image Grid](https://github.com/LEv145/images-grid-comfy-plugin)|√|√|√|TODO|TODO|TODO|
 |[Impact Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack)|√|√|√|TODO|TODO|TODO|
 |[Impact Subpack](https://github.com/ltdrdata/ComfyUI-Impact-Subpack)|√|√|√|TODO|TODO|TODO|
+|[Inpaint CropAndStitch](https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch.git)|√|TODO|√|TODO|TODO|TODO|
 |[Inpaint Nodes](https://github.com/Acly/comfyui-inpaint-nodes.git)|√|TODO|√|TODO|TODO|TODO|
 |[Inspire Pack](https://github.com/ltdrdata/ComfyUI-Inspire-Pack)|√|√|√|TODO|TODO|TODO|
 |[InstantID (cubiq)](https://github.com/cubiq/ComfyUI_InstantID.git)|√|TODO|√|TODO|TODO|TODO|
@@ -154,6 +157,7 @@ https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION/assets/116185401/e431
 |[SDXL_prompt_styler](https://github.com/twri/sdxl_prompt_styler)|√|√|√|TODO|TODO|TODO|
 |[SeargeSDXL](https://github.com/SeargeDP/SeargeSDXL)|√|√|√|TODO|TODO|TODO|
 |[Segment Anything](https://github.com/storyicon/comfyui_segment_anything.git)|√|TODO|√|TODO|TODO|TODO|
+|[Segment Anything 2](https://github.com/kijai/ComfyUI-segment-anything-2.git)|√|TODO|√|TODO|TODO|TODO|
 |[StabilityNodes](https://github.com/Stability-AI/stability-ComfyUI-nodes)|√|√|√|TODO|TODO|TODO|
 |[SUPIR](https://github.com/kijai/ComfyUI-SUPIR.git)|√|TODO|√|TODO|TODO|TODO|
 |[TiledDiffusion](https://github.com/shiimizu/ComfyUI-TiledDiffusion)|√|TODO|√|TODO|TODO|TODO|
