@@ -2174,6 +2174,9 @@
         "inputs": {
             "model": "模型"
         },
+        "widgets": {
+            "backend": "后端"
+        },
         "outputs": {
             "MODEL": "模型"
         }
