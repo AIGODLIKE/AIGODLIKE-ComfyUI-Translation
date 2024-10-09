@@ -1631,7 +1631,7 @@
         },
         "widgets": {
             "filename_prefix": "文件名前缀",
-            "The prefix for the file to save. This may include formatting information such as %date:yyyy-MM-dd% or %Empty Latent Image.width% to include values from nodes.": "保存文件的文件名的前缀。可使用格式信息如 %date:yyyy-MM-dd% 或 %空Latent.width%，以包含来自工作流内的信息。\n注：节点名需要填翻译后的名，组件值需要填翻译前的名"
+            "The prefix for the file to save. This may include formatting information such as %date:yyyy-MM-dd% or %Empty Latent Image.width% to include values from nodes.": "保存文件的文件名的前缀。可使用格式信息如 %date:yyyy-MM-dd% 或 %空Latent.width%，以包含来自工作流内的信息。"
         },
         "description": "保存输入图像到 ComfyUI 输出文件夹内。"
     },
