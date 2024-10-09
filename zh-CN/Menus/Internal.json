@@ -16,6 +16,7 @@
 
     "Graph": "画面",
     "Link Render Mode": "连线渲染模式",
+    "Always snap to grid": "自动吸附到网格",
     "Snap to gird size": "吸附网格尺寸",
     "Snap to grid size": "吸附网格尺寸",
     "When dragging and resizing nodes while holding shift they will be aligned to the grid, this controls the size of that grid.": "按住Shift拖拽与缩放节点时会对齐到网格，该选项控制网格大小",
@@ -55,7 +56,7 @@
 
     "Model Library": "模型库",
     "What name to display in the model library tree view": "模型显示名称",
-    "Select \"filename\" to render a simplified view of the raw filename (without directory or \".safetensors\" extension) in the model list. Select \"title\" to display the configurable model metadata title.": "选择「文件名」显示原始文件的简化视图(不显示文件目录或.safetensors后缀)。选择「标题」显示模型元数据配置中的标题。",
+    "Select \"filename\" to render a simplified view of the raw filename (without directory or \".safetensors\" extension) in the model list. Select \"title\" to display the configurable model metadata title.": "选择「文件名」显示模型的文件名（不显示文件目录和.safetensors后缀）。选择「标题」显示模型元数据中的标题。",
     "filename": "文件名",
     "title": "标题",
     "Automatically load all model folders": "自动加载全部模型文件夹",
@@ -130,6 +131,8 @@
 
 
     "Show extension panel in settings dialog": "显示插件面板",
+    "Loading keybinding panel...": "加载中...",
+    "Loading extension panel...": "加载中...",
 
     
     "Tree Explorer": "节点库",
