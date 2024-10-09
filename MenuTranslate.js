@@ -130,6 +130,16 @@ export function applyMenuTranslation(T) {
       for (const node of mutation.addedNodes) {
         // if (texe.translateKjPopDesc(node)) continue;
         texe.translateAllText(node);
+        // 新版 settings面板的翻译
+        if (node.classList?.contains("p-dialog-mask"))
+        {
+          observeFactory(node.querySelector(".p-dialog"), (mutationsList, observer) => {
+            for (let mutation of mutationsList) {
+              texe.translateAllText(mutation.target);
+            }
+          });
+          continue;
+        }
         if (node.classList?.contains("comfy-modal")) {
           observeFactory(node, (mutationsList, observer) => {
             for (let mutation of mutationsList) {
