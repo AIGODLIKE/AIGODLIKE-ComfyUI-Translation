@@ -51,5 +51,6 @@
     "BrushNetWrapper": "BrushNet_Wrapper",
     "[MinusZone] Utils": "[MinusZone] 实用工具",
     "Impactframes": "IF节点💥🎞️",
-    "KwaiKolorsWrapper": "Kolors_Wrapper"
+    "KwaiKolorsWrapper": "Kolors_Wrapper",
+    "autotrigger": "LoRA自动触发"
 }

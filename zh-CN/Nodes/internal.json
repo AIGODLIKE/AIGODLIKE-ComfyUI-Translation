@@ -29,6 +29,7 @@
             "The random seed used for creating the noise.": "生成噪波的随机种。",
             "control_after_generate": "运行后操作",
             "control_before_generate": "运行前操作",
+            "Allows the linked widget to be changed automatically, for example randomizing the noise seed.": "使组件自动改变，例如噪波随机种。",
             "steps": "步数",
             "The number of steps used in the denoising process.": "降噪的步数。",
             "cfg": "CFG",
@@ -524,7 +525,7 @@
         },
         "widgets": {
             "lora_name": "LoRA名称",
-            "The name of the LoRA": "LoRA 的名称",
+            "The name of the LoRA.": "LoRA 的名称",
             "strength_model": "模型强度",
             "How strongly to modify the diffusion model. This value can be negative.": "控制引用在扩散模型上的强度。该值可以为负数。",
             "strength_clip": "CLIP强度",
@@ -1630,15 +1631,16 @@
         },
         "widgets": {
             "filename_prefix": "文件名前缀",
-            "The prefix for the file to save. This may include formatting information such as %date:yyyy-MM-dd% or %Empty Latent Image.width% to include values from nodes.": "保存文件的文件名的前缀。可使用格式信息如 %date:yyyy-MM-dd% 或 %Empty Latent Image.width%，以包含来自工作流内的信息。"
+            "The prefix for the file to save. This may include formatting information such as %date:yyyy-MM-dd% or %Empty Latent Image.width% to include values from nodes.": "保存文件的文件名的前缀。可使用格式信息如 %date:yyyy-MM-dd% 或 %空Latent.width%，以包含来自工作流内的信息。"
         },
-        "description": "保存输入的图像到 ComfyUI 输出文件夹内。"
+        "description": "保存输入图像到 ComfyUI 输出文件夹内。"
     },
     "PreviewImage": {
         "title": "预览图像",
         "inputs": {
             "images": "图像"
-        }
+        },
+        "description": "保存输入图像到 ComfyUI 输出文件夹内。"
     },
     "LoadImage": {
         "title": "加载图像",
@@ -2174,6 +2176,9 @@
         "inputs": {
             "model": "模型"
         },
+        "widgets": {
+            "backend": "后端"
+        },
         "outputs": {
             "MODEL": "模型"
         }
@@ -2393,7 +2398,8 @@
         "title": "双CLIP加载器",
         "widgets": {
             "clip_name1": "CLIP1",
-            "clip_name2": "CLIP2"
+            "clip_name2": "CLIP2",
+            "type": "类型"
         },
         "outputs": {
             "CLIP": "CLIP"

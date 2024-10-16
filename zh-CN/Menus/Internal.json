@@ -15,11 +15,13 @@
 
 
     "Graph": "画面",
-    "Link Render Mode": "连线渲染模式",
+    "Link Render Mode": "连线渲染样式",
+    "Always snap to grid": "自动吸附到网格",
     "Snap to gird size": "吸附网格尺寸",
     "Snap to grid size": "吸附网格尺寸",
     "When dragging and resizing nodes while holding shift they will be aligned to the grid, this controls the size of that grid.": "按住Shift拖拽与缩放节点时会对齐到网格，该选项控制网格大小",
     "Invert Context Menu Scrolling": "反转菜单滚动",
+    "Show graph canvas menu": "显示画面操作菜单",
     "Canvas zoom speed": "画面缩放速度",
     "Show canvas info (fps, etc.)": "显示画面信息（帧率等）",
 
@@ -52,9 +54,19 @@
     "Save legacy menu's position": "保存旧版菜单位置",
 
 
+    "Model Library": "模型库",
+    "What name to display in the model library tree view": "模型显示名称",
+    "Select \"filename\" to render a simplified view of the raw filename (without directory or \".safetensors\" extension) in the model list. Select \"title\" to display the configurable model metadata title.": "选择「文件名」显示模型的文件名（不显示文件目录和.safetensors后缀）。选择「标题」显示模型元数据中的标题。",
+    "filename": "文件名",
+    "title": "标题",
+    "Automatically load all model folders": "自动加载全部模型文件夹",
+    "If true, all folders will load as soon as you open the model library (this may cause delays while it loads). If false, root level model folders will only load once you click on them.": "启用后，打开模型库页面会立刻读取所有模型（可能产生卡顿）。禁用后，仅读取当前打开目录的模型。",
+
+
     "Node": "节点",
     "Enable DOM element clipping (enabling may reduce performance)": "启用DOM元素裁剪(可能降低性能)",
     "Double click node title to edit": "双击节点启用编辑",
+    "Node opacity": "节点不透明",
     "Show experimental nodes in search": "搜索时显示实验节点",
     "Experimental nodes are marked as such in the UI and may be subject to significant changes or removal in future versions. Use with caution in production workflows": "实验性节点在未来版本中可能会有重大更改或移除，在生产工作流中谨慎使用",
     "Show deprecated nodes in search": "搜索时显示弃用节点",
@@ -65,6 +77,7 @@
     "Node Search Box": "搜索框",
     "Number of nodes suggestions": "节点数建议",
     "Only for litegraph searchbox/context menu": "仅在 litegraph UI 可用",
+    "Show node frequency in search results": "显示节点频率",
     "Show node id name in search results": "显示节点ID名称",
     "Show node category in search results": "显示节点分类",
     "Only applies to the default implementation": "仅适用于默认搜索框架",
@@ -93,15 +106,33 @@
     "When displaying a preview in the image widget, convert it to a lightweight image, e.g. webp, jpeg, webp;50, etc.": "轻量化图像组件中的预览图象, 如webp, jpeg等",
 
 
+    "Node Badge": "节点标签",
+    "Node life cycle badge mode": "显示节点制作周期",
+    "Show all": "全部显示",
+    "Node ID badge mode": "显示节点ID",
+    "Node source badge mode": "显示节点所属插件",
+    "Hide built-in": "仅第三方节点",
+
+
     "Node Input Conversion Submenus": "节点转换子菜单",
     "In the node context menu, place the entries that convert between input/widget in sub-menus": "将全部 转换为输入/组件 选项放到子菜单中",
     "In the node context menu, place the entries that convert between input/widget in sub-menus.": "将全部 转换为输入/组件 选项放到子菜单中。",
+
+
+    "Queue Button": "执行",
+    "Batch count limit": "批量执行数量上限",
+    "The maximum number of tasks added to the queue at one button click": "单次点击所能添加的任务数量上限。",
 
 
     "Sidebar": "侧面板",
     "Sidebar size": "尺寸",
     "normal": "正常",
     "Sidebar location": "位置",
+
+
+    "Show extension panel in settings dialog": "显示插件面板",
+    "Loading keybinding panel...": "加载中...",
+    "Loading extension panel...": "加载中...",
 
     
     "Tree Explorer": "节点库",
@@ -124,8 +155,18 @@
     "Sort node IDs when saving workflow": "保存节点ID",
     "Prompt for filename when saving workflow": "保存工作流需要填入文件名",
     "Require confirmation when clearing workflow": "清理工作流需要确认",
+    "Opened workflows position": "工作流菜单位置",
+    "Topbar": "顶菜单",
+
 
     "Other": "其他",
+
+
+    "Keybinding": "快捷键绑定",
+    "Command ID": "命令ID",
+
+
+    "Extension": "插件",
 
 
     "About": "关于",
@@ -134,7 +175,9 @@
     "Python Version": "Python 版本",
     "Embedded Python": "Embedded Python",
     "Pytorch Version": "Pytorch 版本",
-    "Arguments": "启动项",
+    "Arguments": "启动参数",
+    "RAM Total": "总数 内存",
+    "RAM Free": "可用 内存",
     
     "Devices": "设备",
     "Name": "名称",
@@ -165,12 +208,30 @@
 
     "BottomMenu": "BottomMenu",
 
+    "Export (API)": "导出（API）",
+    "Export": "导出",
+    "Save as": "另存为",
+    "Save": "保存",
+    "Browse Templates": "浏览模板",
+    "Open": "打开",
+    "New": "新建",
+    "Save Changes?": "保存改动？",
+    "Clipspace": "剪贴版",
+    "Clear Workflow": "清空工作流",
+    "Redo": "重做",
+    "Undo": "撤销",
+
+    "The workflow will not be automatically queued": "手动执行",
+    "Queue (Instant)": "执行队列 立刻",
+    "The workflow will be queued instantly after a generation finishes": "在上个任务结束后执行",
+    "Queue (Change)": "执行队列 变动",
+    "The workflow will be queued once a change is made": "工作流发生变动后执行",
+
     "Load default workflow": "加载默认工作流",
     "Browse": "浏览",
     "Browse for an image or exported workflow": "浏览图像或工作流",
     "Blank": "新建",
     "Create a new blank workflow": "创建空工作流",
-    "Open": "打开",
     "This workflow can't be renamed as it hasn't been saved.": "该工作流尚未保存无法命名",
     "Rename this workflow": "重命名",
     "Close workflow": "关闭",
@@ -198,6 +259,24 @@
     "Source": "来源",
     "Add": "加",
 
+    "messageee": "messageee",
+
+    "Error": "错误",
+    "Failed to copy report": "无法复制报告",
+    "Clipboard API not supported in your browser": "你的浏览器不支持剪贴板API",
+    "Failed to fetch system information": "无法同步系统信息",
+    "Success": "成功",
+    "Report copied to clipboard": "报告已复制到剪贴板",
+    "Interrupted": "中断",
+    "Execution has been interrupted": "执行已中断",
+    "Update": "更新",
+    "Update requested": "已提交更新申请",
+    "Node definitions updated": "节点已更新",
+    "No nodes selected": "没有选中节点",
+    "Please select nodes to group": "需要选择节点到框内",
+    "Confirmed": "已确认",
+    "Tasks deleted": "任务已删除",
+    "Pending tasks deleted": "队列任务已删除",
 
 
     "Add Node": "新建节点",
@@ -260,12 +339,10 @@
     "Close": "关闭",
     "History": "历史",
     "Clear History": "清除历史",
-    "Save": "保存",
     "Save (API Format)": "保存 (API 格式)",
     "Load": "加载",
     "Cancel": "取消",
     "Refresh": "刷新",
-    "Clipspace": "剪贴空间",
     "Clear": "清除",
     "Load Default": "加载默认",
     "Reset View": "重置视图",
@@ -298,7 +375,6 @@
     "Dark (Default)": "暗黑 (默认)",
     "Light": "明亮",
     "Solarized": "过度曝光",
-    "Export": "导出",
     "Import": "导入",
     "Template": "模板",
     "Delete": "删除",
@@ -349,7 +425,6 @@
     "increment": "增加",
     "decrement": "减少",
     "randomize": "随机",
-    "Save as": "另存为",
     "Save to workflows": "保存到工作流",
     "Show Type": "显示类型",
     "Hide Type": "隐藏类型",

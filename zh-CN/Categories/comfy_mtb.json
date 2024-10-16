@@ -1,15 +1,30 @@
 {
     "mtb": "MTB节点",
 
+    "utils": "实用工具",
+    "animation": "动画",
+    "audio": "音频",
+    "batch": "批次",
+    "conditioning": "条件",
     "crop": "裁剪",
     "curve": "曲线",
     "debug": "Debug",
     "textures": "材质",
     "facetools": "面部工具",
-    "filters": "过滤",
+    "filters": "滤镜",
+    "string": "字符串",
+    "math": "数学",
     "converters": "转换器",
     "image processing": "图像处理",
+    "coordinates": "坐标",
     "image utils": "图像实用工具",
+    "IO": "输入输出",
+    "latent": "Latent",
     "decode": "解码",
-    "autotrigger": "LoRA自动触发"
+    "number": "数字",
+    "prune": "修剪",
+    "generate": "生成",
+    "vitmatte": "ViT Matte",
+    "image": "图像",
+    "transform": "变换"
 }
