@@ -192,25 +192,6 @@ export function applyMenuTranslation(T) {
     }
   }
 
-  const translateSettingDialog = () => {
-    const comfySettingDialogAllElements = comfySettingDialog.querySelectorAll("*");
-
-    for (const ele of comfySettingDialogAllElements) {
-      let targetLangText = texe.MT(ele.innerText);
-      let titleText = texe.MT(ele.title);
-      if(titleText) ele.title = titleText;
-      if (!targetLangText) {
-        if (ele.nodeName === "INPUT" && ele.type === "button") {
-          targetLangText = texe.MT(ele.value);
-          if (!targetLangText) continue;
-          ele.value = targetLangText;
-        }
-        continue;
-      }
-      texe.replaceText(ele);
-    }
-  };
-
   function handleComfyNewUIMenu(mutationsList)
   {
     for (let mutation of mutationsList) {
