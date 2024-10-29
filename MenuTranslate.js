@@ -211,14 +211,6 @@ export function applyMenuTranslation(T) {
     }
   };
 
-  function handleComfySettingDialogObserver(mutationsList) {
-    for (let mutation of mutationsList) {
-      if (mutation.type === "childList" && mutation.addedNodes.length > 0) {
-        translateSettingDialog();
-      }
-    }
-  }
-
   function handleComfyNewUIMenu(mutationsList)
   {
     for (let mutation of mutationsList) {
