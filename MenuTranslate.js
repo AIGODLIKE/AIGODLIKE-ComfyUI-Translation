@@ -115,10 +115,6 @@ export function applyMenuTranslation(T) {
     });
   });
 
-  const comfySettingDialog = document.querySelector("#comfy-settings-dialog");
-
-  observeFactory(comfySettingDialog.querySelector("tbody"), handleComfySettingDialogObserver);
-
   observeFactory(document.querySelector(".comfy-menu"), handleViewQueueComfyListObserver);
 
   observeFactory(document.querySelector(".comfy-menu").querySelectorAll(".comfy-list")[0], handleViewQueueComfyListObserver);
