@@ -1,83 +1,83 @@
 {
     "KRestartSamplerSimple": {
-        "title": "Kサンプラー(簡易重启)",
+        "title": "Kサンプラー(簡易リスタート)",
         "inputs": {
             "model": "モデル",
-            "positive": "正面",
-            "negative": "负面",
+            "positive": "ポジティブ",
+            "negative": "ネガティブ",
             "latent_image": "Latent"
         },
         "widgets": {
-            "seed": "乱数種",
-            "control_after_generate": "运行后操作",
+            "seed": "シード",
+            "control_after_generate": "生成後の操作",
                 "fixed": "固定",
-                "increment": "增加",
-                "decrement": "减少",
+                "increment": "増加",
+                "decrement": "減少",
                 "randomize": "ランダム",
-            "steps": "ステップ数",
+            "steps": "ステップ",
             "cfg": "CFG",
             "sampler_name": "サンプラー名",
             "scheduler": "スケジューラ",
             "denoise": "ノイズ除去",
-            "segments": "分段"
+            "segments": "セグメント"
         },
         "outputs": {
             "LATENT": "Latent"
         }
     },
     "KRestartSampler": {
-        "title": "Kサンプラー(重启)",
+        "title": "Kサンプラー(リスタート)",
         "inputs": {
             "model": "モデル",
-            "positive": "正面",
-            "negative": "负面",
+            "positive": "ポジティブ",
+            "negative": "ネガティブ",
             "latent_image": "Latent"
         },
         "widgets": {
-            "seed": "乱数種",
-            "control_after_generate": "运行后操作",
+            "seed": "シード",
+            "control_after_generate": "生成後の操作",
                 "fixed": "固定",
-                "increment": "增加",
-                "decrement": "减少",
+                "increment": "増加",
+                "decrement": "減少",
                 "randomize": "ランダム",
-            "steps": "ステップ数",
+            "steps": "ステップ",
             "cfg": "CFG",
             "sampler_name": "サンプラー名",
             "scheduler": "スケジューラ",
             "denoise": "ノイズ除去",
-            "restart_scheduler": "重启スケジューラ",
-            "segments": "分段"
+            "restart_scheduler": "スケジューラリスタート",
+            "segments": "セグメント"
         },
         "outputs": {
             "LATENT": "Latent"
         }
     },
     "KRestartSamplerAdv": {
-        "title": "Kサンプラー(高さ重启)",
+        "title": "Kサンプラー(高度リスタート)",
         "inputs": {
             "model": "モデル",
-            "positive": "正面",
-            "negative": "负面",
+            "positive": "ポジティブ",
+            "negative": "ネガティブ",
             "latent_image": "Latent"
         },
         "widgets": {
             "add_noise": "ノイズ追加",
-            "noise_seed": "乱数種",
-            "control_after_generate": "运行后操作",
+            "noise_seed": "シード",
+            "control_after_generate": "生成後の操作",
                 "fixed": "固定",
-                "increment": "增加",
-                "decrement": "减少",
+                "increment": "増加",
+                "decrement": "減少",
                 "randomize": "ランダム",
-            "steps": "ステップ数",
+            "steps": "ステップ",
             "cfg": "CFG",
             "sampler_name": "サンプラー名",
             "scheduler": "スケジューラ",
             "denoise": "ノイズ除去",
-            "start_at_step": "開始ノイズ除去ステップ数",
-            "end_at_step": "終了ノイズ除去ステップ数",
+            "start_at_step": "ノイズ除去開始ステップ",
+            "end_at_step": "ノイズ除去終了ステップ",
             "return_with_leftover_noise": "残りのノイズを返す",
-            "restart_scheduler": "重启スケジューラ",
-            "segments": "分段"
+            "restart_scheduler": "スケジューラリスタート",
+            "segments": "セグメント"
         },
         "outputs": {
             "LATENT": "Latent"

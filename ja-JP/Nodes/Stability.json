@@ -1,35 +1,36 @@
 {
     "ControlLoraSave": {
-        "title": "保存ControlLora",
+        "title": "ControlLoraを保存",
         "inputs": {
             "model": "モデル",
             "control_net": "ControlNet"
         },
         "widgets": {
-            "filename_prefix": "文件名缀",
-            "rank": "Rank"
+            "filename_prefix": "ファイル名接頭辞",
+            "rank": "ランク"
         }
     },
     
     "ColorBlend": {
-        "title": "色混合",
+        "title": "色の混合",
         "inputs": {
-            "bw_layer": "黑白层图像",
-            "color_layer": "色层图像"
+            "bw_layer": "白黒レイヤー画像",
+            "color_layer": "カラーレイヤー画像"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
 
     "GetImageSize": {
-        "title": "获取图像尺寸",
+        "title": "画像サイズを取得",
         "inputs": {
-            "image": "图像"
+            "image": "画像"
         },
         "outputs": {
             "width": "幅",
             "height": "高さ"
         }
     }
+
 }

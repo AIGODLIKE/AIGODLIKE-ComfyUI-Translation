@@ -1,6 +1,6 @@
 {
     "PreviewTextNode": {
-        "title": "预览文本",
+        "title": "テキストプレビュー",
         "inputs": {
             "text": "テキスト"
         },
@@ -9,61 +9,61 @@
         }
     },
     "PainterNode": {
-        "title": "绘画",
+        "title": "ペイント",
         "widgets": {
-            "image": "图像"
+            "image": "画像"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "PoseNode": {
-        "title": "姿勢",
+        "title": "ポーズ設定",
         "widgets": {
-            "image": "图像"
+            "image": "画像"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "TranslateCLIPTextEncodeNode": {
-        "title": "CLIPテキストエンコーダー(翻訳)",
+        "title": "CLIPテキストエンコーダー（翻訳）",
         "inputs": {
             "clip": "CLIP"
         },
         "widgets": {
-            "from_translate": "从",
-            "to_translate": "到",
+            "from_translate": "翻訳元",
+            "to_translate": "翻訳先",
             "text": "テキスト"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "DeepTranslatorCLIPTextEncodeNode": {
-        "title": "CLIPテキストエンコーダー(翻訳高さ)",
+        "title": "CLIPテキストエンコーダー（高度な翻訳）",
         "inputs": {
             "clip": "CLIP"
         },
         "widgets": {
-            "from_translate": "从",
-            "to_translate": "到",
-            "add_proxies": "添加代理",
-            "proxies": "代理",
-            "auth_data": "账户信息",
-            "service": "服务",
-                "BaiduTranslator [api-key]": "Baidu [API]",
-                "ChatGptTranslator [api-key]": "ChatGPT [API]",
-                "DeeplTranslator": "DeepL",
-                "GoogleTranslator": "Google",
-                "LibreTranslator": "Libre",
-                "LingueeTranslator [word(s) only]": "Linguee [仅字词]",
-                "MyMemoryTranslator": "MyMemory",
-                "MicrosoftTranslator [api-key]": "Microsoft [API]",
-                "PapagoTranslator [client_id, secret_key]": "Papago [用户ID,密钥]",
-                "PonsTranslator [word(s) only]": "Pons [仅字词]",
-                "QcriTranslator [api-key]": "QCRI [API]",
-                "YandexTranslator [api-key]": "Yandex [API]",
+            "from_translate": "翻訳元",
+            "to_translate": "翻訳先",
+            "add_proxies": "プロキシ追加",
+            "proxies": "プロキシ",
+            "auth_data": "認証情報",
+            "service": "翻訳サービス",
+            "BaiduTranslator [api-key]": "Baidu [APIキー]",
+            "ChatGptTranslator [api-key]": "ChatGPT [APIキー]",
+            "DeeplTranslator": "DeepL",
+            "GoogleTranslator": "Google",
+            "LibreTranslator": "Libre",
+            "LingueeTranslator [word(s) only]": "Linguee [単語のみ]",
+            "MyMemoryTranslator": "MyMemory",
+            "MicrosoftTranslator [api-key]": "Microsoft [APIキー]",
+            "PapagoTranslator [client_id, secret_key]": "Papago [クライアントID, 秘密キー]",
+            "PonsTranslator [word(s) only]": "Pons [単語のみ]",
+            "QcriTranslator [api-key]": "QCRI [APIキー]",
+            "YandexTranslator [api-key]": "Yandex [APIキー]",
             "text": "テキスト"
         },
         "outputs": {
@@ -71,10 +71,10 @@
         }
     },
     "TranslateTextNode": {
-        "title": "翻訳文本",
+        "title": "テキスト翻訳",
         "widgets": {
-            "from_translate": "从",
-            "to_translate": "到",
+            "from_translate": "翻訳元",
+            "to_translate": "翻訳先",
             "text": "テキスト"
         },
         "outputs": {
@@ -82,17 +82,17 @@
         }
     },
     "DeepTranslatorTextNode": {
-        "title": "翻訳文本(高さ)",
+        "title": "高度テキスト翻訳",
         "inputs": {
             "clip": "CLIP"
         },
         "widgets": {
-            "from_translate": "从",
-            "to_translate": "到",
-            "add_proxies": "添加代理",
-            "proxies": "代理",
-            "auth_data": "账户",
-            "service": "服务",
+            "from_translate": "翻訳元",
+            "to_translate": "翻訳先",
+            "add_proxies": "プロキシ追加",
+            "proxies": "プロキシ",
+            "auth_data": "認証情報",
+            "service": "翻訳サービス",
             "text": "テキスト"
         },
         "outputs": {

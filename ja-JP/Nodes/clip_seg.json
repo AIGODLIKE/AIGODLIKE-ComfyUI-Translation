@@ -1,25 +1,25 @@
 {
-    "CLIPSeg":{
+    "CLIPSeg": {
         "title": "CLIPセグメント",
         "inputs": {
-            "image": "图像"
+            "image": "画像"
         },
         "widgets": {
             "text": "テキスト",
             "blur": "ぼかし",
-            "threshold": "閾値",
-            "dilation_factor": "膨胀"
+            "threshold": "しきい値",
+            "dilation_factor": "拡張率"
         },
         "outputs": {
             "Mask": "マスク",
-            "Heatmap Mask": "热度图",
-            "BW Mask": "灰度图"
+            "Heatmap Mask": "ヒートマップマスク",
+            "BW Mask": "白黒マスク"
         }
     },
-    "CombineSegMasks":{
-        "title": "結合分割マスク",
+    "CombineSegMasks": {
+        "title": "分割マスクの結合",
         "inputs": {
-            "input_image": "图像",
+            "input_image": "画像",
             "mask_1": "マスク1",
             "mask_2": "マスク2",
             "mask_3": "マスク3"
@@ -27,13 +27,13 @@
         "widgets": {
             "text": "テキスト",
             "blur": "ぼかし",
-            "threshold": "閾値",
-            "dilation_factor": "膨胀"
+            "threshold": "しきい値",
+            "dilation_factor": "拡張率"
         },
         "outputs": {
-            "Combined Mask": "マスク",
-            "Heatmap Mask": "热度图",
-            "BW Mask": "灰度图"
+            "Combined Mask": "結合マスク",
+            "Heatmap Mask": "ヒートマップマスク",
+            "BW Mask": "白黒マスク"
         }
     }
 }

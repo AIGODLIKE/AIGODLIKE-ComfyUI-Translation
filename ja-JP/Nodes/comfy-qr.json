@@ -1,89 +1,89 @@
 {
     "comfy-qr-by-module-size": {
-        "title": "QR码(模块)",
+        "title": "QRコード（モジュールサイズ指定）",
         "widgets": {
-            "protocol": "格式",
-            "text": "内容",
-            "module_size": "模块大小",
-            "max_image_size": "最大图像大小",
-            "fill_hexcolor": "内容HEX",
-            "back_hexcolor": "背景HEX",
-            "error_correction": "容错能力",
-            "border": "边界大小"
+            "protocol": "プロトコル形式",
+            "text": "QRコードの内容",
+            "module_size": "モジュールサイズ",
+            "max_image_size": "最大画像サイズ",
+            "fill_hexcolor": "QRコードの色（HEX）",
+            "back_hexcolor": "背景色（HEX）",
+            "error_correction": "エラー訂正レベル",
+            "border": "余白サイズ"
         },
         "outputs": {
-            "QR_CODE": "QR图像",
-            "QR_VERSION": "QR版本",
-            "IMAGE_SIZE": "图像大小"
+            "QR_CODE": "生成されたQRコード",
+            "QR_VERSION": "QRコードバージョン",
+            "IMAGE_SIZE": "画像サイズ"
         }
     },
     "comfy-qr-by-image-size": {
-        "title": "QR码(图像)",
+        "title": "QRコード（画像サイズ指定）",
         "widgets": {
-            "protocol": "格式",
-            "text": "内容",
-            "image_size": "图像大小",
-            "fill_hexcolor": "内容HEX",
-            "back_hexcolor": "背景HEX",
-            "error_correction": "容错能力",
-            "border": "边界大小",
-            "resampling": "重采样",
-                "bicubic": "バイキュービック補間",
-                "bilinear": "バイリニア補間",
-                "box": "方框滤波",
-                "Hamming": "汉明窗",
-                "Lanczos": "Lanczos插値",
-                "nearest": "邻近"
+            "protocol": "プロトコル形式",
+            "text": "QRコードの内容",
+            "image_size": "画像サイズ",
+            "fill_hexcolor": "QRコードの色（HEX）",
+            "back_hexcolor": "背景色（HEX）",
+            "error_correction": "誤り訂正レベル",
+            "border": "余白サイズ",
+            "resampling": "リサンプリング方式",
+            "bicubic": "バイキュービック",
+            "bilinear": "バイリニア",
+            "box": "ボックス",
+            "Hamming": "ハミング",
+            "Lanczos": "ランチョス",
+            "nearest": "ニアレストネイバー"
         },
         "outputs": {
-            "QR_CODE": "QR图像",
-            "QR_VERSION": "QR版本"
+            "QR_CODE": "生成されたQRコード",
+            "QR_VERSION": "QRコードバージョン"
         }
     },
-    "comfy-qr-by-module-split": {
-        "title": "QR码(分割)",
+        "comfy-qr-by-module-split": {
+        "title": "QRコード（レイヤー分割）",
         "widgets": {
-            "protocol": "格式",
-            "text": "内容",
-            "module_size": "模块大小",
-            "max_image_size": "最大图像大小",
-            "fill_hexcolor": "内容HEX",
-            "back_hexcolor": "背景HEX",
-            "error_correction": "容错能力",
-            "border": "边界大小"
+            "protocol": "プロトコル形式",
+            "text": "QRコードの内容",
+            "module_size": "モジュールサイズ",
+            "max_image_size": "最大画像サイズ",
+            "fill_hexcolor": "QRコードの色（HEX）",
+            "back_hexcolor": "背景色（HEX）",
+            "error_correction": "誤り訂正レベル",
+            "border": "余白サイズ"
         },
         "outputs": {
-            "QR_CODE": "QR图像",
-            "MODULE_LAYER": "模块图像",
-            "FINDER_LAYER": "定位图像",
-            "FINDER_MASK": "定位マスク",
-            "QR_VERSION": "QR版本",
-            "IMAGE_SIZE": "图像大小"
+            "QR_CODE": "生成されたQRコード",
+            "MODULE_LAYER": "モジュールレイヤー",
+            "FINDER_LAYER": "位置検出パターン",
+            "FINDER_MASK": "位置検出パターンマスク",
+            "QR_VERSION": "QRコードバージョン",
+            "IMAGE_SIZE": "画像サイズ"
         }
     },
     "comfy-qr-mask_errors": {
-        "title": "QR码(容错校验)",
+        "title": "QRコード（エラー検証）",
         "inputs": {
-            "source_qr": "ソースQR图像",
-            "modified_qr": "修改QR图像"
+            "source_qr": "元のQRコード",
+            "modified_qr": "変更後のQRコード"
         },
         "widgets": {
-            "module_size": "模块大小",
-            "grayscale_method": "灰度计算模式",
-                "mean": "平均",
-            "aggregate_method": "色値计算模式",
-            "evaluate": "计算目標",
-                "full_qr": "整体",
-                "module_pattern": "模块",
-                "finder_pattern": "定位",
-            "error_difficulty": "容错难度",
-            "inverted_pattern": "反转内容"
+            "module_size": "モジュールサイズ",
+            "grayscale_method": "グレースケール変換方式",
+            "mean": "平均値",
+            "aggregate_method": "集計方式",
+            "evaluate": "検証範囲",
+            "full_qr": "QRコード全体",
+            "module_pattern": "データパターン",
+            "finder_pattern": "位置検出パターン",
+            "error_difficulty": "エラー検出の厳密さ",
+            "inverted_pattern": "反転パターン"
         },
         "outputs": {
-            "QR_ERROR_MASK": "QR错误マスク",
-            "PERCENT_ERROR": "错误占比",
-            "CORRELATION": "相关係数",
-            "RMSE": "误差値"
+            "QR_ERROR_MASK": "エラー検出マスク",
+            "PERCENT_ERROR": "エラー率",
+            "CORRELATION": "相関係数",
+            "RMSE": "RMSE"
         }
     }
 }
