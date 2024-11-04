@@ -117,7 +117,10 @@ export function applyMenuTranslation(T) {
 
   const comfySettingDialog = document.querySelector("#comfy-settings-dialog");
 
-  observeFactory(comfySettingDialog.querySelector("tbody"), handleComfySettingDialogObserver);
+  // 老版 settings面板的翻译
+  if(comfySettingDialog?.querySelector("tbody")){
+    observeFactory(comfySettingDialog.querySelector("tbody"), handleComfySettingDialogObserver);
+  }
 
   observeFactory(document.querySelector(".comfy-menu"), handleViewQueueComfyListObserver);
 
