@@ -6,15 +6,15 @@
         },
         "widgets": {
             "text": "テキスト",
-            "token_normalization": "Token规格化",
-                "none": "无",
-                "length": "长度",
+            "token_normalization": "トークン正規化",
+                "none": "なし",
+                "length": "長さ",
                 "mean": "平均",
                 "length+mean": "混合",
-            "weight_interpretation": "权重插値方式"
+            "weight_interpretation": "重みの解釈方法"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "BNK_CLIPTextEncodeSDXLAdvanced": {
@@ -25,47 +25,47 @@
         "widgets": {
             "text_l": "L条件",
             "text_g": "G条件",
-            "token_normalization": "Token规格化",
-                "none": "无",
-                "length": "长度",
+            "token_normalization": "トークン正規化",
+                "none": "なし",
+                "length": "長さ",
                 "mean": "平均",
                 "length+mean": "混合",
-            "weight_interpretation": "权重插値方式",
-            "balance": "平衡"
+            "weight_interpretation": "重みの解釈方法",
+            "balance": "バランス"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "BNK_AddCLIPSDXLParams": {
-        "title": "添加SDXLパラメタ",
+        "title": "SDXLパラメータ追加",
         "inputs": {
-            "conditioning": "条件"
+            "conditioning": "生成条件"
         },
         "widgets": {
             "width": "幅",
             "height": "高さ",
-            "crop_w": "裁剪幅",
-            "crop_h": "裁剪高さ",
+            "crop_w": "切り取り幅",
+            "crop_h": "切り取り高さ",
             "target_width": "目標幅",
             "target_height": "目標高さ"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "BNK_AddCLIPSDXLRParams": {
-        "title": "添加SDXL优化パラメタ",
+        "title": "SDXL最適化パラメータ追加",
         "inputs": {
-            "conditioning": "条件"
+            "conditioning": "生成条件"
         },
         "widgets": {
             "width": "幅",
             "height": "高さ",
-            "ascore": "美学分数"
+            "ascore": "美的スコア"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     }
 }

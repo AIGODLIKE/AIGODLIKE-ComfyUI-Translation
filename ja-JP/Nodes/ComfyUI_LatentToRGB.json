@@ -5,7 +5,7 @@
             "samples": "Latent"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     }
 }

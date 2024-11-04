@@ -1,203 +1,203 @@
 {
     "Flatten Colors": {
-        "title": "平化色",
+        "title": "色の平坦化",
         "inputs": {
-            "images": "图像"
+            "images": "画像"
         },
         "widgets": {
             "number_of_colors": "色数"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "Add Text To Image": {
-        "title": "添加字符到图像",
+        "title": "画像にテキスト追加",
         "inputs": {
-            "images": "图像"
+            "images": "画像"
         },
         "widgets": {
-            "font_ttf": "字体",
-            "size": "字号",
+            "font_ttf": "フォント",
+            "size": "サイズ",
             "x": "X",
             "y": "Y",
             "text": "テキスト",
             "color": "色",
-            "anchor": "锚点",
-                "Bottom Left Corner": "左下角",
+            "anchor": "アンカー",
+                "Bottom Left Corner": "左下",
                 "Center": "中心",
             "rotate": "回転",
-            "color_mode": "色模式"
+            "color_mode": "色モード"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "Generate Noise Image": {
-        "title": "生成噪波图像",
+        "title": "ノイズ画像生成",
         "widgets": {
-            "mode": "模式",
-            "noise_scale": "噪波缩放",
+            "mode": "モード",
+            "noise_scale": "ノイズスケール",
             "width": "幅",
             "height": "高さ",
             "batch_size": "バッチサイズ"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "GlitchThis Effect": {
-        "title": "故障化",
+        "title": "グリッチエフェクト",
         "inputs": {
-            "images": "图像"
+            "images": "画像"
         },
         "widgets": {
-            "glitch_回数": "故障量",
-            "color_offset": "色偏移",
-            "scane_lines": "扫描線",
+            "glitch_回数": "グリッチ量",
+            "color_offset": "色のオフセット",
+            "scane_lines": "スキャンライン",
                 "Disable": "無効",
                 "Enable": "有効",
-            "seed": "乱数種",
-            "control_after_generate": "运行后操作",
+            "seed": "シード",
+            "control_after_generate": "生成後操作",
                 "fixed": "固定",
-                "increment": "增加",
-                "decrement": "减少",
+                "increment": "増加",
+                "decrement": "減少",
                 "randomize": "ランダム"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "Hue Rotation": {
         "title": "色相回転",
         "inputs": {
-            "images": "图像"
+            "images": "画像"
         },
         "widgets": {
             "hue_rotation": "回転"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "Load Picture Index": {
-        "title": "加载索引图像",
+        "title": "画像インデックスの読み込み",
         "inputs": {
-            "images": "图像"
+            "images": "画像"
         },
         "widgets": {
-            "path": "路径",
-            "index": "索引"
+            "path": "パス",
+            "index": "インデックス"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "Apply Instagram Filter": {
-        "title": "Ins风滤镜",
+        "title": "インスタフィルター適用",
         "inputs": {
-            "images": "图像"
+            "images": "画像"
         },
         "widgets": {
-            "instagram_filter": "滤镜"
+            "instagram_filter": "フィルター"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "Pixel Sort": {
-        "title": "ピクセル重排序",
+        "title": "ピクセルソート",
         "inputs": {
-            "images": "图像",
-            "mask_image": "マスク图像",
-            "interval_image": "间隔定义图像"
+            "images": "画像",
+            "mask_image": "マスク画像",
+            "interval_image": "間隔定義画像"
         },
         "widgets": {
-            "character_length": "特性长度",
-            "randomness": "ランダム",
-            "sorting_function": "排序方式",
+            "character_length": "特性長",
+            "randomness": "ランダム性",
+            "sorting_function": "ソート方式",
                 "lightness": "明度",
                 "hue": "色相",
-                "saturation": "饱和度",
+                "saturation": "彩度",
                 "intensity": "強度",
-                "minimum": "最低",
-            "interval_function": "间隔方式",
+                "minimum": "最小",
+            "interval_function": "間隔方式",
                 "threshold": "閾値",
                 "random": "ランダム",
-                "edges": "边缘",
-                "waves": "波纹",
-                "file": "图像",
-                "file-edges": "图像边缘",
-                "none": "无",
+                "edges": "エッジ",
+                "waves": "波",
+                "file": "画像",
+                "file-edges": "画像エッジ",
+                "none": "なし",
             "lower_threshold": "低閾値",
             "upper_threshold": "高閾値",
-            "angle": "回転角度"
+            "angle": "回転角"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "Play Sound At Execution": {
-        "title": "运行时播放声音",
+        "title": "実行時に音を再生",
         "inputs": {
-            "images": "图像"
+            "images": "画像"
         },
         "widgets": {
-            "path": "路径",
+            "path": "パス",
             "volume": "音量"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "Prettify Prompt Using distilgpt2": {
-        "title": "GPT2优化提示词",
+        "title": "GPT2によるプロンプトの最適化",
         "inputs": {
-            "images": "图像"
+            "images": "画像"
         },
         "widgets": {
             "temperature": "温度",
-            "top_k": "候选集长度",
-            "max_length": "最大长度",
-            "repetition_penalty": "重复惩罚",
-            "seed": "乱数種",
-            "control_after_generate": "运行后操作",
+            "top_k": "候補数",
+            "max_length": "最大長",
+            "repetition_penalty": "繰り返しペナルティ",
+            "seed": "シード",
+            "control_after_generate": "生成後操作",
                 "fixed": "固定",
-                "increment": "增加",
-                "decrement": "减少",
+                "increment": "増加",
+                "decrement": "減少",
                 "randomize": "ランダム",
-            "prompt": "提示词"
+            "prompt": "プロンプト"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "Create Solid Color": {
-        "title": "创建纯色",
+        "title": "単色の作成",
         "inputs": {
-            "images": "图像"
+            "images": "画像"
         },
         "widgets": {
             "width": "幅",
             "height": "高さ",
             "color": "色",
             "batch_size": "バッチサイズ",
-            "color_mode": "色模式"
+            "color_mode": "色モード"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "Swap Color Mode": {
-        "title": "切换色模式",
+        "title": "色モードの切替",
         "inputs": {
-            "images": "图像"
+            "images": "画像"
         },
         "widgets": {
-            "color_mode": "色模式"
+            "color_mode": "色モード"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     }
 }

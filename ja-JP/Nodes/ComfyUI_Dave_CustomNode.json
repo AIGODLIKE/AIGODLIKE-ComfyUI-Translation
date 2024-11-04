@@ -1,61 +1,61 @@
 {
     "MultiLatentComposite": {
-        "title": "多Latentコンポジット",
+        "title": "マルチLatent合成",
         "inputs": {
-            "samples_to": "目標Latent",
-            "samples_from0": "ソースLatent"
+            "samples_to": "目標Latent変数",
+            "samples_from0": "ソースLatent変数"
         },
         "outputs": {
-            "LATENT": "Latent"
+            "LATENT": "Latent変数"
         }
     },
     "MultiAreaConditioning": {
-        "title": "多条件エリア",
+        "title": "多領域生成条件付け",
         "inputs": {
-            "conditioning0": "条件0",
-            "conditioning1": "条件1"
+            "conditioning0": "生成条件0",
+            "conditioning1": "生成条件1"
         },
         "widgets": {
-            "resolutionX": "解像度X",
-            "resolutionY": "解像度Y",
-            "index": "条件索引",
-            "x": "X",
-            "y": "Y",
+            "resolutionX": "X解像度",
+            "resolutionY": "Y解像度",
+            "index": "生成条件インデックス",
+            "x": "X座標",
+            "y": "Y座標",
             "width": "幅",
             "height": "高さ",
             "strength": "強度"
         },
         "outputs": {
-            "CONDITIONING": "条件",
-            "resolutionX": "解像度X",
-            "resolutionY": "解像度Y"
+            "CONDITIONING": "生成条件",
+            "resolutionX": "X解像度",
+            "resolutionY": "Y解像度"
         }
     },
     "ConditioningUpscale": {
-        "title": "条件缩放",
+        "title": "生成条件アップスケール",
         "inputs": {
-            "conditioning": "条件"
+            "conditioning": "生成条件"
         },
         "widgets": {
-            "scalar": "量"
+            "scalar": "倍率"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "ConditioningStretch": {
-        "title": "条件拉伸",
+        "title": "生成条件ストレッチ",
         "inputs": {
-            "conditioning": "条件"
+            "conditioning": "生成条件"
         },
         "widgets": {
-            "resolutionX": "解像度X",
-            "resolutionY": "解像度Y",
+            "resolutionX": "X解像度",
+            "resolutionY": "Y解像度",
             "newWidth": "新幅",
             "newHeight": "新高さ"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     }
 }
