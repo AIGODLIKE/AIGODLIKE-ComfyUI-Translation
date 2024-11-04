@@ -32,7 +32,7 @@
             "latent2rgb": "Latentから画像(速)",
             "vae_decode": "VAEデコード",
             "true": "はい",
-            "treu (tiled)": "はい(タイルデコード)",
+            "true (tiled)": "はい(タイルデコード)",
             "false": "いいえ",
             "output only": "出力のみ",
             "output only (tiled)": "出力のみ(デコード)"
@@ -85,7 +85,7 @@
             "latent2rgb": "Latentから画像(速)",
             "vae_decode": "VAEデコード",
             "true": "はい",
-            "treu (tiled)": "はい(タイルデコード)",
+            "true (tiled)": "はい(タイルデコード)",
             "false": "いいえ",
             "output only": "出力のみ",
             "output only (tiled)": "出力のみ(デコード)"
@@ -128,7 +128,7 @@
             "latent2rgb": "Latentから画像(速)",
             "vae_decode": "VAEデコード",
             "true": "はい",
-            "treu (tiled)": "はい(タイルデコード)",
+            "true (tiled)": "はい(タイルデコード)",
             "false": "いいえ",
             "output only": "出力のみ",
             "output only (tiled)": "出力のみ(デコード)"

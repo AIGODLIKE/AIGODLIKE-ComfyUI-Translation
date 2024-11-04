@@ -35,7 +35,7 @@
                 "latent2rgb": "Latent到图像(快)",
             "vae_decode": "VAE解码",
                 "true": "是",
-                "treu (tiled)": "是(分块)",
+                "true (tiled)": "是(分块)",
                 "false": "否",
                 "output only": "仅输出",
                 "output only (tiled)": "仅输出(分块)"
@@ -91,7 +91,7 @@
                 "latent2rgb": "Latent到图像(快)",
             "vae_decode": "VAE解码",
                 "true": "是",
-                "treu (tiled)": "是(分块)",
+                "true (tiled)": "是(分块)",
                 "false": "否",
                 "output only": "仅输出",
                 "output only (tiled)": "仅输出(分块)"
@@ -137,7 +137,7 @@
                 "latent2rgb": "Latent到图像(快)",
             "vae_decode": "VAE解码",
                 "true": "是",
-                "treu (tiled)": "是(分块)",
+                "true (tiled)": "是(分块)",
                 "false": "否",
                 "output only": "仅输出",
                 "output only (tiled)": "仅输出(分块)"

@@ -2413,7 +2413,7 @@
                 "No History": "無歷史",
             "dictionary_name": "字典名"
         },
-        "ooutputs": {
+        "outputs": {
             "STRING": "字符串",
             "DICT": "字典"
         }

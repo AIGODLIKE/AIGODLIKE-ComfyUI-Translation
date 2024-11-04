@@ -2374,7 +2374,7 @@
                 "No History": "履歴なし",
             "dictionary_name": "辞書名"
         },
-        "ooutputs": {
+        "outputs": {
             "STRING": "文字列",
             "DICT": "辞書"
         }
