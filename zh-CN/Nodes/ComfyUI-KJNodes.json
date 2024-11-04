@@ -1107,7 +1107,10 @@
             "image": "图像"
         },
         "widgets": {
-            "columns": "列数"
+            "columns": "列数",
+            "The number of columns in the grid.": "表格的列数。",
+            "rows": "行数",
+            "The number of rows in the grid. Set to 0 for automatic calculation.": "表格的行数，0为自动。"
         },
         "outputs": {
             "IMAGE": "图像"
@@ -1956,6 +1959,16 @@
             "model": "模型"
         },
         "description": "将模型传递到下一个节点"
+    },
+    "ModelSaveKJ": {
+        "title": "保存模型KJ",
+        "inputs": {
+            "model": "模型"
+        },
+        "widgets": {
+            "filename_prefix": "文件名前缀",
+            "model_key_prefix": "模型键前缀"
+        }
     },
     "FloatToSigmas": {
         "title": "浮点到Sigmas",

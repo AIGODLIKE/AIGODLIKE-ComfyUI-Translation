@@ -3,31 +3,31 @@
         "title": "逆Kサンプラー",
         "inputs": {
             "model": "モデル",
-            "positive": "正面",
-            "negative": "负面",
+            "positive": "ポジティブ",
+            "negative": "ネガティブ",
             "latent_image": "Latent"
         },
         "widgets": {
             "steps": "ステップ数",
-            "cfg": "CFG",
-            "end_at_step": "終了ステップ数",
+            "cfg": "CFGスケール",
+            "end_at_step": "終了ステップ",
             "sampler_name": "サンプラー名",
             "scheduler": "スケジューラ",
-            "normalize": "规格化"
+            "normalize": "正規化"
         },
         "outputs": {
             "LATENT": "Latent"
         }
     },
     "BNK_NoisyLatentImage": {
-        "title": "噪波Latent",
+        "title": "ノイジーLatent",
         "widgets": {
-            "source": "生成设备",
-            "seed": "乱数種",
-            "control_after_generate": "运行后操作",
+            "source": "生成デバイス",
+            "seed": "乱数シード",
+            "control_after_generate": "生成後制御",
                 "fixed": "固定",
-                "increment": "增加",
-                "decrement": "减少",
+                "increment": "増加",
+                "decrement": "減少",
                 "randomize": "ランダム",
             "width": "幅",
             "height": "高さ",
@@ -38,7 +38,7 @@
         }
     },
     "BNK_GetSigma": {
-        "title": "获取Sigma",
+        "title": "シグマ取得",
         "inputs": {
             "model": "モデル"
         },
@@ -46,18 +46,18 @@
             "sampler_name": "サンプラー名",
             "scheduler": "スケジューラ",
             "steps": "ステップ数",
-            "start_at_step": "開始ステップ数",
-            "end_at_step": "終了ステップ数"
+            "start_at_step": "開始ステップ",
+            "end_at_step": "終了ステップ"
         },
         "outputs": {
-            "FLOAT": "浮点"
+            "FLOAT": "浮動小数点数"
         }
     },
     "BNK_InjectNoise": {
-        "title": "插入噪波",
+        "title": "ノイズ注入",
         "inputs": {
             "latents": "Latent",
-            "noise": "噪波Latent",
+            "noise": "ノイズLatent",
             "mask": "マスク"
         },
         "widgets": {
@@ -68,12 +68,12 @@
         }
     },
     "BNK_DuplicateBatchIndex": {
-        "title": "复制索引批次",
+        "title": "バッチインデックス複製",
         "inputs": {
             "latents": "Latent"
         },
         "widgets": {
-            "batch_index": "批次索引",
+            "batch_index": "バッチインデックス",
             "batch_size": "バッチサイズ"
         },
         "outputs": {
@@ -81,11 +81,11 @@
         }
     },
     "BNK_SlerpLatent": {
-        "title": "Latent插値",
+        "title": "Latentスラープ",
         "inputs": {
-        "latents1": "Latent1",
-        "latents2": "Latent2",
-        "mask": "マスク"
+            "latents1": "Latent1",
+            "latents2": "Latent2",
+            "mask": "マスク"
         },
         "widgets": {
             "factor": "係数"

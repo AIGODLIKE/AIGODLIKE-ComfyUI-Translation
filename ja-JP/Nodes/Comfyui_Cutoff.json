@@ -1,6 +1,6 @@
 {
     "BNK_CutoffBasePrompt": {
-        "title": "遮断エリアPrompt",
+        "title": "Cutoff基本プロンプト",
         "inputs": {
             "clip": "CLIP"
         },
@@ -8,55 +8,55 @@
             "text": "テキスト"
         },
         "outputs": {
-            "CLIPREGION": "CLIPレアル"
+            "CLIPREGION": "CLIP領域"
         }
     },
     "BNK_CutoffSetRegions": {
-        "title": "遮断設定レアル",
+        "title": "Cutoff領域設定",
         "inputs": {
-            "clip_regions": "CLIPレアル"
+            "clip_regions": "CLIP領域"
         },
         "widgets": {
-            "region_text": "レアル文本",
-            "target_text": "目標文本",
-            "weight": "权重"
+            "region_text": "領域テキスト",
+            "target_text": "対象テキスト",
+            "weight": "重み"
         },
         "outputs": {
-            "CLIPREGION": "CLIPレアル"
+            "CLIPREGION": "CLIP領域"
         }
     },
     "BNK_CutoffRegionsToConditioning": {
-        "title": "遮断レアル到条件",
+        "title": "Cutoff領域を生成条件に変換",
         "inputs": {
-            "clip_regions": "CLIPレアル"
+            "clip_regions": "CLIP領域"
         },
         "widgets": {
-            "mask_token": "tokenマスク",
-            "strict_mask": "严格レアル",
-            "start_from_masked": "从エリア開始"
+            "mask_token": "マスクトークン",
+            "strict_mask": "厳密マスク",
+            "start_from_masked": "マスク領域から開始"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "BNK_CutoffRegionsToConditioning_ADV": {
-        "title": "遮断レアル到条件(高さ)",
+        "title": "Cutoff領域を生成条件に変換（詳細）",
         "inputs": {
-            "clip_regions": "CLIPレアル"
+            "clip_regions": "CLIP領域"
         },
         "widgets": {
-            "mask_token": "tokenマスク",
-            "strict_mask": "严格レアル",
-            "start_from_masked": "从エリア開始",
-            "token_normalization": "Token规格化",
-                "none": "无",
-                "length": "长度",
-                "mean": "平均",
-                "length+mean": "混合",
-            "weight_interpretation": "权重插値方式"
+            "mask_token": "マスクトークン",
+            "strict_mask": "厳密マスク",
+            "start_from_masked": "マスク領域から開始",
+            "token_normalization": "トークン正規化",
+            "none": "なし",
+            "length": "長さ",
+            "mean": "平均",
+            "length+mean": "混合",
+            "weight_interpretation": "重み付け方式"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     }
 }

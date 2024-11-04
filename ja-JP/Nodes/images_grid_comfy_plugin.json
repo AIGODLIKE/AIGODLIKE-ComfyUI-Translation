@@ -1,6 +1,6 @@
 {
     "LatentCombine": {
-        "title": "Latent组合",
+        "title": "Latentの組み合わせ",
         "inputs": {
             "latent_1": "Latent1",
             "latent_2": "Latent2"
@@ -11,52 +11,52 @@
     },
     
     "ImageCombine": {
-        "title": "图像组合",
+        "title": "画像の組み合わせ",
         "inputs": {
-            "image_1": "图像1",
-            "image_2": "图像2"
+            "image_1": "画像1",
+            "image_2": "画像2"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "ImagesGridByColumns": {
-        "title": "由列建表",
+        "title": "列によるグリッド",
         "inputs": {
-            "images": "图像组",
-            "annotation": "注释"
+            "images": "画像グループ",
+            "annotation": "注釈"
         },
         "widgets": {
-            "gap": "间隔",
+            "gap": "間隔",
             "max_columns": "最大列数"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "ImagesGridByRows": {
-        "title": "由行建表",
+        "title": "行によるグリッド",
         "inputs": {
-            "images": "图像组",
-            "annotation": "注释"
+            "images": "画像グループ",
+            "annotation": "注釈"
         },
         "widgets": {
-            "gap": "间隔",
+            "gap": "間隔",
             "max_rows": "最大行数"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "GridAnnotation": {
-        "title": "图表注释",
+        "title": "グリッド注釈",
         "widgets": {
-            "column_texts": "列注释",
-            "row_texts": "行注释",
-            "font_size": "字体大小"
+            "column_texts": "列の注釈",
+            "row_texts": "行の注釈",
+            "font_size": "フォントサイズ"
         },
         "outputs": {
-            "GRID_ANNOTATION": "注释"
+            "GRID_ANNOTATION": "注釈"
         }
     }
 }

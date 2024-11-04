@@ -1,150 +1,150 @@
 {
     "KSampler (Efficient)": {
-        "title": "Kサンプラー(效率)",
+        "title": "Kサンプラー(効率)",
         "inputs": {
             "model": "モデル",
-            "positive": "正面",
-            "negative": "负面",
+            "positive": "ポジティブ",
+            "negative": "ネガティブ",
             "latent_image": "Latent",
             "optional_vae": "VAE",
-            "script": "脚本"
+            "script": "スクリプト"
         },
         "widgets": {
-            "sampler_state": "采样状态",
-                "Sample": "采样",
-                "Hold": "不变",
-                "Script": "脚本",
-            "seed": "乱数種",
-            "control_after_generate": "运行后操作",
-                "fixed": "固定",
-                "increment": "增加",
-                "decrement": "减少",
-                "randomize": "ランダム",
+            "sampler_state": "サンプリング状態",
+            "Sample": "サンプル",
+            "Hold": "保持",
+            "Script": "スクリプト",
+            "seed": "シード値",
+            "control_after_generate": "生成後の操作",
+            "fixed": "固定",
+            "increment": "増加",
+            "decrement": "減少",
+            "randomize": "ランダム",
             "steps": "ステップ数",
             "cfg": "CFG",
             "sampler_name": "サンプラー名",
             "scheduler": "スケジューラ",
             "denoise": "ノイズ除去",
-            "preview_method": "预览方法",
-                "none": "无(最快)",
-                "auto": "自动",
-                "taesd": "TAESD(慢)",
-                "latent2rgb": "Latent到图像(快)",
-            "vae_decode": "VAE解码",
-                "true": "是",
-                "treu (tiled)": "是(デコード)",
-                "false": "否",
-                "output only": "仅出力",
-                "output only (tiled)": "仅出力(デコード)"
+            "preview_method": "プレビュー方法",
+            "none": "なし(最速)",
+            "auto": "自動",
+            "taesd": "TAESD(遅)",
+            "latent2rgb": "Latentから画像(速)",
+            "vae_decode": "VAEデコード",
+            "true": "はい",
+            "true (tiled)": "はい(タイルデコード)",
+            "false": "いいえ",
+            "output only": "出力のみ",
+            "output only (tiled)": "出力のみ(デコード)"
         },
         "outputs": {
             "MODEL": "モデル",
-            "CONDITIONING+": "正面条件",
-            "CONDITIONING-": "负面条件",
+            "CONDITIONING+": "生成条件+",
+            "CONDITIONING-": "生成条件-",
             "LATENT": "Latent",
             "VAE": "VAE",
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "KSampler Adv. (Efficient)": {
-        "title": "Kサンプラー(高さ效率)",
+        "title": "Kサンプラー(高度効率)",
         "inputs": {
             "model": "モデル",
-            "positive": "正面",
-            "negative": "负面",
+            "positive": "ポジティブ",
+            "negative": "ネガティブ",
             "latent_image": "Latent",
             "optional_vae": "VAE",
-            "script": "脚本"
+            "script": "スクリプト"
         },
         "widgets": {
-            "sampler_state": "采样状态",
-                "Sample": "采样",
-                "Hold": "不变",
-                "Script": "脚本",
+            "sampler_state": "サンプリング状態",
+            "Sample": "サンプル",
+            "Hold": "保持",
+            "Script": "スクリプト",
             "add_noise": "ノイズ追加",
-                "enable": "是",
-                "disable": "否",
-            "noise_seed": "乱数種",
-            "control_after_generate": "运行后操作",
-                "fixed": "固定",
-                "increment": "增加",
-                "decrement": "减少",
-                "randomize": "ランダム",
+            "enable": "はい",
+            "disable": "いいえ",
+            "noise_seed": "シード値",
+            "control_after_generate": "生成後の操作",
+            "fixed": "固定",
+            "increment": "増加",
+            "decrement": "減少",
+            "randomize": "ランダム",
             "steps": "ステップ数",
             "cfg": "CFG",
             "sampler_name": "サンプラー名",
             "scheduler": "スケジューラ",
-            "start_at_step": "開始ノイズ除去ステップ数",
-            "end_at_step": "終了ノイズ除去ステップ数",
+            "start_at_step": "ノイズ除去開始ステップ数",
+            "end_at_step": "ノイズ除去終了ステップ数",
             "denoise": "ノイズ除去",
             "return_with_leftover_noise": "残りのノイズを返す",
-            "preview_method": "预览方法",
-                "none": "无(最快)",
-                "auto": "自动",
-                "taesd": "TAESD(慢)",
-                "latent2rgb": "Latent到图像(快)",
-            "vae_decode": "VAE解码",
-                "true": "是",
-                "treu (tiled)": "是(デコード)",
-                "false": "否",
-                "output only": "仅出力",
-                "output only (tiled)": "仅出力(デコード)"
+            "preview_method": "プレビュー方法",
+            "none": "なし(最速)",
+            "auto": "自動",
+            "taesd": "TAESD(遅)",
+            "latent2rgb": "Latentから画像(速)",
+            "vae_decode": "VAEデコード",
+            "true": "はい",
+            "true (tiled)": "はい(タイルデコード)",
+            "false": "いいえ",
+            "output only": "出力のみ",
+            "output only (tiled)": "出力のみ(デコード)"
         },
         "outputs": {
             "MODEL": "モデル",
-            "CONDITIONING+": "正面条件",
-            "CONDITIONING-": "负面条件",
+            "CONDITIONING+": "生成条件+",
+            "CONDITIONING-": "生成条件-",
             "LATENT": "Latent",
             "VAE": "VAE",
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "KSampler SDXL (Eff.)": {
-        "title": "Kサンプラー(SDXL效率)",
+        "title": "Kサンプラー(SDXL効率)",
         "inputs": {
-            "sdxl_tuple": "SDXL元组",
+            "sdxl_tuple": "SDXLタプル",
             "latent_image": "Latent",
             "optional_vae": "VAE",
-            "script": "脚本"
+            "script": "スクリプト"
         },
         "widgets": {
-            "sampler_state": "采样状态",
-                "Sample": "采样",
-                "Hold": "不变",
-                "Script": "脚本",
-            "noise_seed": "乱数種",
-                "Randomize": "ランダム",
-                "Last Queued Seed": "上一个乱数種",
+            "sampler_state": "サンプリング状態",
+            "Sample": "サンプル",
+            "Hold": "保持",
+            "Script": "スクリプト",
+            "noise_seed": "シード値",
+            "Randomize": "ランダム",
+            "Last Queued Seed": "前のシード値",
             "steps": "ステップ数",
             "cfg": "CFG",
             "sampler_name": "サンプラー名",
             "scheduler": "スケジューラ",
-            "start_at_step": "開始ノイズ除去ステップ数",
-            "refine_at_step": "開始优化ステップ数",
-            "preview_method": "预览方法",
-                "none": "无(最快)",
-                "auto": "自动",
-                "taesd": "TAESD(慢)",
-                "latent2rgb": "Latent到图像(快)",
-            "vae_decode": "VAE解码",
-                "true": "是",
-                "treu (tiled)": "是(デコード)",
-                "false": "否",
-                "output only": "仅出力",
-                "output only (tiled)": "仅出力(デコード)"
+            "start_at_step": "ノイズ除去開始ステップ数",
+            "refine_at_step": "最適化開始ステップ数",
+            "preview_method": "プレビュー方法",
+            "none": "なし(最速)",
+            "auto": "自動",
+            "taesd": "TAESD(遅)",
+            "latent2rgb": "Latentから画像(速)",
+            "vae_decode": "VAEデコード",
+            "true": "はい",
+            "true (tiled)": "はい(タイルデコード)",
+            "false": "いいえ",
+            "output only": "出力のみ",
+            "output only (tiled)": "出力のみ(デコード)"
         },
         "outputs": {
-            "SDXL_TUPLE": "SDXL元组",
+            "SDXL_TUPLE": "SDXLタプル",
             "LATENT": "Latent",
             "VAE": "VAE",
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "Efficient Loader": {
-        "title": "效率ローダー",
+        "title": "効率ローダー",
         "inputs": {
-            "lora_stack": "LoRA堆",
-            "cnet_stack": "ControlNet堆"
+            "lora_stack": "重ね掛けLoRA",
+            "cnet_stack": "重ね掛けControlNet"
         },
         "widgets": {
             "ckpt_name": "CKPTモデル名",
@@ -153,47 +153,47 @@
             "lora_name": "LoRA",
             "lora_model_strength": "LoRAモデル強度",
             "lora_clip_strength": "LoRACLIP強度",
-            "positive": "正面",
-            "negative": "负面",
+            "positive": "ポジティブ",
+            "negative": "ネガティブ",
             "empty_latent_width": "幅",
             "empty_latent_height": "高さ",
             "batch_size": "バッチサイズ"
         },
         "outputs": {
             "MODEL": "モデル",
-            "CONDITIONING+": "正面条件",
-            "CONDITIONING-": "负面条件",
+            "CONDITIONING+": "生成条件+",
+            "CONDITIONING-": "生成条件-",
             "LATENT": "Latent",
             "VAE": "VAE",
             "CLIP": "CLIP",
-            "DEPENDENCIES": "依赖"
+            "DEPENDENCIES": "依存"
         }
     },
     "Eff. Loader SDXL": {
-        "title": "效率ローダー(SDXL)",
+        "title": "効率ローダー(SDXL)",
         "inputs": {
-            "lora_stack": "LoRA堆",
-            "cnet_stack": "ControlNet堆"
+            "lora_stack": "重ね掛けLoRA",
+            "cnet_stack": "重ね掛けControlNet"
         },
         "widgets": {
-            "base_ckpt_name": "基础モデル",
-            "base_clip_skip": "基础CLIP Skip",
-            "refiner_ckpt_name": "优化モデル",
-            "refiner_clip_skip": "优化CLIP Skip",
-            "positive_ascore": "正面美学分数",
-            "negative_ascore": "负面美学分数",
+            "base_ckpt_name": "基礎モデル",
+            "base_clip_skip": "基礎CLIP Skip",
+            "refiner_ckpt_name": "最適化モデル",
+            "refiner_clip_skip": "最適化CLIP Skip",
+            "positive_ascore": "ポジティブ美学スコア",
+            "negative_ascore": "ネガティブ美学スコア",
             "vae_name": "VAE",
-            "positive": "正面",
-            "negative": "负面",
+            "positive": "ポジティブ",
+            "negative": "ネガティブ",
             "empty_latent_width": "幅",
             "empty_latent_height": "高さ",
             "batch_size": "バッチサイズ"
         },
         "outputs": {
-            "SDXL_TUPLE": "SDXL元组",
+            "SDXL_TUPLE": "SDXLタプル",
             "LATENT": "Latent",
             "VAE": "VAE",
-            "DEPENDENCIES": "依赖"
+            "DEPENDENCIES": "依存"
         }
     },
 
@@ -201,14 +201,14 @@
 
 
     "LoRA Stacker": {
-        "title": "LoRA堆",
+        "title": "LoRAを重ね掛け",
         "inputs": {
-            "lora_stack": "LoRA堆"
+            "lora_stack": "重ね掛けLoRA"
         },
         "widgets": {
-            "input_mode": "输入模式",
-                "simple": "簡易",
-                "advanced": "高さ",
+            "input_mode": "入力方法",
+                "simple": "シンプル",
+                "advanced": "高度",
             "lora_name_1": "LoRA_1",
             "lora_name_2": "LoRA_2",
             "lora_name_3": "LoRA_3",
@@ -258,55 +258,55 @@
             "lora_name_47": "LoRA_47",
             "lora_name_48": "LoRA_48",
             "lora_name_49": "LoRA_49",
-            "lora_wt_1": "LoRA权重_1",
-            "lora_wt_2": "LoRA权重_2",
-            "lora_wt_3": "LoRA权重_3",
-            "lora_wt_4": "LoRA权重_4",
-            "lora_wt_5": "LoRA权重_5",
-            "lora_wt_6": "LoRA权重_6",
-            "lora_wt_7": "LoRA权重_7",
-            "lora_wt_8": "LoRA权重_8",
-            "lora_wt_9": "LoRA权重_9",
-            "lora_wt_10": "LoRA权重_10",
-            "lora_wt_11": "LoRA权重_11",
-            "lora_wt_12": "LoRA权重_12",
-            "lora_wt_13": "LoRA权重_13",
-            "lora_wt_14": "LoRA权重_14",
-            "lora_wt_15": "LoRA权重_15",
-            "lora_wt_16": "LoRA权重_16",
-            "lora_wt_17": "LoRA权重_17",
-            "lora_wt_18": "LoRA权重_18",
-            "lora_wt_19": "LoRA权重_19",
-            "lora_wt_20": "LoRA权重_20",
-            "lora_wt_21": "LoRA权重_21",
-            "lora_wt_22": "LoRA权重_22",
-            "lora_wt_23": "LoRA权重_23",
-            "lora_wt_24": "LoRA权重_24",
-            "lora_wt_25": "LoRA权重_25",
-            "lora_wt_26": "LoRA权重_26",
-            "lora_wt_27": "LoRA权重_27",
-            "lora_wt_28": "LoRA权重_28",
-            "lora_wt_29": "LoRA权重_29",
-            "lora_wt_30": "LoRA权重_30",
-            "lora_wt_31": "LoRA权重_31",
-            "lora_wt_32": "LoRA权重_32",
-            "lora_wt_33": "LoRA权重_33",
-            "lora_wt_34": "LoRA权重_34",
-            "lora_wt_35": "LoRA权重_35",
-            "lora_wt_36": "LoRA权重_36",
-            "lora_wt_37": "LoRA权重_37",
-            "lora_wt_38": "LoRA权重_38",
-            "lora_wt_39": "LoRA权重_39",
-            "lora_wt_40": "LoRA权重_40",
-            "lora_wt_41": "LoRA权重_41",
-            "lora_wt_42": "LoRA权重_42",
-            "lora_wt_43": "LoRA权重_43",
-            "lora_wt_44": "LoRA权重_44",
-            "lora_wt_45": "LoRA权重_45",
-            "lora_wt_46": "LoRA权重_46",
-            "lora_wt_47": "LoRA权重_47",
-            "lora_wt_48": "LoRA权重_48",
-            "lora_wt_49": "LoRA权重_49",
+            "lora_wt_1": "LoRA重み_1",
+            "lora_wt_2": "LoRA重み_2",
+            "lora_wt_3": "LoRA重み_3",
+            "lora_wt_4": "LoRA重み_4",
+            "lora_wt_5": "LoRA重み_5",
+            "lora_wt_6": "LoRA重み_6",
+            "lora_wt_7": "LoRA重み_7",
+            "lora_wt_8": "LoRA重み_8",
+            "lora_wt_9": "LoRA重み_9",
+            "lora_wt_10": "LoRA重み_10",
+            "lora_wt_11": "LoRA重み_11",
+            "lora_wt_12": "LoRA重み_12",
+            "lora_wt_13": "LoRA重み_13",
+            "lora_wt_14": "LoRA重み_14",
+            "lora_wt_15": "LoRA重み_15",
+            "lora_wt_16": "LoRA重み_16",
+            "lora_wt_17": "LoRA重み_17",
+            "lora_wt_18": "LoRA重み_18",
+            "lora_wt_19": "LoRA重み_19",
+            "lora_wt_20": "LoRA重み_20",
+            "lora_wt_21": "LoRA重み_21",
+            "lora_wt_22": "LoRA重み_22",
+            "lora_wt_23": "LoRA重み_23",
+            "lora_wt_24": "LoRA重み_24",
+            "lora_wt_25": "LoRA重み_25",
+            "lora_wt_26": "LoRA重み_26",
+            "lora_wt_27": "LoRA重み_27",
+            "lora_wt_28": "LoRA重み_28",
+            "lora_wt_29": "LoRA重み_29",
+            "lora_wt_30": "LoRA重み_30",
+            "lora_wt_31": "LoRA重み_31",
+            "lora_wt_32": "LoRA重み_32",
+            "lora_wt_33": "LoRA重み_33",
+            "lora_wt_34": "LoRA重み_34",
+            "lora_wt_35": "LoRA重み_35",
+            "lora_wt_36": "LoRA重み_36",
+            "lora_wt_37": "LoRA重み_37",
+            "lora_wt_38": "LoRA重み_38",
+            "lora_wt_39": "LoRA重み_39",
+            "lora_wt_40": "LoRA重み_40",
+            "lora_wt_41": "LoRA重み_41",
+            "lora_wt_42": "LoRA重み_42",
+            "lora_wt_43": "LoRA重み_43",
+            "lora_wt_44": "LoRA重み_44",
+            "lora_wt_45": "LoRA重み_45",
+            "lora_wt_46": "LoRA重み_46",
+            "lora_wt_47": "LoRA重み_47",
+            "lora_wt_48": "LoRA重み_48",
+            "lora_wt_49": "LoRA重み_49",
             "model_str_1": "モデル強度_1",
             "model_str_2": "モデル強度_2",
             "model_str_3": "モデル強度_3",
@@ -407,13 +407,13 @@
             "clip_str_49": "CLIP強度_49"
         },
         "outputs": {
-            "LORA_STACK": "LoRA堆"
+            "LORA_STACK": "重ね掛けLoRA"
         }
     },
     "LoRA Stacker Adv.": {
-        "title": "LoRA堆(高さ)",
+        "title": "LoRAを重ね掛け(高度)",
         "inputs": {
-            "lora_stack": "LoRA堆"
+            "lora_stack": "重ね掛けLoRA"
         },
         "widgets": {
             "lora_name_1": "LoRA1",
@@ -427,129 +427,130 @@
             "clip_str_3": "CLIP強度3"
         },
         "outputs": {
-            "LORA_STACK": "LoRA堆"
+            "LORA_STACK": "重ね掛けLoRA"
         }
     },
     "Control Net Stacker": {
-        "title": "ControlNet堆",
+        "title": "ControlNetを重ね掛け",
         "inputs": {
             "control_net": "ControlNet",
-            "image": "图像",
-            "cnet_stack": "ControlNet堆"
+            "image": "画像",
+            "cnet_stack": "重ね掛けControlNet"
         },
         "widgets": {
             "strength": "強度",
-            "start_percent": "開始引导时间",
-            "end_percent": "終了引导时间"
+            "start_percent": "開始時間",
+            "end_percent": "終了時間"
         },
         "outputs": {
-            "CNET_STACK": "ControlNet堆"
+            "CNET_STACK": "重ね掛けControlNet"
         }
     },
     "Apply ControlNet Stack": {
-        "title": "適用ControlNet堆",
+        "title": "重ね掛けControlNetを適用",
         "inputs": {
-            "conditioning": "条件",
-            "positive": "正面",
-            "negative": "负面",
-            "cnet_stack": "ControlNet堆"
+            "conditioning": "生成条件",
+            "positive": "ポジティブ",
+            "negative": "ネガティブ",
+            "cnet_stack": "重ね掛けControlNet"
         },
         "outputs": {
-            "CONDITIONING": "条件",
-            "CONDITIONING+": "正面条件",
-            "CONDITIONING-": "负面条件"
+            "CONDITIONING": "生成条件",
+            "CONDITIONING+": "ポジティブ条件",
+            "CONDITIONING-": "ネガティブ条件"
         }
     },
 
 
 
     "Pack SDXL Tuple": {
-        "title": "打包SDXL元组",
+        "title": "SDXLタプルのパッキング",
         "inputs": {
-            "base_model": "基础モデル",
-            "base_clip": "基础CLIP",
-            "base_positive": "基础正面",
-            "base_negative": "负面",
-            "refiner_model": "モデル",
-            "refiner_clip": "CLIP",
-            "refiner_positive": "正面",
-            "refiner_negative": "负面"
+            "base_model": "基礎モデル",
+            "base_clip": "基礎CLIP",
+            "base_positive": "基礎ポジティブ",
+            "base_negative": "基礎ネガティブ",
+            "refiner_model": "最適化モデル",
+            "refiner_clip": "最適化CLIP",
+            "refiner_positive": "最適化ポジティブ",
+            "refiner_negative": "最適化ネガティブ"
         },
         "outputs": {
-            "SDXL_TUPLE": "SDXL元组"
+            "SDXL_TUPLE": "SDXLタプル"
         }
     },
     "Unpack SDXL Tuple": {
-        "title": "解包SDXL元组",
+        "title": "SDXLタプルのアンパッキング",
         "inputs": {
-            "sdxl_tuple": "SDXL元组"
+            "sdxl_tuple": "SDXLタプル"
         },
         "outputs": {
-            "BASE_MODEL": "基础モデル",
-            "BASE_CLIP": "基础CLIP",
-            "REFINER_MODEL": "优化モデル",
-            "REFINER_CLIP": "优化CLIP",
-            "BASE_CONDITIONING+": "基础正面条件",
-            "BASE_CONDITIONING-": "基础负面条件",
-            "REFINER_CONDITIONING+": "优化正面条件",
-            "REFINER_CONDITIONING-": "优化负面条件"
+            "BASE_MODEL": "基礎モデル",
+            "BASE_CLIP": "基礎CLIP",
+            "REFINER_MODEL": "最適化モデル",
+            "REFINER_CLIP": "最適化CLIP",
+            "BASE_CONDITIONING+": "基礎ポジティブ条件",
+            "BASE_CONDITIONING-": "基礎ネガティブ条件",
+            "REFINER_CONDITIONING+": "最適化ポジティブ条件",
+            "REFINER_CONDITIONING-": "最適化ネガティブ条件"
         }
     },
 
 
 
     "XY Plot": {
-        "title": "XY图表",
+        "title": "XYプロット",
         "inputs": {
-            "dependencies": "依赖"
+            "dependencies": "依存"
         },
         "widgets": {
-            "grid_spacing": "间隔",
-            "XY_flip": "XY互换",
-            "Y_label_orientation": "Y轴方向",
-            "cache_models": "缓存モデル",
-            "ksampler_output_image": "图像出力",
-                "Plot": "图表",
-                "images": "图像组"
+            "grid_spacing": "間隔",
+            "XY_flip": "XY反転",
+            "Y_label_orientation": "Y軸方向",
+            "cache_models": "モデルキャッシュ",
+            "ksampler_output_image": "画像出力",
+                "Plot": "プロット",
+                "images": "画像グループ"
         },
         "outputs": {
-            "SCRIPT": "脚本"
+            "SCRIPT": "スクリプト"
         }
     },
     "HighRes-Fix Script": {
-        "title": "高清修复",
+        "title": "高解像度修正",
         "inputs": {
-            "script": "脚本"
+            "script": "スクリプト"
         },
         "widgets": {
-            "latent_upscale_method": "Latent缩放方法",
-                "nearest-exact": "最近傍-正確",
+            "latent_upscale_method": "Latent拡大方法",
+                "nearest-exact": "ニアレストネイバー-正確",
                 "bilinear": "バイリニア補間",
                 "area": "エリア",
-                "bislerp": "バイスフィアリニア",
+                "bislerp": "バイリニア補間",
                 "bicubic": "バイキュービック補間",
-            "upscale_by": "缩放係数",
-            "hires_steps": "高清修复ステップ数",
+            "upscale_by": "拡大係数",
+            "hires_steps": "高解像度修正ステップ数",
             "denoise": "ノイズ除去",
             "iterations": "反復回数"
         },
         "outputs": {
-            "SCRIPT": "脚本"
+            "SCRIPT": "スクリプト"
         }
     },
+
 
 
 
     "XY Input: Seeds++ Batch": {
-        "title": "乱数種个数",
+        "title": "シード値の個数",
         "widgets": {
-            "batch_count": "个数"
+            "batch_count": "個数"
         }
     },
     "XY Input: Add/Return Noise": {
-       "title": "添加残りのノイズを返す",
+       "title": "ノイズを追加/残りのノイズを返す",
        "widgets": {
-            "XY_type": "类型",
+            "XY_type": "タイプ",
                 "add_noise": "ノイズ追加",
                 "return_with_leftover_noise": "残りのノイズを返す"
         }
@@ -563,83 +564,84 @@
     "XY Input: Start at Step": {
         "title": "開始ステップ数",
         "widgets": {
-            "first_start_step": "初始ステップ数",
-            "las_start_step": "最终ステップ数"
+            "first_start_step": "初期ステップ数",
+            "las_start_step": "最終ステップ数"
         }
     },
     "XY Input: End at Step": {
         "title": "終了ステップ数",
         "widgets": {
-            "first_end_step": "初始ステップ数",
-            "las_end_step": "最终ステップ数"
+            "first_end_step": "初期ステップ数",
+            "las_end_step": "最終ステップ数"
         }
     },
     "XY Input: CFG Scale": {
-        "title": "CFG",
+        "title": "CFGスケール",
         "widgets": {
-            "batch_count": "个数",
-            "first_cfg": "初始CFG",
-            "end_cfg": "最终CFG"
+            "batch_count": "個数",
+            "first_cfg": "初期CFG",
+            "end_cfg": "最終CFG"
         }
     },
+
     "XY Input: Sampler/Scheduler": {
         "title": "采样スケジューラ",
         "widgets": {
             "target_parameter": "目標パラメタ",
-                "sampler": "采样器",
+                "sampler": "サンプラー",
                 "scheduler": "スケジューラ",
-                "sampler & scheduler": "采样和调度",
-            "input_count": "输入量",
-            "sampler_1": "采样器_1",
-            "sampler_2": "采样器_2",
-            "sampler_3": "采样器_3",
-            "sampler_4": "采样器_4",
-            "sampler_5": "采样器_5",
-            "sampler_6": "采样器_6",
-            "sampler_7": "采样器_7",
-            "sampler_8": "采样器_8",
-            "sampler_9": "采样器_9",
-            "sampler_10": "采样器_10",
-            "sampler_11": "采样器_11",
-            "sampler_12": "采样器_12",
-            "sampler_13": "采样器_13",
-            "sampler_14": "采样器_14",
-            "sampler_15": "采样器_15",
-            "sampler_16": "采样器_16",
-            "sampler_17": "采样器_17",
-            "sampler_18": "采样器_18",
-            "sampler_19": "采样器_19",
-            "sampler_20": "采样器_20",
-            "sampler_21": "采样器_21",
-            "sampler_22": "采样器_22",
-            "sampler_23": "采样器_23",
-            "sampler_24": "采样器_24",
-            "sampler_25": "采样器_25",
-            "sampler_26": "采样器_26",
-            "sampler_27": "采样器_27",
-            "sampler_28": "采样器_28",
-            "sampler_29": "采样器_29",
-            "sampler_30": "采样器_30",
-            "sampler_31": "采样器_31",
-            "sampler_32": "采样器_32",
-            "sampler_33": "采样器_33",
-            "sampler_34": "采样器_34",
-            "sampler_35": "采样器_35",
-            "sampler_36": "采样器_36",
-            "sampler_37": "采样器_37",
-            "sampler_38": "采样器_38",
-            "sampler_39": "采样器_39",
-            "sampler_40": "采样器_40",
-            "sampler_41": "采样器_41",
-            "sampler_42": "采样器_42",
-            "sampler_43": "采样器_43",
-            "sampler_44": "采样器_44",
-            "sampler_45": "采样器_45",
-            "sampler_46": "采样器_46",
-            "sampler_47": "采样器_47",
-            "sampler_48": "采样器_48",
-            "sampler_49": "采样器_49",
-            "sampler_50": "采样器_50",
+                "sampler & scheduler": "サンプラー&スケジューラー",
+            "input_count": "入力量",
+            "sampler_1": "サンプラー_1",
+            "sampler_2": "サンプラー_2",
+            "sampler_3": "サンプラー_3",
+            "sampler_4": "サンプラー_4",
+            "sampler_5": "サンプラー_5",
+            "sampler_6": "サンプラー_6",
+            "sampler_7": "サンプラー_7",
+            "sampler_8": "サンプラー_8",
+            "sampler_9": "サンプラー_9",
+            "sampler_10": "サンプラー_10",
+            "sampler_11": "サンプラー_11",
+            "sampler_12": "サンプラー_12",
+            "sampler_13": "サンプラー_13",
+            "sampler_14": "サンプラー_14",
+            "sampler_15": "サンプラー_15",
+            "sampler_16": "サンプラー_16",
+            "sampler_17": "サンプラー_17",
+            "sampler_18": "サンプラー_18",
+            "sampler_19": "サンプラー_19",
+            "sampler_20": "サンプラー_20",
+            "sampler_21": "サンプラー_21",
+            "sampler_22": "サンプラー_22",
+            "sampler_23": "サンプラー_23",
+            "sampler_24": "サンプラー_24",
+            "sampler_25": "サンプラー_25",
+            "sampler_26": "サンプラー_26",
+            "sampler_27": "サンプラー_27",
+            "sampler_28": "サンプラー_28",
+            "sampler_29": "サンプラー_29",
+            "sampler_30": "サンプラー_30",
+            "sampler_31": "サンプラー_31",
+            "sampler_32": "サンプラー_32",
+            "sampler_33": "サンプラー_33",
+            "sampler_34": "サンプラー_34",
+            "sampler_35": "サンプラー_35",
+            "sampler_36": "サンプラー_36",
+            "sampler_37": "サンプラー_37",
+            "sampler_38": "サンプラー_38",
+            "sampler_39": "サンプラー_39",
+            "sampler_40": "サンプラー_40",
+            "sampler_41": "サンプラー_41",
+            "sampler_42": "サンプラー_42",
+            "sampler_43": "サンプラー_43",
+            "sampler_44": "サンプラー_44",
+            "sampler_45": "サンプラー_45",
+            "sampler_46": "サンプラー_46",
+            "sampler_47": "サンプラー_47",
+            "sampler_48": "サンプラー_48",
+            "sampler_49": "サンプラー_49",
+            "sampler_50": "サンプラー_50",
             "scheduler_1": "スケジューラ_1",
             "scheduler_2": "スケジューラ_2",
             "scheduler_3": "スケジューラ_3",
@@ -693,13 +695,13 @@
         }
     },
     "XY Input: Sampler": {
-        "title": "采样器",
+        "title": "サンプラー",
         "widgets": {
-            "sampler_1": "采样器1",
-            "sampler_2": "采样器2",
-            "sampler_3": "采样器3",
-            "sampler_4": "采样器4",
-            "sampler_5": "采样器5",
+            "sampler_1": "サンプラー1",
+            "sampler_2": "サンプラー2",
+            "sampler_3": "サンプラー3",
+            "sampler_4": "サンプラー4",
+            "sampler_5": "サンプラー5",
             "scheduler_1": "スケジューラ1",
             "scheduler_2": "スケジューラ2",
             "scheduler_3": "スケジューラ3",
@@ -721,8 +723,8 @@
         "title": "ノイズ除去",
         "widgets": {
             "select_count": "選択量",
-            "first_denoise": "初始ノイズ除去",
-            "end_denoise": "最终ノイズ除去"
+            "first_denoise": "最初ノイズ除去",
+            "end_denoise": "最終ノイズ除去"
         }
     },
     "XY Input: VAE": {
@@ -736,100 +738,100 @@
         }
     },
     "XY Input: Prompt S/R": {
-        "title": "替换提示词",
+        "title": "プロンプト置換",
         "widgets": {
-            "target_prompt": "目標提示词",
-            "search_txt": "检索",
-            "replace_count": "替换量",
-            "replace_1": "替换_1",
-            "replace_2": "替换_2",
-            "replace_3": "替换_3",
-            "replace_4": "替换_4",
-            "replace_5": "替换_5",
-            "replace_6": "替换_6",
-            "replace_7": "替换_7",
-            "replace_8": "替换_8",
-            "replace_9": "替换_9",
-            "replace_10": "替换_10",
-            "replace_11": "替换_11",
-            "replace_12": "替换_12",
-            "replace_13": "替换_13",
-            "replace_14": "替换_14",
-            "replace_15": "替换_15",
-            "replace_16": "替换_16",
-            "replace_17": "替换_17",
-            "replace_18": "替换_18",
-            "replace_19": "替换_19",
-            "replace_20": "替换_20",
-            "replace_21": "替换_21",
-            "replace_22": "替换_22",
-            "replace_23": "替换_23",
-            "replace_24": "替换_24",
-            "replace_25": "替换_25",
-            "replace_26": "替换_26",
-            "replace_27": "替换_27",
-            "replace_28": "替换_28",
-            "replace_29": "替换_29",
-            "replace_30": "替换_30",
-            "replace_31": "替换_31",
-            "replace_32": "替换_32",
-            "replace_33": "替换_33",
-            "replace_34": "替换_34",
-            "replace_35": "替换_35",
-            "replace_36": "替换_36",
-            "replace_37": "替换_37",
-            "replace_38": "替换_38",
-            "replace_39": "替换_39",
-            "replace_40": "替换_40",
-            "replace_41": "替换_41",
-            "replace_42": "替换_42",
-            "replace_43": "替换_43",
-            "replace_44": "替换_44",
-            "replace_45": "替换_45",
-            "replace_46": "替换_46",
-            "replace_47": "替换_47",
-            "replace_48": "替换_48",
-            "replace_49": "替换_49"
+            "target_prompt": "目標指示語",
+            "search_txt": "検索",
+            "replace_count": "置換量",
+            "replace_1": "置換_1",
+            "replace_2": "置換_2",
+            "replace_3": "置換_3",
+            "replace_4": "置換_4",
+            "replace_5": "置換_5",
+            "replace_6": "置換_6",
+            "replace_7": "置換_7",
+            "replace_8": "置換_8",
+            "replace_9": "置換_9",
+            "replace_10": "置換_10",
+            "replace_11": "置換_11",
+            "replace_12": "置換_12",
+            "replace_13": "置換_13",
+            "replace_14": "置換_14",
+            "replace_15": "置換_15",
+            "replace_16": "置換_16",
+            "replace_17": "置換_17",
+            "replace_18": "置換_18",
+            "replace_19": "置換_19",
+            "replace_20": "置換_20",
+            "replace_21": "置換_21",
+            "replace_22": "置換_22",
+            "replace_23": "置換_23",
+            "replace_24": "置換_24",
+            "replace_25": "置換_25",
+            "replace_26": "置換_26",
+            "replace_27": "置換_27",
+            "replace_28": "置換_28",
+            "replace_29": "置換_29",
+            "replace_30": "置換_30",
+            "replace_31": "置換_31",
+            "replace_32": "置換_32",
+            "replace_33": "置換_33",
+            "replace_34": "置換_34",
+            "replace_35": "置換_35",
+            "replace_36": "置換_36",
+            "replace_37": "置換_37",
+            "replace_38": "置換_38",
+            "replace_39": "置換_39",
+            "replace_40": "置換_40",
+            "replace_41": "置換_41",
+            "replace_42": "置換_42",
+            "replace_43": "置換_43",
+            "replace_44": "置換_44",
+            "replace_45": "置換_45",
+            "replace_46": "置換_46",
+            "replace_47": "置換_47",
+            "replace_48": "置換_48",
+            "replace_49": "置換_49"
 
         }
     },
     "XY Input: Positive Prompt S/R": {
-        "title": "替换正面",
+        "title": "ポジティブプロンプト置換",
         "widgets": {
-            "search_txt": "检索",
-            "replace_count": "替换量",
-            "replace_1": "替换1",
-            "replace_2": "替换2",
-            "replace_3": "替换3",
-            "replace_4": "替换4",
-            "replace_5": "替换5"
+            "search_txt": "検索",
+            "replace_count": "置換量",
+            "replace_1": "置換1",
+            "replace_2": "置換2",
+            "replace_3": "置換3",
+            "replace_4": "置換4",
+            "replace_5": "置換5"
         }
     },
     "XY Input: Negative Prompt S/R": {
-        "title": "替换负面",
+        "title": "ネガティブプロンプト置換",
         "widgets": {
-            "search_txt": "检索",
-            "replace_count": "替换量",
-            "replace_1": "替换1",
-            "replace_2": "替换2",
-            "replace_3": "替换3",
-            "replace_4": "替换4",
-            "replace_5": "替换5"
+            "search_txt": "検索",
+            "replace_count": "置換量",
+            "replace_1": "置換1",
+            "replace_2": "置換2",
+            "replace_3": "置換3",
+            "replace_4": "置換4",
+            "replace_5": "置換5"
         }
     },
     "XY Input: Aesthetic Score": {
-        "title": "美学分数",
+        "title": "美的スコア",
         "widgets": {
-            "target_ascore": "目標分数",
-            "batch_count": "个数",
-            "first_ascore": "初始分数",
-            "last_ascore": "最终分数"
+            "target_ascore": "目標",
+            "batch_count": "回数",
+            "first_ascore": "開始スコア",
+            "last_ascore": "最終スコア"
         }
     },
     "XY Input: Refiner On/Off": {
-        "title": "优化开关",
+        "title": "最適化オン/オフ",
         "widgets": {
-            "refine_at_percent": "開始优化时间"
+            "refine_at_percent": "最適化開始時間"
         }
     },
     "XY Input: Checkpoint": {
@@ -863,8 +865,8 @@
             "lora_stack": "LoRA堆"
         },
         "widgets": {
-            "model_strengths": "モデル权重",
-            "clip_strengths": "CLIP权重",
+            "model_strengths": "モデル重み",
+            "clip_strengths": "CLIP重み",
             "lora_name_1": "LoRA1",
             "lora_name_2": "LoRA2",
             "lora_name_3": "LoRA3",
@@ -872,217 +874,221 @@
             "lora_name_5": "LoRA5"
         }
     },
-    "XY Input: LoRA Plot": {
-        "title": "LoRA表",
+"XY Input: LoRA Plot": {
+        "title": "LoRAプロット",
         "inputs": {
-            "lora_stack": "LoRA堆"
+            "lora_stack": "LoRA重ね掛け"
         },
         "widgets": {
-            "input_mode": "输入模式",
-                "X: LoRA Batch, Y: LoRA Weight": "X:LoRA批次,Y:LoRA权重",
-                "X: LoRA Batch, Y: Model Strength": "X:LoRA批次,Y:モデル权重",
-                "X: LoRA Batch, Y: Clip Strength": "X:LoRA批次,Y:CLIP权重",
-                "X: Model Strength, Y: Clip Strength": "X:モデル权重,Y:CLIP权重",
-            "lora_name": "LoRA",
-            "model_strength": "モデル权重",
-            "clip_strength": "CLIP权重",
+            "input_mode": "入力方法",
+                "X: LoRA Batch, Y: LoRA Weight": "X:LoRAバッチ,Y:LoRA重み",
+                "X: LoRA Batch, Y: Model Strength": "X:LoRAバッチ,Y:モデル強度",
+                "X: LoRA Batch, Y: Clip Strength": "X:LoRAバッチ,Y:CLIP強度",
+                "X: Model Strength, Y: Clip Strength": "X:モデル強度,Y:CLIP強度",
+            "lora_name": "LoRA名",
+            "model_strength": "モデル強度",
+            "clip_strength": "CLIP強度",
             "X_batch_count": "X量",
-            "X_batch_path": "X路径",
-            "X_subdirectories": "X子文件夹",
-            "X_batch_sort": "X排序",
-            "X_first_value": "X初始値",
-            "X_last_value": "X最终値",
+            "X_batch_path": "Xパス",
+            "X_subdirectories": "Xサブディレクトリ",
+            "X_batch_sort": "Xソート",
+            "X_first_value": "X初期値",
+            "X_last_value": "X最終値",
             "Y_batch_count": "Y量",
-            "Y_first_value": "Y初始値",
-            "Y_last_value": "Y最终値"
+            "Y_first_value": "Y初期値",
+            "Y_last_value": "Y最終値"
         }
     },
+
     "XY Input: LoRA Adv.": {
         "title": "LoRA(高さ)",
         "inputs": {
             "lora_stack": "LoRA堆"
         },
         "widgets": {
-            "model_str_1": "モデル权重1",
-            "model_str_2": "モデル权重2",
-            "model_str_3": "モデル权重3",
-            "model_str_4": "モデル权重4",
-            "model_str_5": "モデル权重5",
-            "clip_str_1": "CLIP权重1",
-            "clip_str_2": "CLIP权重2",
-            "clip_str_3": "CLIP权重3",
-            "clip_str_4": "CLIP权重4",
-            "clip_str_5": "CLIP权重5"
+            "model_str_1": "モデル重み1",
+            "model_str_2": "モデル重み2",
+            "model_str_3": "モデル重み3",
+            "model_str_4": "モデル重み4",
+            "model_str_5": "モデル重み5",
+            "clip_str_1": "CLIP重み1",
+            "clip_str_2": "CLIP重み2",
+            "clip_str_3": "CLIP重み3",
+            "clip_str_4": "CLIP重み4",
+            "clip_str_5": "CLIP重み5"
         }
     },
     "XY Input: LoRA Stacks": {
-        "title": "LoRA堆",
+        "title": "重ね掛けLoRA",
         "inputs": {
-            "lora_stack_1": "LoRA堆1",
-            "lora_stack_2": "LoRA堆2",
-            "lora_stack_3": "LoRA堆3",
-            "lora_stack_4": "LoRA堆4",
-            "lora_stack_5": "LoRA堆5"
+            "lora_stack_1": "重ね掛けLoRA1",
+            "lora_stack_2": "重ね掛けLoRA2",
+            "lora_stack_3": "重ね掛けLoRA3",
+            "lora_stack_4": "重ね掛けLoRA4",
+            "lora_stack_5": "重ね掛けLoRA5"
         },
         "widgets": {
-            "node_state": "节点状态",
+            "node_state": "ノードの状態",
                 "Enabled": "有効",
                 "Disabled": "無効"
         }
     },
-    "XY Input: Control Net":{
+"XY Input: Control Net": {
         "title": "ControlNet",
         "inputs": {
             "control_net": "ControlNet",
-            "image": "图像",
-            "cnet_stack": "ControlNet堆"
+            "image": "画像",
+            "cnet_stack": "重ね掛けControlNet"
         },
         "widgets": {
-            "target_parameter": "目標パラメタ",
-            "batch_count": "个数",
-            "first_strength": "初始強度",
-            "last_strength": "最终強度",
-            "first_start_percent": "初始開始引导时间",
-            "last_start_percent": "最终開始引导时间",
-            "first_end_percent": "初始終了引导时间",
-            "last_end_percent": "最终終了引导时间",
+            "target_parameter": "目標",
+            "batch_count": "個数",
+            "first_strength": "初期強度",
+            "last_strength": "最終強度",
+            "first_start_percent": "初期開始ガイダンス時間",
+            "last_start_percent": "最終開始ガイダンス時間",
+            "first_end_percent": "初期終了ガイダンス時間",
+            "last_end_percent": "最終終了ガイダンス時間",
             "strength": "強度",
-            "start_percent": "開始引导时间",
-            "end_percent": "終了引导时间"
+            "start_percent": "開始ガイダンス時間",
+            "end_percent": "終了ガイダンス時間"
         }
     },
+
     "XY Input: Control Net Plot":{
-        "title": "ControlNet表",
+        "title": "ControlNetプロット",
         "inputs": {
             "control_net": "ControlNet",
-            "image": "图像",
-            "cnet_stack": "ControlNet堆"
+            "image": "画像",
+            "cnet_stack": "重ね掛けControlNet"
         },
         "widgets": {
-            "plot_type": "类型",
-                "X: Strength, Y: Start%": "X:強度,Y:開始时间",
-                "X: Strength, Y: End%": "X:強度,Y:終了时间",
-                "X: Start%, Y: Strength": "X:開始时间,Y:強度",
-                "X: Start%, Y: End%": "X:開始时间,Y:終了时间",
-                "X: End%, Y: Strength": "X:終了时间,Y:強度",
-                "X: End%, Y: Start%": "X:終了时间,Y:開始时间",
+            "plot_type": "タイプ",
+                "X: Strength, Y: Start%": "X:強度,Y:開始%",
+                "X: Strength, Y: End%": "X:強度,Y:終了%",
+                "X: Start%, Y: Strength": "X:開始%,Y:強度",
+                "X: Start%, Y: End%": "X:開始%,Y:終了%",
+                "X: End%, Y: Strength": "X:終了%,Y:強度",
+                "X: End%, Y: Start%": "X:終了%,Y:開始%",
             "strength": "強度",
-            "start_percent": "開始引导时间",
-            "end_percent": "終了引导时间",
-            "X_batch_count": "X量",
-            "X_first_value": "X初始値",
-            "X_last_value": "X最终値",
-            "Y_batch_count": "Y量",
-            "Y_first_value": "Y初始値",
-            "Y_last_value": "Y最终値"
+            "start_percent": "開始時間",
+            "end_percent": "終了時間",
+            "X_batch_count": "Xの個数",
+            "X_first_value": "Xの初期値",
+            "X_last_value": "Xの最終値",
+            "Y_batch_count": "Yの個数",
+            "Y_first_value": "Yの初期値",
+            "Y_last_value": "Yの最終値"
         }
+
     },
     "XY Input: Control Net Strengths": {
         "title": "ControlNet強度",
         "inputs": {
             "control_net": "ControlNet",
-            "image": "图像",
-            "cnet_stack": "ControlNet堆"
+            "image": "画像",
+            "cnet_stack": "重ね掛けControlNet"
         },
         "widgets": {
-            "batch_count": "个数",
-            "first_strength": "初始強度",
-            "last_strength": "最终強度"
+            "batch_count": "個数",
+            "first_strength": "開始強度",
+            "last_strength": "最終強度"
         }
     },
     "XY Input: Manual XY Entry": {
-        "title": "手动输入",
+        "title": "手動入力",
         "widgets": {
-            "X_type": "X类型",
+            "X_type": "Xタイプ",
             "X_value": "X値",
-            "Y_type": "Y类型",
+            "Y_type": "Yタイプ",
             "Y_value": "Y値"
         }
     },
     "Manual XY Entry Info": {
-        "title": "手动输入说明"
+        "title": "手動入力の説明"
     },
     "Join XY Inputs of Same Type": {
-        "title": "結合同类XY"
+        "title": "同じタイプのXYを結合"
     },
     
 
 
 
     "Image Overlay": {
-        "title": "图像覆盖",
+        "title": "画像オーバーレイ",
         "inputs": {
-            "base_image": "基础图像",
-            "overlay_image": "覆盖图像",
+            "base_image": "ベース画像",
+            "overlay_image": "オーバーレイ画像",
             "optional_mask": "マスク"
         },
         "widgets": {
-            "overlay_resize": "缩放模式",
-                "None": "无",
-                "Fit": "自适应",
-                "Resize by rescale_factor": "按係数",
-                "Resize to width & heigth": "按宽高",
-            "resize_method": "缩放方法",
-                "nearest-exact": "最近傍-正確",
+            "overlay_resize": "リサイズモード",
+                "None": "なし",
+                "Fit": "フィット",
+                "Resize by rescale_factor": "係数によるリサイズ",
+                "Resize to width & heigth": "幅と高さにリサイズ",
+            "resize_method": "リサイズ方法",
+                "nearest-exact": "ニアレスト-正確",
                 "bilinear": "バイリニア補間",
                 "area": "エリア",
             "rescale_factor": "係数",
             "width": "幅",
             "height": "高さ",
-            "x_offset": "X偏移",
-            "y_offset": "Y偏移",
+            "x_offset": "Xオフセット",
+            "y_offset": "Yオフセット",
             "rotation": "回転",
             "opacity": "不透明度"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
 
 
     "Evaluate Integers": {
-        "title": "整数运算",
+        "title": "整数計算",
         "widgets": {
-            "python_expression": "Python表达式",
-            "print_to_console": "出力至控制台",
-                "False": "否",
-                "True": "是"
+            "python_expression": "Python式",
+            "print_to_console": "コンソールに出力",
+                "False": "いいえ",
+                "True": "はい"
         },
         "outputs": {
             "INT": "整数",
-            "FLOAT": "浮点",
-            "STRING": "ストリング"
+            "FLOAT": "浮動小数点",
+            "STRING": "文字列"
         }
     },
     "Evaluate Floats": {
-        "title": "浮点运算",
+        "title": "浮動小数点計算",
         "widgets": {
-            "python_expression": "Python表达式",
-            "print_to_console": "出力至控制台",
-                "False": "否",
-                "True": "是"
+            "python_expression": "Python式",
+            "print_to_console": "コンソールに出力",
+                "False": "いいえ",
+                "True": "はい"
         },
         "outputs": {
             "INT": "整数",
-            "FLOAT": "浮点",
-            "STRING": "ストリング"
+            "FLOAT": "浮動小数点",
+            "STRING": "文字列"
         }
     },
     "Evaluate Strings": {
-        "title": "ストリング运算",
+        "title": "文字列計算",
         "widgets": {
-            "python_expression": "Python表达式",
-            "print_to_console": "出力至控制台",
-                "False": "否",
-                "True": "是"
+            "python_expression": "Python式",
+            "print_to_console": "コンソールに出力",
+                "False": "いいえ",
+                "True": "はい"
         },
         "outputs": {
             "INT": "整数",
-            "FLOAT": "浮点",
-            "STRING": "ストリング"
+            "FLOAT": "浮動小数点",
+            "STRING": "文字列"
         }
     },
     "Simple Eval Examples": {
-        "title": "运算示例"
+        "title": "計算例"
     }
+
 }

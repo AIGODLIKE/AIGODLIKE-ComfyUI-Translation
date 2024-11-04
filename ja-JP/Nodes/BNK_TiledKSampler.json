@@ -1,68 +1,68 @@
 {
     "BNK_TiledKSampler": {
-        "title": "Kサンプラー(デコード)",
+        "title": "Kサンプラー（タイルデコード）",
         "inputs": {
             "model": "モデル",
-            "positive": "正面",
-            "negative": "负面",
-            "latent_image": "Latent"
+            "positive": "ポジティブプロンプト",
+            "negative": "ネガティブプロンプト",
+            "latent_image": "Latent画像"
         },
         "widgets": {
-            "seed": "乱数種",
-            "control_after_generate": "运行后操作",
+            "seed": "シード値",
+            "control_after_generate": "生成後の操作",
                 "fixed": "固定",
-                "increment": "增加",
-                "decrement": "减少",
+                "increment": "増加",
+                "decrement": "減少",
                 "randomize": "ランダム",
-            "tile_width": "デコード幅",
-            "tile_height": "デコード高さ",
-            "tiling_strategy": "无缝デコード策略",
+            "tile_width": "タイル幅",
+            "tile_height": "タイル高さ",
+            "tiling_strategy": "シームレスタイル戦略",
                 "random": "ランダム",
-                "padded": "分区",
-                "simple": "簡易",
+                "padded": "パディング",
+                "simple": "シンプル",
             "steps": "ステップ数",
-            "cfg": "CFG",
+            "cfg": "CFGスケール",
             "sampler_name": "サンプラー名",
             "scheduler": "スケジューラ",
             "denoise": "ノイズ除去"
         },
         "outputs": {
-            "LATENT": "Latent"
+            "LATENT": "Latent画像"
         }
     },
     "BNK_TiledKSamplerAdvanced": {
-        "title": "Kサンプラー(高さデコード)",
+        "title": "Kサンプラー（高度タイルデコード）",
         "inputs": {
             "model": "モデル",
-            "positive": "正面",
-            "negative": "负面",
-            "latent_image": "Latent"
+            "positive": "ポジティブプロンプト",
+            "negative": "ネガティブプロンプト",
+            "latent_image": "Latent画像"
         },
         "widgets": {
             "add_noise": "ノイズ追加",
-            "noise_seed": "乱数種",
-            "control_after_generate": "运行后操作",
+            "noise_seed": "ノイズシード",
+            "control_after_generate": "生成後の操作",
                 "fixed": "固定",
-                "increment": "增加",
-                "decrement": "减少",
+                "increment": "増加",
+                "decrement": "減少",
                 "randomize": "ランダム",
-            "tile_width": "デコード幅",
-            "tile_height": "デコード高さ",
-            "tiling_strategy": "无缝デコード策略",
+            "tile_width": "タイル幅",
+            "tile_height": "タイル高さ",
+            "tiling_strategy": "シームレスタイル戦略",
                 "random": "ランダム",
-                "padded": "分区",
-                "simple": "簡易",
+                "padded": "パディング",
+                "simple": "シンプル",
             "steps": "ステップ数",
-            "cfg": "CFG",
+            "cfg": "CFGスケール",
             "sampler_name": "サンプラー名",
             "scheduler": "スケジューラ",
-            "start_at_step": "開始ノイズ除去ステップ数",
-            "end_at_step": "終了ノイズ除去ステップ数",
+            "start_at_step": "ノイズ除去開始ステップ",
+            "end_at_step": "ノイズ除去終了ステップ",
             "return_with_leftover_noise": "残りのノイズを返す",
-            "preview": "预览图象"
+            "preview": "プレビュー画像"
         },
         "outputs": {
-            "LATENT": "Latent"
+            "LATENT": "Latent画像"
         }
     }
 }

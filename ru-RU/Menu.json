@@ -364,7 +364,7 @@
     "taesd": "TAESD (медленно)",
     "latent2rgb": "latent2rgb (быстро)",
     "true": "да",
-    "treu (tiled)": "да (tiled)",
+    "true (tiled)": "да (tiled)",
     "false": "нет",
     "output only": "только вывод",
     "output only (tiled)": "только вывод (tiled)",

@@ -624,6 +624,31 @@
             "IMAGE": "图像"
         }
     },
+
+    "Load Vit Matte Model (mtb)": {
+        "title": "加载 ViTMatte 模型",
+        "widgets": {
+            "kind": "模型",
+            "autodownload": "自动下载"
+        },
+        "outputs": {
+            "torch_script": "Torch Script"
+        }
+    },
+    "Generate Trimap (mtb)": {
+        "title": "生成三分图",
+        "inputs": {
+            "mask": "遮罩"
+        },
+        "widgets": {
+            "erode": "消融",
+            "dilate": "膨胀"
+        },
+        "outputs": {
+            "trimap": "三分图"
+        }
+    },
+
     "Concat Images (mtb)": {
         "title": "图像联结",
         "inputs": {
@@ -955,6 +980,29 @@
             "NUMBER": "数字"
         }
     },
+
+    "Model Pruner (mtb)": {
+        "title": "模型修剪",
+        "inputs": {
+            "unet": "UNet",
+            "clip": "CLIP",
+            "vae": "VAE"
+        },
+        "widgets": {
+            "save_separately": "分开保存",
+            "save_folder": "保存文件夹",
+            "fix_clip": "修复CLIP",
+            "remove_junk": "移除垃圾数据",
+            "ema_mode": "EMA模式",
+            "precision_unet": "UNet精度",
+            "operation_unet": "UNet操作",
+            "precision_clip": "CLIP精度",
+            "operation_clip": "CLIP操作",
+            "precision_vae": "VAE精度",
+            "operation_vae": "VAE操作"
+        }
+    },
+
     "String Replace (mtb)": {
         "title": "字符串替换",
         "inputs": {
@@ -1130,6 +1178,21 @@
         "outputs": {
             "INTS": "整数批次",
             "INT": "整数"
+        }
+    },
+    "Apply Vit Matte (mtb)": {
+        "title": "应用 ViTMatte",
+        "inputs": {
+            "model": "模型",
+            "image": "图像",
+            "trimap": "三分图"
+        },
+        "widgets": {
+            "returns": "输出类型"
+        },
+        "outputs": {
+            "image (rgba)": "图像",
+            "mask": "遮罩"
         }
     }
 }
