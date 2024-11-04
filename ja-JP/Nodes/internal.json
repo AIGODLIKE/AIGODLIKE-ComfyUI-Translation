@@ -15,17 +15,17 @@
         "title": "Kサンプラー",
         "inputs": {
             "model": "モデル",
-            "positive": "正面",
-            "negative": "负面",
-            "latent_image": "Latent"
+            "positive": "ポジティブ",
+            "negative": "ネガティブ",
+            "latent_image": "Latent画像"
         },
         "widgets": {
-            "seed": "乱数種",
+            "seed": "シード値",
             "control_after_generate": "生成後の制御",
                 "fixed": "固定",
                 "increment": "増加",
                 "decrement": "減少",
-                "randomize": "ランダム",
+                "randomize": "ランダム化",
             "steps": "ステップ数",
             "cfg": "CFG",
             "sampler_name": "サンプラー名",
@@ -37,21 +37,21 @@
         }
     },
     "KSamplerAdvanced": {
-        "title": "Kサンプラー（高さ）",
+        "title": "Kサンプラー（高度）",
         "inputs": {
             "model": "モデル",
-            "positive": "正面",
-            "negative": "负面",
-            "latent_image": "Latent"
+            "positive": "ポジティブ",
+            "negative": "ネガティブ",
+            "latent_image": "Latent画像"
         },
         "widgets": {
-            "add_noise": "ノイズ追加",
-            "noise_seed": "乱数種",
+            "add_noise": "ノイズを追加",
+            "noise_seed": "ノイズのシード値",
             "control_after_generate": "生成後の制御",
                 "fixed": "固定",
                 "increment": "増加",
                 "decrement": "減少",
-                "randomize": "ランダム",
+                "randomize": "ランダム化",
             "steps": "ステップ数",
             "cfg": "CFG",
             "sampler_name": "サンプラー名",
@@ -65,6 +65,7 @@
             "LATENT": "Latent"
         }
     },
+
 
 
 
@@ -188,6 +189,7 @@
             "MODEL": "モデル"
         }
     },
+
        
 
 
@@ -195,18 +197,18 @@
     "StyleModelApply": {
         "title": "スタイルモデル適用",
         "inputs": {
-            "conditioning": "条件",
+            "conditioning": "生成条件",
             "style_model": "スタイルモデル",
             "clip_vision_output": "CLIPビジョン出力"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "GLIGENTextBoxApply": {
         "title": "GLIGENテキストボックス適用",
         "inputs": {
-            "conditioning_to": "条件",
+            "conditioning_to": "生成条件",
             "clip": "CLIP",
             "gligen_textbox_model": "GLIGENモデル"
         },
@@ -218,7 +220,7 @@
             "y": "Y"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "CLIPTextEncode": {
@@ -230,7 +232,7 @@
             "text": "テキスト"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "CLIPSetLastLayer": {
@@ -246,55 +248,55 @@
         }
     },
     "Conditioning (Average)": {
-        "title": "条件（平均）",
+        "title": "生成条件（平均）",
         "inputs": {
-            "conditioning_to": "条件先",
-            "conditioning_from": "条件元"
+            "conditioning_to": "生成条件先",
+            "conditioning_from": "生成条件元"
         },
         "widgets": {
             "conditioning_to_strength": "強度"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "ConditioningAverage": {
-        "title": "条件（平均）",
+        "title": "生成条件（平均）",
         "inputs": {
-            "conditioning_to": "条件先",
-            "conditioning_from": "条件元"
+            "conditioning_to": "生成条件先",
+            "conditioning_from": "生成条件元"
         },
         "widgets": {
             "conditioning_to_strength": "強度"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "ConditioningCombine": {
-        "title": "条件結合",
+        "title": "生成条件結合",
         "inputs": {
-            "conditioning_1": "条件1",
-            "conditioning_2": "条件2"
+            "conditioning_1": "生成条件1",
+            "conditioning_2": "生成条件2"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "ConditioningConcat": {
-        "title": "条件連結",
+        "title": "生成条件連結",
         "widgets": {
-            "conditioning_to": "条件先",
-            "conditioning_from": "条件元"
+            "conditioning_to": "生成条件先",
+            "conditioning_from": "生成条件元"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "ConditioningSetArea": {
-        "title": "条件エリア設定",
+        "title": "生成条件エリア設定",
         "inputs": {
-            "conditioning": "条件"
+            "conditioning": "生成条件"
         },
         "widgets": {
             "width": "幅",
@@ -304,13 +306,13 @@
             "strength": "強度"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "ConditioningSetAreaPercentage": {
-        "title": "係数による条件サンプリング領域の設定",
+        "title": "係数による生成条件サンプリング領域の設定",
         "inputs": {
-            "conditioning": "条件"
+            "conditioning": "生成条件"
         },
         "widgets": {
             "width": "幅",
@@ -320,23 +322,23 @@
             "strength": "強度"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "ConditioningSetMask": {
-        "title": "条件マスク設定",
+        "title": "生成条件マスク設定",
         "inputs": {
-            "conditioning": "条件",
+            "conditioning": "生成条件",
             "mask": "マスク"
         },
         "widgets": {
             "strength": "強度",
-            "set_cond_area": "条件エリア設定",
+            "set_cond_area": "生成条件エリア設定",
                 "default": "デフォルト",
                 "mask bounds": "マスク境界"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "CLIPVisionEncode": {
@@ -347,12 +349,12 @@
         },
         "outputs": {
             "CLIP_VISION_OUTPUT": "CLIPビジョン出力"
-    }
+        }
     },
     "unCLIPConditioning": {
         "title": "unCLIP条件",
         "inputs": {
-            "conditioning": "条件",
+            "conditioning": "生成条件",
             "clip_vision_output": "CLIPビジョン出力"
         },
         "widgets": {
@@ -360,13 +362,13 @@
             "noise_augmentation": "ノイズ増強"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "ControlNetApply": {
         "title": "ControlNet適用",
         "inputs": {
-            "conditioning": "条件",
+            "conditioning": "生成条件",
             "control_net": "ControlNet",
             "image": "画像"
         },
@@ -374,14 +376,14 @@
             "strength": "強度"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "ControlNetApplyAdvanced": {
-        "title": "ControlNet適用（高さ）",
+        "title": "ControlNet適用（高度）",
         "inputs": {
-            "positive": "正面",
-            "negative": "负面",
+            "positive": "ポジティブ",
+            "negative": "ネガティブ",
             "control_net": "ControlNet",
             "image": "画像"
         },
@@ -391,8 +393,8 @@
             "end_percent": "終了パーセント"
         },
         "outputs": {
-            "positive": "正面",
-            "negative": "负面"
+            "positive": "ポジティブ",
+            "negative": "ネガティブ"
         }
     },
 
@@ -423,7 +425,6 @@
             "LATENT": "Latent"
         }
     },
-    
     
     "LatentFromBatch": {
         "title": "バッチからLatent取得",
@@ -462,7 +463,6 @@
             "LATENT": "Latent"
         }
     },
-    
     
     "LatentRotate": {
         "title": "Latent回転",
@@ -510,7 +510,6 @@
         }
     },
     
-    
     "VAEDecode": {
         "title": "VAEデコード",
         "inputs": {
@@ -549,7 +548,7 @@
         },
         "widgets": {
             "upscale_method": "アップスケール方法",
-                "nearest-exact": "最近傍-正確",
+                "nearest-exact": "ニアレストネイバー-正確",
                 "bilinear": "バイリニア補間",
                 "area": "エリア",
                 "bislerp": "バイスフィアリニア",
@@ -571,7 +570,7 @@
         },
         "widgets": {
             "upscale_method": "アップスケール方法",
-                "nearest-exact": "最近傍-正確",
+                "nearest-exact": "ニアレストネイバー-正確",
                 "bilinear": "バイリニア補間",
                 "area": "エリア",
                 "bislerp": "バイスフィアリニア",
@@ -613,6 +612,7 @@
             "LATENT": "Latent"
         }
     },
+
     
 
 
@@ -624,7 +624,7 @@
         },
         "widgets": {
             "upscale_method": "スケーリング方法",
-                "nearest-exact": "最近傍-正確",
+                "nearest-exact": "ニアレストネイバー-正確",
                 "bilinear": "バイリニア補間",
                 "area": "領域",
                 "bicubic": "バイキュービック補間",
@@ -645,7 +645,7 @@
         },
         "widgets": {
             "upscale_method": "スケーリング方法",
-                "nearest-exact": "最近傍-正確",
+                "nearest-exact": "ニアレストネイバー-正確",
                 "bilinear": "バイリニア補間",
                 "area": "領域",
                 "bicubic": "バイキュービック補間",
@@ -672,7 +672,7 @@
         },
         "widgets": {
             "upscale_method": "スケーリング方法",
-                "nearest-exact": "最近傍-正確",
+                "nearest-exact": "ニアレストネイバー-正確",
                 "bilinear": "バイリニア補間",
                 "area": "領域",
                 "bicubic": "バイキュービック補間",
@@ -682,7 +682,6 @@
             "IMAGE": "画像"
         }
     },
-    
 
     "ImageBlend": {
         "title": "画像混合",
@@ -745,7 +744,6 @@
             "IMAGE": "画像"
         }
     },
-
 
     "Canny": {
         "title": "Canny",
@@ -852,10 +850,6 @@
             "IMAGE": "画像"
         }
     },
-
-
-
-
     "LoadImageMask": {
         "title": "マスク画像読み込み",
         "widgets": {
@@ -1048,16 +1042,12 @@
             "samples2": "Latent2"
         },
         "widgets": {
-            "blend_factor": "係数"
+            "blend_factor": "混合係数"
         },
         "outputs": {
             "LATENT": "Latent"
         }
     },
-
-
-
-
     "DiffusersLoader": {
         "title": "拡散器ローダー",
         "widgets": {
@@ -1072,7 +1062,7 @@
     "CLIPLoader": {
         "title": "CLIPローダー",
         "widgets": {
-            "clip_name": "CLIPの名"
+            "clip_name": "CLIPの名称"
         },
         "outputs": {
             "CLIP": "CLIP"
@@ -1082,7 +1072,7 @@
         "title": "Checkpointローダー",
         "widgets": {
             "config_name": "設定名",
-            "ckpt_name": "Checkpointの名"
+            "ckpt_name": "Checkpointの名称"
         },
         "outputs": {
             "MODEL": "モデル",
@@ -1093,7 +1083,7 @@
     "UNETLoader": {
         "title": "UNETローダー",
         "widgets": {
-            "unet_name": "UNETの名"
+            "unet_name": "UNETの名称"
         },
         "outputs": {
             "MODEL": "モデル"
@@ -1111,26 +1101,27 @@
     },
 
 
+
     "ConditioningZeroOut": {
-        "title": "条件をゼロ化",
+        "title": "生成条件をゼロ化",
         "inputs": {
-            "conditioning": "条件"
+            "conditioning": "生成条件"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "ConditioningSetTimestepRange": {
-        "title": "条件のタイムステップ範囲を設定",
+        "title": "生成条件のタイムステップ範囲を設定",
         "inputs": {
-            "conditioning": "条件"
+            "conditioning": "生成条件"
         },
         "widgets": {
             "start": "開始",
             "end": "終了"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "CLIPTextEncodeSDXL": {
@@ -1149,7 +1140,7 @@
             "text_l": "Lテキスト"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "CLIPTextEncodeSDXLRefiner": {
@@ -1164,11 +1155,9 @@
             "text": "テキスト"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
-
-
     "ModelMergeSimple": {
         "title": "モデルのマージ",
         "inputs": {
@@ -1213,6 +1202,7 @@
             "ratio": "比率"
         },
         "outputs": {
+            "MODEL": "モデル"
         }
     },
     "ModelMergeBlockNumber": {

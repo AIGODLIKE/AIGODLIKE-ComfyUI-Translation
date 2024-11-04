@@ -1,11 +1,11 @@
 {
     "Float": {
-        "title": "浮点",
+        "title": "浮動小数点",
         "widgets": {
             "Value": "値"
         },
         "outputs": {
-            "FLOAT": "浮点"
+            "FLOAT": "浮動小数点"
         }
     },
     "Integer": {
@@ -23,66 +23,61 @@
             "Text": "テキスト"
         },
         "outputs": {
-            "STRING": "ストリング"
+            "STRING": "文字列"
         }
     },
     "Text Box": {
-        "title": "文本框",
+        "title": "テキストボックス",
         "widgets": {
             "Text": "テキスト"
         },
         "outputs": {
-            "STRING": "ストリング"
+            "STRING": "文字列"
         }
     },
 
-
-
-
     "Float debug print": {
-        "title": "浮点调试出力",
+        "title": "浮動小数点デバッグ出力",
         "widgets": {
-            "Prefix": "前缀",
+            "Prefix": "接頭辞",
             "Value": "値"
         }
     },
     "Int debug print": {
-        "title": "整数调试出力",
+        "title": "整数デバッグ出力",
         "widgets": {
-            "Prefix": "前缀",
+            "Prefix": "接頭辞",
             "Value": "値"
         }
     },
     "Tuple debug print": {
-        "title": "元组调试出力",
+        "title": "タプルデバッグ出力",
         "inputs": {
             "Value": "値"
         },
         "widgets": {
-            "Prefix": "前缀"
+            "Prefix": "接頭辞"
         }
     },
     "String debug print": {
-        "title": "ストリング调试出力",
+        "title": "文字列デバッグ出力",
         "widgets": {
-            "Prefix": "前缀",
+            "Prefix": "接頭辞",
             "Text": "テキスト"
         }
     },
 
-
-
     "Int to float": {
-        "title": "整数到浮点",
+        "title": "整数を浮動小数点に",
         "widgets": {
             "Value": "値"
         },
         "outputs": {
-            "FLOAT": "浮点"
+            "FLOAT": "浮動小数点"
         }
     },
     "Ceil": {
-        "title": "向上取整",
+        "title": "切り上げ",
         "widgets": {
             "Value": "値"
         },
@@ -91,7 +86,7 @@
         }
     },
     "Floor": {
-        "title": "向下取整",
+        "title": "切り下げ",
         "widgets": {
             "Value": "値"
         },
@@ -100,16 +95,15 @@
         }
     },
     "Absolute value": {
-        "title": "绝对値",
+        "title": "絶対値",
         "widgets": {
             "Value": "値",
-            "negative_out": "返回负値"
+            "negative_out": "負の値"
         },
         "outputs": {
-            "FLOAT": "浮点"
+            "FLOAT": "浮動小数点"
         }
     },
-
 
     "Random": {
         "title": "ランダム値",
@@ -118,176 +112,167 @@
             "Value_B": "閾値B"
         },
         "outputs": {
-            "FLOAT": "浮点"
+            "FLOAT": "浮動小数点"
         }
     },
     "Get latent size": {
-        "title": "获取Latent尺寸",
+        "title": "Latentサイズ取得",
         "inputs": {
             "latent": "Latent"
         },
         "widgets": {
-            "original": "初始Latent"
+            "original": "初期Latent"
         },
         "outputs": {
             "INT": "整数",
-            "TUPLE": "元组"
+            "TUPLE": "タプル"
         }
     },
     "Get image size": {
-        "title": "获取图像尺寸",
+        "title": "画像サイズ取得",
         "inputs": {
-            "image": "图像"
+            "image": "画像"
         },
         "outputs": {
             "INT": "整数",
-            "TUPLE": "元组"
+            "TUPLE": "タプル"
         }
     },
 
-
-
-
     "Tuple": {
-        "title": "元组",
+        "title": "タプル",
         "widgets": {
             "Value_A": "値A",
             "Value_B": "値B",
-            "round": "四舍五入"
+            "round": "四捨五入"
         },
         "outputs": {
-            "TUPLE": "元组"
+            "TUPLE": "タプル"
         }
     },
     "Int to tuple": {
-        "title": "整数到元组",
+        "title": "整数をタプルに",
         "widgets": {
             "Value_A": "値A",
             "Value_B": "値B"
         },
         "outputs": {
-            "TUPLE": "元组"
+            "TUPLE": "タプル"
         }
     },
     "Tuple to floats": {
-        "title": "元组到浮点",
+        "title": "タプルを浮動小数点に",
         "inputs": {
-            "Tuple": "元组"
+            "Tuple": "タプル"
         },
         "outputs": {
-            "FLOAT": "浮点"
+            "FLOAT": "浮動小数点"
         }
     },
     "Tuple to ints": {
-        "title": "元组到整数",
+        "title": "タプルを整数に",
         "inputs": {
-            "Tuple": "元组"
+            "Tuple": "タプル"
         },
         "outputs": {
             "INT": "整数"
         }
     },
     "Tuple swap": {
-        "title": "元组转换",
+        "title": "タプル入れ替え",
         "inputs": {
-            "Tuple": "元组"
+            "Tuple": "タプル"
         },
         "outputs": {
-            "TUPLE": "元组"
+            "TUPLE": "タプル"
         }
     },
     "Tuple multiply": {
-        "title": "元组相乘",
+        "title": "タプルの乗算",
         "inputs": {
-            "Tuple": "元组"
+            "Tuple": "タプル"
         },
         "widgets": {
             "Value": "値"
         },
         "outputs": {
-            "TUPLE": "元组"
+            "TUPLE": "タプル"
         }
     },
 
-
     "ConditioningSetArea with tuples": {
-        "title": "設定条件エリア",
+        "title": "生成条件エリア設定",
         "inputs": {
-            "conditioning": "条件",
-            "size_tuple": "尺寸元组",
-            "offset_tuple": "偏移元组"
+            "conditioning": "生成条件",
+            "size_tuple": "サイズタプル",
+            "offset_tuple": "オフセットタプル"
         },
         "widgets": {
             "strength": "強度"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     },
     "LatentComposite with tuples": {
-        "title": "Latent元组コンポジット",
+        "title": "Latentタプル合成",
         "inputs": {
             "samples_to": "目標Latent",
             "samples_from": "ソースLatent",
-            "position_tuple": "位置元组"
+            "position_tuple": "位置タプル"
         },
-        "widgets": {
-        },
-        "outputs": {
-        }
+        "widgets": {},
+        "outputs": {}
     },
 
-
-
-
     "Sum": {
-        "title": "相加",
+        "title": "加算",
         "widgets": {
             "Value_A": "値A",
             "Value_B": "値B"
         },
         "outputs": {
-            "FLOAT": "浮点"
+            "FLOAT": "浮動小数点"
         }
     },
     "Subtract": {
-        "title": "相减",
+        "title": "減算",
         "widgets": {
             "Value_A": "値A",
             "Value_B": "値B"
         },
         "outputs": {
-            "FLOAT": "浮点"
+            "FLOAT": "浮動小数点"
         }
     },
     "Multiply": {
-        "title": "相乘",
+        "title": "乗算",
         "widgets": {
             "Value_A": "値A",
             "Value_B": "値B"
         },
         "outputs": {
-            "FLOAT": "浮点"
+            "FLOAT": "浮動小数点"
         }
     },
     "Divide": {
-        "title": "相除",
+        "title": "除算",
         "widgets": {
             "numerator": "分子",
             "denominator": "分母"
         },
         "outputs": {
-            "FLOAT": "浮点"
+            "FLOAT": "浮動小数点"
         }
     },
     "Power": {
-        "title": "乘方",
+        "title": "累乗",
         "widgets": {
             "Value": "値",
             "Exponent": "指数"
         },
         "outputs": {
-            "FLOAT": "浮点"
+            "FLOAT": "浮動小数点"
         }
     },
     "Square root": {
@@ -296,57 +281,53 @@
             "Value": "値"
         },
         "outputs": {
-            "FLOAT": "浮点"
+            "FLOAT": "浮動小数点"
         }
     },
 
-
     "Sinus": {
-        "title": "正弦",
+        "title": "サイン",
         "widgets": {
             "value": "値",
-            "type": "类型",
-            "arcSin": "反正弦"
+            "type": "タイプ",
+            "arcSin": "逆サイン"
         },
         "outputs": {
-            "FLOAT": "浮点"
+            "FLOAT": "浮動小数点"
         }
     },
     "Cosines": {
-        "title": "余弦",
+        "title": "コサイン",
         "widgets": {
             "value": "値",
-            "type": "类型",
-            "arcCos": "反余弦"
+            "type": "タイプ",
+            "arcCos": "逆コサイン"
         },
         "outputs": {
-            "FLOAT": "浮点"
+            "FLOAT": "浮動小数点"
         }
     },
     "Tangent": {
-        "title": "正切",
+        "title": "タンジェント",
         "widgets": {
             "value": "値",
-            "type": "类型",
-            "arcTab": "反正切"
+            "type": "タイプ",
+            "arcTab": "逆タンジェント"
         },
         "outputs": {
-            "FLOAT": "浮点"
+            "FLOAT": "浮動小数点"
         }
     },
 
-
-
-
     "Latent Scale by ratio": {
-        "title": "Latent按係数放大",
+        "title": "Latent比率でスケール",
         "inputs": {
             "latent": "Latent"
         },
         "widgets": {
             "modifer": "係数",
-            "scale_method": "缩放方法",
-            "crop": "裁剪",
+            "scale_method": "スケール方法",
+            "crop": "クロップ",
                 "disabled": "無効",
                 "enabled": "有効"
         },
@@ -355,16 +336,16 @@
         }
     },
     "Latent Scale to side": {
-        "title": "Latent按边放大",
+        "title": "Latentをサイドにスケール",
         "inputs": {
             "latent": "Latent"
         },
         "widgets": {
-            "side_length": "边长度",
-            "side": "边",
-                "Width": "宽",
-            "scale_method": "缩放方法",
-            "crop": "裁剪",
+            "side_length": "辺の長さ",
+            "side": "辺",
+                "Width": "幅",
+            "scale_method": "スケール方法",
+            "crop": "クロップ",
                 "disabled": "無効",
                 "enabled": "有効"
         },
@@ -373,50 +354,50 @@
         }
     },
     "Image Scale by ratio": {
-        "title": "Latent按係数放大",
+        "title": "画像を係数でスケール",
         "inputs": {
-            "image": "图像"
+            "image": "画像"
         },
         "widgets": {
             "modifer": "係数",
-            "scale_method": "缩放方法",
-            "crop": "裁剪",
+            "scale_method": "スケール方法",
+            "crop": "クロップ",
                 "disabled": "無効",
                 "enabled": "有効"
         },
         "outputs": {
-            "Image": "图像"
+            "Image": "画像"
         }
     },
     "Image Scale to side": {
-        "title": "图像按边放大",
+        "title": "画像を辺に沿ってスケール",
         "inputs": {
-            "image": "图像"
+            "image": "画像"
         },
         "widgets": {
-            "side_length": "边长度",
-            "side": "边",
-                "Width": "宽",
-            "scale_method": "缩放方法",
-            "crop": "裁剪",
+            "side_length": "辺の長さ",
+                "side": "辺",
+                "Width": "幅",
+            "scale_method": "スケール方法",
+            "crop": "クロップ",
                 "disabled": "無効",
                 "enabled": "有効"
         },
         "outputs": {
-            "IMAGE": "图像"
+            "IMAGE": "画像"
         }
     },
     "Conditioning area scale by ratio": {
-        "title": "条件エリア按係数放大",
+        "title": "生成条件エリアを係数でスケール",
         "inputs": {
-            "conditioning": "条件"
+            "conditioning": "生成条件"
         },
         "widgets": {
             "modifer": "係数",
-            "strength_modifer": "強度"
+            "strength_modifer": "強度係数"
         },
         "outputs": {
-            "CONDITIONING": "条件"
+            "CONDITIONING": "生成条件"
         }
     }
 }

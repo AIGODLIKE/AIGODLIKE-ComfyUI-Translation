@@ -1,18 +1,18 @@
 {
     "WD14Tagger|pysssss": {
-        "title": "WD14反推提示词",
+        "title": "WD14プロンプト推定",
         "inputs": {
-            "image": "图像"
+            "image": "画像"
         },
         "widgets": {
             "model": "モデル",
-            "threshold": "信頼度",
-            "character_threshold": "角色信頼度",
-            "exclude_tags": "排除标签",
-            "tags": "标签"
+            "threshold": "しきい値",
+            "character_threshold": "キャラクターしきい値",
+            "exclude_tags": "除外タグ",
+            "tags": "タグ"
         },
         "outputs": {
-            "STRING": "ストリング"
+            "STRING": "文字列"
         }
     }
 }

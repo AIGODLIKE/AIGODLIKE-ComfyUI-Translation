@@ -1,15 +1,15 @@
 {
     "AnimateDiffLoader": {
-        "title": "动态扩散ローダー",
+        "title": "アニメーション拡散ローダー",
         "inputs": {
             "model": "モデル",
-            "init_latent": "初始Latent"
+            "init_latent": "初期Latent"
         },
         "widgets": {
-            "model_name": "モデル",
+            "model_name": "モデル名",
             "width": "幅",
             "height": "高さ",
-            "frame_number": "フレームレート"
+            "frame_number": "フレーム数"
         },
         "outputs": {
             "MODEL": "モデル",
@@ -17,14 +17,14 @@
         }
     },
     "AnimateDiffLoader_v2": {
-        "title": "动态扩散ローダーv2",
+        "title": "アニメーション拡散ローダーv2",
         "inputs": {
             "model": "モデル",
-            "init_latent": "初始Latent"
+            "init_latent": "初期Latent"
         },
         "widgets": {
-            "model_name": "モデル",
-            "frame_number": "フレームレート"
+            "model_name": "モデル名",
+            "frame_number": "フレーム数"
         },
         "outputs": {
             "MODEL": "モデル",
@@ -32,7 +32,7 @@
         }
     },
     "AnimateDiffUnload": {
-        "title": "卸载动态扩散",
+        "title": "アニメーション拡散のアンロード",
         "inputs": {
             "model": "モデル"
         },
@@ -41,34 +41,34 @@
         }
     },
     "AnimateDiffCombine": {
-        "title": "結合为GIF",
+        "title": "GIFとして結合",
         "inputs": {
-            "images": "图像"
+            "images": "画像"
         },
         "widgets": {
-            "frame_rate": "帧率",
-            "loop_count": "循环次数",
-            "save_image": "是否保存",
-                "Enabled": "是",
-                "Disabled": "否",
-            "filename_prefix": "文件名缀"
+            "frame_rate": "フレームレート",
+            "loop_count": "ループ回数",
+            "save_image": "画像を保存",
+                "Enabled": "はい",
+                "Disabled": "いいえ",
+            "filename_prefix": "ファイル名の接頭辞"
         }
     },
     "AnimateDiffSampler": {
-        "title": "动态扩散采样器",
+        "title": "アニメーション拡散サンプラー",
         "inputs": {
-            "motion_module": "运动模块",
+            "motion_module": "モーションモジュール",
             "model": "モデル",
-            "positive": "正面",
-            "negative": "负面",
+            "positive": "ポジティブ",
+            "negative": "ネガティブ",
             "latent_image": "Latent"
         },
         "widgets": {
-            "inject_method": "注入メソッド",
-                "default": "既定",
-                "legacy": "旧版",
-            "frame_number": "フレームレート",
-            "seed": "乱数種",
+            "inject_method": "インジェクト方式",
+                "default": "デフォルト",
+                "legacy": "旧バージョン",
+            "frame_number": "フレーム数",
+            "seed": "シード値",
             "control_after_generate": "生成後の制御",
                 "fixed": "固定",
                 "increment": "増加",
