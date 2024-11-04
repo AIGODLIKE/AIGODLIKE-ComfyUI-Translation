@@ -236,7 +236,7 @@
     "taesd": "TAESD（低速）",
     "latent2rgb": "Latent2RGB（高速）",
     "true": "はい",
-    "treu (tiled)": "はい(tiled)",
+    "true (tiled)": "はい(tiled)",
     "false": "いいえ",
     "output only": "出力のみ",
     "output only (tiled)": "出力のみ(tiled)",

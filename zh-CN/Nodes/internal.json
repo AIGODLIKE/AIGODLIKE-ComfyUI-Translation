@@ -1217,6 +1217,48 @@
     },
 
 
+    "LatentApplyOperation": {
+        "title": "Latent应用操作",
+        "inputs": {
+            "samples": "Latent",
+            "operation": "操作"
+        },
+        "outputs": {
+            "LATENT": "Latent"
+        }
+    },
+    "LatentApplyOperationCFG": {
+        "title": "Latent应用操作（CFG）",
+        "inputs": {
+            "model": "模型",
+            "operation": "操作"
+        },
+        "outputs": {
+            "MODEL": "模型"
+        }
+    },
+    "LatentOperationTonemapReinhard": {
+        "title": "Latent操作 色调映射Reinhard",
+        "widgets": {
+            "multiplier": "系数"
+        },
+        "outputs": {
+            "LATENT_OPERATION": "Latent操作"
+        }
+    },
+    "LatentOperationSharpen": {
+        "title": "Latent操作（锐化）",
+        "widgets": {
+            "sharpen_radius": "锐化范围",
+            "sigma": "Sigma",
+            "alpha": "alpha"
+        },
+        "outputs": {
+            "LATENT_OPERATION": "Latent操作"
+        }
+    },
+
+
     "StableCascade_EmptyLatentImage": {
         "title": "空Latent_Cascade",
         "widgets": {
