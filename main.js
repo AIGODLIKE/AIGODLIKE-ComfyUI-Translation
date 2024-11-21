@@ -137,7 +137,7 @@ export class TUtils {
     let class_type = node.constructor.comfyClass ? node.constructor.comfyClass : node.constructor.type;
     if (!nodesT.hasOwnProperty(class_type)) {
       for (let key of keys) {
-        if (!node.hasOwnProperty(key)) continue;
+        if (!node.hasOwnProperty(key) || !Array.isArray(node[key])) continue;
         node[key].forEach((item) => {
           if (item?.hasOwnProperty("name")) item.label = item.name;
         });
