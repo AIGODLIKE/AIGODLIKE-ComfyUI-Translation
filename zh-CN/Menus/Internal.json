@@ -1,9 +1,9 @@
 {
     "Settings": "设置",
     "Search Settings...": "搜索设置...",
-    "ColorPalette": "颜色主题",
-    "Color Palette": "颜色主题",
-    "Color palette": "颜色主题",
+
+
+    "Comfy": "Comfy",
 
 
     "Dev Mode": "开发者模式",
@@ -14,32 +14,7 @@
     "Ctrl+up/down precision": "Ctrl+up/down 精度",
 
 
-    "Graph": "画面",
-    "Link Render Mode": "连线渲染样式",
-    "Always snap to grid": "自动吸附到网格",
-    "Snap to gird size": "吸附网格尺寸",
-    "Snap to grid size": "吸附网格尺寸",
-    "When dragging and resizing nodes while holding shift they will be aligned to the grid, this controls the size of that grid.": "按住Shift拖拽与缩放节点时会对齐到网格，该选项控制网格大小",
-    "Invert Context Menu Scrolling": "反转菜单滚动",
-    "Show graph canvas menu": "显示画面操作菜单",
-    "Canvas zoom speed": "画面缩放速度",
-    "Show canvas info (fps, etc.)": "显示画面信息（帧率等）",
-
-
-    "Group": "组/框",
-    "Double click group title to edit": "双击框标题以编辑",
-
-
-    "Link Release": "连接",
-    "Action on link release (Shift)": "连线松开行为（Shift）",
-    "context menu": "添加菜单",
-    "search box": "搜索框",
-    "no action": "无",
-    "Action on link release (No modifier)": "连线松开行为（正常）",
-    
-
-    "Group Selected Nodes": "节点框",
-    "Group selected nodes padding": "默认外边距",
+    "Locale": "语言",
 
 
     "Logging": "日志",
@@ -51,6 +26,7 @@
     "Menu": "菜单",
     "Use new menu and workflow management.": "使用新版菜单",
     "On small screens the menu will always be at the top.": "小屏幕的菜单会固定在上方",
+    "Use new menu": "使用新版菜单",
     "Save legacy menu's position": "保存旧版菜单位置",
 
 
@@ -64,14 +40,10 @@
 
 
     "Node": "节点",
-    "Enable DOM element clipping (enabling may reduce performance)": "启用DOM元素裁剪(可能降低性能)",
-    "Double click node title to edit": "双击节点启用编辑",
-    "Node opacity": "节点不透明",
     "Show experimental nodes in search": "搜索时显示实验节点",
     "Experimental nodes are marked as such in the UI and may be subject to significant changes or removal in future versions. Use with caution in production workflows": "实验性节点在未来版本中可能会有重大更改或移除，在生产工作流中谨慎使用",
     "Show deprecated nodes in search": "搜索时显示弃用节点",
     "Deprecated nodes are hidden by default in the UI, but remain functional in existing workflows that use them.": "弃用节点默认不显示，在含有这些节点的工作流中依旧可用",
-    "Enable Tooltips": "启用节点提示",
 
 
     "Node Search Box": "搜索框",
@@ -96,22 +68,6 @@
     "after": "之后",
     "Controls when widget values are updated (randomize/increment/decrement), either before the prompt is queued or after.": "控制组件值更新(随机/增加/减少)的时机，在提示词队列执行前或执行后",
     "Textarea widget spellcheck": "文本框组件检查拼写",
-    "Textarea widget font size": "文本框字体大小",
-    "Float widget rounding decimal places [0 = auto].": "浮点小数点后舍入位数（0 = 自动）",
-    "(requires page reload)": "需要重载页面",
-    "Disable default float widget rounding.": "禁用默认浮点舍入",
-    "(requires page reload) Cannot disable round when round is set by the node in the backend.": "需要重载页面，节点自身带有舍入设置时该项无效",
-    "Disable node widget sliders": "禁用滑条组件",
-    "Preview image format": "预览图像的格式",
-    "When displaying a preview in the image widget, convert it to a lightweight image, e.g. webp, jpeg, webp;50, etc.": "轻量化图像组件中的预览图象, 如webp, jpeg等",
-
-
-    "Node Badge": "节点标签",
-    "Node life cycle badge mode": "显示节点制作周期",
-    "Show all": "全部显示",
-    "Node ID badge mode": "显示节点ID",
-    "Node source badge mode": "显示节点所属插件",
-    "Hide built-in": "仅第三方节点",
 
 
     "Node Input Conversion Submenus": "节点转换子菜单",
@@ -119,27 +75,28 @@
     "In the node context menu, place the entries that convert between input/widget in sub-menus.": "将全部 转换为输入/组件 选项放到子菜单中。",
 
 
-    "Queue Button": "执行",
+    "Queue": "执行队列",
+    "Queue history size": "历史记录显示数量",
+    "The maximum number of tasks that show in the queue history.": "执行记录中的最大任务显示数量。",
+
+
+    "Queue Button": "执行键",
     "Batch count limit": "批量执行数量上限",
     "The maximum number of tasks added to the queue at one button click": "单次点击所能添加的任务数量上限。",
-
-
-    "Sidebar": "侧面板",
-    "Sidebar size": "尺寸",
-    "normal": "正常",
-    "Sidebar location": "位置",
 
 
     "Show extension panel in settings dialog": "显示插件面板",
     "Loading keybinding panel...": "加载中...",
     "Loading extension panel...": "加载中...",
 
-    
+
     "Tree Explorer": "节点库",
     "Tree explorer item padding": "行边距",
 
 
     "Validation": "校验",
+    "Validate node definitions (slow)": "校验节点（较慢）",
+    "Recommended for node developers. This will validate all node definitions on startup.": "推荐开发者使用。该功能会在启动时校验全部节点。",
     "Validate workflows": "校验工作流",
     "Require to confirmation when clearing workflow": "清理工作流时需要确认",
 
@@ -157,6 +114,121 @@
     "Require confirmation when clearing workflow": "清理工作流需要确认",
     "Opened workflows position": "工作流菜单位置",
     "Topbar": "顶菜单",
+
+
+    "LiteGraph": "画面",
+
+
+    "Canvas": "画布",
+    "Always snap to grid": "自动吸附到网格",
+    "Snap to gird size": "吸附网格尺寸",
+    "Snap to grid size": "吸附网格尺寸",
+    "When dragging and resizing nodes while holding shift they will be aligned to the grid, this controls the size of that grid.": "按住Shift拖拽与缩放节点时会对齐到网格，该选项控制网格大小",
+    "Show graph canvas menu": "显示画面操作菜单",
+    "Canvas zoom speed": "画面缩放速度",
+    "Show canvas info (fps, etc.)": "显示画面信息（帧率等）",
+
+
+    "Graph": "画面",
+    "Link Render Mode": "连线渲染样式",
+
+
+    "Group": "组/框",
+    "Double click group title to edit": "双击框标题以编辑",
+    "Group selected nodes padding": "默认外边距",
+
+
+    "Link": "连接",
+    "Link midpoint markers": "连线中点显示",
+    "Circle": "圆形",
+    "Arrow": "箭头",
+
+
+    "Link Release": "连线释放",
+    "Action on link release (Shift)": "连线松开行为（Shift）",
+    "context menu": "添加菜单",
+    "search box": "搜索框",
+    "no action": "无",
+    "Action on link release (No modifier)": "连线松开行为（正常）",
+
+
+    "Menu": "菜单",
+    "Invert Context Menu Scrolling": "反转菜单滚动",
+
+
+    "Node": "节点",
+    "Enable DOM element clipping (enabling may reduce performance)": "启用DOM元素裁剪(可能降低性能)",
+    "Middle-click creates a new Reroute node": "中键创建转接点",
+    "Keep all links when deleting nodes": "删除节点时保留连线",
+    "When deleting a node, attempt to reconnect all of its input and output links (bypassing the deleted node)": "删除节点时，会尝试重新连接该节点的所有连线（与忽略该节点类似）",
+    "Snap highlights node": "高亮吸附节点",
+    "When dragging a link over a node with viable input slot, highlight the node": "拖动连线到有可用接口的节点上时，高亮该节点",
+    "Auto snap link to node slot": "自动吸附连线到接口",
+    "When dragging a link over a node, the link automatically snap to a viable input slot on the node": "拖动连线到节点上时，自动吸附到可用接口",
+    "Enable Tooltips": "启用节点提示",
+    "Hide built-in": "仅第三方节点",
+    "Node life cycle badge mode": "显示节点制作周期",
+    "Show all": "全部显示",
+    "Node ID badge mode": "显示节点ID",
+    "Node source badge mode": "显示节点所属插件",
+    "Double click node title to edit": "双击节点启用编辑",
+
+
+    "Node Widget": "节点组件",
+    "Float widget rounding decimal places [0 = auto].": "浮点小数点后舍入位数（0 = 自动）",
+    "(requires page reload)": "需要重载页面",
+    "Disable default float widget rounding.": "禁用默认浮点舍入",
+    "(requires page reload) Cannot disable round when round is set by the node in the backend.": "需要重载页面，节点自身带有舍入设置时该项无效",
+    "Disable node widget sliders": "禁用滑条组件",
+    "Preview image format": "预览图像的格式",
+    "When displaying a preview in the image widget, convert it to a lightweight image, e.g. webp, jpeg, webp;50, etc.": "轻量化图像组件中的预览图象, 如webp, jpeg等",
+
+
+    "Pointer": "鼠标指针",
+    "Double click interval (maximum)": "双击间隔",
+    "The maximum time in milliseconds between the two clicks of a double-click.  Increasing this value may assist if double-clicks are sometimes not registered.": "判断两次单击为双击的毫秒间隔。",
+    "Pointer click drift delay": "拖拽延迟",
+    "After pressing a pointer button down, this is the maximum time (in milliseconds) that pointer movement can be ignored for.\n\nHelps prevent objects from being unintentionally nudged if the pointer is moved whilst clicking.": "单击鼠标时忽略指针运动的最大毫秒。\n\n提高该值防止在点击时移动指针时对象被无意拖动。",
+    "Pointer click drift (maxiumum distance)": "拖拽距离",
+    "If the pointer moves more than this distance while holding a button down, it is considered dragging (rather than clicking).\n\nHelps prevent objects from being unintentionally nudged if the pointer is moved whilst clicking.": "在按下鼠标时判断为移动状态的最小移动距离。\n\n提高该值防止在点击时移动指针时对象被无意拖动。",
+
+
+    "Reroute Beta": "转接点 Beta",
+    "Opt-in to the reroute beta test": "使用新版转接点",
+    "Enables the new native reroutes.\n\nReroutes can be added by holding alt and dragging from a link line, or on the link menu.\n\nDisabling this option is non-destructive - reroutes are hidden.": "使用新版转接点。\n\n按住 Alt 并单击连线创建转接点，或在连线中点单击添加。\n\n已创建新版转接点时关闭该功能不会破坏工作流。",
+
+
+    "Appearance": "外观",
+
+
+    "ColorPalette": "颜色主题",
+    "Color Palette": "颜色主题",
+    "Color palette": "颜色主题",
+
+    "Node": "节点",
+    "Node opacity": "节点不透明",
+
+
+    "Node Widget": "节点组件",
+    "Textarea widget font size": "文本框字体大小",
+
+
+    "Sidebar": "侧面板",
+    "Sidebar size": "尺寸",
+    "normal": "正常",
+    "Sidebar location": "位置",
+
+
+    "Mask Editor": "遮罩编辑器",
+    "Brush Adjustment": "笔刷调整",
+    "Lock brush adjustment to dominant axis": "锁定画笔调整至主轴",
+    "When enabled, brush adjustments will only affect size OR hardness based on which direction you move more": "启用后，笔刷调整将仅根据移动的方向影响尺寸或硬度",
+    "Brush adjustment speed multiplier": "笔刷调整乘数",
+    "Controls how quickly the brush size and hardness change when adjusting. Higher values mean faster changes.": "控制调整时笔刷大小和硬度的变化速度。值越高，变化越快。",
+
+
+    "New Editor": "新版编辑器",
+    "Use new mask editor": "使用新版遮罩编辑器",
 
 
     "Other": "其他",
@@ -190,8 +262,6 @@
 
     "SideBar": "SideBar",
     
-    "Queue": "执行队列",
-    "QUEUE": "队列",
     "No Tasks Found": "无任务",
     "There are no tasks in the queue.": "队列中没有任务。",
     "Fit Image Preview": "适应图像预览",
