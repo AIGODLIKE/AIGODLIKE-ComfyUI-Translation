@@ -140,7 +140,7 @@ export function applyMenuTranslation(T) {
             for (let mutation of mutationsList) {
               texe.translateAllText(mutation.target);
             }
-          });
+          }, true);
           continue;
         }
         if (node.classList?.contains("comfy-modal")) {
