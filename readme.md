@@ -1,3 +1,28 @@
+# 告别，以及最后的工作
+
+Hi，各位ComfyUI玩家，大家好，我是只剩一瓶辣椒酱，这是第一次，也是应该是最后一次和大家在这里交流。
+
+从这个工具诞生一年多以来，为数十万AI使用者提供了多语言翻译，作为一个翻译者，我很欣慰能看到有人认可我们的开源工作。
+
+但如大家所见，随着ComfyUI_frontend和客户端的推出，这一套缝缝补补的翻译系统，不再能适应新的框架，同时ComfyUI推出了更先进的内置翻译。
+
+所以，在和ComfyUI作者和官方人员沟通之后，我们决定停止维护这个工具，并将之后的贡献核心转到ComfyUI本身。
+
+接下来
+
+1. 我们将争取迁移现有词条到ComfyUI核心。（避免数以万计的中文区视频/文章，因语言发生歧义）。
+2. 
+3. 仍旧维护一段时间，以确保使用翻译的老用户能够继续用一段时间。
+4. 
+5. 引导对翻译感兴趣的翻译者，加入到ComfyUI官方社区对翻译进行完善和修正。
+   
+关于详细内容->大家可以来看下这篇文章https://blog.comfy.org/p/native-localization-support-i18n
+
+最后，感谢大家一年多以来的信赖，感谢各位通宵达旦提供词条的翻译者，以及强行开发而脱发严重的开发者们！
+
+愿开源荣光永存！
+
+
 # AIGODLIKE-ComfyUI-Translation
 A plugin for multilingual translation of [ComfyUI](https://github.com/comfyanonymous/ComfyUI)，This plugin implements translation of resident menu bar/search bar/right-click context menu/node, etc
 
