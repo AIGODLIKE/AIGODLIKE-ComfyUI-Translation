@@ -1,0 +1,217 @@
+{
+    "AD_CSVReader": {
+        "title": "🌻 CSV 读取器",
+        "widgets": {
+            "file_path": "文件路径",
+            "column_index": "列索引 (0 为全部，1 开始为指定列)",
+            "seed": "随机种子",
+            "increment": "增量 (0为随机，正数正序，负数倒序)"
+        },
+        "outputs": {
+            "File_Path": "文件路径",
+            "Seed": "种子值",
+            "Increment": "增量值",
+            "Full_Content": "完整内容",
+            "Lines": "行列表",
+            "Total_Lines": "总行数",
+            "Selected_Line": "选中的行"
+        }
+    },
+    "AD_BatchImageLoadFromDir": {
+        "title": "🌻 批量从目录加载图片",
+        "widgets": {
+            "Directory": "目录",
+            "Load_Cap": "加载上限",
+            "Skip_Frame": "跳过帧数",
+            "seed": "随机种子"
+        },
+        "outputs": {
+            "Images": "图片",
+            "Image_Paths": "图片路径",
+            "Image_Names_suffix": "图片名称（带后缀）",
+            "Image_Names": "图片名称",
+            "Count": "数量"
+        }
+    },
+    "AD_DeleteLocalAny": {
+        "title": "🌻 删除本地任意文件",
+        "widgets": {
+            "Any": "任意文件/目录",
+            "File_Name": "文件名"
+        },
+        "outputs": {
+            "Tips": "提示",
+            "Deleted_Paths": "已删除路径"
+        }
+    },
+    "AD_TextListToString": {
+        "title": "🌻 文本列表转字符串",
+        "widgets": {
+            "Directory": "目录",
+            "Load_Cap": "加载上限",
+            "Skip_Frame": "跳过帧数",
+            "seed": "随机种子"
+        },
+        "outputs": {
+            "File_Names": "文件名",
+            "File_Contents": "文件内容",
+            "File_Paths": "文件路径",
+            "File_Names_Suffix": "文件名（带后缀）",
+            "Count": "数量",
+            "Merged_Content": "合并内容"
+        }
+    },
+    "AD_AnyFileList": {
+        "title": "🌻 任意文件列表",
+        "widgets": {
+            "Directory": "目录",
+            "Load_Cap": "加载上限",
+            "Skip_Frame": "跳过帧数",
+            "Filter_By": "过滤方式",
+            "Extension": "扩展名",
+            "Deep_Search": "深度搜索",
+            "seed": "随机种子"
+        },
+        "outputs": {
+            "Directory_Output": "输出目录",
+            "Image_List": "图片列表",
+            "Text_List": "文本列表",
+            "File_Path_List": "文件路径列表",
+            "File_Name_List": "文件名列表",
+            "File_Name_With_Extension_List": "文件名列表（带扩展名）",
+            "Total_Files": "文件总数",
+            "Merged_Text": "合并文本"
+        }
+    },
+    "AD_ZipSave": {
+        "title": "🌻 Zip 保存",
+        "widgets": {
+            "Input_Directory": "输入目录",
+            "Output_Directory": "输出目录",
+            "Zip_Filename": "Zip 文件名"
+        },
+        "outputs": {
+            "Zip_Path": "Zip 路径",
+            "Status": "状态"
+        }
+    },
+    "AD_ImageSaver": {
+        "title": "🌻 图像保存器",
+        "widgets": {
+            "Images": "图像",
+            "Directory": "目录",
+            "Filename_Prefix": "文件名前缀",
+            "Open_Output_Directory": "打开输出目录"
+        },
+        "outputs": {
+            "Output_Directory": "输出目录"
+        }
+    },
+    "AD_FluxTrainStepMath": {
+        "title": "🌻 Flux 训练步骤计算",
+        "widgets": {
+            "Material_Count": "材料数量",
+            "Training_Times_Per_Image": "每图训练次数",
+            "Epoch": "训练轮数",
+            "equation": "计算公式"
+        },
+        "outputs": {
+            "Total_Training_Steps": "总训练步骤",
+            "Steps_Per_Epoch": "每轮步骤数"
+        }
+    },
+    "AD_TextSaver": {
+        "title": "🌻 文本保存器",
+        "widgets": {
+            "text": "文本",
+            "directory": "目录",
+            "filename_prefix": "文件名前缀",
+            "filename_delimiter": "文件名分隔符",
+            "filename_number_padding": "文件名数字填充",
+            "file_extension": "文件扩展名",
+            "encoding": "编码"
+        },
+        "outputs": {
+            "File_Path": "文件路径"
+        }
+    },
+    "AD_PromptReplace": {
+        "title": "🌻 提示词替换",
+        "widgets": {
+            "Content": "内容",
+            "Match": "匹配",
+            "Replace": "替换",
+            "seed": "随机种子",
+            "Increment": "增量",
+            "Random_Mode": "随机模式"
+        },
+        "outputs": {
+            "Replaced_Text": "替换后的文本",
+            "new_seed": "新种子值"
+        }
+    },
+    "AD_HFDownload": {
+        "title": "🌻 Hugging Face 下载",
+        "widgets": {
+            "download_url": "下载 URL",
+            "repo_id": "仓库 ID",
+            "save_path": "保存路径",
+            "resource_type": "资源类型",
+            "use_mirror": "使用镜像",
+            "create_folder": "创建文件夹",
+            "filename": "文件名",
+            "hf_token": "Hugging Face 令牌"
+        },
+        "outputs": {
+            "Download_Path": "下载路径",
+            "Status": "状态"
+        }
+    },
+    "AD_ImageColorFilter": {
+        "title": "🌻 图像颜色滤镜",
+        "widgets": {
+            "image": "图像",
+            "exposure": "曝光",
+            "clarity": "清晰度",
+            "highlights": "高光",
+            "shadows": "阴影",
+            "contrast": "对比度",
+            "saturation": "饱和度",
+            "vibrance": "自然饱和度",
+            "temperature": "色温",
+            "sharpness": "锐度"
+        },
+        "outputs": {
+            "IMAGE": "处理后的图像"
+        }
+    },
+    "AD_CSVPromptStyler": {
+        "title": "🌻 CSV 提示词样式器",
+        "widgets": {
+            "csv_path": "CSV 文件路径",
+            "text_positive": "正面文本",
+            "text_negative": "负面文本",
+            "style": "样式",
+            "log_prompt": "记录提示词"
+        },
+        "outputs": {
+            "styled_positive": "样式化正面文本",
+            "styled_negative": "样式化负面文本",
+            "selected_style": "选中的样式"
+        }
+    },
+    "AD_TxtToCSVCombiner": {
+        "title": "🌻 文本到 CSV 合并器",
+        "widgets": {
+            "input_directory": "输入目录",
+            "output_directory": "输出目录",
+            "output_filename": "输出文件名",
+            "add_header": "添加表头",
+            "sort_by_filename": "按文件名排序（禁用则按数字前缀排序）"
+        },
+        "outputs": {
+            "output_csv_path": "输出 CSV 路径"
+        }
+    }
+}
+
