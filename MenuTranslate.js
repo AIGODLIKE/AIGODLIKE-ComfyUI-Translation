@@ -136,11 +136,12 @@ export function applyMenuTranslation(T) {
         // 新版 settings面板的翻译
         if (node.classList?.contains("p-dialog-mask"))
         {
-          observeFactory(node.querySelector(".p-dialog"), (mutationsList, observer) => {
+          var dialog = node.querySelector(".p-dialog");
+          observeFactory(dialog, (mutationsList, observer) => {
             for (let mutation of mutationsList) {
               texe.translateAllText(mutation.target);
             }
-          }, true);
+          }, dialog?.role === "dialog");
           continue;
         }
         if (node.classList?.contains("comfy-modal")) {
