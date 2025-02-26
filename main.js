@@ -178,7 +178,7 @@ export class TUtils {
       // console.log(slot);
       let t = TUtils.T.Nodes[this.comfyClass];
       if (t["widgets"] && slot.name in t["widgets"]) {
-        slot.label = t["widgets"][slot.name];
+        slot.localized_name = t["widgets"][slot.name];
       }
       if (onInputAdded) return res;
     };
